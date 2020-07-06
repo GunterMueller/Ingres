@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/ingres/!svn/ver/1/main/src/common/ddf/ddc
+END
+ddcdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/ddf/ddc/ddcdata.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/common/ddf/ddc/Jamfile
+END
+ddcmo.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/common/ddf/ddc/ddcmo.c
+END
+dbaccess.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/ddf/ddc/dbaccess.c
+END

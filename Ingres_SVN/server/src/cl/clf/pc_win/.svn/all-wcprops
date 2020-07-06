@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/ingres/!svn/ver/1/main/src/cl/clf/pc_win
+END
+pcpriv.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/cl/clf/pc_win/pcpriv.c
+END
+pccmdlin95.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/clf/pc_win/pccmdlin95.c
+END
+pctalive.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/pc_win/pctalive.c
+END
+pcforcex.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/pc_win/pcforcex.c
+END
+pclocal.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/cl/clf/pc_win/pclocal.h
+END
+pcalive.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/cl/clf/pc_win/pcalive.c
+END
+pccrash.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/cl/clf/pc_win/pccrash.c
+END
+pcexsuid.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/pc_win/pcexsuid.c
+END
+pcfork.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/cl/clf/pc_win/pcfork.c
+END
+pcpidq.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/cl/clf/pc_win/pcpidq.h
+END
+pctask.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/cl/clf/pc_win/pctask.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/cl/clf/pc_win/Jamfile
+END
+pcwait.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/cl/clf/pc_win/pcwait.c
+END
+pcunique.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/pc_win/pcunique.c
+END
+pccmdlin.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/pc_win/pccmdlin.c
+END
+pcsleep.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/cl/clf/pc_win/pcsleep.c
+END
+pctidx.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/cl/clf/pc_win/pctidx.c
+END
+pcexit.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/cl/clf/pc_win/pcexit.c
+END
+pcdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/cl/clf/pc_win/pcdata.c
+END

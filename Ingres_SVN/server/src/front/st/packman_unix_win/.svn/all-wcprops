@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/packman_unix_win
+END
+iipackman.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/st/packman_unix_win/iipackman.h
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/packman_unix_win/MANIFEST
+END
+iipackman.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/st/packman_unix_win/iipackman.c
+END

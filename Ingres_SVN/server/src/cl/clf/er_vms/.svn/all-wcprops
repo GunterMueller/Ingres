@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/ingres/!svn/ver/1/main/src/cl/clf/er_vms
+END
+erlookup.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/er_vms/erlookup.c
+END
+erreport.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/er_vms/erreport.c
+END
+erreleas.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/er_vms/erreleas.c
+END
+er.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/cl/clf/er_vms/er.c
+END
+erget.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/cl/clf/er_vms/erget.c
+END
+erloc.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/cl/clf/er_vms/erloc.h
+END
+ermsghdr.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/er_vms/ermsghdr.c
+END
+erlangcd.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/er_vms/erlangcd.c
+END
+erlangst.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/er_vms/erlangst.c
+END
+ercomp.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/cl/clf/er_vms/ercomp.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/cl/clf/er_vms/Jamfile
+END
+erdepend.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/er_vms/erdepend.c
+END
+erintern.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/er_vms/erintern.c
+END
+erinit.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/cl/clf/er_vms/erinit.c
+END
+ercompile.lot
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/cl/clf/er_vms/ercompile.lot
+END
+erexcep.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/cl/clf/er_vms/erexcep.c
+END
+erclose.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/cl/clf/er_vms/erclose.c
+END

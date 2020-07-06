@@ -1,0 +1,26 @@
+PART  sigimp
+   BUILD_DIR (ING_BUILD)!sig!imp
+   DIRECTORY ingres!sig!imp
+   FILE README.DOC
+   FILE imp.forms
+   FILE imp.h
+   FILE imp.sql
+   FILE imp_dmf.incl
+   FILE imp_gcn_info.incl
+   FILE impcommon.sc
+   FILE impdbcon.sc
+   FILE impdmf.sc
+   FILE impfrs.sc
+   FILE impgcn.sc
+   FILE impinter.sc
+   FILE impio.sc
+   FILE implocks.sc
+   FILE implog.sc
+   FILE impmain.sc
+   FILE impqsf.sc
+   FILE imprdf.sc
+   FILE impserver.sc
+   FILE impslave.sc
+   FILE impstart.sc
+   FILE impstatic.sc
+   FILE Makefile

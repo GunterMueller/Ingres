@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/ingres/!svn/ver/1/main/src/front/embed/c
+END
+eqc.lot
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/embed/c/eqc.lot
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/embed/c/MANIFEST
+END
+cmain.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/embed/c/cmain.c
+END
+wgl_32s.hnt
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/embed/c/wgl_32s.hnt
+END
+ctokens.st
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/embed/c/ctokens.st
+END
+c.sy
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/front/embed/c/c.sy
+END
+cgen.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/embed/c/cgen.c
+END
+eqc.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/embed/c/eqc.exe.manifest
+END

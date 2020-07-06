@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/ingres/!svn/ver/1/main/src/back/opf/opb
+END
+opbjkeyl.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/opf/opb/opbjkeyl.c
+END
+opbbfkget.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/opf/opb/opbbfkget.c
+END
+opbcreate.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/opf/opb/opbcreate.c
+END
+opbsfind.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/opf/opb/opbsfind.c
+END
+opbmbf.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/opf/opb/opbmbf.c
+END
+opbpmbf.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/opf/opb/opbpmbf.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/opf/opb/Jamfile
+END
+opbpqbf.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/opf/opb/opbpqbf.c
+END

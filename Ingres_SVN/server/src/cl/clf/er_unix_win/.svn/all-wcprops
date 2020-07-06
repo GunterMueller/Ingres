@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/cl/clf/er_unix_win
+END
+erlookup.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/clf/er_unix_win/erlookup.c
+END
+erdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/cl/clf/er_unix_win/erdata.c
+END
+erreport.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/clf/er_unix_win/erreport.c
+END
+erreleas.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/clf/er_unix_win/erreleas.c
+END
+er.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/cl/clf/er_unix_win/er.c
+END
+erget.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/clf/er_unix_win/erget.c
+END
+erloc.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/clf/er_unix_win/erloc.h
+END
+ermsghdr.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/clf/er_unix_win/ermsghdr.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/cl/clf/er_unix_win/README
+END
+eritest.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/er_unix_win/eritest.c
+END
+erlangcd.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/clf/er_unix_win/erlangcd.c
+END
+erlangst.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/clf/er_unix_win/erlangst.c
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/cl/clf/er_unix_win/MANIFEST
+END
+codeexam.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/clf/er_unix_win/codeexam.c
+END
+ercomp.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/cl/clf/er_unix_win/ercomp.c
+END
+erintern.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/clf/er_unix_win/erintern.c
+END
+erdepend.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/clf/er_unix_win/erdepend.c
+END
+callexam.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/clf/er_unix_win/callexam.c
+END
+wgl_32s.hnt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/cl/clf/er_unix_win/wgl_32s.hnt
+END
+erinit.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/cl/clf/er_unix_win/erinit.c
+END
+erexcep.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/er_unix_win/erexcep.c
+END
+ernames.roc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/cl/clf/er_unix_win/ernames.roc
+END
+erclose.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/er_unix_win/erclose.c
+END

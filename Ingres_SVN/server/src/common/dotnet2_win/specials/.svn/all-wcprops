@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/specials
+END
+keypublic.snk
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/specials/keypublic.snk
+END
+keypublic.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/specials/keypublic.txt
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/specials/readme.txt
+END

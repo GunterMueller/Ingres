@@ -1,0 +1,15 @@
+#define _IB_CLASS 48
+#define S_IB0001_Building              0x00300001
+#define F_IB0001_runtime_table         0x10300001
+#define F_IB0002_reading               0x10300002
+#define F_IB0003_image                 0x10300003
+#define F_IB0004_writing               0x10300004
+#define S_IB0002_IIORmfMemFree         0x00300002
+#define E_IB0003_Could_not_open        0x00300003
+#define E_IB0004_RTT_format            0x00300004
+#define E_IB0005_Read_frame            0x00300005
+#define E_IB0006_write_frame           0x00300006
+#define E_IB0007_write_trailer         0x00300007
+#define E_IB0008_init_form             0x00300008
+#define E_IB0009_write_form            0x00300009
+#define E_IB000A_interrupt             0x0030000a

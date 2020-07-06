@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/ingres/!svn/ver/3/main/src/back/scf/scs
+END
+scsraat.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/scf/scs/scsraat.c
+END
+scssvc.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/scf/scs/scssvc.c
+END
+scscompress.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/back/scf/scs/scscompress.c
+END
+scsalarm.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/scf/scs/scsalarm.c
+END
+scsint.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/scf/scs/scsint.h
+END
+scsrole.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/scf/scs/scsrole.c
+END
+scsinit.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/3/main/src/back/scf/scs/scsinit.c
+END
+scsqncr.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/3/main/src/back/scf/scs/scsqncr.c
+END
+scseauth.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/scf/scs/scseauth.c
+END
+scsdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/scf/scs/scsdata.c
+END
+scsstar.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/scf/scs/scsstar.c
+END
+scscopy.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/scf/scs/scscopy.c
+END
+scsmo.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/scf/scs/scsmo.c
+END
+scsdbfcn.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/scf/scs/scsdbfcn.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/scf/scs/Jamfile
+END
+scsdbprv.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/scf/scs/scsdbprv.c
+END
+scsmntr.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/scf/scs/scsmntr.c
+END

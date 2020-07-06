@@ -1,0 +1,36 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "caspin", "caspin.vcproj", "{331997FC-C196-4EE7-B7EC-A9F3F11D834F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		AIX_Release = AIX_Release
+		Debug = Debug
+		HPUX_Debug = HPUX_Debug
+		HPUX_Release = HPUX_Release
+		Linux_Release = Linux_Release
+		Release = Release
+		Solaris_Release = Solaris_Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{331997FC-C196-4EE7-B7EC-A9F3F11D834F}.AIX_Release.ActiveCfg = AIX_Release|Win32
+		{331997FC-C196-4EE7-B7EC-A9F3F11D834F}.AIX_Release.Build.0 = AIX_Release|Win32
+		{331997FC-C196-4EE7-B7EC-A9F3F11D834F}.Debug.ActiveCfg = Debug|Win32
+		{331997FC-C196-4EE7-B7EC-A9F3F11D834F}.Debug.Build.0 = Debug|Win32
+		{331997FC-C196-4EE7-B7EC-A9F3F11D834F}.HPUX_Debug.ActiveCfg = HPUX_Debug|Win32
+		{331997FC-C196-4EE7-B7EC-A9F3F11D834F}.HPUX_Debug.Build.0 = HPUX_Debug|Win32
+		{331997FC-C196-4EE7-B7EC-A9F3F11D834F}.HPUX_Release.ActiveCfg = HPUX_Release|Win32
+		{331997FC-C196-4EE7-B7EC-A9F3F11D834F}.HPUX_Release.Build.0 = HPUX_Release|Win32
+		{331997FC-C196-4EE7-B7EC-A9F3F11D834F}.Linux_Release.ActiveCfg = Linux_Release|Win32
+		{331997FC-C196-4EE7-B7EC-A9F3F11D834F}.Linux_Release.Build.0 = Linux_Release|Win32
+		{331997FC-C196-4EE7-B7EC-A9F3F11D834F}.Release.ActiveCfg = Release|Win32
+		{331997FC-C196-4EE7-B7EC-A9F3F11D834F}.Release.Build.0 = Release|Win32
+		{331997FC-C196-4EE7-B7EC-A9F3F11D834F}.Solaris_Release.ActiveCfg = Solaris_Release|Win32
+		{331997FC-C196-4EE7-B7EC-A9F3F11D834F}.Solaris_Release.Build.0 = Solaris_Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

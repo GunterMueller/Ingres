@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/ingres/!svn/ver/1/main/src/common/gcf/gcs
+END
+gcsinfo.lot
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/gcf/gcs/gcsinfo.lot
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/common/gcf/gcs/Jamfile
+END
+gcsdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gcs/gcsdata.c
+END
+gcsnull.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gcs/gcsnull.c
+END
+gcscall.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gcs/gcscall.c
+END
+gcsinfo.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gcs/gcsinfo.c
+END
+gcsing.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/common/gcf/gcs/gcsing.c
+END
+gcsutil.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gcs/gcsutil.c
+END
+gcssys.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/common/gcf/gcs/gcssys.c
+END
+gcsint.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/common/gcf/gcs/gcsint.h
+END

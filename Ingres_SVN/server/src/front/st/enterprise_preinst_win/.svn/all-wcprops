@@ -1,0 +1,245 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win
+END
+StdAfx.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/StdAfx.h
+END
+Splash.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/Splash.h
+END
+Welcome.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/Welcome.h
+END
+enterprise.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/enterprise.vcproj
+END
+ChooseInstallCode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/ChooseInstallCode.cpp
+END
+InstanceList.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/InstanceList.h
+END
+PreInstallation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/PreInstallation.cpp
+END
+SetupDriver.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/SetupDriver.c
+END
+InstallType.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/InstallType.h
+END
+PropSheet.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/PropSheet.h
+END
+256bmp.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/256bmp.h
+END
+InfoDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/InfoDialog.h
+END
+InstallMode.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/InstallMode.h
+END
+enterprise.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/enterprise.dsp
+END
+enterprise.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/enterprise.h
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/Jamfile
+END
+AUTORUN.INF
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/AUTORUN.INF
+END
+StdAfx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/StdAfx.cpp
+END
+Splash.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/Splash.cpp
+END
+enterprise.dsw
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/enterprise.dsw
+END
+Welcome.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/Welcome.cpp
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/resource.h
+END
+SetupDriver.rc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/SetupDriver.rc
+END
+InstanceList.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/InstanceList.cpp
+END
+WaitDlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/WaitDlg.h
+END
+dibpal.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/dibpal.h
+END
+enterprise.rc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/enterprise.rc
+END
+sample.rsp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/sample.rsp
+END
+ChooseInstallCode.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/ChooseInstallCode.h
+END
+InstallType.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/InstallType.cpp
+END
+PropSheet.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/PropSheet.cpp
+END
+256bmp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/256bmp.cpp
+END
+InfoDialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/InfoDialog.cpp
+END
+InstallMode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/InstallMode.cpp
+END
+PreInstallation.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/PreInstallation.h
+END
+enterprise.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/enterprise.cpp
+END
+enterprise.clw
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/enterprise.clw
+END
+enterprise.sln
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/enterprise.sln
+END
+dibpal.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/dibpal.cpp
+END
+WaitDlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/front/st/enterprise_preinst_win/WaitDlg.cpp
+END

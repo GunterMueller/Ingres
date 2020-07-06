@@ -1,0 +1,917 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/ingres/!svn/ver/1/main/src/front/rep/repmgr
+END
+rmdbdetl.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmdbdetl.frm
+END
+dbaddloc.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/dbaddloc.qsc
+END
+cddsacti.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/cddsacti.sc
+END
+dereplic.lot
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/dereplic.lot
+END
+rmdisply.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmdisply.frm
+END
+colllist.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/colllist.sc
+END
+collisn.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/collisn.h
+END
+rmmonitr.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmmonitr.frm
+END
+tblprocs.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/tblprocs.sc
+END
+rmmaills.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmmaills.hlp
+END
+maillist.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/maillist.qsc
+END
+svgenlog.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/svgenlog.c
+END
+rmdbsumm.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmdbsumm.hlp
+END
+rmedfile.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmedfile.hlp
+END
+repdbcfg.lot
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/repdbcfg.lot
+END
+convrep.lot
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/convrep.lot
+END
+rmerrmod.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmerrmod.hlp
+END
+dereplic.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/dereplic.exe.manifest
+END
+arcclean.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/arcclean.sc
+END
+rmtblint.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmtblint.hlp
+END
+ddmovcfg.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/ddmovcfg.exe.manifest
+END
+rmdbadd.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmdbadd.hlp
+END
+rmdppdef.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmdppdef.hlp
+END
+rmcddstb.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmcddstb.hlp
+END
+tblsave.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/tblsave.qsc
+END
+rmevents.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmevents.hlp
+END
+pathrpt.sc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/pathrpt.sc
+END
+loaddict.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/loaddict.sc
+END
+rmcddpth.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmcddpth.frm
+END
+rmtargty.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmtargty.hlp
+END
+rmmailct.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmmailct.frm
+END
+arcclean.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/arcclean.exe.manifest
+END
+tblrules.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/tblrules.sc
+END
+ddgenrul.lot
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/ddgenrul.lot
+END
+rmmovcfg.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmmovcfg.frm
+END
+rmcddsad.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmcddsad.hlp
+END
+repcat.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/repcat.exe.manifest
+END
+rmcddact.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmcddact.frm
+END
+repgen.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/repgen.h
+END
+cddsedit.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/cddsedit.qsc
+END
+repcfg.sc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/repcfg.sc
+END
+repcat.lot
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/repcat.lot
+END
+cddsadd.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/cddsadd.qsc
+END
+movecfg.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/movecfg.qsc
+END
+expfunc.sc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/expfunc.sc
+END
+asgnshow.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/asgnshow.qsc
+END
+dbedit.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/dbedit.qsc
+END
+repmgr.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/repmgr.qsc
+END
+repmgr.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/repmgr.exe.manifest
+END
+dbadd.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/dbadd.qsc
+END
+activate.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/activate.qsc
+END
+rmsndevt.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmsndevt.frm
+END
+cddstbls.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/cddstbls.qsc
+END
+dbcfgchg.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/dbcfgchg.sc
+END
+dereplic.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/dereplic.sc
+END
+ddgensup.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/ddgensup.exe.manifest
+END
+rmcddsum.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmcddsum.hlp
+END
+rmcfgmnu.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmcfgmnu.frm
+END
+cddssumm.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/cddssumm.qsc
+END
+rmcdddbs.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmcdddbs.frm
+END
+cddsdel.sc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/cddsdel.sc
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/Jamfile
+END
+cddsdb.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/cddsdb.qsc
+END
+rmdbsumm.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmdbsumm.frm
+END
+dbsumm.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/dbsumm.qsc
+END
+rmtblint.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmtblint.frm
+END
+rmedtcfg.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmedtcfg.frm
+END
+tablerpt.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/tablerpt.sc
+END
+rmlocldb.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmlocldb.frm
+END
+rmevents.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmevents.frm
+END
+crrepkey.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/crrepkey.sc
+END
+tblregst.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/tblregst.sc
+END
+rmcdddef.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmcdddef.hlp
+END
+reconcil.lot
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/reconcil.lot
+END
+rmreport.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmreport.hlp
+END
+deregtbl.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/deregtbl.sc
+END
+ckdstcfg.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/ckdstcfg.sc
+END
+sqlgen.sc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/sqlgen.sc
+END
+evtsend.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/evtsend.qsc
+END
+tblfetch.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/tblfetch.sc
+END
+repmod.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/repmod.exe.manifest
+END
+tblinteg.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/tblinteg.sc
+END
+tbledit.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/tbledit.qsc
+END
+rmshwasg.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmshwasg.frm
+END
+evtlist.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/evtlist.qsc
+END
+cddspath.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/cddspath.qsc
+END
+targtype.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/targtype.c
+END
+collrpt.sc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/collrpt.sc
+END
+repmod.lot
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/repmod.lot
+END
+rmcrtins.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmcrtins.hlp
+END
+rmtblsum.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmtblsum.hlp
+END
+moddict.sc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/moddict.sc
+END
+repmgr.lot
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/repmgr.lot
+END
+rmcolmod.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmcolmod.hlp
+END
+optexist.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/optexist.c
+END
+reports.qc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/reports.qc
+END
+rmcddsum.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmcddsum.frm
+END
+tblexist.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/tblexist.sc
+END
+dropobj.sc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/dropobj.sc
+END
+rmasgsho.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmasgsho.hlp
+END
+tblsumm.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/tblsumm.qsc
+END
+exptoken.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/exptoken.c
+END
+repcat.sc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/repcat.sc
+END
+errm.msg
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/errm.msg
+END
+rmreport.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmreport.frm
+END
+printcol.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/printcol.sc
+END
+rmpaths.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmpaths.hlp
+END
+crsuptbl.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/crsuptbl.sc
+END
+repconcil.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/repconcil.exe.manifest
+END
+rmcddsed.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmcddsed.hlp
+END
+rmcdddet.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmcdddet.frm
+END
+move1cfg.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/move1cfg.sc
+END
+monitor.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/monitor.qsc
+END
+dbdelete.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/dbdelete.sc
+END
+dbrpt.sc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/dbrpt.sc
+END
+convrep.sc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/convrep.sc
+END
+repdbcfg.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/repdbcfg.sc
+END
+filedisp.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/filedisp.qsc
+END
+rmevtsnd.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmevtsnd.hlp
+END
+ddmovcfg.lot
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/ddmovcfg.lot
+END
+cfgmenu.qc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/cfgmenu.qc
+END
+rmtblsum.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmtblsum.frm
+END
+rmmonitr.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmmonitr.hlp
+END
+repcfg.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/repcfg.exe.manifest
+END
+ddmovcfg.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/ddmovcfg.sc
+END
+rmtbledt.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmtbledt.hlp
+END
+issvrrun.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/issvrrun.sc
+END
+repdbcfg.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/repdbcfg.exe.manifest
+END
+convrep.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/convrep.exe.manifest
+END
+reconcil.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/reconcil.sc
+END
+repcfg.lot
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/repcfg.lot
+END
+ddgenrul.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/ddgenrul.sc
+END
+rmactchg.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmactchg.hlp
+END
+genopen.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/genopen.c
+END
+tblintgt.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/tblintgt.qsc
+END
+rmcddtbl.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmcddtbl.frm
+END
+rmcfgmen.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmcfgmen.hlp
+END
+gtsvrdir.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/gtsvrdir.c
+END
+ddgenrul.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/ddgenrul.exe.manifest
+END
+rmcddbty.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmcddbty.hlp
+END
+repmod.sc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/repmod.sc
+END
+editcfg.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/editcfg.qsc
+END
+repevent.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/repevent.sc
+END
+rmtbldet.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmtbldet.frm
+END
+rmmainmn.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmmainmn.frm
+END
+rmmovcfg.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmmovcfg.hlp
+END
+ddbamsg.sc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/ddbamsg.sc
+END
+arcclean.lot
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/arcclean.lot
+END
+ddgensup.lot
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/ddgensup.lot
+END
+rmdbedit.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmdbedit.hlp
+END
+rmrepmgr.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/rmrepmgr.hlp
+END
+ddgensup.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repmgr/ddgensup.sc
+END

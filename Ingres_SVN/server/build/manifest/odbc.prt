@@ -1,0 +1,36 @@
+PART  odbc
+   BUILD_DIR (ING_BUILD)!lib
+   DIRECTORY ingres!lib
+      {
+      EXECUTABLE libiiodbc.1.so
+      EXECUTABLE libiiodbcdriver.1.so
+      EXECUTABLE libiiodbcdriverro.1.so
+      PERMISSION s:re,o:rewd,g:re,w:re
+      }
+   DIRECTORY ingres!bin
+   BUILD_DIR (ING_BUILD)!bin
+      EXECUTABLE iiodbcadmin
+   DIRECTORY ingres!utility
+   BUILD_DIR (ING_BUILD)!utility
+      SCRIPT SETUP iisuodbc
+      EXECUTABLE iiodbcinst
+DIRECTORY ingres!install
+   BUILD_DIR (ING_BUILD)!manifest
+      FILE ocfginfo.dat
+   DIRECTORY ingres!files
+   BUILD_DIR (ING_BUILD)!files
+      FILE sql.h
+      FILE sqlext.h
+   DIRECTORY ingres!files!english
+   BUILD_DIR (ING_BUILD)!files!english
+        FILE ocadvname.hlp
+        FILE ocaltdrvp.hlp
+        FILE ocaltdsnp.hlp
+        FILE ocdrvdetails.hlp
+        FILE ocdsncfg.hlp
+        FILE ocdsndetails.hlp
+        FILE ocdsnname.hlp
+        FILE ocfgmm.hlp
+        FILE ocinstdrvr.hlp
+        FILE octrace.hlp
+        FILE octimeout.hlp

@@ -1,0 +1,47 @@
+/*
+** Copyright (c) 2004 Ingres Corporation
+*/
+/*
+** Generic part file for DTP for TUXEDO
+*/
+
+/*
+** History
+**	24-nov-1993 (tyler)
+**		Created.
+**	04-mar-1994 (larrym)
+**		added utility and files directory
+**	21-apr-1994 (larrym)
+**		added iisutux to create tuxedo directory under files.
+**	10-may-1995 (forky01)
+**		added CI_XA_TUXEDO bit check for licensing
+**	28-dec-1995 (hanch04)
+**		remove no longer needed files.
+*/
+
+PART tuxedo
+   capability CI_XA_TUXEDO
+
+/*
+** ingres!lib
+*/
+
+   DIRECTORY ingres!lib
+   BUILD_DIR (ING_BUILD)!lib
+      FILE libiitux.a
+/*
+** ingres!utility
+*/
+
+   DIRECTORY ingres!utility
+   BUILD_DIR (ING_BUILD)!utility
+      SCRIPT SETUP iisutux
+      SCRIPT iimktms
+
+/*
+** ingres!files
+*/
+
+   DIRECTORY ingres!files
+   BUILD_DIR (ING_BUILD)!files
+      FILE iitxxa.h

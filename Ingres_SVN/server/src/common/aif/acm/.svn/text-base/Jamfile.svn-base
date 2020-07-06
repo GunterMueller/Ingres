@@ -1,0 +1,20 @@
+#
+# Jamfile file for common!aif!acm
+#
+
+SubDir ING_SRC common aif acm ;
+
+IISUBSYS common aif acm ;
+
+
+IIBINEXE acmtest : acmtest.c ;
+IINEEDLIBS acmtest : ACMLIB SAWLIB APILIB CUFLIB GCFLIB ADFLIB
+	COMPATLIB ;
+
+
+IIBINEXE acmmttest : acmmttest.c ;
+IINEEDLIBS acmmttest : ACMLIB SAWLIB APILIB CUFLIB GCFLIB ADFLIB
+	COMPATLIB ;
+
+IILIBRARY ACMLIB : acmsrc.c ;
+

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/ingres/!svn/ver/1/main/src/back/ascf/ascd
+END
+ascdinit.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/ascf/ascd/ascdinit.c
+END
+ascdmain.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/ascf/ascd/ascdmain.c
+END
+ascdnote.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/ascf/ascd/ascdnote.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/ascf/ascd/Jamfile
+END
+ascdstub.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/ascf/ascd/ascdstub.c
+END

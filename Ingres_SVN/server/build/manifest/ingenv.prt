@@ -1,0 +1,14 @@
+PART   ingenv
+   BUILD_DIR (ING_BUILD)!bin
+   DIRECTORY ingres!bin
+      EXECUTABLE ingprenv
+      EXECUTABLE ingsetenv
+      EXECUTABLE ingunset
+  {
+   BUILD_DIR (ING_BUILD)!utility
+   DIRECTORY ingres!utility
+      SCRIPT ingprall
+      SCRIPT ingprsym
+      SCRIPT ingsetall
+      SCRIPT ingunsetall
+  }

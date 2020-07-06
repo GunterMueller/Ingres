@@ -1,0 +1,61 @@
+/*
+** Copyright (c) 2006 Ingres Corporation 
+*/
+/*
+** Generic contents file for spatial release
+/
+ 
+/*
+** History
+**	29-mar-2006 (hweho01)
+**	   Created for spatial object release on Unix.
+*/
+
+# ifdef R_SPATIAL
+
+RELEASE Ingres
+
+PACKAGE spatialpack
+
+    VISIBLEPKG
+    INCLUDE spatial 
+
+
+PACKAGE spatial
+
+   DIRECTORY ingres!files
+   PART spatial
+     DEFINITION spatial.prt
+
+# ifdef conf_ADD_ON64
+   PART spatial64
+     DEFINITION spatial64.prt
+# endif /* conf_ADD_ON64 */
+
+/*
+** The installation utility package
+*/
+
+PACKAGE install 
+
+   INVISIBLE
+
+   INCLUDE messages
+   INCLUDE frs 
+
+   DIRECTORY ingres!install
+
+   PART messages
+      DEFINITION messages.prt
+
+   PART install
+      DEFINITION install.prt
+
+   PART frs
+      DEFINITION frs.prt
+
+
+# endif /* R_SPATIAL */
+/*
+** Warning: the installation package must be the last thing in this file. 
+*/

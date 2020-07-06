@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/ingres/!svn/ver/1/main/src/front/abf/sql
+END
+oslsql.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/abf/sql/oslsql.exe.manifest
+END
+sqlkw.roc
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/sql/sqlkw.roc
+END
+oslsmain.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/sql/oslsmain.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/abf/sql/Jamfile
+END
+sql.sy
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/abf/sql/sql.sy
+END
+oslsql.lot
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/sql/oslsql.lot
+END

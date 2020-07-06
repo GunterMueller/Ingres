@@ -1,0 +1,15 @@
+#
+# Jamfile file for front!ice!public
+#
+# History:
+#	08-dec-2004 (abbjo03)
+#	    Use DFS instead of slash for portability.
+
+SubDir ING_SRC front ice public ;
+
+IISUBSYS front ice public ;
+
+IIICEFILE public$(DFS)exception.html : exception.html ;
+IIICEFILE public$(DFS)ice.css : ice.css ;
+IIICEFILE public$(DFS)ice_index.html : ice_index.html ;
+

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/cl/clf/misc_vms
+END
+jacket.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/misc_vms/jacket.c
+END
+backmain.mar
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/misc_vms/backmain.mar
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/cl/clf/misc_vms/Jamfile
+END
+frontstart.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/misc_vms/frontstart.c
+END
+miscerr.msg
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/cl/clf/misc_vms/miscerr.msg
+END
+miscvalue.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/cl/clf/misc_vms/miscvalue.c
+END
+frontmain.mar
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/clf/misc_vms/frontmain.mar
+END

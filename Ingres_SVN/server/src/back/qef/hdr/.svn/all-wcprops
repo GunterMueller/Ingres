@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/ingres/!svn/ver/1/main/src/back/qef/hdr
+END
+qefdsh.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/qef/hdr/qefdsh.h
+END
+qefgbl.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/qef/hdr/qefgbl.h
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/qef/hdr/Jamfile
+END
+qefptr.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/qef/hdr/qefptr.h
+END
+qefprotos.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/qef/hdr/qefprotos.h
+END
+qefcat.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/qef/hdr/qefcat.h
+END
+qefkon.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/qef/hdr/qefkon.h
+END
+qeugrant.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/qef/hdr/qeugrant.h
+END
+qeurevoke.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/qef/hdr/qeurevoke.h
+END
+qefqry.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/qef/hdr/qefqry.h
+END

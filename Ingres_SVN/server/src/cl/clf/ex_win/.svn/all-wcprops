@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/ingres/!svn/ver/1/main/src/cl/clf/ex_win
+END
+exdump.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/cl/clf/ex_win/exdump.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/cl/clf/ex_win/Jamfile
+END
+exdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/cl/clf/ex_win/exdata.c
+END
+exerr.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/cl/clf/ex_win/exerr.h
+END
+exi.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/cl/clf/ex_win/exi.h
+END
+exclient.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/ex_win/exclient.c
+END
+ex.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/cl/clf/ex_win/ex.c
+END

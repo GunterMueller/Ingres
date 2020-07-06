@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix
+END
+didirloc.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix/didirloc.h
+END
+diflush.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix/diflush.c
+END
+diregstr.sql
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix/diregstr.sql
+END
+diwrite.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix/diwrite.c
+END
+dilocal.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix/dilocal.c
+END
+dialloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix/dialloc.c
+END
+diforce.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix/diforce.c
+END
+dilocal.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix/dilocal.h
+END
+diguara.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix/diguara.c
+END
+diopen.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix/diopen.c
+END
+digalloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix/digalloc.c
+END
+dilru.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix/dilru.c
+END
+didelete.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix/didelete.c
+END
+dicreate.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix/dicreate.c
+END
+diclose.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix/diclose.c
+END
+diddelete.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix/diddelete.c
+END
+didcreate.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix/didcreate.c
+END
+dilru.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix/dilru.h
+END
+direname.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix/direname.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix/Jamfile
+END
+digather.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix/digather.c
+END
+dislave.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix/dislave.c
+END
+dilist.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix/dilist.c
+END
+dimo.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix/dimo.c
+END
+diread.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix/diread.c
+END
+diasync.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix/diasync.c
+END
+disense.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix/disense.c
+END
+digather.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix/digather.h
+END
+dimo.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/cl/clf/di_unix/dimo.h
+END

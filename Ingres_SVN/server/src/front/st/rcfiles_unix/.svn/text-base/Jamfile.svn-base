@@ -1,0 +1,10 @@
+#
+# Jamfile file for front!st!rcfiles_unix
+#
+
+SubDir ING_SRC front st rcfiles_unix ;
+
+IISUBSYS front st rcfiles_unix ;
+
+
+IIRemRCComments $(INGFILES)/rcfiles/lnx.rc : lnx.rc ;

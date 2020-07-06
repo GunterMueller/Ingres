@@ -1,0 +1,130 @@
+	.title	mhmul
+;
+;	Copyright (c) 1989	Ingres Corporation
+;
+;
+;   Description:
+;	Contains MH routine for decimal multiplication.  
+;
+;	Globally visible entry point:
+;	    MHpkmul	    - multiply two decimal numbers
+;
+;   History:
+;	26-jun-95 (wagner)
+;	    	Created.  Actually, extracted from MHDEC.MAR because of a weird
+;		bug in the AXP/VMS macro compiler that can be worked around by
+;		placing this routine in its own module.
+;       06-Mar-2003 (horda03) Bug 95576
+;               If the sum of the precisions are > 31, then need use the C code
+;               version, as the OS function may return a result which is later
+;               coerced incorrectly (when sum of scales = 31).
+;       15-nov-2004 (huazh01)
+;               change the prototypes of MHpkadd_sim()/MHpksub_sim()/
+;               MHpkmul_sim()/MHpkdiv_sim(). 
+;               b113059, INGSRV2964.
+;
+;
+	.psect	$code$	pic,con,rel,lcl,shr,exe,nord,nowrt,novec,4
+
+
+;
+; Name: MHpkmul - Multiply two packed decimals.
+;
+; Description:
+;      Multiplies two packed decimals and returns the result in another
+;      packed decimal.  The precision and scale of the result are
+;      also returned, and are calculated thus:
+;
+;          pout = min(31, (p1+p2))
+;          sout = min(31, (s1+s2))
+;
+;	This routine attempts the multiplication using MULP first, and if
+;	it overflows, we call MHpkmul_sim which tries the multiplication in
+;	software.
+;
+; Inputs:
+;      pk1                             Pointer to the multiplicand.
+;      p1                              Its precision:  1 <= p1 <= 31.
+;      s1                              Its scale:  0 <= s1 <= p1.
+;      pk2                             Pointer to the multiplier.
+;      p2                              Its precision:  1 <= p2 <= 31.
+;      s2                              Its scale:  0 <= s2 <= p2.
+;
+; Outputs:
+;      pkout                           The resulting packed decimal value is
+;                                      placed here.
+;      pout                            Its precision will be calculated based
+;                                      on the above formula, and placed here.
+;      sout                            Its scale will be calculated based
+;                                      on the above formula, and placed here.
+;
+;      Returns:
+;          VOID
+;
+;      Exceptions:
+;          EXDECOVF                    Result has too many non-fractional
+;                                      digits; i.e. more than (pout - sout)
+;                                      of them.
+;
+; Side Effects:
+;          none
+;
+; History:
+;	01-sep-89 (jrb)
+;	    Written.
+;       15-nov-2004 (huazh01)
+;           Change the prototypes for MHpkadd_sim() / MHpksub_sim() / 
+;           MHpkdiv_sim()/Mhpkmul_sim() from (..., nat pout, nat sout) to 
+;           (..., nat *pout, nat *sout). This fixes b113059, INGSRV2964.
+;
+pk1	= 4
+p1	= 8
+s1	= 12
+pk2	= 16
+p2	= 20
+s2	= 24
+pkout	= 28
+pout	= 32
+sout	= 36
+pktmp	= -16
+
+	.entry	MHpkmul,^m<r2,r3,r4,r5,r6>
+	subl2	#16,sp
+	addl3	p1(ap),p2(ap),r0	; calculate result precision
+	cmpl	r0,#31
+	bgeq	mul03			; Sum of precision >= 31, therefore
+					; use MHpkmul_sim to ensure that the
+					; result is coerced to required format.
+mul01:	movl	r0,@pout(ap)
+	addl3	s1(ap),s2(ap),r1	; calculate result scale
+	subl3	r1,#31,r6
+	bgeq	mul02			; if over 31 we have to shift it
+	movl	#31,@sout(ap)
+	mulp	p1(ap),@pk1(ap),p2(ap),@pk2(ap),#31,pktmp(fp)
+	bvs	mul03
+	ashp	r6,#31,pktmp(fp),#0,#31,@pkout(ap)
+	ret
+mul02:	movl	r1,@sout(ap)
+	mulp	p1(ap),@pk1(ap),p2(ap),@pk2(ap),r0,@pkout(ap)
+	bvs	mul03
+	ret
+;
+; If we overflowed, call MHpkmul_sim to try the multiplication in software.
+; This is necessary because it is legal to truncate fractional digits if
+; necessary when doing multiplication.  Since the VAX instructions only
+; support integral packed decimals, they of course have no concept of
+; fractional digits.  The C code which we are going to call knows how to
+; do all the right things.
+;
+mul03:	pushl	sout(ap)
+	pushl	pout(ap)
+	pushl	pkout(ap)
+	pushl	s2(ap)
+	pushl	p2(ap)
+	pushl	pk2(ap)
+	pushl	s1(ap)
+	pushl	p1(ap)
+	pushl	pk1(ap)
+	calls	#9,MHPKMUL_SIM
+	ret
+	.end

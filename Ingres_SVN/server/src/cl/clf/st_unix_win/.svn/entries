@@ -1,0 +1,52 @@
+8
+
+dir
+33
+http://code.ingres.com/ingres/main/src/cl/clf/st_unix_win
+http://code.ingres.com/ingres
+
+
+
+2008-03-20T07:36:25.925856Z
+1
+root
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+45b5d43f-8932-4c86-835a-3654e5842839
+
+Jamfile
+file
+
+
+
+
+2008-05-18T01:27:45.000000Z
+5f57873c4e86824df8a029d9c1d3ff14
+2008-03-20T07:36:25.925856Z
+1
+root
+
+stprintf.c
+file
+
+
+
+
+2008-05-18T01:27:45.000000Z
+2a69d424743c81edd6b684e4b7395716
+2008-03-20T07:36:25.925856Z
+1
+root
+

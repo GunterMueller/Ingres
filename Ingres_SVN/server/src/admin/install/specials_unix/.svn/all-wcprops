@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/admin/install/specials_unix
+END
+dmfinfo.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/admin/install/specials_unix/dmfinfo.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/admin/install/specials_unix/Jamfile
+END
+dual.vax_ulx
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/admin/install/specials_unix/dual.vax_ulx
+END
+w4mfest.ccpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/admin/install/specials_unix/w4mfest.ccpp
+END
+dual.pyr
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/admin/install/specials_unix/dual.pyr
+END
+writedist.w4g
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/admin/install/specials_unix/writedist.w4g
+END

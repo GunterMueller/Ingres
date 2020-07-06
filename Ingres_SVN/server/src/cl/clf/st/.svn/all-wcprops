@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/ingres/!svn/ver/1/main/src/cl/clf/st
+END
+stlpolycat.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/cl/clf/st/stlpolycat.c
+END
+sttrmnwhi.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/cl/clf/st/sttrmnwhi.c
+END
+strskip.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/cl/clf/st/strskip.c
+END
+strindex.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/cl/clf/st/strindex.c
+END
+stalloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/cl/clf/st/stalloc.c
+END
+strstrix.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/cl/clf/st/strstrix.c
+END
+sttrmwhit.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/cl/clf/st/sttrmwhit.c
+END
+stzapblnk.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/cl/clf/st/stzapblnk.c
+END
+stscompar.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/cl/clf/st/stscompar.c
+END
+stskip.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/cl/clf/st/stskip.c
+END
+stmove.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/cl/clf/st/stmove.c
+END
+stcat.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/cl/clf/st/stcat.c
+END
+stindex.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/cl/clf/st/stindex.c
+END
+stxcompar.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/cl/clf/st/stxcompar.c
+END
+stcopy.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/cl/clf/st/stcopy.c
+END
+stpolycat.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/cl/clf/st/stpolycat.c
+END
+ststridx.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/cl/clf/st/ststridx.c
+END
+sttalloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/cl/clf/st/sttalloc.c
+END
+stgetwrds.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/cl/clf/st/stgetwrds.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/cl/clf/st/Jamfile
+END
+stlength.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/cl/clf/st/stlength.c
+END
+stbcompar.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/cl/clf/st/stbcompar.c
+END
+stlcopy.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/cl/clf/st/stlcopy.c
+END
+stcompare.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/cl/clf/st/stcompare.c
+END

@@ -1,0 +1,5 @@
+PART   iievutil
+   BUILD_DIR (ING_BUILD)!sig!iievutil
+   DIRECTORY ingres!sig!iievutil
+      EXECUTABLE iievutil
+      FILE read.me

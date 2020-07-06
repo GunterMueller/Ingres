@@ -1,0 +1,293 @@
+Summary: %rpm_product% - Star Distributed DBMS
+Name: %rpm_basename%%rpm_specname%
+Version: %rpm_version%
+Release: %rpm_release%
+License: %rpm_license%
+Group: %rpm_group%
+Source: none
+Patch: none
+Vendor: %rpm_vendor%
+URL: %rpm_url%
+BuildRoot: %rpm_buildroot%
+Prefix: %rpm_prefix%
+PreReq: %rpm_basename% = %rpm_version%-%rpm_release%
+PreReq: %rpm_basename%-dbms = %rpm_version%-%rpm_release%
+PreReq: %rpm_basename%-net = %rpm_version%-%rpm_release%
+Provides: %rpm_basename%%rpm_specname%
+Obsoletes: ca-ingres%rpm_specname%
+
+AutoReq: 0
+%define _unpackaged_files_terminate_build 0 
+%define _missing_doc_files_terminate_build 0
+
+%description 
+%product_name% Star Distributed DBMS
+
+The %product_name% Star Distributed DBMS is a distributed extension to the %product_name% Intelligent DBMS server which allows data from multiple independent databases to be accessed as if contained in a single, centralized relational database.  In this way, %product_name% Star provides client applications with transparent access to enterprise-wide data.
+
+In addition to supporting access to %product_name% databases, %product_name% Star can seamlessly integrate data from other database systems, with the addition of %product_name% Networking and Enterprise Access extensions. In combination, these %product_name% products allow seamless, distributed access to data stored in a wide variety of database systems: IBM DB2, IBM IMS, IBM ISAM, IBM VSAM, DEC RMS, DEC Rdb, and HP data in ALLBASE/SQL or TurboIMAGE/XL.
+
+%prep
+
+%pre
+# RPM install option for PIF
+# PIF_RPM_UPDATE_OPTION= --nodeps --replacefiles --replacepkgs
+#set environment from RPM info
+[ -z "$RPM_INSTALL_PREFIX" ] && RPM_INSTALL_PREFIX=%prefix
+II_SYSTEM=$RPM_INSTALL_PREFIX
+PATH=$II_SYSTEM/ingres/bin:$II_SYSTEM/ingres/utility:$PATH
+LD_LIBRARY_PATH=/lib:/usr/lib:$II_SYSTEM/ingres/lib
+export II_SYSTEM PATH LD_LIBRARY_PATH
+export rpm_vers=%rpm_version%
+unset BASH_ENV
+
+# Mesg cmds.
+ECHO=echo
+CAT=cat
+
+rc=0 # initialize return code
+
+#Silent install?
+[ -x $II_SYSTEM/ingres/utility/iiread_response ] && \
+	[ -r "$II_RESPONSE_FILE" ] &&
+{
+    silent=`iiread_response SILENT_INSTALL $II_RESPONSE_FILE`
+    [ "$silent" ] &&
+    {
+	ECHO=true
+	CAT=true
+    }
+    export ECHO CAT
+}
+
+[ ! -r $II_SYSTEM/ingres/version.rel ] || \
+[ "$rpm_vers" != `head -1 $II_SYSTEM/ingres/version.rel | cut -d' ' -f2` ] &&
+{
+    echo "%rpm_basename% is not installed under $II_SYSTEM"
+    echo "Aborting installation..."
+    rc=1
+    exit $rc
+}
+
+if [ ! -x $II_SYSTEM/ingres/utility/iipmhost -o \
+     ! -x $II_SYSTEM/ingres/utility/iigetres ] ; then
+	echo "%rpm_basename% base package files are missing"
+	echo "Aborting installation..."
+	exit 1
+fi
+
+#Check for install userid, groupid
+CONFIG_HOST=`iipmhost`
+[ "$CONFIG_HOST" ] && \
+{
+	II_USERID=`iigetres ii.${CONFIG_HOST}.setup.owner.user`
+	II_GROUPID=`iigetres ii.${CONFIG_HOST}.setup.owner.group`
+	export II_USERID II_GROUPID
+}
+if [ ! "$II_USERID" -o ! "$II_GROUPID" ] ; then
+	echo "%rpm_basename% base package install was invalid"
+	echo "Aborting installation..."
+	exit 1
+fi
+
+. iisysdep
+inst_id=`ingprenv II_INSTALLATION`
+rcfile=$ETCRCFILES/ingres${inst_id}
+inst_log="2>&1 | cat >> $II_SYSTEM/ingres/files/install.log"
+
+#Check to see if instance is running and try to shut it down
+#Abort the install is we can't
+[ -x $rcfile ] && [ -f $II_SYSTEM/ingres/files/config.dat ] &&
+{
+    eval $rcfile status >& /dev/null
+    if [ $? = 0 ]
+    then
+        eval $rcfile stop $inst_log
+        if [ $? != 0 ] ; then
+            rc=2
+            cat << EOF
+%product_brandname% installation $inst_id is running and could not be cleanly shutdown.
+Aborting installation...
+EOF
+            exit $rc
+        fi
+    fi
+}
+
+# Abort if response file is set but invalid
+[ "$II_RESPONSE_FILE" ] && [ ! -f "$II_RESPONSE_FILE" ] && {
+rc=3
+cat << !
+Cannot locate response file.
+
+	II_RESPONSE_FILE=$II_RESPONSE_FILE
+!
+exit $rc
+}
+
+[ "$II_RESPONSE_FILE" ] && {
+
+# Check response file is readable by specified installation owner.
+# If not abort the install before it starts.
+    if su -c "[ ! -r \"$II_RESPONSE_FILE\" ]" $II_USERID ; then
+	rc=4
+        cat << !
+Response file is not readable by user $II_USERID
+
+        II_RESPONSE_FILE=$II_RESPONSE_FILE
+
+If user $II_USERID does not exists, the response file should be
+globally readable.
+!
+        exit $rc
+    fi
+}
+
+
+exit $rc
+
+%install
+
+%post
+#Check for user defined installation ID otherwise default to II
+[ -z "$RPM_INSTALL_PREFIX" ] && RPM_INSTALL_PREFIX=%prefix
+II_SYSTEM=$RPM_INSTALL_PREFIX
+PATH=$II_SYSTEM/ingres/bin:$II_SYSTEM/ingres/utility:$PATH
+LD_LIBRARY_PATH=/lib:/usr/lib:$II_SYSTEM/ingres/lib
+export II_SYSTEM PATH LD_LIBRARY_PATH
+unset BASH_ENV
+. iishlib
+
+rc=0 # initialize return code
+
+# Mesg cmds.
+ECHO=echo
+CAT=cat
+
+#Silent install?
+[ -x $II_SYSTEM/ingres/utility/iiread_response ] && \
+	[ -r "$II_RESPONSE_FILE" ] &&
+{
+    silent=`iiread_response SILENT_INSTALL $II_RESPONSE_FILE`
+    [ "$silent" ] &&
+    {
+	ECHO=true
+	CAT=true
+    }
+    export ECHO CAT
+}
+
+#Check for install userid, groupid
+CONFIG_HOST=`iipmhost`
+II_USERID=`iigetres ii.${CONFIG_HOST}.setup.owner.user`
+II_GROUPID=`iigetres ii.${CONFIG_HOST}.setup.owner.group`
+export II_USERID II_GROUPID
+
+# Use response file if one if provided
+IISUFLAG="-rpm"
+[ "$II_RESPONSE_FILE" ] && IISUFLAG="$IISUFLAG -exresponse $II_RESPONSE_FILE"
+export II_SUFLAG
+
+# correct dir ownership
+chown $II_USERID:$II_GROUPID ${II_SYSTEM}/ingres/.
+for dir in bin demo files ice install lib sig utility vdba
+do
+    [ -d "${II_SYSTEM}/ingres/${dir}/." ] && \
+    chown -R $II_USERID:$II_GROUPID ${II_SYSTEM}/ingres/${dir}/.
+done
+
+# and version.rel
+chown $II_USERID:$II_GROUPID ${II_SYSTEM}/ingres/version.rel
+
+
+    # If ingvalidpw exists then it needs to be owned by root
+    # and have SUID set.
+    [ -x $II_SYSTEM/ingres/bin/ingvalidpw ] && {
+        chown root $II_SYSTEM/ingres/bin/ingvalidpw
+        chmod 4755 $II_SYSTEM/ingres/bin/ingvalidpw
+    }
+
+
+# Run setup
+su -m -c "iisustar $IISUFLAG || ( echo 'Setup of %product_name% Star Distributed DBMS failed.' && echo 'See $II_SYSTEM/ingres/files/install.log for more info.' )" $II_USERID || rc=1
+
+# fix setuid
+set_setuid
+
+exit $rc
+
+%preun
+if [ $1 = 0 ] ; then
+#Set environment from RPM info
+[ -z "$RPM_INSTALL_PREFIX" ] && RPM_INSTALL_PREFIX=%prefix
+II_SYSTEM=$RPM_INSTALL_PREFIX
+PATH=$II_SYSTEM/ingres/bin:$II_SYSTEM/ingres/utility:$PATH
+LD_LIBRARY_PATH=/lib:/usr/lib:$II_SYSTEM/ingres/lib
+export II_SYSTEM PATH LD_LIBRARY_PATH
+unset BASH_ENV
+
+rc=0 # initialize return code
+
+# Mesg cmds.
+ECHO=echo
+CAT=cat
+
+#Silent install?
+[ -x $II_SYSTEM/ingres/utility/iiread_response ] && \
+	[ -r "$II_RESPONSE_FILE" ] &&
+{
+    silent=`iiread_response SILENT_INSTALL $II_RESPONSE_FILE`
+    [ "$silent" ] &&
+    {
+	ECHO=true
+	CAT=true
+    }
+    export ECHO CAT
+}
+
+$ECHO "Removing %product_name% Star Distributed DBMS..."
+sleep 5
+
+if [ -x $II_SYSTEM/ingres/utility/iisysdep ] ; then
+    . iisysdep
+    inst_id=`ingprenv II_INSTALLATION`
+    rcfile=$ETCRCFILES/ingres${inst_id}
+    inst_log="2>&1 | cat >> $II_SYSTEM/ingres/files/install.log"
+
+    #Check for install userid, groupid
+    CONFIG_HOST=`iipmhost`
+    II_USERID=`iigetres ii.${CONFIG_HOST}.setup.owner.user`
+    II_GROUPID=`iigetres ii.${CONFIG_HOST}.setup.owner.group`
+    export II_USERID II_GROUPID
+
+    #Check to see if instance is running and try to shut it down
+    #Abort the install is we can't
+    [ -x $rcfile ] && [ -f $II_SYSTEM/ingres/files/config.dat ] &&
+    {
+        eval $rcfile status >& /dev/null
+        if [ $? = 0 ]
+        then
+            eval $rcfile stop $inst_log
+            if [ $? != 0 ] ; then
+                rc=2
+                cat << EOF
+%product_brandname% installation $inst_id is running and could not be cleanly shutdown.
+Aborting installation...
+EOF
+                exit $rc
+            fi
+        fi
+    }
+
+    su -m -c "iisustar -rmpkg" $II_USERID >> /dev/null
+
+fi
+
+exit $rc
+
+else
+    exit 0
+fi
+
+%files
+

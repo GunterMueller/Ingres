@@ -1,0 +1,23 @@
+#!/bin/bash
+#  Copyright (c) 2004 Ingres Corporation
+#
+#  Name: iichkraw.sh - determine whether named file is character special
+#
+#  Usage:
+#	iichkraw file
+#
+#  Description
+#	Called by the forms-based condiguration utility to determine
+#	whether a transaction log file is a special-character file
+#	(i.e. a raw log).
+#
+#  PROGRAM = iichkraw
+#
+#  DEST = utility
+#----------------------------------------------------------------------------
+
+[ $# != 1 ] && exit 1
+
+[ -c $1 ] && exit 0
+
+exit 1

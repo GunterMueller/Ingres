@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/ingres/!svn/ver/1/main/src/front/vdba/rmcmd
+END
+rmcmdout.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/vdba/rmcmd/rmcmdout.exe.manifest
+END
+rmcmdmon.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/vdba/rmcmd/rmcmdmon.sc
+END
+rmcmdgen.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/vdba/rmcmd/rmcmdgen.exe.manifest
+END
+erre.msg
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/vdba/rmcmd/erre.msg
+END
+rmcmdrmv.lot
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/vdba/rmcmd/rmcmdrmv.lot
+END
+rmcmdv.lot
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/vdba/rmcmd/rmcmdv.lot
+END
+rmcmdstp.lot
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/vdba/rmcmd/rmcmdstp.lot
+END
+rmcmdin.lot
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/vdba/rmcmd/rmcmdin.lot
+END
+rmcmdout.lot
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/vdba/rmcmd/rmcmdout.lot
+END
+rmcmd.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/vdba/rmcmd/rmcmd.exe.manifest
+END
+rmcmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/vdba/rmcmd/rmcmd.h
+END
+rmcmdgen.lot
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/vdba/rmcmd/rmcmdgen.lot
+END
+rmcmdrmv.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/vdba/rmcmd/rmcmdrmv.sc
+END
+rmcmdstp.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/vdba/rmcmd/rmcmdstp.sc
+END
+rmcmdin.sc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/vdba/rmcmd/rmcmdin.sc
+END
+rmcmdout.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/vdba/rmcmd/rmcmdout.sc
+END
+rmcmd.lot
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/vdba/rmcmd/rmcmd.lot
+END
+rmcmdgen.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/vdba/rmcmd/rmcmdgen.sc
+END
+rmcmdgca.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/vdba/rmcmd/rmcmdgca.h
+END
+rmcmd.sc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/vdba/rmcmd/rmcmd.sc
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/vdba/rmcmd/Jamfile
+END
+rmcmdv.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/vdba/rmcmd/rmcmdv.c
+END
+rmcmdprv.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/vdba/rmcmd/rmcmdprv.c
+END
+dba.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/vdba/rmcmd/dba.h
+END
+rmcmdrmv.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/vdba/rmcmd/rmcmdrmv.exe.manifest
+END
+rmcmdin.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/vdba/rmcmd/rmcmdin.exe.manifest
+END
+rmcmdstp.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/vdba/rmcmd/rmcmdstp.exe.manifest
+END

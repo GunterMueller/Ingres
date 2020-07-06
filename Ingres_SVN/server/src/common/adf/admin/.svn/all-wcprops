@@ -1,0 +1,245 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/ingres/!svn/ver/1/main/src/common/adf/admin
+END
+nvarchar.log
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/common/adf/admin/nvarchar.log
+END
+makefile.wnt
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/common/adf/admin/makefile.wnt
+END
+nvarchar.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/adf/admin/nvarchar.c
+END
+depend.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/adf/admin/depend.h
+END
+op_load.qry
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/common/adf/admin/op_load.qry
+END
+makefile.w64
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/common/adf/admin/makefile.w64
+END
+op_load.log
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/common/adf/admin/op_load.log
+END
+op.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/common/adf/admin/op.c
+END
+Makefile.ccpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/common/adf/admin/Makefile.ccpp
+END
+iimhpk.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/adf/admin/iimhpk.c
+END
+cpx.qry
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/adf/admin/cpx.qry
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/adf/admin/MANIFEST
+END
+iicvpk.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/adf/admin/iicvpk.c
+END
+cpx.log
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/adf/admin/cpx.log
+END
+cpx.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/common/adf/admin/cpx.c
+END
+ccvms.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/adf/admin/ccvms.dcl
+END
+makefile.amd_w64
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/adf/admin/makefile.amd_w64
+END
+numeric.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/common/adf/admin/numeric.txt
+END
+zchar.qry
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/adf/admin/zchar.qry
+END
+udt.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/common/adf/admin/udt.h
+END
+iipk.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/common/adf/admin/iipk.h
+END
+numeric.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/adf/admin/numeric.c
+END
+makeor.wnt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/adf/admin/makeor.wnt
+END
+zchar.log
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/adf/admin/zchar.log
+END
+op_test.qry
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/common/adf/admin/op_test.qry
+END
+zchar.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/adf/admin/zchar.c
+END
+pnum_test.qry
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/common/adf/admin/pnum_test.qry
+END
+wgl_32s.hrd
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/common/adf/admin/wgl_32s.hrd
+END
+op_test.log
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/common/adf/admin/op_test.log
+END
+pnum_test.log
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/common/adf/admin/pnum_test.log
+END
+build.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/adf/admin/build.dcl
+END
+intlist.qry
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/common/adf/admin/intlist.qry
+END
+iiadd.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/adf/admin/iiadd.h
+END
+udttest.bat
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/common/adf/admin/udttest.bat
+END
+udttest.sh
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/adf/admin/udttest.sh
+END
+intlist.log
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/common/adf/admin/intlist.log
+END
+intlist.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/adf/admin/intlist.c
+END
+common.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/adf/admin/common.c
+END
+Makefile64.ccpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/adf/admin/Makefile64.ccpp
+END
+nvarchar.qry
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/common/adf/admin/nvarchar.qry
+END

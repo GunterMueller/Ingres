@@ -1,0 +1,55 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libtree", "libtree.vcproj", "{B35B68AF-C8FD-42E5-A5D3-0E242D9D279A}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 1
+		SccProjectUniqueName0 = libtree.vcproj
+		SccProjectName0 = \u0022$/COM/Libtree\u0022,\u0020SPHAAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		AIX_Release = AIX_Release
+		Debug = Debug
+		DebugU = DebugU
+		EDBC_Debug = EDBC_Debug
+		EDBC_Release = EDBC_Release
+		HPUX_Debug = HPUX_Debug
+		HPUX_Release = HPUX_Release
+		Linux_Release = Linux_Release
+		Release = Release
+		ReleaseU = ReleaseU
+		Solaris_Release = Solaris_Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{B35B68AF-C8FD-42E5-A5D3-0E242D9D279A}.AIX_Release.ActiveCfg = AIX_Release|Win32
+		{B35B68AF-C8FD-42E5-A5D3-0E242D9D279A}.AIX_Release.Build.0 = AIX_Release|Win32
+		{B35B68AF-C8FD-42E5-A5D3-0E242D9D279A}.Debug.ActiveCfg = Debug|Win32
+		{B35B68AF-C8FD-42E5-A5D3-0E242D9D279A}.Debug.Build.0 = Debug|Win32
+		{B35B68AF-C8FD-42E5-A5D3-0E242D9D279A}.DebugU.ActiveCfg = DebugU|Win32
+		{B35B68AF-C8FD-42E5-A5D3-0E242D9D279A}.DebugU.Build.0 = DebugU|Win32
+		{B35B68AF-C8FD-42E5-A5D3-0E242D9D279A}.EDBC_Debug.ActiveCfg = EDBC_Debug|Win32
+		{B35B68AF-C8FD-42E5-A5D3-0E242D9D279A}.EDBC_Debug.Build.0 = EDBC_Debug|Win32
+		{B35B68AF-C8FD-42E5-A5D3-0E242D9D279A}.EDBC_Release.ActiveCfg = EDBC_Release|Win32
+		{B35B68AF-C8FD-42E5-A5D3-0E242D9D279A}.EDBC_Release.Build.0 = EDBC_Release|Win32
+		{B35B68AF-C8FD-42E5-A5D3-0E242D9D279A}.HPUX_Debug.ActiveCfg = HPUX_Debug|Win32
+		{B35B68AF-C8FD-42E5-A5D3-0E242D9D279A}.HPUX_Debug.Build.0 = HPUX_Debug|Win32
+		{B35B68AF-C8FD-42E5-A5D3-0E242D9D279A}.HPUX_Release.ActiveCfg = HPUX_Release|Win32
+		{B35B68AF-C8FD-42E5-A5D3-0E242D9D279A}.HPUX_Release.Build.0 = HPUX_Release|Win32
+		{B35B68AF-C8FD-42E5-A5D3-0E242D9D279A}.Linux_Release.ActiveCfg = Linux_Release|Win32
+		{B35B68AF-C8FD-42E5-A5D3-0E242D9D279A}.Linux_Release.Build.0 = Linux_Release|Win32
+		{B35B68AF-C8FD-42E5-A5D3-0E242D9D279A}.Release.ActiveCfg = Release|Win32
+		{B35B68AF-C8FD-42E5-A5D3-0E242D9D279A}.Release.Build.0 = Release|Win32
+		{B35B68AF-C8FD-42E5-A5D3-0E242D9D279A}.ReleaseU.ActiveCfg = ReleaseU|Win32
+		{B35B68AF-C8FD-42E5-A5D3-0E242D9D279A}.ReleaseU.Build.0 = ReleaseU|Win32
+		{B35B68AF-C8FD-42E5-A5D3-0E242D9D279A}.Solaris_Release.ActiveCfg = Solaris_Release|Win32
+		{B35B68AF-C8FD-42E5-A5D3-0E242D9D279A}.Solaris_Release.Build.0 = Solaris_Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

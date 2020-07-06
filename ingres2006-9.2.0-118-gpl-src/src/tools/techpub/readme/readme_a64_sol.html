@@ -1,0 +1,260 @@
+<HTML>
+<HEAD>
+<!-- Created with DOC2HTML, v585 (12/13/2005) -->
+<title>Ingres® 2006 9.0.4 for Sun Solaris x86 on AMD64 (a64.sol)</title>
+<META HTTP-EQUIV="Content-Type" Content="text-html; charset=Windows-1252">
+<style>
+<!--
+A:link                       { text-decoration: underline; font-weight: bold; color: #336699  }
+A:visited                    { text-decoration: underline; font-weight: bold; color: #336699  }
+BODY                         { font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-size: 80%; font-weight: normal; color: 00000  }
+TABLE                        { font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-size: 100%; color: 000000; }
+P                            { font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-weight: normal; color: #000000  }
+H1                           { font-size: 180%; font-weight: bold; color: #336699  }
+H2                           { font-size: 155%; font-weight: normal; font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; color: #336699  }
+H3                           { font-size: 130%; font-weight: bold; font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; color: #336699  }
+H4                           { font-size: 130%; font-weight: bold; font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; color: #336699  }
+ol, ul ol, ul ul ol          { list-style-type: decimal; list-style-image : none; }
+ol ol, ul ol ol, ol ul ol    { list-style-type: lower-alpha; list-style-image: none; }
+ul, ol ul, ol ol ul          { list-style-type: disc; list-style-image: none; }
+ul ul, ol ul ul, ul ol ul    { list-style-type: circle; list-style-image: none;}
+ul ul ul                     { list-style-type: square; list-style-image: none; }
+ol ol ol                     { list-style-type: upper-roman; list-style-image: none; }
+B                            { font-weight: bold  }
+STRONG                       { font-weight: bold  }
+I                            { font-style: italic  }
+EM                           { font-style: italic  }
+INPUT                        { color: #336699; font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-size: 90%; } /* Special */
+TEXTAREA                     { color: #336699; font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-size: 90%; } /* Special */
+BLOCKQUOTE                   { font-size: 80%; }
+PRE                          { font-family: "courier new", courier, monospace; font-size: 100%  }
+table, td                    { font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-weight: normal; color: #000000; vertical-align: top; border: 1px solid #EBEBEB; border-collapse: collapse; font-size: 12px; padding: 2px;}
+table.invis, td.invis        { font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-weight: normal; color: #000000; vertical-align: middle; border: 0px; border-collapse: collapse; font-size: 12px; padding: 2px;}
+th                           { font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-weight: bold; color: #000000; vertical-align: top; border: 1px solid #FFFFFF; background-color: #006699; color:#FFFFFF; text-align: left; padding: 2px;}
+tr.alt                       { background-color : #F1F5FA;}
+.computerassoc               { font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; color: #FFFFFF; text-decoration: none; background-color: #336699; font-size: 130%; font-weight: bold; }
+hr                           { color: #CCCCCC; height:1px; }
+-->
+</style>
+</HEAD>
+<BODY>
+<table width="100%"  border="0" cellspacing="0" cellpadding="0"><tr><td class="computerassoc">Ingres Corporation</td></tr></table>
+<h1><a name="ingres_2006_9_0_4_for_sun_solaris_x86_on_amd64_a64_sol">Ingres<sup>®</sup> 2006 9.0.4 for Sun Solaris x86 on AMD64 (a64.sol)</a></h1>
+<p>
+<hr>
+<nobr>
+<p><b><a href="#welcome">1.0  Welcome</a></b>
+<p><b><a href="#operating_system_support">2.0  Operating System Support</a></b>
+<br><a href="#preprocessor_and_compiler_support">2.1  Preprocessor and Compiler Support</a>
+<p><b><a href="#system_requirements">3.0  System Requirements</a></b>
+<br><a href="#disk_space_requirements">3.1  Disk Space Requirements</a>
+<p><b><a href="#installation_considerations">4.0  Installation Considerations</a></b>
+<br><a href="#mounting_the_cd">4.1  Mounting the CD</a>
+<br><a href="#shared_library_path">4.2  Shared Library Path</a>
+<br><a href="#syscheck_v">4.3  Syscheck -v</a>
+<br><a href="#visual_tools">4.4  Visual Tools</a>
+<br><a href="#web_server_support">4.5  Web Server Support</a>
+<br><a href="#protocols_supported">4.6  Protocols Supported</a>
+<p><b><a href="#other_platform_specific_installation_considerations">5.0  Other Platform Specific Installation Considerations</a></b>
+<br><a href="#operating_system_threads">5.1  Operating System Threads</a>
+<br><a href="#64_bit_file_support">5.2  64-Bit File Support</a>
+<br><a href="#64_bit_embedded_forms">5.3  64-Bit Embedded Forms</a>
+<br><a href="#upgrade_from_32_bit_to_64_bit_versions_of_ingres">5.4  Upgrade from 32-Bit to 64-Bit Versions of Ingres</a>
+</nobr>
+<p>
+<hr>
+<h2><a name="welcome">1.0  Welcome</a></h2>
+<p>This readme contains information specific to
+Ingres<sup>®</sup> running under Sun Solaris on AMD
+Opteron.  
+<p>
+<hr>
+<h2><a name="operating_system_support">2.0  Operating System Support</a></h2>
+<p>This release contains 32-bit and 64-bit support and
+supersedes Ingres II 2.5/0011(sui.us5/00).
+<p>Ingres 32-bit and 64-bit for Sun Solaris on x86 is
+supported on the following operating systems.
+<p><b>Sun Solaris</b> <b>10</b> <b>for</b> <b>x86</b>
+<b>compliant (32 or 64 bit, Intel or AMD Opteron)</b> 
+<p>Ingres supports these operating systems for the duration
+of their life cycle (as determined by the operating
+system's manufacturer or until Ingres Corporation announces
+that we are dropping support). For the latest information
+about supported operating systems, visit <a href="http://www.ingres.com/support" target="_blank">http://www.ingres.com/support</a>.
+<p>To check if a 64-bit kernel is running on Sun Solaris,
+issue the following command:
+<pre>
+isainfo -kv
+</pre>
+<p>If the return from the command is "64-bit amd64 kernel
+modules" then a 64-bit kernel is running.
+<p>
+<hr>
+<h3><a name="preprocessor_and_compiler_support">2.1  Preprocessor and Compiler Support</a></h3>
+<p>
+Sun™ Studio 10, Compiler Collection
+<p>The 64-bit Ingres library must be used to build 64-bit
+user applications (located in $II_SYSTEM/ingres/lib/lp64).  
+<p>Note: The recommended version of the Studio 10 Compiler
+is REV=2005.01.07 with additional patches 117837 and 117846
+<p>
+<hr>
+<h2><a name="system_requirements">3.0  System Requirements</a></h2>
+<p>These are the Solaris x86 specific requirements for
+installing Ingres.  For more generic System Requirements
+see the <i>Getting Started</i> guide
+<p>
+<hr>
+<h3><a name="disk_space_requirements">3.1  Disk Space Requirements</a></h3>
+<p>These are the disk space requirements for Sun Solaris
+64-bit with the following system configurations:  
+<p><table border>
+<tr>
+<th align=left valign=top>
+System Configuration
+</th>
+<th align=left valign=top>
+Space Required
+</th>
+</tr>
+<tr>
+<td>Client Only (Ingres Net) Install
+</td>
+<td>93 MB
+</td>
+</tr>
+<tr class="alt">
+<td>DBMS Server with Ingres Net Install
+</td>
+<td>241 MB
+</td>
+</tr>
+<tr>
+<td>Full installation plus Documentation
+</td>
+<td>525 MB
+</td>
+</tr>
+</table>
+<p>
+<hr>
+<h2><a name="installation_considerations">4.0  Installation Considerations</a></h2>
+<p>
+<hr>
+<h3><a name="mounting_the_cd">4.1  Mounting the CD</a></h3>
+<p>The instructions provided in this section for mounting
+the CD-ROM drive on your machine should be taken as an
+example only.  
+To mount the CD-ROM drive from a local host and perform the
+installation, do one of the following. (Note that if you
+have automount enabled on your system for the CD-ROM drive,
+then neither of these will be necessary, and an attempt to
+execute the mount command will produce an error indicating
+that the device is busy.)  
+<p>Either:  
+<ol>
+<p><li>Log in as root and put the following entry in
+<b>/etc/vfstab</b>:
+<pre>
+/dev/dsk/c0t6d0s2 /cdrom hsfs ro,noauto 0 0
+</pre>
+<p><li>Place the CD-ROM media in the CD-ROM drive and
+execute the following command:
+<pre>
+$ /usr/sbin/mount /cdrom
+</pre>
+<p><li>Continue as with any other installation. See the
+<i>Getting Started</i> guide for more information.
+</ol>
+<p>or:  
+<ol>
+<p><li>Log in as root and execute the following command
+<pre>
+$ /usr/sbin/mount -F hsfs -o ro /dev/dsk/c0t6d0s2 /cdrom
+</pre>
+<p><li>Continue as with any other installation. See the
+<i>Getting Started</i> guide for more information.
+</ol>
+<p>
+<hr>
+<h3><a name="shared_library_path">4.2  Shared Library Path</a></h3>
+<p>The library variable for Sun Solaris is
+<b>LD_LIBRARY_PATH</b>, which must be set in the user
+environment to include $II_SYSTEM/ingres/lib. In addition,
+for 64-bit installations, <b>LD_LIBRARY_PATH_64</b> must
+also be set in the user environment to include
+$II_SYSTEM/ingres/lib/lp64.  
+<p>
+<hr>
+<h3><a name="syscheck_v">4.3  Syscheck -v</a></h3>
+<p>You may see a discrepancy between what the C-shell
+command "limit" returns and what <b>syscheck -v</b> returns
+for the per-process limit on open file descriptors. This is
+because Ingres extends its default per-process limit for
+open file descriptors. The output from <b>syscheck -v</b>
+is correct. Here is a description of how to interpret the
+output:  
+<p><b>System Hard Limit</b> 
+<p>This is the absolute maximum number of open file
+descriptors that the operating system will permit. On
+Solaris, this value is 1024. 
+<p><b>System Soft Limit</b> 
+<p>This is the maximum number of open file descriptors that
+Ingres could conceivably get, depending on how many open
+files other processes have at that point in time. This
+value is also 1024 because Ingres uses SETRLIMIT() to
+extend the default value of 64. 
+<p>
+<hr>
+<h3><a name="visual_tools">4.4  Visual Tools</a></h3>
+<p>The Visual DBA suite is not included as part of the
+Ingres 2006 Open Source for Solaris. However, these tools
+can be deployed on a Windows PC against an Ingres
+installation on Solaris.
+<p>
+<hr>
+<h3><a name="web_server_support">4.5  Web Server Support</a></h3>
+<p>Ingres on Sun Solaris supports the following web
+servers:  
+<p><a href="http://www.apache.org/" target="_blank">Apache</a>
+HTTP server
+<p><b>Note:</b> Ingres has been tested with Apache HTTP
+server version 1.3
+<p>
+<hr>
+<h3><a name="protocols_supported">4.6  Protocols Supported</a></h3>
+<p>TCP/IP Native
+<p>
+<hr>
+<h2><a name="other_platform_specific_installation_considerations">5.0  Other Platform Specific Installation Considerations</a></h2>
+<p>
+<hr>
+<h3><a name="operating_system_threads">5.1  Operating System Threads</a></h3>
+<p>Ingres on Solaris x86 exploits Operating System threads.
+<p>
+<hr>
+<h3><a name="64_bit_file_support">5.2  64-Bit File Support</a></h3>
+<p>To utilize 64-bit file support, your file system must
+support large files.
+<p>
+<hr>
+<h3><a name="64_bit_embedded_forms">5.3  64-Bit Embedded Forms</a></h3>
+<p>64-bit ABF and Embedded FRS applications are not
+supported with this release.  
+<p>
+<hr>
+<h3><a name="upgrade_from_32_bit_to_64_bit_versions_of_ingres">5.4  Upgrade from 32-Bit to 64-Bit Versions of Ingres</a></h3>
+<p>This version of Ingres gives you the choice to install
+the 32-bit or 64-bit version. If the 64-bit components are
+selected for installation, prior 32-bit Ingres versions
+will be upgraded to the 64-bit version of Ingres. For more
+information on upgrading an Ingres instance, see the
+<i>Migration Guide</i>.
+<p>
+<hr>
+<font size=-2>
+© 2006 Ingres Corporation.
+All rights reserved.
+</font>
+</BODY>
+</HTML>

@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/tools/port/conf
+END
+VERS.ppc_lnx
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/conf/VERS.ppc_lnx
+END
+VERS.rs4_us5
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/conf/VERS.rs4_us5
+END
+VERS.hpb_us5
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/conf/VERS.hpb_us5
+END
+VERS.su4_us5
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/conf/VERS.su4_us5
+END
+VERS.r64_us5
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/conf/VERS.r64_us5
+END
+VERS.int_rpl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/conf/VERS.int_rpl
+END
+VERS.a64_sol
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/conf/VERS.a64_sol
+END
+VERS.a64_win
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/conf/VERS.a64_win
+END
+VERS.axm_vms
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/conf/VERS.axm_vms
+END
+VERS.a64_lnx
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/conf/VERS.a64_lnx
+END
+VERS.int_lnx
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/conf/VERS.int_lnx
+END
+VERS.su9_us5
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/conf/VERS.su9_us5
+END
+VERS.sgi_us5
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/conf/VERS.sgi_us5
+END
+VERS.i64_hpu
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/conf/VERS.i64_hpu
+END
+VERS.i64_win
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/conf/VERS.i64_win
+END
+VERS.int_lnx_LFS
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/conf/VERS.int_lnx_LFS
+END
+idirs.ccpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/tools/port/conf/idirs.ccpp
+END
+VERS.mg5_osx
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/conf/VERS.mg5_osx
+END
+hbdirs.ccpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/tools/port/conf/hbdirs.ccpp
+END
+VERS.int_osx
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/conf/VERS.int_osx
+END
+VERS.i64_lnx
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/conf/VERS.i64_lnx
+END
+VERS.hp2_us5
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/conf/VERS.hp2_us5
+END
+VERS.int_w32
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/conf/VERS.int_w32
+END
+VERS.rs4_us5_DBL
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/conf/VERS.rs4_us5_DBL
+END
+VERS.hpb_us5_DBL
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/conf/VERS.hpb_us5_DBL
+END
+CONFIG
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/tools/port/conf/CONFIG
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/tools/port/conf/MANIFEST
+END
+VERS.axp_osf
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/conf/VERS.axp_osf
+END
+VERS.usl_us5
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/conf/VERS.usl_us5
+END

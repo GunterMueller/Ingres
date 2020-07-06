@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/cl/clf/erold_unix
+END
+erloc_v1.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/erold_unix/erloc_v1.h
+END
+erloc_v2.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/erold_unix/erloc_v2.h
+END
+erloc_v3.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/erold_unix/erloc_v3.h
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/cl/clf/erold_unix/Jamfile
+END
+ercomp_v1.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/clf/erold_unix/ercomp_v1.c
+END
+ercomp_v2.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/clf/erold_unix/ercomp_v2.c
+END
+ercomp_v3.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/clf/erold_unix/ercomp_v3.c
+END

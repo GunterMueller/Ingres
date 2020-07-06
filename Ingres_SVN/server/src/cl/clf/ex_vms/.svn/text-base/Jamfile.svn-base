@@ -1,0 +1,11 @@
+#
+# Jamfile file for cl!clf!ex_vms
+#
+
+SubDir ING_SRC cl clf ex_vms ;
+
+IISUBSYS cl clf ex_vms ;
+
+IILIBRARY COMPATLIB : symbol.c exsysrep.c exstack.c
+        exsignal.c exsetup.c exmatch.c exintr.c exdump.c
+        evset.c excatch.c exunsave.c excore.c exgetctx.m64 ;

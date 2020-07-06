@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/front/tools/yycase
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/tools/yycase/Jamfile
+END
+wgl_32s.hnt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/tools/yycase/wgl_32s.hnt
+END
+wgl_wnt.hnt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/tools/yycase/wgl_wnt.hnt
+END
+yycase.lot
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/tools/yycase/yycase.lot
+END
+yycase.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/tools/yycase/yycase.c
+END

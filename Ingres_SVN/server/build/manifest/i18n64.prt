@@ -1,0 +1,22 @@
+PART  i18n64
+   DIRECTORY ingres!files!deu!lp64
+   BUILD_DIR (ING_BUILD)!files!deu!lp64
+      FILE rtiforms.fnx
+   DIRECTORY ingres!files!esn!lp64
+   BUILD_DIR (ING_BUILD)!files!esn!lp64
+      FILE rtiforms.fnx
+   DIRECTORY ingres!files!fra!lp64
+   BUILD_DIR (ING_BUILD)!files!fra!lp64
+      FILE rtiforms.fnx
+   DIRECTORY ingres!files!ita!lp64
+   BUILD_DIR (ING_BUILD)!files!ita!lp64
+      FILE rtiforms.fnx
+   DIRECTORY ingres!files!jpn!lp64
+   BUILD_DIR (ING_BUILD)!files!jpn!lp64
+      FILE rtiforms.fnx
+   DIRECTORY ingres!files!ptb!lp64
+   BUILD_DIR (ING_BUILD)!files!ptb!lp64
+      FILE rtiforms.fnx
+   DIRECTORY ingres!files!sch!lp64
+   BUILD_DIR (ING_BUILD)!files!sch!lp64
+      FILE rtiforms.fnx

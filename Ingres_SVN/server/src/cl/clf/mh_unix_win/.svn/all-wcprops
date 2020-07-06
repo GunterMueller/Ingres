@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/cl/clf/mh_unix_win
+END
+mhln.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/cl/clf/mh_unix_win/mhln.c
+END
+mhpk.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/cl/clf/mh_unix_win/mhpk.c
+END
+mhceil.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/cl/clf/mh_unix_win/mhceil.c
+END
+mhipow.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/cl/clf/mh_unix_win/mhipow.c
+END
+mhatan.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/cl/clf/mh_unix_win/mhatan.c
+END
+mhcos.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/clf/mh_unix_win/mhcos.c
+END
+mhrand.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/cl/clf/mh_unix_win/mhrand.c
+END
+mhsin.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/clf/mh_unix_win/mhsin.c
+END
+mhsqrt.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/cl/clf/mh_unix_win/mhsqrt.c
+END
+mhint.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/clf/mh_unix_win/mhint.c
+END
+mhexp.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/clf/mh_unix_win/mhexp.c
+END
+mhexp10.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/mh_unix_win/mhexp10.c
+END
+mhlocal.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/mh_unix_win/mhlocal.h
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/clf/mh_unix_win/Jamfile
+END
+mhfdint.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/mh_unix_win/mhfdint.c
+END
+mhpow.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/clf/mh_unix_win/mhpow.c
+END
+mhsrand.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/mh_unix_win/mhsrand.c
+END

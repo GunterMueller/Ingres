@@ -1,0 +1,68 @@
+#
+# Jamfile file for front!utils!oo
+#
+# History:
+#	02-dec-2004 (abbjo03)
+#	    Use DFS as directory-file separator for portability.
+
+SubDir ING_SRC front utils oo ;
+
+IISUBSYS front utils oo ;
+
+IINOOPTIM oodetail.qsc : ris_us5 i64_aix ;
+IINOOPTIM oodata.qsc : ris_us5 i64_aix ;
+IINOOPTIM oocreate.qsc : ris_us5 i64_aix ;
+IINOOPTIM oocatlog.qsc : ris_us5 i64_aix ;
+IINOOPTIM obtime.qsc : ris_us5 i64_aix ;
+IINOOPTIM obdestro.qsc : ris_us5 i64_aix ;
+IINOOPTIM obcatfor.qsc : ris_us5 i64_aix ;
+IINOOPTIM method.qsc : ris_us5 i64_aix ;
+IINOOPTIM memory.qsc : ris_us5 i64_aix ;
+IINOOPTIM co.qsc : ris_us5 i64_aix ;
+IINOOPTIM cmethod.qsc : ris_us5 i64_aix ;
+IINOOPTIM catutil.qsc : ris_us5 i64_aix ;
+IINOOPTIM catcover.qsc : ris_us5 i64_aix ;
+IINOOPTIM send.c : ris_us5 i64_aix ;
+IINOOPTIM p.c : ris_us5 i64_aix ;
+IINOOPTIM ooinit.c : ris_us5 i64_aix ;
+IINOOPTIM oofrs.c : ris_us5 i64_aix ;
+IINOOPTIM oodummy.c : ris_us5 i64_aix ;
+IINOOPTIM ooclass.c : ris_us5 i64_aix ;
+IINOOPTIM obprint.c : ris_us5 i64_aix ;
+IINOOPTIM obencode.c : ris_us5 i64_aix ;
+IINOOPTIM obconfrm.c : ris_us5 i64_aix ;
+IINOOPTIM ob.c : ris_us5 i64_aix ;
+IINOOPTIM mproc.c : ris_us5 i64_aix ;
+IINOOPTIM levelmas.c : ris_us5 i64_aix ;
+IINOOPTIM catrec.c : ris_us5 i64_aix ;
+IINOOPTIM catinit.c : ris_us5 i64_aix ;
+IINOOPTIM catclass.c : ris_us5 i64_aix ;
+
+
+IIMSGHDR eroo.msg ;
+
+IIFORM iicat.frm ;
+IIFORM iidetail.frm ;
+IIFORM iisave.frm ;
+IIFORM oolngrem.frm ;
+
+File $(INGMSG)$(DFS)oocreate.hlp : oocreate.hlp ;
+File $(INGMSG)$(DFS)oodetail.hlp : oodetail.hlp ;
+File $(INGMSG)$(DFS)oodstobj.hlp : oodstobj.hlp ;
+File $(INGMSG)$(DFS)oolremfr.hlp : oolremfr.hlp ;
+File $(INGMSG)$(DFS)oosave.hlp : oosave.hlp ;
+File $(INGMSG)$(DFS)oosavseq.hlp : oosavseq.hlp ;
+
+IILIBRARY OOLIB : ooencsiz.sc 
+        ref.qsc ooschema.qsc oosavfrm.qsc oosave.qsc oolremfr.qsc
+        oolngrem.qsc ooisindb.qsc ooidutil.qsc ooid.qsc ooencode.qsc
+        oodetail.qsc oocreate.qsc oocatlog.qsc obtime.qsc
+        obdestro.qsc obcatfor.qsc method.qsc memory.qsc co.qsc
+        cmethod.qsc catutil.qsc catcover.qsc send.c p.c ooinit.c
+        oofrs.c oodummy.c obprint.c obencode.c obconfrm.c
+        ob.c mproc.c catrec.c catinit.c catclass.c ;
+
+IILIBRARY IMPFRAMELIBDATA : oodata.qsc levelmas.c ooclass.c ooproctb.roc oosymbol.roc ;
+
+
+IILIBOBJECT oosymbol.roc ; 

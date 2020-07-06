@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/front/misc/unloaddb
+END
+udmain.sc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/misc/unloaddb/udmain.sc
+END
+erud.msg
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/misc/unloaddb/erud.msg
+END
+unloaddb.lot
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/unloaddb/unloaddb.lot
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/misc/unloaddb/Jamfile
+END
+unloaddb.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/front/misc/unloaddb/unloaddb.exe.manifest
+END

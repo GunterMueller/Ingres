@@ -1,0 +1,13 @@
+#
+# Jamfile file for cl!clf!ut_vms
+#
+
+SubDir ING_SRC cl clf ut_vms ;
+
+IISUBSYS cl clf ut_vms ;
+
+IIFILE utcom.def : utcom_axm.def ;
+IIFILE utexe.def : utexe.def ;
+
+IILIBRARY COMPATLIB : utprint.c utlnk.c utexe.c utetable.c
+        uterror.c utedit.c utdeffil.c utcomp.c ut.c utedcall.mar ;

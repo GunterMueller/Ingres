@@ -1,0 +1,52 @@
+8
+
+dir
+33
+http://code.ingres.com/ingres/main/src/common/jdbc/util
+http://code.ingres.com/ingres
+
+
+
+2008-03-20T07:36:25.925856Z
+1
+root
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+45b5d43f-8932-4c86-835a-3654e5842839
+
+Jamfile
+file
+
+
+
+
+2008-05-18T00:55:34.000000Z
+212def3b06fb5a4542d2ce233f5804fa
+2008-03-20T07:36:25.925856Z
+1
+root
+
+EdbcInfo.java
+file
+
+
+
+
+2008-05-18T00:55:34.000000Z
+1933c03c0ffc77e2d2b7a825ac0f5f8c
+2008-03-20T07:36:25.925856Z
+1
+root
+

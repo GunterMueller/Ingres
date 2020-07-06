@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/3/main/src/front/st/install_unix_deb
+END
+prerm.template
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/3/main/src/front/st/install_unix_deb/prerm.template
+END
+dbms_preinst.template
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ingres/!svn/ver/3/main/src/front/st/install_unix_deb/dbms_preinst.template
+END
+net_postinst.template
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ingres/!svn/ver/3/main/src/front/st/install_unix_deb/net_postinst.template
+END
+core_postinst.template
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/ingres/!svn/ver/3/main/src/front/st/install_unix_deb/core_postinst.template
+END
+iidebbuild.sh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/3/main/src/front/st/install_unix_deb/iidebbuild.sh
+END
+core_preinst.template
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ingres/!svn/ver/3/main/src/front/st/install_unix_deb/core_preinst.template
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/st/install_unix_deb/Jamfile
+END
+core_prerm.template
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/3/main/src/front/st/install_unix_deb/core_prerm.template
+END
+postinst.template
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/3/main/src/front/st/install_unix_deb/postinst.template
+END
+preinst.template
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/3/main/src/front/st/install_unix_deb/preinst.template
+END

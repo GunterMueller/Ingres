@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/3/main/src/front/vdba/xipm_win
+END
+xipm.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/xipm_win/xipm.vcproj
+END
+stdafx.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/xipm_win/stdafx.h
+END
+mainfrm.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/xipm_win/mainfrm.h
+END
+xipm.rc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/3/main/src/front/vdba/xipm_win/xipm.rc
+END
+font.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/xipm_win/font.cpp
+END
+sqlerror.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/xipm_win/sqlerror.cpp
+END
+xipmdml.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/xipm_win/xipmdml.cpp
+END
+ipmctrl.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/xipm_win/ipmctrl.cpp
+END
+font.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/3/main/src/front/vdba/xipm_win/font.h
+END
+ipmdoc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/xipm_win/ipmdoc.cpp
+END
+xipm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/xipm_win/xipm.cpp
+END
+sqlerror.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/xipm_win/sqlerror.h
+END
+xipmdml.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/xipm_win/xipmdml.h
+END
+ipmctrl.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/xipm_win/ipmctrl.h
+END
+ipmdoc.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/xipm_win/ipmdoc.h
+END
+ipmview.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/xipm_win/ipmview.cpp
+END
+xipm.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/xipm_win/xipm.dsp
+END
+xipm.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/3/main/src/front/vdba/xipm_win/xipm.h
+END
+ipmview.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/xipm_win/ipmview.h
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/3/main/src/front/vdba/xipm_win/Jamfile
+END
+xipm.sln
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/xipm_win/xipm.sln
+END
+fileerr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/xipm_win/fileerr.cpp
+END
+rcdepend.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/xipm_win/rcdepend.h
+END
+mainfrm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/xipm_win/mainfrm.cpp
+END
+stdafx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/xipm_win/stdafx.cpp
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/xipm_win/resource.h
+END
+fileerr.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/xipm_win/fileerr.h
+END

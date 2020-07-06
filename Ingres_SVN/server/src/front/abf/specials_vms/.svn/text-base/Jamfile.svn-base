@@ -1,0 +1,10 @@
+#
+# Jamfile file for front!abf!specials_vms
+#
+
+SubDir ING_SRC front abf specials_vms ;
+
+IISUBSYS front abf specials_vms ;
+
+IISHLIBRARY $(SHINTERPLIB) ;
+IINEEDLIBS $(SHINTERPLIB) : INTERP_LIBS ;

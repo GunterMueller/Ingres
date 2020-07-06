@@ -1,0 +1,16 @@
+#
+# Jamfile for sig!setuser!setuser
+#
+# History:
+#	18-feb-2005 (abbjo03)
+#	    Created.
+
+
+SubDir ING_SRC sig setuser setuser ;
+
+IISUBSYS sig setuser setuser ;
+
+if $(VMS)
+{
+    IISIGFILES setuser : ing$set_username.mar username.readme ;
+}

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/tools/port/qac_unix
+END
+Xdefaults
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/tools/port/qac_unix/Xdefaults
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/tools/port/qac_unix/Jamfile
+END
+qac1.usr
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/qac_unix/qac1.usr
+END

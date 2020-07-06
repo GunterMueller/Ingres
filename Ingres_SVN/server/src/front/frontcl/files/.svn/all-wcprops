@@ -1,0 +1,845 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/front/frontcl/files
+END
+jdbc.rfm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frontcl/files/jdbc.rfm
+END
+eqdef.in
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqdef.in
+END
+eqsqlcam.ada
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqsqlcam.ada
+END
+bar3.gr
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/files/bar3.gr
+END
+eqdsqlda.cob
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqdsqlda.cob
+END
+eqsqlcd.in
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqsqlcd.in
+END
+eqdef.a
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqdef.a
+END
+ibmpc.map
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/ibmpc.map
+END
+eqdef.for
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqdef.for
+END
+dtterm.map
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frontcl/files/dtterm.map
+END
+line1.gr
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frontcl/files/line1.gr
+END
+bull24.map
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frontcl/files/bull24.map
+END
+eqsqlcd.f
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqsqlcd.f
+END
+eqsqlcd.for
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqsqlcd.for
+END
+scat1.gr
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frontcl/files/scat1.gr
+END
+mws00.map
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/mws00.map
+END
+mws02.map
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/mws02.map
+END
+frame60.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/frame60.h
+END
+mws04.map
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/mws04.map
+END
+mws06.map
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/mws06.map
+END
+icl34.map
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/icl34.map
+END
+iiud64.scr
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frontcl/files/iiud64.scr
+END
+rdb.rfm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/files/rdb.rfm
+END
+wgl_32s.hrd
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/files/wgl_32s.hrd
+END
+eqmdef.cbl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqmdef.cbl
+END
+vt220ak.map
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/files/vt220ak.map
+END
+ibm5151f.map
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/frontcl/files/ibm5151f.map
+END
+dbms.rfm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frontcl/files/dbms.rfm
+END
+xsun.map
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frontcl/files/xsun.map
+END
+97801f.map
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frontcl/files/97801f.map
+END
+iris-ansi.map
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/frontcl/files/iris-ansi.map
+END
+suncmdf.map
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/files/suncmdf.map
+END
+ansif.map
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/ansif.map
+END
+eqsqlda.for
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqsqlda.for
+END
+iiud.scr
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frontcl/files/iiud.scr
+END
+at386.map
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/at386.map
+END
+ice.rfm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/files/ice.rfm
+END
+eqsqlcam.a
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqsqlcam.a
+END
+eqdef.cob
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqdef.cob
+END
+eqdef.bas
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqdef.bas
+END
+das.rfm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/files/das.rfm
+END
+pc-386.map
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frontcl/files/pc-386.map
+END
+bar1.gr
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/files/bar1.gr
+END
+eqenv.qp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqenv.qp
+END
+eqsqlcd.cob
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqsqlcd.cob
+END
+eqdef_axp.bas
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqdef_axp.bas
+END
+eqsqlcd.bas
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqsqlcd.bas
+END
+ioalsys.a
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/ioalsys.a
+END
+hp2392.map
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frontcl/files/hp2392.map
+END
+pie1.gr
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/files/pie1.gr
+END
+eqdef.ada
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqdef.ada
+END
+eqsqlca.a
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqsqlca.a
+END
+eqsqlca.pas
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqsqlca.pas
+END
+eqsqlca.f
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqsqlca.f
+END
+vt100hp.map
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/files/vt100hp.map
+END
+bridge.rfm
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frontcl/files/bridge.rfm
+END
+eqsqlca.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqsqlca.h
+END
+iixa.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/files/iixa.h
+END
+rms.rfm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/files/rms.rfm
+END
+frame61.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/frame61.h
+END
+oracle.rfm
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frontcl/files/oracle.rfm
+END
+odbc.rfm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frontcl/files/odbc.rfm
+END
+sunk.map
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frontcl/files/sunk.map
+END
+eqsqlda.cob
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqsqlda.cob
+END
+sunm.map
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frontcl/files/sunm.map
+END
+eqsqlda.bas
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqsqlda.bas
+END
+mac2.map
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frontcl/files/mac2.map
+END
+sql_standard.a
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/frontcl/files/sql_standard.a
+END
+sql_standard.ada
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/frontcl/files/sql_standard.ada
+END
+eqmsqlcd.cbl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqmsqlcd.cbl
+END
+io8256.map
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frontcl/files/io8256.map
+END
+tng.rfm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/files/tng.rfm
+END
+eqpname.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqpname.h
+END
+dg220em.map
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/files/dg220em.map
+END
+bull12.map
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frontcl/files/bull12.map
+END
+eqsqlda.ada
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqsqlda.ada
+END
+cbfunits.dat
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/frontcl/files/cbfunits.dat
+END
+gateway.rfm
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/files/gateway.rfm
+END
+gnome-sun.map
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/frontcl/files/gnome-sun.map
+END
+hp70092.map
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/files/hp70092.map
+END
+konsole.map
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/files/konsole.map
+END
+m91e.map
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frontcl/files/m91e.map
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frontcl/files/MANIFEST
+END
+frs.map
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/files/frs.map
+END
+h19nk.map
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/h19nk.map
+END
+default.rfm
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/files/default.rfm
+END
+icl5.map
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frontcl/files/icl5.map
+END
+eqsqlca_for.w32
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqsqlca_for.w32
+END
+hpterm.map
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frontcl/files/hpterm.map
+END
+eqsqlcd_for.w32
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqsqlcd_for.w32
+END
+eqsqlca.for
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqsqlca.for
+END
+mssql.rfm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/mssql.rfm
+END
+h19f.map
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frontcl/files/h19f.map
+END
+mws01.map
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/mws01.map
+END
+db2udb.rfm
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frontcl/files/db2udb.rfm
+END
+mws03.map
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/mws03.map
+END
+mws05.map
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/mws05.map
+END
+pckermit.map
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/frontcl/files/pckermit.map
+END
+iiud65.scr
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frontcl/files/iiud65.scr
+END
+pt35t.map
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/pt35t.map
+END
+bar2.gr
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/files/bar2.gr
+END
+cbf.map
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/files/cbf.map
+END
+pt35.map
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frontcl/files/pt35.map
+END
+eqsqlda.a
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqsqlda.a
+END
+dg100em.map
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/files/dg100em.map
+END
+bullvtu10.map
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/frontcl/files/bullvtu10.map
+END
+pc-220.map
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frontcl/files/pc-220.map
+END
+eqsqlda.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqsqlda.h
+END
+pc-305.map
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frontcl/files/pc-305.map
+END
+bullbds1.map
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/frontcl/files/bullbds1.map
+END
+bullwv.map
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frontcl/files/bullwv.map
+END
+ansinf.map
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frontcl/files/ansinf.map
+END
+termcap
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/files/termcap
+END
+eqsqlca.cob
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqsqlca.cob
+END
+eqsqlca.bas
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqsqlca.bas
+END
+frame2.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frontcl/files/frame2.h
+END
+linuxvc.map
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/files/linuxvc.map
+END
+eqdef.pas
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqdef.pas
+END
+gnome-sun4.map
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/frontcl/files/gnome-sun4.map
+END
+net.rfm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/files/net.rfm
+END
+cbfhelp.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/files/cbfhelp.dat
+END
+wview.map
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/wview.map
+END
+eqsqlca.ada
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqsqlca.ada
+END
+dgxterm.map
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/files/dgxterm.map
+END
+icl12.map
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/icl12.map
+END
+sunf.map
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frontcl/files/sunf.map
+END
+m30n.map
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frontcl/files/m30n.map
+END
+eqddef.cob
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqddef.cob
+END
+star.rfm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frontcl/files/star.rfm
+END
+icldrs.map
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frontcl/files/icldrs.map
+END
+abfurts.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frontcl/files/abfurts.h
+END
+winpcalt.map
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/frontcl/files/winpcalt.map
+END
+eqsqlca.in
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqsqlca.in
+END
+tk4105.map
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frontcl/files/tk4105.map
+END
+eqmsqlca.cbl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqmsqlca.cbl
+END
+wy60at.map
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frontcl/files/wy60at.map
+END
+suntype5.map
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/frontcl/files/suntype5.map
+END
+secure.rfm
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frontcl/files/secure.rfm
+END
+eqsqlda.pas
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqsqlda.pas
+END
+eqfdef.f
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frontcl/files/eqfdef.f
+END

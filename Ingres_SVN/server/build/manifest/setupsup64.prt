@@ -1,0 +1,12 @@
+PART  setupsup64
+   DIRECTORY ingres!utility!lp64
+   BUILD_DIR (ING_BUILD)!utility!lp64
+      EXECUTABLE iimemkey
+      EXECUTABLE lgkmkey
+      EXECUTABLE cscleanup
+      {
+      PERMISSION s:rwed,o:rwed,g:re,w:re,setuid
+      	EXECUTABLE csreport
+      }
+      EXECUTABLE syscheck
+      EXECUTABLE csinstall

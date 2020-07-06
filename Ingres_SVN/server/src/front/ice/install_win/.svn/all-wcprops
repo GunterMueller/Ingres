@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/ice/install_win
+END
+makeid.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/front/ice/install_win/makeid.exe.manifest
+END
+iceuser.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/ice/install_win/iceuser.c
+END
+icesess.sc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/ice/install_win/icesess.sc
+END
+icepublic.bat
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/ice/install_win/icepublic.bat
+END
+iceload.bat
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/ice/install_win/iceload.bat
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/ice/install_win/Jamfile
+END
+iceupgrd.bat
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/ice/install_win/iceupgrd.bat
+END
+htmlroot.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/ice/install_win/htmlroot.c
+END
+iceinstall.bat
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/ice/install_win/iceinstall.bat
+END
+htmlroot.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/front/ice/install_win/htmlroot.exe.manifest
+END
+makeid.sc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/ice/install_win/makeid.sc
+END

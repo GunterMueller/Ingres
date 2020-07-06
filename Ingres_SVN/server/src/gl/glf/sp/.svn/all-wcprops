@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/ingres/!svn/ver/1/main/src/gl/glf/sp
+END
+sptest.lot
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/gl/glf/sp/sptest.lot
+END
+spempty.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/gl/glf/sp/spempty.c
+END
+spftail.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/gl/glf/sp/spftail.c
+END
+sphead.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/gl/glf/sp/sphead.c
+END
+spdelete.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/gl/glf/sp/spdelete.c
+END
+spinit.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/gl/glf/sp/spinit.c
+END
+spinstall.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/gl/glf/sp/spinstall.c
+END
+spfhead.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/gl/glf/sp/spfhead.c
+END
+spdeq.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/gl/glf/sp/spdeq.c
+END
+splookup.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/gl/glf/sp/splookup.c
+END
+spprev.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/gl/glf/sp/spprev.c
+END
+spnext.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/gl/glf/sp/spnext.c
+END
+sptest.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/gl/glf/sp/sptest.c
+END
+spfprev.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/gl/glf/sp/spfprev.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/gl/glf/sp/Jamfile
+END
+spenq.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/gl/glf/sp/spenq.c
+END
+spfnext.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/gl/glf/sp/spfnext.c
+END
+wgl_32s.hnt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/gl/glf/sp/wgl_32s.hnt
+END
+spsplay.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/gl/glf/sp/spsplay.c
+END

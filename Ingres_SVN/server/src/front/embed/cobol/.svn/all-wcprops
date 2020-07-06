@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/front/embed/cobol
+END
+eqcbl.lot
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/cobol/eqcbl.lot
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/embed/cobol/MANIFEST
+END
+cobol.sy
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/embed/cobol/cobol.sy
+END
+cobmain.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/cobol/cobmain.c
+END
+cobtoks.st
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/embed/cobol/cobtoks.st
+END
+cobtypes.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/embed/cobol/cobtypes.c
+END
+eqcbl.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/embed/cobol/eqcbl.exe.manifest
+END
+cobgen.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/embed/cobol/cobgen.c
+END

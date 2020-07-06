@@ -1,0 +1,242 @@
+#!/bin/bash
+#
+#  Copyright (c) 2004 Ingres Corporation
+#
+#  Name: iidsfree -- echo free blocks on part of a filesystem
+#
+#  Usage:
+#   iidsfree [ directory ]
+#
+#  Description:
+#   If no directory is supplied, default is current directory.
+#
+#   This version works for either  System V, with output like:
+#   /usr/lib/font     (/dev/mp2  ):    21376 blocks    4070 i-nodes
+#   /usr/rti          (/dev/mp14 ):    23860 blocks    9842 i-nodes
+#   /                 (/dev/mp0  ):     6052 blocks    2231 i-nodes
+#
+#   or with AIX (IBM RT/PC) output like:
+#   Device       Mounted on      total     free  used     ifree  used
+#   /dev/hd0     /               17560     4144   76%      2504   16%
+#   /dev/hd1     /u               3808     1048   72%       927    9%
+#   /dev/hd2     /usr            29308     5008   82%      4005   20%
+#
+#   or with BSD style output like:
+#   Filesystem    kbytes    used   avail capacity  Mounted on
+#   /dev/xfd6e    259027  197360   35764    85%    /ug
+#   
+#   or with Ultrix output like:
+#   Filesystem    total    kbytes  kbytes  percent
+#   node          kbytes    used    free   used    Mounted on
+#   /dev/ra1g      42005   35395    2409    94%    /ug
+#
+#   or with AIX 3.1 (IBM RS6000) output like:
+#   Filesystem    Total KB    free %used   iused %iused Mounted on
+#   /dev/hd4         49152   10676   78%    1313    10% /
+#   /dev/hd2        278528   35080   87%    8588    12% /usr
+#   /dev/hd3         12288   11560    5%      71     1% /tmp
+#   /dev/rellv      204800   99104   51%    1224     2% /release
+#
+#   or with AIX 4.1 (IBM RS6000) output like:
+#   Filesystem    512-blocks      Free %Used    Iused %Iused Mounted on
+#   /dev/hd4           49152     10676   78%     1313    10% /
+#   /dev/hd2          278528     35080   87%     8588    12% /usr
+#   /dev/hd3           12288     11560    5%       71     1% /tmp
+#   /dev/rellv        204800     99104   51%     1224     2% /release
+#
+#   or with Linux GNU fileutils 4.0 output like:
+#   Filesystem           1k-blocks      Used Available Use% Mounted on
+#   /dev/hda1              2179887   1385658    681537  67% /
+#
+#   We handle both cases dynamically because there are "System V" versions
+#   that have the BSD file systems and BSD df output.
+#
+#  Exit Status:
+#   0   succeeded.
+#   1   failed.
+#
+#  PROGRAM = iidsfree
+#
+#  DEST = utility
+#--------------------------------------------------------------------------
+
+. iisysdep
+
+LANG=C
+LC_ALL=C
+LC_COLLATE=
+export LANG LC_ALL LC_COLLATE
+
+if [ "$1" = "-f" ] 
+then
+   filesys=true
+   shift
+fi
+
+fdir=${1-`pwd`}
+# The following line yields a directory in $dir that has
+# a mounted file system as a base.
+sdir=`pwd`; cd $fdir; dir=`pwd`; cd $sdir
+df=/tmp/FREE.$$
+$DF > $df
+
+# DEC OSF/1 V3.x or Digital Unix 4.0 style ..
+# It looks like BSD, but not quite. It has to be before the BSD check though.
+if [ -n "`sed -n '/^Filesystem *1024-blocks        Used       Avail Capacity  Mounted on/p' $df`" ] || [ -n "`sed -n '/^Filesystem *1024-blocks *Used *Available *Capacity *Mounted on/p' $df`" ]
+then
+   set -$- `$DF $dir | sed /Mounted/d`
+   echo $4
+   rm -f $df
+   exit 0
+fi
+
+# Linux GNU fileutils 4.0 style ..
+# The GNU fileutils 3.x style is like the Digital Unix style.
+if [ -n "`sed -n '/^Filesystem *1[Kk]-blocks *Used *Available *Use% *Mounted on/p' $df`" ]
+then
+   set -$- `$DF $dir | sed /Mounted/d`
+   echo $4
+   rm -f $df
+   exit 0
+fi
+
+# IBM AIX 4.3.x style ..
+# The numbers are listed in 512-blocks, DF is defined as "df" in iisysdep.   
+if [ -n "`sed -n '/^Filesystem  *512-blocks  *Free %Used  *Iused %Iused Mounted on/p' $df`" ]
+then
+   set -$- `$DF $dir | sed /Mounted/d`
+   echo $3
+   rm -f $df
+   exit 0
+fi
+
+# IBM AIX 3.1 style ..
+# It looks like BSD, but not quite. It has to be before the BSD check though.
+if [ -n "`sed -n '/^Filesystem    Total KB    free %used   iused %iused Mounted on/p' $df`" ]
+then
+   set -$- `$DF $dir | sed /Mounted/d`
+   echo $3
+   rm -f $df
+   exit 0
+fi
+
+# IBM AIX 4.1 style ..
+# It looks like BSD, but not quite. It has to be before the BSD check though.
+if [ -n "`sed -n '/^Filesystem  *1024-blocks  *Free %Used  *Iused %Iused Mounted on/p' $df`" ]
+then
+   set -$- `$DF $dir | sed /Mounted/d`
+   echo $3
+   rm -f $df
+   exit 0
+fi
+
+# Data General Motorola, DG Intel, NCR, Pyramid, perhaps others...
+#
+if [ -n "`sed -n '/^ *[Ff]ilesystem  *[Kk]bytes  *[Uu]sed  *[Aa]vail *[Cc]apacity  *[Mm]ounted on */p' $df`" ]
+then
+   set -$- `$DF $dir | sed '/ [Mm]ounted on/d'`
+   echo $4
+   rm -f $df
+   exit 0
+fi
+
+if [ -n "`sed -n '/^ *[Ff]ilesystem  *[Kk]byte  *[Uu]sed  *[Aa]vail *[Cc]apacity  *[Mm]ounted on */p' $df`" ]
+then
+   set -$- `$DF $dir | sed '/ [Mm]ounted on/d'`
+   echo $4
+   rm -f $df
+   exit 0
+fi
+
+# BSD /usr/5bin style ..
+# It looks like BSD, but not quite. It has to be before the BSD check though.
+# BSD should use /bin/df.  This is here just in case.
+# /usr/5bin/df cannot handle disks larger than 2 gig.
+if [ -n "`sed -n '/^Filesystem            bavail/p' $df`" ]
+then
+   set -$- `$DF $dir | sed /bavail/d`
+   BLOCK=`expr $2 / 2`
+   if [ $filesys ]
+   then
+      echo $BLOCK $4
+   else
+      echo $BLOCK 
+   fi
+   rm -f $df
+   exit 0
+fi
+
+# Mac OSX style, pretty much like Linux GNU
+if [ -n "`sed -n '/^Filesystem *512-blocks *Used *Avail.* *Capacity *Mounted on/p' $df`" ]
+then
+   set -$- `$DF $dir | sed /Mounted/d`
+   echo $4
+   rm -f $df
+   exit 0
+fi
+
+# BSD style...
+
+if [ -n "`sed -n '/^F/p' $df`" ]
+then
+   set -$- `$DF $dir | sed /kbytes/d`
+   if [ $filesys ]
+   then
+      echo $4 $6
+   else
+      echo $4
+   fi
+   rm -f $df
+   exit 0
+fi
+
+
+# System V or AIX style:
+#
+# loop until backwards to / until you find a file system that looks
+# like it's holding the directory.  Should always find root /, but
+# echos '0' if there's trouble.
+#
+if [ -n "`sed -n '/^D/p' $df`" ]
+then
+   setblock='BLOCK=$4'   # AIX style
+else
+   setblock='BLOCK=$3'   # Regular ol' SYSV style
+fi
+
+IFS="():    "
+while :
+do
+   line=`grep "$dir " $df`
+   if [ -z "$line" ]
+   then
+      case $dir in
+         /|.) echo 0; rm -f $df; exit 1;;
+         *) dir=`dirname $dir`;;
+      esac
+   else
+      set -$- `echo $line`
+#        the following use of firstchar solves bug 79518 concerning
+#        nfs mounted file systems (musro02)
+      firstchar=`echo $3 | cut -c1,1`
+      if [ "$firstchar" = "/" ]; then  #is parm 3 a directory path?
+          setblock='BLOCK=$4'          #nfs may cause parm 3 to be a dir path
+      fi
+      eval $setblock
+      break;
+   fi
+done
+ 
+DIVISOR=`expr 1024 / $BTPERBLK`
+BLOCK=`expr $BLOCK / $DIVISOR`
+
+
+if [ $filesys ]
+then
+   echo $BLOCK $1
+else
+   echo $BLOCK
+fi 
+
+rm -f $df
+exit 0

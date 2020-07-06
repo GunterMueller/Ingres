@@ -1,0 +1,257 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/tools/port/others
+END
+prenv.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/tools/port/others/prenv.exe.manifest
+END
+beingres.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/others/beingres.c
+END
+biglimit.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/others/biglimit.c
+END
+getopt.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/tools/port/others/getopt.c
+END
+context.1
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/tools/port/others/context.1
+END
+which.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/tools/port/others/which.c
+END
+chtim.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/tools/port/others/chtim.c
+END
+symlink.1
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/tools/port/others/symlink.1
+END
+crprint.bat
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/tools/port/others/crprint.bat
+END
+fileprep.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/others/fileprep.c
+END
+beingres.1
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/others/beingres.1
+END
+mkshar.sh
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/tools/port/others/mkshar.sh
+END
+echo.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/tools/port/others/echo.c
+END
+mathsigs.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/others/mathsigs.c
+END
+ckxcopy.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/tools/port/others/ckxcopy.c
+END
+which.1
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/tools/port/others/which.1
+END
+chtim.1
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/tools/port/others/chtim.1
+END
+ckxcopy.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/tools/port/others/ckxcopy.exe.manifest
+END
+openfiles.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/tools/port/others/openfiles.c
+END
+sif.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/others/sif.exe.manifest
+END
+ckntbkup.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/tools/port/others/ckntbkup.exe.manifest
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/tools/port/others/MANIFEST
+END
+dhex.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/tools/port/others/dhex.c
+END
+compress.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/others/compress.c
+END
+mathsigs.1
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/others/mathsigs.1
+END
+eatjunk.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/tools/port/others/eatjunk.c
+END
+echov.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/tools/port/others/echov.c
+END
+crprint.sh
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/others/crprint.sh
+END
+compress.1
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/others/compress.1
+END
+splitprm.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/others/splitprm.c
+END
+vsar.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/tools/port/others/vsar.c
+END
+splitprm.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/tools/port/others/splitprm.exe.manifest
+END
+syschecknt.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/others/syschecknt.c
+END
+dmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/tools/port/others/dmp.c
+END
+sif.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/tools/port/others/sif.c
+END
+ckntbkup.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/others/ckntbkup.c
+END
+context.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/tools/port/others/context.c
+END
+symlink.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/tools/port/others/symlink.c
+END
+mkdirs.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/tools/port/others/mkdirs.c
+END
+prenv.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/tools/port/others/prenv.c
+END
+doasroot.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/others/doasroot.c
+END
+uptime.sh
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/tools/port/others/uptime.sh
+END

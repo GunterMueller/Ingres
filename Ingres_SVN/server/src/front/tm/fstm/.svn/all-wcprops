@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/ingres/!svn/ver/1/main/src/front/tm/fstm
+END
+fsrun.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/tm/fstm/fsrun.qsc
+END
+itm.lot
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/tm/fstm/itm.lot
+END
+fstest.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/tm/fstm/fstest.c
+END
+fstm.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/tm/fstm/fstm.c
+END
+fsfile.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/tm/fstm/fsfile.hlp
+END
+fslinedt.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/tm/fstm/fslinedt.hlp
+END
+fsrecbe.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/tm/fstm/fsrecbe.c
+END
+fsqinput.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/tm/fstm/fsqinput.hlp
+END
+fstmloc.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/tm/fstm/fstmloc.h
+END
+fssinput.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/tm/fstm/fssinput.hlp
+END
+fstm.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/tm/fstm/fstm.exe.manifest
+END
+quelcmds.frm
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/tm/fstm/quelcmds.frm
+END
+fsrecfi.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/tm/fstm/fsrecfi.c
+END
+fserr.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/tm/fstm/fserr.hlp
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/tm/fstm/MANIFEST
+END
+fsargs.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/tm/fstm/fsargs.c
+END
+fssave.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/tm/fstm/fssave.c
+END
+fserrfrm.frm
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/tm/fstm/fserrfrm.frm
+END
+fsoutput.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/tm/fstm/fsoutput.hlp
+END
+fssetup.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/tm/fstm/fssetup.qsc
+END
+fsdiag.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/tm/fstm/fsdiag.c
+END

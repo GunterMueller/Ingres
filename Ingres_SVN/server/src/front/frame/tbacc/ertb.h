@@ -1,0 +1,14 @@
+#define _TB_CLASS 58
+#define E_TB0001_Cannot_clear_column   0x003a0001
+#define E_TB0002_Cannot_clear_row      0x003a0002
+#define S_TB0003_INTERNAL_EQUEL_BUG    0x003a0003
+#define S_TB0004_IItdata_table_reset   0x003a0004
+#define F_TB0001_No_scrolling_allowed  0x103a0001
+#define F_TB0002_No_scrolling_allowed  0x103a0002
+#define F_TB0003_Nothing_to_scroll     0x103a0003
+#define F_TB0004_Out_of_data           0x103a0004
+#define F_TB0005_Out_of_data_below     0x103a0005
+#define F_TB0006_Out_of_data_above     0x103a0006
+#define S_TB0005_IItunload_IIcurtbl    0x003a0005
+#define S_TB0006_IItunload_table_not   0x003a0006
+#define S_TB0007_Bad_table_state       0x003a0007

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/back/dmf/lg_win
+END
+rcpstat.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/back/dmf/lg_win/rcpstat.exe.manifest
+END
+rcpstwrp.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/back/dmf/lg_win/rcpstwrp.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/lg_win/Jamfile
+END

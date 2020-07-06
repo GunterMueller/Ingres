@@ -1,0 +1,40 @@
+8
+
+dir
+33
+http://code.ingres.com/ingres/main/src/back/psf/specials_win
+http://code.ingres.com/ingres
+
+
+
+2008-03-20T07:36:25.925856Z
+1
+root
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+45b5d43f-8932-4c86-835a-3654e5842839
+
+MANIFEST
+file
+
+
+
+
+2008-05-18T00:43:12.000000Z
+8da0c3cd2bf3a0350e4d7fa80d17eda4
+2008-03-20T07:36:25.925856Z
+1
+root
+

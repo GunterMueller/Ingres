@@ -1,0 +1,48 @@
+#
+# Jamfile file for front!embed!equel
+#
+
+SubDir ING_SRC front embed equel ;
+
+IISUBSYS front embed equel ;
+
+IINOOPTIM esqyylex.c : dg8_us5 ;
+IINOOPTIM esqsel.c : dg8_us5 ;
+IINOOPTIM esqmisc.c : dg8_us5 ;
+IINOOPTIM esqlca.c : dg8_us5 ;
+IINOOPTIM errna.c : dg8_us5 ;
+IINOOPTIM err.c : dg8_us5 ;
+IINOOPTIM eqtarget.c : dg8_us5 ;
+IINOOPTIM eqrecord.c : dg8_us5 ;
+IINOOPTIM eqqryid.c : dg8_us5 ;
+IINOOPTIM eqmisc.c : dg8_us5 ;
+IINOOPTIM eqmain.c : dg8_us5 ;
+IINOOPTIM eqglobs.c : dg8_us5 ;
+IINOOPTIM eqgentl.c : dg8_us5 ;
+IINOOPTIM eqgenfrs.c : dg8_us5 ;
+IINOOPTIM eqg4.c : dg8_us5 ;
+IINOOPTIM eqfwgen.c : dg8_us5 ;
+IINOOPTIM eqfw.c : dg8_us5 ;
+IINOOPTIM eqfrs.c : dg8_us5 ;
+IINOOPTIM eqdump.c : dg8_us5 ;
+IINOOPTIM eqdata.c : dg8_us5 ;
+IINOOPTIM eqcursor.c : dg8_us5 ;
+IINOOPTIM eqckfips.c : dg8_us5 ;
+IINOOPTIM dbquel.c : dg8_us5 ;
+IINOOPTIM argman.c : dg8_us5 ;
+IINOOPTIM activate.c : dg8_us5 ;
+
+
+IILIBRARY EQUELLIB : sytree.c syscope.c syq.c sypl1sym.c symutils.c
+	syfield.c syeucsym.c sydec.c sydebug.c sycopy.c strman.c
+	scyylex.c scword.c scutil.c scstring.c scrdline.c scop.c
+	scnumber.c scinc.c schex.c scgetkey.c scequlex.c sceat.c
+	sccmnt.c retrieve.c repeat.c qman.c out.c label.c ideq.c
+	esqyylex.c esqsel.c esqmisc.c esqlca.c errna.c err.c
+	eqtarget.c eqrecord.c eqqryid.c eqmisc.c eqmain.c eqgentl.c
+	eqgenfrs.c eqg4.c eqfwgen.c eqfw.c eqfrs.c eqdump.c
+	eqcursor.c eqckfips.c dbquel.c argman.c activate.c ;
+
+IILIBRARY IMPEMBEDLIBDATA : eqglobs.c eqdata.c ;
+
+IILIBOBJECT eqdata.c eqglobs.c eqmain.c ;

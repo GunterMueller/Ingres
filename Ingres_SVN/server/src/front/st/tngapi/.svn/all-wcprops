@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/front/st/tngapi
+END
+iffutil.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/tngapi/iffutil.c
+END
+iffget.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/tngapi/iffget.c
+END
+iff.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/st/tngapi/iff.h
+END
+iffcnfget.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/st/tngapi/iffcnfget.sc
+END
+iffgca.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/tngapi/iffgca.c
+END
+tngapi.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/tngapi/tngapi.c
+END
+ifftrace.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/tngapi/ifftrace.c
+END
+iffgca.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/tngapi/iffgca.h
+END
+iffint.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/tngapi/iffint.h
+END
+precheck.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/tngapi/precheck.c
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/tngapi/MANIFEST
+END
+tngapi.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/tngapi/tngapi.h
+END
+iffinit.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/tngapi/iffinit.c
+END
+oiutil.doc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/tngapi/oiutil.doc
+END
+EmbeddedIngres25.doc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/st/tngapi/EmbeddedIngres25.doc
+END
+EmbeddedIngres26.doc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/st/tngapi/EmbeddedIngres26.doc
+END

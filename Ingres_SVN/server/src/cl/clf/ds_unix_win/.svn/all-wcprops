@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/cl/clf/ds_unix_win
+END
+DSmapout.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/clf/ds_unix_win/DSmapout.h
+END
+dsencode.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/clf/ds_unix_win/dsencode.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/clf/ds_unix_win/Jamfile
+END
+ds.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/cl/clf/ds_unix_win/ds.c
+END
+dsnat.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/clf/ds_unix_win/dsnat.c
+END
+dsdecode.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/clf/ds_unix_win/dsdecode.c
+END
+dsclose.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/ds_unix_win/dsclose.c
+END

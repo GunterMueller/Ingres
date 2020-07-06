@@ -1,0 +1,743 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/ingres/!svn/ver/1/main/src/front/abf/fg
+END
+intimout.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/intimout.tf
+END
+inmdel.tf
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/fg/inmdel.tf
+END
+fgmdbnqp.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgmdbnqp.hlp
+END
+fgmdappp.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgmdappp.hlp
+END
+indeadlk.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/indeadlk.tf
+END
+fgprocs.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgprocs.c
+END
+inclear.tf
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/fg/inclear.tf
+END
+fgchkchg.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgchkchg.c
+END
+fgerr.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgerr.c
+END
+fgscform.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgscform.c
+END
+inmtammn.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/inmtammn.tf
+END
+fghidfld.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/fg/fghidfld.c
+END
+fgmsupda.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgmsupda.hlp
+END
+fgmdupdq.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgmdupdq.hlp
+END
+msupdate.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/msupdate.tf
+END
+fgmdbxqp.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgmdbxqp.hlp
+END
+fgqrest.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgqrest.c
+END
+indins.tf
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/fg/indins.tf
+END
+fgmsbnqp.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgmsbnqp.hlp
+END
+fgmsappp.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgmsappp.hlp
+END
+emerald.notes
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/abf/fg/emerald.notes
+END
+fglupval.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/fg/fglupval.c
+END
+intop.tf
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/abf/fg/intop.tf
+END
+indoc.tf
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/abf/fg/indoc.tf
+END
+inirmn.tf
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/fg/inirmn.tf
+END
+fgnulkey.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgnulkey.c
+END
+inend.tf
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/abf/fg/inend.tf
+END
+fgmsupdq.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgmsupdq.hlp
+END
+fgmtupdq.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgmtupdq.hlp
+END
+fgmsbxqp.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgmsbxqp.hlp
+END
+fgvars.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgvars.c
+END
+inmdanmn.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/inmdanmn.tf
+END
+inmddlmn.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/inmddlmn.tf
+END
+mdupdate.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/mdupdate.tf
+END
+inmtserr.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/inmtserr.tf
+END
+inmtuerr.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/inmtuerr.tf
+END
+fgmdbnnp.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgmdbnnp.hlp
+END
+fgdmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgdmp.c
+END
+msappend.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/msappend.tf
+END
+innxmn.tf
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/fg/innxmn.tf
+END
+indbevnt.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/indbevnt.tf
+END
+fgclrcb.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgclrcb.c
+END
+fgqclaus.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgqclaus.c
+END
+inmsammn.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/inmsammn.tf
+END
+fgmdbxnp.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgmdbxnp.hlp
+END
+inmtanmn.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/inmtanmn.tf
+END
+inmtdlmn.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/inmtdlmn.tf
+END
+mtupdate.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/mtupdate.tf
+END
+inmdsnmn.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/inmdsnmn.tf
+END
+fgmsbnnp.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgmsbnnp.hlp
+END
+fgntlcmp.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgntlcmp.hlp
+END
+mdappend.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/mdappend.tf
+END
+fgusresc.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgusresc.c
+END
+inmdsvmn.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/inmdsvmn.tf
+END
+fgmdunqp.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgmdunqp.hlp
+END
+fgqlstr.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgqlstr.c
+END
+inmupd.tf
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/fg/inmupd.tf
+END
+fgmsbxnp.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgmsbxnp.hlp
+END
+inddel.tf
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/fg/inddel.tf
+END
+fgqerr.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgqerr.c
+END
+inlookup.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/inlookup.tf
+END
+inmsserr.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/inmsserr.tf
+END
+fgsectn.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgsectn.c
+END
+inmtsnmn.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/inmtsnmn.tf
+END
+inmsuerr.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/inmsuerr.tf
+END
+fgmduxqp.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgmduxqp.hlp
+END
+inseqfld.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/inseqfld.tf
+END
+indserr.tf
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/fg/indserr.tf
+END
+fgtitle.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgtitle.c
+END
+inendsub.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/inendsub.tf
+END
+induerr.tf
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/fg/induerr.tf
+END
+intopdef.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/intopdef.tf
+END
+mtappend.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/mtappend.tf
+END
+fgmsunqp.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgmsunqp.hlp
+END
+inmtsvmn.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/inmtsvmn.tf
+END
+fghelp.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/abf/fg/fghelp.c
+END
+fgmdbrsq.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgmdbrsq.hlp
+END
+fgdeclar.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgdeclar.c
+END
+inmsanmn.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/inmsanmn.tf
+END
+inmsdlmn.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/inmsdlmn.tf
+END
+fgmsuxqp.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgmsuxqp.hlp
+END
+fgmdunnp.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgmdunnp.hlp
+END
+fginit.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/abf/fg/fginit.c
+END
+fgquery.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgquery.c
+END
+fgloadmi.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgloadmi.c
+END
+inmins.tf
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/fg/inmins.tf
+END
+fgmsbrsq.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgmsbrsq.hlp
+END
+fgmtbrsq.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgmtbrsq.hlp
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/abf/fg/Jamfile
+END
+intblfnd.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/intblfnd.tf
+END
+msbrowse.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/msbrowse.tf
+END
+fgmduxnp.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgmduxnp.hlp
+END
+inmssnmn.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/inmssnmn.tf
+END
+fgdefmnu.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgdefmnu.c
+END
+ntmenu.tf
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/fg/ntmenu.tf
+END
+fgmsunnp.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgmsunnp.hlp
+END
+fgntmnup.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgntmnup.hlp
+END
+inrdelmn.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/inrdelmn.tf
+END
+fgifutl.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgifutl.c
+END
+fgflddef.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgflddef.c
+END
+fglstr.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/abf/fg/fglstr.c
+END
+inmssvmn.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/inmssvmn.tf
+END
+fgusrmnu.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgusrmnu.c
+END
+fgmsuxnp.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgmsuxnp.hlp
+END
+mdbrowse.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/mdbrowse.tf
+END
+indupd.tf
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/fg/indupd.tf
+END
+fgdefram.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgdefram.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/front/abf/fg/README
+END
+fgutils.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgutils.c
+END
+fgfixupf.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgfixupf.c
+END
+fghdrdoc.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/fg/fghdrdoc.c
+END
+fgcpvtoh.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgcpvtoh.c
+END
+intimset.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/intimset.tf
+END
+framegen.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/fg/framegen.c
+END
+inrinsmn.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/inrinsmn.tf
+END
+fgundchg.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgundchg.c
+END
+fgdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgdata.c
+END
+fglookup.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/fg/fglookup.c
+END
+inmdammn.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/inmdammn.tf
+END
+fgmdupda.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/fg/fgmdupda.hlp
+END
+framegen.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/fg/framegen.h
+END
+mtbrowse.tf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/fg/mtbrowse.tf
+END
+iimain.tf
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/fg/iimain.tf
+END

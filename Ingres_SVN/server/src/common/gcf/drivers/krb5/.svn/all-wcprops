@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/common/gcf/drivers/krb5
+END
+libgcskrb.lot
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/common/gcf/drivers/krb5/libgcskrb.lot
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/gcf/drivers/krb5/MANIFEST
+END
+wgl_32s.hnt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/gcf/drivers/krb5/wgl_32s.hnt
+END
+gssapi_krb5.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/common/gcf/drivers/krb5/gssapi_krb5.c
+END
+gcskrb.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/gcf/drivers/krb5/gcskrb.c
+END

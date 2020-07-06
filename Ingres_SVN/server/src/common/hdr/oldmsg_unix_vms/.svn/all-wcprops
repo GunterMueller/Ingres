@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/hdr/oldmsg_unix_vms
+END
+v2_generr.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/common/hdr/oldmsg_unix_vms/v2_generr.h
+END
+v0_cat.msg
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/common/hdr/oldmsg_unix_vms/v0_cat.msg
+END
+v1_cat.msg
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/common/hdr/oldmsg_unix_vms/v1_cat.msg
+END
+v3_specific.msg
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/hdr/oldmsg_unix_vms/v3_specific.msg
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/hdr/oldmsg_unix_vms/MANIFEST
+END
+v2_generic.msg
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/hdr/oldmsg_unix_vms/v2_generic.msg
+END
+v3_generic.msg
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/hdr/oldmsg_unix_vms/v3_generic.msg
+END
+v2_other.msg
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/common/hdr/oldmsg_unix_vms/v2_other.msg
+END

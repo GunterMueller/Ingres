@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/dotnet_win/vsdesign
+END
+vsdesign.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/dotnet_win/vsdesign/vsdesign.csproj
+END
+vsadapterbase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/dotnet_win/vsdesign/vsadapterbase.cs
+END
+vsconnection.resx
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/common/dotnet_win/vsdesign/vsconnection.resx
+END
+vsaddtable.resx
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/dotnet_win/vsdesign/vsaddtable.resx
+END
+vsgendataset.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/dotnet_win/vsdesign/vsgendataset.cs
+END
+vsadapter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/common/dotnet_win/vsdesign/vsadapter.cs
+END
+vsdesign.csproj.user
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ingres/!svn/ver/1/main/src/common/dotnet_win/vsdesign/vsdesign.csproj.user
+END
+assemblyinfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/dotnet_win/vsdesign/assemblyinfo.cs
+END
+vstablemap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/common/dotnet_win/vsdesign/vstablemap.cs
+END
+vsquerydesigner.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/common/dotnet_win/vsdesign/vsquerydesigner.cs
+END
+vsadapterbase.resx
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/common/dotnet_win/vsdesign/vsadapterbase.resx
+END
+vsgendataset.resx
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/common/dotnet_win/vsdesign/vsgendataset.resx
+END
+vsadapter.resx
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/dotnet_win/vsdesign/vsadapter.resx
+END
+vsconnection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/dotnet_win/vsdesign/vsconnection.cs
+END
+vsaddtable.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/common/dotnet_win/vsdesign/vsaddtable.cs
+END
+vstablemap.resx
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/dotnet_win/vsdesign/vstablemap.resx
+END

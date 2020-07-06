@@ -1,0 +1,52 @@
+8
+
+dir
+33
+http://code.ingres.com/ingres/main/src/common/gcf/gcn_win
+http://code.ingres.com/ingres
+
+
+
+2008-03-20T07:36:25.925856Z
+1
+root
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+45b5d43f-8932-4c86-835a-3654e5842839
+
+oigcnapi.h
+file
+
+
+
+
+2008-05-18T00:53:18.000000Z
+a72068b92595313ac39b473feb798fbe
+2008-03-20T07:36:25.925856Z
+1
+root
+
+oigcnapi.c
+file
+
+
+
+
+2008-05-18T00:53:18.000000Z
+4dd76de6e5156131b35bdf0eaeb0321c
+2008-03-20T07:36:25.925856Z
+1
+root
+

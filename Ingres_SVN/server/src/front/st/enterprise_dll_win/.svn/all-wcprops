@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win
+END
+docmm.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win/docmm.c
+END
+visionmm.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win/visionmm.c
+END
+odbcmm.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win/odbcmm.c
+END
+esqlcmm.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win/esqlcmm.c
+END
+dbmsnetmm.def
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win/dbmsnetmm.def
+END
+starmm.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win/starmm.c
+END
+setupmm.def
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win/setupmm.def
+END
+icemm.def
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win/icemm.def
+END
+jdbcmm.def
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win/jdbcmm.def
+END
+docmm.def
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win/docmm.def
+END
+dotnetdpmm.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win/dotnetdpmm.c
+END
+visionmm.def
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win/visionmm.def
+END
+odbcmm.def
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win/odbcmm.def
+END
+esqlcmm.def
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win/esqlcmm.def
+END
+starmm.def
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win/starmm.def
+END
+dbmsmm.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win/dbmsmm.c
+END
+netmm.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win/netmm.c
+END
+repmm.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win/repmm.c
+END
+commonmm.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win/commonmm.c
+END
+dbmsnetmm.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win/dbmsnetmm.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win/Jamfile
+END
+dotnetdpmm.def
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win/dotnetdpmm.def
+END
+commonmm.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win/commonmm.h
+END
+icemm.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win/icemm.c
+END
+setupmm.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win/setupmm.c
+END
+dbmsmm.def
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win/dbmsmm.def
+END
+jdbcmm.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win/jdbcmm.c
+END
+netmm.def
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win/netmm.def
+END
+repmm.def
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/st/enterprise_dll_win/repmm.def
+END

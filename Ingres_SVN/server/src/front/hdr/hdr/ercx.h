@@ -1,0 +1,10 @@
+#define _CX_CLASS 215
+#define E_CX0001_INTERNAL              0x00d70001
+#define E_CX0002_CX_CB_ALLOC           0x00d70002
+#define E_CX0003_CX_CB_FREE            0x00d70003
+#define E_CX0004_BAD_CX_ID             0x00d70004
+#define E_CX0005_BAD_CX_TYPE           0x00d70005
+#define E_CX0006_DUP_CX_ID             0x00d70006
+#define E_CX0007_BAD_XA_XID            0x00d70007
+#define E_CX0008_DUP_RMI_NAME_OR_ID    0x00d70008
+#define E_CX0009_RMI_NOT_FOUND         0x00d70009

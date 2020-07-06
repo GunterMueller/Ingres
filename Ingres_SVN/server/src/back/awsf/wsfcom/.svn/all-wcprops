@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/ingres/!svn/ver/1/main/src/back/awsf/wsfcom
+END
+wsfinit.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/back/awsf/wsfcom/wsfinit.c
+END
+servermeth.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/back/awsf/wsfcom/servermeth.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/awsf/wsfcom/Jamfile
+END
+wsfvar.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/awsf/wsfcom/wsfvar.c
+END
+wsfparser.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/back/awsf/wsfcom/wsfparser.c
+END

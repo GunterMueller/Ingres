@@ -1,0 +1,9 @@
+config=su4_us5
+config64=su9_us5
+option=DELIM_TEST
+option=B64
+option=ADD_ON64
+option=INGRESII
+option=DBL
+option=CAS_ENABLED
+build=00

@@ -1,0 +1,11 @@
+#
+# Jamfile file for back!ascf!ascf
+#
+
+SubDir ING_SRC back ascf ascf ;
+
+IISUBSYS back ascf ascf ;
+
+
+IILIBRARY ASCFLIB : ascfmaincb.c ascfinitdbg.c ascfcall.c ;
+

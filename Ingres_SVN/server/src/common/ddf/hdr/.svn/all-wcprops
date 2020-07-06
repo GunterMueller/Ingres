@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/ingres/!svn/ver/1/main/src/common/ddf/hdr
+END
+ddsmem.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/common/ddf/hdr/ddsmem.h
+END
+drviiutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/ddf/hdr/drviiutil.h
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/common/ddf/hdr/Jamfile
+END
+ddcmo.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/common/ddf/hdr/ddcmo.h
+END
+drviiapi.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/ddf/hdr/drviiapi.h
+END

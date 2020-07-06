@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/vsdesign
+END
+vsdesign.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/vsdesign/vsdesign.csproj
+END
+ddexconnectionui.resx
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/vsdesign/ddexconnectionui.resx
+END
+vsconnection.resx
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/vsdesign/vsconnection.resx
+END
+ddex.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/vsdesign/ddex.cs
+END
+vsadapterbase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/vsdesign/vsadapterbase.cs
+END
+vsaddtable.resx
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/vsdesign/vsaddtable.resx
+END
+resources.resx
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/vsdesign/resources.resx
+END
+vsgendataset.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/vsdesign/vsgendataset.cs
+END
+dataobjectsupport.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/vsdesign/dataobjectsupport.xml
+END
+vsadapter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/vsdesign/vsadapter.cs
+END
+vsdesign.csproj.user
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/vsdesign/vsdesign.csproj.user
+END
+assemblyinfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/vsdesign/assemblyinfo.cs
+END
+dataviewsupport.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/vsdesign/dataviewsupport.xml
+END
+vstablemap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/vsdesign/vstablemap.cs
+END
+vsquerydesigner.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/vsdesign/vsquerydesigner.cs
+END
+vsadapterbase.resx
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/vsdesign/vsadapterbase.resx
+END
+ddexconnectionui.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/vsdesign/ddexconnectionui.Designer.cs
+END
+ddexconnectionui.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/vsdesign/ddexconnectionui.cs
+END
+vsgendataset.resx
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/vsdesign/vsgendataset.resx
+END
+vsadapter.resx
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/vsdesign/vsadapter.resx
+END
+vsconnection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/vsdesign/vsconnection.cs
+END
+vsaddtable.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/vsdesign/vsaddtable.cs
+END
+resources.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/vsdesign/resources.Designer.cs
+END
+vstablemap.resx
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/vsdesign/vstablemap.resx
+END

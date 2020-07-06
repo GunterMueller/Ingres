@@ -1,0 +1,37 @@
+#
+# Jamfile file for back!psf!psy
+#
+
+SubDir ING_SRC back psf psy ;
+
+IISUBSYS back psf psy ;
+
+IINOOPTIM psypermit.c : nc4_us5 ;
+IINOOPTIM psymxqry.c : nc4_us5 ;
+IINOOPTIM psymapvar.c : nc4_us5 ;
+IINOOPTIM psyloc.c : nc4_us5 ;
+IINOOPTIM psykview.c : nc4_us5 ;
+IINOOPTIM psykperm.c : nc4_us5 ;
+IINOOPTIM psykintg.c : nc4_us5 ;
+IINOOPTIM psyinteg.c : nc4_us5 ;
+IINOOPTIM psygroup.c : nc4_us5 ;
+IINOOPTIM psyevent.c : nc4_us5 ;
+IINOOPTIM psydschm.c : nc4_us5 ;
+IINOOPTIM psydperm.c : nc4_us5 ;
+IINOOPTIM psydint.c : nc4_us5 ;
+IINOOPTIM psydgrant.c : nc4_us5 ;
+IINOOPTIM psydbproc.c : nc4_us5 ;
+IINOOPTIM psydbpriv.c : nc4_us5 ;
+IINOOPTIM psycomment.c : nc4_us5 ;
+IINOOPTIM psyaudit.c : nc4_us5 ;
+IINOOPTIM psyaplid.c : nc4_us5 ;
+IINOOPTIM psyalarm.c : nc4_us5 ;
+
+IILIBRARY PSFLIB : psyview.c psyutil.c psyuser.c psytrscan.c
+	psysynonym.c psyseq.c psyrules.c psyrpriv.c psyrevoke.c
+	psyrereg.c psyqrymod.c psyprint.c psypermit.c psymxqry.c
+	psymapvar.c psyloc.c psykview.c psykperm.c psykintg.c 
+	psyinteg.c psygroup.c psyevent.c psydschm.c psydperm.c 
+	psydint.c psydgrant.c psydbproc.c psydbpriv.c psycomment.c 
+	psyaudit.c psyaplid.c psyalarm.c ;
+

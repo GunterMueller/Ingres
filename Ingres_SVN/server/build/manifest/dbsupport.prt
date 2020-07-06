@@ -1,0 +1,32 @@
+PART   dbsupport
+   DIRECTORY ingres!bin
+   BUILD_DIR (ING_BUILD)!bin
+      EXECUTABLE pax
+   BUILD_DIR (ING_BUILD)!bin
+      SCRIPT adbtofst
+      SCRIPT alterdb
+      SCRIPT auditdb
+      SCRIPT ckpdb
+      SCRIPT infodb
+      SCRIPT fastload
+      SCRIPT relocatedb 
+      SCRIPT rollforwarddb
+      SCRIPT cktmpl_wrap
+      EXECUTABLE blobstor
+      EXECUTABLE destroydb
+      EXECUTABLE sysmod
+      EXECUTABLE usermod
+      EXECUTABLE verifydb
+      EXECUTABLE modifyfe
+      EXECUTABLE optimizedb
+      EXECUTABLE statdump
+   DIRECTORY ingres!files
+   BUILD_DIR (ING_BUILD)!files
+      FILE cktmpl.def
+         CUSTOM
+      FILE cktmpl_cpio.def
+         CUSTOM
+      FILE cktmpl_wrap.tpl
+         CUSTOM
+      FILE cktmpl_ocfs.def
+         CUSTOM

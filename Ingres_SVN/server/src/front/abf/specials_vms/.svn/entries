@@ -1,0 +1,52 @@
+8
+
+dir
+33
+http://code.ingres.com/ingres/main/src/front/abf/specials_vms
+http://code.ingres.com/ingres
+
+
+
+2008-03-20T07:36:25.925856Z
+1
+root
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+45b5d43f-8932-4c86-835a-3654e5842839
+
+interpfelib.lot
+file
+
+
+
+
+2008-05-18T01:11:33.000000Z
+0aa418ee9ef357321eaddeaa1d153d70
+2008-03-20T07:36:25.925856Z
+1
+root
+
+Jamfile
+file
+
+
+
+
+2008-05-18T01:11:33.000000Z
+e33147221e260c18efca171ef4967458
+2008-03-20T07:36:25.925856Z
+1
+root
+

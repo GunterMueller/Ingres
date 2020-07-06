@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/ingres/!svn/ver/1/main/src/front/abf/ilrf
+END
+irdump.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/ilrf/irdump.c
+END
+irfreeil.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/ilrf/irfreeil.c
+END
+irlist.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/ilrf/irlist.c
+END
+irlistul.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/ilrf/irlistul.c
+END
+irsess.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/ilrf/irsess.c
+END
+irmem.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/ilrf/irmem.c
+END
+ircqry.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/ilrf/ircqry.c
+END
+irfile.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/ilrf/irfile.c
+END
+eror.msg
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/ilrf/eror.msg
+END
+irchadr.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/ilrf/irchadr.c
+END
+irfwrt.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/ilrf/irfwrt.c
+END
+irglob.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/ilrf/irglob.c
+END
+irfget.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/ilrf/irfget.c
+END
+irfload.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/ilrf/irfload.c
+END
+irmagic.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/abf/ilrf/irmagic.h
+END
+irff.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/abf/ilrf/irff.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/ilrf/Jamfile
+END
+irint.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/ilrf/irint.h
+END
+irstd.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/ilrf/irstd.h
+END

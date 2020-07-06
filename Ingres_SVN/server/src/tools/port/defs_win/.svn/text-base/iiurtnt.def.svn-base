@@ -1,0 +1,12 @@
+; History:
+;	01-Jul-1998 (wonst02)
+;	    Original.
+;	11-Jun-2004 (drivi01)
+;	    Added ordinals.
+EXPORTS
+GetInterfaces		@1				
+GetMethods		@2				
+GetArgs		@3				
+RefreshInterface		@4				
+GetTime		@5				
+Sum		@6				

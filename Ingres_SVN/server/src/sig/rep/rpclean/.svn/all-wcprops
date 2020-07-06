@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/sig/rep/rpclean
+END
+rpclean.lot
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/sig/rep/rpclean/rpclean.lot
+END
+dblib.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/sig/rep/rpclean/dblib.h
+END
+rpclean.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/sig/rep/rpclean/rpclean.c
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/sig/rep/rpclean/MANIFEST
+END
+rpclean.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/sig/rep/rpclean/rpclean.exe.manifest
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/sig/rep/rpclean/readme.txt
+END
+dblib.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/sig/rep/rpclean/dblib.c
+END

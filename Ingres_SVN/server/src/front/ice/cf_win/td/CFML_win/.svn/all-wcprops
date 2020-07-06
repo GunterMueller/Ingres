@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/ice/cf_win/td/CFML_win
+END
+CF_IceSwitch.vtm
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/front/ice/cf_win/td/CFML_win/CF_IceSwitch.vtm
+END
+CF_IceInclude.vtm
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ingres/!svn/ver/1/main/src/front/ice/cf_win/td/CFML_win/CF_IceInclude.vtm
+END
+CF_IceFunction.vtm
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ingres/!svn/ver/1/main/src/front/ice/cf_win/td/CFML_win/CF_IceFunction.vtm
+END
+CF_IceExtFunction.vtm
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/ingres/!svn/ver/1/main/src/front/ice/cf_win/td/CFML_win/CF_IceExtFunction.vtm
+END
+CF_IceCommit.vtm
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/front/ice/cf_win/td/CFML_win/CF_IceCommit.vtm
+END
+CF_IceVar.vtm
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/front/ice/cf_win/td/CFML_win/CF_IceVar.vtm
+END
+CF_IceRollback.vtm
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ingres/!svn/ver/1/main/src/front/ice/cf_win/td/CFML_win/CF_IceRollback.vtm
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/ice/cf_win/td/CFML_win/Jamfile
+END
+CF_IceIf.vtm
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/front/ice/cf_win/td/CFML_win/CF_IceIf.vtm
+END
+CF_IceDeclare.vtm
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ingres/!svn/ver/1/main/src/front/ice/cf_win/td/CFML_win/CF_IceDeclare.vtm
+END
+CF_IceSerFunction.vtm
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/ingres/!svn/ver/1/main/src/front/ice/cf_win/td/CFML_win/CF_IceSerFunction.vtm
+END
+CF_IceSql.vtm
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/front/ice/cf_win/td/CFML_win/CF_IceSql.vtm
+END

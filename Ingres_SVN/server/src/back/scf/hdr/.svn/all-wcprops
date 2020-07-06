@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/ingres/!svn/ver/1/main/src/back/scf/hdr
+END
+scu.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/back/scf/hdr/scu.h
+END
+sc0e.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/back/scf/hdr/sc0e.h
+END
+scserver.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/scf/hdr/scserver.h
+END
+sccrb.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/scf/hdr/sccrb.h
+END
+scdmf.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/scf/hdr/scdmf.h
+END
+scdopt.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/scf/hdr/scdopt.h
+END
+sceshare.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/scf/hdr/sceshare.h
+END
+scev.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/back/scf/hdr/scev.h
+END
+sc0m.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/back/scf/hdr/sc0m.h
+END
+sc.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/back/scf/hdr/sc.h
+END
+sca.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/back/scf/hdr/sca.h
+END
+scfscf.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/scf/hdr/scfscf.h
+END
+scc.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/back/scf/hdr/scc.h
+END
+scd.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/back/scf/hdr/scd.h
+END
+sce.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/back/scf/hdr/sce.h
+END
+scfcontrol.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/scf/hdr/scfcontrol.h
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/scf/hdr/Jamfile
+END
+sc0a.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/back/scf/hdr/sc0a.h
+END
+scfudt.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/scf/hdr/scfudt.h
+END
+scs.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/back/scf/hdr/scs.h
+END

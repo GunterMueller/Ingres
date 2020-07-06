@@ -1,0 +1,52 @@
+8
+
+dir
+33
+http://code.ingres.com/ingres/main/src/front/ice/fortunoff_load
+http://code.ingres.com/ingres
+
+
+
+2008-03-20T07:36:25.925856Z
+1
+root
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+45b5d43f-8932-4c86-835a-3654e5842839
+
+Jamfile
+file
+
+
+
+
+2008-05-18T01:14:09.000000Z
+1a21977dec9a5081f1dc3ddc1514d3f6
+2008-03-20T07:36:25.925856Z
+1
+root
+
+fortunoff.sc
+file
+
+
+
+
+2008-05-18T01:14:09.000000Z
+0ca887ac91523a1d784b29bdabc5d1b3
+2008-03-20T07:36:25.925856Z
+1
+root
+

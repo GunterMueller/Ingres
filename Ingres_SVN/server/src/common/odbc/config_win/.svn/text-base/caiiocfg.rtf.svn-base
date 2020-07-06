@@ -1,0 +1,271 @@
+{\rtf1\adeflang1025\ansi\ansicpg1252\uc1\adeff0\deff0\stshfdbch0\stshfloch0\stshfhich0\stshfbi0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman{\*\falt Times};}{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial{\*\falt Helvetica};}
+{\f36\fswiss\fcharset0\fprq2{\*\panose 020b0604030504040204}Tahoma;}{\f37\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}MS Sans Serif;}{\f151\froman\fcharset238\fprq2 Times New Roman CE{\*\falt Times};}
+{\f152\froman\fcharset204\fprq2 Times New Roman Cyr{\*\falt Times};}{\f154\froman\fcharset161\fprq2 Times New Roman Greek{\*\falt Times};}{\f155\froman\fcharset162\fprq2 Times New Roman Tur{\*\falt Times};}
+{\f156\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew){\*\falt Times};}{\f157\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic){\*\falt Times};}{\f158\froman\fcharset186\fprq2 Times New Roman Baltic{\*\falt Times};}
+{\f159\froman\fcharset163\fprq2 Times New Roman (Vietnamese){\*\falt Times};}{\f161\fswiss\fcharset238\fprq2 Arial CE{\*\falt Helvetica};}{\f162\fswiss\fcharset204\fprq2 Arial Cyr{\*\falt Helvetica};}
+{\f164\fswiss\fcharset161\fprq2 Arial Greek{\*\falt Helvetica};}{\f165\fswiss\fcharset162\fprq2 Arial Tur{\*\falt Helvetica};}{\f166\fbidi \fswiss\fcharset177\fprq2 Arial (Hebrew){\*\falt Helvetica};}
+{\f167\fbidi \fswiss\fcharset178\fprq2 Arial (Arabic){\*\falt Helvetica};}{\f168\fswiss\fcharset186\fprq2 Arial Baltic{\*\falt Helvetica};}{\f169\fswiss\fcharset163\fprq2 Arial (Vietnamese){\*\falt Helvetica};}{\f511\fswiss\fcharset238\fprq2 Tahoma CE;}
+{\f512\fswiss\fcharset204\fprq2 Tahoma Cyr;}{\f514\fswiss\fcharset161\fprq2 Tahoma Greek;}{\f515\fswiss\fcharset162\fprq2 Tahoma Tur;}{\f516\fbidi \fswiss\fcharset177\fprq2 Tahoma (Hebrew);}{\f517\fbidi \fswiss\fcharset178\fprq2 Tahoma (Arabic);}
+{\f518\fswiss\fcharset186\fprq2 Tahoma Baltic;}{\f519\fswiss\fcharset163\fprq2 Tahoma (Vietnamese);}{\f520\fswiss\fcharset222\fprq2 Tahoma (Thai);}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;
+\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;
+\red192\green192\blue192;}{\stylesheet{\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext0 \styrsid12265057 Normal;}{
+\s1\ql \li0\ri0\sb240\sa60\keepn\nowidctlpar\wrapdefault\faauto\outlinelevel0\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \ab\af1\afs32\alang1025 \ltrch\fcs0 \b\f1\fs32\lang1033\langfe1033\kerning32\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext0 heading 1;}
+{\s2\ql \li0\ri0\sb240\sa60\keepn\nowidctlpar\wrapdefault\faauto\outlinelevel1\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \ab\ai\af1\afs28\alang1025 \ltrch\fcs0 \b\i\f1\fs28\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext0 heading 2;}{
+\s3\ql \li240\ri0\keepn\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\outlinelevel2\adjustright\rin0\lin240\itap0 \rtlch\fcs1 \ab\af1\afs24\alang1025 \ltrch\fcs0 \b\f1\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext0 
+heading 3;}{\*\cs10 \additive \ssemihidden Default Paragraph Font;}{\*
+\ts11\tsrowd\trftsWidthB3\trpaddl108\trpaddr108\trpaddfl3\trpaddft3\trpaddfb3\trpaddfr3\trcbpat1\trcfpat1\tblind0\tblindtype3\tscellwidthfts0\tsvertalt\tsbrdrt\tsbrdrl\tsbrdrb\tsbrdrr\tsbrdrdgl\tsbrdrdgr\tsbrdrh\tsbrdrv 
+\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs20 \ltrch\fcs0 \fs20\lang1024\langfe1024\cgrid\langnp1024\langfenp1024 \snext11 \ssemihidden Normal Table;}{\*\cs15 \additive \rtlch\fcs1 
+\af37\afs16 \ltrch\fcs0 \f37\fs16\up6\lang1033\langfe0\langnp1033\langfenp0 \sbasedon10 \ssemihidden footnote reference;}{\s16\ql \li0\ri0\sb60\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af37\afs20\alang1025 \ltrch\fcs0 
+\f37\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext16 \ssemihidden footnote text;}{\s17\ql \li0\ri0\nowidctlpar\tqc\tx4320\tqr\tx8640\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext17 header;}{\s18\ql \li0\ri0\nowidctlpar\tqc\tx4320\tqr\tx8640\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext18 footer;}{\s19\ql \fi-200\li200\ri0\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin200\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext0 \sautoupd \ssemihidden index 1;}{\s20\ql \fi-200\li400\ri0\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin400\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext0 \sautoupd \ssemihidden index 2;}{\s21\ql \fi-200\li600\ri0\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin600\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext0 \sautoupd \ssemihidden index 3;}{\s22\ql \fi-200\li800\ri0\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin800\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext0 \sautoupd \ssemihidden index 4;}{\s23\ql \fi-200\li1000\ri0\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin1000\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext0 \sautoupd \ssemihidden index 5;}{\s24\ql \fi-200\li1200\ri0\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin1200\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext0 \sautoupd \ssemihidden index 6;}{\s25\ql \fi-200\li1400\ri0\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin1400\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext0 \sautoupd \ssemihidden index 7;}{\s26\ql \fi-200\li1600\ri0\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin1600\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext0 \sautoupd \ssemihidden index 8;}{\s27\ql \fi-200\li1800\ri0\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin1800\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext0 \sautoupd \ssemihidden index 9;}{\s28\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext19 \ssemihidden index heading;}{\s29\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 
+\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext29 \ssemihidden endnote text;}{\*\cs30 \additive \rtlch\fcs1 \af0 \ltrch\fcs0 \super \sbasedon10 \ssemihidden endnote reference;}{
+\s31\ql \li270\ri0\widctlpar\wrapdefault\faauto\adjustright\rin0\lin270\itap0 \rtlch\fcs1 \af1\afs20\alang1025 \ltrch\fcs0 \f1\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext31 Body Text 2;}{\s32\ql \li240\ri240\nowidctlpar
+\tx480\tx1200\wrapdefault\faauto\adjustright\rin240\lin240\itap0 \rtlch\fcs1 \af1\afs20\alang1025 \ltrch\fcs0 \f1\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext32 Block Text;}{\s33\ql \li240\ri0\nowidctlpar
+\tx480\tx960\tx1200\wrapdefault\faauto\adjustright\rin0\lin240\itap0 \rtlch\fcs1 \af1\afs20\alang1025 \ltrch\fcs0 \f1\fs20\cf1\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext33 Body Text Indent 2;}{
+\s34\ql \li240\ri0\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin240\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext34 Body Text Indent 3;}{
+\s35\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \cbpat9 \rtlch\fcs1 \af36\afs20\alang1025 \ltrch\fcs0 \f36\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \sbasedon0 \snext35 \ssemihidden \styrsid15952856 Document Map;}}
+{\*\latentstyles\lsdstimax156\lsdlockeddef0}{\*\rsidtbl \rsid1528768\rsid2913465\rsid3881533\rsid9242321\rsid12265057\rsid15952856}{\*\generator Microsoft Word 11.0.8125;}{\info{\title OpenIngres ODBC Administrator Help}{\author Dave Thole}{\operator  }
+{\creatim\yr2007\mo9\dy11\hr16\min20}{\revtim\yr2007\mo9\dy17\hr14\min28}{\version3}{\edmins8}{\nofpages5}{\nofwords1620}{\nofchars9236}{\*\company Computer Associates}{\nofcharsws10835}{\vern24611}{\*\password 00000000}}{\*\xmlnstbl {\xmlns1 http://schem
+as.microsoft.com/office/word/2003/wordml}{\xmlns2 urn:schemas-microsoft-com:office:smarttags}}\paperw12240\paperh15840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect 
+\widowctrl\ftnbj\aenddoc\donotembedsysfont0\donotembedlingdata1\grfdocevents0\validatexml0\showplaceholdtext0\ignoremixedcontent0\saveinvalidxml0\showxmlerrors0\noxlattoyen\expshrtn\noultrlspc\dntblnsbdb\nospaceforul\hyphcaps0\horzdoc\dghspace120
+\dgvspace120\dghorigin1701\dgvorigin1984\dghshow0\dgvshow3\jcompress\viewkind1\viewscale100\nolnhtadjtbl\rsidroot12265057 \fet0{\*\wgrffmtfilter 013f}\ilfomacatclnup0{\*\ftnsep \ltrpar \pard\plain \ltrpar
+\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid15952856 \chftnsep 
+\par }}{\*\ftnsepc \ltrpar \pard\plain \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af0 \ltrch\fcs0 
+\insrsid15952856 \chftnsepc 
+\par }}{\*\aftnsep \ltrpar \pard\plain \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af0 \ltrch\fcs0 
+\insrsid15952856 \chftnsep 
+\par }}{\*\aftnsepc \ltrpar \pard\plain \ltrpar\ql \li0\ri0\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af0 \ltrch\fcs0 
+\insrsid15952856 \chftnsepc 
+\par }}\ltrpar \sectd \ltrsect\linex0\sectdefaultcl\sftnbj {\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl4
+\pnlcltr\pnstart1\pnindent720\pnhang {\pntxta )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb (}
+{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}\pard\plain \ltrpar\ql \li240\ri240\nowidctlpar
+\tx480\tx960\tx1200\wrapdefault\faauto\adjustright\rin240\lin240\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\f37\fs16\up6\insrsid12265057 $
+{\footnote \ltrpar \pard\plain \ltrpar\s16\ql \li0\ri0\sb60\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af37\afs20\alang1025 \ltrch\fcs0 \f37\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af37\afs16 
+\ltrch\fcs0 \cs15\fs16\up6\insrsid12265057 $}{\rtlch\fcs1 \af37 \ltrch\fcs0 \insrsid12265057  CA ODBC Administrator Help}}}{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid12265057  }{\rtlch\fcs1 \af1\afs16 \ltrch\fcs0 \cs15\f1\fs16\up6\insrsid12265057 #
+{\footnote \ltrpar \pard\plain \ltrpar\s16\ql \li0\ri0\sb60\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af37\afs20\alang1025 \ltrch\fcs0 \f37\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af37\afs16 
+\ltrch\fcs0 \cs15\fs16\up6\insrsid12265057 #}{\rtlch\fcs1 \af37 \ltrch\fcs0 \insrsid12265057  HELP_CONTENTS}}}{\rtlch\fcs1 \ab\af1\afs28 \ltrch\fcs0 \b\f1\fs28\insrsid1528768 Ingres}{\rtlch\fcs1 \ab\af1\afs28 \ltrch\fcs0 \b\f1\fs28\insrsid12265057 
+ ODBC Administrator Help
+\par 
+\par }\pard\plain \ltrpar\s32\ql \li240\ri240\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\adjustright\rin240\lin240\itap0 \rtlch\fcs1 \af1\afs20\alang1025 \ltrch\fcs0 \f1\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af1 
+\ltrch\fcs0 \insrsid12265057 The }{\rtlch\fcs1 \af1 \ltrch\fcs0 \insrsid1528768 Ingres}{\rtlch\fcs1 \af1 \ltrch\fcs0 \insrsid12265057 
+ ODBC Administrator allows you to define data sources that access databases on Ingres servers and gateways. It is invoked from the Microsoft ODBC Administrator with
+in Windows.  The definition of an ODBC data source defines the data source name (DSN) and specifies the Ingres server\rquote s VNODE name, the database name defined on the server, and the type of server.
+\par }\pard\plain \ltrpar\ql \li240\ri240\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\adjustright\rin240\lin240\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \ab\af1 \ltrch\fcs0 
+\b\f1\insrsid12265057 
+\par }{\rtlch\fcs1 \af1\afs16 \ltrch\fcs0 \cs15\f1\fs16\up6\insrsid12265057 K{\footnote \ltrpar \pard\plain \ltrpar\s16\ql \li0\ri0\sb60\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af37\afs20\alang1025 \ltrch\fcs0 
+\f37\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\fs16\up6\insrsid12265057 K}{\rtlch\fcs1 \af37 \ltrch\fcs0 \insrsid12265057  data source; DSN;}}}{\rtlch\fcs1 \ab\af1\afs28 \ltrch\fcs0 
+\b\f1\fs28\insrsid12265057  }{\rtlch\fcs1 \ab\af1\afs24 \ltrch\fcs0 \b\f1\fs24\insrsid12265057 Data Source}{\rtlch\fcs1 \ab\af1\afs28 \ltrch\fcs0 \b\f1\fs28\insrsid12265057 
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid12265057 The Data Source Name (DS
+N) by which an ODBC application will connect to the server.  When adding a new data source, enter a character string of up to 32 characters in the Data Source text box.  You can use any combination of letters, numbers, spaces, or special characters.  When
+ viewing an existing data source, its name will appear in this box.
+\par 
+\par }{\rtlch\fcs1 \af1\afs16 \ltrch\fcs0 \cs15\f1\fs16\up6\insrsid12265057 K{\footnote \ltrpar \pard\plain \ltrpar\s16\ql \li0\ri0\sb60\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af37\afs20\alang1025 \ltrch\fcs0 
+\f37\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\fs16\up6\insrsid12265057 K}{\rtlch\fcs1 \af37 \ltrch\fcs0 \insrsid12265057  description}}}{\rtlch\fcs1 \ab\af1\afs28 \ltrch\fcs0 
+\b\f1\fs28\insrsid12265057  }{\rtlch\fcs1 \ab\af1\afs24 \ltrch\fcs0 \b\f1\fs24\insrsid12265057 Description}{\rtlch\fcs1 \ab\af1\afs28 \ltrch\fcs0 \b\f1\fs28\insrsid12265057 
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid12265057 Any character string for convenient description of the data source.
+\par 
+\par }{\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\f37\fs16\up6\insrsid12265057 K{\footnote \ltrpar \pard\plain \ltrpar\s16\ql \li0\ri0\sb60\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af37\afs20\alang1025 \ltrch\fcs0 
+\f37\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\fs16\up6\insrsid12265057 K}{\rtlch\fcs1 \af37 \ltrch\fcs0 \insrsid12265057  vnode; virtual node; local vnode;}}}{\rtlch\fcs1 \ab\af1\afs24 \ltrch\fcs0 
+\b\f1\fs24\insrsid12265057  Vnode}{\rtlch\fcs1 \ab\af1\afs28 \ltrch\fcs0 \b\f1\fs28\insrsid12265057 
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid12265057 This drop-down list box lists each virtual node
+ (vnode) name known on the local installation to identify a particular remote database server installation.  Vnodes are defined by the Netutil or Visual DBA programs.  For Windows 95/98 or Windows NT, the choice of \'93(local)\'94
+ indicates a selection of the local workstation DESKTOP database.
+\par 
+\par }{\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\f37\fs16\up6\insrsid12265057 K{\footnote \ltrpar \pard\plain \ltrpar\s16\ql \li0\ri0\sb60\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af37\afs20\alang1025 \ltrch\fcs0 
+\f37\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\fs16\up6\insrsid12265057 K}{\rtlch\fcs1 \af37 \ltrch\fcs0 \insrsid12265057  database}}}{\rtlch\fcs1 \ab\af1\afs24 \ltrch\fcs0 
+\b\f1\fs24\insrsid12265057  Database}{\rtlch\fcs1 \ab\af1\afs28 \ltrch\fcs0 \b\f1\fs28\insrsid12265057 
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid12265057 The database name as defined on the remote database server installation or DESKTOP database.
+\par 
+\par }{\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\f37\fs16\up6\insrsid12265057 K{\footnote \ltrpar \pard\plain \ltrpar\s16\ql \li0\ri0\sb60\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af37\afs20\alang1025 \ltrch\fcs0 
+\f37\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\fs16\up6\insrsid12265057 K}{\rtlch\fcs1 \af37 \ltrch\fcs0 \insrsid12265057  type, server; class, server; server class; gateway;}}}{\rtlch\fcs1 
+\ab\af1\afs24 \ltrch\fcs0 \b\f1\fs24\insrsid12265057  Type}{\rtlch\fcs1 \ab\af1\afs28 \ltrch\fcs0 \b\f1\fs28\insrsid12265057 
+\par }\pard\plain \ltrpar\s32\ql \li240\ri240\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\adjustright\rin240\lin240\itap0 \rtlch\fcs1 \af1\afs20\alang1025 \ltrch\fcs0 \f1\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af1 
+\ltrch\fcs0 \insrsid12265057 \'93Type\'94 refers to the class of Net server accessing the database server installation.  The default is \'93INGRES\'94
+ indicating a native Ingres database server.  If the database server installation is being accessed through an Enterprise Access (Gateway) server, specify the gateway server class (e.g. \'93IDMS\'94).  For Windows 95/98 or Windows NT, if a \'93(local)\'94
+ workstation DESKTOP database is being accessed, select \'93DESKTOP\'94 as the server class type.
+\par }\pard\plain \ltrpar\ql \li240\ri240\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\adjustright\rin240\lin240\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af1 \ltrch\fcs0 
+\f1\insrsid12265057 
+\par }{\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\f37\fs16\up6\insrsid12265057 K{\footnote \ltrpar \pard\plain \ltrpar\s16\ql \li0\ri0\sb60\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af37\afs20\alang1025 \ltrch\fcs0 
+\f37\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\fs16\up6\insrsid12265057 K}{\rtlch\fcs1 \af37 \ltrch\fcs0 \insrsid12265057  user id; password; UID; PWD; vnode login; login;}}}{\rtlch\fcs1 
+\ab\af1\afs24 \ltrch\fcs0 \b\f1\fs24\insrsid12265057  Prompt User ID and Password to Override VNODE Login}{\rtlch\fcs1 \ab\af1\afs28 \ltrch\fcs0 \b\f1\fs28\insrsid12265057 
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid12265057 An ODBC application connects to a data source using the Open method, SQLConnect, or SQLDriverConnect function call.  Optional parameters are user id (UID) and password (PWD) arguments.  In 
+{\*\xmlopen\xmlns2{\factoidname City}}{\*\xmlopen\xmlns2{\factoidname place}}ADO{\*\xmlclose}{\*\xmlclose}, they are specified as
+ part of the connection string.  If these arguments are not passed, if this option is checked, a dialog will appear and will prompt for the UID and PWD information.  The application must be sensitive to Windows in order for the prompt to appear.  If this 
+option is not checked, then the user is not prompted (unless the data source name (DSN) is also needed) and only the login information in the VNODE}{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid15952856 
+\par }\pard \ltrpar\ql \li0\ri240\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\adjustright\rin240\lin0\itap0\pararsid15952856 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid12265057  definition is used.
+\par }\pard \ltrpar\ql \li240\ri240\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\adjustright\rin240\lin240\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid12265057 
+\par }{\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\f37\fs16\up6\insrsid12265057 K{\footnote \ltrpar \pard\plain \ltrpar\s16\ql \li0\ri0\sb60\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af37\afs20\alang1025 \ltrch\fcs0 
+\f37\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\fs16\up6\insrsid12265057 K}{\rtlch\fcs1 \af37 \ltrch\fcs0 \insrsid12265057  gateway option; enterprise access option;}}}{\rtlch\fcs1 \ab\af1\afs24 
+\ltrch\fcs0 \b\f1\fs24\insrsid12265057  {\*\xmlopen\xmlns2{\factoidname City}}{\*\xmlopen\xmlns2{\factoidname place}}Enterprise{\*\xmlclose}{\*\xmlclose} Access (Gateway) WITH Options}{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid12265057 
+\par The Enterprise Access (Gateway) WITH Options edit box allows the passing of gateway specific parameters to certain subsequent statements in a given connection.  When specifying options do not include the \'93WITH\'94 keyword and separate multiple option
+s with a comma, i.e. keyword=value,keyword=value
+\par 
+\par Example:
+\par 
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid1528768 \tab \tab dcom_ct_option = `in area ING}{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid12265057 SQLDEFAULT`
+\par 
+\par }{\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\f37\fs16\up6\insrsid12265057 K{\footnote \ltrpar \pard\plain \ltrpar\s16\ql \li0\ri0\sb60\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af37\afs20\alang1025 \ltrch\fcs0 
+\f37\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\fs16\up6\insrsid12265057 K}{\rtlch\fcs1 \af37 \ltrch\fcs0 \insrsid12265057  role;}}}{\rtlch\fcs1 \ab\af1\afs24 \ltrch\fcs0 \b\f1\fs24\insrsid12265057 
+ Role Name and Role Password}{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid12265057 
+\par A role id and its associated password can be entered if a role identifier has been defined that associates privileges with the role.
+\par 
+\par }\pard \ltrpar\ql \li240\ri240\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\adjustright\rin240\lin240\itap0\pararsid12265057 {\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\f37\fs16\up6\lang1033\langfe0\langfenp0\insrsid12265057\charrsid12265057 K
+{\footnote \ltrpar \pard\plain \ltrpar\s16\ql \li0\ri0\sb60\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af37\afs20\alang1025 \ltrch\fcs0 \f37\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af37\afs16 
+\ltrch\fcs0 \cs15\fs16\up6\lang1033\langfe0\langfenp0\insrsid12265057 K}{\rtlch\fcs1 \af37 \ltrch\fcs0 \insrsid12265057  group; group ID}}}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid12265057\charrsid12265057  }{\rtlch\fcs1 \ab\af1\afs24 \ltrch\fcs0 
+\b\f1\fs24\insrsid12265057 Group
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid12265057 A group name can be entered if items in the target database are restricted by group access.
+\par }\pard \ltrpar\ql \li240\ri240\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\adjustright\rin240\lin240\itap0 {\rtlch\fcs1 \ab\af1\afs24 \ltrch\fcs0 \b\f1\fs24\insrsid12265057 
+\par }{\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\f37\fs16\up6\insrsid12265057 K{\footnote \ltrpar \pard\plain \ltrpar\s16\ql \li0\ri0\sb60\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af37\afs20\alang1025 \ltrch\fcs0 
+\f37\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\fs16\up6\insrsid12265057 K}{\rtlch\fcs1 \af37 \ltrch\fcs0 \insrsid12265057  select loops; cursor loops; loops, select vs. cursor; cursors; select;}}}{
+\rtlch\fcs1 \ab\af1\afs24 \ltrch\fcs0 \b\f1\fs24\insrsid12265057  Select Loops vs. Cursor Loops}{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid12265057 
+\par }\pard \ltrpar\ql \li240\ri240\widctlpar\tx480\tx960\tx1200\wrapdefault\faauto\adjustright\rin240\lin240\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid12265057 
+A SELECT query generated via SQLExec, ExecDirect, or the Execute method creates result sets.  If multiple rows are to be fetched, the result set is traversed using a select loop or cursor loop. 
+\par 
+\par Select loops generally have the best performance, especially for fetching a large number of rows.  However, only one select loop can be active at a time.  Select loops may not be nested.  For example, in {\*\xmlopen\xmlns2{\factoidname City}}
+{\*\xmlopen\xmlns2{\factoidname place}}ADO{\*\xmlclose}{\*\xmlclose}, multiple recordset objects may not be retrieved within [Connection].BeginTrans and [Connection].Co
+mmitTrans methods.  In direct ODBC code, SQLFreeStmt must be called before executing another select loop.
+\par 
+\par }\pard\plain \ltrpar\s32\ql \li240\ri240\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\adjustright\rin240\lin240\itap0 \rtlch\fcs1 \af1\afs20\alang1025 \ltrch\fcs0 \f1\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af1 
+\ltrch\fcs0 \insrsid12265057 Cursors may be slower then select loops, but cursors place no limits on the number of active result sets.  Cursor loops may be nested.  
+\par }\pard\plain \ltrpar\ql \li240\ri240\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\adjustright\rin240\lin240\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af1 \ltrch\fcs0 
+\f1\insrsid12265057 
+\par }\pard \ltrpar\ql \li240\ri240\widctlpar\tx480\tx960\tx1200\wrapdefault\faauto\adjustright\rin240\lin240\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid12265057 Cursor loops may offer better performance for MS Access, {\*\xmlopen\xmlns2{\factoidname City}
+}{\*\xmlopen\xmlns2{\factoidname place}}ADO{\*\xmlclose}{\*\xmlclose}
+, and OLE DB applications since fewer ODBC connections are created.  This is because the ODBC driver returns information that it supports unlimited active statments when the "cursor loop" option is selected.  {\*\xmlopen\xmlns2{\factoidname City}}
+{\*\xmlopen\xmlns2{\factoidname place}}ADO{\*\xmlclose}{\*\xmlclose} and OLE DB respond to this information by reusing existing connections for internal cursor engine and metadata functions instead of creating new connections.
+\par }\pard \ltrpar\ql \li240\ri240\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\adjustright\rin240\lin240\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid12265057 
+\par }\pard\plain \ltrpar\s32\ql \li240\ri240\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\adjustright\rin240\lin240\itap0 \rtlch\fcs1 \af1\afs20\alang1025 \ltrch\fcs0 \f1\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af1 
+\ltrch\fcs0 \insrsid12265057 If the ODBC application is written directly (without using a higher-level
+ interface such as ADO), and a statement handle has set an explicit cursor name using SQLSetCursorName(hstmt), then a cursor loop is always used for that particular result set associated with the statement handle, regardless of the setting in the configur
+ation dialog.
+\par }\pard\plain \ltrpar\ql \li240\ri240\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\adjustright\rin240\lin240\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af1 \ltrch\fcs0 
+\f1\insrsid12265057 
+\par }{\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\f37\fs16\up6\insrsid12265057 K{\footnote \ltrpar \pard\plain \ltrpar\s16\ql \li0\ri0\sb60\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af37\afs20\alang1025 \ltrch\fcs0 
+\f37\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\fs16\up6\insrsid12265057 K}{\rtlch\fcs1 \af37 \ltrch\fcs0 \insrsid12265057  three-part names; names, three-part;}}}{\rtlch\fcs1 \ab\af1\afs24 
+\ltrch\fcs0 \b\f1\fs24\insrsid12265057  Convert three-part ownername.tablename.columnname}{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid12265057 
+\par Some applications, such as Microsoft Visual Interdev fully qualify their column-name references as ownername.tablename.columnname references.  Older In
+gres 6.4 based servers and gateways may not able to handle this form of the SQL syntax.  Selecting this option will cause the ODBC driver to convert the ownername.tablename.columnname references to tablename.columnname references.
+\par }\pard \ltrpar\ql \li240\ri240\widctlpar\tx480\tx960\tx1200\wrapdefault\faauto\adjustright\rin240\lin240\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid12265057 
+\par }{\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\f37\fs16\up6\insrsid12265057 K{\footnote \ltrpar \pard\plain \ltrpar\s16\ql \li0\ri0\sb60\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af37\afs20\alang1025 \ltrch\fcs0 
+\f37\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\fs16\up6\insrsid12265057 K}{\rtlch\fcs1 \af37 \ltrch\fcs0 \insrsid12265057  Sys tables; system tables; SQLtables; result set}}}{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \insrsid12265057  }{\rtlch\fcs1 \ab\af1\afs24 \ltrch\fcs0 \b\f1\fs24\insrsid12265057 Include SYS* and sys* tables in SQLTables result set
+\par }\pard\plain \ltrpar\s31\ql \li240\ri0\widctlpar\tx480\tx960\tx1200\wrapdefault\faauto\adjustright\rin0\lin240\itap0 \rtlch\fcs1 \af1\afs20\alang1025 \ltrch\fcs0 \f1\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af1 \ltrch\fcs0 
+\insrsid12265057 
+By default, the ODBC driver filters out tables beginning with "SYS*" when the SQLTables() query is executed, as these are usually system (internal) tables.  Some users, however, wish to have such tables included in the result set, and therefore may check 
+this box to enable the inclusion of "SYS*" tables.
+\par }\pard\plain \ltrpar\ql \li240\ri240\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\adjustright\rin240\lin240\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af1 \ltrch\fcs0 
+\f1\insrsid12265057 
+\par }{\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\f37\fs16\up6\insrsid12265057 K{\footnote \ltrpar \pard\plain \ltrpar\s16\ql \li0\ri0\sb60\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af37\afs20\alang1025 \ltrch\fcs0 
+\f37\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\fs16\up6\insrsid12265057 K}{\rtlch\fcs1 \af37 \ltrch\fcs0 \insrsid12265057  date; null; null date; empty;}}}{\rtlch\fcs1 \ab\af1 \ltrch\fcs0 
+\b\f1\insrsid12265057  }{\rtlch\fcs1 \ab\af1\afs24 \ltrch\fcs0 \b\f1\fs24\insrsid12265057 Return empty string DATE values as NULL
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid12265057 By default, the ODBC driver returns the date value of 9999-12-31 23:59:59 for empty 
+date values.  Some applications, such as MS Access and MS Excel, prefer to receive a more meaningful NULL value when displaying an empty string date.
+\par }{\rtlch\fcs1 \ab\af1\afs24 \ltrch\fcs0 \b\f1\fs24\insrsid12265057 
+\par Return DATE value \lquote 1582-01-01\rquote  as NULL
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid12265057 Some MK (Manufacturing Knowledge) applications load their database with a \'93magic\'94
+ date of 1582-01-01 to indicate a default beginning date.  However, this is meaningless to other applications that use the same date.  By checking the \'93Return DATE value \lquote 1582-01-01\rquote \'94
+ box, applications will receive a NULL value when FETCHing such a date.  
+\par }{\rtlch\fcs1 \ab\af1\afs24 \ltrch\fcs0 \b\f1\fs24\insrsid12265057 
+\par }{\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\f37\fs16\up6\lang1033\langfe0\langfenp0\insrsid3881533\charrsid3881533 K{\footnote \ltrpar \pard\plain \ltrpar\s16\ql \li0\ri0\sb60\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 
+\af37\afs20\alang1025 \ltrch\fcs0 \f37\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\fs16\up6\lang1033\langfe0\langfenp0\insrsid3881533 K}{\rtlch\fcs1 \af37 \ltrch\fcs0 \insrsid3881533 
+ catalog session; force separate}}}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid3881533  }{\rtlch\fcs1 \ab\af1\afs24 \ltrch\fcs0 \b\f1\fs24\insrsid12265057 Force separate database session for ODBC catalog functions
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid12265057 By default, the ODBC driver uses just one database session for all ODBC functions.  Older releases of the ODBC driver used two sessions with a s
+eparate session for ODBC catalog functions (SQLTables, SQLColumns, SQLPrimaryKeys, etc.).  When checked, this option reverts to the older, less efficient behavior.  Only needed for compatibility issues where Select Loops were used and the application was 
+relying on the separation of interleaved main and catalog function result sets.  Before using this option, try selecting the Cursor Loops option first to solve any compatibility issues.
+\par }{\rtlch\fcs1 \ab\af1\afs24 \ltrch\fcs0 \b\f1\fs24\insrsid12265057 
+\par }\pard\plain \ltrpar\s3\ql \li240\ri0\keepn\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\outlinelevel2\adjustright\rin0\lin240\itap0 \rtlch\fcs1 \ab\af1\afs24\alang1025 \ltrch\fcs0 \b\f1\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\rtlch\fcs1 \ab0\af37\afs16 \ltrch\fcs0 \cs15\b0\f37\fs16\up6\lang1033\langfe0\langfenp0\insrsid3881533\charrsid3881533 K{\footnote \ltrpar \pard\plain \ltrpar\s16\ql \li0\ri0\sb60\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 
+\af37\afs20\alang1025 \ltrch\fcs0 \f37\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\fs16\up6\lang1033\langfe0\langfenp0\insrsid3881533 K}{\rtlch\fcs1 \af37 \ltrch\fcs0 \insrsid3881533 
+ arithmetic; overflow; underflow; divide by zero}}}{\rtlch\fcs1 \ab0\af1 \ltrch\fcs0 \b0\insrsid3881533\charrsid3881533  }{\rtlch\fcs1 \af1 \ltrch\fcs0 \insrsid12265057 Ignore arithmetic errors of numeric overflow, underflow, divide by zero
+\par }\pard\plain \ltrpar\ql \li240\ri0\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\adjustright\rin0\lin240\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af1 \ltrch\fcs0 
+\f1\insrsid12265057 By default, a numeric overflow, underflow, etc. condition is an error.  When this option is checked, the condition is ignored.  Equivalent to the -numeric_overflow=ignore command line flag.
+\par 
+\par }\pard\plain \ltrpar\s3\ql \li240\ri0\keepn\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\outlinelevel2\adjustright\rin0\lin240\itap0 \rtlch\fcs1 \ab\af1\afs24\alang1025 \ltrch\fcs0 \b\f1\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\rtlch\fcs1 \ab0\af37\afs16 \ltrch\fcs0 \cs15\b0\f37\fs16\up6\lang1033\langfe0\langfenp0\insrsid3881533\charrsid3881533 K{\footnote \ltrpar \pard\plain \ltrpar\s16\ql \li0\ri0\sb60\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 
+\af37\afs20\alang1025 \ltrch\fcs0 \f37\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\fs16\up6\lang1033\langfe0\langfenp0\insrsid3881533 K}{\rtlch\fcs1 \af37 \ltrch\fcs0 \insrsid3881533  Decimal;
+ ii_decimal}}}{\rtlch\fcs1 \ab0\af1 \ltrch\fcs0 \b0\insrsid3881533\charrsid3881533  }{\rtlch\fcs1 \af1 \ltrch\fcs0 \insrsid12265057 Support II_DECIMAL
+\par }\pard\plain \ltrpar\ql \li240\ri0\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\adjustright\rin0\lin240\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af1 \ltrch\fcs0 
+\f1\insrsid12265057 If the \'93Support II_DECIMAL\'94 box is checked, ODBC applications will evaluate the II_DECIMAL variable and use a comma if so specified.  If this box is not checked, or II_DECIMAL is not defined as a comma character (\'93,\'94
+), the ODBC defaults to a period character (\'93.\'94).
+\par 
+\par }\pard\plain \ltrpar\s3\ql \li240\ri0\keepn\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\outlinelevel2\adjustright\rin0\lin240\itap0 \rtlch\fcs1 \ab\af1\afs24\alang1025 \ltrch\fcs0 \b\f1\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\rtlch\fcs1 \ab0\af37\afs16 \ltrch\fcs0 \cs15\b0\f37\fs16\up6\lang1033\langfe0\langfenp0\insrsid3881533\charrsid3881533 K{\footnote \ltrpar \pard\plain \ltrpar\s16\ql \li0\ri0\sb60\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 
+\af37\afs20\alang1025 \ltrch\fcs0 \f37\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\fs16\up6\lang1033\langfe0\langfenp0\insrsid3881533 K}{\rtlch\fcs1 \af37 \ltrch\fcs0 \insrsid3881533 
+ Procedure; database procedure; update; read only}}}{\rtlch\fcs1 \ab0\af1 \ltrch\fcs0 \b0\insrsid3881533\charrsid3881533  }{\rtlch\fcs1 \af1 \ltrch\fcs0 \insrsid12265057 Allow update in database procedure (Read Only Driver only)
+\par }\pard\plain \ltrpar\ql \li240\ri0\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\adjustright\rin0\lin240\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af1 \ltrch\fcs0 
+\f1\insrsid12265057 If the \'93Allow update in database procedure\'94
+ box is checked, ODBC driver will allow applications to execute database procedures that perform updates.  If the box is not checked, the default behavior is to reject execution of updating database procedures.  This applies only to Ingres II databases an
+d all later versions.
+\par 
+\par 
+\par }\pard\plain \ltrpar\s3\ql \li240\ri0\keepn\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\outlinelevel2\adjustright\rin0\lin240\itap0 \rtlch\fcs1 \ab\af1\afs24\alang1025 \ltrch\fcs0 \b\f1\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {
+\rtlch\fcs1 \ab0\af37\afs16 \ltrch\fcs0 \cs15\b0\f37\fs16\up6\lang1033\langfe0\langfenp0\insrsid3881533\charrsid3881533 K{\footnote \ltrpar \pard\plain \ltrpar\s16\ql \li0\ri0\sb60\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 
+\af37\afs20\alang1025 \ltrch\fcs0 \f37\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\fs16\up6\lang1033\langfe0\langfenp0\insrsid3881533 K}{\rtlch\fcs1 \af37 \ltrch\fcs0 \insrsid3881533 
+ schema; catalog; null; result set}}}{\rtlch\fcs1 \ab0\af1 \ltrch\fcs0 \b0\insrsid3881533\charrsid3881533  }{\rtlch\fcs1 \af1 \ltrch\fcs0 \insrsid12265057 Return NULL for SCHEMA columns in ODBC catalog function result sets
+\par }\pard\plain \ltrpar\ql \li240\ri0\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\adjustright\rin0\lin240\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af1 \ltrch\fcs0 
+\f1\insrsid12265057 This option causes the driver to return NULL for schema (owner) names for the ODBC catalog functions. The option is not safe if
+ a user has table t1 and the DBA also has a table t1 in the database.  There is no problem if user1 has a table t1 and user2 also has a table t1. Table names returned are limited to those owned by the current user or DBA.  This avoids problems between use
+r
+1 and user2, but not with the DBA.  Although SQLTables would work OK, ambiguities between user and DBA duplicate table names will cause failures on calls to SQLColumns, SQLPrimaryKeys, SQLSpecialColumns, etc. when this option is selected  This option shou
+ld be used with caution.
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid3881533 
+\par }\pard\plain \ltrpar\s3\ql \li240\ri0\keepn\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\outlinelevel2\adjustright\rin0\lin240\itap0\pararsid3881533 \rtlch\fcs1 \ab\af1\afs24\alang1025 \ltrch\fcs0 
+\b\f1\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \ab0\af37\afs16 \ltrch\fcs0 \cs15\b0\f37\fs16\up6\lang1033\langfe0\langfenp0\insrsid3881533\charrsid3881533 K{\footnote \ltrpar \pard\plain \ltrpar
+\s16\ql \li0\ri0\sb60\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af37\afs20\alang1025 \ltrch\fcs0 \f37\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 
+\cs15\fs16\up6\lang1033\langfe0\langfenp0\insrsid3881533 K}{\rtlch\fcs1 \af37 \ltrch\fcs0 \insrsid3881533  wild card; catalog search; disable; wildcard}}}{\rtlch\fcs1 \af1 \ltrch\fcs0 \insrsid3881533 
+ Disable wild-card characters in catalog search functions
+\par }\pard\plain \ltrpar\ql \li240\ri0\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin240\itap0\pararsid15952856 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af1 \ltrch\fcs0 
+\f1\insrsid3881533\charrsid15952856 Normally, an underscore character (\lquote _\rquote ) is treated as a wild card character.  However, this may be undesirable in certain cat
+alog search functions because the metadata may contain underscores.  Checking this box treats an underscore as an ordinary character for catalog searches.
+\par }\pard \ltrpar\ql \li240\ri0\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\adjustright\rin0\lin240\itap0\pararsid15952856 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid15952856 
+\par }\pard\plain \ltrpar\s3\ql \li240\ri0\keepn\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\outlinelevel2\adjustright\rin0\lin240\itap0\pararsid15952856 \rtlch\fcs1 \ab\af1\afs24\alang1025 \ltrch\fcs0 
+\b\f1\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \ab0\af37\afs16 \ltrch\fcs0 \cs15\b0\f37\fs16\up6\lang1033\langfe0\langfenp0\insrsid15952856\charrsid15952856 K{\footnote \ltrpar \pard\plain \ltrpar
+\s16\ql \li0\ri0\sb60\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af37\afs20\alang1025 \ltrch\fcs0 \f37\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 
+\cs15\fs16\up6\lang1033\langfe0\langfenp0\insrsid15952856 K}{\rtlch\fcs1 \af37 \ltrch\fcs0 \insrsid15952856  Unicode; multibyte; conversion}}}{\rtlch\fcs1 \af1 \ltrch\fcs0 \insrsid15952856  Fill Character for failed Unicode/multibyte conversions
+\par }\pard\plain \ltrpar\ql \li240\ri0\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin240\itap0\pararsid15952856 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af1 \ltrch\fcs0 
+\f1\insrsid15952856 
+This edit box is intended for applications that display Unicode data as multi-byte.  The specified character is displayed for each character that fails to convert from Unicode.  For instance, if the character X is specified, the string \'93mulitbXXX\'94
+ means that the string had three Unicode characters that could not be displayed in the current codepage.}{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid12265057 
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid15952856 
+\par If this box is left blank, the default behavior is to return an error when fetching data that cannot be converted from Unicode.
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid2913465 
+\par }\pard\plain \ltrpar\s3\ql \li240\ri0\keepn\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\outlinelevel2\adjustright\rin0\lin240\itap0\pararsid2913465 \rtlch\fcs1 \ab\af1\afs24\alang1025 \ltrch\fcs0 
+\b\f1\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \ab0\af37\afs16 \ltrch\fcs0 \cs15\b0\f37\fs16\up6\lang1033\langfe0\langfenp0\insrsid2913465\charrsid3881533 K{\footnote \ltrpar \pard\plain \ltrpar
+\s16\ql \li0\ri0\sb60\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0\pararsid2913465 \rtlch\fcs1 \af37\afs20\alang1025 \ltrch\fcs0 \f37\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 
+\cs15\fs16\up6\lang1033\langfe0\langfenp0\insrsid2913465 K}{\rtlch\fcs1 \af37 \ltrch\fcs0 \insrsid2913465  wild card; catalog search; disable; wildcard}}}{\rtlch\fcs1 \af1 \ltrch\fcs0 \insrsid2913465  Convert int8 from DBMS to int4
+\par }\pard\plain \ltrpar\ql \li240\ri0\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin240\itap0\pararsid15952856 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af1 \ltrch\fcs0 
+\f1\insrsid2913465 This option is intended for applications that do not wish to receive int8 data type from}{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid9242321  DBMS for DBMS has upgraded certain types}{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid2913465 
+ like sum, ave from int4 to int8, while some front tools do not support int8.}{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid2913465\charrsid15952856  Checking this box }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid2913465 
+indicate that the driver would force an int8 data type into an int4 data type}{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid9242321  and return truncation warning in some cases}{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid2913465 .
+\par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid15952856\charrsid15952856 
+\par }\pard \ltrpar\ql \li240\ri240\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\adjustright\rin240\lin240\itap0 {\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\f37\fs16\up6\insrsid12265057 K{\footnote \ltrpar \pard\plain \ltrpar
+\s16\ql \li0\ri0\sb60\nowidctlpar\wrapdefault\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af37\afs20\alang1025 \ltrch\fcs0 \f37\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af37\afs16 \ltrch\fcs0 \cs15\fs16\up6\insrsid12265057 
+K}{\rtlch\fcs1 \af37 \ltrch\fcs0 \insrsid12265057  test; connection test;}}}{\rtlch\fcs1 \ab\af1\afs24 \ltrch\fcs0 \b\f1\fs24\insrsid12265057  Test }{\rtlch\fcs1 \af1\afs24 \ltrch\fcs0 \f1\fs24\insrsid12265057 (32-bit driver only)}{\rtlch\fcs1 \af1 
+\ltrch\fcs0 \f1\insrsid12265057 
+\par }\pard \ltrpar\ql \li240\ri0\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\adjustright\rin0\lin240\itap0 {\rtlch\fcs1 \af1 \ltrch\fcs0 \f1\insrsid12265057 
+After a data source has been defined and any changes have been applied, this push button allows you to test the current settings for the data source name to insure that a proper connection can be made via ODBC.
+\par 
+\par The TEST push button also refreshes (or crea
+tes if it does not exist already) a cache kept in the DSN definition for improved performance by the ODBC driver when accessing EDBC or the Enterprise Access gateways.  The cache contains the capabilities of the server for identifier name case, name lengt
+h
+s, DBMS version, etc.  The cache is populated during creation or modification of the DSN definition during the database dropdown and changes applied. The driver at application runtime will use the cache from the DSN if the servername and servertype in the
+ 
+DSN is not overridden by the servername and servertype in the application's connection string (if present). Using the DSN cache improves connection performance to DB2, VSAM, IMS, IDMS, DCOM, etc. by eliminating the round-trips to the server caused by the 
+capabilities queries during the ODBC connection process.
+\par 
+\par }\pard \ltrpar\ql \li240\ri240\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\adjustright\rin240\lin240\itap0 {\rtlch\fcs1 \af1\afs16 \ltrch\fcs0 \f1\fs16\insrsid1528768 Copyright \'a9 2006 Ingres Corp}{\rtlch\fcs1 \af1\afs16 \ltrch\fcs0 
+\f1\fs16\insrsid12265057 .  All Rights Reserved.
+\par }\pard\plain \ltrpar\s16\ql \li240\ri0\nowidctlpar\tx480\tx960\tx1200\wrapdefault\faauto\adjustright\rin0\lin240\itap0 \rtlch\fcs1 \af37\afs20\alang1025 \ltrch\fcs0 \f37\fs20\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af1 \ltrch\fcs0 
+\f1\insrsid12265057 
+\par }}

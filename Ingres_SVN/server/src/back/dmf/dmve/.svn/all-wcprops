@@ -1,0 +1,269 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/ingres/!svn/ver/1/main/src/back/dmf/dmve
+END
+dmvesetbof.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmvesetbof.c
+END
+dmvefmap.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmvefmap.c
+END
+dmvertrp.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmvertrp.c
+END
+dmvertpt.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmvertpt.c
+END
+dmvefren.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmvefren.c
+END
+dmvebi.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmvebi.c
+END
+dmvedest.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmvedest.c
+END
+dmveext.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmveext.c
+END
+dmvecrvf.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmvecrvf.c
+END
+dmvereloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmvereloc.c
+END
+dmvedel.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmvedel.c
+END
+dmveundo.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmveundo.c
+END
+dmveovfl.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmveovfl.c
+END
+dmveupdo.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmveupdo.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/Jamfile
+END
+dmvebtov.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmvebtov.c
+END
+dmvedall.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmvedall.c
+END
+dmvejnleof.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmvejnleof.c
+END
+dmveloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmveloc.c
+END
+dmvedis.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmvedis.c
+END
+dmvefcre.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmvefcre.c
+END
+dmvesplt.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmvesplt.c
+END
+dmvebtdl.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmvebtdl.c
+END
+dmvedmu.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmvedmu.c
+END
+dmverep.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmverep.c
+END
+dmveass.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmveass.c
+END
+dmvemodify.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmvemodify.c
+END
+dmveai.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmveai.c
+END
+dmveredo.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmveredo.c
+END
+dmvebtfr.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmvebtfr.c
+END
+dmvesm0.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmvesm0.c
+END
+dmvesm1.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmvesm1.c
+END
+dmvesm2.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmvesm2.c
+END
+dmvecreate.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmvecreate.c
+END
+dmvertdl.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmvertdl.c
+END
+dmvenofu.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmvenofu.c
+END
+dmveindex.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmveindex.c
+END
+dmveput.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmveput.c
+END
+dmveall.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmveall.c
+END
+dmvebtpt.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmvebtpt.c
+END
+dmvecrdb.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmvecrdb.c
+END
+dmveutil.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmveutil.c
+END
+dmveload.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmveload.c
+END
+dmvealt.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dmve/dmvealt.c
+END

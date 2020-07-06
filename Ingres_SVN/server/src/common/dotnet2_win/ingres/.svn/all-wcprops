@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/ingres
+END
+connection.resx
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/ingres/connection.resx
+END
+ex.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/ingres/ex.cs
+END
+command.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/ingres/command.cs
+END
+transact.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/ingres/transact.cs
+END
+adapter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/ingres/adapter.cs
+END
+metadata.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/ingres/metadata.cs
+END
+ingres.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/ingres/ingres.csproj
+END
+commandbuilder.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/ingres/commandbuilder.cs
+END
+permission.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/ingres/permission.cs
+END
+error.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/ingres/error.cs
+END
+command.resx
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/ingres/command.resx
+END
+assemblyinfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/ingres/assemblyinfo.cs
+END
+datareader.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/ingres/datareader.cs
+END
+connectionstringbuilder.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/ingres/connectionstringbuilder.cs
+END
+connection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/ingres/connection.cs
+END
+ingres.csproj.user
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/ingres/ingres.csproj.user
+END
+param.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/ingres/param.cs
+END
+factory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/ingres/factory.cs
+END

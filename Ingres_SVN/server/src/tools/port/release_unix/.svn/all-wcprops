@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/tools/port/release_unix
+END
+orprerls.sh
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/tools/port/release_unix/orprerls.sh
+END
+mkw4sysdep.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/tools/port/release_unix/mkw4sysdep.sh
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/release_unix/MANIFEST
+END
+mksysdep.sh
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/tools/port/release_unix/mksysdep.sh
+END
+mksysdep.1
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/release_unix/mksysdep.1
+END

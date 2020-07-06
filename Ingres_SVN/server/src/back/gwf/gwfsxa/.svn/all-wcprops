@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/back/gwf/gwfsxa
+END
+gwfsxa.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/gwf/gwfsxa/gwfsxa.c
+END
+gwfsxa.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/gwf/gwfsxa/gwfsxa.h
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/gwf/gwfsxa/Jamfile
+END
+gwfsxaer.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/back/gwf/gwfsxa/gwfsxaer.c
+END
+gwfsxacv.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/back/gwf/gwfsxa/gwfsxacv.c
+END
+gwfsxaut.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/back/gwf/gwfsxa/gwfsxaut.c
+END
+gwfsxadata.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/back/gwf/gwfsxa/gwfsxadata.c
+END
+gwfsxamo.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/back/gwf/gwfsxa/gwfsxamo.c
+END

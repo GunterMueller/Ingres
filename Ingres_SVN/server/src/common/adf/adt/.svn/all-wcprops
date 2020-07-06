@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/ingres/!svn/ver/3/main/src/common/adf/adt
+END
+adtkkcmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/adf/adt/adtkkcmp.c
+END
+adtsortcmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/adf/adt/adtsortcmp.c
+END
+adttupcmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/3/main/src/common/adf/adt/adttupcmp.c
+END
+adtwhichpart.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/common/adf/adt/adtwhichpart.c
+END
+adtvvcmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/adf/adt/adtvvcmp.c
+END
+adtcompute.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/adf/adt/adtcompute.c
+END
+adtpcompute.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/common/adf/adt/adtpcompute.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/common/adf/adt/Jamfile
+END
+adtktktcmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/adf/adt/adtktktcmp.c
+END
+adttupvcmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/adf/adt/adttupvcmp.c
+END
+adtkeytupcmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/common/adf/adt/adtkeytupcmp.c
+END

@@ -1,0 +1,52 @@
+8
+
+dir
+33
+http://code.ingres.com/ingres/main/src/common/cuf/cut
+http://code.ingres.com/ingres
+
+
+
+2008-03-20T07:36:25.925856Z
+1
+root
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+45b5d43f-8932-4c86-835a-3654e5842839
+
+cutinterf.c
+file
+
+
+
+
+2008-05-18T00:59:33.000000Z
+3b171d51ff5d3b27fb220a6f76001920
+2008-03-20T07:36:25.925856Z
+1
+root
+
+Jamfile
+file
+
+
+
+
+2008-05-18T00:59:33.000000Z
+2fa03cdaa71fab428efd819a54d19d15
+2008-03-20T07:36:25.925856Z
+1
+root
+

@@ -1,0 +1,10 @@
+#
+# Jamfile file for cl!clf!me_vms
+#
+
+SubDir ING_SRC cl clf me_vms ;
+
+IISUBSYS cl clf me_vms ;
+
+IILIBRARY COMPATLIB : melifo.c mepages.c meactual.c me.c meuse.c
+	mebyte.mar ;

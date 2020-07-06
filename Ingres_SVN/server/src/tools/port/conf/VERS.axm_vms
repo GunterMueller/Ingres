@@ -1,0 +1,5 @@
+config=axm_vms
+option=INGRESII
+build=107
+option=CAS_ENABLED
+option=CLUSTER_BUILD

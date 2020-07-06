@@ -1,0 +1,695 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/22/main/src/tools/port/shell_unix
+END
+yyfix.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/yyfix.sh
+END
+newbuild.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/newbuild.sh
+END
+overwrite.1
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/overwrite.1
+END
+grepall.1
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/grepall.1
+END
+rofix.1
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/rofix.1
+END
+dirname.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/dirname.sh
+END
+mkidir.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkidir.sh
+END
+mkspechdr.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkspechdr.sh
+END
+mkw4vers.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkw4vers.sh
+END
+mantmplt.1
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mantmplt.1
+END
+needs.1
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/needs.1
+END
+mkporth.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkporth.sh
+END
+mkbzarch.1
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkbzarch.1
+END
+mkxbzarch.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkxbzarch.sh
+END
+genrelid.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/genrelid.sh
+END
+crdbtmplt.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/crdbtmplt.sh
+END
+building.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/building.sh
+END
+taringres.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/taringres.sh
+END
+yyfix.1
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/yyfix.1
+END
+mergelibs.1
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mergelibs.1
+END
+rcompall.1
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/rcompall.1
+END
+mkfecat.1
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkfecat.1
+END
+mkw4cat.1
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkw4cat.1
+END
+mkbzarch.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/11/main/src/tools/port/shell_unix/mkbzarch.sh
+END
+headers.1
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/headers.1
+END
+yypp.sh
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/yypp.sh
+END
+mksaveset.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mksaveset.sh
+END
+buildmw.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/buildmw.sh
+END
+brget.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/brget.sh
+END
+VERS.1
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/VERS.1
+END
+splitlibs.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/splitlibs.sh
+END
+unmksaveset.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/unmksaveset.sh
+END
+includes.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/includes.sh
+END
+whatunix.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/whatunix.sh
+END
+mkw4dir.1
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkw4dir.1
+END
+getextra.1
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/getextra.1
+END
+mergelibs.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mergelibs.sh
+END
+readvers.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/readvers.sh
+END
+ccpp.1
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/ccpp.1
+END
+mkshlibs.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkshlibs.sh
+END
+ipcsremove.sh
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/ipcsremove.sh
+END
+shlibinfo.sh
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/22/main/src/tools/port/shell_unix/shlibinfo.sh
+END
+mkkrb5shlib.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkkrb5shlib.sh
+END
+ingbatch.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/ingbatch.sh
+END
+arc_unlock.sh
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/arc_unlock.sh
+END
+mkw4dir.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkw4dir.sh
+END
+mkfinal.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkfinal.sh
+END
+whoami.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/whoami.sh
+END
+ccpp.sh
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/ccpp.sh
+END
+overwrite.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/overwrite.sh
+END
+grepall.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/grepall.sh
+END
+offend.1
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/offend.1
+END
+mkman.1
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkman.1
+END
+picall.1
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/picall.1
+END
+mkw4glrun.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkw4glrun.sh
+END
+louf.1
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/louf.1
+END
+mkorrun.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkorrun.sh
+END
+mkports.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkports.sh
+END
+ingman.1
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/ingman.1
+END
+mk3glfiles.sh
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mk3glfiles.sh
+END
+offend.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/offend.sh
+END
+csshutdown.sh
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/csshutdown.sh
+END
+bucode.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/bucode.sh
+END
+arc_lock.1
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/arc_lock.1
+END
+mksecret.1
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mksecret.1
+END
+mkidir.1
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkidir.1
+END
+louf.sh
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/louf.sh
+END
+dirname.1
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/dirname.1
+END
+arc_unlock.1
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/arc_unlock.1
+END
+bang.sh
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/bang.sh
+END
+tartools.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/tartools.sh
+END
+w4bang.1
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/w4bang.1
+END
+ingman.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/ingman.sh
+END
+mkfecat.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkfecat.sh
+END
+mkw4cat.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkw4cat.sh
+END
+whoami.1
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/whoami.1
+END
+arc_lock.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/arc_lock.sh
+END
+mksecret.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mksecret.sh
+END
+mk3glfiles.1
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mk3glfiles.1
+END
+copyconv.1
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/copyconv.1
+END
+convusers.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/convusers.sh
+END
+rofix.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/rofix.sh
+END
+bats.sh
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/bats.sh
+END
+cleansrc.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/cleansrc.sh
+END
+mkw4apped.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkw4apped.sh
+END
+whatunix.1
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/whatunix.1
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/Jamfile
+END
+each.sh
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/each.sh
+END
+mkw4nms.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkw4nms.sh
+END
+mkapirel.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkapirel.sh
+END
+mkw4gldev.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkw4gldev.sh
+END
+mksvrshlibs.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mksvrshlibs.sh
+END
+copyvec.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/copyvec.sh
+END
+mkw4vers.1
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkw4vers.1
+END
+headers.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/headers.sh
+END
+mkdefault.sh
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/17/main/src/tools/port/shell_unix/mkdefault.sh
+END
+mkorruntime.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkorruntime.sh
+END
+mksvrarlib.sh
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mksvrarlib.sh
+END
+bget.sh
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/bget.sh
+END
+w4bang.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/w4bang.sh
+END
+each.1
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/each.1
+END
+ensure.1
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/ensure.1
+END
+csstartup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/csstartup.sh
+END
+tartoolsqa.sh
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/tartoolsqa.sh
+END
+includes.1
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/includes.1
+END
+project.1
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/project.1
+END
+bang.1
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/bang.1
+END
+copyvec.1
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/copyvec.1
+END
+refresh.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/refresh.sh
+END
+buildOR.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/buildOR.sh
+END
+ensure.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/ensure.sh
+END
+mkman.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkman.sh
+END
+mkgv.sh
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkgv.sh
+END
+mkgeneric.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkgeneric.sh
+END
+mkfill.1
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/shell_unix/mkfill.1
+END

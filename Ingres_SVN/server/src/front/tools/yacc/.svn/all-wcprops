@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/ingres/!svn/ver/1/main/src/front/tools/yacc
+END
+dextern.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/tools/yacc/dextern.h
+END
+yaccparr
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/tools/yacc/yaccparr
+END
+iyacc.lot
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/tools/yacc/iyacc.lot
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/tools/yacc/MANIFEST
+END
+files.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/tools/yacc/files.h
+END
+wgl_32s.hnt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/tools/yacc/wgl_32s.hnt
+END
+iyacc.par
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/tools/yacc/iyacc.par
+END
+wgl_wnt.hnt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/tools/yacc/wgl_wnt.hnt
+END
+y1.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/tools/yacc/y1.c
+END
+y2.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/tools/yacc/y2.c
+END
+y3.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/tools/yacc/y3.c
+END
+y4.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/tools/yacc/y4.c
+END
+wgl_win.hnt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/tools/yacc/wgl_win.hnt
+END

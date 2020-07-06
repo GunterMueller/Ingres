@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/ingres/!svn/ver/1/main/src/dbutil/duf/duc
+END
+dbcnf60.com
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/dbutil/duf/duc/dbcnf60.com
+END
+dbcnf61a.com
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/dbutil/duf/duc/dbcnf61a.com
+END
+ducreate.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/dbutil/duf/duc/ducreate.qsc
+END
+iiproc.sql
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/dbutil/duf/duc/iiproc.sql
+END
+createdb.lot
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/dbutil/duf/duc/createdb.lot
+END
+dbcnf.qry
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/dbutil/duf/duc/dbcnf.qry
+END
+ducdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/dbutil/duf/duc/ducdata.c
+END
+ducommon.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/dbutil/duf/duc/ducommon.qsc
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/dbutil/duf/duc/Jamfile
+END
+dbcnf.com
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/dbutil/duf/duc/dbcnf.com
+END
+dbcnf60.qry
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/dbutil/duf/duc/dbcnf60.qry
+END
+gettmplt.com
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/dbutil/duf/duc/gettmplt.com
+END
+createdb.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/dbutil/duf/duc/createdb.exe.manifest
+END
+dbcnf61a.qry
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/dbutil/duf/duc/dbcnf61a.qry
+END

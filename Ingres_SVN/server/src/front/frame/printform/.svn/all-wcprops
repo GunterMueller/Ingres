@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/frame/printform
+END
+erpf.msg
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/printform/erpf.msg
+END
+printform.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/front/frame/printform/printform.exe.manifest
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frame/printform/Jamfile
+END
+prtform.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frame/printform/prtform.c
+END
+printform.lot
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/frame/printform/printform.lot
+END
+dumpform.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/frame/printform/dumpform.qsc
+END

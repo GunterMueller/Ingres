@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/frontcl/files_vms
+END
+vt100nk.map
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/frontcl/files_vms/vt100nk.map
+END
+oslhdr.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/frontcl/files_vms/oslhdr.h
+END
+vt220.map
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/frontcl/files_vms/vt220.map
+END
+iiapi.noshare
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/frontcl/files_vms/iiapi.noshare
+END
+iiapi.opt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/frontcl/files_vms/iiapi.opt
+END
+vt100f.map
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/frontcl/files_vms/vt100f.map
+END
+abflnk.opt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/frontcl/files_vms/abflnk.opt
+END
+vt100i.map
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/frontcl/files_vms/vt100i.map
+END
+vt200i.map
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/frontcl/files_vms/vt200i.map
+END
+esql.noshare
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/frontcl/files_vms/esql.noshare
+END
+startup
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/files_vms/startup
+END
+abfdyn.opt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/frontcl/files_vms/abfdyn.opt
+END
+esql.opt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/frontcl/files_vms/esql.opt
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/files_vms/Jamfile
+END
+equel.noshare
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/frontcl/files_vms/equel.noshare
+END
+equel.opt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/frontcl/files_vms/equel.opt
+END
+startsql
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/frontcl/files_vms/startsql
+END
+dayfile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/files_vms/dayfile
+END

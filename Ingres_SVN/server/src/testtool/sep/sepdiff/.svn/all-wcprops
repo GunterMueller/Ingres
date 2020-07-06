@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/testtool/sep/sepdiff
+END
+output.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/testtool/sep/sepdiff/output.c
+END
+miller.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/testtool/sep/sepdiff/miller.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/testtool/sep/sepdiff/Jamfile
+END
+memory.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/testtool/sep/sepdiff/memory.c
+END
+qadiff.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/testtool/sep/sepdiff/qadiff.c
+END
+grammar.lex
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/testtool/sep/sepdiff/grammar.lex
+END

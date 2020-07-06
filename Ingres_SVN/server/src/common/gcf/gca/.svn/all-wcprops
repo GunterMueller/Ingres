@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/ingres/!svn/ver/1/main/src/common/gcf/gca
+END
+gcastitc.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/gcf/gca/gcastitc.c
+END
+gcasave.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gca/gcasave.c
+END
+gcaauth.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gca/gcaauth.c
+END
+gcainit.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gca/gcainit.c
+END
+gcacmpt.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gca/gcacmpt.c
+END
+gcagcm.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/common/gcf/gca/gcagcm.c
+END
+gcaterm.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gca/gcaterm.c
+END
+gcarstor.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/gcf/gca/gcarstor.c
+END
+gcaacbmg.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/gcf/gca/gcaacbmg.c
+END
+gcacall.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gca/gcacall.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/common/gcf/gca/Jamfile
+END
+gcautil.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gca/gcautil.c
+END
+gcaasync.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/gcf/gca/gcaasync.c
+END
+gcapriv.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gca/gcapriv.c
+END
+gcans.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/common/gcf/gca/gcans.c
+END

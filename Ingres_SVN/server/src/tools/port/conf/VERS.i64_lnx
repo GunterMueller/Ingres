@@ -1,0 +1,8 @@
+config=int_lnx
+config64=i64_lnx
+option=INGRESII
+option=libc6
+option=ADD_ON32
+option=SVR_AR
+option=DBL
+build=00

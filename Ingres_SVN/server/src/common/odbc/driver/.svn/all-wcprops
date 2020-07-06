@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/common/odbc/driver
+END
+trace.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/odbc/driver/trace.c
+END
+prepare.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/common/odbc/driver/prepare.c
+END
+sql.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/odbc/driver/sql.c
+END
+results.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/common/odbc/driver/results.c
+END
+execute.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/common/odbc/driver/execute.c
+END
+caidoopt.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/common/odbc/driver/caidoopt.h
+END
+idmsodlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/common/odbc/driver/idmsodlg.h
+END
+catalog.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/common/odbc/driver/catalog.c
+END
+descript.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/common/odbc/driver/descript.c
+END
+idmsoinf.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/common/odbc/driver/idmsoinf.h
+END
+transact.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/common/odbc/driver/transact.c
+END
+convert.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/common/odbc/driver/convert.c
+END
+getro.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/odbc/driver/getro.c
+END
+idmsoids.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/common/odbc/driver/idmsoids.h
+END
+encrypt.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/common/odbc/driver/encrypt.c
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/odbc/driver/MANIFEST
+END
+odbcfelib.lot
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/odbc/driver/odbcfelib.lot
+END
+odbcrofelib.lot
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/common/odbc/driver/odbcrofelib.lot
+END
+unicode.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/common/odbc/driver/unicode.c
+END
+getrw.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/odbc/driver/getrw.c
+END
+lock.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/odbc/driver/lock.c
+END
+idmsodbc.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/common/odbc/driver/idmsodbc.h
+END
+error.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/odbc/driver/error.c
+END
+connect.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/common/odbc/driver/connect.c
+END
+info.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/odbc/driver/info.c
+END
+options.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/common/odbc/driver/options.c
+END
+idmsover.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/common/odbc/driver/idmsover.h
+END

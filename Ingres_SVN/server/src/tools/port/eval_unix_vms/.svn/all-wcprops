@@ -1,0 +1,251 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms
+END
+nullderef.1
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/nullderef.1
+END
+endian.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/endian.c
+END
+byteswap.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/byteswap.c
+END
+argeval.1
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/argeval.1
+END
+unschar.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/unschar.c
+END
+machine.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/machine.c
+END
+argorder.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/argorder.c
+END
+bitsin.1
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/bitsin.1
+END
+sysint.1
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/sysint.1
+END
+maxfiles.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/maxfiles.c
+END
+align.1
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/align.1
+END
+maxproc.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/maxproc.c
+END
+regrest.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/regrest.c
+END
+byteswap.1
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/byteswap.1
+END
+endian.1
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/endian.1
+END
+salign.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/salign.c
+END
+unschar.1
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/unschar.1
+END
+addrfmt.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/addrfmt.c
+END
+machine.1
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/machine.1
+END
+argorder.1
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/argorder.1
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/Jamfile
+END
+maxfiles.1
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/maxfiles.1
+END
+salign.1
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/salign.1
+END
+stdlim.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/stdlim.c
+END
+stkorder.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/stkorder.c
+END
+sizeof.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/sizeof.c
+END
+addrfmt.1
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/addrfmt.1
+END
+argloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/argloc.c
+END
+tidswap.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/tidswap.c
+END
+exedata.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/exedata.c
+END
+maxstack.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/maxstack.c
+END
+maxvals.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/maxvals.c
+END
+sizeof.1
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/sizeof.1
+END
+nullderef.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/nullderef.c
+END
+argeval.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/argeval.c
+END
+argloc.1
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/argloc.1
+END
+bitsin.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/bitsin.c
+END
+maxvals.1
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/maxvals.1
+END
+maxstack.1
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/maxstack.1
+END
+sysint.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/sysint.c
+END
+align.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/eval_unix_vms/align.c
+END

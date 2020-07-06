@@ -1,0 +1,106 @@
+#
+#  Copyright (c) 2004 Ingres Corporation
+#
+#  Name: Jamdefs.su9_us5 -- Variable definitions for Sparc Solaris
+#
+#  Description:
+#       Platform specific variable definitions for Sparc Solaris
+#
+# History:
+#	17-aug-2004 (stephenb)
+#	    Initial creation
+#	27-sep-2004 (gupsh01)
+#	    Added lpthread to link with thread library.
+#	05-oct-2004 (hanch04)
+#	    Updated CCLDMACH, CCLDMACH64.
+#	15-oct-2004 (sheco02)
+#	    Add LIBSFX, OBJSFX and ICE file extension.
+#	27-Oct-2004 (hanje04)
+#	    Add SHLIBLD and CCSHLDMACH for building UDT library.
+#	    Fix XERC_DEF
+#	22-Dec-2004 (sheco02)
+#	    Modify the OPTIM and add IINOOPTIM.
+#	14-Jan-2005 (sheco02)
+#	    Change IINOOPTIM to NOOPTIM to sync with other platforms.
+#	15-Oct-2004 (schka24)
+#	    Added lib, obj suffix vars for Win build integration.
+#	18-Mar-2005 (hanje04)
+#	    Define CCSHLDMACH64.
+#	29-Sep-2005 (sheco02)
+#	    Define platform_string & extension_string for bug 115262.
+#       16-Oct-2006 (hanal04) Bug 116866
+#           Add CCDEBUG to hold the compiler's debug flag. Used to ensure
+#           NOOPTIM does not strip this when explicitly set.
+#	13-Feb-2007 (hweho01)
+#           NOOPTIM should be set to "", optimizer will not be turned off 
+#           by option "-O0". Compiler version : Forte 6.0 Update 2 C 5.3. 
+#	5-Sep-2007 (bonro01)
+#	    Use nawk on Solaris instead of awk because of change 488095
+#	    for bug 117955 which changed fi_defn.awk syntax which was
+#	    invalid for the Solaris version of awk.
+#           
+#####
+
+NETSCAPE_API_FLAG 	= "-DXP_UNIX" ;
+APACHE_API_FLAG 	= "-DLINUX=2" ;
+VERS 	= "su4_us5" ;
+VERS64	= "su9_us5" ;
+ASMACH = "-xarch=v8plus" ;
+ASMACH64 = "-xarch=v9" ;
+CC 	default = "cc" ;
+CCDEBUG = "-g" ;
+CPP 	default = "/lib/cpp" ;
+CCMACH 		= "-DSVR4 -D_SVID_GETTOD -mt" ;
+CCMACH64 	= "-Dsu9_us5 -DADD_ON64 -xarch=v9 -DSVR4 -D_SVID_GETTOD -mt" ;
+CCLDMACH	= "-DSVR4 -D_SVID_GETTOD -mt" ;
+CCLDMACH64 	= "-Dsu9_us5 -DADD_ON64 -xarch=v9 -DSVR4 -D_SVID_GETTOD -mt" ;
+CCLDSERVER 	= "" ;
+CCPICFLAG 	= "-K PIC" ;
+SHLIBLD 	= "ld" ;
+CCSHLDMACH	= "-G" ;
+CCSHLDMACH64	= "-G" ; 
+SLSFX 		= "so" ;
+LIBSFX 		= "a" ;
+OBJSFX 		= "o" ;
+MWSLSFX 	= "so" ;
+CGISFX 		= "cgi" ;
+LDLIBPATH	= "/opt/SUNWspro/lib /usr/ccs/lib /usr/lib" ;
+LDLIBPATH64 	= "/opt/SUNWspro/lib/v9 /usr/ccs/lib/sparcv9 /usr/lib/sparcv9" ;
+LIBMACH 	= "" ;
+LDLIBMACH	= "-L/usr/lib -lsocket -lelf -lposix4 -ldl -lnsl -lm -lpthread" ;
+LDLIBMACH64	= "-L/usr/lib/sparcv9 -lsocket -lelf -lposix4 -ldl -lnsl -lm -lpthread" ; 
+LD_ICE_FLAGS 	= "" ;
+LEVEL1_OPTIM 	= "-O1" ;
+LONGLONG	= long long ;
+#OPTIM 	default = "-O" ;
+OPTIM		= "" ;
+IIOPTIM		?= "-O" ;
+NOOPTIM 	?= "" ;
+SHELLHEADER 	= ""#!/bin/sh"" ;
+BSD42 default = -DBSD42 ;
+LEX = flex ;
+DIRENT default = -DDIRENT ;
+DIRFUNC default = -DDIRFUNC ;
+NO_DIRFUNC default = -DNO_DIRFUNC ;
+SYS5 default = -DSYS5 ;
+SVR_SHLIBS = "" ;
+C++	= "CC" ;
+C++FLAGS = "-DSOLARIS -DSVR4 -D_SVID_GETTOD -mt -w" ;
+C++FLAGS64 = "-DADD_ON64 -DSOLARIS -DSVR4 -D_SVID_GETTOD -mt -w -xarch=v9" ;
+CXX	= "CC" ;
+CXX_DEFS	= "-DSOLARIS -DSVR4 -D_SVID_GETTOD -mt -w" ;
+UNDEFFLAG  = "-u " ;
+XERC_DEFS	= "-DXML_USE_NATIVE_TRANSCODER -DXML_USE_INMEM_MESSAGELOADER -DXML_USE_NETACCESSOR_SOCKET" ;
+XERC_LIBS	= "/usr/lib/libc.so.1" ;
+DBMS_STACKSIZE = 131072 ;
+AWK	= nawk ;
+#
+#ICE File extensions
+#
+ICE_EXT = so ;
+CGI_EXT = cgi ;
+#
+# for generic readme.html only
+#
+platform_string = "Sun Solaris UltraSPARC" ;
+extension_string = $(config_string) ;

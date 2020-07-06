@@ -1,0 +1,221 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/ingres/!svn/ver/1/main/src/testtool/sep/sep
+END
+procmmd.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/procmmd.c
+END
+getcmd.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/getcmd.c
+END
+sep.1
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/sep.1
+END
+diffing.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/diffing.c
+END
+displine.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/displine.c
+END
+opncomm.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/opncomm.c
+END
+nextrec.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/nextrec.c
+END
+sepfiles.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/sepfiles.c
+END
+testcase.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/testcase.c
+END
+classify.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/classify.c
+END
+breakln.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/breakln.c
+END
+testinfo.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/testinfo.sc
+END
+septool.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/septool.c
+END
+comments.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/comments.c
+END
+utility2.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/utility2.c
+END
+crestf.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/crestf.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/Jamfile
+END
+stillcon.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/stillcon.c
+END
+crecanon.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/crecanon.c
+END
+termcap.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/termcap.c
+END
+sepostcl.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/sepostcl.c
+END
+setstate.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/setstate.c
+END
+septool.lot
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/septool.lot
+END
+readtc.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/readtc.c
+END
+utility.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/utility.c
+END
+evalif.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/evalif.c
+END
+peditor.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/peditor.c
+END
+sepparm.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/sepparm.c
+END
+legalusr.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/legalusr.c
+END
+getans.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/getans.c
+END
+trantok.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/trantok.c
+END
+peditor.lot
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/peditor.lot
+END
+funckeys.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/funckeys.c
+END
+isitif.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/isitif.c
+END
+shellcmd.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/shellcmd.c
+END
+assemble.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/testtool/sep/sep/assemble.c
+END

@@ -1,0 +1,287 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/ingres/!svn/ver/1/main/src/front/st/util
+END
+iilgkmem.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/util/iilgkmem.c
+END
+iimklog.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/util/iimklog.exe.manifest
+END
+iiermsg.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/st/util/iiermsg.c
+END
+iipmhost.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/util/iipmhost.exe.manifest
+END
+iiingloc.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/util/iiingloc.exe.manifest
+END
+iipthreadtst.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/st/util/iipthreadtst.c
+END
+iiaudloc.lot
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/util/iiaudloc.lot
+END
+iiconcat.lot
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/util/iiconcat.lot
+END
+iinethost.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/util/iinethost.c
+END
+ingstart.lot
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/util/ingstart.lot
+END
+iipmhost.lot
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/util/iipmhost.lot
+END
+iicpydas.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/util/iicpydas.exe.manifest
+END
+iivertst.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/util/iivertst.c
+END
+iilgkmem.lot
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/util/iilgkmem.lot
+END
+iijobdef.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/util/iijobdef.c
+END
+iiermsg.lot
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/util/iiermsg.lot
+END
+iigetres.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/util/iigetres.c
+END
+syscheck.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/util/syscheck.c
+END
+pmtest.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/st/util/pmtest.c
+END
+util.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/st/util/util.c
+END
+syscheck.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/util/syscheck.exe.manifest
+END
+iisulock.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/util/iisulock.c
+END
+iinethost.lot
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/st/util/iinethost.lot
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/st/util/Jamfile
+END
+iireadresp.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/util/iireadresp.c
+END
+iigetres.lot
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/util/iigetres.lot
+END
+iijobdef.lot
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/util/iijobdef.lot
+END
+pmtest.lot
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/util/pmtest.lot
+END
+iimklog.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/st/util/iimklog.c
+END
+iiconcat.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/util/iiconcat.exe.manifest
+END
+iiaudloc.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/util/iiaudloc.exe.manifest
+END
+iiingloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/util/iiingloc.c
+END
+iinumainfo.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/util/iinumainfo.c
+END
+iisulock.lot
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/util/iisulock.lot
+END
+ingstart.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/util/ingstart.exe.manifest
+END
+iicpydas.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/util/iicpydas.c
+END
+iimklog.lot
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/util/iimklog.lot
+END
+iiingloc.lot
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/util/iiingloc.lot
+END
+iinumainfo.lot
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/st/util/iinumainfo.lot
+END
+iigetenv.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/util/iigetenv.c
+END
+iigetenv.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/util/iigetenv.exe.manifest
+END
+iigetres.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/util/iigetres.exe.manifest
+END
+iicpydas.lot
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/util/iicpydas.lot
+END
+iiaudloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/util/iiaudloc.c
+END
+iiconcat.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/util/iiconcat.c
+END
+ingstart.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/util/ingstart.c
+END
+iipmhost.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/util/iipmhost.c
+END

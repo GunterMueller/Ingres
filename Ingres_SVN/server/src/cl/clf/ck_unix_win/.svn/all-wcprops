@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/cl/clf/ck_unix_win
+END
+cksubst.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/ck_unix_win/cksubst.c
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/cl/clf/ck_unix_win/MANIFEST
+END
+ckspawn.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/ck_unix_win/ckspawn.c
+END
+cktmpl_wrap.ccpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/cl/clf/ck_unix_win/cktmpl_wrap.ccpp
+END
+ckerror.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/ck_unix_win/ckerror.c
+END
+cktmpl_cpio.ccpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/cl/clf/ck_unix_win/cktmpl_cpio.ccpp
+END
+cktmpl_ocfs.ccpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/cl/clf/ck_unix_win/cktmpl_ocfs.ccpp
+END
+cktmpl_wrap.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/cl/clf/ck_unix_win/cktmpl_wrap.sh
+END
+ck.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/cl/clf/ck_unix_win/ck.c
+END
+cktmpl.ccpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/cl/clf/ck_unix_win/cktmpl.ccpp
+END

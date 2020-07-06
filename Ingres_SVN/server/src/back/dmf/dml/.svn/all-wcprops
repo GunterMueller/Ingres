@@ -1,0 +1,323 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/ingres/!svn/ver/1/main/src/back/dmf/dml
+END
+dmxsecure.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmxsecure.c
+END
+dmtscost.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmtscost.c
+END
+dmrpos.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmrpos.c
+END
+dmcstusr.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmcstusr.c
+END
+dmldata.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmldata.c
+END
+dmrdump.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmrdump.c
+END
+dmhfile.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmhfile.c
+END
+dmxresume.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmxresume.c
+END
+dmralter.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmralter.c
+END
+dmtclose.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmtclose.c
+END
+dmrput.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmrput.c
+END
+dmcadd.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmcadd.c
+END
+dmtalter.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmtalter.c
+END
+dmcwrite.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmcwrite.c
+END
+dmcgcmt.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmcgcmt.c
+END
+dmsiiseq.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmsiiseq.c
+END
+dmxxa.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmxxa.c
+END
+dmcstart.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmcstart.c
+END
+dmcfabrt.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmcfabrt.c
+END
+dmcopen.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmcopen.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/dmf/dml/Jamfile
+END
+dmcclose.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmcclose.c
+END
+dmcend.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmcend.c
+END
+dmcalter.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmcalter.c
+END
+dmcrepq.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmcrepq.c
+END
+dmsseq.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmsseq.c
+END
+dmrunfix.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmrunfix.c
+END
+dmxbegin.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmxbegin.c
+END
+dmrthreads.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmrthreads.c
+END
+dmttbllock.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmttbllock.c
+END
+dmcread.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmcread.c
+END
+dmragg.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmragg.c
+END
+dmxcommit.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmxcommit.c
+END
+dmcshow.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmcshow.c
+END
+dmrdelete.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmrdelete.c
+END
+dmxsvpt.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmxsvpt.c
+END
+dmtopen.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmtopen.c
+END
+dmtdelete.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmtdelete.c
+END
+dmcbegin.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmcbegin.c
+END
+dmtcreate.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmtcreate.c
+END
+dmcstop.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmcstop.c
+END
+dmccptmr.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmccptmr.c
+END
+dmclwrt.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmclwrt.c
+END
+dmrreplace.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmrreplace.c
+END
+dmxabort.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmxabort.c
+END
+dmcfast.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmcfast.c
+END
+dmrload.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmrload.c
+END
+dmrget.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmrget.c
+END
+dmccdead.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmccdead.c
+END
+dmpe.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmpe.c
+END
+dmtshow.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmtshow.c
+END
+dmcdel.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmcdel.c
+END
+dmcrcvry.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/dmf/dml/dmcrcvry.c
+END

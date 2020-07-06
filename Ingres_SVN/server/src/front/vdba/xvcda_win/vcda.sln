@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vcda", "vcda.vcproj", "{F1922EA4-4579-47D6-81D0-F54AC1ED3DDD}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 1
+		SccProjectUniqueName0 = vcda.vcproj
+		SccProjectName0 = \u0022$/COM/Xvcda\u0022,\u0020BEMAAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F1922EA4-4579-47D6-81D0-F54AC1ED3DDD}.Debug.ActiveCfg = Debug|Win32
+		{F1922EA4-4579-47D6-81D0-F54AC1ED3DDD}.Debug.Build.0 = Debug|Win32
+		{F1922EA4-4579-47D6-81D0-F54AC1ED3DDD}.Release.ActiveCfg = Release|Win32
+		{F1922EA4-4579-47D6-81D0-F54AC1ED3DDD}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

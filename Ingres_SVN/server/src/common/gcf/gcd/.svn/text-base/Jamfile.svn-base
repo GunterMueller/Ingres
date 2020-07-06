@@ -1,0 +1,27 @@
+#
+# Jamfile file for common!gcf!gcd
+#
+# History:
+#	11-feb-2005 (abbjo03)
+#	    On VMS, link iigcd with the shared API library.
+
+SubDir ING_SRC common gcf gcd ;
+
+IISUBSYS common gcf gcd ;
+
+
+IIBINEXE iigcd : iigcd.c ;
+if $(VMS)
+{
+   IINEEDLIBS iigcd : GCDLIB GCFLIB COMPATLIB SHAPILIB ;
+}
+else
+{
+   IINEEDLIBS iigcd : GCDLIB APILIB GCFLIB ADFLIB CUFLIB COMPATLIB  ;
+}
+
+IILIBRARY GCDLIB : gcdxact.c gcdutil.c gcdstmt.c gcdsess.c
+	gcdrqst.c gcdquery.c gcdpool.c gcdmsg.c gcdjctl.c
+	gcdgcc.c gcdgca.c gcddmtl.c gcddata.c gcdcrsr.c
+	gcdconn.c gcdapi.c gcdadm.c ;
+

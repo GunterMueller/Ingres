@@ -1,0 +1,353 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/ingres/!svn/ver/1/main/src/front/embed/libq
+END
+iinext.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/embed/libq/iinext.c
+END
+iiflush.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/embed/libq/iiflush.c
+END
+iida.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/embed/libq/iida.c
+END
+iisndlog.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/libq/iisndlog.c
+END
+iierror.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/embed/libq/iierror.c
+END
+iife.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/embed/libq/iife.c
+END
+iilqthr.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/embed/libq/iilqthr.c
+END
+iiretini.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/libq/iiretini.c
+END
+iilqevt.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/embed/libq/iilqevt.c
+END
+iisetdom.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/libq/iisetdom.c
+END
+iicvt.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/embed/libq/iicvt.c
+END
+iistrutl.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/libq/iistrutl.c
+END
+iiadfcb.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/embed/libq/iiadfcb.c
+END
+iixact.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/embed/libq/iixact.c
+END
+iiglobal.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/libq/iiglobal.c
+END
+iiparam.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/embed/libq/iiparam.c
+END
+iisqdvar.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/libq/iisqdvar.c
+END
+iirowdsc.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/libq/iirowdsc.c
+END
+iiauth.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/embed/libq/iiauth.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/embed/libq/Jamfile
+END
+adhembed.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/libq/adhembed.c
+END
+iigettup.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/libq/iigettup.c
+END
+iidbproc.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/libq/iidbproc.c
+END
+iiloget.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/embed/libq/iiloget.c
+END
+iilqsess.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/libq/iilqsess.c
+END
+iiqry.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/embed/libq/iiqry.c
+END
+iisync.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/embed/libq/iisync.c
+END
+iisqdrun.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/libq/iisqdrun.c
+END
+iidml.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/embed/libq/iidml.c
+END
+iiqid.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/embed/libq/iiqid.c
+END
+iitm.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/embed/libq/iitm.c
+END
+iilang.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/embed/libq/iilang.c
+END
+iivarstr.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/libq/iivarstr.c
+END
+iigcahdl.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/libq/iigcahdl.c
+END
+iibreak.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/embed/libq/iibreak.c
+END
+iiexec.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/embed/libq/iiexec.c
+END
+iimain.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/embed/libq/iimain.c
+END
+iiingres.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/libq/iiingres.c
+END
+iisyserr.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/libq/iisyserr.c
+END
+iiutsys.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/embed/libq/iiutsys.c
+END
+iidbprmt.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/libq/iidbprmt.c
+END
+iicsrun.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/embed/libq/iicsrun.c
+END
+iiretdom.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/libq/iiretdom.c
+END
+iiwrite.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/embed/libq/iiwrite.c
+END
+iidbg.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/embed/libq/iidbg.c
+END
+iiparret.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/libq/iiparret.c
+END
+iiparset.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/libq/iiparset.c
+END
+iidathdl.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/libq/iidathdl.c
+END
+iilqadr.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/embed/libq/iilqadr.c
+END
+iiloput.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/embed/libq/iiloput.c
+END
+iiinqset.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/libq/iiinqset.c
+END
+iigcatrc.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/libq/iigcatrc.c
+END
+iisqparm.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/libq/iisqparm.c
+END
+iiseterr.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/libq/iiseterr.c
+END
+iilqstrc.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/libq/iilqstrc.c
+END
+iigetdat.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/libq/iigetdat.c
+END
+iiexit.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/embed/libq/iiexit.c
+END
+iisqcrun.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/libq/iisqcrun.c
+END

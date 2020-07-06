@@ -1,0 +1,17 @@
+#
+# Jamfile file for back!sxf!sxap
+#
+
+SubDir ING_SRC back sxf sxap ;
+
+IISUBSYS back sxf sxap ;
+
+IINOOPTIM sxapr.c : nc4_us5 ;
+IINOOPTIM sxapf.c : nc4_us5 ;
+IINOOPTIM sxapdata.c : nc4_us5 ;
+IINOOPTIM sxapc.c : nc4_us5 ;
+
+IILIBRARY SXFLIB : sxapu.c sxapr.c sxapf.c sxapc.c ;
+
+IILIBRARY IMPSXFLIBDATA : sxapdata.c ;
+

@@ -1,0 +1,11 @@
+#
+# Jamfile file for front!ice!ICEStack
+#
+
+SubDir ING_SRC front ice ICEStack ;
+
+IISUBSYS front ice ICEStack ;
+
+
+IILIBRARY ICECONFLIB : icegen.cpp stack.cpp ;
+

@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/common/aif/demo
+END
+apisprrp.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/aif/demo/apisprrp.c
+END
+apiaclnt.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/aif/demo/apiaclnt.h
+END
+apisselc.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/aif/demo/apisselc.c
+END
+makefile.wnt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/common/aif/demo/makefile.wnt
+END
+apiscupd.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/aif/demo/apiscupd.c
+END
+apisconn.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/aif/demo/apisconn.c
+END
+apissell.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/aif/demo/apissell.c
+END
+apisscrl.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/aif/demo/apisscrl.c
+END
+apisproc.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/aif/demo/apisproc.c
+END
+Makefile.ccpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/common/aif/demo/Makefile.ccpp
+END
+apiscdel.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/aif/demo/apiscdel.c
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/aif/demo/MANIFEST
+END
+apisauto.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/aif/demo/apisauto.c
+END
+apisdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/aif/demo/apisdata.c
+END
+apiscopy.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/aif/demo/apiscopy.c
+END
+apisprgt.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/aif/demo/apisprgt.c
+END
+apiasvr.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/aif/demo/apiasvr.c
+END
+apiserr.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/aif/demo/apiserr.c
+END
+apiscomm.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/aif/demo/apiscomm.c
+END
+apiautil.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/aif/demo/apiautil.c
+END
+apiasvr.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/aif/demo/apiasvr.h
+END
+apisparm.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/aif/demo/apisparm.c
+END
+apiautil.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/aif/demo/apiautil.h
+END
+build.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/aif/demo/build.dcl
+END
+apiademo.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/aif/demo/apiademo.c
+END
+apisinit.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/aif/demo/apisinit.c
+END
+apisprbr.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/aif/demo/apisprbr.c
+END
+apiademo.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/aif/demo/apiademo.h
+END
+apisroll.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/aif/demo/apisroll.c
+END
+apis2ph1.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/aif/demo/apis2ph1.c
+END
+apisrept.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/aif/demo/apisrept.c
+END
+apis2ph2.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/aif/demo/apis2ph2.c
+END
+apiaclnt.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/aif/demo/apiaclnt.c
+END
+apisblob.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/aif/demo/apisblob.c
+END
+apisname.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/aif/demo/apisname.c
+END

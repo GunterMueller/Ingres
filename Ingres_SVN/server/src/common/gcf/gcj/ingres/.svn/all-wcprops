@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/ingres
+END
+IngresCPFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/ingres/IngresCPFactory.java
+END
+IngresDataSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/ingres/IngresDataSource.java
+END
+IngConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/ingres/IngConfig.java
+END
+IngresDriver.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/ingres/IngresDriver.java
+END
+IngConst.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/ingres/IngConst.java
+END
+IngresCPDataSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/ingres/IngresCPDataSource.java
+END
+IngresDSFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/ingres/IngresDSFactory.java
+END
+IngresXAFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/ingres/IngresXAFactory.java
+END
+IngresXADataSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/ingres/IngresXADataSource.java
+END
+IngTrace.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/ingres/IngTrace.java
+END

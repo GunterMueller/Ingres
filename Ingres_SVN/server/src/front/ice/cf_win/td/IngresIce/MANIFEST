@@ -1,0 +1,25 @@
+#
+# Jamfile file for front!ice!cf_win!td!IngresIce
+#
+
+SubDir ING_SRC front ice cf_win td IngresIce ;
+
+IISUBSYS front ice cf_win td IngresIce ;
+
+
+
+#IIINCLUDE front ice cf_win td IngresIce Docs_win ;
+#IIINCLUDE front ice cf_win td IngresIce Icons_win ;
+
+IIICEFILE ColdFusion/TagDefs/IngresIce/Docs/cfCommit.html : Docs_win/cfCommit.html ;
+IIICEFILE ColdFusion/TagDefs/IngresIce/Docs/cfDeclare.html : Docs_win/cfDeclare.html ;
+IIICEFILE ColdFusion/TagDefs/IngresIce/Docs/cfFunction.html : Docs_win/cfFunction.html ;
+IIICEFILE ColdFusion/TagDefs/IngresIce/Docs/cfIf.html : Docs_win/cfIf.html ;
+IIICEFILE ColdFusion/TagDefs/IngresIce/Docs/cfInclude.html : Docs_win/cfInclude.html ;
+IIICEFILE ColdFusion/TagDefs/IngresIce/Docs/cfRollback.html : Docs_win/cfRollback.html ;
+IIICEFILE ColdFusion/TagDefs/IngresIce/Docs/cfSql.html : Docs_win/cfSql.html ;
+IIICEFILE ColdFusion/TagDefs/IngresIce/Docs/cfSwitch.html : Docs_win/cfSwitch.html ;
+IIICEFILE ColdFusion/TagDefs/IngresIce/Docs/cfVar.html : Docs_win/cfVar.html ;
+IIICEFILE ColdFusion/TagDefs/IngresIce/Docs/cfextfunc.html : Docs_win/cfextfunc.html ;
+
+IIICEFILE ColdFusion/TagDefs/IngresIce/Icons/ingresii.bmp : Icons_win/ingresii.bmp ;

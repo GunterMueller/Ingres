@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/ingres/!svn/ver/1/main/src/sig/ima/ima
+END
+iomon.sql
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/sig/ima/ima/iomon.sql
+END
+README.DOC
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/sig/ima/ima/README.DOC
+END
+iomon.form
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/sig/ima/ima/iomon.form
+END
+iomon.sc
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/sig/ima/ima/iomon.sc
+END
+ima.wri
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/sig/ima/ima/ima.wri
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/sig/ima/ima/Jamfile
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/sig/ima/ima/Makefile
+END

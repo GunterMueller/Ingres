@@ -1,0 +1,449 @@
+#!/bin/bash
+
+self=`basename $0`
+quiet=false
+ARCH=`uname -m`
+PATH=/bin:/usr/bin
+NOCLEAN=0
+ATEXIT=
+WORKDIR=
+RPMFILES=
+RPMSPEC=
+rc=0
+RPMBASEPRFX=/opt/Ingres/Ingres
+RPMPRFXID=II
+RPMPREFIX=${RPMBASEPRFX}${RPMPRFXID}
+OUTDIR=`pwd`
+SPECSFX=spec
+PRODNAME=ingres2006
+[ "$TMPDIR" ] || TMPDIR=/tmp
+
+if [ -x /usr/bin/rpmbuild ] ; then
+    RPMBLD=rpmbuild
+else
+    bldroot=`rpm --help | grep -- --buildroot`
+    if [ "$bldroot" = "" ] ; then
+        cat << !
+
+/usr/bin/rpmbuild not found and the installed version of rpm does not 
+support the --buildroot flag. Please install rpm-build or a version of
+rpm that supports the --buildroot flag.
+
+!
+        exit 1
+    else
+        RPMBLD=rpm
+    fi
+
+fi
+
+# Check /etc/profile is intact
+. /etc/profile || 
+{
+    cat << !
+Error:
+	/etc/profile exited with a non-zero return code 
+	This problem must be resolved before $self can be continue
+
+!
+    exit 1
+}
+
+#
+#-[ usage() - Display usage message ]-
+#
+usage()
+{
+cat << !
+usage:
+    $self rpm_packages(s) installation_id
+    where 
+	rpm_package(s)    = One or more RPM packages to be renamed which can
+			    NOT have been previously renamed
+	installation_id   = installation identifier to be embedded into
+			    rpm_package
+
+!
+}
+
+#
+#-[cleanPush() - Push a command into the cleanup stack ]-
+#
+cleanPush()
+{
+    ATEXIT="$1 $ATEXIT"
+}
+
+#
+#-[cleanAll() - Cleanup any temporary files ]-
+#
+cleanAll()
+{
+# back out any changes made
+    if ((! $NOCLEAN)); then
+	cd $OLDPWD
+	for command in $ATEXIT; do
+	    ${command};
+	done
+    fi
+ 
+# Reset cleanup functions
+    export ATEXIT=""
+    return 0
+}
+
+#
+#-[argsInit() - Parse and check command line arguments ]-
+#
+argsInit()
+{
+# check for proper number of command line arguments
+    [ $# -lt 2 ] && {
+	usage
+	return 1
+    }
+
+    while [ "$1" ]
+    do
+	case "$1" in
+	    [a-zA-Z][a-zA-Z0-9])
+		# Check for valid installation ID
+		instid=$1
+		shift
+		;;
+	    -q)
+		# quiet mode
+		export quiet=true
+		shift
+		;;
+	    *)
+		# Check all other arguments are valid RPMS
+		local rpm_basename=`echo $1 | \
+		    sed -e"s%.*\(${PRODNAME}[^.]*\)-[0-9][^/]*\.rpm$%\1%"`
+
+		# Has it been renamed already?
+		[ "`echo ${rpm_basename} | grep [[:upper:]]`" ] &&
+		{
+		cat << !
+$1 has already been renamed.
+
+!
+		    usage
+		    return 1
+		}
+
+	        # Can it be renamed at all?
+		[ "`echo ${rpm_basename} | cut -d- -f2`" = "documentation" ] || \
+		[ "`echo ${rpm_basename} | cut -d- -f2`" = "license" ] || \
+		[ "`echo ${rpm_basename} | cut -d- -f2`" = "EI" ] &&
+		{
+		    cat << !
+$1 cannot be renamed.
+
+!
+		    usage
+		    return 1
+		}
+		
+		# do we need to append the path?
+		if ( echo $1 | grep -q ^/ )
+		then
+		    file=$1
+		else
+		    file=${PWD}/$1
+		fi
+		# It's ok so add it to the list
+		if [ "$rpmlist" ] ; then
+		    rpmlist="$rpmlist ${file}"
+	 	else
+		    rpmlist=${file}
+		fi
+		shift
+		;;
+	esac # Argument checking
+    done
+
+	# Do we have valid a installation ID 
+	[ "$instid" ] ||
+	{
+	    cat << !
+The installation code is either missing or invalid.
+The first character code must be a letter; the second may be a letter or
+a number.
+
+!
+	    usage
+	    return 1
+	}
+
+    return 0
+}
+
+#
+#-[confOutDir() - setup temporary working directory ]-
+#
+confOutDir()
+{
+    [ "$1" ] || return 1
+    local pkg=$1
+    count=0
+    while [[ -e ${TMPDIR}/${pkg}.${$}.${count} ]]; do
+	(( count++ ))
+    done
+    export WORKDIR=${TMPDIR}/${pkg}.${$}.${count}
+    mkdir -p "$WORKDIR"
+    rc=$?
+    if (($rc)); then
+	echo "creating workdir ($WORKDIR) failed ($rc)"
+	return 1
+    fi
+    cleanPush argsInitClean
+    
+    # change to work directory
+    cd "$WORKDIR"
+    rc=$?
+    if (($rc)); then
+	echo "changing to workdir ($WORKDIR) failed ($rc)"
+	return 1
+    fi
+    
+    return 0
+}
+    
+
+#
+#-[argsInitClean() - remove temporary working directory ]-
+#
+argsInitClean()
+{
+    rm -rf $WORKDIR
+}
+
+#
+#-[checkDiskSpace() - check we have enough space under $TMPDIR ]-
+#
+checkDiskSpace()
+{
+    if [[ ! -f $1 ]]; then
+        usage
+        return 1
+    fi
+
+    rc=0
+    TMPFREE=`df -Pk $TMPDIR | tail -1 | awk '{print $4}'`
+    RPMKBYTES=`ls -sk $1 | awk '{print $1}'`
+    NEEDFREE=`expr 5 * ${RPMKBYTES}`
+
+    if [ ${TMPFREE} -lt ${NEEDFREE} ] ; then
+	cat << EOF
+Error:
+
+${NEEDFREE}Kb of free space is required by $self under $TMPDIR to rename 
+
+	$1.
+
+${TMPFREE}Kb is currently available.
+
+EOF
+	rc=1
+    fi
+
+    return $rc
+    
+}
+
+#
+#-[ rpmListContents() - Generate file list from source RPM ]-
+#
+rpmListContents()
+{
+# stick rpm contents in RPMFILES
+    if [[ ! -f $1 ]]; then
+	usage
+	return 1
+    fi
+    
+    RPMFILES=`rpm -qlp "$1"`
+    rc=$?
+    if (($rc)); then
+	echo "rpm contents failed ($rc)"
+	return 1
+    fi
+
+    # determine license dependecies of source package so they can
+    # be preserved in the target
+    licdep=`rpm -qp --requires "$1" | grep ${PRODNAME}-license |\
+		cut -d' ' -f1`
+    rc=$?
+    if (($rc)); then
+        echo "Failed to determine license dependencies"
+        return 1
+    fi
+
+    return 0
+}
+
+#
+#-[rpmSpecGet() - Get spec file name from source RPM file list ]-
+#
+rpmSpecGet()
+{
+# locates a spec file in RPMFILES
+    count=0
+    for file in $RPMFILES; do
+	if [[ $file == *$SPECSFX ]]; then
+	    RPMSPEC=$file
+	    (( count++ ))
+	fi;
+    done
+    if [[ $count > 1 ]]; then
+	echo "too many ($count) spec file matches"
+	return 1
+    fi
+    if [[ $count < 1 ]]; then
+	echo "no spec file matches"
+	return 1
+    fi
+    return 0
+}
+
+#
+#-[ rpmArchiveUnpack() - Unpack source RPM ]-
+#
+rpmArchiveUnpack()
+{
+# unpack rpm archive
+    rpm2cpio "$1" | cpio -dumi --quiet
+    rc=$?
+    if (($rc)); then
+	echo "unpacking failed ($rc)"
+	return 1
+    fi
+# create link to new install dir
+    ln -s ${WORKDIR}${RPMPREFIX} ${WORKDIR}${RPMBASEPRFX}$2
+    return 0
+}
+
+#
+#-[ rpmSpecExists() - Verify spec file from old RPM ]-
+#
+rpmSpecExists()
+{
+# ensure spec file existed in rpm archive
+    if [[ ! -f $WORKDIR$RPMSPEC ]]; then
+	echo "spec file ($RPMSPEC) missing"
+	return 1
+    fi
+    return 0
+}
+
+#
+#-[ rpmSpecRename() - Generate new spec file for RPM ]-
+#
+rpmSpecRename()
+{
+
+    [ "${1}" ] || return 1
+    local pkg=${1}
+
+# rename the package in the spec
+    cp $WORKDIR$RPMSPEC $WORKDIR/spec
+    rc=$?
+    if (($rc)); then
+	echo "could not copy spec file to ($WORKDIR) ($rc)"
+	return 1
+    fi
+    sed -e "s/^Name: ${pkg}/&\-$2/" \
+	-e "s/^PreReq: ${PRODNAME}[a-zA-Z_1238,-]*/&-$2/" \
+	-e "s/^Provides: ${PRODNAME}[a-zA-Z_1238,-]*/&-$2/" \
+	-e "s/^Obsoletes: ca-ingres[a-zA-Z_1238,-]*/&-$2/" \
+     -e "s/^PreReq: ${PRODNAME}-license-....\?-[a-zA-Z0-9]*/PreReq: ${licdep}/" \
+	-e "s,${RPMPREFIX},${RPMBASEPRFX}${2},g" \
+	-e "s/II_INSTALLATION=II/II_INSTALLATION=$2/" \
+	 $WORKDIR/spec > $WORKDIR$RPMSPEC
+    rc=$?
+    if (($rc)); then
+	echo "could not rename package in the spec ($rc)"
+	return 1
+    fi
+    rm -f $WORKDIR/spec
+    # non-fatal, ignore
+    return 0
+}
+
+#
+#-[ rpmPackage() - Roll up new RPM ]-
+#
+rpmPackage()
+{
+    [ "${1}" ] || return 1
+
+    local pkg=${1}
+# package an rpm archive
+    $RPMBLD -bb --target $RPMARCH --define "_rpmdir $WORKDIR " --buildroot $WORKDIR $WORKDIR$RPMSPEC >& /dev/null
+    rc=$?
+    if (($rc)); then
+	echo "rpm archive packing failed ($rc)"
+	return 1
+    fi
+    # move new rpm from workdir which will be removed
+    mv $WORKDIR/$RPMARCH/${pkg}*.rpm $OUTDIR >& /dev/null
+    rc=$?
+    if (($rc)); then
+	echo "looking for $WORKDIR/$RPMARCH/${pkg}*.rpm"
+	echo "retrieving new rpm archive failed ($rc)"
+	return 1
+    fi
+    return 0
+}
+#
+#-[ Main - main body of script ]----------------------------------------------
+#
+
+    argsInit "$@" || rc=1
+
+# Startup message
+${quiet} ||
+    cat << EOF
+${self}
+
+EOF
+
+    for rpm in $rpmlist
+    do
+	# init or previous package failed, bail out
+	[ $rc != 0 ] && break
+	# get 'basename' and architecture from package name
+	rpm_basename=`echo ${rpm} | \
+		    sed -e"s%.*\(${PRODNAME}[^.]*\)-[0-9][^/]*\.rpm$%\1%"`
+	RPMARCH=`echo ${rpm} | \
+		    awk -F . '{print $(NF - 1) }'`
+
+	echo "Renaming $rpm_basename for $RPMARCH to embed $instid"
+	if
+	    # Setup working directory
+	    confOutDir "${rpm_basename}" && \
+	    # Check we have enough disk space
+	    checkDiskSpace "$rpm" && \
+	    # Generate package list
+	    rpmListContents "$rpm" && \
+	    # find the spec file
+	    rpmSpecGet && \
+	    # Unpack the rpm
+	    rpmArchiveUnpack "$rpm" "$instid" && \
+	    # Check we have a spec file
+	    rpmSpecExists && \
+	    # Edit the spec file for the new package
+	    rpmSpecRename "${rpm_basename}" "$instid" && \
+	    # Build the new package
+	    rpmPackage "${rpm_basename}" ;
+	then
+	    rc=0
+	else
+	    rc=1
+	fi
+	cleanAll
+
+    done
+
+exit $rc

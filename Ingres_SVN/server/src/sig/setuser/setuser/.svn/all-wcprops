@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/sig/setuser/setuser
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/sig/setuser/setuser/Jamfile
+END
+ing$set_username.mar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/sig/setuser/setuser/ing$set_username.mar
+END
+username.readme
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/sig/setuser/setuser/username.readme
+END

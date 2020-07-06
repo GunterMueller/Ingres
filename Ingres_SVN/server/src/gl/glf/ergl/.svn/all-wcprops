@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/ingres/!svn/ver/1/main/src/gl/glf/ergl
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/gl/glf/ergl/Jamfile
+END
+eroptlog.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/gl/glf/ergl/eroptlog.c
+END

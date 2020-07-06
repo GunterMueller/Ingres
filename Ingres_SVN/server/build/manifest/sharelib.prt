@@ -1,0 +1,15 @@
+PART  sharelib
+   PRELOAD delshlib
+   BUILD_DIR (ING_BUILD)!lib
+   DIRECTORY ingres!lib
+      {
+      EXECUTABLE libcompat.1.so
+      EXECUTABLE libframe.1.so
+      EXECUTABLE libinterp.1.so
+      EXECUTABLE libq.1.so
+      EXECUTABLE libiiapi.1.so
+      EXECUTABLE libxerces-c.so.27.0
+      LINK libxerces-c.so.27
+      LINK libxerces-c.so
+      PERMISSION s:re,o:rwed,g:re,w:re
+      }

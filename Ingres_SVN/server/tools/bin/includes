@@ -1,0 +1,24 @@
+#!/bin/bash
+#
+# Copyright (c) 2004 Ingres Corporation
+#
+
+if [ "$ING_SRCRULES" ] ; then
+    fgrist=`grep "^SubDir" Jamfile | awk '{ print "<" $3 "!" $4 "!" $5 ">"}'`
+    fname=`echo $1 | cut -d. -f1`
+    jam -an -d5 ${fgrist}${fname}.o  | awk '
+ 	$1 == "bind" { 
+ 		printf "%s\n", $4;
+ 	}'
+ 
+else
+    ming -o $* | awk '
+	$1 == "make" { lev = lev + 1 }
+	$1 == "done" { lev = lev - 1 }
+	$1 == "file" {
+		for( i = 1; i < lev; i++ )
+			printf "    ";
+		printf "%s\n", $2;
+	}'
+fi
+

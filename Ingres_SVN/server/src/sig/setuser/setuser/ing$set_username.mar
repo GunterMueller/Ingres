@@ -1,0 +1,71 @@
+
+	.TITLE	ING$SET_USERNAME
+	.IDENT	'V01-000'
+;
+	.SBTTL	Declarations and Equates
+;
+;	Include Files
+;
+	.LIBRARY "SYS$LIBRARY:LIB.MLB"	; Macro library for system structure
+;
+;	Equated Symbols
+;
+	$PCBDEF				; Define process control block offsets
+	$PHDDEF				; Define process header offsets
+	$PLVDEF				; Define PLV offsets and values
+	$PRVDEF				; Define privilege values
+	$PRDEF				; Define processor register numbers
+	$PSLDEF				; Define processor status offsets
+	$JIBDEF				; Define job information block offsets
+;
+	.SBTTL	ING$SET_USERNAME interface to $CMKRNL
+;
+; Functional Description:
+;	Takes a descriptor containing a username from a caller and
+;	passes it to the kernel-mode ii_set_username routine which
+;	does the actual username modification.
+;
+	.ENTRY	ING$SET_USERNAME,^M<R4>
+	PUSHL	AP			; AP is the argument list CMKRNL needs
+	PUSHAL	SET_USERNAME		; Push address of kernel-mode routine
+	CALLS	#2,SYS$CMKRNL
+	RET
+
+	.SBTTL	Kernel-mode Set Username Routine
+;++
+; Functional Description:
+;	Allows a process to change it's username.  This is supplied for some of
+;	our customers who use this is function so that special programs run.
+;
+; Input Parameters:
+;	4(AP)	- Address of descriptor for new username
+;	R4	- Address of current PCB
+;
+; Output Parameters:
+;	R0	- Completion status code
+;
+; Change History:
+;       11-OCT-2007  Bug 117099 (ashco01)
+;               Removed check of process header for CMKRNL privilege as this
+;               will report 'Insufficient Privilege' for non-privileged accounts
+;               even when running as an installed image with CMKRNL set.
+;++
+
+	.ENTRY	SET_USERNAME,^M<R2,R3,R4,R5,R6,R7>
+	MOVZWL	#SS$_ACCVIO,R0				; assume ACCVIO
+	IFNORD	#8,@4(AP),30$				; check that we can fetch the descriptor
+	MOVZWL  #SS$_NOPRIV,R0                          ; assume NOPRIV
+	MOVQ	@4(AP),R6				; get the descriptor
+	MOVZWL	R6,R6					; normalize length
+	CMPL	#JIB$S_USERNAME,R6			; minimize the length with JIB$S_USERNAME
+	BGTR	10$
+	MOVL	#JIB$S_USERNAME,R6
+10$:
+	IFNORD	R6,(R7),30$				; Check that we can read the new username
+	MOVL	PCB$L_JIB(R4),R5
+	MOVC5	R6,(R7),#^X20,#JIB$S_USERNAME,JIB$T_USERNAME(R5)
+	MOVC5	R6,(R7),#^X20,#JIB$S_USERNAME,@#CTL$T_USERNAME	; move the new name to the control region
+	MOVZWL	#SS$_NORMAL,R0					; done
+30$:
+	RET
+	.END

@@ -1,0 +1,621 @@
+#!/bin/bash
+#
+# Copyright (c) 1994, 2006 Ingres Corporation
+#
+#
+# DEST = utility
+#
+. readvers
+. iisysdep
+[ $SHELL_DEBUG ] && set -x
+unamem=`uname -m`
+unames=`uname -s`
+
+if [ -z "$ING_ROOT" ]; then
+    echo "Variable ING_ROOT must be defined."
+    exit 1
+fi
+
+# use correct vers for Hybrid build
+if [ "$VERS64" ]; then
+    vers=$VERS64
+else
+    vers=$VERS
+fi
+
+tarfile=""
+rm_release=true
+no_tools=false
+alltar=true
+rpmrelease=false
+unhidepkg=""
+lictype=gpl
+spatflag=""
+do_ingres_release=true
+do_spatial_on_unix=false
+productname=ingres2006
+while [ "$1" ]
+do
+    case "$1" in
+	-nocopy)
+		rm_release=false
+		shift
+		;;
+	-notools)
+		no_tools=true
+		shift
+		;;
+	-noall)
+		alltar=false
+		shift
+		;;
+	-unhide)
+		unhidepkg="-u"
+		shift
+		;;
+	-rpm)   case $vers in
+		    *_lnx|int_rpl)
+			rpmrelease=true
+			;;
+		    *)
+			echo "RPM not supported on ${unamem} ${uanmes}"
+			exit 1
+			;;
+		esac
+		shift
+		;;
+	    -l)	
+		# Verify specified license if valid
+		case $2 in
+		    gpl|\
+		    com|\
+		   eval|\
+		     emb) lictype=$2
+			  shift
+			  ;;
+		      *) echo "$2 is not a valid license: use gpl, com, emb or  eval"
+			 exit 1
+			 ;;
+		esac
+		shift
+		;;
+	    -sol|\
+	    -SOL)
+		spatflag="-sol"
+                do_spatial_on_unix=true  
+                do_ingres_release=false 
+		shift
+		;;
+	    -all)
+                do_spatial_on_unix=true  
+                do_ingres_release=true 
+		shift
+		;;
+	     *)
+		tarfile="$1"
+		shift
+		;;
+    esac
+done
+
+set - `cat $ING_BUILD/version.rel` 
+release=$2
+nptlbuild=`head -1 $ING_BUILD/version.rel |cut -d')' -f2`
+case $vers in
+    int_lnx|\
+    int_rpl)
+	if $rpmrelease ; then
+	    desc="pc-linux-i386"
+	else
+	    desc="pc-linux-ingbuild-i386"
+	fi
+	arch=i386
+	;;
+    a64_lnx)
+	if $rpmrelease ; then
+	    desc="linux-x86_64"
+	else
+	    desc="linux-ingbuild-x86_64"
+	fi
+	arch=$unamem
+	;;
+    i64_lnx)
+	if $rpmrelease ; then
+	    desc="linux-ia64"
+	else
+	    desc="linux-ingbuild-ia64"
+	fi
+	arch=$unamem
+	;;
+    ppc_lnx)
+	if $rpmrelease ; then
+	    desc="linux-ppc"
+	else
+	    desc="linux-ingbuild-ppc"
+	fi
+	arch=$unamem
+	;;
+    int_w32)
+	desc="win-x86"
+	;;
+    a64_win)
+	desc="win-x86_64"
+	;;
+    i64_win)
+	desc="win-ia64"
+	;;
+    su9_us5)
+	desc="sun-solaris-sparc-32-64bit"
+	;;
+    a64_sol)
+	desc="sun-solaris-x86-32-64bit"
+	;;
+    r64_us5)
+	desc="ibm-powerpc-32-64bit"
+	;;
+    hp2_us5)
+	desc="hp-hpux-pa-risc-32-64bit"
+	;;
+    i64_hpu)
+	desc="hp-hpux-ia64-32-64bit"
+	;;
+    axp_osf)
+	desc="hp-tru64-5.1"
+	;;
+    axm_vms)
+	desc="hp-vms-alpha"
+	;;
+    i64_vms)
+	desc="hp-vms-ia64"
+	;;
+    usl_us5)
+	desc="unixware-x86"
+	;;
+    mg5_osx)
+	desc="apple-darwin-powerpc"
+	;;
+    int_osx)
+	desc="apple-darwin-i386"
+	;;
+    *)
+	echo "Config string $VERS unrecognized."
+	exit 1
+	;;
+esac
+
+
+# save the desc for spatial release usage. 
+if $do_spatial_on_unix ; then
+  spat_desc=$desc
+fi
+
+# Append license type
+desc="${lictype}-${desc}"
+# Append NPTL if we need to
+[ "$nptlbuild" = "NPTL" ] && desc="NPTL-${desc}"
+# Generate RPM package list
+$rpmrelease &&
+{
+    if [ "$unhidepkg" ] 
+    then
+	pkgmask="LICENSE|spatial"
+    else
+	pkgmask="i18n|documentation|LICENSE|spatial"
+    fi
+
+    pkglist=`grep '^$spec [[:alnum:]]' $II_MANIFEST_DIR/rpmconfig | \
+		cut -d' ' -f2 | egrep -v "$pkgmask"`
+
+}
+
+#
+# Making Ingres release on Linux and Unix platforms
+#
+
+if $do_ingres_release ; then 
+[ -z "$II_RELEASE_DIR" ] &&
+{
+    II_RELEASE_DIR=$ING_ROOT/release/b${build}
+    export II_RELEASE_DIR
+}
+
+if [ ! -d "$II_RELEASE_DIR" ]; then 
+    mkdir -p $II_RELEASE_DIR
+fi
+if [ ! -d "$II_RELEASE_DIR" ]; then 
+    echo "Could not create $II_RELEASE_DIR."
+    exit 1
+fi
+
+if [ ! -d "$ING_ROOT/release" ]; then 
+    mkdir -p $ING_ROOT/release
+fi
+if [ ! -d "$ING_ROOT/release" ]; then 
+    echo "Could not create $ING_ROOT/release."
+    exit 1
+fi
+
+cd $II_RELEASE_DIR
+echo "Filling Ingres release area $II_RELEASE_DIR..."
+buildrel $unhidepkg -l ${lictype}  ||
+{
+    echo "Can't do a buildrel..."
+    exit 1
+}
+    
+
+$rpmrelease && 
+{
+    echo "Generating RPM SPEC files"
+    buildrel -r $unhidepkg -l ${lictype} ||
+    {
+	echo "Failed to create SPEC files..."
+	exit 1
+    }
+}
+
+tardir=${productname}-$release-$build-$desc
+if $rpmrelease
+then
+    skipbld=false
+    baserpm=${productname}-${release}-${build}.${arch}.rpm
+    spatrpm=${productname}-spatial-${release}-${build}.${arch}.rpm
+
+    # remove spatial RPM if it's there we really don't want it
+    [ -f ${II_RPM_BUILDROOT}/${arch}/${spatrpm} ] &&
+    {
+	echo "Removing spatial RPM to prevent conflicts..."
+	rm -f ${II_RPM_BUILDROOT}/${arch}/${spatrpm}
+    }
+
+    for pkg in $pkglist
+    do
+	rpm=${productname}-${pkg}-${release}-${build}.${arch}.rpm
+	[ -f ${II_RPM_BUILDROOT}/${arch}/${rpm} ] || \
+		[ -f ${II_RPM_BUILDROOT}/${arch}/${baserpm} ] &&
+	{
+	    echo "WARNING: One or more RPM already exists for this build"
+	    echo "RPMs will NOT be recreated, existing files will be used"
+	    skipbld=true
+	    break
+	}
+    done
+
+    # build rpms if we need to
+    [ "${unhidepkg}" ] && unhide=-unhide
+    $skipbld || iirpmbuild ${unhide} ||
+    {
+	echo "Failed to create one or more RPM..."
+	exit 1
+    }
+
+    tarfile=$tardir.tgz
+else
+    cd $ING_ROOT/release
+    echo "Making $ING_ROOT/release/b${build}.tar..."
+    taringres -nocompress $ING_ROOT/release/b${build}.tar ||
+    {
+	echo "Can't tar $ING_ROOT/release/b${build}.tar..."
+	exit 1
+    }
+
+    tarfile=$tardir.tar
+fi
+
+saveset=$ING_ROOT/release/$tardir
+
+if [ ! -d $saveset ]; then
+    mkdir $saveset
+fi
+
+# clear saveset directory
+rm -rf $saveset/*
+
+# Recreate saveset directory
+cd $saveset
+cp -p $ING_BUILD/bin/ingres_express_install ingres_express_install.sh || exit 1
+cp -p $II_SYSTEM/readme.html . || exit 1
+if [ "$nptlbuild" ] && [ "$nptlbuild" = "NPTL" ]; then  
+cp -p $II_SYSTEM/readme_${vers}_nptl.html . || exit 1
+else
+cp -p $II_SYSTEM/readme_${vers}.html . || exit 1
+fi
+
+if ${rpmrelease}
+then
+    ## Format for RPM saveset is dictated by the needs of the GUI installer
+    ## Layout should look like this:
+    ##
+    ##	<saveset root>
+    ##		|
+    ##		+--ingres_install
+    ##		|
+    ##		+--ingres_express_install
+    ##		|
+    ##		+--ingres-LICENSE
+    ##		|
+    ##		+--md5sum.txt
+    ##		|
+    ##		+-bin
+    ##		|   |
+    ##		|   +--inginstgui
+    ##		|   |
+    ##		|   +--iirpmrename
+    ##		|   |
+    ##		|   +--uninstall_ingres
+    ##		|
+    ##		+-pixmaps
+    ##		|   |
+    ##		|   +--<images need by installer>
+    ##		|
+    ##		+-rpm
+    ##		|   |
+    ##		|   +--<rpm packages>
+    ##		|
+    ##		+-- readme.html
+    ##		|
+    ##		+-- readme_${vers}.html
+    ##
+    ##
+
+    # create bin, pixmaps and rpm directories
+    mkdir bin pixmaps rpm || exit 1
+    
+    cp -p $ING_BUILD/bin/ingres_install . || exit 1
+    cp -p $ING_BUILD/utility/iirpmrename bin || exit 1
+    cp -p $ING_BUILD/bin/uninstall_ingres bin || exit 1
+    cp -p $ING_BUILD/utility/inginstgui bin || exit 1
+
+    echo "Copying RPMS from ${II_RPM_BUILDROOT}..."
+    baserpm=${productname}-${release}-${build}.${arch}.rpm
+    # Check base package has correct licensing info
+    # if it has any at all
+    licdep=`rpm -qp --requires ${II_RPM_BUILDROOT}/${arch}/${baserpm} | \
+		grep ${productname}-license`
+    if [ ${licdep} ] 
+    then
+	[ "${licdep}" = "${productname}-license-${lictype}" ] ||
+	{
+	    cat << EOF
+The base package:
+
+	${II_RPM_BUILDROOT}/${arch}/${baserpm}
+
+Doesn't contain correct dependencies for the ${lictype} license, rebuilding...
+
+EOF
+	    # Remove the base package and rebuild it with the correct
+	    # license dependencies
+	    rm -f ${II_RPM_BUILDROOT}/${arch}/${baserpm}
+	    buildrel -r -l ${lictype}
+	    iirpmbuild core LICENSE
+	
+	    # Check it's right this time
+	    ( rpm -qp --requires \
+		${II_RPM_BUILDROOT}/${arch}/${baserpm} \
+        	| grep -q ${productname}-license-${lictype} ) ||
+	    {
+		cat << EOF
+Error
+The base package:
+
+        ${II_RPM_BUILDROOT}/${arch}/${baserpm}
+
+Doesn't contain correct dependencies for the ${lictype} license, even after
+rebuilding. Problem must be resolved before saveset can be built.
+
+EOF
+		exit 1
+	    }
+
+	}
+    else
+	# Just rebuild the license RPM to keep mklicense happy
+	buildrel -r -l ${lictype}
+	iirpmbuild LICENSE
+    fi
+
+    # licensing
+    mklicense -l ${lictype} ||
+    {
+    	echo "Failed to create ingres-LICENSE"
+    	exit 1
+    }
+
+    # Copy RPMS
+    cp ${II_RPM_BUILDROOT}/${arch}/${baserpm} rpm || exit 1
+    for pkg in $pkglist
+    do
+	rpm=${productname}-${pkg}-${release}-${build}.${arch}.rpm
+	[ -f ${II_RPM_BUILDROOT}/${arch}/${rpm} ] ||
+	{
+	     echo "Cannot locate ${II_RPM_BUILDROOT}/${arch}/${rpm}"
+	     exit 1
+	}
+	cp ${II_RPM_BUILDROOT}/${arch}/${rpm} rpm || exit 1
+   done
+
+    # Copy images
+    cp $ING_BUILD/files/pixmaps/* pixmaps ||
+    {
+	echo "Failed to find images used by installer"
+	exit 1
+    }
+
+    # generate md5sums
+   rm -f md5sum.txt
+   find . -type f -a -not -name md5sum.txt -exec md5sum {} >> md5sum.txt \;
+
+else
+    cp -p $ING_BUILD/utility/install install.sh || exit 1
+    if [ -r "${II_RELEASE_DIR}/install/LICENSE" ] ; then
+	cp -p ${II_RELEASE_DIR}/install/LICENSE LICENSE || exit 1
+    elif [ -r "${ING_SRC}/LICENSE" ] ; then
+	cp -p ${ING_SRC}/LICENSE LICENSE || exit 1
+    else
+	echo "Cannot locate License file..."
+	exit 1
+    fi
+
+    mv $ING_ROOT/release/b${build}.tar ingres.tar
+fi
+
+# Create the saveset
+cd $ING_ROOT/release
+rm -f $tarfile
+echo "Making CD-ROM image saveset ($tarfile)..."
+if $rpmrelease
+then
+    tar cvzf $tarfile $tardir ||
+    {
+	echo "Error creating $tarfile..."
+	exit 1
+    }
+else
+    tar cvf $tarfile $tardir ||
+    {
+	echo "Can't tar $tarfile..."
+	exit 1
+    }
+    # Compress the saveset
+    [ -x /usr/bin/compress ] && compress=/usr/bin/compress
+    [ "$compress" = "" -a -x /bin/compress ] && compress=/bin/compress
+    [ "$compress" = "" ] && compress=compress
+    case $VERS in
+	  *_lnx|\
+        int_rpl)
+	    echo "Compressing CD-ROM image saveset ($tarfile)..."
+	    rm -rf $tarfile.gz
+	    gzip $tarfile
+	    mv $tarfile.gz $tardir.tgz
+	    ;;
+	usl_us5|\
+	hp2_us5|\
+	i64_hpu|\
+	rs4_us5|\
+	axp_osf)
+	    # gzip is not available in default installation
+	    # and compress will not furthur compress ingres.tar
+	    ;;
+	*)
+	    echo "Compressing CD-ROM image saveset ($tarfile)..."
+	    rm -f $tarfile.Z
+	    $compress $tarfile
+	    status=$?
+	    if [ $status -eq 2 ]; then
+		echo "File $tarfile is not compressible."
+	    fi
+	    ;;
+    esac
+fi
+
+echo "Ingres release is done..."
+
+fi  # do_ingres_release 
+
+#
+# Making Spatial release on Unix platforms 
+#
+if $do_spatial_on_unix ; then
+
+       [ "$SOL_RELEASE_DIR" = "" ] &&
+        {
+         SOL_RELEASE_DIR=$ING_ROOT/sol_release/b${build}
+         export SOL_RELEASE_DIR
+        }
+
+       if [ ! -d "$SOL_RELEASE_DIR" ]; then
+          mkdir -p $SOL_RELEASE_DIR
+       fi
+
+       if [ ! -d "$SOL_RELEASE_DIR" ]; then
+          echo "Could not create $SOL_RELEASE_DIR."
+          exit 1
+       fi
+
+       if [ ! -f $II_MANIFEST_DIR/relspatial.dat ] ; then
+          echo " $II_MANIFEST_DIR/relspatial.dat not found, exiting..."
+          exit 1
+       fi
+
+       if [ ! -s $II_MANIFEST_DIR/relspatial.dat ] ; then
+          echo " $II_MANIFEST_DIR/relspatial.dat is empty, exiting..."
+          exit 1
+       fi
+
+        spat_tarfile=${productname}-spatial-${release}-${build}-${spat_desc}.tar
+
+        pwd_dir=`pwd`
+        cd $SOL_RELEASE_DIR
+        # clean up the release area...
+        rm -fr * || rm -fr *
+        if [ -d "spatial" -o -d "install"  ] ; then
+          echo "Unable to remove old stuff in release area - " $SOL_RELEASE_DIR
+          exit 1
+        fi
+
+        lictype=com
+        echo "Filling spatial release area..."
+        buildrel -s -l $lictype ||
+        {
+         echo "Can't do a buildrel for spatial release..."
+         exit 1
+        }
+
+    if $rpmrelease ; then
+	# For RPM builds we just need the spatial RPM
+	# copied to the the SOL_RELEASE_DIR
+	rpm=${productname}-spatial-${release}-${build}.${arch}.rpm
+	rm -f $SOL_RELEASE_DIR/${rpm}
+
+	# Build Spatial RPM
+        buildrel -r -s
+	iirpmbuild ${spatflag}
+
+	# Copy the RPM to $SOL_RELEASE_DIR
+	if [ -f ${II_RPM_BUILDROOT}/${arch}/${rpm} ]
+	then
+	    echo "Copying ${rpm} to:"
+	    echo ""
+	    echo "	`dirname $SOL_RELEASE_DIR`..."
+	    echo ""
+	    cp -f ${II_RPM_BUILDROOT}/${arch}/${rpm} \
+		$SOL_RELEASE_DIR/../${rpm} ||
+	    {
+		echo "Failed to copy ${rpm} to:"
+		echo "$SOL_RELEASE_DIR"
+	        echo ""
+		exit 1
+	    }
+	    echo Done.
+	else
+	    echo "Failed to locate ${rpm}, iirpmbuild probably failed"
+	    echo ""
+	    exit 1 
+	fi
+    else # non RPM builds
+       if [ -r "${ING_SRC}/LICENSE.${lictype}" ] ; then
+         cp -p ${ING_SRC}/LICENSE.${lictype} LICENSE ||
+         {
+          echo "Can't copy LICENSE file for spatial release..."
+          exit 1
+         }
+       else
+         echo "Cannot locate License file..."
+         exit 1
+       fi
+
+       tar cvf ../$spat_tarfile * ||
+        {
+         echo "Tar command failed for spatial release file." 
+         exit  1
+        }
+       echo $spat_tarfile "has been generatd in this location : " 
+       echo `dirname $SOL_RELEASE_DIR`
+       echo "Spatial release is done..."
+       cd $pwd_dir
+    fi # rpmrelease
+
+fi  # do_spatial_on_unix 
+
+exit 0

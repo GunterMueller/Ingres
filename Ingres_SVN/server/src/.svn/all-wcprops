@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/ingres/!svn/ver/33/main/src
+END
+INSTALL.WIN
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/ingres/!svn/ver/1/main/src/INSTALL.WIN
+END
+LICENSE.gpl
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/ingres/!svn/ver/1/main/src/LICENSE.gpl
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/ingres/!svn/ver/1/main/src/INSTALL
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/ingres/!svn/ver/1/main/src/README
+END

@@ -1,0 +1,27 @@
+PART  net
+   capability CI_INGRES_NET
+   DIRECTORY ingres!bin
+   BUILD_DIR (ING_BUILD)!bin
+      EXECUTABLE iigcc
+      EXECUTABLE netutil
+   DIRECTORY ingres!utility
+   BUILD_DIR (ING_BUILD)!utility
+      SCRIPT SETUP iisunet
+      SCRIPT ingmknfs
+   DIRECTORY ingres!files
+   BUILD_DIR (ING_BUILD)!files
+      FILE net.crs
+      FILE net.rfm
+   DIRECTORY ingres!files!english
+   BUILD_DIR (ING_BUILD)!files!english
+      FILE connedit.hlp
+      FILE logpass.hlp
+      FILE nucomsvr.hlp
+      FILE nuconn.hlp
+      FILE nucursor.hlp
+      FILE nulogin.hlp
+      FILE numain.hlp
+      FILE nuvnode.hlp
+   DIRECTORY ingres!sig!netu
+   BUILD_DIR (ING_BUILD)!sig!netu
+      EXECUTABLE netu

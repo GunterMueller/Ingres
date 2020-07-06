@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/ingres/!svn/ver/1/main/src/back/opf/opq
+END
+opqstatd.sc
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/opf/opq/opqstatd.sc
+END
+optimizedb.lot
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/back/opf/opq/optimizedb.lot
+END
+opqutils.sc
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/opf/opq/opqutils.sc
+END
+statdump.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/back/opf/opq/statdump.exe.manifest
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/opf/opq/Jamfile
+END
+opqscanf.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/opf/opq/opqscanf.c
+END
+optimizedb.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/back/opf/opq/optimizedb.exe.manifest
+END
+opqoptdb.sc
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/opf/opq/opqoptdb.sc
+END
+opqdata.sc
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/opf/opq/opqdata.sc
+END
+statdump.lot
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/opf/opq/statdump.lot
+END

@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/front/abf/abfdemo
+END
+top.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/abfdemo/top.hlp
+END
+database.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/abf/abfdemo/database.hlp
+END
+design.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/abf/abfdemo/design.txt
+END
+sum_hours.sc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/abf/abfdemo/sum_hours.sc
+END
+emp.dat
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/abfdemo/emp.dat
+END
+emptasks.osq
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/abf/abfdemo/emptasks.osq
+END
+dependen.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/abf/abfdemo/dependen.dat
+END
+tasks.dat
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/abf/abfdemo/tasks.dat
+END
+empdep.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/abf/abfdemo/empdep.hlp
+END
+iicopyapp.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/abf/abfdemo/iicopyapp.tmp
+END
+sqlcopy.in
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/abf/abfdemo/sqlcopy.in
+END
+projects.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/abf/abfdemo/projects.dat
+END
+qbf_forms.frm
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/abf/abfdemo/qbf_forms.frm
+END
+top.osq
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/abfdemo/top.osq
+END
+startup.osq
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/abf/abfdemo/startup.osq
+END
+delemp.sql
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/abf/abfdemo/delemp.sql
+END
+database.osq
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/abf/abfdemo/database.osq
+END
+delemp.osq
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/abf/abfdemo/delemp.osq
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/abf/abfdemo/Jamfile
+END
+remtask.osq
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/abf/abfdemo/remtask.osq
+END
+emptasks.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/abf/abfdemo/emptasks.hlp
+END
+empdep.osq
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/abf/abfdemo/empdep.osq
+END
+timer_off.osq
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/abf/abfdemo/timer_off.osq
+END
+list.osq
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/abf/abfdemo/list.osq
+END
+timer_on.osq
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/abf/abfdemo/timer_on.osq
+END
+experience.rw
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/abf/abfdemo/experience.rw
+END

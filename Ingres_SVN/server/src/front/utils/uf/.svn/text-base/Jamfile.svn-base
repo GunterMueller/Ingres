@@ -1,0 +1,69 @@
+#
+# Jamfile file for front!utils!uf
+#
+
+SubDir ING_SRC front utils uf ;
+
+IISUBSYS front utils uf ;
+
+IINOOPTIM listpck.qsc : dgi_us5 ;
+IINOOPTIM listobj.qsc : dgi_us5 ;
+IINOOPTIM fetrunc.qsc : dgi_us5 ;
+IINOOPTIM fetnames.qsc : dgi_us5 ;
+IINOOPTIM fetfscrl.qsc : dgi_us5 ;
+IINOOPTIM fetbsins.qsc : dgi_us5 ;
+IINOOPTIM fehvals.qsc : dgi_us5 ;
+IINOOPTIM fehkeys.qsc : dgi_us5 ;
+IINOOPTIM fehframe.qsc : dgi_us5 ;
+IINOOPTIM fefrsinq.qsc : dgi_us5 ;
+IINOOPTIM feforms.qsc : dgi_us5 ;
+IINOOPTIM fefedit.qsc : dgi_us5 ;
+IINOOPTIM uffldhlp.qc : dgi_us5 ;
+IINOOPTIM ufdisply.c : dgi_us5 ;
+IINOOPTIM ufdata.c : dgi_us5 ;
+IINOOPTIM ufaddfrm.c : dgi_us5 ;
+IINOOPTIM iifhelp.c : dgi_us5 ;
+IINOOPTIM iideffrm.c : dgi_us5 ;
+IINOOPTIM frmfmt.c : dgi_us5 ;
+IINOOPTIM fetsting.c : dgi_us5 ;
+IINOOPTIM fehelp.c : dgi_us5 ;
+IINOOPTIM dyn.c : i64_hpu ;
+
+IIMSGHDR eruf.msg ;
+
+IIFORM help2frm.frm ;
+IIFORM helpform.frm ;
+IIFORM helptype.frm ;
+IIFORM helpvmax.frm ;
+IIFORM keysform.frm ;
+IIFORM uffile.frm ;
+IIFORM uflstfrm.frm ;
+IIFORM ufprint.frm ;
+
+File $(INGMSG)$(DFS)frsubtop.hlp : frsubtop.hlp ;
+File $(INGMSG)$(DFS)helpfrm.hlp : helpfrm.hlp ;
+File $(INGMSG)$(DFS)helpkeys.hlp : helpkeys.hlp ;
+File $(INGMSG)$(DFS)helpvals.hlp : helpvals.hlp ;
+File $(INGMSG)$(DFS)hhfld.hlp : hhfld.hlp ;
+File $(INGMSG)$(DFS)hhnofld.hlp : hhnofld.hlp ;
+File $(INGMSG)$(DFS)ufcdelet.hlp : ufcdelet.hlp ;
+File $(INGMSG)$(DFS)ufcdstry.hlp : ufcdstry.hlp ;
+File $(INGMSG)$(DFS)ufcend.hlp : ufcend.hlp ;
+File $(INGMSG)$(DFS)ufcquit.hlp : ufcquit.hlp ;
+File $(INGMSG)$(DFS)ufcremov.hlp : ufcremov.hlp ;
+File $(INGMSG)$(DFS)ufdatlen.hlp : ufdatlen.hlp ;
+File $(INGMSG)$(DFS)ufdatprc.hlp : ufdatprc.hlp ;
+File $(INGMSG)$(DFS)ufdatype.hlp : ufdatype.hlp ;
+File $(INGMSG)$(DFS)uffile.hlp : uffile.hlp ;
+File $(INGMSG)$(DFS)ufprint.hlp : ufprint.hlp ;
+
+
+IILIBRARY UFLIB : ufrtm.qsc ufhlptyp.qsc ufchkend.qsc
+        ufbrsave.qsc ufbrowse.qsc ufask.qsc tfedit.qsc stdprmpt.qsc
+        rthelp.qsc listpck.qsc listobj.qsc fetrunc.qsc fetnames.qsc
+        fetfscrl.qsc fetbsins.qsc fehvals.qsc fehkeys.qsc fehframe.qsc
+        fefrsinq.qsc feforms.qsc fefedit.qsc uffldhlp.qc ufdisply.c
+        ufaddfrm.c iifhelp.c iideffrm.c frmfmt.c fetsting.c
+        fehelp.c dyn.c ;
+
+IILIBRARY IMPFRAMELIBDATA : ufdata.c ;

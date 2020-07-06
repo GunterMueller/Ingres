@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/graphics/graf_unix_vms
+END
+grcoerce.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/graphics/graf_unix_vms/grcoerce.h
+END
+grrdfile.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/graphics/graf_unix_vms/grrdfile.c
+END
+grproc.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/graphics/graf_unix_vms/grproc.h
+END
+grclass.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/front/graphics/graf_unix_vms/grclass.qsc
+END
+grnameok.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/front/graphics/graf_unix_vms/grnameok.qsc
+END
+gr.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/graphics/graf_unix_vms/gr.c
+END
+qryutil.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/graphics/graf_unix_vms/qryutil.c
+END
+graxdt1.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/graphics/graf_unix_vms/graxdt1.c
+END
+mapview.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/front/graphics/graf_unix_vms/mapview.qsc
+END
+qry.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/graphics/graf_unix_vms/qry.h
+END
+grlgchk.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/graphics/graf_unix_vms/grlgchk.c
+END
+grdfcmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/graphics/graf_unix_vms/grdfcmp.c
+END
+grprofil.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/graphics/graf_unix_vms/grprofil.c
+END
+grstore.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/graphics/graf_unix_vms/grstore.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/graphics/graf_unix_vms/Jamfile
+END
+grencode.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/graphics/graf_unix_vms/grencode.c
+END
+maperr.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/graphics/graf_unix_vms/maperr.c
+END
+mapaerr.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/graphics/graf_unix_vms/mapaerr.c
+END
+mapframe.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/graphics/graf_unix_vms/mapframe.c
+END
+grcoerce.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/graphics/graf_unix_vms/grcoerce.c
+END
+mapdef.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/graphics/graf_unix_vms/mapdef.c
+END

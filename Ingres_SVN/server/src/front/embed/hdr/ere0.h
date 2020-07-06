@@ -1,0 +1,10 @@
+#define _E0_CLASS 141
+#define E_E00001_hcDEFINE              0x008d0001
+#define E_E00002_hcIGNCAST             0x008d0002
+#define E_E00003_hcINDIR               0x008d0003
+#define E_E00004_hcSTRUCTREF           0x008d0004
+#define E_E00005_hcUNCLOSED            0x008d0005
+#define E_E00006_hcNOFUNCDEC           0x008d0006
+#define E_E00007_hcNESTFUNCDEF         0x008d0007
+#define E_E00008_hcVCHIGNRE            0x008d0008
+#define E_E00009_hcMISSEQUAL           0x008d0009

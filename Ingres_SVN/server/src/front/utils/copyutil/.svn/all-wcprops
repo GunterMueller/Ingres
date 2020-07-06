@@ -1,0 +1,233 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/utils/copyutil
+END
+cucjoind.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/cucjoind.c
+END
+cudelete.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/cudelete.qsc
+END
+cucclass.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/cucclass.c
+END
+cucenc.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/cucenc.c
+END
+ercu.msg
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/ercu.msg
+END
+abfadd.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/abfadd.qsc
+END
+cuclsout.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/cuclsout.qsc
+END
+curepout.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/curepout.qsc
+END
+cuqnmout.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/cuqnmout.qsc
+END
+cuaddobj.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/cuaddobj.qsc
+END
+curtc.roc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/curtc.roc
+END
+cujdout.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/cujdout.qsc
+END
+cugbfout.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/cugbfout.qsc
+END
+cuwrutil.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/cuwrutil.qsc
+END
+cucrw.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/cucrw.c
+END
+curtc.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/curtc.h
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/Jamfile
+END
+cuntr.roc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/cuntr.roc
+END
+curdobj.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/curdobj.qsc
+END
+cucqbfnm.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/cucqbfnm.c
+END
+cucform.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/cucform.c
+END
+formadd.sc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/formadd.sc
+END
+cuinsert.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/cuinsert.qsc
+END
+cuntr.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/cuntr.h
+END
+cuesc.roc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/cuesc.roc
+END
+cumsgptr.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/cumsgptr.c
+END
+cuvigout.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/cuvigout.c
+END
+curecord.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/curecord.c
+END
+cuesc.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/cuesc.h
+END
+cufrmout.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/cufrmout.qsc
+END
+cuobjexi.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/cuobjexi.qsc
+END
+cucvig.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/cucvig.c
+END
+cucabf.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/cucabf.c
+END
+cucnflic.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/cucnflic.c
+END
+cuutils.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/cuutils.c
+END
+cucgbf.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/cucgbf.c
+END
+cuencode.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/cuencode.qsc
+END
+print.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/utils/copyutil/print.c
+END

@@ -1,0 +1,109 @@
+#!/bin/bash
+#
+# Copyright (c) 2004 Ingres Corporation
+#
+# mkidir:
+#
+#	Set permissions on build directories; create them if they don't	exist.
+#	This must be run as ingres; on sysV, this means ruid and euid.
+#	May be run more than once.
+#
+#
+
+: ${ING_SRC?"must be set"}
+
+CMD=`basename $0`
+
+[ -n "$ING_VERS" ] && noise="/$ING_VERS/src"
+
+CONFDIR=$ING_SRC/tools/port$noise/conf
+. readvers
+
+[ -d ${ING_BUILD?"must be set"} ] ||
+{ echo "Creating $ING_BUILD..." ; mkdir -p $ING_BUILD 2>/dev/null ||
+  { echo "$CMD: Cannot create $ING_BUILD. Check permissions." ; exit 1 ; } ; }
+
+cd $ING_BUILD
+echo "Checking ING_BUILD directories..."
+ccpp -Uunix -DDIR_INSTALL $CONFDIR/idirs.ccpp | while read perm dir
+do
+  [ -d $dir ] ||
+  { echo "Creating $dir..." ; mkdir $dir 2>/dev/null ||
+    { echo "$CMD: Cannot create $dir. Check permissions." ; exit 1 ; }
+    chmod $perm $dir ; }
+done
+
+# Check for II_SYSTEM, create it if we need to
+[ -d ${II_SYSTEM?"must be set"} ] ||
+{ echo "Creating $II_SYSTEM..." ; mkdir -p $II_SYSTEM 2>/dev/null ||
+  { echo "$CMD: Cannot create $II_SYSTEM. Check permissions." ; exit 1 ; } ; }
+
+# Check for link back to $ING_BUILD, create it if we need to
+[ -h ${II_SYSTEM}/ingres ] ||
+{ echo 'Creating $II_SYSTEM/ingres->$ING_BUILD  link...'
+  ln -s $ING_BUILD $II_SYSTEM/ingres 2>/dev/null ||
+    { echo "$CMD: Cannot create link $II_SYSTEM/ingres. Check permissions." 
+      exit 1 
+    }
+}
+
+# make lp64 directories
+if [ "$conf_ADD_ON64" ]
+then
+   HB=64
+elif [ "$conf_ADD_ON32" ]
+then
+   HB=32
+fi
+
+if [ "$HB" ]
+then
+  echo "Checking lp${HB} directories"
+  cd ${ING_SRC}
+  [ -r "${ING_SRC}/tools/port/conf/hbdirs.ccpp" ] ||
+  {
+	echo "Cannot read ${ING_SRC}/tools/port/conf/hbdirs.ccpp"
+	echo "Aborting..."
+	exit 1
+  }
+
+  ccpp -Uunix $CONFDIR/hbdirs.ccpp |  while read dir
+  do
+    if [ -d $dir ]
+    then
+      [ -d $dir/lp${HB} ] ||
+      {
+	echo "Making directory $dir/lp${HB}"
+	mkdir $dir/lp${HB}
+      }
+    fi
+  done
+fi
+
+[ $? -eq 1 ] && exit 1
+
+#Create $ING_SRC target directories: bin, lib, man1.
+#Create then under ING_TOOLS and link them back to $ING_SRC
+echo "Checking ING_TOOLS directories..."
+cd $ING_TOOLS
+ccpp -Uunix -DDIR_SRC $CONFDIR/idirs.ccpp |  while read perm dir
+do
+  [ -d $dir ] ||
+  { echo "Creating $dir..." ; mkdir $dir 2>/dev/null ||
+    { echo "$CMD: Cannot create $dir. Check permissions." ; exit 1 ; }
+  chmod $perm $dir ; }
+done
+
+for d in bin lib man1
+do
+    [ -h $ING_SRC/$d ] || \
+    { echo 'Creating $ING_SRC/'$d'->$ING_TOOLS/'$d'  link...'
+	ln -s $ING_TOOLS/$d $ING_SRC ||
+	{ echo "$CMD: Cannot create link $ING_SRC/${d}. Check permissions."
+	  exit 1 
+	}
+    }
+done
+
+[ $? -eq 1 ] && exit 1
+exit 0

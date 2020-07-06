@@ -1,0 +1,33 @@
+#
+# Jamfile file for back!opf!opc
+#
+
+SubDir ING_SRC back opf opc ;
+
+IISUBSYS back opf opc ;
+
+IINOOPTIM opcran.c : sos_us5 ;
+IINOOPTIM opcqual.c : sos_us5 ;
+IINOOPTIM opcqtxt.c : i64_aix ;
+IINOOPTIM opcqtree.c : i64_aix ;
+IINOOPTIM opcqp.c : i64_aix ;
+IINOOPTIM opcqen.c : i64_aix ;
+IINOOPTIM opcprtree.c : i64_aix ;
+IINOOPTIM opcorig.c : i64_aix ;
+IINOOPTIM opckey.c : i64_aix ;
+IINOOPTIM opcjoins.c : i64_aix ;
+IINOOPTIM opcjcommon.c : i64_aix ;
+IINOOPTIM opcexch.c : i64_aix ;
+IINOOPTIM opcentry.c : i64_aix ;
+IINOOPTIM opcdqp.c : i64_aix ;
+IINOOPTIM opcdqcmp.c : i64_aix ;
+IINOOPTIM opcahd.c : i64_aix ;
+IINOOPTIM opcagg.c : rs4_us5 ;
+IINOOPTIM opcadf.c : rs4_us5 ;
+
+IILIBRARY OPFLIB : optftoc.c optcomp.c opctuple.c opctrutl.c
+	opctrtxt.c opcsorts.c opcsejoin.c opcran.c opcqual.c opcqtxt.c
+	opcqtree.c opcqp.c opcqen.c opcprtree.c opcorig.c opckey.c
+	opcjoins.c opcjcommon.c opcexch.c opcentry.c opcdqp.c
+	opcdqcmp.c opcahd.c opcagg.c opcadf.c ;
+

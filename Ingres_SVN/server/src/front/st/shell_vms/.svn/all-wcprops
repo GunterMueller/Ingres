@@ -1,0 +1,209 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/3/main/src/front/st/shell_vms
+END
+iisudbms.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/iisudbms.dcl
+END
+iijobdel.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/iijobdel.dcl
+END
+ingstop.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/st/shell_vms/ingstop.dcl
+END
+iishare.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/iishare.dcl
+END
+ingusrdef.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/ingusrdef.dcl
+END
+iisyschk.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/iisyschk.dcl
+END
+iigetsyi.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/iigetsyi.dcl
+END
+ingdefdev.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/ingdefdev.dcl
+END
+iisujdbc.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/iisujdbc.dcl
+END
+iisubr.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/iisubr.dcl
+END
+iisudas.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/iisudas.dcl
+END
+rmcmd.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/rmcmd.dcl
+END
+ingdbadef.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/ingdbadef.dcl
+END
+iircpseg.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/iircpseg.dcl
+END
+iiuncluster.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/iiuncluster.dcl
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/Jamfile
+END
+setingreslanguage.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/setingreslanguage.dcl
+END
+iirunrmcmd.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/iirunrmcmd.dcl
+END
+iirunacp.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/iirunacp.dcl
+END
+iisunode.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/st/shell_vms/iisunode.dcl
+END
+iisunet.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/iisunet.dcl
+END
+iisurep.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/iisurep.dcl
+END
+iisuabf.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/iisuabf.dcl
+END
+iishlib.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/iishlib.dcl
+END
+iimkcluster.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/iimkcluster.dcl
+END
+iisurms.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/iisurms.dcl
+END
+ingsysdef.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/ingsysdef.dcl
+END
+iisuc2.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/iisuc2.dcl
+END
+iisuodbc.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/iisuodbc.dcl
+END
+iigetuic.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/iigetuic.dcl
+END
+iisustar.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/iisustar.dcl
+END
+iisukerberos.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/iisukerberos.dcl
+END
+iiunloadfix.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/iiunloadfix.dcl
+END
+iidmfacp.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/shell_vms/iidmfacp.dcl
+END

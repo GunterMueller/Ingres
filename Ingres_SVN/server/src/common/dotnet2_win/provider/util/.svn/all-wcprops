@@ -1,0 +1,275 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util
+END
+sqltime.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/sqltime.cs
+END
+sqltinyint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/sqltinyint.cs
+END
+sqldates.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/sqldates.cs
+END
+errrsrc.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/errrsrc.cs
+END
+sqlbyte.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/sqlbyte.cs
+END
+sqltimestamp.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/sqltimestamp.cs
+END
+ichararray.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/ichararray.cs
+END
+dateformat.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/dateformat.cs
+END
+sqldouble.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/sqldouble.cs
+END
+sqllongnchar.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/sqllongnchar.cs
+END
+ci.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/ci.cs
+END
+sqlbigint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/sqlbigint.cs
+END
+sqlvarbyte.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/sqlvarbyte.cs
+END
+msgconst.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/msgconst.cs
+END
+supportclass.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/supportclass.cs
+END
+sqlreal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/sqlreal.cs
+END
+sqlinterval.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/sqlinterval.cs
+END
+itrace.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/itrace.cs
+END
+gcferr.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/gcferr.cs
+END
+sqlstream.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/sqlstream.cs
+END
+sqlbool.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/sqlbool.cs
+END
+ibytearray.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/ibytearray.cs
+END
+sqlnchar.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/sqlnchar.cs
+END
+sqllongchar.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/sqllongchar.cs
+END
+iconfig.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/iconfig.cs
+END
+sqldecimal.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/sqldecimal.cs
+END
+timer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/timer.cs
+END
+sqlnvarchar.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/sqlnvarchar.cs
+END
+ingresdate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/ingresdate.cs
+END
+sqlstring.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/sqlstring.cs
+END
+tracing.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/tracing.cs
+END
+sqldata.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/sqldata.cs
+END
+charset.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/charset.cs
+END
+sqlnull.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/sqlnull.cs
+END
+idmap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/idmap.cs
+END
+tracingeventlog.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/tracingeventlog.cs
+END
+sqlex.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/sqlex.cs
+END
+dbmsconst.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/dbmsconst.cs
+END
+sqldate.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/sqldate.cs
+END
+sqlchar.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/sqlchar.cs
+END
+ivararray.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/ivararray.cs
+END
+sqllongbyte.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/sqllongbyte.cs
+END
+sqlsmallint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/sqlsmallint.cs
+END
+sqlvarchar.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/sqlvarchar.cs
+END
+sqlint.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/provider/util/sqlint.cs
+END

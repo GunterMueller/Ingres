@@ -1,0 +1,21 @@
+#
+# Jamfile file for cl!clf!csmt_unix
+#
+
+SubDir ING_SRC cl clf csmt_unix ;
+
+IISUBSYS cl clf csmt_unix ;
+
+IINOOPTIM csmtspintest.c : sos_us5 ;
+IINOOPTIM csmtsem.c : sos_us5 ;
+IINOOPTIM csmtsampler.c : sos_us5 ;
+IINOOPTIM csmtmonitor.c : sos_us5 ;
+IINOOPTIM csmtinterf.c : rs4_us5 i64_aix ;
+IINOOPTIM csmthl.c : rs4_us5 i64_aix ;
+
+IIBINEXE csmtspintest : csmtspintest.c ;
+IINEEDLIBS csmtspintest : COMPATLIB MALLOCLIB ;
+
+IILIBRARY COMPATLIB : csmttls.c csmtsem.c csmtsampler.c
+	csmtmonitor.c csmtinterf.c csmthl.c ;
+

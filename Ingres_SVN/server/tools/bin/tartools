@@ -1,0 +1,221 @@
+#!/bin/bash
+#
+# Copyright (c) 2004 Ingres Corporation
+#
+#
+# Create a tar-file of test tools utilities
+#
+#
+
+[ $SHELL_DEBUG ] && set -x
+
+: {$ING_BUILD?"must be set"}
+: {$ING_SRC?"must be set"}
+[ -n "$ING_VERS" ] && noise="/$ING_VERS/src"
+
+tarfile=""
+tarlist=""
+compress_it=false
+audit=false
+while [ ! "$1" = "" ]
+do
+	if [ "$1" = "-compress" ]
+	then
+		compress_it=true
+	elif [ "$1" = "-nocompress" ]
+	then
+		compress_it=false
+	elif [ "$1" = "-a" ]
+	then
+		audit=true
+	else
+		tarfile=$1
+	fi
+	[ "$2" = "" ] && break
+	shift
+done
+
+for file in \
+ $ING_BUILD/bin/deleter \
+ $ING_BUILD/bin/testvdb \
+ $ING_SRC/bin/qasetuser \
+ $ING_SRC/bin/qawtl \
+ $ING_SRC/bin/tac \
+ $ING_SRC/bin/authnetu \
+ $ING_SRC/bin/ckpdb1_check \
+ $ING_SRC/bin/ckpdb1_load \
+ $ING_SRC/bin/ckpdb_abort \
+ $ING_SRC/bin/ckpdb_append \
+ $ING_SRC/bin/ckpdb_delapp \
+ $ING_SRC/bin/ckpdbtst \
+ $ING_SRC/bin/cksepenv \
+ $ING_SRC/bin/executor \
+ $ING_SRC/bin/ferun \
+ $ING_SRC/bin/listexec \
+ $ING_SRC/bin/peditor \
+ $ING_SRC/bin/qasetuserfe \
+ $ING_SRC/bin/qasetusertm \
+ $ING_SRC/bin/resettimezone \
+ $ING_SRC/bin/run \
+ $ING_SRC/bin/sep \
+ $ING_SRC/bin/sepada \
+ $ING_SRC/bin/sepcc \
+ $ING_SRC/bin/sepcob \
+ $ING_SRC/bin/sepesqlc \
+ $ING_SRC/bin/sepfortr \
+ $ING_SRC/bin/seplib \
+ $ING_SRC/bin/seplnk \
+ $ING_SRC/bin/sepperuse \
+ $ING_SRC/bin/updperuse \
+ $ING_SRC/bin/compress \
+ $ING_SRC/man1/VERS.1 \
+ $ING_SRC/man1/addrfmt.1 \
+ $ING_SRC/man1/align.1 \
+ $ING_SRC/man1/altcompare.1 \
+ $ING_SRC/man1/arc_lock.1 \
+ $ING_SRC/man1/arc_unlock.1 \
+ $ING_SRC/man1/argeval.1 \
+ $ING_SRC/man1/argloc.1 \
+ $ING_SRC/man1/argorder.1 \
+ $ING_SRC/man1/bang.1 \
+ $ING_SRC/man1/beingres.1 \
+ $ING_SRC/man1/bitsin.1 \
+ $ING_SRC/man1/buildrel.1 \
+ $ING_SRC/man1/byteswap.1 \
+ $ING_SRC/man1/ccpp.1 \
+ $ING_SRC/man1/chtim.1 \
+ $ING_SRC/man1/clningtst.1 \
+ $ING_SRC/man1/clntstabf.1 \
+ $ING_SRC/man1/clntstdbs.1 \
+ $ING_SRC/man1/compress.1 \
+ $ING_SRC/man1/context.1 \
+ $ING_SRC/man1/copyconv.1 \
+ $ING_SRC/man1/copyvec.1 \
+ $ING_SRC/man1/dirname.1 \
+ $ING_SRC/man1/each.1 \
+ $ING_SRC/man1/ensure.1 \
+ $ING_SRC/man1/getextra.1 \
+ $ING_SRC/man1/grepall.1 \
+ $ING_SRC/man1/headers.1 \
+ $ING_SRC/man1/includes.1 \
+ $ING_SRC/man1/ingman.1 \
+ $ING_SRC/man1/louf.1 \
+ $ING_SRC/man1/machine.1 \
+ $ING_SRC/man1/mantmplt.1 \
+ $ING_SRC/man1/mathsigs.1 \
+ $ING_SRC/man1/maxfiles.1 \
+ $ING_SRC/man1/maxstack.1 \
+ $ING_SRC/man1/maxvals.1 \
+ $ING_SRC/man1/mergelibs.1 \
+ $ING_SRC/man1/mkbzarch.1 \
+ $ING_SRC/man1/mkfecat.1 \
+ $ING_SRC/man1/mkfill.1 \
+ $ING_SRC/man1/mkidir.1 \
+ $ING_SRC/man1/mkman.1 \
+ $ING_SRC/man1/mksecret.1 \
+ $ING_SRC/man1/mksysdep.1 \
+ $ING_SRC/man1/mkw4cat.1 \
+ $ING_SRC/man1/mkw4dir.1 \
+ $ING_SRC/man1/mkw4vers.1 \
+ $ING_SRC/man1/needs.1 \
+ $ING_SRC/man1/nullderef.1 \
+ $ING_SRC/man1/offend.1 \
+ $ING_SRC/man1/overwrite.1 \
+ $ING_SRC/man1/picall.1 \
+ $ING_SRC/man1/project.1 \
+ $ING_SRC/man1/rcompall.1 \
+ $ING_SRC/man1/rofix.1 \
+ $ING_SRC/man1/salign.1 \
+ $ING_SRC/man1/sep.1 \
+ $ING_SRC/man1/sepperuse.1 \
+ $ING_SRC/man1/sizeof.1 \
+ $ING_SRC/man1/symlink.1 \
+ $ING_SRC/man1/sysint.1 \
+ $ING_SRC/man1/tac.1 \
+ $ING_SRC/man1/unschar.1 \
+ $ING_SRC/man1/updperuse.1 \
+ $ING_SRC/man1/w4bang.1 \
+ $ING_SRC/man1/whatunix.1 \
+ $ING_SRC/man1/which.1 \
+ $ING_SRC/man1/whoami.1 \
+ $ING_SRC/man1/yyfix.1 \
+ $ING_SRC/testtool/sep$noise/files_unix_win/basickeys.sep \
+ $ING_SRC/testtool/sep$noise/files_unix_win/commands.sep \
+ $ING_SRC/testtool/sep$noise/files_unix_win/header.txt \
+ $ING_SRC/testtool/sep$noise/files_unix_win/makelocs.key \
+ $ING_SRC/testtool/sep$noise/files_unix_win/septerm.sep \
+ $ING_SRC/testtool/sep$noise/files_unix/termcap.sep \
+ $ING_SRC/testtool/sep$noise/files_unix_win/vt100.sep \
+ $ING_SRC/testtool/sep$noise/files_unix_win/vt220.sep 
+do
+  tarlist="$tarlist $file"
+done
+
+if $audit 
+then
+auditrc=0
+echo "Checking tools and utilities for $1"
+for file in $tarlist
+  do
+	[ ! -r $file ] &&
+	{
+	    echo "$file does not exist."
+	    auditrc=1
+	}
+  done
+exit $auditrc
+fi
+
+[ "$tarfile" = "" ] &&
+{
+	echo "usage: tartools [-a] tarfile..."
+	exit 1
+}
+
+fname=`basename $tarfile`
+fdir=`dirname $tarfile`
+[ "$fdir" = "." ] && fdir=`pwd`
+tarfile=$fdir/$fname
+
+
+V=
+VS=
+[ -n "$ING_VERS" ] && {
+    VS="/$ING_VERS/src"
+    V="/$ING_VERS"
+}
+
+echo "Populating temp dir in `pwd`"
+rm -f $tarfile
+mkdir ./temp
+cd ./temp
+for file in $tarlist
+   do
+      bigname=`dirname $file`
+      subdir=`basename $bigname`
+      if [ $subdir = "bin" ] || [ $subdir = "man1" ]
+      then      [ ! -d $subdir ] &&
+         mkdir $subdir
+      	 [ -r $file ] &&
+         cp $file ./$subdir
+      else
+	 [ ! -d files ] &&
+	 mkdir files
+	 [ -r $file ] &&
+	 cp $file ./files
+      fi
+   done
+echo "Creating $1"
+tar cvf $tarfile ./*
+cd ..
+rm -fr ./temp/*
+rmdir ./temp
+
+if $compress_it
+then
+	echo "Compressing $tarfile..."
+	compress $tarfile
+fi
+
+echo "Done creating $1"
+exit 0

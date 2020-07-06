@@ -1,0 +1,9 @@
+config=a64_sol
+config64=a64_sol
+option=DELIM_TEST
+option=ADD_ON64
+option=INGRESII
+option=DBL
+option=B64
+option=CAS_ENABLED
+build=00

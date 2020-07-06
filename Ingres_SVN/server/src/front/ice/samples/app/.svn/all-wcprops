@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/ice/samples/app
+END
+Makefile.ccpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/ice/samples/app/Makefile.ccpp
+END
+iceapp.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/ice/samples/app/iceapp.c
+END
+app.html
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/ice/samples/app/app.html
+END
+makefile.wnt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/ice/samples/app/makefile.wnt
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/ice/samples/app/MANIFEST
+END

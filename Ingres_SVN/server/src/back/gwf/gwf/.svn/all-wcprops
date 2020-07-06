@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/ingres/!svn/ver/1/main/src/back/gwf/gwf
+END
+gwfses.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/gwf/gwf/gwfses.c
+END
+gwfcall.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/gwf/gwf/gwfcall.c
+END
+gwfutil.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/gwf/gwf/gwfutil.c
+END
+gwftrace.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/gwf/gwf/gwftrace.c
+END
+gwtabi_dbms.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/back/gwf/gwf/gwtabi_dbms.c
+END
+gwfxact.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/gwf/gwf/gwfxact.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/gwf/gwf/Jamfile
+END
+generr.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/gwf/gwf/generr.h
+END
+gwfidx.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/gwf/gwf/gwfidx.c
+END
+gwftab.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/gwf/gwf/gwftab.c
+END
+gwfdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/gwf/gwf/gwfdata.c
+END
+gwferror.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/gwf/gwf/gwferror.c
+END
+gwffac.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/gwf/gwf/gwffac.c
+END
+gwfrec.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/gwf/gwf/gwfrec.c
+END

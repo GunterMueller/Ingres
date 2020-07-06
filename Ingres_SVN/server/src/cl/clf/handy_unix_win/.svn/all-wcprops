@@ -1,0 +1,233 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win
+END
+mutex.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/mutex.c
+END
+bsshmio.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/bsshmio.c
+END
+bstliio.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/bstliio.c
+END
+clfd.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/clfd.c
+END
+dup2.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/dup2.c
+END
+bstliio.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/bstliio.h
+END
+bssockio.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/bssockio.c
+END
+bstliunix.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/bstliunix.c
+END
+bssockio.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/bssockio.h
+END
+bssocktcp6.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/bssocktcp6.c
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/MANIFEST
+END
+usrauthosx.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/usrauthosx.c
+END
+histo.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/histo.c
+END
+cltest.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/cltest.sh
+END
+bssockunix.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/bssockunix.c
+END
+ingvalidpw.x
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/ingvalidpw.x
+END
+bssocktcp.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/bssocktcp.c
+END
+bssockdnet.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/bssockdnet.c
+END
+bvalidpw.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/bvalidpw.sh
+END
+iinap.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/iinap.c
+END
+diremul.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/diremul.c
+END
+bsunixaddr.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/bsunixaddr.c
+END
+ftok.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/ftok.c
+END
+bstcpaddr.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/bstcpaddr.c
+END
+bstlispx.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/bstlispx.c
+END
+bstlispx.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/bstlispx.h
+END
+hdydata.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/hdydata.c
+END
+bstcpport.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/bstcpport.c
+END
+iicl.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/iicl.c
+END
+iisubst.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/iisubst.c
+END
+bsosi.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/bsosi.h
+END
+bstlitcp.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/bstlitcp.c
+END
+clpoll.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/clpoll.c
+END
+mkvalidpw.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/mkvalidpw.sh
+END
+wgl_32s.hnt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/wgl_32s.hnt
+END
+bstliosi.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/bstliosi.c
+END
+itimer.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/itimer.c
+END
+cldio.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/clf/handy_unix_win/cldio.c
+END

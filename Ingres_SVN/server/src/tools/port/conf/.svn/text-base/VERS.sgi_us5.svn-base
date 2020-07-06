@@ -1,0 +1,5 @@
+config=sgi_us5
+config64=sgi_us5
+build=00
+option=INGRESII
+option=ADD_ON64

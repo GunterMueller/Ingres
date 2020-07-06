@@ -1,0 +1,1067 @@
+#!/bin/bash
+#
+# Copyright (c) 1990, 2008 Ingres Corporation
+#
+#
+# This script creates the iisysdep file, which contains system- or
+# architecture-dependent definitions which are used by all of the
+# install scripts.  All install scripts which have even the least
+# potential for having system dependencies -- which is to say, probably
+# all of them period -- should include iisysdep, just in case.  Any
+# system-dependent code in such files should be if'd or case'd on some-
+# thing defined in iisysdep.
+#
+#-------------------------------------------------------------------------
+
+. readvers
+. shlibinfo
+vers=$config
+
+if [ "$config64" ] ; then
+   vers_name=$config64
+else
+   vers_name=$config
+fi
+
+#
+# If conf_ADD_ON32 is set then it's reverse hybrid
+#
+[ "$conf_ADD_ON32" ] && vers=$config64
+
+iisys=`echo $config | tr "_" "."`
+isys_name=`genrelid INGRES`
+
+# Determine whether a private copy of the tools is being built
+[ -n "$PRIVATE_TOOLS" ] && privtools="/$ING_VERS"
+
+PATH=$II_SYSTEM/ingres/utility:$II_SYSTEM/ingres/bin:/bin:/usr/bin:/usr/ucb:/etc:$ING_SRC$privtools/bin
+
+sysdep_name=iisysdep
+sysdep=$ING_BUILD/utility/$sysdep_name
+
+date=`date`
+
+#-------------------------------------------------------------------------
+#  Create sysdep file and set stdout to it...
+
+exec > $sysdep
+trap 'rm -f $sysdep' 0 
+
+#-------------------------------------------------------------------------
+
+cat << !
+#!/bin/sh
+#
+# INGRES 6.1+ $sysdep_name
+# created on $date
+# by the mksysdep shell script
+#
+# Configuration: $vers_name   
+# Release ID   : $isys_name
+#
+!
+
+
+#-------------------------------------------------------------------------
+
+echo ""
+echo "#  Set WHOAMI to the current logon:"
+
+case $vers in
+	rs4_us5 | ris_u64)
+		echo 'WHOAMI=`/usr/bin/whoami`'
+		;;
+	usl_us5)
+		echo 'WHOAMI=`IFS="()"; set - \`id\`; echo $2`'
+		;;
+	*)
+		if [ -f /usr/ucb/whoami ] 
+		then
+			echo 'WHOAMI=`/usr/ucb/whoami`'
+		else
+			if [ -f /usr/bin/whoami ]
+			then
+				echo 'WHOAMI=`/usr/bin/whoami`'
+			else
+				echo 'WHOAMI=`IFS="()"; set - \`id\`; echo $2`'
+			fi
+		fi
+		;;
+esac
+
+echo export WHOAMI
+
+
+
+#-------------------------------------------------------------------------
+case $vers in
+  ds3_ulx)
+      echo BPATHSED="'s/.*\/.//'"
+      ;;
+  hp3_us5 | hp8_us5 |  hp8_bls | hpb_us5 | hp2_us5 | i64_hpu)
+    echo BPATHSED="'s/.*\///'"
+    ;;
+  ris_us5 | rs4_us5 | ris_u64 | i64_aix)
+    cat << !
+BPATHSED='s/r//'
+DFCMD="exec df -M"
+!
+      ;;
+  dg8_us5 | dgi_us5)
+    echo BPATHSED='"s/.*\/.//"'
+    ;;
+  *)
+    echo BPATHSED='s,.*/,,'
+	echo 'DFCMD="exec df"'
+    ;;
+esac
+
+echo export BPATHSED
+echo export DFCMD
+
+#-------------------------------------------------------------------------
+
+echo ""
+echo "#  Set up variables for the echon script"
+
+ECHO_CMD=""
+for ECHO in /usr/bin/printf /bin/echo /usr/ucb/echo echo
+do
+	if [ "$ECHO" != "echo" -a ! -f $ECHO ]
+	then
+		continue
+	fi
+	if [ "$ECHO" = "/usr/bin/printf" ]
+	then
+		ECHO_CMD=$ECHO
+		echo ECHO_CMD=$ECHO
+		echo ECHO_FLAG=
+		echo ECHO_CHAR=
+		break
+	fi
+	if [ "$vers" = "int_lnx" ] || [ "$vers" = "ibm_lnx" ] || \
+	   [ "$vers" = "axp_lnx" ] || [ "$vers" = "i64_lnx" ] || \
+	   [ "$vers" = "a64_lnx" ] || [ "$vers" = "mg5_osx" ] || \
+           [ "$vers" = "int_rpl" ] || [ "$vers" = "ppc_lnx" ] || \
+	   [ "$vers" = "int_osx" ]
+	then
+		if [ "`$ECHO -n hi`" = "hi" ]
+		then
+			ECHO_CMD=$ECHO
+			echo ECHO_CMD=$ECHO
+			echo ECHO_FLAG=-n
+			echo ECHO_CHAR=
+			break
+		fi
+	fi
+	if [ `$ECHO "hi\c"` = "hi" ]
+	then
+		ECHO_CMD=$ECHO
+		echo ECHO_CMD=$ECHO
+		echo ECHO_FLAG=
+		if [ "$vers" = "int_lnx" ] || [ "$vers" = "ibm_lnx" ] || \
+		   [ "$vers" = "axp_lnx" ] || [ "$vers" = "i64_lnx" ] || \
+	       	   [ "$vers" = "a64_lnx" ] || [ "$vers" = "int_rpl" ] || \
+		   [ "$vers" = "ppc_lnx" ]
+		then
+			echo ECHO_CHAR="\\\\c"
+		else
+			echo ECHO_CHAR='\\\\c'
+		fi
+		break
+	elif [ "`$ECHO -n hi`" = "hi" ]
+	then
+		ECHO_CMD=$ECHO
+                echo ECHO_CMD=$ECHO
+		echo ECHO_FLAG=-n
+		echo ECHO_CHAR=
+		break
+	fi
+			
+done
+unset ECHO
+if [ "$ECHO_CMD" = "" ]
+then
+	echo ECHO_CMD=echo
+	echo ECHO_FLAG=
+	echo ECHO_CHAR=
+fi
+
+echo export ECHO_CMD ECHO_FLAG ECHO_CHAR
+
+
+#-------------------------------------------------------------------------
+
+echo ""
+echo "#  Define the form of the ps command:"
+
+if [ "$vers" = "axp_osf" ] || [ "$vers" = "int_lnx" ] || \
+   [ "$vers" = "ibm_lnx" ] || [ "$vers" = "axp_lnx" ] || \
+   [ "$vers" = "i64_lnx" ] || [ "$vers" = "a64_lnx" ] || \
+   [ "$vers" = "int_rpl" ] || [ "$vers" = "ppc_lnx" ]
+then
+    echo PSCMD=\"ps auxw\"
+elif [ "$vers" = "rs4_us5" ] || [ "$vers" = "ris_us5" ] || [ "$vers" = "ris_u64" ] || [ "$vers" = "i64_aix" ]
+then
+    echo PSCMD=\"env COLUMNS=132 ps -ef\"
+elif [ "$vers" = "su4_us5" -o "$vers" = "sui_us5" -o "$vers" = "ts2_us5" -o "$vers" = "dr6_us5" -o "$vers" = "rmx_us5"  -o "$vers" = "rux_us5" -o "$vers" = "hpb_us5" -o "$vers" = "hp2_us5" -o "$vers" = "i64_hpu" -o "$vers" = "a64_sol" ]
+then
+    echo PSCMD=\"/bin/ps -ef\"
+elif [ "$vers" = "mg5_osx" ] || [ "$vers" = "int_osx" ] ; then
+# Need ww to stop truncation
+    echo PSCMD=\"ps auxww\"
+elif (ps -xauw) > /dev/null 2>&1
+then
+    echo PSCMD=\"ps -auxw\"
+else
+    echo PSCMD=\"ps -ef\"
+fi
+echo export PSCMD
+
+
+#-------------------------------------------------------------------------
+
+echo ""
+echo "#  Define the form of the ipcs and ipcrm commands:"
+
+if (ipcs) > /dev/null 2>&1
+then
+if [ "$vers" = "axp_osf" ]
+then
+ echo "if [ \`ipcs | awk '{ printf\"%d\", match(\$3, \"0x\") }'\` -gt 0 ]"
+ echo " then "
+ echo "IPCSCMD=\"eval ipcs | awk '{
+	if(length(\\\$3)>0) {
+		for(i_key=substr(\\\$3, 3, 8); length(i_key)<8; i_key=sprintf(\\\"0%s\\\", i_key)){};
+		printf\\\"%s %s 0x%s %s %s %s\\\\\\\n\\\", \\\$1, \\\$2, i_key, \\\$4, \\\$5, \\\$6 }
+	else
+		printf\\\"%s %s %s %s %s %s\\\\\\\n\\\", \\\$1, \\\$2, \\\$3, \\\$4, \\\$5, \\\$6 }' \""
+ echo "else"
+ echo "## ipcs needs to be formated to hex"
+ echo "IPCSCMD=\"eval ipcs | awk '
+/^[qms]/ {
+	printf \\\"%s %s 0x%.8x %s %s %s\\\\\\\n\\\", \\\$1, \\\$2, \\\$3, \\\$4, \\\$5, \\\$6
+}
+! /^[qms]/ {
+	print
+}'\""
+ echo " fi"
+else
+    echo IPCSCMD=ipcs
+fi
+    echo IPCRM=ipcrm
+    echo IPCSCMD2=ipcs
+else
+    echo IPCSCMD=\"att ipcs\"
+    echo IPCSCMD2=\"att ipcs\"
+    echo IPCRM=\"att ipcrm\"
+fi
+echo export IPCSCMD IPCRM IPCSCMD2
+
+
+#-------------------------------------------------------------------------
+
+echo ""
+echo "#  Define the local of the ping cmd:"
+ 
+case $vers in
+    su4_us5|\
+    dr6_us5|\
+    ris_us5|\
+    rs4_us5|\
+    pym_us5|\
+    rmx_us5|\
+    ts2_us5|\
+    rux_us5|\
+    ris_u64|\
+    i64_aix|\
+    a64_sol|\
+    i64_hpu)
+        echo PINGCMD=/usr/sbin/ping
+        ;;
+    dg8_us5)
+        echo PINGCMD=/usr/bin/ping
+        ;;
+    dgi_us5)
+        echo PINGCMD=/usr/ucb/ping
+        ;;
+    hp8_us5|sqs_ptx|hpb_us5|hp2_us5)
+        echo PINGCMD=/etc/ping
+        ;;
+    axp_osf)
+        echo PINGCMD=\"/usr/sbin/ping -c 1\"
+        ;;
+    sco_us5|sos_us5)
+        echo PINGCMD=\"/usr/bin/ping -c 1\"
+        ;;
+	sgi_us5)
+        echo PINGCMD=\"/usr/etc/ping -c 1\"
+        ;;
+    *_lnx|int_rpl)
+        echo PINGCMD=/bin/ping
+        ;;
+      *_osx)
+        echo PINGCMD=/sbin/ping
+        ;;
+    *)
+        echo PINGCMD=/usr/etc/ping
+        ;;
+esac
+
+case $vers in
+        *_lnx|int_rpl)
+	        echo PINGARGS=\"\-c 1\"
+		;;
+	hp8_us5|ris_us5|nc4_us5|hpb_us5|hp2_us5|i64_hpu)
+		echo PINGARGS=\"64 1\"
+		;;
+	*)
+		echo PINGARGS=" "
+		;;
+esac
+
+echo export PINGCMD PINGARGS
+
+#-------------------------------------------------------------------------
+
+echo ""
+echo "#  Define the form of the ln cmd:"
+
+touch /tmp/tmp1.$$
+if ln -s /tmp/tmp1.$$ /tmp/tmp2.$$ > /dev/null 2>&1
+then
+    echo LINKCMD=\"ln -s\"
+else
+    echo LINKCMD=\"ln\"
+fi
+rm -f /tmp/tmp[12].$$
+echo export LINKCMD
+
+
+#-------------------------------------------------------------------------
+
+echo ""
+echo "#  Set a variable to the system's host name:"
+
+case $vers in
+    su4_u42|su4_cmw)
+	echo "HOSTNAME=\`hostname\`"
+	echo SU_FLAGS=-cf
+	;;
+    *)
+	if (uname) > /dev/null 2>&1
+	then
+	    echo "HOSTNAME=\`uname -n\`"
+	elif (hostname) > /dev/null 2>&1
+	then
+	    echo "HOSTNAME=\`hostname\`"
+	else
+	    echo "HOSTNAME=\`uuname -l\`"
+	fi
+	echo SU_FLAGS=-c
+	;;
+esac
+
+echo export HOSTNAME
+
+echo export SU_FLAGS
+
+#-------------------------------------------------------------------------
+
+echo ""
+echo "#  Define commands to extract various fields from ls -l"
+
+touch /tmp/mksysdepls.$$
+if [ `ls -l /tmp/mksysdepls.$$ | awk '{ print $5 }' | egrep "^[a-zA-Z]*$" | wc -l` -eq 1 ]
+then
+	ownerfield=3
+	bytefield=4
+else 
+	ownerfield=3
+	bytefield=5
+fi
+rm -f /tmp/mksysdepls.$$
+
+echo "AWKBYTES=\"awk '{ print \\\$$bytefield }'\""
+echo "AWKOWNER=\"awk '{ print \\\$$ownerfield }'\""
+echo "AWKTOTAL=\"awk '{s += \\\$$bytefield } END {print (s * 3) / 1024}'\""
+echo export AWKBYTES AWKOWNER AWKTOTAL
+
+
+
+#-------------------------------------------------------------------------
+
+echo ""
+echo "#  Number of bytes in a single disk block:"
+
+TMP1=/tmp/bpb1$$
+TMP2=/tmp/bpb2$$
+echo "123456781234567812345678123456781234567812345678123456781234567" > $TMP1
+cat $TMP1 $TMP1 $TMP1 $TMP1 $TMP1 $TMP1 $TMP1 $TMP1 > $TMP2
+rm -f $TMP1
+mv $TMP2 $TMP1
+cat $TMP1 $TMP1 $TMP1 $TMP1 $TMP1 $TMP1 $TMP1 $TMP1 > $TMP2
+sz=`du -s $TMP2 | sed "s/[ 	].*//"` 
+echo BTPERBLK=`echo "4096/$sz" | bc`
+echo export BTPERBLK
+rm -f $TMP1 $TMP2
+
+
+#-------------------------------------------------------------------------
+
+if [ "$vers" = "ris_u64" ] || [ "$vers" = "i64_aix" ]
+then
+        echo ""
+        echo "# Defined the 64 bit object mode for AIX "
+	echo "OBJECT_MODE=64"
+	echo export OBJECT_MODE
+fi
+
+#-------------------------------------------------------------------------
+
+echo ""
+echo "#  Parameters from default.h (generated by mkdefault):"
+
+# Remove -fwritable-strings flag from CCMACH as it's deprecated 
+# in GCC 4.0. Still needed to build product though
+case "${vers}" in
+    *_lnx|int_rpl)
+	sed -e 's/ *=/=/' -e 's/= */=/' \
+	    -e '/^#/s/^.*[^un]define[ 	]*\([^ 	]*\)[ 	]*\(.*\)$/\1=\2/' \
+	    -e 's/=\(.* [^ ].*\)/=\"\1\"/' \
+	    -e 's/-fwritable-strings//' \
+            $ING_SRC/tools/port/$ING_VERS/hdr_unix_vms/default.h | \
+	    fgrep -v \
+	    'XTERMLIB
+	    XNETLIB
+	    WINSYSLIB'
+	;;
+       *)
+	sed  -e 's/ *=/=/' -e 's/= */=/' \
+	    -e '/^#/s/^.*[^un]define[ 	]*\([^ 	]*\)[ 	]*\(.*\)$/\1=\2/' \
+	    -e 's/=\(.* [^ ].*\)/=\"\1\"/' \
+            $ING_SRC/tools/port/$ING_VERS/hdr_unix_vms/default.h | \
+	    fgrep -v \
+	    'XTERMLIB
+	    XNETLIB
+	    WINSYSLIB'
+	;;
+esac
+ 
+
+case $vers in
+    ris_us5)
+      echo LINKTESTFLAG='-L'
+      ;;
+    axp_osf)
+	if uname -a | grep "V3\.0" > /dev/null 2>&1
+	then
+		echo LINKTESTFLAG='-f'
+	else
+		echo LINKTESTFLAG='-h'
+	fi
+      ;;
+    *)
+      echo LINKTESTFLAG='-h'
+      ;;
+esac
+
+cat << EOF
+
+if \${LibTest_in_iisysdep:-true} ; then
+#  Remove references to libraries that aren't present on this machine:
+# Create dummy C program to link to
+LIBTST_C=/tmp/libtst\$\$.c
+LIBTST_EXE=/tmp/libtst\$\$
+LIBTST_O=/tmp/libtst\$\$.o
+cat << LIBTST >  \${LIBTST_C}
+int
+main( int argc, char **argv )
+{
+    exit(0);
+}
+LIBTST
+EOF
+
+[ "$vers" = "int_lnx" -o "$vers" = "int_rpl" ] && cat << EOF
+
+# If int_lnx running on AMD64 Linux must tell compiler make 32bit binaries
+os_ver=\`uname -m\`
+if [ "\$os_ver" = "x86_64" ] ; then
+    CCMACH="-m32 \$CCMACH"
+    CCLDMACH="-m32 \$CCLDMACH"
+fi
+
+EOF
+
+cat << EOF
+if ( \$CC \$CCMACH -c -o \$LIBTST_O \$LIBTST_C ) > /dev/null 2>&1
+then
+  sedcmd=
+  for word in \`echo \$LDLIB \$LIBMACH | tr ' '  '\\012' | sort | uniq\`
+  do
+EOF
+case $vers in
+    *_lnx|int_rpl|*_osx)
+      echo "    lib=\`expr \$word : '-l\(.*\)\$'\`"
+      ;;
+    *)
+      echo "    lib=\`expr \$word : '^-l\(.*\)\$'\`"
+      ;;
+esac
+
+cat << EOF
+
+    if [ -n "\$lib" ]
+    then
+	 sedtail=" -e 's/\$word//'"
+	 if ( \$CC \$CCMACH -o \$LIBTST_EXE \$LIBTST_O -l\${lib} ) > /dev/null 2>&1
+	 then
+	    rm -f \$LIBTST_EXE
+	 else
+	    sedcmd="\$sedcmd\$sedtail"
+	 fi
+    fi
+  done
+  if [ -n "\$sedcmd" ]
+  then
+    LDLIB=\`echo \$LDLIB | eval "sed \$sedcmd"\`
+    LIBMACH=\`echo \$LIBMACH | eval "sed \$sedcmd"\`
+  fi
+  sedcmd=
+  lpath=
+  for word in \$LDLIBMACH
+  do
+EOF
+case $vers in
+    *_lnx|int_rpl|*_osx)
+      echo "    lpathone=\`expr \$word : '-L\(.*\)\$'\`"
+      ;;
+    *)
+      echo "    lpathone=\`expr \$word : '^-L\(.*\)\$'\`"
+      ;;
+esac
+
+cat << EOF
+
+    if [ -n "\$lpathone" ]
+    then
+	 lpath="\$lpath"-L"\$lpathone "
+    fi
+  done
+  if [ -n "\$lpath" ]
+  then
+    for word in \$LDLIBMACH
+    do
+EOF
+case $vers in
+    *_lnx|int_rpl|*_osx)
+      echo "      lib=\`expr \$word : '-l\(.*\)\$'\`"
+      ;;
+    *)
+      echo "      lib=\`expr \$word : '^-l\(.*\)\$'\`"
+      ;;
+esac
+
+cat << EOF
+      if [ -n "\$lib" ]
+      then
+	 sedtail=" -e 's/\$word//'"
+	 if ( \$CC \$CCMACH -o \$LIBTST_EXE \$LIBTST_O \$lpath -l\${lib} ) > /dev/null 2>&1
+	 then
+	    rm -f \$LIBTST_EXE
+	 else
+	    sedcmd="\$sedcmd\$sedtail"
+	 fi
+      fi
+    done
+    if [ -n "\$sedcmd" ]
+    then
+      LDLIBMACH=\`echo \$LDLIBMACH | eval "sed \$sedcmd"\`
+    fi
+  fi
+fi
+rm -f \$LIBTST_EXE \$LIBTST_C \$LIBTST_O
+fi
+EOF
+
+
+#-------------------------------------------------------------------------
+#  Shared library info.
+#
+
+if $use_shared_libs ; then
+    echo USE_SHARED_LIBS=true
+else
+    echo USE_SHARED_LIBS=false
+fi
+
+#
+# Build iimerge from shared libraries ?
+#
+
+if $use_shared_svr_libs ; then
+    echo USE_SHARED_SVR_LIBS=true
+    echo 'LD_RUN_PATH=/lib:/usr/lib:$II_SYSTEM/ingres/lib'
+else
+    echo USE_SHARED_SVR_LIBS=false
+fi
+
+#
+# Build iimerge from archive library ?
+#
+
+if $use_archive_svr_lib ; then
+    echo USE_ARCHIVE_SVR_LIB=true
+else
+    echo USE_ARCHIVE_SVR_LIB=false
+fi
+
+echo SLSFX=$SLSFX
+echo export USE_SHARED_LIBS USE_SHARED_SVR_LIBS SLSFX LD_RUN_PATH
+
+#-------------------------------------------------------------------------
+
+echo ""
+echo "#---"
+echo "#--- Everything past this point is explicitly based on the config string"
+echo "#---"
+
+#  Set up default values first, so the cases below only have to change
+#  them if they're different...
+
+etcrcfiles=/etc/rc
+rctmplt=
+rc1=
+rc2=
+rc3=
+rc4=
+rc5=
+rcdeflnk=
+rcstart=S90
+rcstop=K10
+check_memory_resources=true
+output_sink='"> /dev/null"'
+use_symbolic_links=false
+working_awk='awk'
+
+#  Parsing pstat: the pstat command is used by the syscheck script to
+#  figure out whether there's enough swap space on the system to run 
+#  Ingres.  The output from pstat seems to vary wildly from system to
+#  system, but apparently it always reports the amount available,
+#  and either the amount used or the total amount allocated, or both.
+
+check_swap_space=true	# Should we do the check at all?
+pstat="/etc/pstat -s"	# The command to use
+pstat_used_arg=7 	# Arg number after set command: amount used...
+pstat_remain_arg=9 	# ...amount remaining, or available...
+pstat_total_arg=	# ...total swap space.  Null if this isn't returned.
+pstat_kbyte_factor=1	# Multiplier to convert the numbers to kbytes
+			# (Not to be confused with the number of bytes per
+			#  disk block -- we're talking memory here.)
+acpart_not_allowed=true # Can raw log be put on a or c partition ?
+bsd_df=df		# set df to BSD df style
+check_c2=false          # check if C2 security
+read_kmem=true          # Does rcheck read /dev/kmem ? default true.
+			# if set to false, syscheck will not complain if 
+			# /dev/kmem is not readable.
+
+
+case $iisys in
+        ds3.osf|axp.osf)
+                check_swap_space=false
+		etcrcfiles=/sbin/rc3.d
+                pstat=
+                pstat_used_arg=
+                pstat_remain_arg=
+                pstat_total_arg=
+                pstat_kbyte_factor=
+                bsd_df="df -k"
+                ;;
+        ds3*|vax.ulx)
+                pstat_used_arg=3
+                pstat_remain_arg=6
+                pstat_total_arg=1
+		pstat="$pstat | sed 's/[^0-9 ]//g'"	# The command to use
+		check_c2=true
+                ;;
+	sgi.us5)
+		pstat="/etc/swap -s -b "
+		pstat_used_arg=9
+		pstat_remain_arg=12
+		pstat_total_arg=
+		pstat_kbyte_factor="'1 / 2'"
+                bsd_df="df -Pk"
+		;;
+        sqs.ptx)
+                etcrcfiles=/etc/rc2.d
+                check_memory_resources=false
+                pstat="/etc/swap -f | grep free"
+                pstat_used_arg=1
+                pstat_remain_arg=3
+                pstat_kbyte_factor="'1 / 2'"
+                ;;
+	sqs*)
+		etcrcfiles=/etc/rc.sys5
+		check_memory_resources=false
+		pstat_used_arg=1
+		pstat_remain_arg=3
+		;;
+        pym.us5|rmx.us5|ts2.us5|rux.us5)
+# Unfortunately, sh doesn't deal well with args over $9, so we have to trim
+# off the first part of swap's output first.
+# /usr/sbin/swap -s: gives total figure, in 512b blocks.
+# total: 79248 allocated + 37944 reserved = 117192 blocks used, 159824 blocks available
+                etcrcfiles=/etc/rc2.d/
+                pstat="/usr/sbin/swap -s | cut -d= -f2-"
+                pstat_used_arg=1
+                pstat_remain_arg=4
+		pstat_kbyte_factor="'1 / 2'"
+                [ `expr "$iisys" : "pym.us5"` -ne 0 ] && bsd_df="df -k"
+                ;;
+	pyr*)
+		output_sink=
+		pstat_total_arg=1
+		pstat_remain_arg=5
+		pstat_used_arg=
+		;;
+        hp8.bls)
+                check_memory_resources=false
+                check_swap_space=false
+                acpart_not_allowed=false
+                bsd_df=bdf
+                read_kmem=false
+                ;;
+	hp3*|hp8*|hpb*|hp2*|i64.hpu)
+		check_swap_space=false
+		acpart_not_allowed=false
+		bsd_df=bdf
+		;;
+	ib1*)
+		check_swap_space=false
+		;;
+        bu2*|bu3*) 
+                check_swap_space=false
+                ;;
+	dr5*)
+		pstat="df /dev/swap | grep swap"
+		pstat_total_arg=3
+		pstat_remain_arg=3
+		;;
+	odt*|sco*|sos.us5)
+		acpart_not_allowed=false
+		pstat="/etc/swap -l | sed '1d' |
+			awk '{ blks += \\\$4 ; free += \\\$5 } END
+			{ printf \\\"%d %d\\\n\\\",blks,free }'"
+		pstat_used_arg=
+		pstat_remain_arg=2
+		pstat_total_arg=1
+		pstat_kbyte_factor="'1 / 2'"
+		;;
+	nc4*)
+		pstat="/etc/swap -l | sed '1d' |
+			awk '{ blks += \\\$4 ; free += \\\$5 } END
+			{ printf \\\"%d %d\\\n\\\",blks,free }'"
+		pstat_used_arg=
+		pstat_remain_arg=2
+		pstat_total_arg=1
+		pstat_kbyte_factor="'1 / 2'"
+                bsd_df="df -k"
+		;;
+	su4.us5*|sui.us5*)
+		etcrcfiles=/etc/rc2.d
+		pstat="/usr/sbin/swap -s|tr -cd \\\"[0-9]/+/-/,/ /=/:/\\\""
+		pstat_used_arg=6
+		pstat_remain_arg=8
+		pstat_total_arg=
+		pstat_kbyte_factor=1
+                bsd_df="df -k"
+		working_awk='nawk'
+		relver=`/bin/uname -r`
+		if [ `/usr/bin/expr $relver : '5\.\(.*\)'` -ge 10 ] ; then
+		    read_kmem=false
+		fi
+		;;
+	a64.sol)
+		etcrcfiles=/etc/rc2.d
+		pstat="/usr/sbin/swap -s|tr -cd \\\"[0-9]/+/-/,/ /=/:/\\\""
+		pstat_used_arg=6
+		pstat_remain_arg=8
+		pstat_total_arg=
+		pstat_kbyte_factor=1
+                bsd_df="df -k"
+		working_awk='nawk'
+		read_kmem=false
+		;;
+	ris.us5*|rs4.us5*|ris.u64*|r64.us5*)
+		acpart_not_allowed=false
+		pstat="/usr/sbin/lsps -a | awk ' BEGIN { TOT = 0; USED = 0}; FNR > 1 { TOT = TOT + \\\$4; USED = USED + \\\$4*\\\$5/100 }; END { REM = TOT - USED; print int(TOT) \\\" \\\" int(USED) \\\" \\\" int(REM)  } '"
+		pstat_total_arg=1
+		pstat_used_arg=2
+		pstat_remain_arg=3
+		pstat_kbyte_factor=1024		# = 1 Mbyte
+		read_kmem=false
+                [ `expr "$iisys" : "rs4.us5"` -ne 0 ] && bsd_df="df -k"
+                [ `expr "$iisys" : "r64.us5"` -ne 0 ] && bsd_df="df -k"
+		;;
+        i64.aix*)
+                acpart_not_allowed=false
+                pstat="/usr/sbin/lsps -a | awk ' BEGIN { TOT = 0; USED = 0}; FNR
+ > 1 { TOT = TOT + \\\$4; USED = USED + \\\$4*\\\$5/100 }; END { REM = TOT - USE
+D; print int(TOT) \\\" \\\" int(USED) \\\" \\\" int(REM)  } '"
+                pstat_total_arg=1
+                pstat_used_arg=2
+                pstat_remain_arg=3
+                pstat_kbyte_factor=1024         # = 1 Mbyte
+                read_kmem=false
+                [ `expr "$iisys" : "i64.rs5"` -ne 0 ] && bsd_df="df -k"
+                ;;
+        dr6.uv1)
+                check_memory_resources=false
+                check_swap_space=false
+                use_symbolic_links=true
+                admin_user=sysadm
+                ;;
+	dr6.ues)
+		check_memory_resources=false
+		check_swap_space=false
+		use_symbolic_links=false
+		admin_user=ingres
+		read_kmem=false
+		;;
+	dr6*|dra*|usl.us5)
+		etcrcfiles=/etc/rc2.d
+		pstat="swap -s|tr -d \\\"[a-z]\\\""
+		pstat_used_arg=6
+		pstat_remain_arg=8
+		pstat_total_arg=
+		pstat_kbyte_factor="'1 / 2'"
+		;;
+        dg8*|dgi*)
+                check_swap_space=false
+                use_symbolic_links=true
+                bsd_df="df -k"
+                ;;
+	*lnx|int.rpl)
+		check_swap_space=false
+		read_kmem=false
+		etcrcfiles=/etc/init.d
+		rctmplt=lnx.rc
+		rc1=/etc/rc.d/rc1.d
+		rc2=/etc/rc.d/rc2.d
+		rc3=/etc/rc.d/rc3.d
+		rc4=/etc/rc.d/rc4.d
+		rc5=/etc/rc.d/rc5.d
+		rcdeflnk='"2 3 5"'
+		rcstart=S90
+		rcstop=K10
+		;;
+	*osx)
+		check_swap_space=false
+		read_kmem=false
+		;;
+		
+esac
+
+# Establish command to use for finding major and minor numbers of a device
+case $iisys in
+hp3*|hp8*|hpb*|hp2*|i64.hpu)
+        sed_major_minor="'s/^.* \([0-9][0-9]*\) *\(0x[0-9a-f]*\) .*$/\1 \2/'"
+        ;;
+*)
+        sed_major_minor="'s/^.* \([0-9]*\), *\([0-9]*\) .*$/\1 \2/'"
+        ;;
+esac
+
+echo AWK=$working_awk
+echo ETCRCFILES=$etcrcfiles
+echo RCTMPLT=$rctmplt
+echo RC1=$rc1
+echo RC2=$rc2
+echo RC3=$rc3
+echo RC4=$rc4
+echo RC5=$rc5
+echo RCDEFLNK="$rcdeflnk"
+echo RCSTART=$rcstart
+echo RCSTOP=$rcstop
+echo CHECK_MEMORY_RESOURCES=$check_memory_resources
+echo OUTPUT_SINK=$output_sink
+echo ACPART_NOT_ALLOWED=$acpart_not_allowed
+echo DF=\"$bsd_df\"
+echo export ETCRCFILES CHECK_MEMORY_RESOURCES OUTPUT_SINK ACPART_NOT_ALLOWED DF
+echo " "
+echo CHECK_SWAP_SPACE=$check_swap_space
+echo USE_SYMBOLIC_LINKS=$use_symbolic_links
+echo SED_MAJOR_MINOR=$sed_major_minor
+echo export CHECK_SWAP_SPACE SED_MAJOR_MINOR
+if $check_swap_space
+then
+	echo " "
+	echo "#  Variables used for parsing the output from the pstat program:"
+	echo PSTAT=\"$pstat\"
+	echo PSTAT_USED_ARG=$pstat_used_arg
+	echo PSTAT_REMAIN_ARG=$pstat_remain_arg
+	echo PSTAT_TOTAL_ARG=$pstat_total_arg
+	echo PSTAT_KBYTE_FACTOR=$pstat_kbyte_factor
+	echo export PSTAT PSTAT_USED_ARG PSTAT_REMAIN_ARG 
+	echo export PSTAT_TOTAL_ARG PSTAT_KBYTE_FACTOR
+fi
+if $check_c2
+then
+    cat << !
+[ \`awk '/SECLEVEL/ {print \$1}' /etc/svc.conf | grep BSD\` ] \\
+      && CHECK_C2=false || CHECK_C2=true
+!
+else
+    echo CHECK_C2=true
+fi
+
+#-------------------------------------------------------------------------
+# These are used to assign security labels and privileges on machines
+# supporting this functionality
+#
+case $vers in
+    su4_cmw)
+      echo SET_B1_PRIV=true
+      echo SETLABEL="setlabel"
+      echo 'ADDPRIV_SERVER="/usr/etc/chpriv af=file_downgrade_il,file_downgrade_sl,file_mac_read,file_mac_write,net_mac_override,net_setil,sys_trans_label,proc_tranquil,proc_nofloat"'
+      echo 'ADDPRIV_MAINT="/usr/etc/chpriv af=file_downgrade_il,file_downgrade_sl,file_mac_read,file_mac_write,file_setpriv,file_upgrade_il,file_upgrade_sl,net_mac_override,net_setil,sys_trans_label,proc_tranquil,proc_nofloat"'
+      echo 'ADDPRIV_CLIENT="/usr/etc/chpriv af=sys_trans_label,proc_nofloat"'
+      echo 'ADDPRIV_SLUTIL="/usr/etc/chpriv a+proc_setil,proc_setsl,file_mac_read,file_mac_write"'
+      echo 'ADDPRIV_KMEM="/usr/etc/chpriv af+file_dac_read"'
+      echo export SET_B1_PRIV SETLABEL
+      echo export ADDPRIV_SERVER ADDPRIV_MAINT ADDPRIV_CLIENT ADDPRIV_SLUTIL ADDPRIV_KMEM
+      ;;
+    hp8_bls)
+      echo SETLABEL="chlevel"
+      echo SET_B1_PRIV=false
+      echo export SET_B1_PRIV SETLABEL
+      echo export ADDPRIV_SERVER ADDPRIV_MAINT ADDPRIV_CLIENT ADDPRIV_KMEM ADDPRIV_SLUTIL
+      ;;
+    *)
+      echo SET_B1_PRIV=false
+      echo SETLABEL=true
+      echo export SET_B1_PRIV SETLABEL
+      ;;
+esac
+
+echo READ_KMEM=$read_kmem
+echo export READ_KMEM
+
+echo " "
+
+#-------------------------------------------------------------------------
+# The AR_L_OPT variable is "l" on machines that allow "ar l" 
+# and null on machines that don't:
+case $vers in
+   sqs_ptx|\
+   su4_us5|\
+   sui_us5|\
+   a64_sol|\
+   usl_us5)
+      echo AR_L_OPT=
+      ;;
+   *) 
+      echo AR_L_OPT=l
+      ;;
+esac
+
+#-------------------------------------------------------------------------
+# The LSSIZEFLAGS variable is set to force the 'ls' command to generate
+# file size as $4 for parsing by 'iifilsiz.sh'.
+case $vers in
+   axp_osf )
+      echo LSSIZEFLAGS=-o
+      ;;
+   *_lnx|int_rpl)
+      echo LSSIZEFLAGS='"-l --no-group"'
+      ;;
+   *) 
+      echo LSSIZEFLAGS=-lo
+      ;;
+esac
+
+#-------------------------------------------------------------------------
+# The LSBLOCKFLAGS variable is set to force the 'ls' command to generate
+# file size in blocks as $1 for parsing by 'iifilsiz.sh'.
+case $vers in
+   axp_osf )
+      echo LSBLOCKFLAGS=-s
+      ;;
+   *) 
+      echo LSBLOCKFLAGS=-ls
+      ;;
+esac
+
+#-------------------------------------------------------------------------
+# The CLUSTERSUPPORT variable is set on machines that have OS cluster 
+# support and also support Ingres running as a cluster.  This flag is checked
+# in iisudbms and iimkcluster to enable prompts for cluster installation.
+#
+# CLUSTER_MAX_NODE s/b set to the max of 15 and the maximum number of nodes
+# supported by the target platform.
+#
+if [ "${conf_CLUSTER_BUILD}" = "true" ]
+then
+case $vers in
+   axp_osf )
+      echo "if test -f /usr/sbin/clu_get_info && /usr/sbin/clu_get_info -q"
+      echo "then"
+      echo "    CLUSTERSUPPORT=true"
+      echo "else"
+      echo "    CLUSTERSUPPORT=false"
+      echo "fi"
+      echo "CLUSTER_MAX_NODE=15"
+      ;;
+#   dgi_us5 )
+#      echo "if test -f /usr/sadm/sysadm/bin/running_with_clusters &&"
+#      echo "           /usr/sadm/sysadm/bin/running_with_clusters"
+#      echo "then"
+#      echo "    CLUSTERSUPPORT=true"
+#      echo "else"
+#      echo "    CLUSTERSUPPORT=false"
+#      echo "fi"
+#      echo "CLUSTER_MAX_NODE=15"
+#      ;;
+   *) 
+      echo CLUSTERSUPPORT=true
+      echo "CLUSTER_MAX_NODE=15"
+      ;;
+esac
+else
+      echo CLUSTERSUPPORT=false
+fi
+
+#-------------------------------------------------------------------------
+# For some platforms, the full path name for Spatial Object Library in iilink
+# is needed, because the library path environment would not be passed in a
+# SETUID program (in Solaris),  or the alternate library path (64-bit) is not
+# available (in AIX).
+case $vers in
+   r64_us5 | rs4_us5 | su9_us5 | su4_us5 | hpb_us5 | hp2_us5 | i64_hpu | \
+   a64_sol )
+      echo SPAT_LIB_NAME_WITH_FULLPATH=true
+      ;;
+   *)
+      echo SPAT_LIB_NAME_WITH_FULLPATH=false
+      ;;
+esac
+
+# For Tru64 platform, the Spatial Objects and UDT Objects have to be in   
+# static archive files. Because the shared libraries can't be loaded after   
+# being linked with iimerge/dmfjsp/fastload (SETUID) if the user is not  
+# ingres. 
+case $vers in
+   axp_osf )
+      echo SPAT_LIB_IS_STATIC_ARCHIVE=true
+      echo UDT_LIB_IS_STATIC_ARCHIVE=true
+      ;;
+   *)
+      echo SPAT_LIB_IS_STATIC_ARCHIVE=false
+      echo UDT_LIB_IS_STATIC_ARCHIVE=false
+      ;;
+esac
+
+#-------------------------------------------------------------------------
+chmod 755 $sysdep
+trap : 0

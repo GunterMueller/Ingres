@@ -1,0 +1,245 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/front/frame/tbacc
+END
+iitbdelr.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iitbdelr.c
+END
+iiscrfke.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iiscrfke.c
+END
+iiscrtb.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iiscrtb.c
+END
+tbdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/tbdata.c
+END
+iiclrcol.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iiclrcol.c
+END
+iiderive.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iiderive.c
+END
+iidsprow.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iidsprow.c
+END
+iiscrds.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iiscrds.c
+END
+iiretrow.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iiretrow.c
+END
+iitbinit.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iitbinit.c
+END
+iiscrscn.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iiscrscn.c
+END
+iiftfake.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iiftfake.c
+END
+iitbutil.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iitbutil.c
+END
+iigocol.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iigocol.c
+END
+iitbstio.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iitbstio.c
+END
+iitbputf.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iitbputf.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/Jamfile
+END
+iitbclr.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iitbclr.c
+END
+iiclrrow.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iiclrrow.c
+END
+iitqycol.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iitqycol.c
+END
+iicolbrk.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iicolbrk.c
+END
+ertb.msg
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/ertb.msg
+END
+iitbins.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iitbins.c
+END
+iivalcol.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iivalcol.c
+END
+iisetmde.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iisetmde.c
+END
+iiscrbrk.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iiscrbrk.c
+END
+iitbunld.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iitbunld.c
+END
+iitbscrl.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iitbscrl.c
+END
+iitbact.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iitbact.c
+END
+iihdecol.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iihdecol.c
+END
+iitbdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iitbdata.c
+END
+iitblist.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iitblist.c
+END
+iitbbug.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iitbbug.c
+END
+iitbget.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iitbget.c
+END
+wgl_32s.hnt
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/wgl_32s.hnt
+END
+iitbfind.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iitbfind.c
+END
+iitrcprm.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iitrcprm.c
+END
+iitrtcol.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iitrtcol.c
+END
+iitscprm.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iitscprm.c
+END
+iitstcol.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/tbacc/iitstcol.c
+END

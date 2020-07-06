@@ -1,0 +1,10 @@
+#
+# Jamfile file for cl!clf!si_vms
+#
+
+SubDir ING_SRC cl clf si_vms ;
+
+IISUBSYS cl clf si_vms ;
+
+IILIBRARY COMPATLIB : siopen.c siwrite.c siprintf.c sieqinit.c sicopy.c sicat.c
+	si.c sidata.c sidofmt.c rmsbug.mar ;

@@ -1,0 +1,83 @@
+RELEASE Ingres
+PACKAGE basic 
+   INVISIBLE
+   PART charsets
+      DEFINITION charsets.prt
+   PART collation
+      DEFINITION collation.prt
+   DIRECTORY ingres!files
+   PART frs
+      DEFINITION frs.prt
+   DIRECTORY ingres!files!english
+   PART messages
+      DEFINITION messages.prt
+   PART errhelp
+      DEFINITION errhelp.prt
+   PART ingenv
+      DEFINITION ingenv.prt
+   PART name-server
+      DEFINITION namesrv.prt
+   PART shadow-pwd
+      DEFINITION shadow-pwd.prt
+   PART utdef
+      DEFINITION utdef.prt
+   PART zoneinfo
+      DEFINITION zoneinfo.prt
+   PART fegeneric
+      DEFINITION fegeneric.prt
+   PART sharelib
+      DEFINITION sharelib.prt
+   PART release-notes
+      DEFINITION relnotes.prt
+   PART api
+      DEFINITION api.prt
+   PART sigima
+      DEFINITION sigima.prt
+   PART raat
+      DEFINITION raat.prt
+PACKAGE setupsup 
+   INVISIBLE 
+   PART setupsup
+      DEFINITION setupsup.prt
+PACKAGE tm 
+   VISIBLE CI_PER_USER_LICENSING
+   INCLUDE setupsup
+   PART tm
+      DEFINITION tm.prt
+PACKAGE oldmsg
+   VISIBLE CI_PER_USER_LICENSING
+   DIRECTORY ingres!files!english
+   PART oldmsg
+      DEFINITION oldmsg.prt
+PACKAGE generr 
+   INVISIBLE
+   PART generr
+   DIRECTORY ingres!files
+   BUILD_DIR (ING_BUILD)!files
+      FILE generr.h
+PACKAGE net 
+   INCLUDE basic
+   INCLUDE setupsup
+   INCLUDE config
+   PART net
+      DEFINITION net.prt
+PACKAGE gateway
+   NEED net
+   NEED tm
+   PART gateway
+      DEFINITION gateway.prt
+PACKAGE config 
+   INVISIBLE
+   PART config
+      DEFINITION config.prt
+PACKAGE install 
+   INVISIBLE
+   INCLUDE messages
+   INCLUDE frs 
+   DIRECTORY ingres!install
+   PART messages
+      DEFINITION messages.prt
+   PART install
+      DEFINITION install.prt
+   PART frs
+      DEFINITION frs.prt

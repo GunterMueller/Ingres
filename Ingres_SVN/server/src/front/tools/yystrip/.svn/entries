@@ -1,0 +1,52 @@
+8
+
+dir
+33
+http://code.ingres.com/ingres/main/src/front/tools/yystrip
+http://code.ingres.com/ingres
+
+
+
+2008-03-20T07:36:25.925856Z
+1
+root
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+45b5d43f-8932-4c86-835a-3654e5842839
+
+yystrip.c
+file
+
+
+
+
+2008-05-18T01:13:22.000000Z
+226211ef6a16074b0dfbbecc3a87b27d
+2008-03-20T07:36:25.925856Z
+1
+root
+
+Jamfile
+file
+
+
+
+
+2008-05-18T01:13:22.000000Z
+f64656cc1138e5635cbfe86b0ac63280
+2008-03-20T07:36:25.925856Z
+1
+root
+

@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/common/odbc/hdr
+END
+iiodbc.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/odbc/hdr/iiodbc.h
+END
+idmsutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/odbc/hdr/idmsutil.h
+END
+sql.ccpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/odbc/hdr/sql.ccpp
+END
+idmsucry.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/odbc/hdr/idmsucry.h
+END
+sqlstate.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/odbc/hdr/sqlstate.h
+END
+sqlext.wnt
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/odbc/hdr/sqlext.wnt
+END
+idmseini.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/odbc/hdr/idmseini.h
+END
+sqlca.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/common/odbc/hdr/sqlca.h
+END
+idmsut32.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/odbc/hdr/idmsut32.h
+END
+iiodbcfn.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/odbc/hdr/iiodbcfn.h
+END
+sqlext.ccpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/odbc/hdr/sqlext.ccpp
+END
+idmsureg.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/odbc/hdr/idmsureg.h
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/odbc/hdr/MANIFEST
+END
+sql.wnt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/common/odbc/hdr/sql.wnt
+END
+sqlcmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/odbc/hdr/sqlcmd.h
+END
+odbccfg.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/odbc/hdr/odbccfg.h
+END
+ocfginfo.ccpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/common/odbc/hdr/ocfginfo.ccpp
+END
+idmsxsq.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/odbc/hdr/idmsxsq.h
+END
+idmsocvt.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/odbc/hdr/idmsocvt.h
+END

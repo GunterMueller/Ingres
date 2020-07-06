@@ -1,0 +1,81 @@
+#!/bin/bash
+#  Copyright (c) 2004 Ingres Corporation
+#
+#  Name:
+#	ingmknfs -- stand-alone program for setting up INGRES NFS client
+#		instllallations.
+#
+#  Usage:
+#	ingmknfs [ [ -batch -s $II_SYSTEM ] host { host } ]
+#
+#  Description: This script can be run on the server or client machine
+#	in order to setup an INGRES NFS client installation.  INGRES/Net
+#	must be installed on the server before this program can be used. 
+#
+#	Batch mode can be run on the server to setup clients with
+#	the server system defaults.  The client's II_SYSTEM can be defined
+#	with the -s flag.
+#
+#  PROGRAM = ingmknfs
+#
+#  DEST = utility
+#----------------------------------------------------------------------------
+
+. iisysdep
+ 
+. iishlib
+
+#
+# If arguments were passed, called iisunet repeatedly to set up an NFS
+# client for each named (remote) host.
+#
+if [ "$1" = "-batch" ] ; then
+   BATCH=true
+   NOTBATCH=false
+   INSTLOG="2>&1 | tee -a $II_SYSTEM/ingres/files/install.log"
+   shift ;
+else
+   BATCH=false
+   NOTBATCH=true
+   INSTLOG="2>&1 | tee -a $II_SYSTEM/ingres/files/install.log"
+fi
+export BATCH
+export INSTLOG
+
+
+do_setup()
+{
+if [ $# != 0 ]
+then
+
+   SERVER_II_SYSTEM=$II_SYSTEM
+   [ "$1" = "-s" ] && 
+   {
+	SERVER_II_SYSTEM=$2
+	shift ;
+	shift ;
+   }
+   export SERVER_II_SYSTEM
+	   
+for host in $*
+   do
+      cat << !
+
+Configuring NFS-client on "$host"...
+
+!
+      $BATCH || iisunet $host
+      $BATCH && iisunet -batch $host
+
+   done
+   clean_exit
+fi
+
+#
+# If no arguments were passed, run iisunet to set up one (local) NFS client.
+#
+iisunet
+clean_exit
+}
+ 
+eval do_setup $* $INSTLOG

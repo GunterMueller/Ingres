@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/testtool/achilles/shell_vms
+END
+acstart.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/testtool/achilles/shell_vms/acstart.dcl
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/testtool/achilles/shell_vms/Jamfile
+END

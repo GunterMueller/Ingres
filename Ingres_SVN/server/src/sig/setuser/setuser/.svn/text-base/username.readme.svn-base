@@ -1,0 +1,188 @@
+                      Routine to Change User Name
+                      ---------------------------
+ 
+INGRES Version      : 6.1 and beyond
+Operating System    : OpenVMS VAX & Alpha
+Date Written        : 15-Apr-1989
+ 
+Overview
+--------
+ 
+Ing$set_username is a user-mode interface to a kernel-mode routine that
+is used to change your VMS username. It is usually called by a program
+that needs to switch usernames before starting up INGRES. An example
+would be an application that needs every user to run as if they were the
+DBA, so permits on tables are not required.
+ 
+Programs which call ing$set_username must have CMKRNL privilege,  either
+by  way  of  the  user  running the program having that privilege, or by
+installing the program with that privilege. Ing$set_username will change
+the username of every process in the current job. Subprocesses created
+after ing$set_username is run will also get the new user name.
+ 
+By changing the username before connecting to INGRES, the INGRES server
+process will create tables owned by, and use the permissions of, the new
+username, rather than the login username.  Since the INGRES username is
+determined when you connect to INGRES, changing usernames after connect-
+ing will have no affect on INGRES.
+ 
+Compiling Ing$set_username
+--------------------------
+ 
+Ing$set_username is a VMS MACRO-32 routine which you will find on your
+INGRES tape as:
+ 
+     ii_system:[ingres.sig.setuser]ing$set_username.mar
+ 
+This macro file must be compiled before being used in conjunction with other
+3GL modules to form an image. To do so do the following:
+
+     $ set def ii_system:[ingres.sig.setuser]
+     $ macro ing$set_username.mar
+
+This will create the file ing$set_username.obj.
+ 
+Using Ing$set_username
+----------------------
+ 
+The calling sequence is:
+ 
+     status = ing$set_username(newname)
+ 
+where "newname" is a character variable  (passed  by  descriptor)  which
+contains  the  new  user  name,  in  UPPER-case letters. "status" is the
+return code, which can be SS$_NORMAL (or 1) for normal  successful  com-
+pletion, or SS$_NOPRIV if you do not have CMKRNL privilege; other error
+return codes are also possible.
+ 
+Program Examples
+----------------
+ 
+The following examples  demonstrate  how  to  call  ing$set_username  to
+change VMS user name.
+ 
+FORTRAN Example:
+ 
+             program changeuser
+             character*32 name
+ 
+             type 10
+     10      format ('$Enter new user name: ')
+             accept 20, name
+     20      format (a)
+ 
+             call cname (name)
+             end
+ 
+     C       This routine requires CMKRNL privilege.
+             subroutine cname(newname)
+             integer*4 status
+             character*(*) newname
+             external SS$_NORMAL
+ 
+             call str$upcase (newname, newname)
+ 
+             status = ing$set_username(newname)
+ 
+             if (status .eq. %loc(SS$_NORMAL)) then
+                 print *, 'Successful change.'
+             else
+                 call lib$stop (%val(status))
+             endif
+ 
+             return
+             end
+ 
+The following command file will  compile  and  link  the  above  program
+(source file name is "changeuser.for"):
+ 
+If using VAX OpenVMS use:
+
+     $ fortran changeuser
+     $ link changeuser,ii_system:[ingres.sig.setuser]ing$set_username,sys$input/opt
+     sys$system:sys.stb/selective
+     $!
+
+If using Alpha OpenVMS use: 
+
+     $ fortran changeuser
+     $ link/sysexe changeuser,ii_system:[ingres.sig.setuser]ing$set_username
+
+C Example:
+ 
+     /*
+     ** This program requires CMKRNL privilege.
+     */
+     #include descrip
+     #include stdio
+ 
+     main(argc,argv)
+     int     argc;
+     char    *argv[];
+     {
+             struct dsc$descriptor_s username_desc;
+             int x;
+ 
+             if ( argc == 1 )
+             {
+                     printf("Usage: changeuser username0);
+                     exit(44);
+             }
+ 
+             /* Uppercase the user name */
+             for (x = 0; x < strlen(argv[1]); x++)   {
+                     argv[1][x] = toupper(argv[1][x]);
+             }
+             /* Set up descriptor */
+             username_desc.dsc$a_pointer = argv[1];
+             username_desc.dsc$w_length = strlen(argv[1]);
+             username_desc.dsc$b_class = DSC$K_CLASS_S;
+             username_desc.dsc$b_dtype = DSC$K_DTYPE_T;
+ 
+             x = ing$set_username( &username_desc );
+             sys$exit( x );
+     }
+ 
+The following command file will  compile  and  link  the  above  program
+(source file name is "changeuser.c"):
+ 
+
+If using VAX OpenVMS use:
+
+     $ cc changeuser
+     $ link changeuser,ii_system:[ingres.sig.setuser]ing$set_username,sys$input/opt
+     sys$common:[syslib]vaxcrtl/share
+     sys$system:sys.stb/selective
+     $!
+
+If using Alpha OpenVMS use: 
+
+     $ cc/standard=vaxc changeuser
+     $ link/sysexe changeuser,ii_system:[ingres.sig.setuser]ing$set_username
+ 
+ 
+Using With ABF and EQL
+----------------------
+ 
+Since ABF automatically connects to the database before  executing  user
+code, ABF applications cannot call ing$set_username before connecting to
+the database.  So, ing$set_username should be called as a separate  pro-
+gram  before  starting  the  ABF application, and called again after the
+application exits, to restore the original user name (do all this  in  a
+command file).
+ 
+Security
+--------
+ 
+Due to the possibility of security breaches, it is best to run  programs
+which  use  ing$set_username  from  inside  a captive command file which
+starts out by executing a "SET NOON" and "SET NOCONTROL=Y" and  restores
+the original user name before exiting.
+ 
+Summary
+-------
+ 
+Ing$set_username is useful in applications that need to change user name
+before  starting INGRES. However, since it requires CMKRNL privilege, it
+should be used carefully to avoid security breaches and  runtime  errors
+(such as NULL, or lower-case user names).

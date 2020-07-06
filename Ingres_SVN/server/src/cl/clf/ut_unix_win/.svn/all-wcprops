@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/cl/clf/ut_unix_win
+END
+utedit.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/cl/clf/ut_unix_win/utedit.c
+END
+utldcob.ccpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/cl/clf/ut_unix_win/utldcob.ccpp
+END
+utcompile.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/cl/clf/ut_unix_win/utcompile.c
+END
+utdeffil.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/clf/ut_unix_win/utdeffil.c
+END
+uterror.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/ut_unix_win/uterror.c
+END
+utprint.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/ut_unix_win/utprint.c
+END
+utetable.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/clf/ut_unix_win/utetable.c
+END
+UTerr.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/clf/ut_unix_win/UTerr.h
+END
+UTi.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/ut_unix_win/UTi.h
+END
+utlocal.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/ut_unix_win/utlocal.h
+END
+utld.ccpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/ut_unix_win/utld.ccpp
+END
+utdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/cl/clf/ut_unix_win/utdata.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/clf/ut_unix_win/Jamfile
+END
+utcommand.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/cl/clf/ut_unix_win/utcommand.c
+END
+ut.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/cl/clf/ut_unix_win/ut.c
+END
+utexe.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/clf/ut_unix_win/utexe.c
+END
+utlnk.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/clf/ut_unix_win/utlnk.c
+END

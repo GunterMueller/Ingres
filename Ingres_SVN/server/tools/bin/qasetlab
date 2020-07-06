@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# Copyright (c) 2004 Ingres Corporation
+#
+# qasetlab.sh
+#
+# This is a wrapper script for qasetplabel. It is invoked by SEP scripts
+# to run qasetplabel on an DBUTIL executable.
+#
+label=$1
+shift
+exec qasetplab "$label" $*

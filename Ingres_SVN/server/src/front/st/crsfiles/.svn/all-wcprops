@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/front/st/crsfiles
+END
+icesvr.crs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/st/crsfiles/icesvr.crs
+END
+informix.crs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/crsfiles/informix.crs
+END
+bridge.crs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/st/crsfiles/bridge.crs
+END
+tz.crs
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/crsfiles/tz.crs
+END
+mssql.crs
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/st/crsfiles/mssql.crs
+END
+ice.crs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/crsfiles/ice.crs
+END
+rms.crs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/crsfiles/rms.crs
+END
+db2udb.crs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/st/crsfiles/db2udb.crs
+END
+jdbc.crs
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/crsfiles/jdbc.crs
+END
+oracle.crs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/st/crsfiles/oracle.crs
+END
+das.crs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/crsfiles/das.crs
+END
+odbc.crs
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/crsfiles/odbc.crs
+END
+rdb.crs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/crsfiles/rdb.crs
+END
+all.crs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/crsfiles/all.crs
+END
+star.crs
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/crsfiles/star.crs
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/crsfiles/MANIFEST
+END
+dbms.crs
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/crsfiles/dbms.crs
+END
+net.crs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/crsfiles/net.crs
+END
+secure.crs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/st/crsfiles/secure.crs
+END
+sybase.crs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/st/crsfiles/sybase.crs
+END
+tng.crs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/crsfiles/tng.crs
+END

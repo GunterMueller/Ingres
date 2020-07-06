@@ -1,0 +1,83 @@
+#!/bin/bash
+#
+# Copyright (c) 2004 Ingres Corporation
+#
+# readvers.sh: reads the VERS file and set some variables
+#
+#   VERS is of the following (relatively free) format:
+#
+#       # comment line
+#       config=<config>
+#       config64=<64 bit port config>
+#       build=<num>
+#       option=<opt>
+#	inc=<build increment>
+#
+#   <config> is the familiar config string. <num> is the build level.
+#   <config64> is the familiar config string for the 64 bit port.
+#   <opt> is a configuration keyword, such as W4GL, DBL, B64, etc.  There
+#   may be multiple option lines.
+#   <build increment> is the minor build version for any on build number.
+#   i.e. if the build is r89e then the build increment is e.
+#
+#   Use with
+#
+#	. readvers
+#
+#   and then the following variables will be set:
+#
+#       $config         value of config line
+#       $config64       value of config64 line
+#       $build          value of build line
+#       $optdef         -Dconf_<opt> ... (for all options)
+#       $conf_<opt>     set to "true" for each option
+#
+#   Example:
+#
+#	VERS contains:		readvers.sh sets:
+#	-------------		----------------
+#	config=su4_us5		config=su4_us5
+#	config=su9_us5		config64=su9_us5
+#	build=02		build=02
+#	option=W4GL		optdef=" -Dconf_W4GL -Dconf_DBL"
+#	option=DBL		conf_W4GL=true
+#				conf_DBL=true
+#	option=B64		conf_B64=true
+#	option=NO_SHL		conf_NO_SHL=true
+#		If this option is present, the tools will not build FE
+#		shared libraries.
+#	option=SVR_SHL		conf_SVR_SHL=true
+#		If present Ingres server (iimerge) will be built from 
+#		shared libraries and not from just a iimerge.o containing
+#		all the libraries
+#	option=INGRESII		conf_INGRESII=true
+#
+
+[ -n "$ING_VERS" ] && noise="/$ING_VERS/src"
+
+if [ -r $ING_SRC/tools/port$noise/conf/VERS ]
+  then VERS=$ING_SRC/tools/port$noise/conf/VERS
+elif [ -r $CL/tools/port$noise/conf/VERS ]
+  # This is where MPE development keeps their VERS file
+  then VERS=$CL/tools/port$noise/conf/VERS
+else VERS=$ING_SRC/VERS
+fi
+
+build=00	# default if not set in VERS
+inc=""		# If not set don't print
+
+eval `awk '
+	BEGIN{FS="="}
+	/^#/{next}
+	/^[ 	]*$/{next}
+	$1 == "config" { config=$2; print "config=" $2 }
+	$1 == "config64" { config64=$2; print "config64=" $2 }
+	$1 == "build" { build=$2; print "build=" $2 }
+	$1 == "option" { opts=opts " " $2; print "conf_" $2 "=true" }
+	$1 == "option" { dopts=dopts " -Dconf_" $2 }
+	$1 == "inc" { inc=$2; print "inc=" $2 }
+	END { print "optdef=\"" dopts "\"" 
+		print "opts=\"" opts "\"" }
+' $VERS` 
+
+: ${config?"$VERS file is missing or uses obsolete format."}

@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/ingres/!svn/ver/1/main/src/front/abf/ioi
+END
+ioiint.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/ioi/ioiint.h
+END
+ioistd.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/ioi/ioistd.h
+END
+ioirttw.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/ioi/ioirttw.c
+END
+ioitrl.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/ioi/ioitrl.c
+END
+ioiopen.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/ioi/ioiopen.c
+END
+ioidel.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/ioi/ioidel.c
+END
+ioifrmr.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/ioi/ioifrmr.c
+END
+ioirtt.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/ioi/ioirtt.c
+END
+ioiswap.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/ioi/ioiswap.c
+END
+ioifost.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/ioi/ioifost.c
+END
+ioifrmw.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/ioi/ioifrmw.c
+END
+ioitcrt.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/ioi/ioitcrt.c
+END
+ioifil.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/ioi/ioifil.h
+END
+ioicls.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/ioi/ioicls.c
+END
+ioifrm.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/abf/ioi/ioifrm.c
+END
+ioiftch.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/ioi/ioiftch.c
+END
+ioifold.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/ioi/ioifold.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/abf/ioi/Jamfile
+END
+ioirttr.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/abf/ioi/ioirttr.c
+END

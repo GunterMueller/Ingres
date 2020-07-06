@@ -1,0 +1,40 @@
+8
+
+dir
+33
+http://code.ingres.com/ingres/main/src/front/ice/apache/support
+http://code.ingres.com/ingres
+
+
+
+2008-03-20T07:36:25.925856Z
+1
+root
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+45b5d43f-8932-4c86-835a-3654e5842839
+
+httpd.exp
+file
+
+
+
+
+2008-05-18T01:13:25.000000Z
+07061fbcd6da0069a745be165eb4f697
+2008-03-20T07:36:25.925856Z
+1
+root
+

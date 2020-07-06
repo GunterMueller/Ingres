@@ -1,0 +1,16 @@
+#
+# Jamfile file for front!ice!ICETranslate
+#
+
+SubDir ING_SRC front ice ICETranslate ;
+
+IISUBSYS front ice ICETranslate ;
+
+
+IIBINEXE ICETranslate : ICETranslate.cpp ;
+IICppNeedLibs ICETranslate :  ICETRANSLATELIB ICECONFLIB
+	SHXERCESLIB SHCOMPATLIB ;
+IIUNDEFS ICETranslate :  malloc ;
+
+IILIBRARY ICETRANSLATELIB : ICETranslateHandlers.cpp ;
+

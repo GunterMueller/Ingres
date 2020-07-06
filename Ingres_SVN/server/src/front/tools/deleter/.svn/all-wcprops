@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/front/tools/deleter
+END
+deleter.lot
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/tools/deleter/deleter.lot
+END
+dldelobj.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/tools/deleter/dldelobj.qsc
+END
+deleter.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/tools/deleter/deleter.c
+END
+dlapp.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/tools/deleter/dlapp.qsc
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/tools/deleter/Jamfile
+END
+dlabfdir.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/tools/deleter/dlabfdir.c
+END
+wgl_32s.hnt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/tools/deleter/wgl_32s.hnt
+END
+wgl_wnt.hnt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/tools/deleter/wgl_wnt.hnt
+END
+dlgen.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/tools/deleter/dlgen.qsc
+END

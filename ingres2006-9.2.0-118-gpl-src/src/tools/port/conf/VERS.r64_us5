@@ -1,0 +1,7 @@
+config=rs4_us5
+config64=r64_us5
+option=B64
+option=ADD_ON64
+option=INGRESII
+option=DBL
+build=00

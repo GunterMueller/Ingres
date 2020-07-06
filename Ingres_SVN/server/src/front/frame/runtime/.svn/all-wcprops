@@ -1,0 +1,515 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/front/frame/runtime
+END
+iifndfrm.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iifndfrm.c
+END
+iiaddrun.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iiaddrun.c
+END
+iigotonx.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iigotonx.c
+END
+iiqbfraw.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iiqbfraw.c
+END
+rtsirc.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/runtime/rtsirc.c
+END
+iirfparm.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iirfparm.c
+END
+fetabfnd.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/frame/runtime/fetabfnd.qsc
+END
+fetfile.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frame/runtime/fetfile.c
+END
+iiaddfrm.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iiaddfrm.c
+END
+iierrdsp.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iierrdsp.c
+END
+iiboxerr.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iiboxerr.c
+END
+iistartf.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iistartf.c
+END
+iifsvars.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iifsvars.c
+END
+iimapfle.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iimapfle.c
+END
+iimenu.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iimenu.c
+END
+iirtparm.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iirtparm.c
+END
+rtgettbl.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/rtgettbl.c
+END
+iirunfrm.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iirunfrm.c
+END
+iitoact.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iitoact.c
+END
+iiendfrm.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iiendfrm.c
+END
+iitest.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iitest.c
+END
+erfr.msg
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/runtime/erfr.msg
+END
+iisetfld.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iisetfld.c
+END
+iisetio.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iisetio.c
+END
+iirowset.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iirowset.c
+END
+iifbrk.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iifbrk.c
+END
+iifrmini.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iifrmini.c
+END
+rtsifld.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frame/runtime/rtsifld.c
+END
+iiforms.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iiforms.c
+END
+iigpdef.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iigpdef.h
+END
+iichkfld.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iichkfld.c
+END
+iiretval.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iiretval.c
+END
+rtfndfrm.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/rtfndfrm.c
+END
+iigtoper.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iigtoper.c
+END
+iisetinq.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iisetinq.c
+END
+rtsifrm.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frame/runtime/rtsifrm.c
+END
+wgl_32s.hnt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frame/runtime/wgl_32s.hnt
+END
+iigp.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iigp.c
+END
+iiprnscr.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iiprnscr.c
+END
+fefile.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/runtime/fefile.c
+END
+iisleep.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iisleep.c
+END
+iifnames.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iifnames.c
+END
+iichkfrm.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iichkfrm.c
+END
+iigetqry.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iigetqry.c
+END
+iiendfor.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iiendfor.c
+END
+iibserr.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iibserr.c
+END
+iiretfld.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iiretfld.c
+END
+iiprompt.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iiprompt.c
+END
+setinq.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/runtime/setinq.h
+END
+iiclrscr.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iiclrscr.c
+END
+iiinvis.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iiinvis.c
+END
+rtgetfld.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/rtgetfld.c
+END
+findrow.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frame/runtime/findrow.qsc
+END
+iifsinit.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iifsinit.c
+END
+rtsicol.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frame/runtime/rtsicol.c
+END
+iiscrmsg.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iiscrmsg.c
+END
+iiqryfld.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iiqryfld.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frame/runtime/Jamfile
+END
+rtgetfrm.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/rtgetfrm.c
+END
+iifrssql.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iifrssql.c
+END
+iiqryop.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iiqryop.c
+END
+rundata.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frame/runtime/rundata.c
+END
+iiactfrm.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iiactfrm.c
+END
+iiclrfds.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iiclrfds.c
+END
+iigotofd.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iigotofd.c
+END
+ii40stiq.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/ii40stiq.c
+END
+iiredisp.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iiredisp.c
+END
+uffindex.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/uffindex.c
+END
+iiaddcom.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iiaddcom.c
+END
+iisfparm.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iisfparm.c
+END
+iiifsvar.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iiifsvar.c
+END
+iiqbfutl.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iiqbfutl.c
+END
+iifrmerr.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iifrmerr.c
+END
+rtsisys.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frame/runtime/rtsisys.c
+END
+iisetrnd.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iisetrnd.c
+END
+iinewent.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iinewent.c
+END
+rtgetcol.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/rtgetcol.c
+END
+rtsitbl.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frame/runtime/rtsitbl.c
+END
+iifsz.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iifsz.c
+END
+rtgtmode.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/rtgtmode.c
+END
+rtchkfrs.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/rtchkfrs.c
+END
+iifldclr.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iifldclr.c
+END
+iistparm.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iistparm.c
+END
+fetest.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/runtime/fetest.c
+END
+iifrskac.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/runtime/iifrskac.c
+END

@@ -1,0 +1,16 @@
+#
+# Jamfile file for cl!clf!misc_vms
+#
+# History:
+#	23-jun-2005 (abbjo03)
+#	    Compile frontstart.c with NOOPTIM to bypass Ctrl-C problem.
+
+SubDir ING_SRC cl clf misc_vms ;
+
+IISUBSYS cl clf misc_vms ;
+
+IINOOPTIM frontstart.c : axm_vms ;
+
+Object $(FRONTMAIN) : frontmain.mar ;
+
+IILIBRARY COMPATLIB : frontstart.c jacket.c miscvalue.c miscerr.msg ;

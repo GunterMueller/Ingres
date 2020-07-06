@@ -1,0 +1,27 @@
+PART   fegeneric
+   DIRECTORY ingres!files!english
+   BUILD_DIR (ING_BUILD)!files!english
+      FILE frsubtop.hlp
+      FILE helpvals.hlp
+      FILE hhfld.hlp
+      FILE hhnofld.hlp
+      FILE oocreate.hlp
+      FILE oodetail.hlp
+      FILE oodstobj.hlp
+      FILE oolremfr.hlp
+      FILE oosave.hlp
+      FILE oosavseq.hlp
+      FILE ufcdelet.hlp
+      FILE ufcdstry.hlp
+      FILE ufcend.hlp
+      FILE ufcquit.hlp
+      FILE ufcremov.hlp
+      FILE ufdatlen.hlp
+      FILE ufdatprc.hlp
+      FILE ufdatype.hlp
+      FILE uffile.hlp
+      FILE ufprint.hlp
+   DIRECTORY ingres!files!english!messages
+   BUILD_DIR (ING_BUILD)!files!english!messages
+      FILE messages.readme
+      FILE messages.txt

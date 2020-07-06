@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/ingres/!svn/ver/1/main/src/testtool/cts/cts
+END
+ctsslave.lot
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/testtool/cts/cts/ctsslave.lot
+END
+ctscoord.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/testtool/cts/cts/ctscoord.sc
+END
+trl.sc
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/testtool/cts/cts/trl.sc
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/testtool/cts/cts/MANIFEST
+END
+ctserror.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/testtool/cts/cts/ctserror.sc
+END
+trl.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/testtool/cts/cts/trl.h
+END
+ctsslave.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/testtool/cts/cts/ctsslave.sc
+END
+ctscoord.lot
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/testtool/cts/cts/ctscoord.lot
+END

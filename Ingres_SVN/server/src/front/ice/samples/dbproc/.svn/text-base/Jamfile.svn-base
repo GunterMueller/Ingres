@@ -1,0 +1,14 @@
+#
+# Jamfile file for front!ice!samples!dbproc
+#
+#    06-Oct-2004 (hanje04)
+#	Remove grists as they are now added in IIICEFILE rule
+
+SubDir ING_SRC front ice samples dbproc ;
+
+IISUBSYS front ice samples dbproc ;
+
+IIICEFILE samples/dbproc/proc.html : proc.html ;
+IIICEFILE samples/dbproc/proc.sql : proc.sql ;
+IIICEFILE samples/dbproc/result.html : result.html ;
+

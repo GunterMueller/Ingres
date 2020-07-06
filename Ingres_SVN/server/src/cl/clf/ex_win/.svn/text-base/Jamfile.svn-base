@@ -1,0 +1,14 @@
+#
+# Jamfile file for cl!clf!ex_win
+#
+
+SubDir ING_SRC cl clf ex_win ;
+
+IISUBSYS cl clf ex_win ;
+
+
+IILIBRARY COMPATLIB : exdump.c
+	exclient.c
+	ex.c ;
+
+IILIBRARY IMPCOMPATLIBDATA : exdata.c ;

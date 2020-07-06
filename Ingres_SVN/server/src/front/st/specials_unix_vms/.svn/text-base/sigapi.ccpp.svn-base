@@ -1,0 +1,44 @@
+/*
+** Copyright (c) 2004 Ingres Corporation
+*/
+/*
+** Generic part file for sigapi
+*/
+
+/*
+** History
+**	27-apr-2000 (hanch04)
+**		created.
+**	04-may-2000 (hanch04)
+**		added testsapi.c
+**	23-feb-2001 (kinte01)
+**		Add build scripts for VMS & modify so these files are now
+**		distributed on VMS
+**	23-feb-2005 (abbjo03)
+**	    Changes to build VMS using same directory structure as Unix.
+*/
+
+/*
+** Default directory: ingres/sig/syncapiw
+*/
+
+PART  sigapi
+
+   BUILD_DIR (ING_BUILD)!sig!syncapiw
+   DIRECTORY ingres!sig!syncapiw
+# ifndef VMS
+      FILE syncapiw.mak
+# else
+      SCRIPT syncapiw
+      SCRIPT sample_build
+# endif /* VMS */
+      FILE apiconn.c
+      FILE apievent.c
+      FILE apiproc.c
+      FILE apiquery.c
+      FILE apisupp.c
+      FILE apitran.c
+      FILE readme.txt
+      FILE sapiw.h
+      FILE sapiwi.h
+      FILE testsapi.c

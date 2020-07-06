@@ -1,0 +1,341 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr
+END
+gc.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/gc.h
+END
+ci.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/ci.h
+END
+id.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/id.h
+END
+ck.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/ck.h
+END
+cm.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/cm.h
+END
+me.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/me.h
+END
+gl.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/gl.h
+END
+cp.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/cp.h
+END
+sa.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/sa.h
+END
+ep.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/ep.h
+END
+mh.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/mh.h
+END
+cs.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/cs.h
+END
+er.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/er.h
+END
+cv.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/cv.h
+END
+mm.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/mm.h
+END
+ol.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/ol.h
+END
+cx.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/cx.h
+END
+hshcrc.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/hshcrc.h
+END
+si.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/si.h
+END
+mo.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/mo.h
+END
+gcccl.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/gcccl.h
+END
+ex.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/ex.h
+END
+sl.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/sl.h
+END
+mu.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/mu.h
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/Jamfile
+END
+sp.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/sp.h
+END
+ba.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/ba.h
+END
+sr.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/sr.h
+END
+qu.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/qu.h
+END
+st.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/st.h
+END
+ut.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/ut.h
+END
+di.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/di.h
+END
+lc.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/lc.h
+END
+tmtz.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/tmtz.h
+END
+jf.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/jf.h
+END
+dl.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/dl.h
+END
+lg.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/lg.h
+END
+pc.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/pc.h
+END
+dl32.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/dl32.h
+END
+pe.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/pe.h
+END
+fp.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/fp.h
+END
+bt.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/bt.h
+END
+lk.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/lk.h
+END
+ds.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/ds.h
+END
+tc.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/tc.h
+END
+ll.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/ll.h
+END
+te.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/te.h
+END
+lo.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/lo.h
+END
+nm.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/nm.h
+END
+th.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/th.h
+END
+dy.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/dy.h
+END
+pm.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/pm.h
+END
+tm.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/tm.h
+END
+hsh.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/hsh.h
+END
+cvgcc.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/cvgcc.h
+END
+tr.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/gl/hdr/hdr/tr.h
+END

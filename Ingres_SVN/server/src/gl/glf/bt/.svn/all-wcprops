@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/ingres/!svn/ver/1/main/src/gl/glf/bt
+END
+btcount.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/gl/glf/bt/btcount.c
+END
+btxor.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/gl/glf/bt/btxor.c
+END
+btset.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/gl/glf/bt/btset.c
+END
+bttab.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/gl/glf/bt/bttab.h
+END
+btnext.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/gl/glf/bt/btnext.c
+END
+bthigh.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/gl/glf/bt/bthigh.c
+END
+bttest.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/gl/glf/bt/bttest.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/gl/glf/bt/Jamfile
+END
+btnot.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/gl/glf/bt/btnot.c
+END
+btor.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/ingres/!svn/ver/1/main/src/gl/glf/bt/btor.c
+END
+btand.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/gl/glf/bt/btand.c
+END
+btsubset.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/gl/glf/bt/btsubset.c
+END
+btclear.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/gl/glf/bt/btclear.c
+END
+bttab.roc
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/gl/glf/bt/bttab.roc
+END

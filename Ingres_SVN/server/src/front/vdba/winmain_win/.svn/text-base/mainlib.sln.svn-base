@@ -1,0 +1,55 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MainLib", "mainlib.vcproj", "{F4219EB5-3C00-43D7-B232-CBE041DCFD1E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 1
+		SccProjectUniqueName0 = mainlib.vcproj
+		SccProjectName0 = \u0022$/VdbaDomSplitbar/MainLib\u0022,\u0020DFAAAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		AIX_Release = AIX_Release
+		DBCS Debug = DBCS Debug
+		DBCS Release = DBCS Release
+		Debug = Debug
+		EDBC_Debug = EDBC_Debug
+		EDBC_Release = EDBC_Release
+		HPUX_Debug = HPUX_Debug
+		HPUX_Release = HPUX_Release
+		Linux_Release = Linux_Release
+		Release = Release
+		Solaris_Release = Solaris_Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F4219EB5-3C00-43D7-B232-CBE041DCFD1E}.AIX_Release.ActiveCfg = AIX_Release|Win32
+		{F4219EB5-3C00-43D7-B232-CBE041DCFD1E}.AIX_Release.Build.0 = AIX_Release|Win32
+		{F4219EB5-3C00-43D7-B232-CBE041DCFD1E}.DBCS Debug.ActiveCfg = DBCS Debug|Win32
+		{F4219EB5-3C00-43D7-B232-CBE041DCFD1E}.DBCS Debug.Build.0 = DBCS Debug|Win32
+		{F4219EB5-3C00-43D7-B232-CBE041DCFD1E}.DBCS Release.ActiveCfg = DBCS Release|Win32
+		{F4219EB5-3C00-43D7-B232-CBE041DCFD1E}.DBCS Release.Build.0 = DBCS Release|Win32
+		{F4219EB5-3C00-43D7-B232-CBE041DCFD1E}.Debug.ActiveCfg = Debug|Win32
+		{F4219EB5-3C00-43D7-B232-CBE041DCFD1E}.Debug.Build.0 = Debug|Win32
+		{F4219EB5-3C00-43D7-B232-CBE041DCFD1E}.EDBC_Debug.ActiveCfg = EDBC_Debug|Win32
+		{F4219EB5-3C00-43D7-B232-CBE041DCFD1E}.EDBC_Debug.Build.0 = EDBC_Debug|Win32
+		{F4219EB5-3C00-43D7-B232-CBE041DCFD1E}.EDBC_Release.ActiveCfg = EDBC_Release|Win32
+		{F4219EB5-3C00-43D7-B232-CBE041DCFD1E}.EDBC_Release.Build.0 = EDBC_Release|Win32
+		{F4219EB5-3C00-43D7-B232-CBE041DCFD1E}.HPUX_Debug.ActiveCfg = HPUX_Debug|Win32
+		{F4219EB5-3C00-43D7-B232-CBE041DCFD1E}.HPUX_Debug.Build.0 = HPUX_Debug|Win32
+		{F4219EB5-3C00-43D7-B232-CBE041DCFD1E}.HPUX_Release.ActiveCfg = HPUX_Release|Win32
+		{F4219EB5-3C00-43D7-B232-CBE041DCFD1E}.HPUX_Release.Build.0 = HPUX_Release|Win32
+		{F4219EB5-3C00-43D7-B232-CBE041DCFD1E}.Linux_Release.ActiveCfg = Linux_Release|Win32
+		{F4219EB5-3C00-43D7-B232-CBE041DCFD1E}.Linux_Release.Build.0 = Linux_Release|Win32
+		{F4219EB5-3C00-43D7-B232-CBE041DCFD1E}.Release.ActiveCfg = Release|Win32
+		{F4219EB5-3C00-43D7-B232-CBE041DCFD1E}.Release.Build.0 = Release|Win32
+		{F4219EB5-3C00-43D7-B232-CBE041DCFD1E}.Solaris_Release.ActiveCfg = Solaris_Release|Win32
+		{F4219EB5-3C00-43D7-B232-CBE041DCFD1E}.Solaris_Release.Build.0 = Solaris_Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

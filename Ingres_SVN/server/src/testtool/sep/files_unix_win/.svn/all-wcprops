@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/testtool/sep/files_unix_win
+END
+vt100.sep
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/testtool/sep/files_unix_win/vt100.sep
+END
+basickeys.sep
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/testtool/sep/files_unix_win/basickeys.sep
+END
+vt220.sep
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/testtool/sep/files_unix_win/vt220.sep
+END
+makelocs.key
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/testtool/sep/files_unix_win/makelocs.key
+END
+septerm.sep
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/testtool/sep/files_unix_win/septerm.sep
+END
+header.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/testtool/sep/files_unix_win/header.txt
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/testtool/sep/files_unix_win/Jamfile
+END
+commands.sep
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/testtool/sep/files_unix_win/commands.sep
+END

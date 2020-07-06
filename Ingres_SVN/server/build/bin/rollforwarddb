@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+# Copyright (c) 2004 Ingres Corporation
+#
+#
+# Name: rollforwarddb	- roll forward a database
+#
+# Description:
+#      This shell program provides the INGRES `rollforwarddb' command by
+#      executing the journaling support program, passing along the
+#      command line arguments.
+#
+#
+# PROGRAM = rollforwarddb
+#
+
+exec ${II_SYSTEM?}/ingres/bin/dmfjsp rolldb "$@"

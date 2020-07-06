@@ -1,0 +1,287 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/ingres/!svn/ver/1/main/src/back/hdr/hdr
+END
+opfcb.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/opfcb.h
+END
+ddb.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/ddb.h
+END
+qsf.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/qsf.h
+END
+asct.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/asct.h
+END
+wsf.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/wsf.h
+END
+qefrcb.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/qefrcb.h
+END
+qefscb.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/qefscb.h
+END
+qefact.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/qefact.h
+END
+qefcopy.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/qefcopy.h
+END
+dmacb.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/dmacb.h
+END
+psfindep.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/psfindep.h
+END
+dmccb.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/dmccb.h
+END
+dmdcb.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/dmdcb.h
+END
+rdf.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/rdf.h
+END
+dmhcb.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/dmhcb.h
+END
+qefcb.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/qefcb.h
+END
+qefmain.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/qefmain.h
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/Jamfile
+END
+qefnode.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/qefnode.h
+END
+ulb.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/ulb.h
+END
+dmmcb.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/dmmcb.h
+END
+qefexch.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/qefexch.h
+END
+uld.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/uld.h
+END
+qefqeu.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/qefqeu.h
+END
+dmrcb.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/dmrcb.h
+END
+ulh.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/ulh.h
+END
+dmscb.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/dmscb.h
+END
+tpf.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/tpf.h
+END
+dmtcb.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/dmtcb.h
+END
+dmucb.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/dmucb.h
+END
+dbdbms.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/dbdbms.h
+END
+dmxcb.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/dmxcb.h
+END
+ulm.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/ulm.h
+END
+sxf.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/sxf.h
+END
+wtsinit.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/wtsinit.h
+END
+uls.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/uls.h
+END
+dmf.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/dmf.h
+END
+ulx.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/ulx.h
+END
+urs.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/urs.h
+END
+scf.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/scf.h
+END
+qefqp.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/qefqp.h
+END
+ascf.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/ascf.h
+END
+qeuqcb.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/qeuqcb.h
+END
+psfparse.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/psfparse.h
+END
+gwf.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/gwf.h
+END
+csp.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/csp.h
+END
+rqf.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/back/hdr/hdr/rqf.h
+END

@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/vdba/dataldr_unix_win
+END
+stdafx.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/vdba/dataldr_unix_win/stdafx.h
+END
+dtloader.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/vdba/dataldr_unix_win/dtloader.c
+END
+sqlcopy.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/vdba/dataldr_unix_win/sqlcopy.h
+END
+dtloader.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/front/vdba/dataldr_unix_win/dtloader.dsp
+END
+dtloader.sln
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/front/vdba/dataldr_unix_win/dtloader.sln
+END
+tsynchro.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/vdba/dataldr_unix_win/tsynchro.c
+END
+listchar.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/vdba/dataldr_unix_win/listchar.c
+END
+parse.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/vdba/dataldr_unix_win/parse.c
+END
+dtstruct.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/vdba/dataldr_unix_win/dtstruct.c
+END
+sqlcopy.sc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/vdba/dataldr_unix_win/sqlcopy.sc
+END
+tsynchro.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/vdba/dataldr_unix_win/tsynchro.h
+END
+listchar.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/vdba/dataldr_unix_win/listchar.h
+END
+dataldr.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/ingres/!svn/ver/1/main/src/front/vdba/dataldr_unix_win/dataldr.exe.manifest
+END
+dtloader.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/front/vdba/dataldr_unix_win/dtloader.vcproj
+END
+parse.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/vdba/dataldr_unix_win/parse.h
+END
+dtstruct.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/vdba/dataldr_unix_win/dtstruct.h
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/vdba/dataldr_unix_win/Jamfile
+END
+stdafx.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/vdba/dataldr_unix_win/stdafx.c
+END
+sqlcopy.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/vdba/dataldr_unix_win/sqlcopy.c
+END

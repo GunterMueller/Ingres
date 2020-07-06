@@ -1,0 +1,233 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win
+END
+dummy.rc2
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/dummy.rc2
+END
+sql.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/sql.c
+END
+msghandl.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/msghandl.h
+END
+quel.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/quel.c
+END
+oidtrc.rc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/oidtrc.rc
+END
+main.rc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/main.rc
+END
+isql.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/isql.c
+END
+quel.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/quel.exe.manifest
+END
+accessdb.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/accessdb.exe.manifest
+END
+vision.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/vision.exe.manifest
+END
+isql.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/isql.exe.manifest
+END
+catalogdb.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/catalogdb.c
+END
+dbadlg1.rc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/dbadlg1.rc
+END
+iquel.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/iquel.exe.manifest
+END
+catalogdb.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/catalogdb.exe.manifest
+END
+dlgres.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/dlgres.h
+END
+catospin.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/catospin.h
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/MANIFEST
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/resource.h
+END
+mainmfc.rc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/mainmfc.rc
+END
+arrays.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/arrays.c
+END
+sql.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/sql.exe.manifest
+END
+vision.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/vision.c
+END
+accessdb.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/accessdb.c
+END
+catover.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/catover.h
+END
+esqlcc.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/esqlcc.c
+END
+esqlcc.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/esqlcc.exe.manifest
+END
+iquel.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/iquel.c
+END
+catocntr.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/catocntr.h
+END
+dummy.ico
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/dummy.ico
+END
+resmfc.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/resmfc.h
+END
+catolist.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/catolist.h
+END
+dummy.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/dummy.bmp
+END
+abf.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/abf.c
+END
+oidtrc.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/oidtrc.h
+END
+wrapsql.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/wrapsql.c
+END
+abf.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/abf.exe.manifest
+END
+ingsql.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/specials_nt_win/ingsql.c
+END

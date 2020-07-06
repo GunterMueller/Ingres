@@ -1,0 +1,27 @@
+; History:
+;       12-Mar-99 (fanra01)
+;           Add history.
+;           Add data exports.
+;	11-Jun-2004 (drivi01)
+;	    Added ordinals.
+
+EXPORTS
+WTSInitialize		@1				
+WTSExecute		@2				
+WTSTerminate		@3				
+WTSCleanup		@4				
+wcs_loc_class		@5	DATA			
+wcs_floc_index		@6	DATA			
+wps_cache		@7	DATA			
+wps_cache_index		@8	DATA			
+html		@9	DATA			
+post		@10	DATA			
+formatterTab		@11	DATA			
+act_classes		@12	DATA			
+act_index_name		@13	DATA			
+usr_classes		@14	DATA			
+usr_index_name		@15	DATA			
+usr_trans_classes		@16	DATA			
+usr_trans_index		@17	DATA			
+usr_curs_classes		@18	DATA			
+usr_curs_index		@19	DATA			

@@ -1,0 +1,53 @@
+#!/bin/bash
+# Copyright (c) 2004 Ingres Corporation
+#
+# Name:
+#	ingprsym	- print single INGRES symbol or environment variable
+#
+# Usage:
+#	ingprsym symbol
+#
+# Description:
+#	Print out the value of an INGRES "symbol" as it would be evaluated
+#	in an INGRES executable, i.e. if an environment variable named
+#	"symbol" exists, print its value, otherwise print the value obtained
+#	from the INGRES symbol table, otherwise exit.
+#	
+# Exit status:
+#	0	OK
+#	1	symbol argument not present
+#
+#
+#  PROGRAM = ingprsym
+
+# if being called from iigenres, redirect to  output file (arg 2)
+if test $# -eq 3
+then
+    OUT="> $2"
+fi
+
+[ $1 ] || exit 1
+if ( echo $1 | egrep '\$\{.+\}' > /dev/null 2>&1 )
+then
+    # extract the sub Symbol name, between '${' and '}'
+    # eg '$II_GCN${II_INSTALLATION}_LCL_VNODE' will result
+    # in subSym being set to II_INSTALLATION
+    # Be sure to protect the whole with single quotes "'"
+    # from accidental evaluation by the shell
+    #
+    # Reminder: '.*' like all REs matches the longest string
+    subSym=`echo $1 | sed 's/.*\${\(.*\)}.*/\1/'`
+    subSymVal=`ingprenv $subSym`
+    # replace the sub Symbol name with its value
+    fullSym=`echo $1|sed 's/\(.*\)\${\('$subSym'\)}\(.*\)/\1'$subSymVal'\3/'`
+    eval ingprenv $fullSym $OUT
+else
+    val=`eval echo \\$$1`
+    if [ $val ]
+    then
+	eval echo $val $OUT
+    else
+	eval ingprenv $1 $OUT
+    fi
+fi
+exit 0

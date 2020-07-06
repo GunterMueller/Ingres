@@ -1,0 +1,20 @@
+#!/bin/bash
+# Copyright (c) 2004 Ingres Corporation
+#
+# Name:	rpserver.sh - run Replicator Server
+#
+# Description:
+#	Starts Replicator Server after switching to the server directory.
+#	$1 is the server number.
+#
+rservers=`ingprenv DD_RSERVERS`
+if [ -z "$DD_RSERVERS" ]
+then
+    if [ -z "$rservers" ]
+	then DD_RSERVERS=$II_SYSTEM/ingres/rep
+    else
+	DD_RSERVERS=$rservers
+    fi
+fi
+cd $DD_RSERVERS/servers/server$1
+$II_SYSTEM/ingres/bin/repserv > print.log &

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/embed/fortransq
+END
+esqlf.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/front/embed/fortransq/esqlf.exe.manifest
+END
+fsqmain.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/embed/fortransq/fsqmain.c
+END
+fsqscan.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/embed/fortransq/fsqscan.c
+END
+fsqtoks.st
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/embed/fortransq/fsqtoks.st
+END
+forsq.sy
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/embed/fortransq/forsq.sy
+END
+forsqgen.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/embed/fortransq/forsqgen.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/embed/fortransq/Jamfile
+END
+esqlf.lot
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/embed/fortransq/esqlf.lot
+END

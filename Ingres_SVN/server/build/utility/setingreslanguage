@@ -1,0 +1,49 @@
+#!/bin/bash
+
+self=`basename $0`
+
+usage()
+{
+    cat << !
+Usage:
+	$self [fra|deu|esn|ita|ptb|sch or jpn]
+
+!
+    exit 1
+}
+
+# Check command args
+case "$1" in
+    fra|\
+    deu|\
+    esn|\
+    ita|\
+    ptb|\
+    sch|\
+    jpn)
+		;;
+	   *)
+	   	usage
+		;;
+esac
+
+# Check environment
+[ "$II_SYSTEM" ] || 
+{
+    cat << !
+Error:
+	II_SYSTEM must be set before running this script.
+
+!
+exit 2
+}
+
+cat << !
+Setting the Ingres Language Environment to $1
+
+!
+
+# Create language dir and copy in files
+[ ! -d "$II_SYSTEM/ingres/files/$1" ] && mkdir -p $II_SYSTEM/ingres/files/$1
+cp $1/* $II_SYSTEM/ingres/files/$1
+ingsetenv II_LANGUAGE $1

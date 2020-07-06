@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/ingres/!svn/ver/1/main/src/common/jdbc/jdbc
+END
+jdbcutil.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/jdbc/jdbc/jdbcutil.c
+END
+jdbcsess.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/jdbc/jdbc/jdbcsess.c
+END
+iijdbc.lot
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/jdbc/jdbc/iijdbc.lot
+END
+jdbcmsg.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/jdbc/jdbc/jdbcmsg.c
+END
+jdbcrqst.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/jdbc/jdbc/jdbcrqst.c
+END
+jdbcgca.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/jdbc/jdbc/jdbcgca.c
+END
+jdbcgcc.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/jdbc/jdbc/jdbcgcc.c
+END
+jdbcconn.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/jdbc/jdbc/jdbcconn.c
+END
+jdbcxact.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/jdbc/jdbc/jdbcxact.c
+END
+jdbcqury.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/jdbc/jdbc/jdbcqury.c
+END
+iijdbc.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/jdbc/jdbc/iijdbc.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/jdbc/jdbc/Jamfile
+END
+jdbcpool.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/jdbc/jdbc/jdbcpool.c
+END
+jdbccrsr.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/jdbc/jdbc/jdbccrsr.c
+END
+jdbcapi.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/jdbc/jdbc/jdbcapi.c
+END

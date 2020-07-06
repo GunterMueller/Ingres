@@ -1,0 +1,69 @@
+;
+; Name: OIUTIL.DEF
+;
+; History:
+;	04-may-1999 (mcgem01)
+;	    Created.
+;	02-aug-2000 (mcgem01)
+;	    Add an entry point for II_ServiceStarted
+;	18-aug-2000 (mcgem01)
+;	    Add entry points for the functions to start and stop the 
+;	    Ingres Database Service.  Also, add a function which gets
+;	    the value of an Ingres environment variable.
+;       08-aug-2001 (rodjo04) bug 105063
+;           Added missing function II_IngresVersion();
+;	27-dec-2001 (somsa01)
+;	    Added II_IngresServiceName().
+;	11-jan-2002 (somsa01)
+;	    Added II_StartServiceSync().
+;	14-jan-2002 (somsa01)
+;	    Added II_IngresVersionEx();
+;	15-mar-2002 (somsa01)
+;	    Added II_GetIngresInstallSize().
+;	16-apr-2002 (abbjo03)
+;	    Add II_PrecheckInstallation.
+;       26-Jun-2002 (fanra01)
+;           Sir 108122
+;           Add II_GetErrorMessage.
+;       25-Apr-2003 (fanra01)
+;           Bug 110152
+;           Add II_PingServers
+;       09-Mar-2004 (fanra01)
+;           SIR 111718
+;           Add transponder API entry points
+;       08-Jul-2004 (noifr01)
+;           SIR 111718
+;           Added IFFsetConfigValues
+;       21-Jul-2004 (noifr01)
+;           SIR 111718
+;           Added IFFGetMdbName
+;       07-Sep-2004 (fanra01)
+;           SIR 112988
+;           Add II_PrecheckInstallationEx
+LIBRARY IIUTIL
+EXPORTS
+	II_GetResource	@1
+	II_PingGCN	@2
+	II_TNG_Version	@3
+	II_ServiceStarted @4
+	II_StartService   @5
+	II_StopService    @6
+	II_GetEnvVariable @7
+        II_IngresVersion @8
+	II_IngresServiceName @9
+	II_StartServiceSync @10
+	II_IngresVersionEx @11
+	II_GetIngresInstallSize @12
+	II_PrecheckInstallation	@13
+	II_GetErrorMessage	@14
+	II_PingServers	@15
+	II_PrecheckInstallationEx	@16
+
+    IFFinitialize       @20
+    IFFterminate        @21
+    IFFgetInstances     @22
+    IFFgetConfigValues  @23
+    IFFtrace            @24
+    IFFsetConfigValues  @25
+    IFFGetMdbName       @26
+   

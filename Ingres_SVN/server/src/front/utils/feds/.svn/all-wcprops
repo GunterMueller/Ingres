@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/ingres/!svn/ver/1/main/src/front/utils/feds
+END
+dstblfld.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/feds/dstblfld.c
+END
+dsstring.roc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/utils/feds/dsstring.roc
+END
+dsfldval.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/feds/dsfldval.c
+END
+dsmapout.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/feds/dsmapout.h
+END
+dstrim.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/utils/feds/dstrim.c
+END
+dsi4.roc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/utils/feds/dsi4.roc
+END
+dschar.roc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/feds/dschar.roc
+END
+dsdate.roc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/feds/dsdate.roc
+END
+dsf8.roc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/utils/feds/dsf8.roc
+END
+dsload.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/utils/feds/dsload.c
+END
+dsfield.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/utils/feds/dsfield.c
+END
+dsglob.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/utils/feds/dsglob.c
+END
+dsframe.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/utils/feds/dsframe.c
+END
+dsfdtype.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/feds/dsfdtype.c
+END
+dsmisc.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/utils/feds/dsmisc.c
+END
+dsbool.roc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/feds/dsbool.roc
+END
+dsstore.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/utils/feds/dsstore.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/utils/feds/Jamfile
+END
+wgl_32s.hnt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/utils/feds/wgl_32s.hnt
+END
+dsfldhdr.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/feds/dsfldhdr.c
+END
+dsfldcol.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/feds/dsfldcol.c
+END
+dsregfld.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/feds/dsregfld.c
+END

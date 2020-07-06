@@ -1,0 +1,25 @@
+;
+; History:
+;       27-Oct-98 (fanra01)
+;           Add Asc_server_name for getting startup name in ima.
+;       12-Feb-99 (fanra01)
+;           Update exports.
+;       01-Mar-1999 (fanra01)
+;           Add asct data for trace thread.
+;       31-Jan-2001 (fanra01)
+;           Bug 103817
+;           No server registrations are returned by iinamu when icesvr is
+;           started.  Remove data items now imported from the
+;           scfdata library.
+;	11-Jun-2004 (drivi01)
+;	    Added ordinals.
+EXPORTS
+AScs_classes		@1	DATA			
+asctentry		@2	DATA			
+asctfile		@3	DATA			
+asctbuf		@4	DATA			
+asctlogmsgsize		@5	DATA			
+asctlogsize		@6	DATA			
+asctthreshold		@7	DATA			
+asctlogtimeout		@8	DATA			
+ascttracemask		@9	DATA			

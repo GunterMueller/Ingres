@@ -1,0 +1,61 @@
+8
+
+dir
+33
+http://code.ingres.com/ingres/main/src/common
+http://code.ingres.com/ingres
+
+
+
+2008-03-20T11:29:42.068590Z
+3
+rosan01
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+45b5d43f-8932-4c86-835a-3654e5842839
+
+aif
+dir
+
+gcf
+dir
+
+jdbc
+dir
+
+specials
+dir
+
+odbc
+dir
+
+adf
+dir
+
+dotnet_win
+dir
+
+dotnet2_win
+dir
+
+cuf
+dir
+
+ddf
+dir
+
+hdr
+dir
+

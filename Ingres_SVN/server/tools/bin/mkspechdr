@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo \
+"Summary: IngresII Inteligent Database
+Name: IngresII
+Version: 2.5.0006.cob
+Release: 1
+Copyright: Comercial
+Group: Applications/Databases
+Source: none
+Patch: none
+BuildRoot: $ING_SRC/Cobalt/rpm
+" > $ING_SRC/Cobalt/rpm/ii_cobalt.spec

@@ -1,0 +1,293 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win
+END
+StdAfx.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/StdAfx.h
+END
+Splash.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/Splash.h
+END
+perfwiz.rtf
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/perfwiz.rtf
+END
+perfwiz.sln
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/perfwiz.sln
+END
+gcnquery.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/gcnquery.h
+END
+PersonalGroup.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/PersonalGroup.h
+END
+ServerSelect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/ServerSelect.cpp
+END
+perfwiz.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/perfwiz.vcproj
+END
+CounterCreation.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/CounterCreation.h
+END
+EditObject.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/EditObject.cpp
+END
+PropSheet.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/PropSheet.h
+END
+NewListCtrl.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/NewListCtrl.h
+END
+gcnquery.sc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/gcnquery.sc
+END
+PersonalCounter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/PersonalCounter.cpp
+END
+EditCounter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/EditCounter.cpp
+END
+pinggcn.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/pinggcn.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/Jamfile
+END
+InPlaceEdit.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/InPlaceEdit.h
+END
+IntroPage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/IntroPage.cpp
+END
+StdAfx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/StdAfx.cpp
+END
+perfwiz.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/perfwiz.dsp
+END
+Splash.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/Splash.cpp
+END
+perfwiz.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/perfwiz.h
+END
+FinalPage.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/FinalPage.h
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/resource.h
+END
+WaitDlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/WaitDlg.h
+END
+PersonalGroup.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/PersonalGroup.cpp
+END
+perfwiz.dsw
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/perfwiz.dsw
+END
+PersonalHelp.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/PersonalHelp.h
+END
+CounterCreation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/CounterCreation.cpp
+END
+perfwiz.rc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/perfwiz.rc
+END
+PropSheet.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/PropSheet.cpp
+END
+NewListCtrl.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/NewListCtrl.cpp
+END
+ServerSelect.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/ServerSelect.h
+END
+256bmp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/256bmp.cpp
+END
+256Bmp.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/256Bmp.h
+END
+EditObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/EditObject.h
+END
+InPlaceEdit.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/InPlaceEdit.cpp
+END
+perfchart.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/perfchart.h
+END
+perfwiz.hpj
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/perfwiz.hpj
+END
+FinalPage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/FinalPage.cpp
+END
+perfwiz.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/perfwiz.cpp
+END
+PersonalCounter.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/PersonalCounter.h
+END
+perfwiz.cnt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/perfwiz.cnt
+END
+EditCounter.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/EditCounter.h
+END
+WaitDlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/WaitDlg.cpp
+END
+PersonalHelp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/PersonalHelp.cpp
+END
+IntroPage.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/perfwiz_win/IntroPage.h
+END

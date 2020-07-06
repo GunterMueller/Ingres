@@ -1,0 +1,9 @@
+! History:
+!	25-jan-2005 (abbjo03)
+!	    Build with the shared CL.
+!
+INGLIB:frontmain.obj, -
+MAINOBJ.obj, -
+INGLIB:libcompat.olb/include=(gver)	! for II_copyright
+INGLIB:libutil.olb/library
+II_COMPATLIB/share

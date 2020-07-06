@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/ingres/!svn/ver/1/main/src/dbutil/duf/duu
+END
+duuchknm.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/dbutil/duf/duu/duuchknm.c
+END
+duuinpth.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/dbutil/duf/duu/duuinpth.c
+END
+duuinits.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/dbutil/duf/duu/duuinits.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/dbutil/duf/duu/Jamfile
+END
+duuerror.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/dbutil/duf/duu/duuerror.c
+END
+duugetusr.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/dbutil/duf/duu/duugetusr.c
+END

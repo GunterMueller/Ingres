@@ -1,0 +1,16 @@
+PART   collation32
+   DIRECTORY ingres!files!collation!lp32
+   BUILD_DIR (ING_BUILD)!files!collation!lp32
+      FILE multi
+      FILE spanish
+      FILE multi.dsc
+      FILE spanish.dsc
+      FILE udefault.uce
+      FILE udefault
+      FILE unicode_french.uce
+      FILE unicode_french
+      FILE udata.ucd
+      FILE specialcasing.txt
+   DIRECTORY ingres!utility!lp32
+   BUILD_DIR (ING_BUILD)!utility!lp32
+      EXECUTABLE aducompile

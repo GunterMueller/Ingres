@@ -1,0 +1,282 @@
+<HTML>
+<HEAD>
+<!-- Created with DOC2HTML, v585 (12/13/2005) -->
+<title>Ingres® 2006 9.0.4 for Linux on Itanium (using Native POSIX Threading Library (i64.lnx)NPTL</title>
+<META HTTP-EQUIV="Content-Type" Content="text-html; charset=Windows-1252">
+<style>
+<!--
+A:link                       { text-decoration: underline; font-weight: bold; color: #336699  }
+A:visited                    { text-decoration: underline; font-weight: bold; color: #336699  }
+BODY                         { font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-size: 80%; font-weight: normal; color: 00000  }
+TABLE                        { font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-size: 100%; color: 000000; }
+P                            { font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-weight: normal; color: #000000  }
+H1                           { font-size: 180%; font-weight: bold; color: #336699  }
+H2                           { font-size: 155%; font-weight: normal; font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; color: #336699  }
+H3                           { font-size: 130%; font-weight: bold; font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; color: #336699  }
+H4                           { font-size: 130%; font-weight: bold; font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; color: #336699  }
+ol, ul ol, ul ul ol          { list-style-type: decimal; list-style-image : none; }
+ol ol, ul ol ol, ol ul ol    { list-style-type: lower-alpha; list-style-image: none; }
+ul, ol ul, ol ol ul          { list-style-type: disc; list-style-image: none; }
+ul ul, ol ul ul, ul ol ul    { list-style-type: circle; list-style-image: none;}
+ul ul ul                     { list-style-type: square; list-style-image: none; }
+ol ol ol                     { list-style-type: upper-roman; list-style-image: none; }
+B                            { font-weight: bold  }
+STRONG                       { font-weight: bold  }
+I                            { font-style: italic  }
+EM                           { font-style: italic  }
+INPUT                        { color: #336699; font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-size: 90%; } /* Special */
+TEXTAREA                     { color: #336699; font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-size: 90%; } /* Special */
+BLOCKQUOTE                   { font-size: 80%; }
+PRE                          { font-family: "courier new", courier, monospace; font-size: 100%  }
+table, td                    { font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-weight: normal; color: #000000; vertical-align: top; border: 1px solid #EBEBEB; border-collapse: collapse; font-size: 12px; padding: 2px;}
+table.invis, td.invis        { font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-weight: normal; color: #000000; vertical-align: middle; border: 0px; border-collapse: collapse; font-size: 12px; padding: 2px;}
+th                           { font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-weight: bold; color: #000000; vertical-align: top; border: 1px solid #FFFFFF; background-color: #006699; color:#FFFFFF; text-align: left; padding: 2px;}
+tr.alt                       { background-color : #F1F5FA;}
+.computerassoc               { font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; color: #FFFFFF; text-decoration: none; background-color: #336699; font-size: 130%; font-weight: bold; }
+hr                           { color: #CCCCCC; height:1px; }
+-->
+</style>
+</HEAD>
+<BODY>
+<table width="100%"  border="0" cellspacing="0" cellpadding="0"><tr><td class="computerassoc">Ingres Corporation</td></tr></table>
+<h1><a name="ingres_2006_9_0_4_for_linux_on_itanium_using_native_posix_threading_library_i64_lnxnptl">Ingres<sup>®</sup> 2006 9.0.4 for Linux on Itanium using Native POSIX Threading Library (i64.lnx)NPTL</a></h1>
+<p>
+<hr>
+<nobr>
+<p><b><a href="#welcome">1.0  Welcome</a></b>
+<p><b><a href="#operating_system_support">2.0  Operating System Support</a></b>
+<br><a href="#preprocessor_and_compiler_support">2.1  Preprocessor and Compiler Support</a>
+<p><b><a href="#system_requirements">3.0  System Requirements</a></b>
+<br><a href="#disk_space_requirements">3.1  Disk Space Requirements</a>
+<p><b><a href="#installation_considerations">4.0  Installation Considerations</a></b>
+<br><a href="#rpm_support">4.1  RPM Support</a>
+<br><a href="#documentation">4.2  Documentation</a>
+<br><a href="#mounting_the_cd_rom">4.3  Mounting the CD-ROM</a>
+<br><a href="#installing_on_a_system_without_a_c_compiler">4.4  Installing on a System without a C Compiler</a>
+<br><a href="#shared_library_path">4.5  Shared Library Path</a>
+<br><a href="#visual_tools">4.6  Visual Tools</a>
+<br><a href="#web_server_support">4.7  Web Server Support</a>
+<br><a href="#protocols_supported">4.8  Protocols Supported</a>
+<br><a href="#raw_transaction_log_files_and_raw_database_locations_not_supported_on_linux">4.9  Raw Transaction Log Files and Raw Database Locations Not Supported on Linux</a>
+</nobr>
+<p>
+<hr>
+<h2><a name="welcome">1.0  Welcome</a></h2>
+<p>This readme contains information specific to
+Ingres<sup>®</sup> running under Itanium Linux.
+<p>
+<hr>
+<h2><a name="operating_system_support">2.0  Operating System Support</a></h2>
+<p>The following operating system is supported (as of the
+publishing of this document):
+<p><b>Linux Kernel 2.4.EL</b> and up with  
+<b>glibc 2.3.2-95</b> C-language libraries and up 
+with NPTL support.
+<p><b>Linux Kernel 2.6</b> with <b>glibc 2.3 </b> C-language
+libraries with NPTL support.
+<p>Ingres supports these operating systems for the duration
+of their life cycle (as determined by the operating
+system's manufacturer or until Ingres Corporation announces
+that it is dropping support). For the latest information
+about supported operating systems, visit <a href="http://www.ingres.com/support" target="_blank">http://www.ingres.com/support</a>.
+<p>
+<hr>
+<h3><a name="preprocessor_and_compiler_support">2.1  Preprocessor and Compiler Support</a></h3>
+<p><a href="http://www.gnu.org/software/gcc/gcc.html" target="_blank">GCC</a>
+v3.2.3 and upwards (GNU Compiler Collection, C)
+<p>
+<hr>
+<h2><a name="system_requirements">3.0  System Requirements</a></h2>
+<p>These are the Itanium Linux specific requirements for
+installing Ingres.  For more generic system requirements
+see the <i>Getting Started</i> guide
+<p>
+<hr>
+<h3><a name="disk_space_requirements">3.1  Disk Space Requirements</a></h3>
+<p>Here are the disk space requirements for Itanium Linux
+with the following system configurations:  
+<p><table border>
+<tr>
+<th align=left valign=top>
+System Configuration
+</th>
+<th align=left valign=top>
+Space Required
+</th>
+</tr>
+<tr>
+<td>Client Only (Ingres Net) Install
+</td>
+<td>75 MB
+</td>
+</tr>
+<tr class="alt">
+<td>DBMS Server with Ingres Net Install
+</td>
+<td>145 MB
+</td>
+</tr>
+<tr>
+<td>Full installation plus documentation
+</td>
+<td>460 MB
+</td>
+</tr>
+</table>
+<p>
+<hr>
+<h2><a name="installation_considerations">4.0  Installation Considerations</a></h2>
+<p>
+<hr>
+<h3><a name="rpm_support">4.1  RPM Support</a></h3>
+<p>As of the time this readme was published, the
+installation of Ingres requires RPM with a version in the
+range 3.0.6 through 4.2.2, <b>except for RPM version
+4.1</b>. If RPM 4.1 is installed, it must be upgraded to
+version 4.1.1 or higher before you can install Ingres.
+<p>RPM 4.1 fails to set environment variable
+RPM_INSTALL_PREFIX.&nbsp;Attempting to install Ingres with
+RPM 4.1 will lead to numerous "cannot find file" errors,
+and a failed install.&nbsp;For further details of this RPM
+bug, see <a href="http://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=75057" target="_blank">http://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=75057</a>.&nbsp;
+<p>On RedHat Linux the rpmbuild package is required to
+rename ingres packages using the iirpmrename utility. 
+<p><b>Note</b>: When installing multiple Ingres RPM
+packages, it is important that you install the "ingres2006"
+(core) package before any other package.
+<p>
+<hr>
+<h3>Upgrade Installs Using RPM</h3>
+<p>These instructions allow you to upgrade ANY Ingres r3
+release prior to 3.0.2(any.lnx/116) using RPM and avoid BUG
+113652/Problem INGINS300 and BUG 114752. This document is
+to be used in addition to the Ingres Migration Guide.
+<p><b>Note:</b> For the purposes of this document build r3
+3.0.1(int.lnx/103) has been used as the version of Ingres
+being upgraded but the principle is the same for upgrading
+all versions prior to r3 3.0.2(any.lnx/116)
+<p><b>Upgrading Ingres</b> <b>r3</b> <b>3.0.1(int.lnx/103)
+RPMs</b>
+<ol>
+<p><li>Make sure the Ingres instance you wish to upgrade is
+completely shutdown and that you have taken a backup as
+described in the Ingres Migration Guide.
+<p><li>Obtain the list of Ingres r3 3.0.1(int.lnx/103) RPM
+for the instance which is to be upgraded.
+<pre>
+rpm -qa | grep ca-ingres | grep 103
+</pre>
+<p>All of these packages must be upgraded at once. Any
+attempt to perform an upgrade on any single or smaller
+group of packages will fail.
+<p><li>Login as root and CD to the directory containing the
+RPM to be used to perform the upgrade. Make sure variable
+II_CONFIG is not set.
+<p><li>Run rpm -ivh to install the new RPMs over the
+existing installation. If the installation was originally
+installed using --prefix to change II_SYSTEM from the
+default, then it MUST also be used for the upgrade.<br>
+For default installation location:
+<pre>
+rpm -ivh --replacefile --replacepkgs \<br>
+     &lt;complete list of RPM files to be install&gt;
+</pre>
+<p>Any other installation location:
+<pre>
+rpm -ivh --replacefiles --replacepkgs --prefix &lt;II_SYSTEM&gt; \<br>
+     &lt;complete list of RPM files to be install&gt;
+</pre>
+<p><li>Remove the RPM package information for the old
+installation (103) Check we can find the correct packages:
+<pre>
+rpm -qa | grep ca-ingres | grep 103
+</pre>
+<p>If the list is OK, then we can remove them:
+<pre>
+rpm -qa | grep ca-ingres | grep 103 | xargs rpm -e –justdb
+</pre>
+</ol>
+<p><b>Note:</b> If you tried using rpm –Uvh instead
+of the instructions above, binary and other installed files
+(for example, iimerge) may be removed when rpm -Uvh is used
+with --prefix to upgrade and installation. Should this
+occur simply re-run the same command again using additional
+flags --replacefiles & --replacepkgs and all the missing
+files will be replaced. Any database or configuration files
+will not be affected.    
+<p>
+<hr>
+<h3><a name="documentation">4.2  Documentation</a></h3>
+<p>Ingres documentation can be installed on Linux systems
+by installing the documentation rpm file supplied with the
+distribution.
+<p>
+<hr>
+<h3><a name="mounting_the_cd_rom">4.3  Mounting the CD-ROM</a></h3>
+<p>Most Linux distributions automatically mount the CD-ROM
+as soon as it is placed in the drive. Running the command
+"mount" returns an entry for /dev/cdrom if it has been
+mounted.
+<p>If it is not mounted, then it can be done manually. In
+general, the CD-ROM should either be mounted to /mnt/cdrom
+or /media/cdrom, depending on the distribution. The
+following instructions are an example of how to mount the
+CD-ROM on a RedHat Itanium Linux system:
+<p>As root execute this command:
+<pre>
+mount /dev/cdrom /mnt/cdrom
+</pre>
+<p>For further information, see the <i>Getting Started</i>
+guide.
+<p>
+<hr>
+<h3><a name="installing_on_a_system_without_a_c_compiler">4.4  Installing on a System without a C Compiler</a></h3>
+<p>This version of Ingres requires that the DBMS server
+executables be re-linked so that utilities such as CKPDB
+and ROLLFORWARDDB will function for users other than
+"ingres". If a C compiler is present, the server is
+re-linked at install time. If not, a warning is issued and
+the install continues as usual. If users other than
+"ingres" require the use of these utilities, the DBMS
+server must be re-linked by hand with the following command:
+<pre>
+iilink –noudts
+</pre>
+<p>A C compiler must be installed for this command to
+complete successfully.  
+<p>
+<hr>
+<h3><a name="shared_library_path">4.5  Shared Library Path</a></h3>
+<p>The library variable for Itanium Linux is
+<b>LD_LIBRARY_PATH</b>.  
+<p>
+<hr>
+<h3><a name="visual_tools">4.6  Visual Tools</a></h3>
+<p>The Visual DBA suite is not included as part of the
+Ingres 2006 Open Source for Itanium Linux. However, these
+tools can be deployed on a Windows PC against Itanium Linux.
+<p>
+<hr>
+<h3><a name="web_server_support">4.7  Web Server Support</a></h3>
+Ingres for Itanium Linux supports the following web server:
+<p><a href="http://www.apache.org/" target="_blank">Apache</a>
+HTTP server 1.3
+<p>
+<hr>
+<h3><a name="protocols_supported">4.8  Protocols Supported</a></h3>
+<p>TCP/IP Native
+<p>
+<hr>
+<h3><a name="raw_transaction_log_files_and_raw_database_locations_not_supported_on_linux">4.9  Raw Transaction Log Files and Raw Database Locations Not Supported on Linux</a></h3>
+<p>Research has shown that raw transaction log files and
+raw database locations on Linux do not provide performance
+benefits. To simplify administration, a decision has been
+made to not support this feature on Linux.
+<p>
+<hr>
+<font size=-2>
+© 2006 Ingres Corporation.
+All rights reserved.
+</font>
+</BODY>
+</HTML>

@@ -1,0 +1,15 @@
+#
+# Jamfile file for front!ice!cf_win
+#
+
+SubDir ING_SRC front ice cf_win ;
+
+IISUBSYS front ice cf_win ;
+
+IICF ColdFusion ;
+
+IIICEFILE ColdFusion/IngresMarkup.vtm : IngresMarkup.vtm ;
+
+IIICECAZIP ColdFusion/ingrescf.caz ;
+
+IIINCLUDE front ice cf_win td ;

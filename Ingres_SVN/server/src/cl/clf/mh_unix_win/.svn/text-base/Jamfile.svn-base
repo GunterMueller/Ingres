@@ -1,0 +1,18 @@
+#
+# Jamfile file for cl!clf!mh_unix_win
+#
+
+SubDir ING_SRC cl clf mh_unix_win ;
+
+IISUBSYS cl clf mh_unix_win ;
+
+IINOOPTIM mhexp.c : sgi_us5 ;
+IINOOPTIM mhexp10.c : sgi_us5 ;
+IINOOPTIM mhcos.c : sgi_us5 ;
+IINOOPTIM mhceil.c : sgi_us5 ;
+IINOOPTIM mhatan.c : sgi_us5 ;
+
+IILIBRARY COMPATLIB : mhsrand.c mhsqrt.c mhsin.c mhrand.c
+	mhpow.c mhpk.c mhln.c mhipow.c mhint.c mhfdint.c mhexp.c
+	mhexp10.c mhcos.c mhceil.c mhatan.c ;
+

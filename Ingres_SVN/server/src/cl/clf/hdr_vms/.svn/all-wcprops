@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/ingres/!svn/ver/1/main/src/cl/clf/hdr_vms
+END
+ucxinetdef.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/cl/clf/hdr_vms/ucxinetdef.h
+END
+gcblpgb.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/hdr_vms/gcblpgb.h
+END
+csinternal.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/cl/clf/hdr_vms/csinternal.h
+END
+exhdef.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/cl/clf/hdr_vms/exhdef.h
+END
+gcblerrs.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/cl/clf/hdr_vms/gcblerrs.h
+END
+vmsclient.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/clf/hdr_vms/vmsclient.h
+END
+twgiodef.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/cl/clf/hdr_vms/twgiodef.h
+END
+twgsocket.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/clf/hdr_vms/twgsocket.h
+END
+eventflag.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/clf/hdr_vms/eventflag.h
+END
+gcdecnet.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/cl/clf/hdr_vms/gcdecnet.h
+END
+bsi.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/cl/clf/hdr_vms/bsi.h
+END
+twgnetdb.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/cl/clf/hdr_vms/twgnetdb.h
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/cl/clf/hdr_vms/Jamfile
+END
+snalu0def.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/clf/hdr_vms/snalu0def.h
+END
+gcblsio.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/hdr_vms/gcblsio.h
+END
+stinternal.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/cl/clf/hdr_vms/stinternal.h
+END
+snalibdef.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/clf/hdr_vms/snalibdef.h
+END
+twgin.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/cl/clf/hdr_vms/twgin.h
+END

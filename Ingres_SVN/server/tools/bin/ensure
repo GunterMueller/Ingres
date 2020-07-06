@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# Copyright (c) 2004 Ingres Corporation
+#
+# ensure -- ensure that I am running as one of $*
+#
+
+WHOAMI=`whoami`
+
+for user in $*
+do
+	[ $WHOAMI = $user ] && exit 0
+done
+
+echo "You must run this program as `echo $* | sed \"s/ / or /g\"`." >&2
+exit 1

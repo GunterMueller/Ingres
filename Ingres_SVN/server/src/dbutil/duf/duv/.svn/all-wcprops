@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/ingres/!svn/ver/1/main/src/dbutil/duf/duv
+END
+doview.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/dbutil/duf/duv/doview.qsc
+END
+duvfiles.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/dbutil/duf/duv/duvfiles.c
+END
+upgradedb.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/dbutil/duf/duv/upgradedb.qsc
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/dbutil/duf/duv/MANIFEST
+END
+ntupgrdb.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/dbutil/duf/duv/ntupgrdb.exe.manifest
+END
+upgradedb.lot
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/dbutil/duf/duv/upgradedb.lot
+END
+duvdata.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/dbutil/duf/duv/duvdata.qsc
+END

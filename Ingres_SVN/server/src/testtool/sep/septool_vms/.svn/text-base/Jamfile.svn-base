@@ -1,0 +1,21 @@
+#
+# Jamfile for testtool!sep!septool_vms
+#
+
+SubDir ING_SRC testtool sep septool_vms ;
+
+IISUBSYS testtool sep septool_vms ;
+
+IITOOLSEXE echo : echo.c ;
+
+IITOOLSEXE setuser : setuser.c ;
+IINEEDLIBS setuser : $(COMPATLIB) ;
+
+IITOOLSEXE qawtl : qawtl.c ;
+IINEEDLIBS qawtl : $(COMPATLIB) ;
+
+IITOOLSSH run : run$(SUFSH) ;
+IITOOLSSH sepcc : sepcc$(SUFSH) ;
+IITOOLSSH sepesqlc : sepesqlc$(SUFSH) ;
+IITOOLSSH seplib : seplib$(SUFSH) ;
+IITOOLSSH seplnk : seplnk$(SUFSH) ;

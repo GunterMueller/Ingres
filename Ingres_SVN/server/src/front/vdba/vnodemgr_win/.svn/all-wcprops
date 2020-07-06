@@ -1,0 +1,257 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win
+END
+stdafx.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/stdafx.h
+END
+vnodemgr.rc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/vnodemgr.rc
+END
+vnodemgr.doc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/vnodemgr.doc
+END
+nodeinfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/nodeinfo.h
+END
+edbcnet.cnt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/edbcnet.cnt
+END
+xdgvnpwd.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/xdgvnpwd.h
+END
+parsearg.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/parsearg.h
+END
+treenode.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/treenode.h
+END
+maindoc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/maindoc.cpp
+END
+vnode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/vnode.cpp
+END
+dglogipt.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/dglogipt.h
+END
+dgvnlogi.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/dgvnlogi.h
+END
+mainview.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/mainview.h
+END
+vnodemgr.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/vnodemgr.dsp
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/Jamfile
+END
+vnodemgr.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/vnodemgr.h
+END
+rcdepend.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/rcdepend.h
+END
+stdafx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/stdafx.cpp
+END
+edbcnet.bin
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/edbcnet.bin
+END
+dgvnode.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/dgvnode.h
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/resource.h
+END
+dgvndata.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/dgvndata.h
+END
+mainfrm.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/mainfrm.h
+END
+xdgvnpwd.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/xdgvnpwd.cpp
+END
+nodeinfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/nodeinfo.cpp
+END
+xdgvnatr.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/xdgvnatr.h
+END
+vnodemgr.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/vnodemgr.vcproj
+END
+parsearg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/parsearg.cpp
+END
+treenode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/treenode.cpp
+END
+dgvnlogi.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/dgvnlogi.cpp
+END
+dglogipt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/dglogipt.cpp
+END
+ingnet.bin
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/ingnet.bin
+END
+mainview.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/mainview.cpp
+END
+maindoc.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/maindoc.h
+END
+vnode.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/vnode.h
+END
+vnodemgr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/vnodemgr.cpp
+END
+dgvnode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/dgvnode.cpp
+END
+dgvndata.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/dgvndata.cpp
+END
+mainfrm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/mainfrm.cpp
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/readme.txt
+END
+vnodemgr.sln
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/vnodemgr.sln
+END
+xdgvnatr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/vnodemgr_win/xdgvnatr.cpp
+END

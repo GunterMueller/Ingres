@@ -1,0 +1,23 @@
+#
+# Jamfile file for back!opf!opq
+#
+
+SubDir ING_SRC back opf opq ;
+
+IISUBSYS back opf opq ;
+
+IINOOPTIM opqoptdb.sc : dgi_us5 ;
+IINOOPTIM opqdata.sc : dgi_us5 ;
+IINOOPTIM opqscanf.c : dgi_us5 ;
+
+IIBINEXE statdump : opqstatd.sc ;
+IINEEDLIBS statdump : OPFLIB SHQLIB ULFLIB SHCOMPATLIB SHFRAMELIB ;
+IINEEDLIBSW statdump : SHEMBEDLIB SHADFLIB ;
+
+IIBINEXE optimizedb : opqoptdb.sc ;
+IINEEDLIBS optimizedb : OPFLIB SHQLIB ULFLIB SHCOMPATLIB SHFRAMELIB ;
+IINEEDLIBSW optimizedb : SHADFLIB SHEMBEDLIB ;
+
+IILIBRARY OPFLIB : opqutils.sc opqscanf.c ;
+
+IILIBRARY IMPOPFLIBDATA : opqdata.sc ;

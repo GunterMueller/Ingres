@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/ingres/!svn/ver/1/main/src/cl/clf/gv
+END
+gviivers.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/cl/clf/gv/gviivers.c
+END
+gvosvers.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/cl/clf/gv/gvosvers.c
+END
+gvshobj.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/cl/clf/gv/gvshobj.c
+END
+gver.roc
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/cl/clf/gv/gver.roc
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/cl/clf/gv/Jamfile
+END
+gvdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/cl/clf/gv/gvdata.c
+END
+wgl_32s.hnt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/cl/clf/gv/wgl_32s.hnt
+END
+gvmo.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/ingres/!svn/ver/1/main/src/cl/clf/gv/gvmo.c
+END
+gv.c
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/ingres/!svn/ver/1/main/src/cl/clf/gv/gv.c
+END
+gvint.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/cl/clf/gv/gvint.h
+END

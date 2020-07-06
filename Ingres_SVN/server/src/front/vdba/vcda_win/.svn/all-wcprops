@@ -1,0 +1,233 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win
+END
+vcda.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/vcda.vcproj
+END
+stdafx.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/stdafx.h
+END
+udlgmain.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/udlgmain.h
+END
+pagediff.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/pagediff.cpp
+END
+pshresto.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/pshresto.cpp
+END
+xmaphost.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/xmaphost.h
+END
+vcda.odl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/vcda.odl
+END
+ppgropti.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/ppgropti.h
+END
+ppgrfina.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/ppgrfina.h
+END
+vcda.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/vcda.cpp
+END
+vcdadml.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/vcdadml.h
+END
+vcdactl.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/vcdactl.cpp
+END
+ppagpat1.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/ppagpat1.h
+END
+ppagpat2.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/ppagpat2.h
+END
+vcdappg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/vcdappg.cpp
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/Jamfile
+END
+calsmain.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/calsmain.cpp
+END
+vcda.sln
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/vcda.sln
+END
+stdafx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/stdafx.cpp
+END
+vcda.def
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/vcda.def
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/resource.h
+END
+vcda.rc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/vcda.rc
+END
+udlgmain.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/udlgmain.cpp
+END
+xmaphost.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/xmaphost.cpp
+END
+vcda.bin
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/vcda.bin
+END
+ppgropti.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/ppgropti.cpp
+END
+ppgrfina.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/ppgrfina.cpp
+END
+vcdadml.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/vcdadml.cpp
+END
+pagediff.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/pagediff.h
+END
+pshresto.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/pshresto.h
+END
+ppagpat1.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/ppagpat1.cpp
+END
+ppagpat2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/ppagpat2.cpp
+END
+vcda.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/vcda.dsp
+END
+vcda.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/vcda.h
+END
+vcdactl.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/vcdactl.h
+END
+vcdappg.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/vcdappg.h
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/readme.txt
+END
+calsmain.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcda_win/calsmain.h
+END

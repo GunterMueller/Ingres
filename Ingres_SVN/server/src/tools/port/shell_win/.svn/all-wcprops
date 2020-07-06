@@ -1,0 +1,461 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/tools/port/shell_win
+END
+mkfecat.bat
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/mkfecat.bat
+END
+readvers.bat
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/readvers.bat
+END
+pb_build.bat
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/pb_build.bat
+END
+pb_setup.bat
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/pb_setup.bat
+END
+fixnt.bat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/fixnt.bat
+END
+mkthinclient.bat
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/mkthinclient.bat
+END
+abfimage.bat
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/abfimage.bat
+END
+ckcopyd.bat
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/ckcopyd.bat
+END
+mkpdbdir.bat
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/mkpdbdir.bat
+END
+makestdcat.inp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/makestdcat.inp
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/MANIFEST
+END
+ingchkdate.bat
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/ingchkdate.bat
+END
+mkcol.bat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/mkcol.bat
+END
+tartools.bat
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/tartools.bat
+END
+bang.bat
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/bang.bat
+END
+pb_ckbase.bat
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/pb_ckbase.bat
+END
+deldemo.bat
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/deldemo.bat
+END
+ckcopyt.bat
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/ckcopyt.bat
+END
+makestdcat.bat
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/makestdcat.bat
+END
+purge.bat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/purge.bat
+END
+iisetup.bat
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/iisetup.bat
+END
+createap.bat
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/createap.bat
+END
+clsecret.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/clsecret.h
+END
+ts.bat
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/ts.bat
+END
+pb_readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/pb_readme.txt
+END
+ingres.bat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/ingres.bat
+END
+genrelid.bat
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/genrelid.bat
+END
+setupbin.bat
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/setupbin.bat
+END
+setclient.bat
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/setclient.bat
+END
+mkwherelist.bat
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/mkwherelist.bat
+END
+mkingusr.bat
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/mkingusr.bat
+END
+mkbzarch.bat
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/mkbzarch.bat
+END
+deltutor.bat
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/deltutor.bat
+END
+blastdb.bat
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/blastdb.bat
+END
+copyhlp.bat
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/copyhlp.bat
+END
+buildpatch.bat
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/buildpatch.bat
+END
+label.bat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/label.bat
+END
+mkclscrt.bat
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/mkclscrt.bat
+END
+pb_nt_setup.bat
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/pb_nt_setup.bat
+END
+setupmdb.bat
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/setupmdb.bat
+END
+iirebase.bat
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/iirebase.bat
+END
+mkfnx.bat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/mkfnx.bat
+END
+ccpp.bat
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/ccpp.bat
+END
+bzarch.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/bzarch.h
+END
+mkembedextras.bat
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/mkembedextras.bat
+END
+test.rfm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/test.rfm
+END
+bucode.bat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/bucode.bat
+END
+buildrel.bat
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/buildrel.bat
+END
+compileVS2005proj.bat
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/compileVS2005proj.bat
+END
+visiontutor.bat
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/visiontutor.bat
+END
+query.bat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/query.bat
+END
+dirlist.lst
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/dirlist.lst
+END
+iirunschd.inp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/iirunschd.inp
+END
+where.bat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/where.bat
+END
+buildsol.bat
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/buildsol.bat
+END
+rscode.bat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/rscode.bat
+END
+mkidir.bat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/mkidir.bat
+END
+imageapp.bat
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/imageapp.bat
+END
+pb_setenv.bat
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/pb_setenv.bat
+END
+grepall.bat
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/grepall.bat
+END
+iirunschd.bat
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/iirunschd.bat
+END
+pb_unsetenv.bat
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/pb_unsetenv.bat
+END
+users.sql
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/users.sql
+END
+gd.bat
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/gd.bat
+END
+abfdemo.bat
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/abfdemo.bat
+END
+pb_mkpdoc.bat
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/pb_mkpdoc.bat
+END
+mkpreinstallAPI.bat
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/mkpreinstallAPI.bat
+END
+fixup_64bit.bat
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/fixup_64bit.bat
+END
+mkgv.bat
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/mkgv.bat
+END
+purgelst.bat
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/purgelst.bat
+END
+ntboot.bat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/ntboot.bat
+END
+setup.template
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/setup.template
+END
+fasti.bat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/fasti.bat
+END
+fixcfg.bat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/fixcfg.bat
+END
+copyvdba.bat
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/copyvdba.bat
+END
+grepall2.bat
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_win/grepall2.bat
+END

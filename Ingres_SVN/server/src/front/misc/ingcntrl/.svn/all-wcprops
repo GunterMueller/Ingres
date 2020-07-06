@@ -1,0 +1,509 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl
+END
+dbtblfrm.frm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/dbtblfrm.frm
+END
+accessdb.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/accessdb.sh
+END
+catamenu.frm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/catamenu.frm
+END
+icrlocfm.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icrlocfm.hlp
+END
+icusrpwd.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icusrpwd.hlp
+END
+icmgr.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icmgr.hlp
+END
+locmenu.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/locmenu.qsc
+END
+extdb.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/extdb.frm
+END
+extenddb.lot
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/extenddb.lot
+END
+location.frm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/location.frm
+END
+unextenddb.lot
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/unextenddb.lot
+END
+util.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/util.c
+END
+prvfrm.frm
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/prvfrm.frm
+END
+icprivs.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icprivs.hlp
+END
+icextfrm.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icextfrm.hlp
+END
+icusr.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icusr.hlp
+END
+db.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/db.qsc
+END
+icdbpacc.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icdbpacc.hlp
+END
+icrodbfr.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icrodbfr.hlp
+END
+ctrlmenu.frm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/ctrlmenu.frm
+END
+icucats.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icucats.hlp
+END
+ictables.qsh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/ictables.qsh
+END
+icdbtbl.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icdbtbl.hlp
+END
+lpick.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/lpick.frm
+END
+global.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/global.h
+END
+iccats.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/iccats.hlp
+END
+icdbfrm.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icdbfrm.hlp
+END
+extens.frm
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/extens.frm
+END
+iciwaccg.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/iciwaccg.hlp
+END
+icelstfr.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icelstfr.hlp
+END
+icext.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icext.hlp
+END
+icinsacc.frm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icinsacc.frm
+END
+usrfrm.frm
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/usrfrm.frm
+END
+iceusrfr.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/iceusrfr.hlp
+END
+icrextfr.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icrextfr.hlp
+END
+locnew.frm
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/locnew.frm
+END
+ingcntrl.lot
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/ingcntrl.lot
+END
+icsavend.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icsavend.hlp
+END
+dbacc.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/dbacc.frm
+END
+icauthhi.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icauthhi.hlp
+END
+pwdfrm.frm
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/pwdfrm.frm
+END
+unextenddb.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/unextenddb.exe.manifest
+END
+usrtbfrm.frm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/usrtbfrm.frm
+END
+selects.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/selects.qsc
+END
+catalogdb.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/catalogdb.sh
+END
+exdbmain.sc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/exdbmain.sc
+END
+listloc.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/listloc.qsc
+END
+stat.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/stat.qsc
+END
+iclpick.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/iclpick.hlp
+END
+user.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/user.qsc
+END
+icdefacc.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icdefacc.hlp
+END
+icelocfm.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icelocfm.hlp
+END
+icdblst.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icdblst.hlp
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/Jamfile
+END
+instacc.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/instacc.qsc
+END
+icusrtbl.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icusrtbl.hlp
+END
+icdbpacc.frm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icdbpacc.frm
+END
+icusrfrm.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icusrfrm.hlp
+END
+icaccgr.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icaccgr.hlp
+END
+addlmenu.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/addlmenu.qsc
+END
+extenddb.frm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/extenddb.frm
+END
+icrusrfr.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icrusrfr.hlp
+END
+extenddb.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/extenddb.exe.manifest
+END
+icroacc.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icroacc.hlp
+END
+ingdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/ingdata.c
+END
+dbpubacc.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/dbpubacc.qsc
+END
+ctrl.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/ctrl.qsc
+END
+icdbacc.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icdbacc.hlp
+END
+nlocatio.frm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/nlocatio.frm
+END
+icdbace.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icdbace.hlp
+END
+loclist.frm
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/loclist.frm
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/README
+END
+icinsacc.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icinsacc.hlp
+END
+unexdbmain.sc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/unexdbmain.sc
+END
+credbloc.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/credbloc.qsc
+END
+icgrprol.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icgrprol.hlp
+END
+ingcntrl.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/ingcntrl.qsc
+END
+ingcntrl.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/ingcntrl.exe.manifest
+END
+iclstfrm.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/iclstfrm.hlp
+END
+usertbl.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/usertbl.qsc
+END
+eric.msg
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/eric.msg
+END
+futil.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/futil.qsc
+END
+icnlocfm.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/icnlocfm.hlp
+END
+dbfrm.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/misc/ingcntrl/dbfrm.frm
+END

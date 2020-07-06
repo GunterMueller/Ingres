@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/front/misc/impxml
+END
+SAXIngres.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/misc/impxml/SAXIngres.cpp
+END
+buildh.com
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/misc/impxml/buildh.com
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/misc/impxml/Jamfile
+END
+SAXImport.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/misc/impxml/SAXImport.cpp
+END
+SAXImportHandlers.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/misc/impxml/SAXImportHandlers.cpp
+END
+SAXIngres.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/misc/impxml/SAXIngres.hpp
+END
+impxml.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/misc/impxml/impxml.exe.manifest
+END
+SAXImport.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/misc/impxml/SAXImport.hpp
+END
+SAXImportHandlers.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/misc/impxml/SAXImportHandlers.hpp
+END

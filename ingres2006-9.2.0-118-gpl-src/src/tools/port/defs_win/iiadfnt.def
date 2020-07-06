@@ -1,0 +1,470 @@
+;
+;   History:
+;       27-May-97 (fanra01)
+;           Add change history section and add ade_lab_resolve and
+;           adi_dt_rtree.
+;	21_Oct-1997 (shero03)
+;	    Added adu_2alltobyte.
+;	16-oct-98 (mcgem01)
+;	    Add functions required for Unicenter support.
+;	23-oct-1998 (kitch01)
+;	    Bug 92735 add adu_1cvrt_date4
+;	03-nov-98 (mcgem01)
+;	    Add adt_compute_part_change
+;	15-dec-1998 (mcgem01)
+;	    Added adu_hrtimetodate()
+;	21-Jan-1999 (shero03)
+;	    Added adu_hash, adu_random, and aduuuid
+;	10-may-1999 (somsa01)
+;	    Added adu_21substrlen and adu_20substr
+;	14-jun-1999 (somsa01)
+;	    Added adu_unhex.
+;	11-Jun-1999 (shero03)
+;	    Added adu_unhex 
+;	27-sep-1999 (somsa01)
+;	    Added ade_verify_labs.
+;	18-oct-1999 (somsa01)
+;	    Added new functions from aduagstat.c .
+;	21-feb-2001 (mcgem01)
+;	    Added adu_21substrlen and adu_20substr    
+;	09-mar-2001 (mcgem01)
+;	    Added adu_nvchbld_key adu_nvchrcomp adu_nvchrcomp adu_nvchr_convert
+;	23-mar-2001 (mcgem01)
+;	    Added more nchar functions and removed duplicate.
+;	29-mar-2001 (mcgem01)
+;	    Added more nchar functions.
+;	18-apr-2001 (mcgem01)
+;	    Added adu_tableinfo.
+;	24-apr-2001 (abbjo03)
+;	    Replace adu_nvchr_like with adu_ulike.
+;	18-jul-2001 (somsa01)
+;	    Removed adu_E19a_stpop, adu_E20a_stsamp, adu_E21a_vpop,
+;	    adu_E22a_vsamp, and adu_N15a_stvar.
+;	11-oct-2001 (somsa01)
+;	    Removed adu_nvchr_size.
+;	21-oct-2001 (somsa01)
+;	    Added adu_cpmnytostr.
+;	22-may-2002 (somsa01)
+;	    As per change 456844 (thogo01), removed adc_gca_decompose,
+;	    adc_tpls, adc_decompose, adc_1tpls_rti, adc_1decompose_rti.
+;	28-jan-2004 (penga03)
+;	    Removed adu_nvchr_fromutf8, adu_nvchr_toutf8, adu_atrim, 
+;	    adu_25strposition, adu_24bitlength, adu_23octetlength and 
+;	    adu_22charlength.
+;	28-Jan-2004 (fanra01)
+;	    Add functions introduced by unicode coercion.
+;	02-feb-2004 (penga03)
+;	    Add adt_whichpart_no.
+;	15-mar-2004 (penga03)
+;	    Add adt_whichpart_range, adt_whichpart_list, adt_whichpart_hash 
+;	    and adi_castid.
+;	14-may-2004 (penga03)
+;	    Add adt_partbreak_compare.
+;	11-Jun-2004 (drivi01)
+;	    Added ordinals.
+;	29-Jun-2004 (drivi01)
+;	    Removed duplicates for functions adu_unhex, adu_cpmnytostr,
+;	    adu_1int_coerce, adu_1flt_coerce, adu_2strtomny, adu_1dec_coerce,
+;	    adu_14strtodate, adu_1strtostr.
+;
+EXPORTS
+adb_breakpoint		@1				
+adb_optab_print		@2				
+adb_trace		@3				
+adc_bit_compare		@4				
+adc_byte_compare	@5				
+adc_compare		@6				
+adc_compr		@7				
+adc_dec_compare		@8				
+adc_float_compare	@9				
+adc_int_compare		@10				
+adc_cvinto		@11				
+adc_date_add		@12				
+adc_date_chk		@13				
+adc_1dbtoev_ingres	@14				
+adc_dbtoev		@15				
+adc_defchk		@16				
+adc_1getempty_rti	@17				
+adc_getempty		@18				
+adc_1hashprep_rti	@19				
+adc_hashprep		@20				
+adc_hdec		@21				
+adc_1helem_rti		@22				
+adc_helem		@23				
+adc_1hg_dtln_rti	@24				
+adc_hg_dtln		@25				
+adc_1dhmax_rti		@26				
+adc_1hmax_rti		@27				
+adc_dhmax		@28				
+adc_hmax		@29				
+adc_1hmin_rti		@30				
+adc_2dhmin_rti		@31				
+adc_dhmin		@32				
+adc_hmin		@33				
+adc_1isminmax_rti	@34				
+adc_isminmax		@35				
+adc_isnull		@36				
+adc_keybld		@37				
+adc_1klen_rti		@38				
+adc_2kcvt_rti		@39				
+adc_kcvt		@40				
+adc_klen		@41				
+adc_1lenchk_rti		@42				
+adc_2lenchk_bool	@43				
+adc_lenchk		@44				
+adc_seglen		@45				
+adc_1minmaxdv_rti	@46				
+adc_minmaxdv		@47				
+adc_lvch_xform		@48				
+adc_xform		@49				
+adc_1tmlen_rti		@50				
+adc_2tmcvt_rti		@51				
+adc_tmcvt		@52				
+adc_tmlen		@53				
+adc_1valchk_rti		@54				
+adc_valchk		@55				
+ade_bgn_comp		@56				
+ade_const_gen		@57				
+ade_cx_space		@58				
+ade_cxinfo		@59				
+ade_end_comp		@60				
+ade_inform_space	@61				
+ade_instr_gen		@62				
+ade_cx_print		@63				
+ade_cxbrief_print	@64				
+ade_countstar_loc	@65				
+ade_execute_cx		@66				
+ade_lab_resolve		@67				
+ade_verify_labs		@68				
+ade_vlt_space		@69				
+afc_bgn_comp		@70				
+afc_cx_space		@71				
+afc_cxinfo		@72				
+afc_end_comp		@73				
+afc_inform_space	@74				
+afc_instr_gen		@75				
+afc_cxhead_init		@76				
+afc_cx_print		@77				
+afc_cxbrief_print	@78				
+afc_countstar_loc	@79				
+afc_execute_cx		@80				
+adf_agbegin		@81				
+adf_agend		@82				
+adf_agnext		@83				
+adf_exec_quick		@84				
+adf_func		@85				
+adg_add_fexi		@86				
+adg_init		@87				
+adg_release		@88				
+adg_shutdown		@89				
+adg_augment		@90				
+adg_srv_size		@91				
+adg_startup		@92				
+adg_sz_augment		@93				
+adg_vlup_setnull	@94				
+adi_0calclen		@95				
+adi_calclen		@96				
+adi_encode_colspec	@97				
+adi_dtinfo		@98				
+adi_dt_rtree		@99				
+adi_per_under		@100				
+adi_cpficoerce		@101				
+adi_ficoerce		@102				
+adi_fidesc		@103				
+adi_fitab		@104				
+adi_function		@105				
+adi_opid		@106				
+adi_op_info		@107				
+adi_opname		@108				
+adi_pm_encode		@109				
+adi_res_type		@110				
+adi_resolve		@111				
+adi_tycoerce		@112				
+adi_tyid		@113				
+adi_tyname		@114				
+adt_compute_change	@115				
+adt_keytupcmp		@116				
+adt_kkcmp		@117				
+adt_ktktcmp		@118				
+adt_sortcmp		@119				
+adt_tupcmp		@120				
+adu_perm_type		@121				
+adu_B0a_noagwork	@122				
+adu_E0a_anycount	@123				
+adu_N1a_any		@124				
+adu_N2a_count		@125				
+adu_B0d_minmax_date	@126				
+adu_E0d_minmax_date	@127				
+adu_E3d_avg_date	@128				
+adu_E4d_sum_date	@129				
+adu_N0d_tot_date	@130				
+adu_N5d_min_date	@131				
+adu_N6d_max_date	@132				
+adu_B0n_agg_dec		@133				
+adu_E0n_minmax_dec	@134				
+adu_E3n_avg_dec		@135				
+adu_E4n_sum_dec		@136				
+adu_N3n_avg_dec		@137				
+adu_N4n_sum_dec		@138				
+adu_N5n_min_dec		@139				
+adu_N6n_max_dec		@140				
+adu_E0f_minmax_f	@141				
+adu_E3f_avg_f		@142				
+adu_E4f_sum_f		@143				
+adu_N3f_avg_f		@144				
+adu_N4f_sum_f		@145				
+adu_N5f_min_f		@146				
+adu_N6f_max_f		@147				
+adu_E0i_minmax_i	@148				
+adu_E3i_avg_i		@149				
+adu_E4i_sum_i		@150				
+adu_N3i_avg_i		@151				
+adu_N4i_sum_i		@152				
+adu_N5i_min_i		@153				
+adu_N6i_max_i		@154				
+adu_B0l_minmax_logk	@155				
+adu_E0l_minmax_logk	@156				
+adu_N5l_min_logk	@157				
+adu_N6l_max_logk	@158				
+adu_E0m_minmax_mny	@159				
+adu_E3m_avg_mny		@160				
+adu_E4m_sum_mny		@161				
+adu_N3m_avg_mny		@162				
+adu_N4m_sum_mny		@163				
+adu_N5m_min_mny		@164				
+adu_N6m_max_mny		@165				
+adu_B0s_minmax_str	@170				
+adu_E0s_minmax_str	@171				
+adu_N5s_min_str		@172				
+adu_N6s_max_str		@173				
+adu_E18a_rsyy		@174				
+adu_N14a_rsyy		@175				
+adu_E17a_rsxy		@176				
+adu_E16a_rsxx		@177				
+adu_N13a_rsxx		@178				
+adu_E15a_rslope		@179				
+adu_E14a_rr2		@180				
+adu_E13a_rint		@181				
+adu_N12a_rintsl		@182				
+adu_E12a_rcnt		@183				
+adu_N11a_rcnt		@184				
+adu_E11a_ravgy		@185				
+adu_N10a_ravgy		@186				
+adu_E10a_ravgx		@187				
+adu_N9a_ravgx		@188				
+adu_E9a_csamp		@189				
+adu_E8a_cpop		@190				
+adu_N8a_covsxy		@191				
+adu_E7a_corr		@192				
+adu_N7a_corrr2		@193				
+adu_ascii		@194				
+adu_ascii_2arg		@195				
+adu_copascii		@196				
+adu_cpmnytostr		@197				
+adu_bit2str		@198				
+adu_bitlength		@199				
+adu_bitsize		@200				
+adu_mb_move_bits	@201				
+adu_str2bit		@202				
+adu_2alltobyte		@203				
+adu_1monthcheck		@204				
+adu_2monthsize		@205				
+adugcmp			@206			
+adu_1dec_coerce		@207				
+adu_1flt_coerce		@208				
+adu_pad			@210				
+adu_squeezewhite	@211				
+adu_trim		@212				
+adu_couponify		@213				
+adu_cvtime		@214				
+ad0_13tab_look		@215				
+adu_1date_addu		@217				
+adu_1dayofweek		@218				
+adu_2datetodate		@219				
+adu_3datehmap		@220				
+adu_6datetostr		@221				
+adu_7date_subu		@222				
+adu_dextract		@223				
+adu_dgmt		@224				
+adu_dtruncate		@225				
+adu_intrvl_in		@226				
+adu_dbconst		@227				
+adu_dbmsinfo		@228				
+adu_2dec_convert	@229				
+adu_error		@230				
+adu_ome_error		@231				
+adu_datenow		@232				
+adu_allocated_pages	@233				
+adu_overflow_pages	@234				
+adu_peripheral		@235				
+adu_restab		@236				
+adu_hex			@237				
+adu_unhex		@238				
+adu_hxnum		@239				
+adu_ifnull		@241				
+adu_iftrue		@242				
+adu_2int_pow		@243				
+adu_bbldkey		@244				
+adu_bitbldkey		@245				
+adu_cbldkey		@246				
+adu_dbldkey		@247				
+adu_decbldkey		@248				
+adu_fbldkey		@249				
+adu_ibldkey		@250				
+adu_mbldkey		@251				
+aducolinit		@253				
+adulccmp		@254				
+adultrans		@255				
+adu_1normldate		@256				
+adu_2normldint		@257				
+adu_3day_of_date	@258				
+adu_4date_cmp		@259				
+adu_5time_of_date	@260				
+adu_dlenchk		@261				
+adu_1logkey_cmp		@262				
+adu_2logkeytologkey	@263				
+adu_3logkeytostr	@264				
+adu_4strtologkey	@265				
+adu_5logkey_exp		@266				
+adu_6mny_cmp		@267				
+adu_0lo_setup_workspace	@268				
+adu_11lvch_concat	@269				
+adu_3lvch_upper		@270				
+adu_5lvch_lower		@271				
+adu_7lvch_left		@272				
+adu_9lvch_right		@273				
+adu_free_objects	@274				
+adu_lo_delete		@275				
+adu_lo_filter		@276				
+adu_10mny_multu		@277				
+adu_11mny_round		@278				
+adu_12mny_subu		@279				
+adu_1mnytonum		@280				
+adu_2mnytomny		@281				
+adu_3mny_absu		@283				
+adu_4mny_addu		@284				
+adu_5mnyhmap		@285				
+adu_7mny_divf		@286				
+adu_8mny_divu		@287				
+adu_9mnytostr		@288				
+adu_negmny		@290				
+adu_numtomny		@291				
+adu_posmny		@292				
+ad0_3clexc_pm		@293				
+ad0_llike		@294				
+adu_2prvalue		@295				
+adu_prdv		@296				
+adu_prinstr		@297				
+adu_prtype		@298				
+adu_prvalarg		@299				
+adu_prvalue		@300				
+adu_iitblstat		@301				
+adu_sesspriv		@302				
+adu_cpn_dump		@303				
+adu_lolk		@304				
+adu_redeem		@305				
+adu_ccmp		@337				
+adu_lexcomp		@338				
+adu_like		@339				
+adu_textcmp		@340				
+adu_varcharcmp		@341				
+cmicmpcaselen		@342				
+adu_10strright		@343				
+adu_11strshift		@344				
+adu_12strsize		@345				
+adu_13strtocstr		@346				
+adu_15strupper		@347				
+adu_16strindex		@348				
+adu_17structure		@349				
+adu_18cvrt_gmt		@350				
+adu_19strsoundex	@351				
+adu_1cvrt_date		@352				
+adu_1cvrt_date4		@353				
+adu_2cvrt_time		@355				
+adu_4strconcat		@356				
+adu_6strleft		@357				
+adu_7strlength		@358				
+adu_8strlocate		@359				
+adu_9strlower		@360				
+adu_lvch_move		@361				
+adu_notrm		@362				
+adu_xyzzy		@363				
+adu_3straddr		@364				
+adu_5strcount		@365				
+adu_lenaddr		@366				
+adu_movestring		@367				
+adu_size		@368				
+adu_di2tb		@369				
+adu_tb2di		@370				
+adu_dvdsc		@371				
+adu_extlength		@372				
+adu_exttype		@373				
+adu_typename		@374				
+adu_userlen		@375				
+adu_lvarcharcmp		@376				
+adx_chkwarn		@377				
+adx_handler		@378				
+adu_intextract		@379				
+adu_ipaddr		@380				
+adu_bit_xor		@381				
+adu_bit_or		@382				
+adu_bit_not		@383				
+adu_bit_and		@384				
+adu_bit_add		@385				
+adt_compute_part_change	@386				
+adu_hrtimetodate	@387				
+adu_hash		@388				
+adu_random		@389				
+adu_randomf		@390				
+adu_random_range	@391				
+adu_randomf_range	@392				
+adu_randomf_rangef	@393				
+adu_uuid_create		@394				
+adu_uuid_from_char	@395				
+adu_uuid_to_char	@396				
+adu_uuid_compare	@397				
+adu_21substrlen		@398				
+adu_20substr		@399				
+adu_nvchbld_key		@400				
+adu_nvchrcomp		@401				
+adu_nvchr_convert	@402				
+adu_nvchr_coerce	@403				
+adu_nvchr_trim		@404				
+adu_nvchr_length	@405				
+adu_nvchr_right		@406				
+adu_nvchr_left		@407				
+adu_nvchr_concat	@408				
+adu_ulike		@409				
+adu_1int_coerce		@410				
+adu_2strtomny		@412				
+adu_14strtodate		@414				
+adu_1strtostr		@415				
+adu_nvchr_substr2	@416				
+adu_nvchr_substr1	@417				
+adu_nvchr_charextract	@418				
+adu_nvchr_squeezewhite	@419				
+adu_nvchr_shift		@420				
+adu_nvchr_pad		@421				
+adu_nvchr_locate	@422				
+aduucolinit		@423				
+adu_tableinfo		@424				
+adu_nvchr_fromutf8	@425				
+adu_nvchr_toutf8	@426				
+adu_atrim		@427				
+adu_25strposition	@428				
+adu_24bitlength		@429				
+adu_23octetlength	@430				
+adu_22charlength	@431				
+adu_map_get_chartouni	@432				
+adu_map_check_validity	@433				
+adu_map_get_unitochar	@434				
+adu_readmap		@435				
+adu_getconverter	@436				
+adu_deletemap		@437				
+adt_vvcmp		@438				
+adt_whichpart_no	@439				
+adt_whichpart_range	@440				
+adt_whichpart_list	@441				
+adt_whichpart_hash	@442				
+adi_castid		@443				
+adt_partbreak_compare	@444				

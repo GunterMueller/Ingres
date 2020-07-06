@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/ingres/!svn/ver/1/main/src/back/scf/udt
+END
+ii_alladt_build.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/back/scf/udt/ii_alladt_build.dcl
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/scf/udt/MANIFEST
+END
+iiuseradt.lot
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/back/scf/udt/iiuseradt.lot
+END
+ii_useradt_build.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/back/scf/udt/ii_useradt_build.dcl
+END
+ii_useradt_xfer.mar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/back/scf/udt/ii_useradt_xfer.mar
+END
+iiuseradt.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/scf/udt/iiuseradt.c
+END
+ii_clsadt_build.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/back/scf/udt/ii_clsadt_build.dcl
+END
+iiclsadt.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/scf/udt/iiclsadt.c
+END

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/st/install_vms
+END
+buildrel.lot
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/install_vms/buildrel.lot
+END
+kitinstal.com
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/install_vms/kitinstal.com
+END
+kitinstal_axmdbl.data
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/front/st/install_vms/kitinstal_axmdbl.data
+END
+ingres_installations.dat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/front/st/install_vms/ingres_installations.dat
+END
+kitinstal_axp.data
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/st/install_vms/kitinstal_axp.data
+END
+buildrel.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/install_vms/buildrel.c
+END
+kitinstal_axpdbl.data
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/front/st/install_vms/kitinstal_axpdbl.data
+END
+ingres_startup.com
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/st/install_vms/ingres_startup.com
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/st/install_vms/Jamfile
+END
+ii_installs.com
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/st/install_vms/ii_installs.com
+END
+ipcl.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/st/install_vms/ipcl.c
+END
+delete_files.dat
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/st/install_vms/delete_files.dat
+END
+iipatch.com
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/install_vms/iipatch.com
+END

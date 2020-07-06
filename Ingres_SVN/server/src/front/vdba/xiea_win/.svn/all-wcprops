@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/3/main/src/front/vdba/xiea_win
+END
+stdafx.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/xiea_win/stdafx.h
+END
+iea.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/3/main/src/front/vdba/xiea_win/iea.cpp
+END
+mainfrm.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/xiea_win/mainfrm.h
+END
+iea.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/3/main/src/front/vdba/xiea_win/iea.dsp
+END
+iea.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/3/main/src/front/vdba/xiea_win/iea.h
+END
+parsearg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/xiea_win/parsearg.cpp
+END
+iea.sln
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/3/main/src/front/vdba/xiea_win/iea.sln
+END
+parsearg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/xiea_win/parsearg.h
+END
+view.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/xiea_win/view.cpp
+END
+view.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/3/main/src/front/vdba/xiea_win/view.h
+END
+iea.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/xiea_win/iea.vcproj
+END
+iea.rc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/3/main/src/front/vdba/xiea_win/iea.rc
+END
+iea.bin
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/3/main/src/front/vdba/xiea_win/iea.bin
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/3/main/src/front/vdba/xiea_win/Jamfile
+END
+mainfrm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/xiea_win/mainfrm.cpp
+END
+stdafx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/xiea_win/stdafx.cpp
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/xiea_win/readme.txt
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/xiea_win/resource.h
+END

@@ -1,0 +1,5 @@
+;  History:
+;	11-Jun-2004 (drivi01)
+;	    Added ordinals.
+EXPORTS
+Tpf_svcb_p		@1	DATA			

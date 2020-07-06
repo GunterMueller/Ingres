@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/misc/diag_unix_vms
+END
+scrview.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/misc/diag_unix_vms/scrview.lfm
+END
+mkexcept.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/misc/diag_unix_vms/mkexcept.c
+END
+idbg.lot
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/misc/diag_unix_vms/idbg.lot
+END
+screen.sc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/misc/diag_unix_vms/screen.sc
+END
+scrshow.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/misc/diag_unix_vms/scrshow.lfm
+END
+idbg.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/misc/diag_unix_vms/idbg.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/misc/diag_unix_vms/Jamfile
+END
+chkpriv.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/misc/diag_unix_vms/chkpriv.c
+END
+screxprt.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/misc/diag_unix_vms/screxprt.lfm
+END
+scrmain.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/misc/diag_unix_vms/scrmain.lfm
+END
+iiexcept.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/misc/diag_unix_vms/iiexcept.c
+END
+mkexcept.lot
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/misc/diag_unix_vms/mkexcept.lot
+END
+scradd.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/misc/diag_unix_vms/scradd.lfm
+END

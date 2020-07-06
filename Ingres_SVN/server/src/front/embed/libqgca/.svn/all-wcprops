@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/front/embed/libqgca
+END
+cgcaltrd.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/embed/libqgca/cgcaltrd.c
+END
+cgcassoc.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/embed/libqgca/cgcassoc.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/embed/libqgca/Jamfile
+END
+cgcdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/embed/libqgca/cgcdata.c
+END
+cgccopy.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/embed/libqgca/cgccopy.c
+END
+cgcwrite.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/embed/libqgca/cgcwrite.c
+END
+cgcread.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/embed/libqgca/cgcread.c
+END
+cgctrace.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/embed/libqgca/cgctrace.c
+END
+cgcutils.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/embed/libqgca/cgcutils.c
+END

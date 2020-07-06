@@ -1,0 +1,305 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr
+END
+duvedpnd.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duvedpnd.sh
+END
+duu.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duu.h
+END
+duveacc.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duveacc.sh
+END
+duveatt.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duveatt.sh
+END
+duveint.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duveint.sh
+END
+dusdb.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/dusdb.h
+END
+upgradedb.qsh
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/upgradedb.qsh
+END
+duve.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duve.h
+END
+duvexdbp.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duvexdbp.sh
+END
+duvedef.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duvedef.sh
+END
+duvepro.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duvepro.sh
+END
+duveext.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duveext.sh
+END
+duustrings.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duustrings.h
+END
+duveprof.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duveprof.sh
+END
+duveindex.sh
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duveindex.sh
+END
+duverule.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duverule.sh
+END
+duvesyn.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duvesyn.sh
+END
+duvealm.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duvealm.sh
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/MANIFEST
+END
+duvestat.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duvestat.sh
+END
+duvecdbs.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duvecdbs.sh
+END
+duvedbx.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duvedbx.sh
+END
+duenv.qsh
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duenv.qsh
+END
+duvedev.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duvedev.sh
+END
+duvepriv.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duvepriv.sh
+END
+duverel.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duverel.sh
+END
+duvedb.sh
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duvedb.sh
+END
+duvekey.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duvekey.sh
+END
+duvexdp.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duvexdp.sh
+END
+duucatdef.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duucatdef.h
+END
+duvetree.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duvetree.sh
+END
+dustar.qsh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/dustar.qsh
+END
+duvexprv.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duvexprv.sh
+END
+duvecmnt.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duvecmnt.sh
+END
+duvegwat.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duvegwat.sh
+END
+duvexev.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duvexev.sh
+END
+dub.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/dub.h
+END
+duveproc.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duveproc.sh
+END
+duveridx.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duveridx.sh
+END
+duvehist.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duvehist.sh
+END
+duveprv.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duveprv.sh
+END
+ducdb.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/ducdb.h
+END
+duvegwrl.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duvegwrl.sh
+END
+duveqry.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duveqry.sh
+END
+duvevent.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duvevent.sh
+END
+duveloc.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duveloc.sh
+END
+duveugrp.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duveugrp.sh
+END
+duveuser.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duveuser.sh
+END
+duddb.qsh
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duddb.qsh
+END
+duvecdbx.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/dbutil/duf/hdr/duvecdbx.sh
+END

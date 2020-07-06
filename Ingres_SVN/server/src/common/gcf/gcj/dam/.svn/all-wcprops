@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/dam
+END
+MsgConn.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/dam/MsgConn.java
+END
+TlConst.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/dam/TlConst.java
+END
+InBuff.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/dam/InBuff.java
+END
+IoBuff.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/dam/IoBuff.java
+END
+OutBuff.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/dam/OutBuff.java
+END
+MsgConst.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/dam/MsgConst.java
+END
+MsgIn.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/dam/MsgIn.java
+END
+MsgIo.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/dam/MsgIo.java
+END
+MsgOut.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/dam/MsgOut.java
+END

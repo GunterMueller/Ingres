@@ -1,0 +1,26 @@
+/*
+** Copyright (c) 2004 Ingres Corporation
+*/
+/*
+**  Generic part file for API64
+*/
+
+/*
+** History
+**	06-sep-2002 (somsa01)
+**	    Created from 32-bit version.
+**	30-Jun-2004 (hanje04)
+**	    Add missing #endif
+*/ 
+
+PART	api64
+
+# ifdef FULL_RELEASE
+/*
+** ingres!lib!lp64
+*/
+   DIRECTORY (PROD2NAME)!lib!lp64
+   BUILD_DIR (ING_BUILD)!lib!lp64
+      FILE lib(PROG1PRFX)api.a
+# endif
+

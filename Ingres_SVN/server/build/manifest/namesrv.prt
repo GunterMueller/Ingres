@@ -1,0 +1,10 @@
+PART  name-server
+   DIRECTORY ingres!bin
+   BUILD_DIR (ING_BUILD)!bin
+      EXECUTABLE iigcn
+      EXECUTABLE iinamu
+      EXECUTABLE iigcstop
+   DIRECTORY ingres!files!name
+   BUILD_DIR (ING_BUILD)!files!name
+      FILE iiname.all
+         DYNAMIC 

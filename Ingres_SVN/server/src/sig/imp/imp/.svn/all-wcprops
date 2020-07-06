@@ -1,0 +1,371 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/ingres/!svn/ver/1/main/src/sig/imp/imp
+END
+impdmf.sc
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/sig/imp/imp/impdmf.sc
+END
+impserver.sc
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/sig/imp/imp/impserver.sc
+END
+impio.sc
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/sig/imp/imp/impio.sc
+END
+imp_lk_list.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_lk_list.lfm
+END
+imp.sql
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp.sql
+END
+imp_server_list.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_server_list.lfm
+END
+impslave.sc
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/sig/imp/imp/impslave.sc
+END
+imprdf.sc
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imprdf.sc
+END
+imp_lock_summary.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_lock_summary.lfm
+END
+imp_session_detail.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_session_detail.lfm
+END
+imp_lg_address.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_lg_address.lfm
+END
+imp_gcc_info.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_gcc_info.lfm
+END
+imp_transaction_detail.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_transaction_detail.lfm
+END
+imp_main_menu.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_main_menu.lfm
+END
+impinter.sc
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/sig/imp/imp/impinter.sc
+END
+imp_lg_header.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_lg_header.lfm
+END
+imp_query_forms.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_query_forms.lfm
+END
+impmain.sc
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/sig/imp/imp/impmain.sc
+END
+imp_dmf.incl
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_dmf.incl
+END
+imp_session_list.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_session_list.lfm
+END
+imp_lg_summary.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_lg_summary.lfm
+END
+impcommon.sc
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/sig/imp/imp/impcommon.sc
+END
+imp_lk_tx.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_lk_tx.lfm
+END
+imp_res_locks.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_res_locks.lfm
+END
+imp_res_list.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_res_list.lfm
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/sig/imp/imp/MANIFEST
+END
+imp_client_info.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_client_info.lfm
+END
+README.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/sig/imp/imp/README.TXT
+END
+imp_gcn_info.incl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_gcn_info.incl
+END
+imp_server_diag.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_server_diag.lfm
+END
+ima_rdf_cache_info.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/sig/imp/imp/ima_rdf_cache_info.lfm
+END
+ima_dio.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/sig/imp/imp/ima_dio.lfm
+END
+ima_qsf_rqp.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/sig/imp/imp/ima_qsf_rqp.lfm
+END
+ima_qsf_dbp.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/sig/imp/imp/ima_qsf_dbp.lfm
+END
+impgcn.sc
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/sig/imp/imp/impgcn.sc
+END
+imp_lk_locks.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_lk_locks.lfm
+END
+implocks.sc
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/sig/imp/imp/implocks.sc
+END
+makefile.w32
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/sig/imp/imp/makefile.w32
+END
+imp_dmf_cache_stats.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_dmf_cache_stats.lfm
+END
+imp_server_parms.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_server_parms.lfm
+END
+imp_lg_databases.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_lg_databases.lfm
+END
+implog.sc
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/sig/imp/imp/implog.sc
+END
+imp.mak
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp.mak
+END
+README.lnx
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/sig/imp/imp/README.lnx
+END
+ima_qsf_cache_stats.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/sig/imp/imp/ima_qsf_cache_stats.lfm
+END
+impdbcon.sc
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/sig/imp/imp/impdbcon.sc
+END
+imp_transaction_hexdump.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_transaction_hexdump.lfm
+END
+impstatic.sc
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/sig/imp/imp/impstatic.sc
+END
+impqsf.sc
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/sig/imp/imp/impqsf.sc
+END
+ima_di_slave_info.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/sig/imp/imp/ima_di_slave_info.lfm
+END
+impfrs.sc
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/sig/imp/imp/impfrs.sc
+END
+impstart.sc
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/sig/imp/imp/impstart.sc
+END
+imp_lg_menu.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_lg_menu.lfm
+END
+imp_lg_processes.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_lg_processes.lfm
+END
+imp.forms
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp.forms
+END
+imp.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp.h
+END
+imp_server_popup.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_server_popup.lfm
+END
+imp_lk_menu.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_lk_menu.lfm
+END
+imp_lg_transactions.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_lg_transactions.lfm
+END
+imp_dmfcache.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/sig/imp/imp/imp_dmfcache.lfm
+END
+makefile.lnx
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/sig/imp/imp/makefile.lnx
+END

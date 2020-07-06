@@ -1,0 +1,15 @@
+#
+# Jamfile file for dbutil!duf!dus
+#
+
+SubDir ING_SRC dbutil duf dus ;
+
+IISUBSYS dbutil duf dus ;
+
+
+IIBINEXE sysmod : dusysmod.qsc ;
+IINEEDLIBS sysmod : DBUTILLIB SHQLIB ULFLIB SHCOMPATLIB SHFRAMELIB ;
+IINEEDLIBSW sysmod : SHEMBEDLIB CUFLIB ;
+
+
+IILIBRARY DBUTILLIB : dusutil.c dusdata.c ;

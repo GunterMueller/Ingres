@@ -1,0 +1,3 @@
+PART  messages64
+   BUILD_DIR (ING_BUILD)!files!english!lp64
+      FILE rtiforms.fnx

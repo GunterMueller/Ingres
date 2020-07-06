@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/ingres/!svn/ver/1/main/src/gl/glf/megl
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/gl/glf/megl/Jamfile
+END
+megltls.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/gl/glf/megl/megltls.c
+END
+metag.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/gl/glf/megl/metag.c
+END

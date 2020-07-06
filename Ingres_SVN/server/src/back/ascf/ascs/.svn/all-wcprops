@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/ingres/!svn/ver/1/main/src/back/ascf/ascs
+END
+ascsscan.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/ascf/ascs/ascsscan.c
+END
+ascsformat.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/back/ascf/ascs/ascsformat.c
+END
+ascssvc.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/ascf/ascs/ascssvc.c
+END
+ascstok.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/ascf/ascs/ascstok.c
+END
+ascsbuild.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/back/ascf/ascs/ascsbuild.c
+END
+ascsint.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/ascf/ascs/ascsint.h
+END
+ascstok.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/ascf/ascs/ascstok.h
+END
+ascsinit.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/ascf/ascs/ascsinit.c
+END
+ascsproc.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/ascf/ascs/ascsproc.c
+END
+ascsqncr.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/ascf/ascs/ascsqncr.c
+END
+ascsgcaint.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/back/ascf/ascs/ascsgcaint.c
+END
+ascsquery.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/back/ascf/ascs/ascsquery.c
+END
+ascseauth.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/back/ascf/ascs/ascseauth.c
+END
+ascsdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/ascf/ascs/ascsdata.c
+END
+ascsmo.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/ascf/ascs/ascsmo.c
+END
+ascsdbfcn.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/back/ascf/ascs/ascsdbfcn.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/ascf/ascs/Jamfile
+END
+ascsstub.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/ascf/ascs/ascsstub.c
+END
+ascsmntr.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/ascf/ascs/ascsmntr.c
+END

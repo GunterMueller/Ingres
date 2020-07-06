@@ -1,0 +1,335 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/ingres/!svn/ver/1/main/src/common/adf/adn
+END
+ca-ibmpc850-latin1-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-ibmpc850-latin1-2004.xml
+END
+ca-iso8859-2-latin2-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-iso8859-2-latin2-2004.xml
+END
+ca-win1251-cyrillic-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-win1251-cyrillic-2004.xml
+END
+charactermapping.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/adf/adn/charactermapping.dtd
+END
+default.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/adf/adn/default.xml
+END
+charactermappingaliases.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/adf/adn/charactermappingaliases.dtd
+END
+charmapalias.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/common/adf/adn/charmapalias.xml
+END
+ca-ibm866-cyrillic-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-ibm866-cyrillic-2004.xml
+END
+ca-euckr-kr-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-euckr-kr-2004.xml
+END
+ca-iso8859-9-turkish-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-iso8859-9-turkish-2004.xml
+END
+ca-ibm867-hebrew-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-ibm867-hebrew-2004.xml
+END
+ca-iso8859-7-greek-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-iso8859-7-greek-2004.xml
+END
+ca-ibm864-arabic-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-ibm864-arabic-2004.xml
+END
+ca-ibm1251-cyrillic-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-ibm1251-cyrillic-2004.xml
+END
+ca-gbk-csgbk-cn-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-gbk-csgbk-cn-2004.xml
+END
+ca-euccn-gb2312-cn-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-euccn-gb2312-cn-2004.xml
+END
+ca-elot437-cp851-greek-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-elot437-cp851-greek-2004.xml
+END
+ca-cp950-big5_euro-cht-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-cp950-big5_euro-cht-2004.xml
+END
+ca-cp874-thai_euro-th-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-cp874-thai_euro-th-2004.xml
+END
+ca-win1250-latin2-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-win1250-latin2-2004.xml
+END
+ca-ibm858-latin1_euro-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-ibm858-latin1_euro-2004.xml
+END
+ca-pc857-turkish-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-pc857-turkish-2004.xml
+END
+ca-cp943c-shiftjis-jp-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-cp943c-shiftjis-jp-2004.xml
+END
+ca-ibm1255-hebrew-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-ibm1255-hebrew-2004.xml
+END
+ca-euctw-chteuc-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-euctw-chteuc-2004.xml
+END
+ca-ibmpc437-pcus-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-ibmpc437-pcus-2004.xml
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/common/adf/adn/Jamfile
+END
+ca-cp949-cn-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-cp949-cn-2004.xml
+END
+ca-iso8859-15-latin9-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-iso8859-15-latin9-2004.xml
+END
+ca-ibm869-greek-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-ibm869-greek-2004.xml
+END
+ca-tis620-wthai-th-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-tis620-wthai-th-2004.xml
+END
+ca-iso8859-1-latin1-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-iso8859-1-latin1-2004.xml
+END
+ca-cp856-hebrew_old-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-cp856-hebrew_old-2004.xml
+END
+ca-us-ascii-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-us-ascii-2004.xml
+END
+ca-win1256-warabic-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-win1256-warabic-2004.xml
+END
+ca-hproman8-latin1-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-hproman8-latin1-2004.xml
+END
+ca-koi8-cyrillic-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-koi8-cyrillic-2004.xml
+END
+ca-gb2312-80-cn-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-gb2312-80-cn-2004.xml
+END
+ca-ksc5601-korean-kr-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-ksc5601-korean-kr-2004.xml
+END
+ca-ebcdic-ibm37-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-ebcdic-ibm37-2004.xml
+END
+ca-cp852-slav852-latin2-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-cp852-slav852-latin2-2004.xml
+END
+ca-ebcdic-xml-us-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-ebcdic-xml-us-2004.xml
+END
+ca-ibm367-ascii-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-ibm367-ascii-2004.xml
+END
+ca-win1252-latin1-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-win1252-latin1-2004.xml
+END
+ca-win1253-greek_euro-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-win1253-greek_euro-2004.xml
+END
+ca-ibm855-alt-cyrillic-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-ibm855-alt-cyrillic-2004.xml
+END
+ca-win1254-turkish-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-win1254-turkish-2004.xml
+END
+ca-big5-cht-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-big5-cht-2004.xml
+END
+ca-iso8859-5-cyrillic-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-iso8859-5-cyrillic-2004.xml
+END
+ca-ibm862-pchebrew-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-ibm862-pchebrew-2004.xml
+END
+ca-eucjp-kanjieuc-jp-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-eucjp-kanjieuc-jp-2004.xml
+END
+ca-iso8859-8-hebrew-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-iso8859-8-hebrew-2004.xml
+END
+ca-iso8859-6-arabic-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-iso8859-6-arabic-2004.xml
+END
+ca-big5-hkscs-cht-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-big5-hkscs-cht-2004.xml
+END
+ca-win1255-whebrew-2004.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/adf/adn/ca-win1255-whebrew-2004.xml
+END

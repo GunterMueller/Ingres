@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/tools/port/shell_vms
+END
+mkidir.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/shell_vms/mkidir.dcl
+END
+ccpp.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/tools/port/shell_vms/ccpp.dcl
+END
+rendupfil.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/shell_vms/rendupfil.dcl
+END
+genrelid.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_vms/genrelid.dcl
+END
+sedccpp.sed
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_vms/sedccpp.sed
+END
+mkkitinstal.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/tools/port/shell_vms/mkkitinstal.dcl
+END
+inglink.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_vms/inglink.dcl
+END
+mktoolsaveset.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/tools/port/shell_vms/mktoolsaveset.dcl
+END
+yypp.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/tools/port/shell_vms/yypp.dcl
+END
+mkbzarch.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_vms/mkbzarch.dcl
+END
+mksaveset.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/shell_vms/mksaveset.dcl
+END
+mkgeneric.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/shell_vms/mkgeneric.dcl
+END
+mkgv.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/tools/port/shell_vms/mkgv.dcl
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/tools/port/shell_vms/Jamfile
+END
+whatunix.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_vms/whatunix.dcl
+END
+mkfecat.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/shell_vms/mkfecat.dcl
+END
+readvers.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_vms/readvers.dcl
+END
+mkshlibs.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_vms/mkshlibs.dcl
+END
+mkdefault.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/shell_vms/mkdefault.dcl
+END
+mksecret.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/shell_vms/mksecret.dcl
+END
+shlibinfo.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/shell_vms/shlibinfo.dcl
+END

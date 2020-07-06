@@ -1,0 +1,24 @@
+/*
+** Copyright (c) 2004 Ingres Corporation
+*/
+/*
+** Generic part file for invisible uadt-build64 package
+*/
+
+/*
+** History
+**	06-sep-2002 (somsa01)
+**	    Created from 32-bit version.
+**	12-May-2005 (hanje04)
+**	    Remove lp64/iimerge.o as it's also in dbms64
+*/
+
+PART  uadtsup64
+
+/*
+** ingres!lib!lp64
+*/
+   DIRECTORY ingres!lib!lp64
+   BUILD_DIR (ING_BUILD)!lib!lp64
+      FILE iiuseradt.o
+      FILE iiclsadt.o

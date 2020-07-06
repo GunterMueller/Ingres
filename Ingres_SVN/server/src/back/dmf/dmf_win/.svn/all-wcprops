@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/ingres/!svn/ver/1/main/src/back/dmf/dmf_win
+END
+fastload.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/back/dmf/dmf_win/fastload.exe.manifest
+END
+infodb.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/dmf/dmf_win/infodb.c
+END
+infodb.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/back/dmf/dmf_win/infodb.exe.manifest
+END
+rollforwarddb.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/back/dmf/dmf_win/rollforwarddb.exe.manifest
+END
+relocatedb.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/back/dmf/dmf_win/relocatedb.exe.manifest
+END
+lckstwrp.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/back/dmf/dmf_win/lckstwrp.c
+END
+relocdb.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/back/dmf/dmf_win/relocdb.c
+END
+logdump.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/back/dmf/dmf_win/logdump.exe.manifest
+END
+auditdb.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/back/dmf/dmf_win/auditdb.c
+END
+alterdb.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/back/dmf/dmf_win/alterdb.c
+END
+rolldb.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/dmf/dmf_win/rolldb.c
+END
+rcpconfig.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/back/dmf/dmf_win/rcpconfig.exe.manifest
+END
+auditdb.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/back/dmf/dmf_win/auditdb.exe.manifest
+END
+logstwrp.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/back/dmf/dmf_win/logstwrp.c
+END
+alterdb.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/back/dmf/dmf_win/alterdb.exe.manifest
+END
+logstat.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/back/dmf/dmf_win/logstat.exe.manifest
+END
+ckpdb.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dmf_win/ckpdb.c
+END
+fload.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dmf_win/fload.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/dmf/dmf_win/Jamfile
+END
+ckpdb.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/back/dmf/dmf_win/ckpdb.exe.manifest
+END
+lockstat.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/back/dmf/dmf_win/lockstat.exe.manifest
+END
+lgdmpwrp.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/back/dmf/dmf_win/lgdmpwrp.c
+END
+rcpcfgwrp.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/back/dmf/dmf_win/rcpcfgwrp.c
+END

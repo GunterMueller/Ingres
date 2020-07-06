@@ -1,0 +1,10 @@
+#
+# Jamfile file for common!aif!specials_vms
+#
+
+SubDir ING_SRC common aif specials_vms ;
+
+IISUBSYS common aif specials_vms ;
+
+IISHLIBRARY $(SHAPILIB) ;
+IINEEDLIBS $(SHAPILIB) : API_LIBS ;

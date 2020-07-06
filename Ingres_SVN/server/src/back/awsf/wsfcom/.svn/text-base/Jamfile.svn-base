@@ -1,0 +1,12 @@
+#
+# Jamfile file for back!awsf!wsfcom
+#
+
+SubDir ING_SRC back awsf wsfcom ;
+
+IISUBSYS back awsf wsfcom ;
+
+
+IILIBRARY AWSFLIB : wsfvar.c wsfparser.c wsfinit.c
+	servermeth.c ;
+

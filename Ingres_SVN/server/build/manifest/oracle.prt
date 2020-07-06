@@ -1,0 +1,28 @@
+PART oracle
+    capability CI_ORACLE_GATEWAY
+   DIRECTORY ingres!bin
+   BUILD_DIR (ING_BUILD)!bin
+   {
+     PERMISSION s:rwed,o:rwed,g:re,w:re
+     EXECUTABLE iigworad10g
+   }
+   {
+     PERMISSION s:rwed,o:rwed,g:re,w:re
+     EXECUTABLE iigwora10g
+   }
+   DIRECTORY ingres!utility
+   BUILD_DIR (ING_BUILD)!utility
+   SCRIPT SETUP iisuoracle
+   SCRIPT iichkora
+   {
+     PERMISSION s:rwed,o:rwed,g:re,w:re
+     EXECUTABLE iigwcatora10g
+   }
+   {
+     PERMISSION s:rwed,o:rwed,g:re,w:re
+     EXECUTABLE iigwuseora
+   }
+   DIRECTORY ingres!files
+   BUILD_DIR (ING_BUILD)!files
+   FILE oracle.crs
+   FILE oracle.rfm

@@ -1,0 +1,33 @@
+.\"	$Header: /cmlib1/ingres63p.lib/unix/tools/port/eval/byteswap.1,v 1.1 90/03/09 09:17:32 source Exp $
+.TH BYTESWAP 1 "rti" "Relational Technology, Inc." "Relational Technology, Inc."
+.ta 8n 16n 24n 32n 40n 48n 56n
+.SH NAME
+byteswap \- Reveal byte ordering differences from VAX architecture.
+.SH ORIGIN
+Relational Technology, Inc.
+.SH SYNOPSIS
+.B byteswap
+[ options ]
+.SH DESCRIPTION
+.I Byteswap
+shows the underlying byte order of the hardware.  The program prints
+nothing if the byte ordering is the same as a VAX.  If the words in an
+integer are swapped
+.nf
+
+	wordswap
+.PP
+is printed.  If the bytes are swapped,
+.nf
+
+	byteswap
+.PP
+is printed.  If there is any output, BYTE_SWAP must be set for INGRES.
+
+.B -v
+``verbose'' mode prints the program's name and indents the output one
+tab stop.  The long value 0x12345678 is printed as a long, as two shorts
+and as four chars in increasing byte order.
+.SH BUGS
+.I Byteswap
+will become very confused on non-32 bit systems.

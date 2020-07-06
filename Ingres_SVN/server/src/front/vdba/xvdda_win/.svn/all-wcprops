@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/3/main/src/front/vdba/xvdda_win
+END
+mainfrm.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/xvdda_win/mainfrm.h
+END
+stdafx.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/xvdda_win/stdafx.h
+END
+vdda.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/xvdda_win/vdda.vcproj
+END
+vsdactl.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/xvdda_win/vsdactl.cpp
+END
+vdda.rc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/xvdda_win/vdda.rc
+END
+vsda.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/3/main/src/front/vdba/xvdda_win/vsda.h
+END
+vdda.bin
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/xvdda_win/vdda.bin
+END
+vsdactl.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/xvdda_win/vsdactl.h
+END
+dlgmain.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/xvdda_win/dlgmain.cpp
+END
+dlgmain.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/xvdda_win/dlgmain.h
+END
+xvsdadml.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/xvdda_win/xvsdadml.cpp
+END
+vdda.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/xvdda_win/vdda.dsp
+END
+vsdadoc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/xvdda_win/vsdadoc.cpp
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/xvdda_win/Jamfile
+END
+xvsdadml.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/xvdda_win/xvsdadml.h
+END
+vdda.sln
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/xvdda_win/vdda.sln
+END
+vsdadoc.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/xvdda_win/vsdadoc.h
+END
+vsdaview.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/xvdda_win/vsdaview.cpp
+END
+stdafx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/xvdda_win/stdafx.cpp
+END
+mainfrm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/xvdda_win/mainfrm.cpp
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/xvdda_win/resource.h
+END
+vsda.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/xvdda_win/vsda.cpp
+END
+vsdaview.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/xvdda_win/vsdaview.h
+END

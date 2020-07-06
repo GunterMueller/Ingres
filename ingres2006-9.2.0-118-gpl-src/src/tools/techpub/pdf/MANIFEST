@@ -1,0 +1,45 @@
+#
+# MANIFEST file for tools!techpub!pdf
+#
+## History:
+##    28-Jul-2004 (hanje04)
+##        Created.
+##    30-Jul-2004 (hanje04)
+##	  Add IISUBSYS rule and include sub directories
+##    31-Jan-2005 (drivi01)
+##	  Documentation moved to tools/techpub/pdf/ing302,
+##	  all manifest files were branched to corresponding
+##	  directories. pdf files got renamed.
+##    08-Aug-2005 (drivi01)
+##	  Added another guide to the list.
+##    02-Feb-2006 (drivi01)
+##	  Bug #115698 
+##	  Documentation from large documentation set was renamed
+##	  to reflect contents of each guide, index was also modified
+##	  reducing the amount of directories shipped.  
+##    03-Feb-2006 (drivi01)
+##	  Updated INDEX.pdx to index.pdx.
+##    02-Oct-2006 (drivi01)
+##	  gs.pdf and gs-linux.pdf removed from build.
+##	  qs.pdf and embed.pdf are added.
+##    25-Oct-2006 (bonro01)
+##        Update documentation for Ingres 2006 Release 2
+##    29-Nov-2006 (bonro01)
+##        Update documentation for Ingres 2006 Release 2
+##    11-Jul-2007 (bonro01)
+##        Update documentation for Ingres 2006 Release 3
+##	  
+##
+
+
+SubDir ING_SRC tools techpub pdf ;
+
+IISUBSYS tools techpub pdf ;
+
+IIDFILES english : Bookshelf.pdf ingres.pdx cmdref.pdf
+	connect.pdf dba.pdf dtp.pdf equel.pdf esql.pdf fadt.pdf
+	ice.pdf ipm.pdf mg.pdf oapi.pdf ome.pdf install.pdf
+	osql.pdf qry.pdf quel.pdf rep.pdf rms.pdf rs.pdf sql.pdf
+	star.pdf sysadm.pdf qs_linux.pdf qs_windows.pdf ;
+
+IIINCLUDE tools techpub pdf ingres ;

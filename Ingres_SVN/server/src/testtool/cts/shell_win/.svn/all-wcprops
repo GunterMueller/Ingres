@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/testtool/cts/shell_win
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/testtool/cts/shell_win/Jamfile
+END
+cts.bat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/testtool/cts/shell_win/cts.bat
+END

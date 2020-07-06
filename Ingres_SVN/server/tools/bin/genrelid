@@ -1,0 +1,91 @@
+#!/bin/bash
+#
+# Copyright (c) 2004 Ingres Corporation
+#
+# genrelid.sh  - generates a release id and echoes it on stdout
+#
+# This is the one and only place release IDs are generated from VERS
+# and CONFIG (using readvers and ccpp, that is). If it all happens here, 
+# we can keep it consistent and only have to update the algorithm in one place.
+#
+
+CMD=`basename $0`
+
+. readvers
+
+# Check for product.
+
+prod=INGRES
+
+
+
+while [ $# -gt 0 ]
+do
+    case $1 in
+         INGRES|EA|W4GL) prod=$1; inc=""; shift;;
+         *) echo "$CMD: Invalid product type \"$1\"" >&2
+            exit 1
+            ;;
+    esac
+done
+
+# Set up the suffix:
+
+# (Right now, there are only 2 known suffixes, OL and DBL.
+# Others can be added.)
+
+# The order in which suffixes are concatenated is significant.
+# Check with Release Management before adding new suffixes into the mix.
+
+suffix=""
+[ "$conf_ES" ] && suffix="ES"
+[ "$conf_OL" ] && suffix="${suffix}OL"
+[ "$conf_LinuxSDK" ] && suffix="SDK"
+
+# On linux set "NPTL" suffix if we're not using SIMULATE_PROCESS_SHARED
+case "$config" in
+	*_lnx)	cat << EOF > /tmp/nptl.$$ 
+# ifndef SIMULATE_PROCESS_SHARED
+NPTL
+# endif
+EOF
+		suffix=`ccpp /tmp/nptl.$$`
+		rm /tmp/nptl.$$
+		;;
+esac
+
+# Output the release id:
+ 
+if [ -n "$config64" ]
+then
+dotvers=`echo "$config64" | tr "_" "."`
+elif [ "$config" = "ppc_lnx" ] && [ "$conf_PS3_BUILD" ] ; then
+dotvers=ps3.lnx # special case for demo build
+else
+dotvers=`echo "$config" | tr "_" "."`
+fi
+
+case $prod in
+
+INGRES)
+   VER=`ccpp -s ING_VER` &&
+      echo "${VER} (${dotvers}/${build})${suffix}"  || exit 1
+    	 [ "${inc}" ] && echo "Build_${inc}"
+	 exit 0
+
+   ;;
+
+EA)
+   VER=`ccpp -s EA_VER` &&
+      echo "${VER} (${dotvers}/${build})${suffix}"  || exit 1
+         [ "${inc}" ] && echo "Build_${inc}"
+         exit 0
+   ;;
+
+W4GL)
+   VER=`ccpp -s ING_W4GL_VER` &&
+      echo "W4GL ${VER} (${dotvers}/${build})${suffix}" || exit 1
+   ;;
+
+esac
+

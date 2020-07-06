@@ -1,0 +1,12 @@
+#
+# Jamfile file for back!awsf!wss
+#
+
+SubDir ING_SRC back awsf wss ;
+
+IISUBSYS back awsf wss ;
+
+
+IILIBRARY AWSFLIB : wssprofile.c wsspars.c wsslogin.c wssinit.c
+	wssapp.c wss.c ;
+

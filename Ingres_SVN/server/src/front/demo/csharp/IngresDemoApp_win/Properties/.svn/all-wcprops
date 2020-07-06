@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ingres/!svn/ver/1/main/src/front/demo/csharp/IngresDemoApp_win/Properties
+END
+AssemblyInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/ingres/!svn/ver/1/main/src/front/demo/csharp/IngresDemoApp_win/Properties/AssemblyInfo.cs
+END
+Settings.settings
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/ingres/!svn/ver/1/main/src/front/demo/csharp/IngresDemoApp_win/Properties/Settings.settings
+END
+Settings.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/ingres/!svn/ver/1/main/src/front/demo/csharp/IngresDemoApp_win/Properties/Settings.Designer.cs
+END
+app.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/ingres/!svn/ver/1/main/src/front/demo/csharp/IngresDemoApp_win/Properties/app.manifest
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/ingres/!svn/ver/1/main/src/front/demo/csharp/IngresDemoApp_win/Properties/Jamfile
+END
+Resources.resx
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/ingres/!svn/ver/1/main/src/front/demo/csharp/IngresDemoApp_win/Properties/Resources.resx
+END
+Resources.Designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/ingres/!svn/ver/1/main/src/front/demo/csharp/IngresDemoApp_win/Properties/Resources.Designer.cs
+END

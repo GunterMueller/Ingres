@@ -1,0 +1,407 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win
+END
+xscript.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/xscript.h
+END
+ijadbase.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ijadbase.cpp
+END
+ijaimage.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ijaimage.bmp
+END
+ijactrl.def
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ijactrl.def
+END
+rdrcmsg.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/rdrcmsg.h
+END
+ijactrl.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ijactrl.vcproj
+END
+ijatable.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ijatable.cpp
+END
+remotecm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/remotecm.cpp
+END
+logadata.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/logadata.cpp
+END
+drecover.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/drecover.h
+END
+ijactrl.ico
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ijactrl.ico
+END
+dmlconst.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/dmlconst.cpp
+END
+dlgmsbox.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/dlgmsbox.h
+END
+choosedb.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/choosedb.cpp
+END
+ijactrlc.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ijactrlc.bmp
+END
+ijadmlll.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ijadmlll.cpp
+END
+parser.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/parser.cpp
+END
+ijactrlc.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ijactrlc.h
+END
+dglishdr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/dglishdr.cpp
+END
+rdrcmsg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/rdrcmsg.cpp
+END
+ijactppg.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ijactppg.h
+END
+ijadbase.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ijadbase.h
+END
+drecover.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/drecover.cpp
+END
+dlgmsbox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/dlgmsbox.cpp
+END
+logadata.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/logadata.h
+END
+ijactrl.odl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ijactrl.odl
+END
+rcrdtool.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/rcrdtool.cpp
+END
+ijactrl.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ijactrl.cpp
+END
+comborgb.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/comborgb.cpp
+END
+ijactrlc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ijactrlc.cpp
+END
+choosedb.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/choosedb.h
+END
+ijactdml.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ijactdml.h
+END
+ijadmlll.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ijadmlll.h
+END
+stdafx.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/stdafx.h
+END
+ckplst.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ckplst.cpp
+END
+ijactppg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ijactppg.cpp
+END
+parser.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/parser.h
+END
+headord.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/headord.bmp
+END
+ijactrl.sln
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ijactrl.sln
+END
+dglishdr.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/dglishdr.h
+END
+ijaimag2.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ijaimag2.bmp
+END
+chkpoint.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/chkpoint.h
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/Jamfile
+END
+ijactdml.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ijactdml.cpp
+END
+ijalldml.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ijalldml.cpp
+END
+rcdepend.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/rcdepend.h
+END
+stdafx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/stdafx.cpp
+END
+xscript.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/xscript.cpp
+END
+ijactrl.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ijactrl.dsp
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/resource.h
+END
+ijactrl.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ijactrl.h
+END
+rcrdtool.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/rcrdtool.h
+END
+comborgb.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/comborgb.h
+END
+remotecm.scc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/remotecm.scc
+END
+dredo.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/dredo.h
+END
+ckplst.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ckplst.h
+END
+ijactrl.rc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ijactrl.rc
+END
+ijactrl.suo
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ijactrl.suo
+END
+ijadmlll.scc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ijadmlll.scc
+END
+chkpoint.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/chkpoint.cpp
+END
+ijatable.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ijatable.h
+END
+remotecm.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/remotecm.h
+END
+dmlconst.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/dmlconst.h
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/readme.txt
+END
+ija.ico
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ija.ico
+END
+ijalldml.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/ijalldml.h
+END
+dredo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/ijactrl_win/dredo.cpp
+END

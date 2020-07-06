@@ -1,0 +1,19 @@
+#
+# Jamfile file for cl!clf!cs_vms
+#
+
+SubDir ING_SRC cl clf cs_vms ;
+
+IISUBSYS cl clf cs_vms ;
+
+IIUTILEXE csphil : csphil.c ;
+IINEEDLIBS csphil : COMPATLIB ;
+
+IIUTILEXE iirundbms : iirundbms.c ;
+IINEEDLIBS iirundbms : COMPATLIB ;
+
+IILIBRARY COMPATLIB : cssampler.c csoption.c csmoutil.c csmosem.c
+        csmoscb.c csmonitor.c csmomon.c csmocnd.c csmo.c csinterface.c
+        cshl.c cscpres.c csll_stubs.c cs_jmp_start.c pick_new_thread.c
+	cssprsm.m64 cs_cactus_save.m64 ;
+

@@ -1,0 +1,57 @@
+#
+# Jamfile file for front!utils!ui
+#
+
+SubDir ING_SRC front utils ui ;
+
+IISUBSYS front utils ui ;
+
+
+IINOOPTIM uirelhlp.qsc : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM uirelacc.qsc : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM uiinsert.qsc : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM uidbcap.qsc : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM uidatset.qsc : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM uicnl.qsc : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM uicatacc.qsc : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM ugdifarc.qsc : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM iiuicw.qsc : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM iiuicr.qsc : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM ferslv.qsc : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM ferelexi.qsc : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM ferelacc.qsc : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM ferel.qsc : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM fenumatt.qsc : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM feinmst.qsc : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM feingres.qsc : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM feinginq.qsc : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM feattacc.qsc : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM featt.qsc : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM dctsuprt.qsc : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM chckdict.qsc : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM xflag.c : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM uiroleid.c : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM uipasswd.c : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM uidml.c : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM uideadlk.c : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM uidata.c : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM ugwldcrd.c : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM uglower.c : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM ugkeyword.c : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM feuidata.c : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM fetmpnm.c : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM fenetnm.c : ris_us5 rs4_us5 i64_aix ;
+IINOOPTIM fedbpipe.c : ris_us5 rs4_us5 i64_aix ;
+
+IILIBRARY UILIB : uiseqval.sc uipartdesc.sc cleanup.sc uixconn.qsc
+        uixact.qsc uiupdate.qsc uisavept.qsc uirelhlp.qsc uirelacc.qsc
+        uiinsert.qsc uidbcap.qsc uidatset.qsc uicnl.qsc uicatacc.qsc
+        ugdifarc.qsc iiuicw.qsc iiuicr.qsc ferslv.qsc ferelexi.qsc
+        ferelacc.qsc ferel.qsc fenumatt.qsc feinmst.qsc feingres.qsc
+        feinginq.qsc feattacc.qsc featt.qsc dctsuprt.qsc chckdict.qsc
+        xflag.c uiroleid.c uipasswd.c uidml.c uideadlk.c
+        ugwldcrd.c uglower.c ugkeyword.c feuidata.c fetmpnm.c fenetnm.c
+        fedbpipe.c ;
+
+IILIBRARY IMPLIBQLIBDATA : uidata.c ;
+

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/testtool/lar/shell_win
+END
+lck1.bat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/testtool/lar/shell_win/lck1.bat
+END
+lck2.bat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/testtool/lar/shell_win/lck2.bat
+END
+lck3.bat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/testtool/lar/shell_win/lck3.bat
+END
+ckpdbtst.bat
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/testtool/lar/shell_win/ckpdbtst.bat
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/testtool/lar/shell_win/Jamfile
+END

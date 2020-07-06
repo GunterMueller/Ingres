@@ -1,0 +1,359 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/ingres/!svn/ver/1/main/src/front/utils/uf
+END
+helpfrm.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/utils/uf/helpfrm.hlp
+END
+ufdisply.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/utils/uf/ufdisply.c
+END
+ufrtm.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/utils/uf/ufrtm.qsc
+END
+fehelp.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/utils/uf/fehelp.c
+END
+ufdatlen.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/uf/ufdatlen.hlp
+END
+ufcdstry.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/uf/ufcdstry.hlp
+END
+uflstfrm.frm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/uf/uflstfrm.frm
+END
+eruf.msg
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/utils/uf/eruf.msg
+END
+fefedit.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/utils/uf/fefedit.qsc
+END
+uffile.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/utils/uf/uffile.hlp
+END
+fetfscrl.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/uf/fetfscrl.qsc
+END
+uffile.frm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/utils/uf/uffile.frm
+END
+listpck.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/utils/uf/listpck.qsc
+END
+ufask.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/utils/uf/ufask.qsc
+END
+helpform.frm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/uf/helpform.frm
+END
+ufhlptyp.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/uf/ufhlptyp.qsc
+END
+helpvals.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/uf/helpvals.hlp
+END
+iifhelp.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/utils/uf/iifhelp.c
+END
+fetbsins.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/uf/fetbsins.qsc
+END
+fefrsinq.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/uf/fefrsinq.qsc
+END
+help2frm.frm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/uf/help2frm.frm
+END
+tfedit.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/utils/uf/tfedit.qsc
+END
+helpkeys.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/uf/helpkeys.hlp
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/utils/uf/Jamfile
+END
+ufcremov.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/uf/ufcremov.hlp
+END
+ufaddfrm.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/utils/uf/ufaddfrm.c
+END
+frmfmt.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/utils/uf/frmfmt.c
+END
+fehvals.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/utils/uf/fehvals.qsc
+END
+helptype.frm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/uf/helptype.frm
+END
+ufbrowse.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/uf/ufbrowse.qsc
+END
+helphlp.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/utils/uf/helphlp.h
+END
+keysform.frm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/uf/keysform.frm
+END
+fehkeys.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/utils/uf/fehkeys.qsc
+END
+rthelp.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/utils/uf/rthelp.qsc
+END
+ufdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/utils/uf/ufdata.c
+END
+frsubtop.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/uf/frsubtop.hlp
+END
+feforms.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/utils/uf/feforms.qsc
+END
+ufcend.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/utils/uf/ufcend.hlp
+END
+fetnames.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/uf/fetnames.qsc
+END
+ufdatprc.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/uf/ufdatprc.hlp
+END
+listobj.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/utils/uf/listobj.qsc
+END
+fetrunc.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/utils/uf/fetrunc.qsc
+END
+fehframe.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/uf/fehframe.qsc
+END
+stdprmpt.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/uf/stdprmpt.qsc
+END
+ufbrsave.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/uf/ufbrsave.qsc
+END
+ufcquit.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/utils/uf/ufcquit.hlp
+END
+ufdatype.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/uf/ufdatype.hlp
+END
+hhnofld.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/utils/uf/hhnofld.hlp
+END
+fetsting.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/utils/uf/fetsting.c
+END
+iideffrm.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/utils/uf/iideffrm.c
+END
+uffldhlp.qc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/utils/uf/uffldhlp.qc
+END
+hhfld.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/utils/uf/hhfld.hlp
+END
+helpvmax.frm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/uf/helpvmax.frm
+END
+wgl_32s.hnt
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/utils/uf/wgl_32s.hnt
+END
+ufprint.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/utils/uf/ufprint.hlp
+END
+ufprint.frm
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/utils/uf/ufprint.frm
+END
+dyn.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/utils/uf/dyn.c
+END
+ufchkend.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/uf/ufchkend.qsc
+END
+ufcdelet.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/uf/ufcdelet.hlp
+END

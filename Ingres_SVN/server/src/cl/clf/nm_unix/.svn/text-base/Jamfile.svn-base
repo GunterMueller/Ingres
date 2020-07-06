@@ -1,0 +1,31 @@
+#
+# Jamfile file for cl!clf!nm_unix
+#
+
+SubDir ING_SRC cl clf nm_unix ;
+
+IISUBSYS cl clf nm_unix ;
+
+IINOOPTIM nmfiles.c : sgi_us5 ;
+IINOOPTIM nmdata.c : sgi_us5 ;
+IINOOPTIM ingunset.c : sgi_us5 ;
+IINOOPTIM ingsetenv.c : sgi_us5 ;
+IINOOPTIM ingprenv.c : sgi_us5 ;
+
+IIBINEXE ingunset : ingunset.c ;
+IINEEDLIBS ingunset : COMPAT MALLOCLIB ;
+IIUNDEFS ingunset : II_copyright ;
+
+IIBINEXE ingsetenv : ingsetenv.c ;
+IINEEDLIBS ingsetenv : COMPAT MALLOCLIB ;
+IIUNDEFS ingsetenv : II_copyright ;
+
+IIBINEXE ingprenv : ingprenv.c ;
+IINEEDLIBS ingprenv : COMPAT MALLOCLIB ;
+IIUNDEFS ingprenv : II_copyright ;
+
+IIFILE nmerr.def : nmerr.def ;
+
+IILIBRARY COMPATLIB : nmunseting.c nmseting.c nmpathing.c
+	nmpart.c nmgtat.c nmfiles.c nmdata.c ;
+

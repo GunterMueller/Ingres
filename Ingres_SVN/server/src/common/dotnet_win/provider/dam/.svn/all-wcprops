@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/dam
+END
+msgin.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/dam/msgin.cs
+END
+msgio.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/dam/msgio.cs
+END
+msgout.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/dam/msgout.cs
+END
+msgconn.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/dam/msgconn.cs
+END
+tlconst.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/dam/tlconst.cs
+END
+inbuff.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/dam/inbuff.cs
+END
+iobuff.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/dam/iobuff.cs
+END
+outbuff.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/dam/outbuff.cs
+END

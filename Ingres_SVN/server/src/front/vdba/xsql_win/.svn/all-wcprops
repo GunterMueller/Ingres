@@ -1,0 +1,209 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win
+END
+stdafx.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/stdafx.h
+END
+axsqledb.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/axsqledb.cpp
+END
+xsql.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/xsql.vcproj
+END
+edbcfram.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/edbcfram.h
+END
+font.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/font.h
+END
+sqlerr.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/sqlerr.h
+END
+inputpwd.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/inputpwd.h
+END
+xsqldoc.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/xsqldoc.h
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/Jamfile
+END
+xsql.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/xsql.cpp
+END
+xsqlview.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/xsqlview.h
+END
+edbcdoc.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/edbcdoc.h
+END
+fileerr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/fileerr.cpp
+END
+xsqldml.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/xsqldml.h
+END
+stdafx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/stdafx.cpp
+END
+sqlquery.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/sqlquery.h
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/resource.h
+END
+mainfrm.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/mainfrm.h
+END
+xsql.sln
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/xsql.sln
+END
+edbcfram.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/edbcfram.cpp
+END
+font.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/font.cpp
+END
+axsqledb.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/axsqledb.h
+END
+sqlerr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/sqlerr.cpp
+END
+xsql.rc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/xsql.rc
+END
+inputpwd.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/inputpwd.cpp
+END
+xsqldoc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/xsqldoc.cpp
+END
+xsqlview.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/xsqlview.cpp
+END
+edbcdoc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/edbcdoc.cpp
+END
+xsqldml.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/xsqldml.cpp
+END
+sqlquery.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/sqlquery.cpp
+END
+mainfrm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/mainfrm.cpp
+END
+xsql.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/xsql.dsp
+END
+xsql.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/xsql.h
+END
+fileerr.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/xsql_win/fileerr.h
+END

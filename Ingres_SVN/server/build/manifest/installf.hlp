@@ -1,0 +1,24 @@
+ingbuild - Install from Distribution Medium
+
+This screen provides the following information about each product on the
+distribution medium:
+
+	Product		The name of the Ingres product, or 
+			a product option that can be installed separately.
+
+	Size		The amount of disk space required for II_SYSTEM
+			by this product's system files.
+
+	Install?	Whether or not you want to install this product.
+
+
+Select 'Install' to begin the installation.  If you execute setup programs
+now, you will be prompted for installation parameters.
+
+Select 'ExpressInstall' to install and setup the installation with defaults. 
+You will not be prompted for any installation parameters.
+
+
+For more information concerning the installation of products using ingbuild,
+please refer to the Ingres Installation Guide.
+

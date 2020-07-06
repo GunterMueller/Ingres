@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/ingres/!svn/ver/1/main/src/back/psf/pst
+END
+psttprpnd.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/psf/pst/psttprpnd.c
+END
+pstcoldsc.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/psf/pst/pstcoldsc.c
+END
+pstadrsdm.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/psf/pst/pstadrsdm.c
+END
+pstrngfcn.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/psf/pst/pstrngfcn.c
+END
+psthshnam.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/psf/pst/psthshnam.c
+END
+pstnode.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/psf/pst/pstnode.c
+END
+pstrslv.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/psf/pst/pstrslv.c
+END
+pstsort.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/psf/pst/pstsort.c
+END
+pstclrrng.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/psf/pst/pstclrrng.c
+END
+pstnorml.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/psf/pst/pstnorml.c
+END
+pstshwtab.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/psf/pst/pstshwtab.c
+END
+pstheader.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/psf/pst/pstheader.c
+END
+pstrslvtbl.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/psf/pst/pstrslvtbl.c
+END
+pstrules.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/psf/pst/pstrules.c
+END
+pstrserr.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/psf/pst/pstrserr.c
+END
+psttrdup.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/psf/pst/psttrdup.c
+END
+pstprmdmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/psf/pst/pstprmdmp.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/psf/pst/Jamfile
+END
+psttrefix.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/psf/pst/psttrefix.c
+END
+pstdsql.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/psf/pst/pstdsql.c
+END
+pstddl.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/psf/pst/pstddl.c
+END
+pstadparm.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/psf/pst/pstadparm.c
+END
+pstwindup.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/psf/pst/pstwindup.c
+END

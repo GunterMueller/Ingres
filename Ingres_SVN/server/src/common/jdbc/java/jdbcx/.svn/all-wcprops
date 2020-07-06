@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbcx
+END
+EdbcXAConnect.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbcx/EdbcXAConnect.java
+END
+EdbcXADataSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbcx/EdbcXADataSource.java
+END
+EdbcCPVirtConn.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbcx/EdbcCPVirtConn.java
+END
+EdbcXARM.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbcx/EdbcXARM.java
+END
+TraceDS.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbcx/TraceDS.java
+END
+EdbcCPFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbcx/EdbcCPFactory.java
+END
+EdbcDataSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbcx/EdbcDataSource.java
+END
+EdbcXAVirtConn.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbcx/EdbcXAVirtConn.java
+END
+EdbcCPConnect.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbcx/EdbcCPConnect.java
+END
+EdbcCPDataSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbcx/EdbcCPDataSource.java
+END
+EdbcXAXid.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbcx/EdbcXAXid.java
+END
+EdbcDSFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbcx/EdbcDSFactory.java
+END
+EdbcDSErr.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbcx/EdbcDSErr.java
+END
+EdbcXAFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbcx/EdbcXAFactory.java
+END

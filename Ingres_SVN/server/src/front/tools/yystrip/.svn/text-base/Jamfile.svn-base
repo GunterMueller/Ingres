@@ -1,0 +1,12 @@
+#
+# Jamfile file for front!tools!yystrip
+#
+
+SubDir ING_SRC front tools yystrip ;
+
+IISUBSYS front tools yystrip ;
+
+
+IIBINEXE yystrip : yystrip.c ;
+IINEEDLIBS yystrip :  COMPATLIB ;
+

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/common/dotnet_win
+END
+dataprovider.sln
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/common/dotnet_win/dataprovider.sln
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/dotnet_win/MANIFEST
+END
+dataprovider.suo
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/common/dotnet_win/dataprovider.suo
+END

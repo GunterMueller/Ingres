@@ -1,0 +1,347 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win
+END
+reptbdef.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/reptbdef.h
+END
+msghandl.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/msghandl.h
+END
+dbadlg1.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/dbadlg1.h
+END
+domdisp.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/domdisp.h
+END
+replutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/replutil.h
+END
+dbaset.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/dbaset.h
+END
+esltools.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/esltools.h
+END
+dbatime.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/dbatime.h
+END
+starutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/starutil.h
+END
+copyright.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/copyright.h
+END
+llvcbf.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/llvcbf.h
+END
+getdata.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/getdata.h
+END
+domdata.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/domdata.h
+END
+dbaginfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/dbaginfo.h
+END
+dll.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/dll.h
+END
+collisio.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/collisio.h
+END
+qepparse.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/qepparse.h
+END
+dlgres.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/dlgres.h
+END
+catospin.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/catospin.h
+END
+lbbknode.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/lbbknode.h
+END
+lexical.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/lexical.h
+END
+domdloca.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/domdloca.h
+END
+port.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/port.h
+END
+dbafile.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/dbafile.h
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/resource.h
+END
+error.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/error.h
+END
+compress.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/compress.h
+END
+selwin.e
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/selwin.e
+END
+saveload.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/saveload.h
+END
+ijaparse.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/ijaparse.h
+END
+subedit.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/subedit.h
+END
+extccall.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/extccall.h
+END
+tree.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/tree.h
+END
+ice.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/ice.h
+END
+global.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/global.h
+END
+settings.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/settings.h
+END
+tools.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/tools.h
+END
+nanact.e
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/nanact.e
+END
+rmcmd.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/rmcmd.h
+END
+catover.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/catover.h
+END
+cavover.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/cavover.h
+END
+prodname.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/prodname.h
+END
+aspen.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/aspen.h
+END
+libextnc.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/libextnc.h
+END
+nanmem.e
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/nanmem.e
+END
+treelb.e
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/treelb.e
+END
+dgerrh.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/dgerrh.h
+END
+winutils.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/winutils.h
+END
+dom.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/dom.h
+END
+errout.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/errout.h
+END
+libmon.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/libmon.h
+END
+prepro
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/prepro
+END
+catolist.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/catolist.h
+END
+ingnet.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/ingnet.h
+END
+main.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/main.h
+END
+dba.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/dba.h
+END
+monitor.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/hdr_win/monitor.h
+END

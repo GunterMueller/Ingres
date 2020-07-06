@@ -1,0 +1,11 @@
+#
+# Jamfile file for front!ice!iceconf
+#
+
+SubDir ING_SRC front ice iceconf ;
+
+IISUBSYS front ice iceconf ;
+
+
+IILIBRARY ICECONFLIB : iceref.c iceconf.c iceapi.c ;
+

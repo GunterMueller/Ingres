@@ -1,0 +1,51 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iipostinst", "iipostinst.vcproj", "{CEEC12E5-43B5-4444-B389-0CCE710C40C7}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		DBCS Debug = DBCS Debug
+		DBCS Release = DBCS Release
+		Debug = Debug
+		Debug64 = Debug64
+		DebugAMD64 = DebugAMD64
+		DebugIA64 = DebugIA64
+		DebugSDK = DebugSDK
+		Release = Release
+		Release64 = Release64
+		ReleaseAMD64 = ReleaseAMD64
+		ReleaseIA64 = ReleaseIA64
+		ReleaseSDK = ReleaseSDK
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{CEEC12E5-43B5-4444-B389-0CCE710C40C7}.DBCS Debug.ActiveCfg = DBCS Debug|Win32
+		{CEEC12E5-43B5-4444-B389-0CCE710C40C7}.DBCS Debug.Build.0 = DBCS Debug|Win32
+		{CEEC12E5-43B5-4444-B389-0CCE710C40C7}.DBCS Release.ActiveCfg = DBCS Release|Win32
+		{CEEC12E5-43B5-4444-B389-0CCE710C40C7}.DBCS Release.Build.0 = DBCS Release|Win32
+		{CEEC12E5-43B5-4444-B389-0CCE710C40C7}.Debug.ActiveCfg = Debug|Win32
+		{CEEC12E5-43B5-4444-B389-0CCE710C40C7}.Debug.Build.0 = Debug|Win32
+		{CEEC12E5-43B5-4444-B389-0CCE710C40C7}.Debug64.ActiveCfg = Debug64|Win32
+		{CEEC12E5-43B5-4444-B389-0CCE710C40C7}.Debug64.Build.0 = Debug64|Win32
+		{CEEC12E5-43B5-4444-B389-0CCE710C40C7}.DebugAMD64.ActiveCfg = DebugAMD64|Win32
+		{CEEC12E5-43B5-4444-B389-0CCE710C40C7}.DebugAMD64.Build.0 = DebugAMD64|Win32
+		{CEEC12E5-43B5-4444-B389-0CCE710C40C7}.DebugIA64.ActiveCfg = DebugIA64|Win32
+		{CEEC12E5-43B5-4444-B389-0CCE710C40C7}.DebugIA64.Build.0 = DebugIA64|Win32
+		{CEEC12E5-43B5-4444-B389-0CCE710C40C7}.DebugSDK.ActiveCfg = DebugSDK|Win32
+		{CEEC12E5-43B5-4444-B389-0CCE710C40C7}.DebugSDK.Build.0 = DebugSDK|Win32
+		{CEEC12E5-43B5-4444-B389-0CCE710C40C7}.Release.ActiveCfg = Release|Win32
+		{CEEC12E5-43B5-4444-B389-0CCE710C40C7}.Release.Build.0 = Release|Win32
+		{CEEC12E5-43B5-4444-B389-0CCE710C40C7}.Release64.ActiveCfg = Release64|Win32
+		{CEEC12E5-43B5-4444-B389-0CCE710C40C7}.Release64.Build.0 = Release64|Win32
+		{CEEC12E5-43B5-4444-B389-0CCE710C40C7}.ReleaseAMD64.ActiveCfg = ReleaseAMD64|Win32
+		{CEEC12E5-43B5-4444-B389-0CCE710C40C7}.ReleaseAMD64.Build.0 = ReleaseAMD64|Win32
+		{CEEC12E5-43B5-4444-B389-0CCE710C40C7}.ReleaseIA64.ActiveCfg = ReleaseIA64|Win32
+		{CEEC12E5-43B5-4444-B389-0CCE710C40C7}.ReleaseIA64.Build.0 = ReleaseIA64|Win32
+		{CEEC12E5-43B5-4444-B389-0CCE710C40C7}.ReleaseSDK.ActiveCfg = ReleaseSDK|Win32
+		{CEEC12E5-43B5-4444-B389-0CCE710C40C7}.ReleaseSDK.Build.0 = ReleaseSDK|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

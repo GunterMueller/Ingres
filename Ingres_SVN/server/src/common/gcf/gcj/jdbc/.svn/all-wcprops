@@ -1,0 +1,281 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc
+END
+RsltScroll.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/RsltScroll.java
+END
+JdbcSP.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/JdbcSP.java
+END
+DrvNlob.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/DrvNlob.java
+END
+XARsrcMgr.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/XARsrcMgr.java
+END
+JdbcXAConn.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/JdbcXAConn.java
+END
+JdbcStmt.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/JdbcStmt.java
+END
+ParamSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/ParamSet.java
+END
+RsltData.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/RsltData.java
+END
+JdbcConn.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/JdbcConn.java
+END
+JdbcXADS.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/JdbcXADS.java
+END
+DrvPrep.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/DrvPrep.java
+END
+JdbcQPMD.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/JdbcQPMD.java
+END
+DrvRsrc.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/DrvRsrc.java
+END
+DrvLOB.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/DrvLOB.java
+END
+JdbcDS.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/JdbcDS.java
+END
+RsltFtch.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/RsltFtch.java
+END
+SqlBLoc.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/SqlBLoc.java
+END
+SqlCLoc.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/SqlCLoc.java
+END
+JdbcXAVirt.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/JdbcXAVirt.java
+END
+JdbcBlob.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/JdbcBlob.java
+END
+JdbcClob.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/JdbcClob.java
+END
+DrvConst.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/DrvConst.java
+END
+JdbcCPConn.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/JdbcCPConn.java
+END
+RsltScrUpd.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/RsltScrUpd.java
+END
+JdbcRslt.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/JdbcRslt.java
+END
+DrvConn.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/DrvConn.java
+END
+RsltSlct.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/RsltSlct.java
+END
+DrvTrace.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/DrvTrace.java
+END
+SqlNLoc.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/SqlNLoc.java
+END
+JdbcCPDS.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/JdbcCPDS.java
+END
+RsltXlat.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/RsltXlat.java
+END
+JdbcDrv.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/JdbcDrv.java
+END
+ProcInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/ProcInfo.java
+END
+TraceDM.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/TraceDM.java
+END
+RsltCurs.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/RsltCurs.java
+END
+TraceDS.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/TraceDS.java
+END
+DrvObj.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/DrvObj.java
+END
+JdbcRSMD.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/JdbcRSMD.java
+END
+JdbcPrep.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/JdbcPrep.java
+END
+JdbcDBMD.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/JdbcDBMD.java
+END
+DrvBlob.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/DrvBlob.java
+END
+JdbcCPVirt.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/JdbcCPVirt.java
+END
+SqlParse.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/SqlParse.java
+END
+DrvClob.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/DrvClob.java
+END
+RsltUpd.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/RsltUpd.java
+END
+JdbcCall.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/jdbc/JdbcCall.java
+END

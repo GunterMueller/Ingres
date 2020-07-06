@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/testtool/achilles/achilles_vms
+END
+accopier.lot
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/testtool/achilles/achilles_vms/accopier.lot
+END
+logentry.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/testtool/achilles/achilles_vms/logentry.c
+END
+accopier.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/testtool/achilles/achilles_vms/accopier.c
+END
+alrmhdlr.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/testtool/achilles/achilles_vms/alrmhdlr.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/testtool/achilles/achilles_vms/Jamfile
+END
+syssrv.mar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/testtool/achilles/achilles_vms/syssrv.mar
+END
+accompat.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/testtool/achilles/achilles_vms/accompat.c
+END
+valid_user.lot
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/testtool/achilles/achilles_vms/valid_user.lot
+END
+readfile.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/testtool/achilles/achilles_vms/readfile.c
+END
+valid_user.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/testtool/achilles/achilles_vms/valid_user.c
+END

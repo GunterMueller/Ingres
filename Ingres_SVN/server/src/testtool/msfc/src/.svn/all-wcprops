@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/testtool/msfc/src
+END
+msfccldb.qc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/testtool/msfc/src/msfccldb.qc
+END
+msfcchk.qc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/testtool/msfc/src/msfcchk.qc
+END
+msfccrea.lot
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/testtool/msfc/src/msfccrea.lot
+END
+rolldrv.lot
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/testtool/msfc/src/rolldrv.lot
+END
+msfcsync.lot
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/testtool/msfc/src/msfcsync.lot
+END
+msfccrea.qc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/testtool/msfc/src/msfccrea.qc
+END
+msfctest.lot
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/testtool/msfc/src/msfctest.lot
+END
+msfcsync.qc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/testtool/msfc/src/msfcsync.qc
+END
+rolldrv.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/testtool/msfc/src/rolldrv.sc
+END
+rollclup.lot
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/testtool/msfc/src/rollclup.lot
+END
+rollcldb.lot
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/testtool/msfc/src/rollcldb.lot
+END
+msfctest.qc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/testtool/msfc/src/msfctest.qc
+END
+rollchk.lot
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/testtool/msfc/src/rollchk.lot
+END
+rollclup.qc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/testtool/msfc/src/rollclup.qc
+END
+rollcldb.qc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/testtool/msfc/src/rollcldb.qc
+END
+rollchk.qc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/testtool/msfc/src/rollchk.qc
+END
+rollcrea.lot
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/testtool/msfc/src/rollcrea.lot
+END
+msfcdrv.lot
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/testtool/msfc/src/msfcdrv.lot
+END
+rollsync.lot
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/testtool/msfc/src/rollsync.lot
+END
+rollcrea.qc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/testtool/msfc/src/rollcrea.qc
+END
+rolltest.lot
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/testtool/msfc/src/rolltest.lot
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/testtool/msfc/src/Jamfile
+END
+rollsync.qc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/testtool/msfc/src/rollsync.qc
+END
+msfcdrv.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/testtool/msfc/src/msfcdrv.sc
+END
+msfcclup.lot
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/testtool/msfc/src/msfcclup.lot
+END
+msfccldb.lot
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/testtool/msfc/src/msfccldb.lot
+END
+rolltest.qc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/testtool/msfc/src/rolltest.qc
+END
+msfcchk.lot
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/testtool/msfc/src/msfcchk.lot
+END
+msfcclup.qc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/testtool/msfc/src/msfcclup.qc
+END

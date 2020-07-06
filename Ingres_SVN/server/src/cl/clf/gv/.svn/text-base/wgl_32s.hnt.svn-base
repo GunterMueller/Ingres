@@ -1,0 +1,10 @@
+#
+# wgl_32s.hnt file for cl\clf\gv
+#
+# History:
+#	25-Jan-2004 (wridu01)
+#	    Adapted for flat-linking instead of Ingres2006r2 DLL structure.
+#
+
+objonly = gver.obj
+

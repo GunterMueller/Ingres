@@ -1,0 +1,14 @@
+#
+# MANIFEST file for tools!port!conf
+#
+# History:
+#    27-Aug-2004 (hanje04)
+#	Created to replace Jamfiles and add IIMKVERS.
+#	03-dec-2004 (abbjo03)
+#	    Remove unneeded IICCPPFILE entry.
+
+SubDir ING_SRC tools port conf ;
+
+IISUBSYS tools port conf ;
+
+IIMKVERS VERS ;

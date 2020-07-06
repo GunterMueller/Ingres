@@ -1,0 +1,30 @@
+/*
+** Copyright (c) 2004 Ingres Corporation
+*/
+/*
+** Generic part file for Embedded C. 
+*/
+
+/*
+** History
+**
+**	15-may-1995 (hanch04)
+**		created.
+*/
+
+PART  raat
+
+/*
+** ingres!files
+*/
+
+   DIRECTORY ingres!files
+
+# ifdef R_RAAT
+# ifdef VMS
+   BUILD_DIR (jpt_cmn_hdr)
+# else /* VMS */
+   BUILD_DIR (ING_BUILD)!files
+# endif /* VMS */
+      FILE raat.h
+# endif

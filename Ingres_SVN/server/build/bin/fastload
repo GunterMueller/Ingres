@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+# Copyright (c) 2004 Ingres Corporation
+#
+#
+# Name: fastload - fastload a table
+#
+# Description:
+#      This shell program provides the INGRES 'fastload' command by
+#      executing the journaling support program, passing along the
+#      command line arguments.
+#
+
+#
+# PROGRAM = fastload
+#
+
+if [ $# -gt 0 ]
+then
+exec ${II_SYSTEM?}/ingres/bin/dmfjsp fastload "$@"
+else
+exec ${II_SYSTEM?}/ingres/bin/dmfjsp fastload
+fi

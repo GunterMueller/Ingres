@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/ingres/!svn/ver/1/main/src/testtool/lar/lar
+END
+ckpdb1_load.lot
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/testtool/lar/lar/ckpdb1_load.lot
+END
+ckpdb_delapp.lot
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/testtool/lar/lar/ckpdb_delapp.lot
+END
+ckpdbld.qc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/testtool/lar/lar/ckpdbld.qc
+END
+ckpdbapp.qc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/testtool/lar/lar/ckpdbapp.qc
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/testtool/lar/lar/Jamfile
+END
+ckpdb_abort.lot
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/testtool/lar/lar/ckpdb_abort.lot
+END
+ckpdb_append.lot
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/testtool/lar/lar/ckpdb_append.lot
+END
+ckpdbda.qc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/testtool/lar/lar/ckpdbda.qc
+END
+ckpdbchk.qc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/testtool/lar/lar/ckpdbchk.qc
+END
+ckpdbabt.qc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/testtool/lar/lar/ckpdbabt.qc
+END
+ckpdb1_check.lot
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/testtool/lar/lar/ckpdb1_check.lot
+END

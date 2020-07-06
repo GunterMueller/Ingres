@@ -1,0 +1,11 @@
+#
+# Jamfile file for common!ddf!ddc
+#
+
+SubDir ING_SRC common ddf ddc ;
+
+IISUBSYS common ddf ddc ;
+
+
+IILIBRARY DDFLIB : ddcmo.c ddcdata.c dbaccess.c ;
+

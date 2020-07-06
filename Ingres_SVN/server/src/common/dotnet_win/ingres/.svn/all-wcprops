@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/dotnet_win/ingres
+END
+assemblyinfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/common/dotnet_win/ingres/assemblyinfo.cs
+END
+connection.resx
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/common/dotnet_win/ingres/connection.resx
+END
+datareader.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/common/dotnet_win/ingres/datareader.cs
+END
+ex.cs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/common/dotnet_win/ingres/ex.cs
+END
+command.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/dotnet_win/ingres/command.cs
+END
+connection.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/common/dotnet_win/ingres/connection.cs
+END
+ingres.csproj.user
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/dotnet_win/ingres/ingres.csproj.user
+END
+transact.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/common/dotnet_win/ingres/transact.cs
+END
+adapter.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/dotnet_win/ingres/adapter.cs
+END
+param.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/dotnet_win/ingres/param.cs
+END
+ingres.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/common/dotnet_win/ingres/ingres.csproj
+END
+error.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/dotnet_win/ingres/error.cs
+END
+command.resx
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/common/dotnet_win/ingres/command.resx
+END

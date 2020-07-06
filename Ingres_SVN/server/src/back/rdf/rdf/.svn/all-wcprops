@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/ingres/!svn/ver/1/main/src/back/rdf/rdf
+END
+rdfinit.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/rdf/rdf/rdfinit.c
+END
+rdfend.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/rdf/rdf/rdfend.c
+END
+rdfpart.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/rdf/rdf/rdfpart.c
+END
+rdfterm.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/rdf/rdf/rdfterm.c
+END
+rdfdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/rdf/rdf/rdfdata.c
+END
+rdefault.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/rdf/rdf/rdefault.c
+END
+rdfgetobj.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/rdf/rdf/rdfgetobj.c
+END
+rdfcall.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/rdf/rdf/rdfcall.c
+END
+rdfmo.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/rdf/rdf/rdfmo.c
+END
+rdfutil.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/rdf/rdf/rdfutil.c
+END
+rdfgetdesc.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/rdf/rdf/rdfgetdesc.c
+END
+rdfcon.roc
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/rdf/rdf/rdfcon.roc
+END
+rdfqtpak.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/rdf/rdf/rdfqtpak.c
+END
+rdfupdate.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/rdf/rdf/rdfupdate.c
+END
+rdfshut.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/rdf/rdf/rdfshut.c
+END
+rdfbegin.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/rdf/rdf/rdfbegin.c
+END
+rdfinvalid.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/rdf/rdf/rdfinvalid.c
+END
+rdfddb.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/rdf/rdf/rdfddb.c
+END
+rdfunfix.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/rdf/rdf/rdfunfix.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/rdf/rdf/Jamfile
+END
+rdfgetinfo.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/rdf/rdf/rdfgetinfo.c
+END
+rdfstart.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/rdf/rdf/rdfstart.c
+END
+rdftrace.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/rdf/rdf/rdftrace.c
+END

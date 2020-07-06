@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/install_unix_rpm
+END
+ingres_express_install.sh
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/ingres/!svn/ver/1/main/src/front/st/install_unix_rpm/ingres_express_install.sh
+END
+iirpmrename.sh
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/front/st/install_unix_rpm/iirpmrename.sh
+END
+ingres-LICENSE.template
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/ingres/!svn/ver/1/main/src/front/st/install_unix_rpm/ingres-LICENSE.template
+END
+ingres.template
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/front/st/install_unix_rpm/ingres.template
+END
+mklicense.sh
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/st/install_unix_rpm/mklicense.sh
+END
+ingres-dbms.template
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ingres/!svn/ver/1/main/src/front/st/install_unix_rpm/ingres-dbms.template
+END
+ingres-net.template
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/front/st/install_unix_rpm/ingres-net.template
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/install_unix_rpm/Jamfile
+END
+ingres-documentation.template
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/ingres/!svn/ver/1/main/src/front/st/install_unix_rpm/ingres-documentation.template
+END
+iirpmbuild.sh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/st/install_unix_rpm/iirpmbuild.sh
+END
+uninstall_ingres.sh
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/front/st/install_unix_rpm/uninstall_ingres.sh
+END
+ingres-generic.template
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/ingres/!svn/ver/1/main/src/front/st/install_unix_rpm/ingres-generic.template
+END

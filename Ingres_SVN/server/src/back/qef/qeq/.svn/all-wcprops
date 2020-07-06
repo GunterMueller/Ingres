@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/ingres/!svn/ver/1/main/src/back/qef/qeq
+END
+qeqcsr.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qeqcsr.c
+END
+qeaput.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qeaput.c
+END
+qeqddb.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qeqddb.c
+END
+qeaproj.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qeaproj.c
+END
+qeaiproc.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qeaiproc.c
+END
+qeahaggf.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qeahaggf.c
+END
+qeaeximm.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qeaeximm.c
+END
+qeasagg.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qeasagg.c
+END
+qeamessage.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qeamessage.c
+END
+qearaggf.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qearaggf.c
+END
+qeacommit.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qeacommit.c
+END
+qearollback.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qearollback.c
+END
+qeafetch.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qeafetch.c
+END
+qeaschma.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qeaschma.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/qef/qeq/Jamfile
+END
+qeadelete.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qeadelete.c
+END
+qearupd.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qearupd.c
+END
+qeacall.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qeacall.c
+END
+qeareplace.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qeareplace.c
+END
+qeqagg.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qeqagg.c
+END
+qeaload.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qeaload.c
+END
+qeqvalid.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qeqvalid.c
+END
+qeaevent.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qeaevent.c
+END
+qearetrow.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qearetrow.c
+END
+qeqprt.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qeqprt.c
+END
+qeadmu.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qeadmu.c
+END
+qeqpart.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qeqpart.c
+END
+qeardel.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qeardel.c
+END
+qeq.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qeq.c
+END
+qeaddl.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qeaddl.c
+END
+qeaaggf.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/qef/qeq/qeaaggf.c
+END

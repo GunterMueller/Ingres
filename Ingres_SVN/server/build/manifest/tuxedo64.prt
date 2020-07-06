@@ -1,0 +1,5 @@
+PART tuxedo64
+   capability CI_XA_TUXEDO
+   DIRECTORY ingres!lib!lp64
+   BUILD_DIR (ING_BUILD)!lib!lp64
+      FILE libiitux.a

@@ -1,0 +1,25 @@
+#
+# Jamfile file for front!misc!diag_unix_vms
+#
+
+SubDir ING_SRC front misc diag_unix_vms ;
+
+IISUBSYS front misc diag_unix_vms ;
+
+
+IIBINEXE mkexcept : mkexcept.c ;
+IINEEDLIBS mkexcept :  DIAGLIB SHCOMPATLIB ;
+IIUNDEFS mkexcept :  malloc ;
+
+IIBINEXE iiexcept : iiexcept.c ;
+IINEEDLIBS iiexcept :  SHCOMPATLIB ;
+IIUNDEFS iiexcept :  malloc ;
+
+IIBINEXE idbg : idbg.c ;
+IINEEDLIBS idbg :  DIAGLIB ULFLIB SHFRAMELIB SHQLIB
+	SHCOMPATLIB ;
+IIUNDEFS idbg :  malloc ;
+
+IILIBRARY DIAGLIB : screen.sc scrview.lfm scrshow.lfm
+	scrmain.lfm screxprt.lfm scradd.lfm chkpriv.c ;
+

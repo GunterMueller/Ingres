@@ -1,0 +1,22 @@
+PART  tables
+   BUILD_DIR (ING_BUILD)!files!english
+   DIRECTORY ingres!files!english
+      FILE tucccrt.hlp
+      FILE tuccdest.hlp
+      FILE tucreate.hlp
+      FILE tudefaults.hlp
+      FILE tudflprm.hlp
+      FILE tukeys.hlp
+      FILE tumovesm.hlp
+      FILE tutblinf.hlp
+      FILE tutbllst.hlp
+      FILE tutblpik.hlp
+      FILE tutblprm.hlp
+      FILE tutblqbf.hlp
+      FILE tutblrep.hlp
+      FILE tudtypes.hlp
+      FILE tunames.hlp
+      FILE tunulls.hlp
+   BUILD_DIR (ING_BUILD)!bin
+   DIRECTORY ingres!bin
+      EXECUTABLE tables

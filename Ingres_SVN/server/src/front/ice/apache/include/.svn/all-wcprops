@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/ice/apache/include
+END
+alloc.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/ice/apache/include/alloc.h
+END
+util_uri.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/ice/apache/include/util_uri.h
+END
+ap.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/ice/apache/include/ap.h
+END
+http_protocol.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/front/ice/apache/include/http_protocol.h
+END
+util_script.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/ice/apache/include/util_script.h
+END
+ap_ctype.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/ice/apache/include/ap_ctype.h
+END
+http_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/ice/apache/include/http_config.h
+END
+hsregex.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/ice/apache/include/hsregex.h
+END
+ap_mmn.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/ice/apache/include/ap_mmn.h
+END
+ap_config_auto.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/front/ice/apache/include/ap_config_auto.h
+END
+http_log.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/ice/apache/include/http_log.h
+END
+os.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/ice/apache/include/os.h
+END
+buff.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/ice/apache/include/buff.h
+END
+http_main.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/ice/apache/include/http_main.h
+END
+httpd.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/ice/apache/include/httpd.h
+END
+ap_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/ice/apache/include/ap_config.h
+END
+http_core.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/ice/apache/include/http_core.h
+END
+os-inline.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/ice/apache/include/os-inline.c
+END

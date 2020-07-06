@@ -1,0 +1,22 @@
+RELEASE Ingres
+PACKAGE basic 
+   INVISIBLE
+   DIRECTORY ingres!files!english
+   PART messages
+      DEFINITION messages.prt
+   PART errhelp
+      DEFINITION errhelp.prt
+   PART name-server
+      DEFINITION namesrv.prt
+   PART zoneinfo
+      DEFINITION zoneinfo.prt
+   PART remotesharelib
+      DEFINITION remotesharelib.prt
+   PART tm
+      DEFINITION tm.prt
+   PART release-notes
+     DEFINITION relnotes.prt
+   PART remoteapicon
+      DEFINITION remoteapicon.prt
+   PART shadow-pwd
+      DEFINITION shadow-pwd.prt

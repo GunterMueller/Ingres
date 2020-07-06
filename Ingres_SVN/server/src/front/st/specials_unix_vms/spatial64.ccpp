@@ -1,0 +1,35 @@
+/*
+** Copyright (c) 2004 Ingres Corporation
+*/
+/*
+** Generic part file for Spatial Object Library 64-bit
+*/
+
+/*
+** History:
+**	05-sep-2002 (somsa01)
+**	    Created from 32-bit version.
+**	21-Sep-2005 (hanje04)
+**	    SIR 115239
+**	    Add setup script for package
+**	26-Oct-2005 (hanje04)
+**	    SIR 115239
+**	    Spatial OBjects needs to be shared library
+*/
+
+PART   spatial64
+   capability CI_CLASSOBJ_ADT
+
+/*
+** ingres!lib!lp64
+*/
+   DIRECTORY ingres!lib!lp64
+   BUILD_DIR (ING_BUILD)!lib!lp64
+      EXECUTABLE libspat.1.$SLSFX
+
+/*
+** ingres!lib!utility
+*/
+   DIRECTORY ingres!utility
+   BUILD_DIR (ING_BUILD)!utility
+      SCRIPT SETUP iisuspat64

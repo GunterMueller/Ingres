@@ -1,0 +1,16 @@
+#
+# Jamfile file for front!misc!unloaddb
+#
+
+SubDir ING_SRC front misc unloaddb ;
+
+IISUBSYS front misc unloaddb ;
+
+
+IIBINEXE unloaddb : udmain.sc ;
+IINEEDLIBS unloaddb :  XFERDBLIB GNLIB MALLOCLIB SHFRAMELIB
+	SHQLIB SHCOMPATLIB SHEMBEDLIB ;
+IIUNDEFS unloaddb : II_copyright malloc ;
+
+IIMSGHDR erud.msg ;
+

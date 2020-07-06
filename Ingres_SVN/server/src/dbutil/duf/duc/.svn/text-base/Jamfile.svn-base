@@ -1,0 +1,14 @@
+#
+# Jamfile file for dbutil!duf!duc
+#
+
+SubDir ING_SRC dbutil duf duc ;
+
+IISUBSYS dbutil duf duc ;
+
+
+IIBINEXE createdb : ducreate.qsc ;
+IINEEDLIBS createdb : DBUTILLIB SHEMBEDLIB SHCOMPATLIB SHFRAMELIB ;
+IINEEDLIBSW createdb : SHCUFLIB SHADFLIB ;
+
+IILIBRARY DBUTILLIB : ducommon.qsc ducdata.c ;

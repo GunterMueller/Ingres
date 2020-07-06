@@ -1,0 +1,148 @@
+8
+
+dir
+33
+http://code.ingres.com/ingres/main/src/front/vdba
+http://code.ingres.com/ingres
+
+
+
+2008-03-20T11:29:42.068590Z
+3
+rosan01
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+45b5d43f-8932-4c86-835a-3654e5842839
+
+winmain_win
+dir
+
+nanact_win
+dir
+
+xvcda_win
+dir
+
+xvdda_win
+dir
+
+inc4res_win
+dir
+
+libextnc_win
+dir
+
+vcda_win
+dir
+
+caspin_win
+dir
+
+containr_win
+dir
+
+svrsqlas_win
+dir
+
+vcbf_win
+dir
+
+libmon_win
+dir
+
+catolist_win
+dir
+
+rmcmd
+dir
+
+libtree_win
+dir
+
+xsql_win
+dir
+
+tksplash_win
+dir
+
+vsda_win
+dir
+
+dbadlg1_win
+dir
+
+libguids_win
+dir
+
+ija_win
+dir
+
+adbtofst_win
+dir
+
+tkanimat_win
+dir
+
+lbtreelp_win
+dir
+
+inc_win
+dir
+
+mainmfc_win
+dir
+
+xipm_win
+dir
+
+hdr_win
+dir
+
+dataldr_unix_win
+dir
+
+vnodemgr_win
+dir
+
+libwctrl_win
+dir
+
+sqlquery_win
+dir
+
+ipm_win
+dir
+
+xiea_win
+dir
+
+ijactrl_win
+dir
+
+xiia_win
+dir
+
+treedll_win
+dir
+
+ivm_win
+dir
+
+libingll_win
+dir
+
+svriia_win
+dir
+

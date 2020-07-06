@@ -1,0 +1,9 @@
+#
+# Jamfile file for common!dotnet_win
+#
+
+SubDir ING_SRC common dotnet_win ;
+
+IISUBSYS common dotnet_win ;
+
+IISLN dataprovider : dataprovider.sln ;

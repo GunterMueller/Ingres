@@ -1,0 +1,33 @@
+#
+# Name: MANIFEST
+#
+# Description:
+#       Custom JAM file for front!st!gtkinstall_unix
+#
+# History:
+#    17-Oct-2006 (hanje04)
+#	SIR 116877
+#	Created.
+#    25-Oct-2006 (hanje04)
+#	SIR 116877
+#	Add ingres_install.sh
+#    20-Oct-2007 (hanje04)
+#	SIR 117044
+#	Only build if BUILD_GTK_INST = TRUE (Jamdefs.abc_xyz)
+#
+
+SubDir ING_SRC front st gtkinstall_unix ;
+
+IISUBSYS front st gtkinstall_unix ;
+
+if $(BUILD_GTK_INST) = "TRUE"
+{
+    IINoHbUtilExe inginstgui : gipmain.c ;
+    IINoHbNeedLibs inginstgui : GINSTALLLIB RFAPILIB RPMINSTALLLIB COMPATLIB
+	GTKLIBS RPMLIBS ;
+
+    IINoHbLibrary RPMINSTALLLIB : giprpm.c ;
+
+    IIBINSH ingres_install : ingres_install.sh ;
+}
+

@@ -1,0 +1,52 @@
+8
+
+dir
+33
+http://code.ingres.com/ingres/main/src/back/qsf/qss
+http://code.ingres.com/ingres
+
+
+
+2008-03-20T07:36:25.925856Z
+1
+root
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+45b5d43f-8932-4c86-835a-3654e5842839
+
+Jamfile
+file
+
+
+
+
+2008-05-18T00:44:26.000000Z
+d3a02c2dc728b0f2a3b5e3c5c693b0c7
+2008-03-20T07:36:25.925856Z
+1
+root
+
+qss.c
+file
+
+
+
+
+2008-05-18T00:44:26.000000Z
+bbb97b7b4fabf8fc402e09ba1fcd9c02
+2008-03-20T07:36:25.925856Z
+1
+root
+

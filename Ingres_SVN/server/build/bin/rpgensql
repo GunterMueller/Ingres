@@ -1,0 +1,17 @@
+#!/bin/bash
+# Copyright (c) 2004 Ingres Corporation
+#
+# Name:	rpgensql - process generated SQL
+#
+# Description:
+#	Calls the SQL terminal monitor to process SQL script.
+#
+# Parameters:
+#	1	- database owner
+#	2	- nodename
+#	3	- database name
+#	4	- script name
+#
+
+TMPDIR=`ingprenv II_TEMPORARY`
+sql -u$1 $2::$3 < $4 > $TMPDIR/rpgen.log

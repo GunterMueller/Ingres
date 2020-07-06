@@ -1,0 +1,17 @@
+#
+# Jamfile file for front!ice!DTD
+#
+
+SubDir ING_SRC front ice DTD ;
+
+IISUBSYS front ice DTD ;
+
+IIICEFILE DTD/icelang_frag.dtd : icelang_frag.dtd ;
+IIICEFILE DTD/ingres.dtd : ingres.dtd ;
+IIFILE ingres.dtd : ingres.dtd ;
+
+IIICEFILE DTD/xhtml-lat1.ent : xhtml-lat1.ent ;
+IIICEFILE DTD/xhtml-special.ent : xhtml-special.ent ;
+IIICEFILE DTD/xhtml-symbol.ent : xhtml-symbol.ent ;
+IIICEFILE DTD/xhtml1-transitional.dtd : xhtml1-transitional.dtd ;
+

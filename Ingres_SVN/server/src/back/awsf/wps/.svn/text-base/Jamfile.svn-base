@@ -1,0 +1,13 @@
+#
+# Jamfile file for back!awsf!wps
+#
+
+SubDir ING_SRC back awsf wps ;
+
+IISUBSYS back awsf wps ;
+
+IILIBRARY AWSFLIB : wpsreport.c wpspost.c wpsmo.c
+	wpsbuffer.c wpsapp.c wpsFile.c wps.c postpars.c htmlpars.c
+	htmlmeth.c htmlform.c ;
+
+IILIBRARY IMPICELIBDATA : wpsdata.c ;

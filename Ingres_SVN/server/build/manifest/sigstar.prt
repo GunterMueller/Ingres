@@ -1,0 +1,12 @@
+PART  sigstar
+   BUILD_DIR (ING_BUILD)!sig!star
+   DIRECTORY ingres!sig!star
+      FILE read.me
+  {
+   PERMISSION s:rwed,o:rwed,g:re,w:re,setuid
+      EXECUTABLE wakeup
+  }
+      EXECUTABLE scheduler
+      FILE makestdcat.sh
+      FILE iialarm.frm
+      SCRIPT iirunschd

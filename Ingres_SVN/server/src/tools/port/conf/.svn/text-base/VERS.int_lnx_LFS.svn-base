@@ -1,0 +1,9 @@
+config=int_lnx
+option=INGRESII
+option=libc6
+option=LinuxCOMMERCIAL
+option=CA_LICENSE
+option=NO_AUTH_STRING
+option=SVR_AR
+option=B64
+build=00

@@ -1,0 +1,33 @@
+#
+# MANIFEST file for front!ice!samples!app
+#
+# History:
+#       13-Jul-2004 (hanje04)
+#           SIR 112651
+#           Added to build Ingres r3 with jam for Open Source.
+#	19-Aug-2004 (drivi01)
+#	    Added a windows specific copy of a makefile.wnt to
+#	    makefile in specified directory.
+#	7-Aug-2004 (drivi01)
+#	    Added creation of an iceapp.exe.
+#
+
+
+SubDir ING_SRC front ice samples app ;
+
+IISUBSYS front ice samples app ;
+
+if $(UNIX)
+{
+IICCPPFILE $(INGICE)/samples/app/Makefile : Makefile.ccpp ;
+}
+else if $(NT)
+{
+IIICEFILE samples/app/makefile : makefile.wnt ;
+}
+IIICEFILE samples/app/app.html : app.html ;
+IIICEBINEXE iceapp.cgi : iceapp.c ;
+IIICEFILE samples/app/iceapp.c : iceapp.c ;
+IIICEFILE samples/app/makefile.wnt : makefile.wnt ;
+
+IIICEBINEXE iceapp : iceapp.c ;

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/ingres/!svn/ver/1/main/src/front/ice/DTD
+END
+xhtml-special.ent
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/ice/DTD/xhtml-special.ent
+END
+xhtml-lat1.ent
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/ice/DTD/xhtml-lat1.ent
+END
+ingres.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/ice/DTD/ingres.dtd
+END
+xhtml-symbol.ent
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/ice/DTD/xhtml-symbol.ent
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/ice/DTD/Jamfile
+END
+icelang_frag.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/ice/DTD/icelang_frag.dtd
+END
+xhtml1-transitional.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/ice/DTD/xhtml1-transitional.dtd
+END

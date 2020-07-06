@@ -1,0 +1,12 @@
+#
+# Jamfile file for common!ddf!dds
+#
+
+SubDir ING_SRC common ddf dds ;
+
+IISUBSYS common ddf dds ;
+
+
+IILIBRARY DDFLIB : ddsuser.c ddsrole.c ddsmem.c ddsinit.c
+	ddsdbuser.c ddsdb.c ddscontrol.c ;
+

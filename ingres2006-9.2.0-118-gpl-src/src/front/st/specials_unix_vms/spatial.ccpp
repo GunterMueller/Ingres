@@ -1,0 +1,77 @@
+/*
+** Copyright (c) 2004 Ingres Corporation
+*/
+/*
+** Generic part file for Spatial Object Library 
+*/
+
+/*
+** History:
+**	05-jan-1994 (tyler)
+**		Created.	
+**      23-mar-1994 (stevet)
+**              Added spcircc.h 
+**	28-apr-95 (forky01)
+**		Uncomment capability check for spatial.
+**	30-oct-96 (hanch04)
+**		Added spcirf.h spplyf.h splinf.h spsegf.h spboxf.h sppntf.h
+**	20-Jan-2004 (bonro01)
+**		Removed duplicate spcirf.h file.
+**	20-Sep-2005 (hanje04)
+**		SIR 115239
+**		Add setup script for spatial on UNIX.
+**	26-Oct-2005 (hanje04)
+**	    SIR 115239
+**	    Spatial OBjects needs to be shared library
+**      04-May-2007 (hweho01)
+**          Ship Spatial Objects as archive library for Tru64 
+**          (axp_osf) platform.
+*/
+
+PART   spatial
+   capability CI_CLASSOBJ_ADT
+
+/*
+** ingres!{lib,library}
+*/
+
+# ifdef VMS
+   DIRECTORY ingres!library
+   BUILD_DIR (jpt_scf_src)!udt
+      SCRIPT ii_alladt_build
+      SCRIPT ii_clsadt_build
+   BUILD_DIR (jpt_adf_lib)
+      BUILD_FILE spat.olb_ndb
+      FILE spat.olb
+# else /* VMS */
+   DIRECTORY ingres!lib
+   BUILD_DIR (ING_BUILD)!lib
+#if defined(axp_osf)
+      FILE  libspat.a
+#else
+      EXECUTABLE libspat.1.$SLSFX
+#endif   /* if defined(axp_osf) */ 
+
+   DIRECTORY ingres!utility
+   BUILD_DIR (ING_BUILD)!utility
+	SCRIPT SETUP iisuspat
+# endif /* VMS */
+
+/*
+** ingres!files
+*/
+
+DIRECTORY ingres!files
+# ifdef VMS
+   BUILD_DIR (jpt_adf_src)!ads
+# else /* VMS */
+   BUILD_DIR (ING_BUILD)!files
+# endif /* VMS */
+      FILE spatial.h
+      FILE spatialc.h
+      FILE spboxf.h
+      FILE spcirf.h
+      FILE splinf.h
+      FILE spsegf.h
+      FILE sppntf.h
+      FILE spplyf.h

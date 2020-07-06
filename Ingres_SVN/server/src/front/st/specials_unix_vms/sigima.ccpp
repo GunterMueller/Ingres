@@ -1,0 +1,30 @@
+/*
+** Copyright (c) 2004 Ingres Corporation
+*/
+/*
+** Generic part file for sigima
+*/
+
+/*
+** History
+**	07-Jun-1995 (johna)
+**		Created for IMA sig directory 
+**	12-jun-1995 (wolf) 
+**	       Supply VMS setting for BUILD_DIR
+**	23-feb-2005 (abbjo03)
+**	    Changes to build VMS using same directory structure as Unix.
+*/
+
+/*
+** Default directory: ingres/sig/ima
+*/
+
+PART  sigima
+
+   BUILD_DIR (ING_BUILD)!sig!ima
+   DIRECTORY ingres!sig!ima
+      FILE README.DOC
+      FILE Makefile
+      FILE iomon.sc
+      FILE iomon.form
+      FILE iomon.sql

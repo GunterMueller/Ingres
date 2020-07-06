@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/ingres/!svn/ver/1/main/src/cl/clf/erold_vms
+END
+erloc_v1.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/cl/clf/erold_vms/erloc_v1.h
+END
+erloc_v2.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/cl/clf/erold_vms/erloc_v2.h
+END
+ercompile_v1.lot
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/cl/clf/erold_vms/ercompile_v1.lot
+END
+erloc_v3.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/cl/clf/erold_vms/erloc_v3.h
+END
+ercompile_v2.lot
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/cl/clf/erold_vms/ercompile_v2.lot
+END
+ercompile_v3.lot
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/cl/clf/erold_vms/ercompile_v3.lot
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/erold_vms/Jamfile
+END
+ercomp_v1.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/erold_vms/ercomp_v1.c
+END
+ercomp_v2.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/erold_vms/ercomp_v2.c
+END
+ercomp_v3.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/erold_vms/ercomp_v3.c
+END

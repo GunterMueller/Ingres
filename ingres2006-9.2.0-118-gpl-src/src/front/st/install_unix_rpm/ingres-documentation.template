@@ -1,0 +1,34 @@
+Summary: %rpm_product% - Documentation
+Name: %rpm_basename%%rpm_specname%
+Version: %rpm_version%
+Release: %rpm_release%
+License: %rpm_license%
+Group: %rpm_group%
+Source: none
+Patch: none
+Vendor: %rpm_vendor%
+URL: %rpm_url%
+BuildRoot: %rpm_buildroot%
+Provides: %rpm_basename%%rpm_specname%
+
+AutoReq: 0
+%define _unpackaged_files_terminate_build 0 
+%define _missing_doc_files_terminate_build 0
+
+%description 
+%product_name% Documentation
+
+The complete documentation set for %rpm_product%
+%prep
+
+%pre
+# RPM install option for PIF
+# PIF_RPM_UPDATE_OPTION= --nodeps --replacefiles --replacepkgs
+
+%install
+
+%post
+
+%preun
+
+%files

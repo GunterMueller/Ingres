@@ -1,0 +1,13 @@
+#
+# Jamfile file for back!qef!qen
+#
+
+SubDir ING_SRC back qef qen ;
+
+IISUBSYS back qef qen ;
+
+
+IILIBRARY QEFLIB : qenutl.c qentsort.c qentjoin.c qensort.c
+	qensejoin.c qenqp.c qenorig.c qenkjoin.c qenisjoin.c qenhjoin.c
+	qenhashutl.c qenfsmjoin.c qenexch.c qendmrcx.c qencpjoin.c ;
+

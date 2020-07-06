@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/frontcl/shell_vms
+END
+cc.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frontcl/shell_vms/cc.dcl
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/shell_vms/Jamfile
+END
+dcc.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/shell_vms/dcc.dcl
+END

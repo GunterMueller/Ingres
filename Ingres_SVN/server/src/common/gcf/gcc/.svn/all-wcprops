@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/ingres/!svn/ver/1/main/src/common/gcf/gcc
+END
+gccplfsm.roc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/gcf/gcc/gccplfsm.roc
+END
+gccslfsm.roc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/gcf/gcc/gccslfsm.roc
+END
+gccalcv.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gcc/gccalcv.c
+END
+gcctlfsm.roc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/gcf/gcc/gcctlfsm.roc
+END
+gcbal.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/common/gcf/gcc/gcbal.c
+END
+gccal.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/common/gcf/gcc/gccal.c
+END
+gcccset.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gcc/gcccset.c
+END
+iigcb.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/common/gcf/gcc/iigcb.c
+END
+iigcc.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/common/gcf/gcc/iigcc.c
+END
+gccadm.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/common/gcf/gcc/gccadm.c
+END
+gccpb.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/common/gcf/gcc/gccpb.c
+END
+gcbalfsm.roc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/gcf/gcc/gcbalfsm.roc
+END
+gccalfsm.roc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/gcf/gcc/gccalfsm.roc
+END
+gccinit.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gcc/gccinit.c
+END
+iigcb.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcc/iigcb.exe.manifest
+END
+iigcc.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcc/iigcc.exe.manifest
+END
+gccgblro.roc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/gcf/gcc/gccgblro.roc
+END
+gccpbfsm.roc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/gcf/gcc/gccpbfsm.roc
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/common/gcf/gcc/Jamfile
+END
+wgl_32s.hnt
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/gcf/gcc/wgl_32s.hnt
+END
+gccpl.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/common/gcf/gcc/gccpl.c
+END
+iigcb.lot
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gcc/iigcb.lot
+END
+gccutil.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gcc/gccutil.c
+END
+iigcc.lot
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gcc/iigcc.lot
+END
+gccsl.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/common/gcf/gcc/gccsl.c
+END
+gcctl.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/common/gcf/gcc/gcctl.c
+END
+gccglbl.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gcc/gccglbl.c
+END
+gccencry.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/gcf/gcc/gccencry.c
+END

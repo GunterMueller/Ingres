@@ -1,0 +1,4 @@
+PART   w4gl
+   BUILD_DIR (ING_BUILD)!lib
+   DIRECTORY ingres!lib
+      FILE w4gl05sq.o

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/frontcl/files_unix
+END
+ingmfcobol
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/frontcl/files_unix/ingmfcobol
+END
+rcingsetperm
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/frontcl/files_unix/rcingsetperm
+END
+rcingstartup
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/frontcl/files_unix/rcingstartup
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/frontcl/files_unix/MANIFEST
+END
+dayfile.dst
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/frontcl/files_unix/dayfile.dst
+END
+ii_interface.jbl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/front/frontcl/files_unix/ii_interface.jbl
+END

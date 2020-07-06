@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frontcl/files_unix_win
+END
+vt100i.map
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/frontcl/files_unix_win/vt100i.map
+END
+vt100nk.map
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/front/frontcl/files_unix_win/vt100nk.map
+END
+vt200i.map
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/frontcl/files_unix_win/vt200i.map
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/frontcl/files_unix_win/MANIFEST
+END
+startsql.dst
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/front/frontcl/files_unix_win/startsql.dst
+END
+vt220.map
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/frontcl/files_unix_win/vt220.map
+END
+startup.dst
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/front/frontcl/files_unix_win/startup.dst
+END
+vt100f.map
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/frontcl/files_unix_win/vt100f.map
+END

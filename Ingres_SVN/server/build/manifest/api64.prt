@@ -1,0 +1,4 @@
+PART	api64
+   DIRECTORY ingres!lib!lp64
+   BUILD_DIR (ING_BUILD)!lib!lp64
+      FILE libiiapi.a

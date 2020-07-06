@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/testtool/sep/files_win
+END
+ibmpc.sep
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/testtool/sep/files_win/ibmpc.sep
+END
+termcap.sep
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/testtool/sep/files_win/termcap.sep
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/testtool/sep/files_win/Jamfile
+END
+winpcalt.sep
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/testtool/sep/files_win/winpcalt.sep
+END

@@ -1,0 +1,67 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Ija", "ija.vcproj", "{B9387917-E4D7-4067-9970-8FCE21FA1595}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 1
+		SccProjectUniqueName0 = ija.vcproj
+		SccProjectName0 = \u0022$/Ija\u0022,\u0020REGAAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		AIX_Release = AIX_Release
+		DBCS Debug = DBCS Debug
+		DBCS Release = DBCS Release
+		Debug = Debug
+		Debug Simulation = Debug Simulation
+		HPUX_Debug = HPUX_Debug
+		HPUX_Release = HPUX_Release
+		Linux_Debug = Linux_Debug
+		Linux_Release = Linux_Release
+		Release = Release
+		Release Simulation = Release Simulation
+		Solaris_Debug = Solaris_Debug
+		Solaris_Release = Solaris_Release
+		Unicode Debug = Unicode Debug
+		Unicode Release = Unicode Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.AIX_Release.ActiveCfg = AIX_Release|Win32
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.AIX_Release.Build.0 = AIX_Release|Win32
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.DBCS Debug.ActiveCfg = DBCS Debug|Win32
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.DBCS Debug.Build.0 = DBCS Debug|Win32
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.DBCS Release.ActiveCfg = DBCS Release|Win32
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.DBCS Release.Build.0 = DBCS Release|Win32
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.Debug.ActiveCfg = Debug|Win32
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.Debug.Build.0 = Debug|Win32
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.Debug Simulation.ActiveCfg = Debug Simulation|Win32
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.Debug Simulation.Build.0 = Debug Simulation|Win32
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.HPUX_Debug.ActiveCfg = HPUX_Debug|Win32
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.HPUX_Debug.Build.0 = HPUX_Debug|Win32
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.HPUX_Release.ActiveCfg = HPUX_Release|Win32
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.HPUX_Release.Build.0 = HPUX_Release|Win32
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.Linux_Debug.ActiveCfg = Linux_Debug|Win32
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.Linux_Debug.Build.0 = Linux_Debug|Win32
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.Linux_Release.ActiveCfg = Linux_Release|Win32
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.Linux_Release.Build.0 = Linux_Release|Win32
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.Release.ActiveCfg = Release|Win32
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.Release.Build.0 = Release|Win32
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.Release Simulation.ActiveCfg = Release Simulation|Win32
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.Release Simulation.Build.0 = Release Simulation|Win32
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.Solaris_Debug.ActiveCfg = Solaris_Debug|Win32
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.Solaris_Debug.Build.0 = Solaris_Debug|Win32
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.Solaris_Release.ActiveCfg = Solaris_Release|Win32
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.Solaris_Release.Build.0 = Solaris_Release|Win32
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{B9387917-E4D7-4067-9970-8FCE21FA1595}.Unicode Release.Build.0 = Unicode Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

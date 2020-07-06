@@ -1,0 +1,24 @@
+#!/bin/bash
+#
+# Copyright (c) 2004 Ingres Corporation
+#
+#
+# Name: infodb	- Show information about the database from the config file
+#
+# Description:
+#      Show information stored in the database.  Information printed includes:
+#       	locations, checkpoints, journal, database status, dump
+#	        information, ...
+#
+#      This shell program provides the INGRES `infodb' command by
+#      executing the journaling support program, passing along the
+#      command line arguments.
+#
+#
+
+if [ $# -gt 0 ]
+then
+        exec ${II_SYSTEM?}/ingres/bin/dmfjsp infodb "$@"
+else
+        exec ${II_SYSTEM?}/ingres/bin/dmfjsp infodb
+fi

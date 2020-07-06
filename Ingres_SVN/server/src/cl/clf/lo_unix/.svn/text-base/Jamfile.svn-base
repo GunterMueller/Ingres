@@ -1,0 +1,47 @@
+#
+# Jamfile file for cl!clf!lo_unix
+#
+
+SubDir ING_SRC cl clf lo_unix ;
+
+IISUBSYS cl clf lo_unix ;
+
+IINOOPTIM louniq.c : i64_aix ;
+IINOOPTIM lotos.c : i64_aix ;
+IINOOPTIM lostfile.c : i64_aix ;
+IINOOPTIM losize.c : i64_aix ;
+IINOOPTIM lorename.c : i64_aix ;
+IINOOPTIM loqueue.c : i64_aix ;
+IINOOPTIM lopurge.c : i64_aix ;
+IINOOPTIM lolist.c : i64_aix ;
+IINOOPTIM lolast.c : i64_aix ;
+IINOOPTIM loisfull.c : i64_aix ;
+IINOOPTIM loisdir.c : i64_aix ;
+IINOOPTIM loingpath.c : i64_aix ;
+IINOOPTIM loinfo.c : i64_aix ;
+IINOOPTIM logtfile.c : i64_aix ;
+IINOOPTIM logt.c : i64_aix ;
+IINOOPTIM lofstfile.c : i64_aix ;
+IINOOPTIM lofroms.c : i64_aix ;
+IINOOPTIM lofaddpath.c : i64_aix ;
+IINOOPTIM loexist.c : i64_aix ;
+IINOOPTIM loerrno.c : i64_aix ;
+IINOOPTIM loendlist.c : i64_aix ;
+IINOOPTIM lodetail.c : i64_aix ;
+IINOOPTIM lodelete.c : i64_aix ;
+IINOOPTIM lodbname.c : i64_aix ;
+IINOOPTIM locurnode.c : i64_aix ;
+IINOOPTIM locreate.c : i64_aix ;
+IINOOPTIM locopy.c : i64_aix ;
+IINOOPTIM lochange.c : i64_aix ;
+IINOOPTIM loaddpath.c : i64_aix ;
+IINOOPTIM lotoes.c : i64_aix ;
+
+IILIBRARY COMPATLIB : lownext.c lowhat.c lowend.c lowcard.c
+	louniq.c lotos.c lostfile.c losize.c lorename.c loqueue.c
+	lopurge.c lolist.c lolast.c loisfull.c loisdir.c loingpath.c
+	loinfo.c logtfile.c logt.c lofstfile.c lofroms.c lofaddpath.c
+	loexist.c loerrno.c loendlist.c lodetail.c lodelete.c
+	lodbname.c locurnode.c locreate.c locopy.c lochange.c
+	loaddpath.c lotoes.c ;
+

@@ -1,0 +1,70 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IjaCtrl", "ijactrl.vcproj", "{08267E10-8DA5-45CE-B5E5-8F1F549561C5}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 1
+		SccProjectUniqueName0 = ijactrl.vcproj
+		SccProjectName0 = \u0022$/Ija\u0020Control\u0022,\u0020ADGAAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		AIX_Release = AIX_Release
+		DBCS Debug = DBCS Debug
+		DBCS Release = DBCS Release
+		Debug = Debug
+		Debug Simulation = Debug Simulation
+		Debug Vut Configuration = Debug Vut Configuration
+		HPUX_Debug = HPUX_Debug
+		HPUX_Release = HPUX_Release
+		Linux_Debug = Linux_Debug
+		Linux_Release = Linux_Release
+		Release = Release
+		Release Simulation = Release Simulation
+		Solaris_Debug = Solaris_Debug
+		Solaris_Release = Solaris_Release
+		Unicode Debug = Unicode Debug
+		Unicode Release = Unicode Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.AIX_Release.ActiveCfg = AIX_Release|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.AIX_Release.Build.0 = AIX_Release|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.DBCS Debug.ActiveCfg = DBCS Debug|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.DBCS Debug.Build.0 = DBCS Debug|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.DBCS Release.ActiveCfg = DBCS Release|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.DBCS Release.Build.0 = DBCS Release|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.Debug.ActiveCfg = Debug|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.Debug.Build.0 = Debug|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.Debug Simulation.ActiveCfg = Debug Simulation|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.Debug Simulation.Build.0 = Debug Simulation|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.Debug Vut Configuration.ActiveCfg = Debug Vut Configuration|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.Debug Vut Configuration.Build.0 = Debug Vut Configuration|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.HPUX_Debug.ActiveCfg = HPUX_Debug|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.HPUX_Debug.Build.0 = HPUX_Debug|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.HPUX_Release.ActiveCfg = HPUX_Release|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.HPUX_Release.Build.0 = HPUX_Release|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.Linux_Debug.ActiveCfg = Linux_Debug|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.Linux_Debug.Build.0 = Linux_Debug|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.Linux_Release.ActiveCfg = Linux_Release|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.Linux_Release.Build.0 = Linux_Release|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.Release.ActiveCfg = Release|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.Release.Build.0 = Release|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.Release Simulation.ActiveCfg = Release Simulation|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.Release Simulation.Build.0 = Release Simulation|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.Solaris_Debug.ActiveCfg = Solaris_Debug|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.Solaris_Debug.Build.0 = Solaris_Debug|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.Solaris_Release.ActiveCfg = Solaris_Release|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.Solaris_Release.Build.0 = Solaris_Release|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{08267E10-8DA5-45CE-B5E5-8F1F549561C5}.Unicode Release.Build.0 = Unicode Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

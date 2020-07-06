@@ -1,0 +1,8 @@
+config=i64_hpu
+config64=i64_hpu
+option=DELIM_TEST
+option=DBL
+option=B64
+option=ADD_ON32
+option=INGRESII
+build=00

@@ -1,0 +1,5 @@
+config=su4_us5
+option=DELIM_TEST
+option=B64
+option=INGRESII
+build=00

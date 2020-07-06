@@ -1,0 +1,573 @@
+#!/bin/bash
+# >>>>>>>>>>>>>>>>>>>>NOTE<<<<<<<<<<<<<<<<<<
+#  DO NOT TRY TO MAKE LOCAL UPDATES TO THIS FILE
+#  LOCAL UPDATES WILL BE LOST WHEN THIS FILE IS
+#  OVERLAYED BY VERSIONS EXTRACTED FROM PICCOLO
+#  Source for this file is in piccolo ingres library
+#  buildtools!tools!shell 
+# >>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<
+#
+##	fast install program
+##
+##	18-apr-95 (hanch04)
+##		created.
+##      20-Nov-2006 (hanal04)
+##          Added int_rpl.
+
+if [ -f set_env.sh ]
+then
+  . ./set_env.sh
+else
+  echo "Error, I cannot find the set_env.sh script"
+  echo "This is required to use createdbms"
+  echo "Please run createdbms from the root directory of the Ingres source"
+  exit 1
+fi
+
+# Change source root here if it differs from ${srcroot}
+srcroot=/devsrc
+REBUILD=true
+CLEAN=false
+INSTALL=true
+SETUP=true
+TEST=true
+self=`basename $0`
+bld=`basename $ING_ROOT`
+
+# Chuck - Here the script requires a specific directory hierarchy to work.
+# I've hard coded it now to what it would effectively be out of svn, but it
+# probably should be generic.
+#ING_LIB=`dirname $ING_ROOT`
+#lib=`basename $ING_LIB`
+ING_LIB=$ING_ROOT
+productname=ingres2006
+
+pjobs=1
+testlabel=
+ARCH=`uname -m`
+host=`uname -n`
+unamesr=`uname -sr`
+unames=`uname -s`
+unamem=`uname -m`
+case $unamesr in
+    Linux*)
+	case $ARCH in
+	    #IA32 Linux
+	    i*86) RPMARCH=i386
+		  ;;
+	    #IA64 Linux | AMD64 LINUX | S390 Linux
+	    *)    RPMARCH=$ARCH
+		  ;;
+	esac
+	SUDO=sudo
+	;;
+    *)
+	SUDO=doasroot
+	;;
+esac
+
+#function usage()
+#{
+#    echo "Usage: testit [-testonly|-setuponly|-instonly] [-norebuild] [-clean]"
+#    echo "              [-ingbuild] [-r <rootdir>] [ -j <piccolo_jobs> ]"
+#    echo "              [ -wt <label> ] installation_code"
+#    trap - 0
+#    exit 1
+#}
+
+function usage()
+{
+    echo "Usage: testit installation_code"
+    trap - 0
+    exit 1
+}
+
+function timestamp()
+{
+    case $1 in
+	begin) echo "Beginning $2 at `date`"
+		;;
+	  end) echo "Ending $2 at `date`"
+		;;
+	    *) date
+		;;
+    esac
+}
+
+function err()
+{
+    echo "ERROR: $self failed at line $LINENO"
+    cd $dirsav
+    timestamp end
+    trap - 0
+    exit $sec
+}
+    
+#
+# setup_tools - Unpack testing tools
+#
+function setup_tools()
+{
+    [ "$ING_TOOLS" ] || { echo "ING_TOOLS not set" ; return 1 ; }
+    [ -f "$ING_ROOT/release/tools.tar" ] ||
+    {
+        echo "ERROR: Cannot locate tools.tar"
+	err
+    }
+
+    # Clear out any reminence
+    if [ -d "$ING_TOOLS" ] ; then
+        rm -rf $ING_TOOLS/*
+    else
+        mkdir -p $ING_TOOLS
+    fi
+
+    trap err 1 ERR
+    # Unpack archive
+    pushd $ING_TOOLS
+    tar xf $ING_ROOT/release/tools.tar
+
+    popd
+
+}
+
+#
+# set_perms - Set permissions on QA tools
+#
+function set_perms()
+{
+    trap err 1 ERR
+
+    [ -f "$ING_TOOLS/bin/qasetuser" ] || return 1
+    [ -f "$ING_TOOLS/bin/qawtl" ] || return 1
+
+    # Set permisions
+    cd $ING_TOOLS && \
+	$SUDO chown root bin/qasetuser && \
+	$SUDO chmod 4755 bin/qasetuser && \
+	chmod 4755 bin/qawtl || return 1
+
+    return 0
+}
+
+# Main routine
+#while [ $# != 0 ]
+#do
+#    case $1 in 
+#        -instonly ) 
+#	    TEST=false
+#	    SETUP=false
+#	    shift
+#	    ;;
+#	-setuponly)
+#	    TEST=false
+#	    INSTALL=false
+#	    shift
+#	    ;;
+#        -testonly)
+#	    INSTALL=false
+#	    SETUP=false
+#	    II_INSTALLATION=`ingprenv II_INSTALLATION`
+#	    shift
+#	    ;;
+#	-norebuild)
+#	    REBUILD=false
+#	    shift
+#	    ;;
+#	-clean)
+#	    CLEAN=true
+#	    shift
+#	    ;;
+#	-r)
+#	    srcroot=$2
+#	    shift ; shift
+#	    ;;
+#	-ingbuild)
+#	    INGBUILD=true
+#	    RPMARCH=""
+#	    shift
+#	    ;;
+#        -j)
+#            pjobs="$2"
+#            if [ "$pjobs" -eq 0 ]; then
+#                echo -e "Invalid argument:\n\t$1 $2"
+#                usage
+#                # exit 1
+#            fi
+#            shift ; shift
+#            ;;
+#	-wt)
+#	    testlabel=$2
+#	    shift ; shift
+#	    ;;
+#         *)
+#	    case $1 in
+#		[A-Z][A-Z,0-9])
+#	    	    II_INSTALLATION=$1
+#	    	    shift
+#	    	    ;;
+#		*)
+#		    echo "$1 is an invalid installation ID"
+#		    usage
+#		    # exit 1
+#		    ;;
+#	    esac
+#	    ;;
+#    esac
+#done
+
+TEST=false
+SETUP=false
+INGBUILD=true
+RPMARCH=""
+
+case $1 in
+	[A-Z][A-Z,0-9])
+		II_INSTALLATION=$1
+		;;
+	*)
+		echo "$1 is an invalid installation ID"
+		usage
+		;;
+esac
+
+[ -z "$II_INSTALLATION" ] && 
+{
+    echo "installation_code not specified"
+    usage
+    # exit 1
+}
+export II_INSTALLATION
+
+HOST=`hostname`
+[ -z "$ING_ROOT" ] && 
+{
+    echo "ING_ROOT must be set to run this script"
+    exit 1
+}
+
+set - `cat $ING_ROOT/build/version.rel`
+release=$2
+nptlbuild=`head -1 $ING_ROOT/build/version.rel |cut -d')' -f2`
+vers=`cat $ING_ROOT/build/version.rel | sed -e s:^.*\(:: -e s:/.*$::`
+buildno=`grep '^build' $ING_ROOT/src/tools/port/conf/VERS | cut -d= -f2`
+case $vers in
+    int.lnx|\
+    int.rpl)
+	if $INGBUILD; then
+		desc="pc-linux-ingbuild-i386"
+	else
+		desc="pc-linux-i386"
+	fi
+        ;;
+    a64.lnx)
+	if $INGBUILD; then
+		desc="linux-ingbuild-x86_64"
+	else
+		desc="linux-x86_64"
+	fi
+        ;;
+    i64.lnx)
+	if $INGBUILD; then
+		desc="linux-ingbuild-ia64"
+	else
+		desc="linux-ia64"
+	fi
+        ;;
+    int.w32)
+        desc="win-x86"
+        ;;
+    a64.win)
+        desc="win-x86_64"
+        ;;
+    i64.win)
+        desc="win-ia64"
+        ;;
+    su9.us5)
+        desc="sun-solaris-sparc-32-64bit"
+        ;;
+    a64.sol)
+        desc="sun-solaris-x86-32-64bit"
+        ;;
+    r64.us5)
+        desc="ibm-powerpc-32-64bit"
+        ;;
+    hp2.us5)
+        desc="hp-hpux-pa-risc-32-64bit"
+        ;;
+    i64.hpu)
+        desc="hp-hpux-ia64-32-64bit"
+        ;;
+    axp.osf)
+        desc="hp-tru64-5.1"
+        ;;
+    axm.vms)
+        desc="hp-vms-alpha"
+        ;;
+    i64.vms)
+        desc="hp-vms-ia64"
+        ;;
+    usl.us5)
+        desc="unixware-x86"
+        ;;
+    mg5.osx)
+        desc="apple-darwin-powerpc"
+        ;;
+esac
+desc=gpl-$desc
+# Append NPTL if we need to
+[ "$nptlbuild" = "NPTL" ] && desc="NPTL-${desc}"
+
+tardir=${productname}-$release-$buildno-$desc
+
+if [ ! -f $ING_ROOT/release/$tardir/ingres.tar ]
+then
+   echo "Creating installation tar file."
+   mksaveset
+fi
+
+if [ ! -f $ING_ROOT/release/tools.tar ]
+then
+   echo "Creating tools tar file."
+    pushd $ING_ROOT/release
+    tartools -a
+    tartools tools.tar
+    popd
+fi
+
+if [ ! -d "$ING_ROOT/install/$II_INSTALLATION" ]
+then
+   echo "Creating installation instance directory."
+   mkdir ${ING_ROOT}/install/${II_INSTALLATION}
+fi
+
+export II_SYSTEM=${ING_ROOT}/install/${II_INSTALLATION}
+
+export ING_TOOLS=$II_SYSTEM/tools
+export ING_TST=$ING_ROOT/ingtst
+export TST_OUTPUT=$II_SYSTEM/output
+if [ ! -d $TST_OUTPUT ]
+then
+   mkdir $TST_OUTPUT
+fi
+
+
+export TST_CFG=$ING_TST/suites/handoffqa
+export TST_LISTEXEC=$ING_TST/suites/handoffqa
+export TST_DOC=$ING_TST/suites/doc
+export TST_DCL=$ING_TST/suites/dcl
+export TST_SHELL=$ING_TST/suites/shell
+export TST_TESTENV=$ING_TST
+export TST_INIT=$ING_TST/basis/init
+export TST_DATA=$ING_TST/gcf/gcc/data
+export TST_STRESS=$ING_TST/stress
+export SEP_TIMEOUT=600
+export II_DATE_CENTURY_BOUNDARY=10
+export TST_TOOLS=$ING_TOOLS/bin
+export TOOLS_DIR=$ING_TOOLS
+export TST_TESTOOLS=$ING_TST/testtool
+export TST_SEP=$ING_TOOLS/files
+export PEDITOR=$TST_TOOLS/peditor
+export SEP_DIFF_SLEEP=10
+export REP_TST=$ING_TST
+
+if [ ! -f ${II_SYSTEM}/resp.txt ]
+then
+   echo "Creating resp.txt file."
+   cat << ! > $II_SYSTEM/resp.txt
+LOG_KBYTES=200000
+START_ON_BOOT=NO
+!
+fi
+
+[ -n "$RPMARCH" ] &&
+{
+    [ -d $ING_ROOT/rpm ] ||
+    {
+	echo "Cannot locate RPMS dir $ING_ROOT/rpm"
+	exit 1
+    }
+}
+
+[ -z "$II_SYSTEM" ] && 
+{
+    echo "II_SYSTEM must be set to run this script"
+    exit 1
+}
+
+[ -z "$ING_TOOLS" ] && 
+{
+    echo "ING_TOOLS must be set to run this script"
+    exit 1
+}
+
+[ -z "$ING_TST" ] && 
+{
+    echo "ING_TST must be set to run this script"
+    exit 1
+}
+
+INSTL=`echo $II_SYSTEM | sed s%$ING_ROOT%%g | sed s%/install/%%g`
+RPMLOC=$ING_ROOT/rpm
+export II_MANIFEST_DIR=$II_SYSTEM/ingres/install
+echo "Installation parameters:"
+echo "HOST=$HOST	II_INSTALLATION=$II_INSTALLATION	INSTALL=$INSTL"
+
+trap err 1 ERR
+
+if $INSTALL 
+then
+    if [ "$RPMARCH" != "" ]
+    then
+	timestamp begin "RPM installation"
+	if [ ! -d $II_SYSTEM/rpm ]
+	then
+	    mkdir -p $II_SYSTEM/rpm
+	    cd $II_SYSTEM/rpm
+	else
+	    cd $II_SYSTEM/rpm
+	fi
+
+	echo "path=`pwd`"
+	echo ""
+
+	if $CLEAN
+	then
+	    [ -z "$II_INSTALLATION" ] &&
+	    {
+		echo "II_INSTALLATION not specified, don't know which installation to remove"
+		usage
+		# exit 1
+	    }
+	    echo "Removing $II_INSTALLATION"
+	    sudo ${srcroot}/bin/uninstall_ingres $II_INSTALLATION -y -c
+	fi
+
+	if $REBUILD
+	then
+	    for rpm in $RPMLOC/$RPMARCH/*.rpm
+	    do
+		[ "`basename $rpm|cut -d- -f2`" = "documentation" ] || \
+		[ "`basename $rpm|cut -d- -f3`" = "documentation" ] || \
+		[ "`basename $rpm|cut -d- -f2`" = "license" ] || \
+		[ "`basename $rpm|cut -d- -f3`" = "CATOSL" ] && continue
+		echo "Repackaging $rpm with II_INSTALLATION=$II_INSTALLATION"
+		$ING_ROOT/build/utility/iirpmrename $rpm $II_INSTALLATION
+	    done
+	fi
+
+	echo  rpm -Uvh --prefix=$II_SYSTEM *.rpm
+	sudo rpm -Uvh --prefix=$II_SYSTEM  *.rpm || exit 1
+	timestamp end "RPM installation"
+    else
+	timestamp begin "Ingbuild installation"
+
+	case $unames in
+	    HP-UX)
+		case $unamem in
+		    ia64)
+			if [ "$SHLIB_PATH" ] ; then
+			    SHLIB_PATH=$II_SYSTEM/ingres/lib/lp32:$SHLIB_PATH
+			else
+			    SHLIB_PATH=/lib:/usr/lib:$II_SYSTEM/ingres/lib/lp32
+			fi
+			export SHLIB_PATH
+			if [ "$LD_LIBRARY_PATH" ] ; then
+			    LD_LIBRARY_PATH=$II_SYSTEM/ingres/lib:$LD_LIBRARY_PATH
+			else
+			    LD_LIBRARY_PATH=$II_SYSTEM/ingres/lib
+			fi
+			export LD_LIBRARY_PATH
+			;;
+		    *)
+			if [ "$SHLIB_PATH" ] ; then
+			    SHLIB_PATH=$II_SYSTEM/ingres/lib:$SHLIB_PATH
+			else
+			    SHLIB_PATH=/lib:/usr/lib:$II_SYSTEM/ingres/lib
+			fi
+			export SHLIB_PATH
+			if [ "$LD_LIBRARY_PATH" ] ; then
+			    LD_LIBRARY_PATH=$II_SYSTEM/ingres/lib/lp64:$LD_LIBRARY_PATH
+			else
+			    LD_LIBRARY_PATH=$II_SYSTEM/ingres/lib/lp64
+			fi
+			export LD_LIBRARY_PATH
+			;;
+		esac
+		;;
+	    AIX)
+		if [ "$LIBPATH" ] ; then
+		    LIBPATH=$II_SYSTEM/ingres/lib:$II_SYSTEM/ingres/lib/lp64:$LIBPATH
+		else
+		    LIBPATH=/lib:/usr/lib:$II_SYSTEM/ingres/lib:$II_SYSTEM/ingres/lib/lp64
+		fi
+		export LIBPATH
+		;;
+	    *)
+		if [ "$LD_LIBRARY_PATH" ] ; then
+		    LD_LIBRARY_PATH=$II_SYSTEM/ingres/lib:$LD_LIBRARY_PATH
+		else
+		    LD_LIBRARY_PATH=/lib:/usr/lib:$II_SYSTEM/ingres/lib
+		fi
+		    export LD_LIBRARY_PATH
+		if [ "$LD_LIBRARY_PATH_64" ] ; then
+		    LD_LIBRARY_PATH_64=$II_SYSTEM/ingres/lib/lp64:$LD_LIBRARY_PATH_64
+		else
+		    LD_LIBRARY_PATH_64=$II_SYSTEM/ingres/lib/lp64
+		fi
+		    export LD_LIBRARY_PATH_64
+		;;
+	esac
+
+	export II_DISTRIBUTION=$ING_ROOT/release/$tardir/ingres.tar
+	mkdir $II_SYSTEM/ingres
+	cd $II_SYSTEM/ingres
+	tar xf $II_DISTRIBUTION install
+	install/ingbuild -acceptlicense -exresponse -file=$II_SYSTEM/resp.txt $II_DISTRIBUTION
+
+# Chuck - this only works if it does not require root, hence the -b option.
+# Again, this does not seem to be required if rpm installs are used.
+#        [ -f /etc/shadow -o /etc/security/passwd ] && \
+#            doasroot $II_SYSTEM/ingres/bin/mkvalidpw
+
+#	[ -f /etc/shadow -o /etc/security/passwd ] && \
+#	     $II_SYSTEM/ingres/bin/mkvalidpw
+
+        echo "Execute $II_SYSTEM/ingres/bin/mkvalidpw as root to complete installation."
+
+	timestamp end "Ingbuild installation"
+    fi
+fi
+
+#chmod 777 $II_SYSTEM
+
+if $SETUP
+then
+    timestamp begin "test setup"
+
+    # Check tools exist
+    [ -x "$ING_TOOLS/bin/sep" ] || setup_tools
+    set_perms ||
+    {
+	echo "Failed to set permissions on tools"
+	echo "Aborting"
+	exit 1
+    }
+ 
+
+    sh $TST_SHELL/tstsetup.sh
+
+    echo "You may begin using the $INSTL installation or ingstop"
+    timestamp end "test setup"
+
+fi # testonly
+
+if $TEST
+then
+	timestamp begin "handoffQA"
+	cd $TST_OUTPUT
+	qasetuser testenv sh ${srcroot}/hoqa 
+	ingstop
+	timestamp end "handoffQA"
+
+fi

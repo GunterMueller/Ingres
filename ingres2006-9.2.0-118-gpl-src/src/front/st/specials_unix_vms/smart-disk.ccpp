@@ -1,0 +1,27 @@
+/*
+** Copyright (c) 2004 Ingres Corporation
+*/
+/*
+** Generic part file for smart-disk
+*/
+
+/*
+** History
+**	13-jul-1993 (dianeh)
+**		Modified to generic.
+*/
+
+/*
+** Default directory: ingres/lib
+*/
+
+PART  smart-disk
+
+# ifdef VMS
+# else /* VMS */
+  {
+   BUILD_DIR (ING_BUILD)!lib
+   DIRECTORY ingres!lib
+      FILE libsd.a
+  }
+# endif /* VMS */

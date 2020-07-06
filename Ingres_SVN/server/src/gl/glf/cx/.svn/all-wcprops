@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/ingres/!svn/ver/1/main/src/gl/glf/cx
+END
+cxinit.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/gl/glf/cx/cxinit.c
+END
+cxdmd.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/gl/glf/cx/cxdmd.c
+END
+cxapi.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/gl/glf/cx/cxapi.c
+END
+cxdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/gl/glf/cx/cxdata.c
+END
+cxppptest.lot
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/gl/glf/cx/cxppptest.lot
+END
+cxdlm.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/gl/glf/cx/cxdlm.c
+END
+cxcmo.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/gl/glf/cx/cxcmo.c
+END
+cxtest.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/gl/glf/cx/cxtest.c
+END
+cxmsg.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/gl/glf/cx/cxmsg.c
+END
+cxmsgtest.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/gl/glf/cx/cxmsgtest.c
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/gl/glf/cx/MANIFEST
+END
+cxtest.lot
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/gl/glf/cx/cxtest.lot
+END
+cxinfo.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/gl/glf/cx/cxinfo.c
+END
+wgl_32s.hnt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/gl/glf/cx/wgl_32s.hnt
+END
+cxppp.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/gl/glf/cx/cxppp.c
+END
+cxppptest.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/gl/glf/cx/cxppptest.c
+END
+cxnuma.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/gl/glf/cx/cxnuma.c
+END
+cxmsgtest.lot
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/gl/glf/cx/cxmsgtest.lot
+END

@@ -1,0 +1,9 @@
+PART  star
+   capability CI_DBE
+   DIRECTORY ingres!utility
+   BUILD_DIR (ING_BUILD)!utility
+      SCRIPT SETUP iisustar
+   DIRECTORY ingres!files
+   BUILD_DIR (ING_BUILD)!files
+      FILE star.crs
+      FILE star.rfm

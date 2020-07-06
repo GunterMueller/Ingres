@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/ice/fortunoff_cfg
+END
+articles_ref.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/front/ice/fortunoff_cfg/articles_ref.cfg
+END
+menu.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/ice/fortunoff_cfg/menu.cfg
+END
+images.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/ice/fortunoff_cfg/images.cfg
+END
+articles.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/ice/fortunoff_cfg/articles.cfg
+END
+location.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/ice/fortunoff_cfg/location.cfg
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/ice/fortunoff_cfg/Jamfile
+END
+artmenu.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/ice/fortunoff_cfg/artmenu.cfg
+END
+artcomments.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/ice/fortunoff_cfg/artcomments.cfg
+END

@@ -1,0 +1,45 @@
+#
+# Jamfile file for front!ice!plays!tutorialGuide
+#
+
+SubDir ING_SRC front ice plays tutorialGuide ;
+
+IISUBSYS front ice plays tutorialGuide ;
+
+IIICEFILE plays/tutorialGuide/arrow_next.gif : arrow_next.gif ;
+IIICEFILE plays/tutorialGuide/fr_account.html : fr_account.html ;
+IIICEFILE plays/tutorialGuide/fr_before.html : fr_before.html ;
+IIICEFILE plays/tutorialGuide/fr_blank.html : fr_blank.html ;
+IIICEFILE plays/tutorialGuide/fr_browser.html : fr_browser.html ;
+IIICEFILE plays/tutorialGuide/fr_combo.html : fr_combo.html ;
+IIICEFILE plays/tutorialGuide/fr_contents.html : fr_contents.html ;
+IIICEFILE plays/tutorialGuide/fr_design.html : fr_design.html ;
+IIICEFILE plays/tutorialGuide/fr_directory.html : fr_directory.html ;
+IIICEFILE plays/tutorialGuide/fr_example.html : fr_example.html ;
+IIICEFILE plays/tutorialGuide/fr_home.html : fr_home.html ;
+IIICEFILE plays/tutorialGuide/fr_if.html : fr_if.html ;
+IIICEFILE plays/tutorialGuide/fr_imageLink.html : fr_imageLink.html ;
+IIICEFILE plays/tutorialGuide/fr_imageSwitchLink.html : fr_imageSwitchLink.html ;
+IIICEFILE plays/tutorialGuide/fr_introduction.html : fr_introduction.html ;
+IIICEFILE plays/tutorialGuide/fr_linkSubSet.html : fr_linkSubSet.html ;
+IIICEFILE plays/tutorialGuide/fr_login.html : fr_login.html ;
+IIICEFILE plays/tutorialGuide/fr_playList.html : fr_playList.html ;
+IIICEFILE plays/tutorialGuide/fr_register.html : fr_register.html ;
+IIICEFILE plays/tutorialGuide/fr_select.html : fr_select.html ;
+IIICEFILE plays/tutorialGuide/fr_shopAdd.html : fr_shopAdd.html ;
+IIICEFILE plays/tutorialGuide/fr_shopCommit.html : fr_shopCommit.html ;
+IIICEFILE plays/tutorialGuide/fr_shopDescribe.html : fr_shopDescribe.html ;
+IIICEFILE plays/tutorialGuide/fr_shopHome.html : fr_shopHome.html ;
+IIICEFILE plays/tutorialGuide/fr_shopRemove.html : fr_shopRemove.html ;
+IIICEFILE plays/tutorialGuide/fr_shopView.html : fr_shopView.html ;
+IIICEFILE plays/tutorialGuide/fr_skeleton.html : fr_skeleton.html ;
+IIICEFILE plays/tutorialGuide/fr_subSet.html : fr_subSet.html ;
+IIICEFILE plays/tutorialGuide/fr_template.html : fr_template.html ;
+IIICEFILE plays/tutorialGuide/fr_textLink.html : fr_textLink.html ;
+IIICEFILE plays/tutorialGuide/frameSet.html : frameSet.html ;
+IIICEFILE plays/tutorialGuide/index.html : index.html ;
+IIICEFILE plays/tutorialGuide/plus.gif : plus.gif ;
+IIICEFILE plays/tutorialGuide/server_anim.gif : server_anim.gif ;
+IIICEFILE plays/tutorialGuide/submit.gif : submit.gif ;
+IIICEFILE plays/tutorialGuide/tutorial.css : tutorial.css ;
+

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/front/ice/scripts
+END
+icesample.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/ice/scripts/icesample.sql
+END
+iceinit.sql
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/ice/scripts/iceinit.sql
+END
+icedemo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/ice/scripts/icedemo.sql
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/ice/scripts/Jamfile
+END
+iceload.dat
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/ice/scripts/iceload.dat
+END
+iceplays.sql
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/ice/scripts/iceplays.sql
+END
+icinit92.sql
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/ice/scripts/icinit92.sql
+END
+icefiles.dat
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/ice/scripts/icefiles.dat
+END
+icetool.sql
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/ice/scripts/icetool.sql
+END
+icetutor.sql
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/ice/scripts/icetutor.sql
+END
+iceuser.sql
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/ice/scripts/iceuser.sql
+END
+icedbusr.sql
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/ice/scripts/icedbusr.sql
+END

@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/frame/copyform
+END
+copyform.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frame/copyform/copyform.c
+END
+readform.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frame/copyform/readform.c
+END
+cfaddobj.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/frame/copyform/cfaddobj.qsc
+END
+cfwrobj.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/frame/copyform/cfwrobj.qsc
+END
+copyform.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/front/frame/copyform/copyform.exe.manifest
+END
+cfutils.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/copyform/cfutils.c
+END
+copyform.lot
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/frame/copyform/copyform.lot
+END
+cfcomp.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frame/copyform/cfcomp.qsc
+END
+cfsave.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frame/copyform/cfsave.qsc
+END
+cfdelobj.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/frame/copyform/cfdelobj.qsc
+END
+cfrdobj.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/frame/copyform/cfrdobj.qsc
+END
+cfglobs.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/frame/copyform/cfglobs.c
+END
+cpfmdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frame/copyform/cpfmdata.c
+END
+ercf.msg
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/frame/copyform/ercf.msg
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/frame/copyform/Jamfile
+END
+wgl_32s.hnt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/frame/copyform/wgl_32s.hnt
+END
+cfdmpobj.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/frame/copyform/cfdmpobj.qsc
+END
+cfcnvt60.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frame/copyform/cfcnvt60.c
+END
+cfobjexi.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/frame/copyform/cfobjexi.qsc
+END

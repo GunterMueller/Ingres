@@ -1,0 +1,5 @@
+-L/lib -L/usr/lib -L/usr/local/lib -L$II_SYSTEM/ingres/lib
+-linterp.1
+-lframe.1
+-lq.1
+-lcompat.1

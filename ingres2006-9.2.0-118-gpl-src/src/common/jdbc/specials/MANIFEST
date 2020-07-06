@@ -1,0 +1,14 @@
+#
+# MANIFEST file for common!jdbc!specials
+#
+# History:
+#       13-Jul-2004 (hanje04)
+#           SIR 112651
+#           Added to build Ingres r3 with jam for Open Source.
+
+
+SubDir ING_SRC common jdbc specials ;
+
+IISUBSYS common jdbc specials ;
+
+IIBFILES lib : DrvInfo.class EdbcInfo.class edbc.jar ;

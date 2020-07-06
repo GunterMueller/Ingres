@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/testtool/cts/shell_vms
+END
+ctsnodes.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/testtool/cts/shell_vms/ctsnodes.dcl
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/testtool/cts/shell_vms/Jamfile
+END
+coord.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/testtool/cts/shell_vms/coord.dcl
+END
+cts.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/testtool/cts/shell_vms/cts.dcl
+END
+slave.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/testtool/cts/shell_vms/slave.dcl
+END

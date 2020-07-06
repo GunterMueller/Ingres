@@ -1,0 +1,695 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/ingres/!svn/ver/1/main/src/front/hdr/hdr
+END
+vt.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/vt.h
+END
+eqesql.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/eqesql.h
+END
+ereq.msg
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/ereq.msg
+END
+afe.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/afe.h
+END
+gropt.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/gropt.h
+END
+erqg.msg
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/erqg.msg
+END
+scroll.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/scroll.h
+END
+eqsym.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/eqsym.h
+END
+oocollec.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/oocollec.h
+END
+erg4.msg
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/erg4.msg
+END
+erug.msg
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/erug.msg
+END
+erui.msg
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/erui.msg
+END
+flddesc.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/flddesc.h
+END
+ooclass.qsh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/ooclass.qsh
+END
+fmtchg.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/fmtchg.h
+END
+fstm.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/fstm.h
+END
+fkerr.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/fkerr.h
+END
+frsctblk.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/frsctblk.h
+END
+uf.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/uf.h
+END
+ftdefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/ftdefs.h
+END
+cu.qsh
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/cu.qsh
+END
+trimtxt.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/trimtxt.h
+END
+lqgdata.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/lqgdata.h
+END
+feconfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/feconfig.h
+END
+erfe.msg
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/erfe.msg
+END
+qr.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/qr.h
+END
+iirowdsc.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/iirowdsc.h
+END
+ooptab.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/ooptab.h
+END
+encoding.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/encoding.h
+END
+erfm.msg
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/erfm.msg
+END
+fe.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/fe.h
+END
+multi.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/multi.h
+END
+fsicnsts.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/fsicnsts.h
+END
+eqgen.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/eqgen.h
+END
+vifrbft.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/vifrbft.h
+END
+eqfw.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/eqfw.h
+END
+menu.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/menu.h
+END
+ctrl.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/ctrl.h
+END
+ftkeys.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/ftkeys.h
+END
+mqtf.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/mqtf.h
+END
+fedscnst.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/fedscnst.h
+END
+ugexpr.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/ugexpr.h
+END
+eqscan.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/eqscan.h
+END
+feqdesc.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/feqdesc.h
+END
+list.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/list.h
+END
+equel.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/equel.h
+END
+eqscsql.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/eqscsql.h
+END
+fedsz.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/fedsz.h
+END
+g4defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/g4defs.h
+END
+qgv0.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/qgv0.h
+END
+graf.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/graf.h
+END
+pipes.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/pipes.h
+END
+grerr.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/grerr.h
+END
+itline.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/itline.h
+END
+pv.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/pv.h
+END
+ft3270.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/ft3270.h
+END
+iisqlda.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/iisqlda.h
+END
+equtils.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/equtils.h
+END
+cf.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/cf.h
+END
+dst.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/dst.h
+END
+eqrun.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/eqrun.h
+END
+frame.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/frame.h
+END
+ergr.msg
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/ergr.msg
+END
+eqgr.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/eqgr.h
+END
+ercx.msg
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/ercx.msg
+END
+kst.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/kst.h
+END
+ootypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/ootypes.h
+END
+gn.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/gn.h
+END
+g4consts.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/g4consts.h
+END
+dvect.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/dvect.h
+END
+grmap.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/grmap.h
+END
+mqtypes.qsh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/mqtypes.qsh
+END
+oosym.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/oosym.h
+END
+oosymbol.qsh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/oosymbol.qsh
+END
+qg.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/qg.h
+END
+qgor.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/qgor.h
+END
+oframe.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/oframe.h
+END
+oocatlog.qsh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/oocatlog.qsh
+END
+ug.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/ug.h
+END
+eqstmt.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/eqstmt.h
+END
+erde.msg
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/erde.msg
+END
+vifrbf.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/vifrbf.h
+END
+eqfrs.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/eqfrs.h
+END
+erdg.msg
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/erdg.msg
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/Jamfile
+END
+ui.qsh
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/ui.qsh
+END
+vifrbfc.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/vifrbfc.h
+END
+uigdata.qsh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/uigdata.qsh
+END
+omenu.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/omenu.h
+END
+runtime.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/runtime.h
+END
+dictutil.qsh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/dictutil.qsh
+END
+iisqlca.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/iisqlca.h
+END
+fedml.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/fedml.h
+END
+vifrbfi.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/vifrbfi.h
+END
+int.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/int.h
+END
+termdr.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/termdr.h
+END
+windex.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/windex.h
+END
+valid.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/valid.h
+END
+erlq.msg
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/erlq.msg
+END
+frscnsts.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/frscnsts.h
+END
+oodep.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/oodep.h
+END
+eqlang.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/eqlang.h
+END
+ft.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/ft.h
+END
+oocat.qsh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/oocat.qsh
+END
+eraf.msg
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/eraf.msg
+END
+stdprmpt.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/stdprmpt.h
+END
+feds.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/feds.h
+END
+val.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/val.h
+END
+eqtgt.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/eqtgt.h
+END
+fmt.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/fmt.h
+END
+libq.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/libq.h
+END
+fehdr.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/fehdr.h
+END
+help.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/help.h
+END
+oodefine.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/oodefine.h
+END
+tu.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/front/hdr/hdr/tu.h
+END

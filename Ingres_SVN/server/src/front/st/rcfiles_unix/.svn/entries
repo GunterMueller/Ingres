@@ -1,0 +1,52 @@
+8
+
+dir
+33
+http://code.ingres.com/ingres/main/src/front/st/rcfiles_unix
+http://code.ingres.com/ingres
+
+
+
+2008-03-20T07:36:25.925856Z
+1
+root
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+45b5d43f-8932-4c86-835a-3654e5842839
+
+lnx.rc
+file
+
+
+
+
+2008-05-18T01:08:59.000000Z
+d24c9c97a05a04bfa32760ba4a704d91
+2008-03-20T07:36:25.925856Z
+1
+root
+
+Jamfile
+file
+
+
+
+
+2008-05-18T01:08:59.000000Z
+01b28531de4f618620c25eed63eccb39
+2008-03-20T07:36:25.925856Z
+1
+root
+

@@ -1,0 +1,34 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ipm", "ipm.vcproj", "{0F2851EC-04F7-4FD1-BB00-A4783FE8DA5A}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 1
+		SccProjectUniqueName0 = ipm.vcproj
+		SccProjectName0 = \u0022$/COM/ipm\u0022,\u0020NOIAAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+		Unicode Debug = Unicode Debug
+		Unicode Release = Unicode Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{0F2851EC-04F7-4FD1-BB00-A4783FE8DA5A}.Debug.ActiveCfg = Debug|Win32
+		{0F2851EC-04F7-4FD1-BB00-A4783FE8DA5A}.Debug.Build.0 = Debug|Win32
+		{0F2851EC-04F7-4FD1-BB00-A4783FE8DA5A}.Release.ActiveCfg = Release|Win32
+		{0F2851EC-04F7-4FD1-BB00-A4783FE8DA5A}.Release.Build.0 = Release|Win32
+		{0F2851EC-04F7-4FD1-BB00-A4783FE8DA5A}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{0F2851EC-04F7-4FD1-BB00-A4783FE8DA5A}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{0F2851EC-04F7-4FD1-BB00-A4783FE8DA5A}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{0F2851EC-04F7-4FD1-BB00-A4783FE8DA5A}.Unicode Release.Build.0 = Unicode Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

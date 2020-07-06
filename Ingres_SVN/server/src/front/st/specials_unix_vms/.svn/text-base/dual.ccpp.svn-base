@@ -1,0 +1,24 @@
+/*
+** Copyright (c) 2004 Ingres Corporation
+*/
+/*
+** Generic part file to support "dual-universe" Unix machines
+*/
+
+/*
+** History
+**	13-jul-1993 (dianeh)
+**		Modified to generic.
+**	24-nov-1993 (tyler)
+**		Cleaned up.
+*/
+
+PART dual
+
+/*
+** ingres!utility
+*/
+
+   BUILD_DIR (ING_BUILD)!utility
+   DIRECTORY ingres!utility
+      EXECUTABLE dual

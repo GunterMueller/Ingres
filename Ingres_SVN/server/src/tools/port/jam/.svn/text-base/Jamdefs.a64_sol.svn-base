@@ -1,0 +1,78 @@
+#
+#  Copyright (c) 2004 Ingres Corporation
+#
+#  Name: Jamdefs.a64_sol -- Variable definitions for AMD 64 Solaris
+#
+#  Description:
+#       Platform specific variable definitions for AMD 64 Solaris
+#
+# History:
+#	18-Nov-2004 (bonro01)
+#	    Initial creation
+#	31-May-2005 (schka24)
+#	    Use amd64, not generic64, for as so that cmpxchgq works.
+#	28-Sep-2005 (bonro01)
+#	    Add variables for readme file substitution
+#       16-Oct-2006 (hanal04) Bug 116866
+#          Add CCDEBUG to hold the compiler's debug flag. Used to ensure
+#          NOOPTIM does not strip this when explicitly set.
+#
+#####
+
+NETSCAPE_API_FLAG = "" ;
+APACHE_API_FLAG	= "" ;
+VERS		= "a64_sol" ;
+VERS64		= "a64_sol" ;
+ASMACH		= "" ;
+ASMACH64	= "-xarch=amd64" ;
+ASCPPMACH	= "" ;
+ASCPPMACH64	= "-DADD_ON64" ;
+CC 		?= "cc" ;
+CCDEBUG         = "-g" ;
+CPP 		?= "/lib/cpp" ;
+CCMACH 		= "-mt -D_LARGEFILE64_SOURCE" ;
+CCMACH64 	= "-DADD_ON64 -xarch=generic64 -mt" ;
+CCLDMACH	= "-mt" ;
+CCLDMACH64 	= "-DADD_ON64 -xarch=generic64 -mt" ;
+CCLDSERVER 	= "" ;
+CCPICFLAG 	= "-K PIC" ;
+SHLIBLD 	= "ld" ;
+CCSHLDMACH	= "-G" ;
+CCSHLDMACH64	= "-G" ;
+SLSFX 		= "so" ;
+LIBSFX 		= "a" ;
+OBJSFX 		= "o" ;
+MWSLSFX 	= "so" ;
+CGISFX 		= "cgi" ;
+LDLIBPATH	= "/usr/ccs/lib /lib /usr/lib" ;
+LDLIBPATH64 	= "/lib/64 /usr/lib/64" ;
+LIBMACH 	= "" ;
+LDLIBMACH	= "-L/usr/lib -lsocket -lelf -lposix4 -ldl -lnsl -lm" ;
+LDLIBMACH64	= "-L/usr/lib/64 -lsocket -lelf -lposix4 -ldl -lnsl -lm" ; 
+LD_ICE_FLAGS 	= "" ;
+LONGLONG	= long long ;
+OPTIM           = "" ;
+IIOPTIM		?= "-xO2" ;
+NOOPTIM		?= "" ;
+SHELLHEADER 	= ""#!/bin/sh"" ;
+BSD42 		?= -DBSD42 ;
+LEX		= flex ;
+DIRENT 		?= -DDIRENT ;
+DIRFUNC 	?= -DDIRFUNC ;
+NO_DIRFUNC 	?= -DNO_DIRFUNC ;
+SYS5 		?= -DSYS5 ;
+SVR_SHLIBS	= "" ;
+C++		= "CC" ;
+C++FLAGS	= "-xarch=generic -mt" ;
+C++FLAGS64	= "-DADD_ON64 -mt -xarch=generic64" ;
+UNDEFFLAG	= "-u " ;
+XERC_DEFS	= "-DXML_USE_NATIVE_TRANSCODER -DXML_USE_INMEM_MESSAGELOADER -DXML_USE_NETACCESSOR_SOCKET" ;
+XERC_LIBS	= "/usr/lib/libc.so.1" ;
+DBMS_STACKSIZE	= 262144 ;
+platform_string = "Sun Solaris x86" ;
+extension_string = $(config_string) ;
+#
+#ICE File extensions
+#
+ICE_EXT		= so ;
+CGI_EXT		= cgi ;

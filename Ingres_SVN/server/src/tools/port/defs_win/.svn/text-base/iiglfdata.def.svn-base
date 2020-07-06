@@ -1,0 +1,41 @@
+;  History:
+;	11-Jun-2004 (drivi01)
+;	    Added ordinals.
+
+EXPORTS
+GLDLLdummy		@1				
+MO_nalloc		@2	DATA			
+MO_bytes_alloc		@3	DATA			
+MO_nfree		@4	DATA			
+MO_mem_limit		@5	DATA			
+MO_mem_classes		@6	DATA			
+MO_oid_map		@7	DATA			
+MO_map_time		@8	DATA			
+MO_meta_classes		@9	DATA			
+MO_mon_classes		@10	DATA			
+MO_max_str_bytes		@11	DATA			
+MO_str_defines		@12	DATA			
+MO_str_deletes		@13	DATA			
+MO_str_bytes		@14	DATA			
+MO_str_freed		@15	DATA			
+MO_str_classes		@16	DATA			
+MO_tree_classes		@17	DATA			
+MO_classes		@18	DATA			
+MO_disabled		@19	DATA			
+MO_instances		@20	DATA			
+MO_monitors		@21	DATA			
+;    MO_nattach                  DATA
+;    MO_nclassdef                DATA
+;    MO_ndel_monitor             DATA
+;    MO_ndetach                  DATA
+;    MO_nget                     DATA
+;    MO_ngetnext                 DATA
+;    MO_nmutex                   DATA
+;    MO_nset                     DATA
+;    MO_nset_monitor             DATA
+;    MO_ntell_monitor            DATA
+;    MO_nunmutex                 DATA
+MO_sem		@22	DATA			
+MO_semcnt		@23	DATA			
+MO_strings		@24	DATA			
+index_class		@25	DATA			

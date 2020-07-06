@@ -1,0 +1,7 @@
+PART   errhelp
+   BUILD_DIR (ING_BUILD)!sig!errhelp
+   DIRECTORY ingres!sig!errhelp
+      EXECUTABLE errhelp
+      FILE faccode.txt
+      SCRIPT cvtnum
+      FILE read.me

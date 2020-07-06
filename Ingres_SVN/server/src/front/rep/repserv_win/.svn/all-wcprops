@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/rep/repserv_win
+END
+replsvc.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/rep/repserv_win/replsvc.c
+END
+replsvc.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/front/rep/repserv_win/replsvc.exe.manifest
+END
+repinst.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/rep/repserv_win/repinst.c
+END
+repstart.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/rep/repserv_win/repstart.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repserv_win/Jamfile
+END
+repinst.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/front/rep/repserv_win/repinst.exe.manifest
+END
+repntsvc.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/rep/repserv_win/repntsvc.h
+END
+repmsg.mc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/rep/repserv_win/repmsg.mc
+END
+rpserver.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/front/rep/repserv_win/rpserver.exe.manifest
+END

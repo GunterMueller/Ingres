@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/ingres/!svn/ver/1/main/src/common/gcf/gcd
+END
+gcdmsg.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/common/gcf/gcd/gcdmsg.c
+END
+gcdstmt.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gcd/gcdstmt.c
+END
+gcdrqst.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gcd/gcdrqst.c
+END
+gcdgca.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/common/gcf/gcd/gcdgca.c
+END
+gcdgcc.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/common/gcf/gcd/gcdgcc.c
+END
+gcdjctl.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gcd/gcdjctl.c
+END
+gcdconn.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gcd/gcdconn.c
+END
+gcdxact.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gcd/gcdxact.c
+END
+gcddmtl.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gcd/gcddmtl.c
+END
+iigcd.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/common/gcf/gcd/iigcd.c
+END
+gcdadm.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/common/gcf/gcd/gcdadm.c
+END
+iigcd.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcd/iigcd.exe.manifest
+END
+gcdquery.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/gcf/gcd/gcdquery.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/common/gcf/gcd/Jamfile
+END
+gcddata.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gcd/gcddata.c
+END
+gcdpool.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gcd/gcdpool.c
+END
+gcdcrsr.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gcd/gcdcrsr.c
+END
+gcdapi.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/common/gcf/gcd/gcdapi.c
+END
+gcdsess.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gcd/gcdsess.c
+END
+gcdutil.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gcd/gcdutil.c
+END
+iigcd.lot
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/gcf/gcd/iigcd.lot
+END

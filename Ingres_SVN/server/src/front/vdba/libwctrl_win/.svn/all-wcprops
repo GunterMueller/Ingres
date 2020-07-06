@@ -1,0 +1,275 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win
+END
+stdafx.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/stdafx.h
+END
+ppgedit.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/ppgedit.h
+END
+schkmark.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/schkmark.cpp
+END
+ctrltool.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/ctrltool.dsp
+END
+statview.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/statview.cpp
+END
+calsctrl.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/calsctrl.cpp
+END
+fminifrm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/fminifrm.cpp
+END
+piedoc.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/piedoc.h
+END
+peditctl.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/peditctl.cpp
+END
+pieview.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/pieview.h
+END
+layspin.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/layspin.cpp
+END
+uchklbox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/uchklbox.cpp
+END
+barinfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/barinfo.cpp
+END
+titlebmp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/titlebmp.cpp
+END
+imagbtn.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/imagbtn.cpp
+END
+layeddlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/layeddlg.cpp
+END
+lsctlhug.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/lsctlhug.cpp
+END
+combodlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/combodlg.cpp
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/Jamfile
+END
+psheet.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/psheet.cpp
+END
+vlegend.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/vlegend.h
+END
+stdafx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/stdafx.cpp
+END
+rcdepend.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/rcdepend.h
+END
+ppgedit.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/ppgedit.cpp
+END
+xdpasswd.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/xdpasswd.cpp
+END
+calscbox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/calscbox.cpp
+END
+piedoc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/piedoc.cpp
+END
+pieview.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/pieview.cpp
+END
+colorind.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/colorind.cpp
+END
+statview.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/statview.h
+END
+editlsct.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/editlsct.cpp
+END
+256bmp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/256bmp.cpp
+END
+ctrltool.sln
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/ctrltool.sln
+END
+statfrm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/statfrm.cpp
+END
+sortlist.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/sortlist.cpp
+END
+ctrltool.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/ctrltool.vcproj
+END
+layspin.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/layspin.h
+END
+vlegend.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/vlegend.cpp
+END
+transbmp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/transbmp.cpp
+END
+usplittr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/usplittr.cpp
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/readme.txt
+END
+layeddlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/layeddlg.h
+END
+combodlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/combodlg.h
+END
+treestat.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/treestat.cpp
+END
+psheet.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/libwctrl_win/psheet.h
+END

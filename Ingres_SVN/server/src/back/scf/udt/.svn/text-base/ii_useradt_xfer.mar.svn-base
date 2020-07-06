@@ -1,0 +1,16 @@
+	.MACRO		rtn	name
+	.EXTRN		name
+	.ALIGN		QUAD
+	.TRANSFER	name
+	.MASK		name
+	JMP		name+2
+	.ENDM
+
+ 
+    .psect	    $$$ii_useradt_xfer_vector	-
+				pic,usr,con,rel,lcl,shr,exe,rd,nowrt,page
+    rtn	    iiudadt_register
+    rtn	    iiclsadt_register
+    .align  page
+    .end
+

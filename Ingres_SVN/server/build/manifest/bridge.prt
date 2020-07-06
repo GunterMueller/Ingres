@@ -1,0 +1,12 @@
+PART bridge
+    capability CI_INGRES_BRIDGE
+   DIRECTORY ingres!bin
+   BUILD_DIR (ING_BUILD)!bin
+   EXECUTABLE iigcb
+   DIRECTORY ingres!utility
+   BUILD_DIR (ING_BUILD)!utility
+      SCRIPT SETUP iisubr
+   DIRECTORY ingres!files
+   BUILD_DIR (ING_BUILD)!files
+      FILE bridge.crs
+      FILE bridge.rfm

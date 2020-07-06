@@ -1,0 +1,8 @@
+PART  messages
+   BUILD_DIR (ING_BUILD)!files!english
+      FILE fast_v4.mnx
+      FILE slow_v4.mnx
+   BUILD_DIR (ING_BUILD)!files!english
+      FILE rtiforms.fnx
+      FILE helpfrm.hlp
+      FILE helpkeys.hlp

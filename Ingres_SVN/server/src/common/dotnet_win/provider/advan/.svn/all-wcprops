@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/advan
+END
+rsltbyref.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/advan/rsltbyref.cs
+END
+paramset.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/advan/paramset.cs
+END
+rsltdata.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/advan/rsltdata.cs
+END
+procinfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/advan/procinfo.cs
+END
+advanrsmd.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/advan/advanrsmd.cs
+END
+advanprep.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/advan/advanprep.cs
+END
+metadata.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/advan/metadata.cs
+END
+rsltcurs.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/advan/rsltcurs.cs
+END
+advancall.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/advan/advancall.cs
+END
+drvrsrc.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/advan/drvrsrc.cs
+END
+drvobj.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/advan/drvobj.cs
+END
+xaenlist.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/advan/xaenlist.cs
+END
+dbtype.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/advan/dbtype.cs
+END
+tracedv.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/advan/tracedv.cs
+END
+rsltftch.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/advan/rsltftch.cs
+END
+sqlparse.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/advan/sqlparse.cs
+END
+xaswitch.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/advan/xaswitch.cs
+END
+advanconnectpool.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/advan/advanconnectpool.cs
+END
+rsltupd.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/advan/rsltupd.cs
+END
+advanxid.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/advan/advanxid.cs
+END
+advanrslt.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/advan/advanrslt.cs
+END
+advanstmt.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/advan/advanstmt.cs
+END
+drvconst.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/advan/drvconst.cs
+END
+advanconnect.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/advan/advanconnect.cs
+END
+connectstringconfig.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/advan/connectstringconfig.cs
+END
+drvconn.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/advan/drvconn.cs
+END
+catalog.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/advan/catalog.cs
+END
+rsltslct.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/common/dotnet_win/provider/advan/rsltslct.cs
+END

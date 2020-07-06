@@ -1,0 +1,5 @@
+PART  proto-bridge
+   capability CI_INGRES_NET
+   BUILD_DIR (ING_BUILD)!bin
+   DIRECTORY ingres!bin
+      EXECUTABLE iigcb

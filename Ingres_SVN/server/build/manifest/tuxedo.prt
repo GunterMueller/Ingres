@@ -1,0 +1,12 @@
+PART tuxedo
+   capability CI_XA_TUXEDO
+   DIRECTORY ingres!lib
+   BUILD_DIR (ING_BUILD)!lib
+      FILE libiitux.a
+   DIRECTORY ingres!utility
+   BUILD_DIR (ING_BUILD)!utility
+      SCRIPT SETUP iisutux
+      SCRIPT iimktms
+   DIRECTORY ingres!files
+   BUILD_DIR (ING_BUILD)!files
+      FILE iitxxa.h

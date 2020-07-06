@@ -1,0 +1,18 @@
+PART   spatial
+   capability CI_CLASSOBJ_ADT
+   DIRECTORY ingres!lib
+   BUILD_DIR (ING_BUILD)!lib
+      EXECUTABLE libspat.1.so
+   DIRECTORY ingres!utility
+   BUILD_DIR (ING_BUILD)!utility
+	SCRIPT SETUP iisuspat
+DIRECTORY ingres!files
+   BUILD_DIR (ING_BUILD)!files
+      FILE spatial.h
+      FILE spatialc.h
+      FILE spboxf.h
+      FILE spcirf.h
+      FILE splinf.h
+      FILE spsegf.h
+      FILE sppntf.h
+      FILE spplyf.h

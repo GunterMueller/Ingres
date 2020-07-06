@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/cl/clf/cv_unix_win
+END
+cvrxl.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/clf/cv_unix_win/cvrxl.c
+END
+cvnettest.can
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/cl/clf/cv_unix_win/cvnettest.can
+END
+cvptra.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/cl/clf/cv_unix_win/cvptra.c
+END
+cvaptr.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/cl/clf/cv_unix_win/cvaptr.c
+END
+cvexhand.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/clf/cv_unix_win/cvexhand.c
+END
+cvpk.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/cl/clf/cv_unix_win/cvpk.c
+END
+cvol.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/cl/clf/cv_unix_win/cvol.c
+END
+testcvnet.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/cl/clf/cv_unix_win/testcvnet.sh
+END
+cvtest.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/cl/clf/cv_unix_win/cvtest.c
+END
+cvlx.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/cl/clf/cv_unix_win/cvlx.c
+END
+cvnettest.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/cl/clf/cv_unix_win/cvnettest.c
+END
+cvaf.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/cl/clf/cv_unix_win/cvaf.c
+END
+cvfa.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/cl/clf/cv_unix_win/cvfa.c
+END
+cvlower.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/cv_unix_win/cvlower.c
+END
+cvupper.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/cv_unix_win/cvupper.c
+END
+cvla.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/cl/clf/cv_unix_win/cvla.c
+END
+cvgcc.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/clf/cv_unix_win/cvgcc.c
+END
+cval.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/cl/clf/cv_unix_win/cval.c
+END
+cvahxl.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/cl/clf/cv_unix_win/cvahxl.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/clf/cv_unix_win/Jamfile
+END
+cvna.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/cl/clf/cv_unix_win/cvna.c
+END
+cvaxptr.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/cv_unix_win/cvaxptr.c
+END
+cvan.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/cl/clf/cv_unix_win/cvan.c
+END
+cvptrax.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/clf/cv_unix_win/cvptrax.c
+END
+cvtest.can
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/clf/cv_unix_win/cvtest.can
+END
+cvglobal.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/clf/cv_unix_win/cvglobal.c
+END
+cvfcvt.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/cl/clf/cv_unix_win/cvfcvt.c
+END

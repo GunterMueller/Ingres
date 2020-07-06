@@ -1,0 +1,18 @@
+#
+# Jamfile file for front!st!vdba
+#
+
+SubDir ING_SRC front st vdba ;
+
+IISUBSYS front st vdba ;
+
+if $(NT)
+{
+IIBFILES bin : makimadb.bat makimag.sql makiman.sql
+	makimau.sql makimav.sql ;
+}
+else
+{
+IIBFILES vdba : makimadb.bat makimag.sql makiman.sql
+	makimau.sql makimav.sql ;
+}

@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/3/main/src/front/vdba/libmon_win
+END
+chkdistr.sc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/libmon_win/chkdistr.sc
+END
+domdmisc.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/libmon_win/domdmisc.c
+END
+tools.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/libmon_win/tools.c
+END
+collisio.sc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/libmon_win/collisio.sc
+END
+libmon.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libmon_win/libmon.vcproj
+END
+sqltls.sc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/libmon_win/sqltls.sc
+END
+dbatime.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/libmon_win/dbatime.c
+END
+domdtls.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/libmon_win/domdtls.c
+END
+vdbamon.bin
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/libmon_win/vdbamon.bin
+END
+commfunc.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/libmon_win/commfunc.h
+END
+rmcmdcli.sc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/libmon_win/rmcmdcli.sc
+END
+domdupdt.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/libmon_win/domdupdt.c
+END
+lbmnmtx.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/libmon_win/lbmnmtx.c
+END
+libmon.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/libmon_win/libmon.dsp
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/libmon_win/Jamfile
+END
+lbmnmtx.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/libmon_win/lbmnmtx.h
+END
+domdgetd.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/libmon_win/domdgetd.c
+END
+monitor.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/libmon_win/monitor.c
+END
+domdbkrf.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/libmon_win/domdbkrf.c
+END
+libmondoc.doc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libmon_win/libmondoc.doc
+END
+libmon.sln
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/libmon_win/libmon.sln
+END
+tblinteg.sc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/libmon_win/tblinteg.sc
+END
+dbaginfo.sc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/libmon_win/dbaginfo.sc
+END

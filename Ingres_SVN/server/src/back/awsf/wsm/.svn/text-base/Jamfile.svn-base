@@ -1,0 +1,12 @@
+#
+# Jamfile file for back!awsf!wsm
+#
+
+SubDir ING_SRC back awsf wsm ;
+
+IISUBSYS back awsf wsm ;
+
+IILIBRARY AWSFLIB : wsmvar.c wsmmo.c wsminit.c 
+	usrSession.c actSession.c ;
+
+IILIBRARY IMPICELIBDATA : wsmdata.c ;

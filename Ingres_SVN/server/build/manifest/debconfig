@@ -1,0 +1,82 @@
+$sub %summary_tag% <skip>
+$sub %priority_tag% Priority:
+$sub %pkgname_tag% Package:
+$sub %version_tag% Version:
+$sub %release_tag% <skip>
+$sub %license_tag% <skip>
+$sub %group_tag% Section:
+$sub %source_tag% <skip>
+$sub %patch_tag% <skip>
+$sub %maintainer_tag% Maintainer:
+$sub %url_tag% <skip>
+$sub %buildroot_tag% <skip>
+$sub %prefix_tag% <skip>
+$sub %rpmprereq_tag% <skip>
+$sub %autoreq_tag% <skip>
+$sub %define_tag% <skip>
+$sub %debprereq_tag% Pre-Depends:
+$sub %provides_tag% Provides:
+$sub %replaces_tag% Replaces:
+$sub %rpm_descrip_tag% <skip>
+$sub %deb_descrip_tag% Description:
+$sub %arch_tag% Architecture:
+$sub %pkg_sulist% setuplist
+$sub %product_name% Ingres 2006
+$sub %product_brandname% Ingres
+$sub %product_version% 9
+$sub %product_release% 3.0
+$sub %rpm_product% Ingres 2006 Business Open Source Database
+$sub %rpm_basename% ingres2006
+$sub %rpm_version% 9.3.0-110
+$sub %rpm_release% 110
+$sub %rpm_doc_prefix% /usr/share/doc
+$sub %rpm_vendor% Ingres Corporation <support@ingres.com>
+$sub %rpm_license% gpl
+$sub %rpm_copyright% Copyright © 2005-2007 Ingres Corporation. All Rights Reserved.
+$sub %rpm_group% Applications/Databases
+$esub %deb_arch% unamem
+$spec
+$feature basic
+$feature setupsup
+$feature config
+$feature generr
+$feature formtool
+$feature tm
+$feature qr_run
+$feature esqlsup
+$feature esqlc
+$feature esqlcc
+$feature esqlada
+$feature esqlcob
+$feature esqlfor
+$spec i18n
+$feature i18n
+$spec dbms
+$feature dbms
+$feature dbatools
+$feature demodb
+$feature montools
+$feature rmcmd
+$feature uadtsup
+$feature tuxedo
+$feature ome
+$feature c2audit
+$spec abf
+$feature abf
+$feature vision
+$spec net
+$feature net
+$feature das
+$feature bridge
+$spec star
+$feature star
+$spec rep
+$feature rep
+$spec spatial
+$feature spatial
+$spec ice
+$feature ice
+$spec odbc
+$feature odbc
+$spec documentation
+$feature documentation

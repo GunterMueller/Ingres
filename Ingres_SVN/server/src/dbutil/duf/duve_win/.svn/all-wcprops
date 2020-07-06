@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/dbutil/duf/duve_win
+END
+verifydb.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/dbutil/duf/duve_win/verifydb.exe.manifest
+END
+vfydbwrp.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/dbutil/duf/duve_win/vfydbwrp.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/dbutil/duf/duve_win/Jamfile
+END

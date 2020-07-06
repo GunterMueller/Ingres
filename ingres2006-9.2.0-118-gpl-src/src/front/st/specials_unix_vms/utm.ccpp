@@ -1,0 +1,100 @@
+/*
+** Copyright (c) 2004 Ingres Corporation
+*/
+/*
+** Generic part file for utm
+*/
+
+/*
+** History
+**	04-feb-2004 (drivi01)
+**		Created.
+**	23-apr-2004 (somsa01)
+**	    Fixed up for other platforms.
+*/
+
+PART utm
+
+/*
+** ingres!bin 
+*/
+
+    DIRECTORY  ingres!bin
+    	BUILD_DIR (ING_BUILD)!bin
+	    SCRIPT ingsql
+
+/*
+** ingres!files
+*/
+
+    DIRECTORY ingres!files
+	BUILD_DIR (ING_BUILD)!files
+	{
+		FILE utmwords.cfg
+		FILE utmtypes.cfg
+		FILE aquathemepack11.zip
+	}
+	
+     DIRECTORY ingres!files!utmtemplates
+	BUILD_DIR (ING_BUILD)!files!utmtemplates
+	{
+		FILE alter_table.tpl
+		FILE create_alarm.tpl
+		FILE create_procedure.tpl
+		FILE create_role.tpl
+		FILE create_rule.tpl
+		FILE create_schema.tpl
+		FILE create_synonym.tpl
+		FILE create_table.tpl
+		FILE create_table_as.tpl
+		FILE create_user.tpl
+		FILE create_view.tpl	
+		FILE drop_object.tpl
+		FILE execute_procedure.tpl
+		FILE grant_privilege.tpl
+		FILE grant_role.tpl
+		FILE insert.tpl
+		FILE revoke.tpl
+		FILE select.tpl
+		FILE set.tpl
+		FILE update.tpl
+	}
+    DIRECTORY ingres!files!english!vtmhelp
+	BUILD_DIR (ING_BUILD)!files!english!vtmhelp
+	{
+		FILE blank.gif
+		FILE blank2.gif
+		FILE blank3.gif
+		FILE blank4.gif
+		FILE blank5.gif
+		FILE blank6.gif
+		FILE block.gif
+		FILE ca.css
+		FILE ca.js
+		FILE contents.html
+		FILE contents_1.html
+		FILE contents_1_1.html
+		FILE contents_1_2.html
+		FILE diamond.gif
+		FILE empty.html
+		FILE hyphen.gif
+		FILE index.html
+		FILE minus.gif
+		FILE plus.gif
+		FILE vtm.html
+		FILE vtm.ids
+		FILE vtmcmd.html
+		FILE vtmproc.html
+	}
+
+
+/*
+** ingres!lib
+*/
+
+      DIRECTORY ingres!lib
+	BUILD_DIR (ING_BUILD)!lib
+		FILE UTMProject.jar
+	    	EXECUTABLE  liboinodesmgr.$SLSFX
+	    	EXECUTABLE  liboijniquery.$SLSFX
+

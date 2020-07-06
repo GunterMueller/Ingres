@@ -1,0 +1,287 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win
+END
+stdafx.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/stdafx.h
+END
+comrole.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/comrole.cpp
+END
+trfdbeve.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/trfdbeve.cpp
+END
+comlocat.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/comlocat.cpp
+END
+comcache.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/comcache.cpp
+END
+comrule.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/comrule.cpp
+END
+trfalarm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/trfalarm.cpp
+END
+trfgroup.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/trfgroup.cpp
+END
+libtree.suo
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/libtree.suo
+END
+comvnode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/comvnode.cpp
+END
+comuser.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/comuser.cpp
+END
+comdbase.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/comdbase.cpp
+END
+comcolum.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/comcolum.cpp
+END
+comprofi.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/comprofi.cpp
+END
+trflocat.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/trflocat.cpp
+END
+trfproc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/trfproc.cpp
+END
+trdtldta.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/trdtldta.cpp
+END
+comsessi.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/comsessi.cpp
+END
+trfview.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/trfview.cpp
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/Jamfile
+END
+comtable.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/comtable.cpp
+END
+trfvnode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/trfvnode.cpp
+END
+trfgrant.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/trfgrant.cpp
+END
+comseq.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/comseq.cpp
+END
+comaccnt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/comaccnt.cpp
+END
+stdafx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/stdafx.cpp
+END
+trfdbase.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/trfdbase.cpp
+END
+trfprofi.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/trfprofi.cpp
+END
+trfcolum.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/trfcolum.cpp
+END
+trflinteg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/trflinteg.cpp
+END
+trflindex.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/trflindex.cpp
+END
+libtree.sln
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/libtree.sln
+END
+comproc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/comproc.cpp
+END
+trftable.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/trftable.cpp
+END
+trfseq.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/trfseq.cpp
+END
+comsynon.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/comsynon.cpp
+END
+cominteg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/cominteg.cpp
+END
+comindex.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/comindex.cpp
+END
+libtree.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/libtree.vcproj
+END
+comview.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/comview.cpp
+END
+trfrole.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/trfrole.cpp
+END
+trfsynon.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/trfsynon.cpp
+END
+trfrule.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/trfrule.cpp
+END
+comdbeve.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/comdbeve.cpp
+END
+libtree.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/libtree.dsp
+END
+trfuser.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/trfuser.cpp
+END
+comgroup.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/libtree_win/comgroup.cpp
+END

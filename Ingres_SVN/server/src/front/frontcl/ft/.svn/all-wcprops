@@ -1,0 +1,611 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/ingres/!svn/ver/1/main/src/front/frontcl/ft
+END
+mwfcmds.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/mwfcmds.c
+END
+ftshell.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftshell.c
+END
+ftstrtch.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftstrtch.c
+END
+itldclse.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/itldclse.c
+END
+ftfkset.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftfkset.c
+END
+ftgtctl.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftgtctl.c
+END
+mwrun.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/mwrun.c
+END
+ftrstore.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftrstore.c
+END
+mwproto.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/mwproto.h
+END
+keys30.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/keys30.c
+END
+itldopen.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/itldopen.c
+END
+ftredraw.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftredraw.c
+END
+mwmws.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/mwmws.h
+END
+mwintrnl.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/mwintrnl.h
+END
+ftfndwin.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftfndwin.c
+END
+ftaddcom.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftaddcom.c
+END
+mapkey.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/mapkey.c
+END
+ftscroll.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftscroll.c
+END
+ftframe.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftframe.h
+END
+mwcmds.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/mwcmds.c
+END
+mapping.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/mapping.c
+END
+ftpopup.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftpopup.c
+END
+ftinit.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftinit.c
+END
+getwin.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/getwin.c
+END
+fldstr.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/fldstr.c
+END
+ftqbf.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftqbf.c
+END
+ftptmenu.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftptmenu.c
+END
+move.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/move.c
+END
+ftutil.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftutil.c
+END
+ftfldupd.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftfldupd.c
+END
+mwmenu.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/mwmenu.c
+END
+ftmrkfld.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftmrkfld.c
+END
+ftusrinp.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftusrinp.c
+END
+word.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/word.c
+END
+vi.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/vi.c
+END
+fttermsz.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/fttermsz.c
+END
+mwhost.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/mwhost.c
+END
+invistf.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/invistf.c
+END
+ftswpprn.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftswpprn.c
+END
+ftgetch.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftgetch.c
+END
+mwhost.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/mwhost.h
+END
+ftgrt.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftgrt.c
+END
+ftrange.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftrange.c
+END
+ftvalid.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftvalid.c
+END
+ftgtmenu.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftgtmenu.c
+END
+ftboxerr.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftboxerr.c
+END
+ftrange.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftrange.h
+END
+ftaddfrs.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftaddfrs.c
+END
+strfld.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/strfld.c
+END
+ftmapfle.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftmapfle.c
+END
+insrt.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/insrt.c
+END
+ftmushft.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftmushft.c
+END
+ftmaplbl.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftmaplbl.c
+END
+ftdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftdata.c
+END
+ftattr.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftattr.c
+END
+ftref.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftref.c
+END
+mwform.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/mwform.c
+END
+ftscrlfd.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftscrlfd.c
+END
+ftbell.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftbell.c
+END
+fttest.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/fttest.c
+END
+ftsyndsp.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftsyndsp.c
+END
+mwform.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/mwform.h
+END
+ftsetio.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftsetio.c
+END
+ftsvinpt.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftsvinpt.c
+END
+ftfuncs.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftfuncs.h
+END
+ftcrtrk.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftcrtrk.c
+END
+ftmsg.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftmsg.c
+END
+ftclear.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftclear.c
+END
+ftdmpscr.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftdmpscr.c
+END
+ftsubmu.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftsubmu.c
+END
+ftspace.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftspace.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/Jamfile
+END
+ftfrprt.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftfrprt.c
+END
+fttermin.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/fttermin.c
+END
+ftnewfrm.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftnewfrm.c
+END
+ftring.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftring.c
+END
+ftbuild.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftbuild.c
+END
+ftsetda.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftsetda.c
+END
+itlnprt.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/itlnprt.c
+END
+movetab.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/movetab.c
+END
+ftrun.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftrun.c
+END
+ftclose.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftclose.c
+END
+ftlotus.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftlotus.c
+END
+ftwinerr.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftwinerr.c
+END
+itdrloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/itdrloc.c
+END
+ftrunnof.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftrunnof.c
+END
+ftprnscr.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftprnscr.c
+END
+fttmout.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/fttmout.c
+END
+itdrloc.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/itdrloc.h
+END
+ftprompt.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftprompt.c
+END
+frcebrws.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/frcebrws.c
+END
+ftinstst.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftinstst.c
+END
+ftdblutl.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftdblutl.c
+END
+fterror.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/fterror.c
+END
+mwget.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/mwget.c
+END
+ftpanic.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftpanic.c
+END
+itlndraw.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/itlndraw.c
+END
+itlnwin.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/itlnwin.c
+END
+funckeys.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/funckeys.c
+END
+mwmsg.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/mwmsg.c
+END
+ftbrowse.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/ft/ftbrowse.c
+END

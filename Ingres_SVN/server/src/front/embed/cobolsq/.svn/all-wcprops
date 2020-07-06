@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/front/embed/cobolsq
+END
+cobsqgen.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/embed/cobolsq/cobsqgen.c
+END
+esqlcbl.lot
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/embed/cobolsq/esqlcbl.lot
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/embed/cobolsq/MANIFEST
+END
+esqlcbl.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/front/embed/cobolsq/esqlcbl.exe.manifest
+END
+cobolsq.sy
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/embed/cobolsq/cobolsq.sy
+END
+cbsqmain.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/embed/cobolsq/cbsqmain.c
+END
+cbsqscan.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/embed/cobolsq/cbsqscan.c
+END
+cbsqtoks.st
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/embed/cobolsq/cbsqtoks.st
+END

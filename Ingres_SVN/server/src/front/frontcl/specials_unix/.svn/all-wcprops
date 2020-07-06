@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/specials_unix
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/frontcl/specials_unix/MANIFEST
+END
+oslhdr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/frontcl/specials_unix/oslhdr.cpp
+END

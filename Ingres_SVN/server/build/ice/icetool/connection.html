@@ -1,0 +1,33 @@
+<!-- #ICE REPEAT INCLUDE=`begin.html?form=&title=Database connections&submit=&cancel=` -->
+<TABLE BORDER=1 WIDTH="90%" CELLPADDING=5 CELLSPACING=2>
+	<TR>
+		<TH ALIGN="CENTER">Key</TH>
+		<TH ALIGN="CENTER">Driver</TH>
+		<TH ALIGN="CENTER">Datbase name</TH>
+		<TH ALIGN="CENTER">currently used</TH>
+		<TH ALIGN="CENTER">Timeout</TH>
+		<TH ALIGN="CENTER">Remove</TH>
+	</TR>
+	</TR>
+	<!-- #ICE REPEAT FUNCTION=`ice_connect_info?action=select`
+			 HTML=`
+			 <TR><FORM ACTION="/ice-bin/oiice.:http_api_ext/iceTools/actConn.html" METHOD="POST"> 
+					<INPUT TYPE="HIDDEN" NAME="action" VALUE="delete">
+					<INPUT TYPE="HIDDEN" NAME="ckey" VALUE=":key">
+					<TD ALIGN="CENTER">:key</TD>
+					<TD ALIGN="CENTER">:driver</TD>
+					<TD ALIGN="CENTER">:dbname</TD>
+					<TD ALIGN="CENTER">:used</TD>
+					<TD ALIGN="CENTER">:timeout</TD>
+					<TD ALIGN="CENTER"><!-- #ICE REPEAT IF (``:used`` == ``0``)
+							 THEN=``<INPUT TYPE="image" NAME="Remove" BORDER=0 SRC="<!-- #ICE INCLUDE=````delete.gif```` -->">``
+					--></TD>
+			 </FORM></TR>`
+	-->
+</TABLE>
+
+<!-- #ICE IF (`:ii_status_number` != `0`)
+THEN=`<p>You are not authorized to monitor the system. Please check with your administrator`
+-->
+
+<!-- #ICE REPEAT INCLUDE=`end.html` -->

@@ -1,0 +1,323 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win
+END
+sqlref.cnt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/sqlref.cnt
+END
+geningnt.mak
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/geningnt.mak
+END
+iiunloadfix.bat
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/iiunloadfix.bat
+END
+install.isc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/install.isc
+END
+esqlc.isc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/esqlc.isc
+END
+iitrue.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/iitrue.exe.manifest
+END
+star.isc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/star.isc
+END
+wrapit.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/wrapit.c
+END
+setingenvs.bat
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/setingenvs.bat
+END
+or.isc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/or.isc
+END
+caoi_nt.cnt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/caoi_nt.cnt
+END
+msidepcheck.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/msidepcheck.c
+END
+oirwref.cnt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/oirwref.cnt
+END
+creating.bat
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/creating.bat
+END
+oidba.cnt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/oidba.cnt
+END
+oinet.cnt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/oinet.cnt
+END
+blue.isc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/blue.isc
+END
+ipchoice.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/ipchoice.c
+END
+ipwrite.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/ipwrite.c
+END
+ipreadp.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/ipreadp.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/Jamfile
+END
+brio.isc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/brio.isc
+END
+ingresnt.mas
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/ingresnt.mas
+END
+cobol.isc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/cobol.isc
+END
+wrapnosb.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/wrapnosb.c
+END
+msiversupdate.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/msiversupdate.c
+END
+tools.isc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/tools.isc
+END
+ice.isc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/ice.isc
+END
+openapi.cnt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/openapi.cnt
+END
+ipprod.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/ipprod.c
+END
+msiupd.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/msiupd.c
+END
+iitrue.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/iitrue.c
+END
+safari.isc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/safari.isc
+END
+vision.isc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/vision.isc
+END
+ipsetp.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/ipsetp.c
+END
+tactica.isc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/tactica.isc
+END
+oisysref.cnt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/oisysref.cnt
+END
+wrq.isc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/wrq.isc
+END
+esql.cnt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/esql.cnt
+END
+ingwrap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/ingwrap.cpp
+END
+ipsetp.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/ipsetp.exe.manifest
+END
+geningnt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/geningnt.cpp
+END
+ingwrap.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/ingwrap.exe.manifest
+END
+mkdirs.bat
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/mkdirs.bat
+END
+ipcclean.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/ipcclean.c
+END
+haht.isc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/haht.isc
+END
+ipcclean.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/ipcclean.exe.manifest
+END
+net.isc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/net.isc
+END
+rep.isc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/rep.isc
+END
+ingadminwrap.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/ingadminwrap.exe.manifest
+END
+prophecy.isc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/prophecy.isc
+END
+ipchoice.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/ipchoice.exe.manifest
+END
+ingressdk.mas
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/st/install_nt_win/ingressdk.mas
+END

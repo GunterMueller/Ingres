@@ -1,0 +1,13 @@
+; History:
+;	03-Dec-1997 (wonst02)
+;	    Original.
+;	10-Jun-1998 (wonst02)
+;	    Add methods for internal "Frontier" interface.
+;	11-Jun-2004 (drivi01)
+;	    Added ordinals.
+EXPORTS
+urs_call		@1				
+GetInterfaces		@2				
+GetMethods		@3				
+GetArgs		@4				
+RefreshInterface		@5				

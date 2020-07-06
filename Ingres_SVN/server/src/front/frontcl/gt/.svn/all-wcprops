@@ -1,0 +1,251 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/ingres/!svn/ver/1/main/src/front/frontcl/gt
+END
+gtinit.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtinit.c
+END
+gtmsgp.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtmsgp.c
+END
+ergt.msg
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/ergt.msg
+END
+gtlocdev.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtlocdev.c
+END
+gtutil.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtutil.c
+END
+gtdmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtdmp.c
+END
+vmsname.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/vmsname.h
+END
+gtscomp.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtscomp.c
+END
+gtrstrct.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtrstrct.c
+END
+gtninit.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtninit.c
+END
+gtdvec.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtdvec.c
+END
+gtfuncs.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtfuncs.h
+END
+gtdev.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtdev.h
+END
+gtstatus.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtstatus.c
+END
+gtbox.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtbox.c
+END
+gtws.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtws.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/Jamfile
+END
+gtputs.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtputs.c
+END
+vdi.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/vdi.h
+END
+gtdraw.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtdraw.c
+END
+gtgkserr.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtgkserr.c
+END
+gtxact.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtxact.c
+END
+gterase.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gterase.c
+END
+gtsflush.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtsflush.c
+END
+gtx.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtx.c
+END
+gtflrep.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtflrep.c
+END
+gtdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtdata.c
+END
+gtcchdef.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtcchdef.c
+END
+gkscomp.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gkscomp.h
+END
+cchart.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/cchart.h
+END
+gtplot.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtplot.c
+END
+gtxws.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtxws.c
+END
+gtchout.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtchout.c
+END
+gtglob.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtglob.c
+END
+gtdatset.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtdatset.c
+END
+gthchar.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gthchar.c
+END
+gtedit.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtedit.c
+END
+gtinq.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gtinq.c
+END
+gterror.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gterror.c
+END
+gttexted.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gttexted.c
+END
+gks.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/frontcl/gt/gks.h
+END

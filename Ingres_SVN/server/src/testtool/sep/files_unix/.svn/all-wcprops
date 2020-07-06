@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/testtool/sep/files_unix
+END
+esql.subs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/testtool/sep/files_unix/esql.subs
+END
+termcap.sep
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/testtool/sep/files_unix/termcap.sep
+END
+star.subs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/testtool/sep/files_unix/star.subs
+END
+equel.subs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/testtool/sep/files_unix/equel.subs
+END
+ingreslvl.lis
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/testtool/sep/files_unix/ingreslvl.lis
+END
+zaavms.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/testtool/sep/files_unix/zaavms.cfg
+END
+be.subs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/testtool/sep/files_unix/be.subs
+END
+zaa.lis
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/testtool/sep/files_unix/zaa.lis
+END
+sep.subs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/testtool/sep/files_unix/sep.subs
+END
+ingresprt.lis
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/testtool/sep/files_unix/ingresprt.lis
+END
+fe.subs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/testtool/sep/files_unix/fe.subs
+END
+sepset.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/testtool/sep/files_unix/sepset.cmd
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/testtool/sep/files_unix/Jamfile
+END
+zaasetup.com
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/testtool/sep/files_unix/zaasetup.com
+END
+ingrestyp.lis
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/testtool/sep/files_unix/ingrestyp.lis
+END
+zaaunix.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/testtool/sep/files_unix/zaaunix.cfg
+END
+sepset.sed
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/testtool/sep/files_unix/sepset.sed
+END

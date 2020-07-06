@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# Copyright (c) 2004 Ingres Corporation
+#
+#
+#	@(#)dirname.sh	1.2
+exec expr \
+  ${1-.}'/' : '\(/\)[^/]*/$' \
+  \| ${1-.}'/' : '\(.*[^/]\)//*[^/][^/]*//*$' \
+  \| .

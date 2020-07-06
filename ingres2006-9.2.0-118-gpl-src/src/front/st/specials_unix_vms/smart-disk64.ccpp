@@ -1,0 +1,21 @@
+/*
+** Copyright (c) 2004 Ingres Corporation
+*/
+/*
+** Generic part file for smart-disk64
+*/
+
+/*
+** History
+**	05-sep-2002 (somsa01)
+**	    Created from 32-bit version.
+*/
+
+PART  smart-disk64
+
+/*
+** ingres!lib!lp64
+*/
+   BUILD_DIR (ING_BUILD)!lib!lp64
+   DIRECTORY ingres!lib!lp64
+      FILE libsd.a

@@ -1,0 +1,11 @@
+;  History:
+;  	17-Jun-2004 (drivi01)
+;		Created.
+;  	29-Jun-2004 (uk$so01)
+;		add Java_ca_ingres_utm_sql_NodesManager_getServerClass
+
+EXPORTS
+	Java_ca_ingres_utm_sql_NodesManager_getNodes		@1				
+        Java_ca_ingres_utm_sql_NodesManager_getServerClass	@2
+	Java_ca_ingres_utm_sql_NodesManager_addNodes		@3				
+	Java_ca_ingres_utm_sql_NodesManager_deleteNodes		@4				

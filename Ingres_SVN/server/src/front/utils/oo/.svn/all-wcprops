@@ -1,0 +1,347 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/ingres/!svn/ver/1/main/src/front/utils/oo
+END
+ooid.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/utils/oo/ooid.qsc
+END
+ooencode.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/oo/ooencode.qsc
+END
+p.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/front/utils/oo/p.c
+END
+ob.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/front/utils/oo/ob.c
+END
+oosavfrm.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/oo/oosavfrm.qsc
+END
+oodetail.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/oo/oodetail.hlp
+END
+catrec.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/utils/oo/catrec.c
+END
+ooinit.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/utils/oo/ooinit.c
+END
+oosavseq.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/oo/oosavseq.hlp
+END
+ooschema.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/oo/ooschema.qsc
+END
+ooclass.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/utils/oo/ooclass.c
+END
+obcatfor.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/oo/obcatfor.qsc
+END
+oosymbol.roc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/oo/oosymbol.roc
+END
+oocreate.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/oo/oocreate.qsc
+END
+co.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/utils/oo/co.qsc
+END
+levelmas.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/utils/oo/levelmas.c
+END
+eroo.msg
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/utils/oo/eroo.msg
+END
+ooisindb.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/oo/ooisindb.qsc
+END
+catcover.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/oo/catcover.qsc
+END
+oocatlog.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/oo/oocatlog.qsc
+END
+ooencsiz.sc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/utils/oo/ooencsiz.sc
+END
+ooldef.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/utils/oo/ooldef.h
+END
+obprint.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/utils/oo/obprint.c
+END
+mproc.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/utils/oo/mproc.c
+END
+obtime.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/utils/oo/obtime.qsc
+END
+method.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/utils/oo/method.qsc
+END
+oolremfr.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/oo/oolremfr.hlp
+END
+oolngrem.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/oo/oolngrem.qsc
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/utils/oo/Jamfile
+END
+oofrs.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/utils/oo/oofrs.c
+END
+send.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/utils/oo/send.c
+END
+catinit.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/utils/oo/catinit.c
+END
+catclass.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/utils/oo/catclass.c
+END
+oosave.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/utils/oo/oosave.qsc
+END
+oocreate.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/oo/oocreate.hlp
+END
+oodetail.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/oo/oodetail.qsc
+END
+obconfrm.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/utils/oo/obconfrm.c
+END
+ooproc.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/utils/oo/ooproc.h
+END
+catutil.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/utils/oo/catutil.qsc
+END
+oodata.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/utils/oo/oodata.qsc
+END
+memory.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/utils/oo/memory.qsc
+END
+obencode.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/utils/oo/obencode.c
+END
+ref.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/utils/oo/ref.qsc
+END
+iisave.frm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/utils/oo/iisave.frm
+END
+oodstobj.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/oo/oodstobj.hlp
+END
+oolngrem.frm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/oo/oolngrem.frm
+END
+obdestro.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/oo/obdestro.qsc
+END
+iidetail.frm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/oo/iidetail.frm
+END
+cmethod.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/utils/oo/cmethod.qsc
+END
+wgl_32s.hnt
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/utils/oo/wgl_32s.hnt
+END
+ooproctb.roc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/oo/ooproctb.roc
+END
+oodummy.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/utils/oo/oodummy.c
+END
+oolremfr.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/oo/oolremfr.qsc
+END
+iicat.frm
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/utils/oo/iicat.frm
+END
+OOIDs
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/utils/oo/OOIDs
+END
+ooidutil.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/oo/ooidutil.qsc
+END
+oosave.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/utils/oo/oosave.hlp
+END

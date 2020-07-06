@@ -1,0 +1,154 @@
+	.title	fpdiv
+;
+;	Copyright (c) 1993	Ingres Corporation
+;
+;
+;   Description:
+;	Contains FP routine for decimal division.
+;
+;	Globally visible entry points:
+;	    IIFPpkdiv	    - divide two decimal numbers
+;
+;   History:
+;	28-jun-95 (wagner)
+;	    Created.  Actually, extracted from FPDEC.MAR because of a weird
+;	    bug in the AXP/VMS macro compiler that can be worked around by
+;	    placing this routine in its own module.
+;
+;
+	.psect	$code$	pic,con,rel,lcl,shr,exe,nord,nowrt,novec,4
+
+
+;
+; Name: IIFPpkdiv - Divide two packed decimals.
+;
+; Description:
+;      Divides two packed decimals and returns the result in another
+;      packed decimal.  The precision and scale of the result are
+;      also returned, and are calculated thus:
+;
+;          pout = 31
+;          sout = max(0, (31-p1+s1-s2))
+;
+;	This routine attempts the division using DIVP first, and if
+;	it overflows, we call FPpkdiv_sim which tries the division in
+;	software.
+;
+;	Note that we need to catch the DIVP instruction's "division by zero"
+;	exception and return FP_DECDIV as the status.
+;
+; Inputs:
+;      pk1                             Pointer to the dividend.
+;      p1                              Its precision:  1 <= p1 <= 31.
+;      s1                              Its scale:  0 <= s1 <= p1.
+;      pk2                             Pointer to the divisor.
+;      p2                              Its precision:  1 <= p2 <= 31.
+;      s2                              Its scale:  0 <= s2 <= p2.
+;
+; Outputs:
+;      pkout                           The resulting packed decimal value is
+;                                      placed here.
+;      pout                            Its precision will be calculated based
+;                                      on the above formula, and placed here.
+;      sout                            Its scale will be calculated based
+;                                      on the above formula, and placed here.
+;
+; Returns:
+;	OK			       Operation succeeded.
+;
+;	FP_DECOVF		       Result has too many non-fractional
+;                                      digits; i.e. more than (pout - sout)
+;                                      of them.
+;	FP_DECDIV                      Attempt to divide by zero.  The
+;                                      denominator (2nd input decimal value)
+;                                      is equal to zero. 
+; Exceptions:
+;	None.
+;
+; Side Effects:
+;          none
+;
+; History:
+;	01-sep-89 (jrb)
+;	    Written.
+;	13-jan-1993 (rog)
+;          Converted to IIFPpkdiv().
+;
+pk1	= 4
+p1	= 8
+s1	= 12
+pk2	= 16
+p2	= 20
+s2	= 24
+pkout	= 28
+pout	= 32
+sout	= 36
+pksave  = -4
+tmp	= -20
+
+;
+; First let's define the exception handler
+;
+	.global	IIFP_DECOVF
+	.global	IIFP_DECDIV
+
+	$ssdef
+	$chfdef
+	
+	.entry	pkdivex,^m<r2,r3>
+	movl	CHF$L_SIGARGLST(ap),r0
+	cmpl	CHF$L_SIG_NAME(r0),#SS$_FLTDIV
+	bneq	divex1				    ; if not, check other exc's
+	movl	#IIFP_DECDIV,r0			    ; load return status into r0
+	brb	divexret
+divex1: 				; cmpl	CHF$L_SIG_NAME(r0),#SS$_FLTOVF
+	movl	#IIFP_DECOVF,r0			    ; load return status into r0
+divexret:
+	cvtlp	#0,#31,@pksave(r0)		    ; zero out division result
+	calls   #0,G^sys$unwind			    ; unwind stack to return to
+						    ; caller of IIFPpkdiv()
+	ret
+;
+;------------------------------
+; Now the main routine...
+;
+	.entry	IIFPpkdiv,^m<r2,r3,r4,r5>
+	subl2	#20,sp
+	movl	pkout(ap),pksave(fp)	; save pointer to pkout so that handler
+					; can zero out result if div by zero
+	moval	b^pkdivex,(fp)		; declare exception handler
+	movl	#31,@pout(ap)
+	subl3	p1(ap),#31,r4		; 31-p1 in r4
+	addl2	s1(ap),r4		; 31-p1+s1 in r4
+	subl2	s2(ap),r4		; 31-p1+s1-s2 in r4
+	tstl	r4			; now get max(r4, 0) and store as sout
+	bgeq	div01
+	clrl	r4
+div01:	movl	r4,@sout(ap)		; store result scale
+	subl3	s1(ap),s2(ap),r5	; we shift the dividend by s2-s1+sout
+	addl2	r4,r5
+	ashp	r5,p1(ap),@pk1(ap),#0,#31,tmp(fp)
+	bvs	div03
+	divp	p2(ap),@pk2(ap),#31,tmp(fp),#31,@pkout(ap)
+	bvs	div03			; if we overflowed, try calculation in C
+	ret
+;
+; If we overflowed, call FPpkdiv_sim to try the division in software.
+; This is necessary because it is legal to truncate fractional digits if
+; necessary when doing division.  Since the VAX instructions only
+; support integral packed decimals, they of course have no concept of
+; fractional digits.  The C code which we are going to call knows how to
+; do all the right things.
+;
+div03:	pushl	@sout(ap)
+	pushl	@pout(ap)
+	pushl	pkout(ap)
+	pushl	s2(ap)
+	pushl	p2(ap)
+	pushl	pk2(ap)
+	pushl	s1(ap)
+	pushl	p1(ap)
+	pushl	pk1(ap)
+	calls	#9,FPPKDIV_SIM
+	ret
+	.end

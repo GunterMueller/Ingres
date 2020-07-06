@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/frontcl/files_nt_win
+END
+oslhdr.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/frontcl/files_nt_win/oslhdr.h
+END
+startup
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/frontcl/files_nt_win/startup
+END
+abfdyn.opt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/frontcl/files_nt_win/abfdyn.opt
+END
+dayfile.dst
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/frontcl/files_nt_win/dayfile.dst
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/frontcl/files_nt_win/Jamfile
+END
+abflnk64.opt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/frontcl/files_nt_win/abflnk64.opt
+END
+oslhdr64.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/frontcl/files_nt_win/oslhdr64.h
+END
+dayfile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/frontcl/files_nt_win/dayfile
+END
+startsql
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/frontcl/files_nt_win/startsql
+END
+abfdyn64.opt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/frontcl/files_nt_win/abfdyn64.opt
+END
+abflnk.opt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/frontcl/files_nt_win/abflnk.opt
+END

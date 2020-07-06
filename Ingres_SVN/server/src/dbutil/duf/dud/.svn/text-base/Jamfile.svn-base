@@ -1,0 +1,14 @@
+#
+# Jamfile file for dbutil!duf!dud
+#
+
+SubDir ING_SRC dbutil duf dud ;
+
+IISUBSYS dbutil duf dud ;
+
+
+IIBINEXE destroydb : dudestry.qsc ;
+IINEEDLIBS destroydb : DBUTILLIB SHQLIB SHCOMPATLIB SHFRAMELIB ;
+IINEEDLIBSW destroydb : SHCUFLIB SHEMBEDLIB ;
+
+IILIBRARY DBUTILLIB : duddata.c ;

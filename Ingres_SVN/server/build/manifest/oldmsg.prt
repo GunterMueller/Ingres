@@ -1,0 +1,10 @@
+PART  oldmsg
+   BUILD_DIR (ING_BUILD)!files!english
+      FILE fast.mnx
+      FILE slow.mnx
+      FILE fast_v1.mnx
+      FILE slow_v1.mnx
+      FILE fast_v2.mnx
+      FILE slow_v2.mnx
+      FILE fast_v3.mnx
+      FILE slow_v3.mnx

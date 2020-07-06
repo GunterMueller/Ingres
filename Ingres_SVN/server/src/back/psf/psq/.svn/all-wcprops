@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/ingres/!svn/ver/1/main/src/back/psf/psq
+END
+psqparse.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/psf/psq/psqparse.c
+END
+psqsrvdmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/psf/psq/psqsrvdmp.c
+END
+psqdelrng.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/psf/psq/psqdelrng.c
+END
+psqdelcsr.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/psf/psq/psqdelcsr.c
+END
+psqxlate.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/psf/psq/psqxlate.c
+END
+psqvers.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/psf/psq/psqvers.c
+END
+psqtxtmod.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/psf/psq/psqtxtmod.c
+END
+psqbgnses.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/psf/psq/psqbgnses.c
+END
+psqendses.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/psf/psq/psqendses.c
+END
+psqmscdmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/psf/psq/psqmscdmp.c
+END
+psqmonth.roc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/psf/psq/psqmonth.roc
+END
+psqcvtdw.roc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/psf/psq/psqcvtdw.roc
+END
+psqclscrs.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/psf/psq/psqclscrs.c
+END
+psqcurdmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/psf/psq/psqcurdmp.c
+END
+psqrecr.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/psf/psq/psqrecr.c
+END
+psqsesdmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/psf/psq/psqsesdmp.c
+END
+psqcurhsh.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/psf/psq/psqcurhsh.c
+END
+psqstrt.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/psf/psq/psqstrt.c
+END
+psqprmdmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/psf/psq/psqprmdmp.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/psf/psq/Jamfile
+END
+psqalter.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/psf/psq/psqalter.c
+END
+psqshtdwn.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/psf/psq/psqshtdwn.c
+END

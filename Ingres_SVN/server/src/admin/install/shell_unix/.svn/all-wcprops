@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/admin/install/shell_unix
+END
+iiuncluster.sh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/admin/install/shell_unix/iiuncluster.sh
+END
+convacct.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/admin/install/shell_unix/convacct.c
+END
+ingprall.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/admin/install/shell_unix/ingprall.sh
+END
+ingprsym.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/admin/install/shell_unix/ingprsym.sh
+END
+mkrawarea.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/admin/install/shell_unix/mkrawarea.sh
+END
+iimkcluster.sh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/admin/install/shell_unix/iimkcluster.sh
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/admin/install/shell_unix/Jamfile
+END
+iilink.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/admin/install/shell_unix/iilink.sh
+END
+wgl_32s.hnt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/admin/install/shell_unix/wgl_32s.hnt
+END
+ingsetall.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/admin/install/shell_unix/ingsetall.sh
+END
+mkrawlog.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/admin/install/shell_unix/mkrawlog.sh
+END
+clientchk.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/admin/install/shell_unix/clientchk.sh
+END
+ingunsetall.sh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/admin/install/shell_unix/ingunsetall.sh
+END

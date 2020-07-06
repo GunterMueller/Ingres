@@ -1,0 +1,11 @@
+PART  remotesharelib
+   BUILD_DIR (ING_BUILD)!lib
+   DIRECTORY ingres!lib
+      {
+      EXECUTABLE libcompat.1.so
+      EXECUTABLE libframe.1.so
+      EXECUTABLE libq.1.so
+      EXECUTABLE liboiutil.1.so
+      EXECUTABLE libiiapi.1.so
+      PERMISSION s:re,o:rwed,g:re,w:re
+      }

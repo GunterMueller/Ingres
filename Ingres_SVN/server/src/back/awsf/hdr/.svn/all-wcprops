@@ -1,0 +1,221 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/ingres/!svn/ver/1/main/src/back/awsf/hdr
+END
+wcs.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/wcs.h
+END
+wcsunit.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/wcsunit.h
+END
+wsmmo.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/wsmmo.h
+END
+wmo.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/wmo.h
+END
+wcsdb.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/wcsdb.h
+END
+wsspars.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/wsspars.h
+END
+wpsbuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/wpsbuffer.h
+END
+wpsreport.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/wpsreport.h
+END
+wsslogin.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/wsslogin.h
+END
+wpsfile.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/wpsfile.h
+END
+actsession.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/actsession.h
+END
+wss.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/wss.h
+END
+wsmvar.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/wsmvar.h
+END
+wpspost.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/wpspost.h
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/Jamfile
+END
+wcslocation.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/wcslocation.h
+END
+htmlform.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/htmlform.h
+END
+htmlpars.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/htmlpars.h
+END
+wsmInit.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/wsmInit.h
+END
+wcsfile.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/wcsfile.h
+END
+wssprofile.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/wssprofile.h
+END
+wpsmo.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/wpsmo.h
+END
+wsfvar.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/wsfvar.h
+END
+wps.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/wps.h
+END
+wpsapp.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/wpsapp.h
+END
+scf.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/scf.h
+END
+postpars.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/postpars.h
+END
+wsfparser.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/wsfparser.h
+END
+wts.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/wts.h
+END
+usrsession.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/usrsession.h
+END
+wssapp.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/wssapp.h
+END
+htmlmeth.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/htmlmeth.h
+END
+wcsdoc.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/wcsdoc.h
+END
+wsfinit.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/wsfinit.h
+END
+servermeth.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/servermeth.h
+END
+wcsmo.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/awsf/hdr/wcsmo.h
+END

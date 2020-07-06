@@ -1,0 +1,11 @@
+#
+# Jamfile file for front!ice!c_api
+#
+
+SubDir ING_SRC front ice c_api ;
+
+IISUBSYS front ice c_api ;
+
+
+IILIBRARY C_APILIB : c_api.c ;
+

@@ -1,0 +1,388 @@
+<HTML>
+<HEAD>
+<!-- Created with DOC2HTML, v585 (12/13/2005) -->
+<title>Ingres® 2006 9.0.4 for Linux on x86_64 Using Native POSIX Threading Library (NPTL) (a64.lnx)</title>
+<META HTTP-EQUIV="Content-Type" Content="text-html; charset=Windows-1252">
+<style>
+<!--
+A:link                       { text-decoration: underline; font-weight: bold; color: #336699  }
+A:visited                    { text-decoration: underline; font-weight: bold; color: #336699  }
+BODY                         { font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-size: 80%; font-weight: normal; color: 00000  }
+TABLE                        { font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-size: 100%; color: 000000; }
+P                            { font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-weight: normal; color: #000000  }
+H1                           { font-size: 180%; font-weight: bold; color: #336699  }
+H2                           { font-size: 155%; font-weight: normal; font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; color: #336699  }
+H3                           { font-size: 130%; font-weight: bold; font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; color: #336699  }
+H4                           { font-size: 130%; font-weight: bold; font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; color: #336699  }
+ol, ul ol, ul ul ol          { list-style-type: decimal; list-style-image : none; }
+ol ol, ul ol ol, ol ul ol    { list-style-type: lower-alpha; list-style-image: none; }
+ul, ol ul, ol ol ul          { list-style-type: disc; list-style-image: none; }
+ul ul, ol ul ul, ul ol ul    { list-style-type: circle; list-style-image: none;}
+ul ul ul                     { list-style-type: square; list-style-image: none; }
+ol ol ol                     { list-style-type: upper-roman; list-style-image: none; }
+B                            { font-weight: bold  }
+STRONG                       { font-weight: bold  }
+I                            { font-style: italic  }
+EM                           { font-style: italic  }
+INPUT                        { color: #336699; font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-size: 90%; } /* Special */
+TEXTAREA                     { color: #336699; font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-size: 90%; } /* Special */
+BLOCKQUOTE                   { font-size: 80%; }
+PRE                          { font-family: "courier new", courier, monospace; font-size: 100%  }
+table, td                    { font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-weight: normal; color: #000000; vertical-align: top; border: 1px solid #EBEBEB; border-collapse: collapse; font-size: 12px; padding: 2px;}
+table.invis, td.invis        { font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-weight: normal; color: #000000; vertical-align: middle; border: 0px; border-collapse: collapse; font-size: 12px; padding: 2px;}
+th                           { font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-weight: bold; color: #000000; vertical-align: top; border: 1px solid #FFFFFF; background-color: #006699; color:#FFFFFF; text-align: left; padding: 2px;}
+tr.alt                       { background-color : #F1F5FA;}
+.computerassoc               { font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; color: #FFFFFF; text-decoration: none; background-color: #336699; font-size: 130%; font-weight: bold; }
+hr                           { color: #CCCCCC; height:1px; }
+-->
+</style>
+</HEAD>
+<BODY>
+<table width="100%"  border="0" cellspacing="0" cellpadding="0"><tr><td class="computerassoc">Ingres Corporation</td></tr></table>
+<h1><a name="ingres_2006_9_0_4_for_linux_on_x86_64_using_native_posix_threading_library_nptl_a64_lnx">Ingres<sup>®</sup> 2006 9.0.4 for Linux on x86_64 Using Native POSIX Threading Library (NPTL) (a64.lnx)</a></h1>
+<p>
+<hr>
+<nobr>
+<p><b><a href="#welcome">1.0  Welcome</a></b>
+<p><b><a href="#operating_system_support">2.0  Operating System Support</a></b>
+<p><b><a href="#system_requirements">3.0  System Requirements</a></b>
+<br><a href="#disk_space_requirements">3.1  Disk Space Requirements</a>
+<p><b><a href="#installation_considerations">4.0  Installation Considerations</a></b>
+<br><a href="#rpm_support">4.1  RPM Support</a>
+<br><a href="#how_to_upgrade_using_rpm">4.2  How to Upgrade Using RPM</a>
+<br><a href="#post_installation">4.3  Post Installation</a>
+<br><a href="#documentation">4.4  Documentation</a>
+<br><a href="#mounting_the_cd_rom">4.5  Mounting the CD-ROM</a>
+<br><a href="#installing_on_a_system_without_a_c_compiler">4.6  Installing on a System Without a C Compiler</a>
+<br><a href="#visual_tools">4.7  Visual Tools</a>
+<br><a href="#web_server_support">4.8  Web Server Support</a>
+<br><a href="#protocols_supported">4.9  Protocols Supported</a>
+<br><a href="#raw_transaction_log_files_and_raw_database_locations_not_supported_on_64_bit_linux">4.10  Raw Transaction Log Files and Raw Database Locations Not Supported on 64-bit Linux</a>
+<p><b><a href="#documentation_changes">5.0  Documentation Changes</a></b>
+<br><a href="#configure_high_availability_of_the_ingres_database_for_the_redhat_cluster_suite">5.1  Configure High Availability of the Ingres Database for the RedHat Cluster Suite</a>
+<br><a href="#setting_up_an_ingres_service">5.2  Setting Up an Ingres Service</a>
+</nobr>
+<p>
+<hr>
+<h2><a name="welcome">1.0  Welcome</a></h2>
+<p>This readme contains information specific to Ingres
+running under 64-bit x86_64 Linux with NPTL support.  
+<p>
+<hr>
+<h2><a name="operating_system_support">2.0  Operating System Support</a></h2>
+<p>The following operating systems are supported (as of the
+publishing of this document):
+<ul>
+<p><li>Red Hat Enterprise Linux 3, 4, with NPTL Support
+(64-bit)
+<p><li>SUSE Linux Enterprise Server 8, 9, with NPTL Support
+(64-bit)
+</ul>
+<p>Ingres supports these operating systems for the duration
+of their life cycle (as determined by the operating
+system's manufacturer or until Ingres Corporation announces
+that it is dropping support). For the latest information
+about supported operating systems, visit <a href="http://www.ingres.com/support" target="_blank">http://www.ingres.com/support</a>.
+<p>
+<hr>
+<h2><a name="system_requirements">3.0  System Requirements</a></h2>
+<p>These are the requirements for installing Ingres that
+are specific to 64-bit x86_64 Linux. For more generic
+system requirements see the <i>Getting Started</i> guide.
+<p>
+<hr>
+<h3><a name="disk_space_requirements">3.1  Disk Space Requirements</a></h3>
+<p>Disk space requirements are as follows:  
+<p><table border>
+<tr>
+<th align=left valign=top>
+System Configuration
+</th>
+<th align=left valign=top>
+Space Required
+</th>
+</tr>
+<tr>
+<td>Client Only (Ingres Net) Install
+</td>
+<td>56 MB
+</td>
+</tr>
+<tr class="alt">
+<td>DBMS Server with Ingres Net Install
+</td>
+<td>118 MB
+</td>
+</tr>
+<tr>
+<td>Full installation plus documentation
+</td>
+<td>401 MB
+</td>
+</tr>
+</table>
+<p>
+<hr>
+<h2><a name="installation_considerations">4.0  Installation Considerations</a></h2>
+<p>
+<hr>
+<h3><a name="rpm_support">4.1  RPM Support</a></h3>
+<p>RPM 4.1.1 or later
+<p>
+<hr>
+<h3><a name="how_to_upgrade_using_rpm">4.2  How to Upgrade Using RPM</a></h3>
+<p>Due to problems observed during upgrade of Ingres RPMs,
+please consult the instructions in the Ingres for Linux
+<i>Getting Started</i> guide before upgrading.  
+<ul>
+<p><li>BUG 115822—Upgrading an RPM installation that
+has been installed in a location other than the default can
+result in all installed files (except data files and
+generated configuration files) being removed. This is
+caused by a bug in RPM version 4.1.1.
+</ul>
+<p>
+<hr>
+<h3><a name="post_installation">4.3  Post Installation</a></h3>
+<p>The only supported method for backing out patches
+installed against Ingres 2006 is to reinstall the RPM from
+the base release. Therefore, make sure you keep the RPM
+used for your most recent install so that a patch can be
+backed out, if necessary.
+<p>
+<hr>
+<h3><a name="documentation">4.4  Documentation</a></h3>
+<p>Ingres documentation can be installed on Linux systems
+by installing the documentation RPM file that can be
+downloaded separately.  
+<p>
+<hr>
+<h3><a name="mounting_the_cd_rom">4.5  Mounting the CD-ROM</a></h3>
+<p>Most Linux distributions automatically mount the CD-ROM
+as soon as it is placed in the drive. If the CD-ROM is
+mounted, running the command "mount" returns an entry for
+/dev/cdrom.
+<p>If the CD-ROM is not mounted then it can be done
+manually. In general, the CD-ROM should be mounted to
+either /mnt/cdrom or /media/cdrom, depending on the
+distribution. The following example shows how to mount the
+CD-ROM on a RedHat Linux system.
+<p>As root execute this command:
+<pre>
+mount /dev/cdrom /mnt/cdrom
+</pre>
+<p>
+<hr>
+<h3><a name="installing_on_a_system_without_a_c_compiler">4.6  Installing on a System Without a C Compiler</a></h3>
+<p>This version of Ingres requires that the DBMS server
+executables be re-linked for utilities such as CKPDB and
+ROLLFORWARDDB to function for users other than the instance
+owner. If a C compiler is present, the server is re-linked
+at install time. If not, a warning is issued and the
+install continues as usual. If users other than the
+instance owner require the use of these utilities, the DBMS
+server must be re-linked by hand with the following command:
+<pre>
+iilink –noudts
+</pre>
+<p>A C compiler must be installed for this command to
+complete successfully.  
+<p>
+<hr>
+<h3><a name="visual_tools">4.7  Visual Tools</a></h3>
+<p>The Visual DBA suite is not included as part of the
+Ingres 2006 Open Source for x86_64 Linux. However, these
+tools can be deployed on a Windows PC against x86_64 Linux.
+<p><b>Note:</b> Versions of VDBA prior to Ingres 2006
+require a patch to work against this release of Ingres.  
+<p>
+<hr>
+<h3><a name="web_server_support">4.8  Web Server Support</a></h3>
+<p>Ingres for 64-bit Linux supports the following web
+server:
+<p><a href="http://www.apache.org/" target="_blank">Apache</a>
+HTTP server 1.3
+<p>The Apache distribution supplied with most Linux
+distributions is compiled with the -DEAPI switch. In
+testing, this has been shown to cause problems with using
+the Ingres Web Deployment Option Apache module. To prevent
+this, we recommend recompiling Apache with the following
+configure switches.
+<p><b>./configure -prefix=&lt;Apache root&gt;
+--enable-module=most --enable-module=so</b>
+<p>
+<hr>
+<h3><a name="protocols_supported">4.9  Protocols Supported</a></h3>
+<p>TCP/IP Native
+<p>
+<hr>
+<h3><a name="raw_transaction_log_files_and_raw_database_locations_not_supported_on_64_bit_linux">4.10  Raw Transaction Log Files and Raw Database Locations Not Supported on 64-bit Linux</a></h3>
+<p>Research has shown that raw transaction log files and
+raw database locations on 64-bit Linux do not provide
+performance benefits. To simplify administration, this
+feature is not supported on Ingres 2006 for 64-bit Linux.
+<p>
+<hr>
+<h2><a name="documentation_changes">5.0  Documentation Changes</a></h2>
+<p>
+<hr>
+<h3><a name="configure_high_availability_of_the_ingres_database_for_the_redhat_cluster_suite">5.1  Configure High Availability of the Ingres Database for the RedHat Cluster Suite</a></h3>
+<p>This section describes how to configure high
+availability of the Ingres database for the RedHat Cluster
+Suite. It assumes you have read <i>Configuring and Managing
+a Cluster</i> of the RedHat Cluster Suite documentation and
+the Ingres for Linux <i>Getting Started</i> guide.  
+<p>
+<hr>
+<h3><a name="setting_up_an_ingres_service">5.2  Setting Up an Ingres Service</a></h3>
+<p>A database service can serve highly-available data to an
+Ingres database application. The application can then
+provide network access to database client systems. If the
+service fails over, the application accesses the shared
+database data through the new cluster system. A
+network-accessible database service is usually assigned an
+IP address, which is failed over along with the service to
+maintain transparent access for clients.
+<p>This section provides an example of setting up a cluster
+service for an Ingres database. Although the variables used
+in the service scripts depend on the specific Ingres
+configuration, the example may aid in setting up a service
+for individual environments. 
+<p>In the example that follows:
+<ul>
+<p><li>The service includes one IP address for the Ingres
+clients to use.
+<p><li>The service has two mounted file systems, one for
+the Ingres software (/gfs-a/) and the other for the Ingres
+database (/gfs-b/), which are set up before the service is
+added.
+<p><li>A unique cluster name <b>ingrescluster</b> is
+attributed to the cluster. This allows shared ingres
+software instances across the failover cluster.
+<p><li>The Ingres instance identifier for the installed
+packages is II.
+</ul>
+<p>To set up an Ingres service, follow these steps:
+<ol>
+<p><li>Export the cluster name before installing, and then
+install the ingres software. For example:
+<pre>
+export II_HOSTNAME=ingrescluster
+&lt;Install according to the Ingres for Linux Getting Started guide&gt;
+&lt;copy /etc/init.d/ingres&lt;INSTANCE&gt; to other node&gt;
+&lt;copy /home/ingres/.ing&lt;INSTANCE&gt;bash to other node&gt;
+</pre>
+<p><li>The Ingres service example uses a wrapper script,
+ha_ingres, which is used to start, stop and query the
+Ingres service. This script calls the ingres init scripts
+installed above. The ha_ingres script must be placed in
+/etc/init.d,  owned by root and executable (chmod +x).
+Specify this script when you add the service.
+<p>Following is an example of the ha_ingres script:
+<pre>
+#!/bin/sh
+#
+# Cluster service script to start, stop, anad check status of Ingres
+#
+export II_HOSTNAME=ingrescluster
+export II_INSTANCE=II
+case $1 in
+    status)
+        . /home/ingres/.ing${II_INSTANCE}bash
+        echo "\q"|sql iidbdb &&gt; /dev/null
+        rc=$?
+        test $rc -eq 0 && echo "Running" || echo "Not Running"
+        ;;
+    *)
+        /etc/init.d/ingres${II_INSTANCE} $@
+        rc=$?
+        ;;
+esac
+exit $rc
+</pre>
+</ol>
+<p>
+<hr>
+<h3>Ingres and the Cluster Configuration Tool</h3>
+<p>To add an Ingres service using the Cluster Configuration
+Tool, follow these steps:
+<ol>
+<p><li>Choose Main Menu, System Settings, Server Settings,
+Cluster, or type <b>redhat-config-cluster</b> at a shell
+prompt.
+<p>
+The Cluster Status Tool appears by default.
+<p><li>Choose Cluster, Configure from the Cluster Status
+Tool menus.
+<p>
+The Cluster Configuration Tool is started.  
+<p><li>Click the Services tab to add the Ingres service:
+<ol>
+<p><li>Click New.
+<p>
+The Service dialog appears.
+<p><li>Enter a Service Name for the Ingres service (that
+is, ha_ingres).
+<p><li>Select a Failover Domain or leave it as None (see
+RedHat Cluster documentation).
+<p><li>Type an interval (in seconds) to check the health of
+the Ingres service through the status function of the init
+script.
+<p><li>Enter a User Script, such as /etc/init.d/ha_ingres,
+and then click OK.
+</ol>
+<p><li>(Optional) Add an IP address for the Ingres service
+(<i>only</i> if you want to host a virtual IP address on
+the cluster):
+<ol>
+<p><li>Select the Ingres service and click Add Child.
+<p><li>Select Add Service IP Address and click OK.
+<p>
+The Service IP Address dialog appears.
+<p><li>Enter an IP Address.
+<p><li>Enter a Netmask, or leave it as None.
+<p><li>Enter a Broadcast Address, or leave it as None, and
+then click OK.
+</ol>
+<p><li>Add a device for the Ingres service and
+administrative files:
+<ol>
+<p><li>Select the Ingres service and click Add Child.
+<p><li>Select Add Device and click OK.
+<p>
+The Device dialog appears.
+<p><li>Enter the Device Special File (for example,
+/dev/sdb5).
+<p><li>In the Mount Point field, enter <b>/gfs-a</b>.
+<p><li>Select the file system type in FS Type or leave it
+blank.
+<p><li>Enter any mount point Options, including <b>rw</b>
+(read-write), and then click OK.
+</ol>
+<p><li>Add a device for the Ingres database files:
+<ol>
+<p><li>Select the Ingres service and click Add Child.
+<p><li>Select Add Device and click OK.
+<p>
+The Device dialog appears.
+<p><li>Enter the Device Special File (for example,
+/dev/sdb6).
+<p><li>In the Mount Point field, enter <b>/gfs-b</b>.
+<p><li>Select the file system type in FS Type or leave it
+blank.
+<p><li>Enter any mount point Options, including rw
+(read-write).
+<p><li>Check or uncheck Force Unmount, and then click OK.
+</ol>
+<p><li>Choose File, Save.
+<p>
+ The Ingres service is saved.
+</ol>
+<p>
+<hr>
+<font size=-2>
+© 2006 Ingres Corporation. 
+All rights reserved.
+</font>
+</BODY>
+</HTML>

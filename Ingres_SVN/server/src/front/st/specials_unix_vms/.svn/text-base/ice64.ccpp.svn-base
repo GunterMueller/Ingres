@@ -1,0 +1,46 @@
+/*
+** Copyright (c) 2004 Ingres Corporation
+*/
+/*
+** Generic part file for ice
+*/
+
+/*
+** History
+**
+**	27-Aug-2002 (hanch04)
+**		Created from ice.ccpp
+**      21-Jan-2002 (hweho01)
+**          For the 32/64 hybrid build on AIX, the shared libraries
+**          that require the library path to be loaded will have a 
+**          suffix '64' and reside in $II_SYSTEM/ingres/lib directory.
+**          Because the alternate shared library path is not available.
+**      18-Jun-2003 (hanch04)
+**          Fix previous change for AIX
+*/
+
+PART   ice64
+
+/*
+** ingres!lib
+*/
+#if defined(rs4_us5) && defined(conf_ADD_ON64)
+   DIRECTORY ingres!lib!lp64
+   BUILD_DIR (ING_BUILD)!lib!lp64
+      FILE liboiicecapi.a
+   DIRECTORY ingres!lib
+   BUILD_DIR (ING_BUILD)!lib
+      EXECUTABLE liboiddi64.$SLSFX.2.0
+#else
+   DIRECTORY ingres!lib!lp64
+   BUILD_DIR (ING_BUILD)!lib!lp64
+      FILE liboiicecapi.a
+      EXECUTABLE liboiddi.$SLSFX.2.0
+#endif  /* defined(rs4_us5) */
+/*
+** ingres!bin
+*/
+
+   DIRECTORY ingres!bin!lp64
+   BUILD_DIR (ING_BUILD)!bin!lp64
+      EXECUTABLE icesvr

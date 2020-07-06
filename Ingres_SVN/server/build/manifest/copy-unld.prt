@@ -1,0 +1,19 @@
+PART   copydb-unloaddb
+   DIRECTORY ingres!bin
+   BUILD_DIR (ING_BUILD)!bin
+      EXECUTABLE copydb
+      EXECUTABLE unloaddb
+      EXECUTABLE convtouni
+      EXECUTABLE genxml
+      EXECUTABLE impxml
+      EXECUTABLE xmlimport
+   DIRECTORY ingres!utility
+   BUILD_DIR (ING_BUILD)!utility
+   SCRIPT iiunloadfix
+   DIRECTORY ingres!files
+   BUILD_DIR (ING_BUILD)!files
+      FILE iiud.scr
+      FILE iiud64.scr
+      FILE iiud65.scr
+      FILE ioalsys.a
+      FILE ingres.dtd

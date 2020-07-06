@@ -1,0 +1,5 @@
+PART stream
+   DIRECTORY ingres!utility!iistream
+   BUILD_DIR (ING_BUILD)!utility!iistream
+      FILE iistream.cfg
+      FILE iistream.o

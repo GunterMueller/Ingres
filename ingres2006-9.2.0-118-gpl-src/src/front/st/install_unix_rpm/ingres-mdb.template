@@ -1,0 +1,327 @@
+Summary: %rpm_product%
+Name: %rpm_basename%%rpm_specname%
+Version: %mdb_version%
+Release: %mdb_release%
+Copyright: Commercial
+Group: Applications/Databases
+Source: none
+Patch: none
+Vendor: %rpm_vendor%
+URL: %rpm_url%
+BuildRoot: %rpm_buildroot%
+Prefix: %mdb_prefix%
+PreReq: ca-cs-utils >= 3.1.04085-0000
+PreReq: ca-ingres-CATOSL >= %rpm_version%
+PreReq: ca-ingres-dbms >= %rpm_version%
+
+AutoReq: 0
+%define _unpackaged_files_terminate_build 0 
+%define _missing_doc_files_terminate_build 0
+
+%description 
+%product_name% MDB Package.
+
+The %product_name% MDB Package prepares the %product_name% Intelligent DBMS for use as the repositiory for other CA products.
+
+It creates and configures the MDB datdbase and configures the Ingres 
+instance for use by ANY CA product.
+%prep
+
+%pre
+# RPM install option for PIF
+# PIF_RPM_UPDATE_OPTION= --nodeps --replacefiles --replacepkgs
+#set environment from RPM info
+[ -z "$RPM_INSTALL_PREFIX" ] && RPM_INSTALL_PREFIX=%prefix
+II_SYSTEM=$RPM_INSTALL_PREFIX
+PATH=$II_SYSTEM/ingres/bin:$II_SYSTEM/ingres/utility:$PATH
+LD_LIBRARY_PATH=/lib:/usr/lib:$II_SYSTEM/ingres/lib
+export II_SYSTEM PATH LD_LIBRARY_PATH
+export rpm_vers=%rpm_version%
+unset BASH_ENV
+
+[ ! -r $II_SYSTEM/ingres/version.rel ] || \
+[ "$rpm_vers" != `head -1 $II_SYSTEM/ingres/version.rel | cut -d' ' -f2` ] &&
+{
+    echo "%rpm_basename% is not installed under $II_SYSTEM"
+    echo "Aborting installation..."
+    exit 1
+}
+
+if [ ! -x $II_SYSTEM/ingres/utility/iipmhost -o \
+     ! -x $II_SYSTEM/ingres/utility/iigetres ] ; then
+    echo "%rpm_basename% base package files are missing"
+    echo "Aborting installation..."
+    exit 1
+fi
+
+#Check for install userid, groupid
+CONFIG_HOST=`iipmhost`
+[ "$CONFIG_HOST" ] && \
+{
+    II_USERID=`iigetres ii.${CONFIG_HOST}.setup.owner.user`
+    II_GROUPID=`iigetres ii.${CONFIG_HOST}.setup.owner.group`
+    export II_USERID II_GROUPID
+}
+if [ ! "$II_USERID" -o ! "$II_GROUPID" ] ; then
+    echo "%rpm_basename% base package install was invalid"
+    echo "Aborting installation..."
+    exit 1
+fi
+
+. iisysdep
+. iishlib
+
+# Disk space requirements in KB
+iisys_need=200000
+data_need=1200000
+ckp_need=1200000
+
+# Log file min size
+log_size=131073
+
+#%pre starts here
+rc=0 #initialize return code
+#check to see if instance is running and abort if it is
+
+# Abort if response file is set but invalid
+[ "$II_RESPONSE_FILE" ] && [ ! -f "$II_RESPONSE_FILE" ] && 
+{
+	rc=2
+	cat << !
+	Cannot locate response file.
+
+	II_RESPONSE_FILE=$II_RESPONSE_FILE
+!
+	exit $rc
+}
+
+# Mesg cmds.
+
+ECHO=echo
+CAT=cat
+
+#Silent install?
+[ -r "$II_RESPONSE_FILE" ] && \
+	silent=`iiread_response SILENT_INSTALL $II_RESPONSE_FILE`
+[ "$silent" ] &&
+{
+	ECHO=true
+	CAT=true
+}
+
+export ECHO CAT
+[ "$II_RESPONSE_FILE" ] && 
+{
+# Check response file is readable by specified installation owner.
+# If not abort the install before it starts.
+	if su -c "[ ! -r \"$II_RESPONSE_FILE\" ]" $II_USERID ; then
+		rc=4
+		cat << !
+		Response file is not readable by user $II_USERID
+
+		II_RESPONSE_FILE=$II_RESPONSE_FILE
+
+		If user $II_USERID does not exists, the response file should be
+		globally readable.
+!
+		exit $rc
+	fi
+}
+
+# Check disk space
+check_diskspace $iisys_need $data_need $ckp_need || rc=5
+
+# Check log file is big enough
+LOG_KBYTES=`iigetres ii.${CONFIG_HOST}.rcp.file.kbytes` 
+[ -z "$LOG_KBYTES" ] || [ $LOG_KBYTES -lt $log_size ] &&
+{
+$CAT << !
+Transaction log file must be at least ${log_size}KB for setup to continue.
+
+!
+	rc=6
+} 
+
+exit $rc
+
+%install
+
+%post
+
+#Set environment
+. /etc/profile.CA
+[ -z "$RPM_INSTALL_PREFIX" ] && RPM_INSTALL_PREFIX=%prefix
+II_SYSTEM=$RPM_INSTALL_PREFIX
+PATH=$II_SYSTEM/ingres/bin:$II_SYSTEM/ingres/utility:$PATH
+LD_LIBRARY_PATH=/lib:/usr/lib:$II_SYSTEM/ingres/lib
+export II_SYSTEM PATH LD_LIBRARY_PATH
+unset BASH_ENV
+. iishlib
+
+rc=0 #initialize return code
+
+# Mesg cmds.
+
+ECHO=echo
+CAT=cat
+
+#Silent install?
+[ -r "$II_RESPONSE_FILE" ] && \
+	silent=`iiread_response SILENT_INSTALL $II_RESPONSE_FILE`
+[ "$silent" ] &&
+{
+    ECHO=true
+    CAT=true
+}
+export ECHO CAT
+
+#Check for install userid, groupid
+CONFIG_HOST=`iipmhost`
+II_USERID=`iigetres ii.${CONFIG_HOST}.setup.owner.user`
+II_GROUPID=`iigetres ii.${CONFIG_HOST}.setup.owner.group`
+export II_USERID II_GROUPID
+
+# Use response file if one if provided
+IISUFLAG="-rpm"
+[ -f "$II_RESPONSE_FILE" ] && 
+{
+    clean=`iiread_response CLEAN_MDB $II_RESPONSE_FILE`
+    [ "$clean" = "true" ] && IISUFLAG="$IISUFLAG -clean"
+    IISUFLAG="$IISUFLAG -exresponse $II_RESPONSE_FILE"
+    export IISUFLAG
+}
+
+do_setup()
+{
+    # correct dir ownership
+    chown $II_USERID:$II_GROUPID ${II_SYSTEM}/ingres/.
+    for dir in bin demo files ice install lib sig utility vdba
+    do
+	[ -d "${II_SYSTEM}/ingres/${dir}/." ] && \
+	chown -R $II_USERID:$II_GROUPID ${II_SYSTEM}/ingres/${dir}/.
+    done
+
+    # and version.rel
+    chown $II_USERID:$II_GROUPID ${II_SYSTEM}/ingres/version.rel
+
+
+    # If ingvalidpw exists then it needs to be owned by root
+    # and have SUID set.
+    [ -x $II_SYSTEM/ingres/bin/ingvalidpw ] && {
+        chown root $II_SYSTEM/ingres/bin/ingvalidpw
+        chmod 4755 $II_SYSTEM/ingres/bin/ingvalidpw
+    }
+
+    # Run setup
+    $ECHO 'Setting up %product_name% MDB, this may take some time...'
+    su -m -c "iisumdb $IISUFLAG || ( echo 'Setup of %product_name% MDB Package failed.' && echo 'See $II_SYSTEM/ingres/files/install.log for more info.' )" $II_USERID || rc=2
+
+# fix setuid
+   set_setuid
+
+   return $rc
+}
+
+# Do any setup needed for CA common services.
+do_cs_setup()
+{
+eval homedir="~"$II_USERID
+[ -d "$homedir" ] && [ -w "$homedir" ] || homedir=$CASHCOMP
+
+# If env scripts are written to home directory, create link to them in $CASHCOMP
+    
+    [ "$homedir" != "$CASHCOMP" ] && \
+    {
+	rm -f $CASHCOMP/.ing${II_INSTALLATION}tcsh \
+			$CASHCOMP/.ing${II_INSTALLATION}bash
+	ln -s $homedir/.ing${II_INSTALLATION}tcsh \
+		$CASHCOMP/.ing${II_INSTALLATION}tcsh
+	ln -s $homedir/.ing${II_INSTALLATION}bash \
+		$CASHCOMP/.ing${II_INSTALLATION}bash
+    }
+
+    #If we're installing under $CASHCOMP or $CASHCOMP/ingres exists
+    #then we don't need a link
+    [ "$CASHCOMP" = "$RPM_INSTALL_PREFIX" ] || \
+ 	 [ -d "$CASHCOMP/ingres" ] && return 0
+
+    # [re]Create link to CASHCOMP
+    [ -f "$CASHCOMP/ingres" ] && rm -f $CASHCOMP/ingres
+    ln -s $II_SYSTEM/ingres $CASHCOMP/ingres
+
+}
+
+
+do_setup && \
+do_cs_setup
+
+exit $rc
+
+%preun
+if [ $1 = 0 ] ; then
+#Setup environement
+. /etc/profile.CA
+[ -z "$RPM_INSTALL_PREFIX" ] && RPM_INSTALL_PREFIX=%prefix
+II_SYSTEM=$RPM_INSTALL_PREFIX
+PATH=$II_SYSTEM/ingres/bin:$II_SYSTEM/ingres/utility:$PATH
+LD_LIBRARY_PATH=/lib:/usr/lib:$II_SYSTEM/ingres/lib
+export II_SYSTEM PATH LD_LIBRARY_PATH
+unset BASH_ENV
+rc=0 # initialize return code
+# Mesg cmds.
+
+ECHO=echo
+CAT=cat
+
+#Silent install?
+[ -x $II_SYSTEM/ingres/utility/iiread_response ] && \
+	[ -r "$II_RESPONSE_FILE" ] &&
+{
+    silent=`iiread_response SILENT_INSTALL $II_RESPONSE_FILE`
+    [ "$silent" ] &&
+    {
+	ECHO=true
+	CAT=true
+    }
+    export ECHO CAT
+}
+
+. iisysdep
+inst_id=`ingprenv II_INSTALLATION`
+rcfile=$ETCRCFILES/ingres${inst_id}
+inst_log="2>&1 | cat >> $II_SYSTEM/ingres/files/install.log"
+
+$ECHO "Removing %product_name% MDB..."
+sleep 5
+
+[ -x $rcfile ] && eval $rcfile status >& /dev/null
+if [ $? = 0 ]
+then
+    eval $rcfile stop $inst_log
+    if [ $? != 0 ] ; then
+	rc=1
+        echo "%product_brandname% failed to shutdown, aborting..."
+        exit $rc
+    fi
+
+fi
+
+# Remove link to CASHCOMP
+[ -h $CASHCOMP/%product_brandname%${inst_id} ] && \
+    rm -f $CASHCOMP/%product_brandname%${inst_id}
+
+#remove links in $CASHCOMP if they exist
+for file in $CASHCOMP/.ing${inst_id}*
+do
+    rm -f $file
+done
+
+exit $rc
+
+else
+    exit 0
+fi
+
+%files
+%attr (644,root,root)	%mdb_prefix%/ingres/files/mdb/mdb.tar.gz
+%attr (755,root,root)	%mdb_prefix%/ingres/utility/iisumdb

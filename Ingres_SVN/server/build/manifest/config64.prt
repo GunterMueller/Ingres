@@ -1,0 +1,4 @@
+PART   config64
+   DIRECTORY ingres!utility!lp64
+   BUILD_DIR (ING_BUILD)!utility!lp64
+      EXECUTABLE cbf

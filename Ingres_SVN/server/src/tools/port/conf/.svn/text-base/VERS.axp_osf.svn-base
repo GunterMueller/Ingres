@@ -1,0 +1,6 @@
+config=axp_osf
+option=B64
+option=DELIM_TEST
+option=INGRESII
+option=DBL
+build=00

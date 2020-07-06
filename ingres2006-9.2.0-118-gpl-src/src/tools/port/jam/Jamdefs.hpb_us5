@@ -1,0 +1,57 @@
+#
+#  Copyright (c) 2004 Ingres Corporation
+#
+#  Name: Jamdefs.hpb_us5 -- Variable definitions for HP-UX RISC 32-bit
+#
+#  Description:
+#       Platform specific variable definitions for HP-UX RISC 32-bit
+#
+# History:
+#       17-Sep-2004 (bonro01)
+#           Created.
+#       16-Oct-2006 (hanal04) Bug 116866
+#           Add CCDEBUG to hold the compiler's debug flag. Used to ensure
+#           NOOPTIM does not strip this when explicitly set.
+#
+#####
+
+NETSCAPE_API_FLAG 	= "-DNET_SSL -DHPUX -DXP_UNIX +z" ;
+APACHE_API_FLAG 	= "-DHPUX11 +z" ;
+VERS 	= "hpb_us5" ;
+CC 	default = "c89" ;
+CCDEBUG = "-g" ;
+SHLIBLD = "ld" ;
+CPP 	default = "/lib/cpp" ;
+CCMACH 	= "+e +Olibcalls -D_HPUX_SOURCE -D_POSIX_C_SOURCE=199506L +DAportable +DS2.0a  -W  p,-H375000 -D_LARGEFILE64_SOURCE" ;
+CCLDMACH 	= "-Wl,-E -Wl,-O -Wl,+s -Wl,+n" ;
+CCLDSERVER 	= "" ;
+CCPICFLAG 	= "+Z" ;
+SLSFX 	= "sl" ;
+MWSLSFX 	= "sl" ;
+CGISFX 	= "cgi" ;
+LIBSFX = "a" ;
+OBJSFX = "o" ;
+EXESFX = ;
+LDLIBPATH 	= "/lib /usr/lib /usr/local/lib" ;
+LIBMACH 	= "" ;
+LDLIBMACH 	= "-lpthread -lm -lrt -lcl" ;
+CCSHLDMACH    = "+s -b -B immediate" ;
+LD_ICE_FLAGS 	= "" ;
+ICE_EXT         = sl ;
+CGI_EXT         = cgi ;
+LEVEL1_OPTIM 	= "+O1" ;
+LONGLONG	= long long ;
+OPTIM 	default = "-O" ;
+SHELLHEADER 	= ""#!/bin/sh"" ;
+BSD42 default = -DBSD42 ;
+DIRENT default = -DDIRENT ;
+DIRFUNC default = -DDIRFUNC ;
+NO_DIRFUNC default = -DNO_DIRFUNC ;
+SYS5 default = -DSYS5 ;
+C++	= "aCC" ;
+C++FLAGS	= "-D_HP_UX -DHPaCC -DHPUX11 +DAportable +Z" ;
+UNDEFFLAG	= "-u " ;
+XERC_DEFS	= "-DXML_USE_NATIVE_TRANSCODER -DXML_USE_INMEM_MESSAGELOADER -DXML_USE_NETACCESSOR_SOCKET" ;
+XERC_LIBS	= "/usr/lib/libc.sl" ;
+DBMS_STACKSIZE = 131072 ;
+

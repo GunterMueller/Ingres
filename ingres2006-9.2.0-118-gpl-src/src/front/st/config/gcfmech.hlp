@@ -1,0 +1,7 @@
+/#-- Copyright (c) 2004 Ingres Corporation
+ This form configures static and dynamically-loaded security mechanisms.  
+ To run a dynamically-loaded mechanism such as Kerberos, your local
+ installation must already be running the third-party security
+ software.  Static security mechanisms such as Ingres or System require
+ no additional software.  See the Release Notes for more information.
+

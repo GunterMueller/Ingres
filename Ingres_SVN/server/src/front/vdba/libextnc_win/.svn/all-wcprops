@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/3/main/src/front/vdba/libextnc_win
+END
+stdafx.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/libextnc_win/stdafx.h
+END
+iia.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/libextnc_win/iia.cpp
+END
+libextnc.sln
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/libextnc_win/libextnc.sln
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/libextnc_win/Jamfile
+END
+libextnc.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/3/main/src/front/vdba/libextnc_win/libextnc.vcproj
+END
+stdafx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/libextnc_win/stdafx.cpp
+END
+libextnc.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/libextnc_win/libextnc.dsp
+END

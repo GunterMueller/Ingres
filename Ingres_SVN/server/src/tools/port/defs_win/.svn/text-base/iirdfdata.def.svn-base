@@ -1,0 +1,8 @@
+;  History:
+;	11-Jun-2004 (drivi01)
+;		Added ordinals.
+
+EXPORTS
+RDF_privctr		@1	DATA			
+rdf_stat_classes		@2	DATA			
+rdf_svci_classes		@3	DATA			

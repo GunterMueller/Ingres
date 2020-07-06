@@ -1,0 +1,10 @@
+;  History:
+;	17-Jun-2004 (drivi01)
+;		Created.
+;
+
+EXPORTS
+	Java_ca_ingres_utm_sql_Test_connect	@1				
+	Java_ca_ingres_utm_sql_Test_setSession	@2				
+	Java_ca_ingres_utm_sql_Test_disconnect	@3				
+	Java_ca_ingres_utm_sql_Test_runQueryOnly	@4				

@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/st/perfmon_win
+END
+oipfctrs.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/perfmon_win/oipfctrs.h
+END
+pfapi.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/st/perfmon_win/pfapi.c
+END
+pfdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/st/perfmon_win/pfdata.c
+END
+pfctrs.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/st/perfmon_win/pfctrs.c
+END
+pfctrmsg.mc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/perfmon_win/pfctrmsg.mc
+END
+pfutil.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/st/perfmon_win/pfutil.c
+END
+pfapi.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/st/perfmon_win/pfapi.h
+END
+pfdata.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/st/perfmon_win/pfdata.h
+END
+pfutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/st/perfmon_win/pfutil.h
+END
+pfmsg.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/st/perfmon_win/pfmsg.h
+END
+ingcache.pmw
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/perfmon_win/ingcache.pmw
+END
+pfctrs.rc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/perfmon_win/pfctrs.rc
+END
+increment.awk
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/perfmon_win/increment.awk
+END
+oipfctrs.reg
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/perfmon_win/oipfctrs.reg
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/st/perfmon_win/Jamfile
+END
+oipfctrs.ini
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/perfmon_win/oipfctrs.ini
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/perfmon_win/readme.txt
+END

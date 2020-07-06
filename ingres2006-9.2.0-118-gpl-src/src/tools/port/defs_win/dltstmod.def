@@ -1,0 +1,9 @@
+;  History:
+;	11-Jun-2004 (drivi01)
+;		Added ordinals.
+
+EXPORTS
+returns_one		@1				
+returns_zero		@2				
+returns_minus_one		@3				
+returns_string		@4				

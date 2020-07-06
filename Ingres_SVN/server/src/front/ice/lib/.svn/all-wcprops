@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/ingres/!svn/ver/1/main/src/front/ice/lib
+END
+ApacheCore.lib
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/ice/lib/ApacheCore.lib
+END
+libhttpd.lib
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/ice/lib/libhttpd.lib
+END
+ApacheCoreIA64.lib
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/ice/lib/ApacheCoreIA64.lib
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/ice/lib/Jamfile
+END
+ApacheCoreAMD64.lib
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/ice/lib/ApacheCoreAMD64.lib
+END
+ns-httpd35.lib
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/ice/lib/ns-httpd35.lib
+END

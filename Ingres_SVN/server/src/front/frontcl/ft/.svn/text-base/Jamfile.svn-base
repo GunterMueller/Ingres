@@ -1,0 +1,114 @@
+#
+# Jamfile file for front!frontcl!ft
+#
+
+SubDir ING_SRC front frontcl ft ;
+
+IISUBSYS front frontcl ft ;
+
+IINOOPTIM mwrun.c : vax_vms ;
+IINOOPTIM mwmsg.c : vax_vms ;
+IINOOPTIM mwmenu.c : vax_vms ;
+IINOOPTIM mwhost.c : vax_vms ;
+IINOOPTIM mwget.c : vax_vms ;
+IINOOPTIM mwform.c : vax_vms ;
+IINOOPTIM mwfcmds.c : vax_vms ;
+IINOOPTIM mwcmds.c : vax_vms ;
+IINOOPTIM movetab.c : vax_vms ;
+IINOOPTIM move.c : vax_vms ;
+IINOOPTIM mapping.c : vax_vms ;
+IINOOPTIM mapkey.c : vax_vms ;
+IINOOPTIM keys30.c : vax_vms ;
+IINOOPTIM itlnwin.c : vax_vms ;
+IINOOPTIM itlnprt.c : vax_vms ;
+IINOOPTIM itlndraw.c : vax_vms ;
+IINOOPTIM itldopen.c : vax_vms ;
+IINOOPTIM itldclse.c : vax_vms ;
+IINOOPTIM itdrloc.c : vax_vms ;
+IINOOPTIM invistf.c : vax_vms ;
+IINOOPTIM insrt.c : i64_hpu ;
+IINOOPTIM getwin.c : i64_hpu ;
+IINOOPTIM funckeys.c : i64_hpu ;
+IINOOPTIM ftwinerr.c : i64_hpu ;
+IINOOPTIM ftvalid.c : i64_hpu ;
+IINOOPTIM ftutil.c : i64_hpu ;
+IINOOPTIM ftusrinp.c : i64_hpu ;
+IINOOPTIM fttmout.c : i64_hpu ;
+IINOOPTIM fttest.c : i64_hpu ;
+IINOOPTIM fttermsz.c : i64_hpu ;
+IINOOPTIM fttermin.c : i64_hpu ;
+IINOOPTIM ftsyndsp.c : i64_hpu ;
+IINOOPTIM ftswpprn.c : i64_hpu ;
+IINOOPTIM ftsvinpt.c : i64_hpu ;
+IINOOPTIM ftsubmu.c : i64_hpu ;
+IINOOPTIM ftstrtch.c : i64_hpu ;
+IINOOPTIM ftspace.c : i64_hpu ;
+IINOOPTIM ftshell.c : i64_hpu ;
+IINOOPTIM ftsetio.c : i64_hpu ;
+IINOOPTIM ftsetda.c : i64_hpu ;
+IINOOPTIM ftscroll.c : i64_hpu ;
+IINOOPTIM ftscrlfd.c : i64_hpu ;
+IINOOPTIM ftrunnof.c : i64_hpu ;
+IINOOPTIM ftrun.c : i64_hpu ;
+IINOOPTIM ftrstore.c : i64_hpu ;
+IINOOPTIM ftring.c : i64_hpu ;
+IINOOPTIM ftref.c : i64_hpu ;
+IINOOPTIM ftredraw.c : i64_hpu ;
+IINOOPTIM ftrange.c : i64_hpu ;
+IINOOPTIM ftqbf.c : i64_hpu ;
+IINOOPTIM ftptmenu.c : i64_hpu ;
+IINOOPTIM ftprompt.c : i64_hpu ;
+IINOOPTIM ftprnscr.c : i64_hpu ;
+IINOOPTIM ftpopup.c : i64_hpu ;
+IINOOPTIM ftpanic.c : i64_hpu ;
+IINOOPTIM ftnewfrm.c : i64_hpu ;
+IINOOPTIM ftmushft.c : i64_hpu ;
+IINOOPTIM ftmsg.c : i64_hpu ;
+IINOOPTIM ftmrkfld.c : i64_hpu ;
+IINOOPTIM ftmaplbl.c : i64_hpu ;
+IINOOPTIM ftmapfle.c : i64_hpu ;
+IINOOPTIM ftlotus.c : i64_hpu ;
+IINOOPTIM ftinstst.c : i64_hpu ;
+IINOOPTIM ftinit.c : i64_hpu ;
+IINOOPTIM ftgtmenu.c : i64_hpu ;
+IINOOPTIM ftgtctl.c : i64_hpu ;
+IINOOPTIM ftgrt.c : i64_hpu ;
+IINOOPTIM ftgetch.c : i64_hpu ;
+IINOOPTIM ftfrprt.c : i64_hpu ;
+IINOOPTIM ftfndwin.c : i64_hpu ;
+IINOOPTIM ftfldupd.c : i64_hpu ;
+IINOOPTIM ftfkset.c : i64_hpu ;
+IINOOPTIM fterror.c : i64_hpu ;
+IINOOPTIM ftdmpscr.c : i64_hpu ;
+IINOOPTIM ftdblutl.c : i64_hpu ;
+IINOOPTIM ftdata.c : i64_hpu ;
+IINOOPTIM ftcrtrk.c : i64_hpu ;
+IINOOPTIM ftclose.c : i64_hpu ;
+IINOOPTIM ftclear.c : i64_hpu ;
+IINOOPTIM ftbuild.c : i64_hpu ;
+IINOOPTIM ftbrowse.c : i64_hpu ;
+IINOOPTIM ftboxerr.c : i64_hpu ;
+IINOOPTIM ftbell.c : i64_hpu ;
+IINOOPTIM ftattr.c : i64_hpu ;
+IINOOPTIM ftaddfrs.c : i64_hpu ;
+IINOOPTIM ftaddcom.c : i64_hpu ;
+IINOOPTIM frcebrws.c : i64_hpu ;
+IINOOPTIM fldstr.c : i64_hpu ;
+
+IILIBRARY FTLIB : word.c vi.c strfld.c mwrun.c mwmsg.c mwmenu.c
+	mwhost.c mwget.c mwform.c mwfcmds.c mwcmds.c movetab.c move.c
+	mapping.c mapkey.c keys30.c itlnwin.c itlnprt.c itlndraw.c
+	itldopen.c itldclse.c invistf.c insrt.c getwin.c
+	funckeys.c ftwinerr.c ftvalid.c ftutil.c ftusrinp.c fttmout.c
+	fttest.c fttermsz.c fttermin.c ftsyndsp.c ftswpprn.c ftsvinpt.c
+	ftsubmu.c ftstrtch.c ftspace.c ftshell.c ftsetio.c ftsetda.c
+	ftscroll.c ftscrlfd.c ftrunnof.c ftrun.c ftrstore.c ftring.c
+	ftref.c ftredraw.c ftrange.c ftqbf.c ftptmenu.c ftprompt.c
+	ftprnscr.c ftpopup.c ftpanic.c ftnewfrm.c ftmushft.c ftmsg.c
+	ftmrkfld.c ftmaplbl.c ftmapfle.c ftlotus.c ftinstst.c ftinit.c
+	ftgtmenu.c ftgtctl.c ftgrt.c ftgetch.c ftfrprt.c ftfndwin.c
+	ftfldupd.c ftfkset.c fterror.c ftdmpscr.c ftdblutl.c
+	ftcrtrk.c ftclose.c ftclear.c ftbuild.c ftbrowse.c ftboxerr.c
+	ftbell.c ftattr.c ftaddfrs.c ftaddcom.c frcebrws.c fldstr.c ;
+
+IILIBRARY IMPFRAMELIBDATA : ftdata.c itdrloc.c ;

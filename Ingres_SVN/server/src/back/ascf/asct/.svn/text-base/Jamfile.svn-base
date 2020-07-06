@@ -1,0 +1,12 @@
+#
+# Jamfile file for back!ascf!asct
+#
+
+SubDir ING_SRC back ascf asct ;
+
+IISUBSYS back ascf asct ;
+
+IILIBRARY ASCFLIB : asctmo.c asct.c ;
+
+IILIBRARY IMPICELIBDATA : asctdata.c ;
+

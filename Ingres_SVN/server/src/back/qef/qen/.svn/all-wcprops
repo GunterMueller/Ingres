@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/ingres/!svn/ver/14/main/src/back/qef/qen
+END
+qenisjoin.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/qef/qen/qenisjoin.c
+END
+qenorig.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/qef/qen/qenorig.c
+END
+qenutl.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/qef/qen/qenutl.c
+END
+qenfsmjoin.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/qef/qen/qenfsmjoin.c
+END
+qenhjoin.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/qef/qen/qenhjoin.c
+END
+qenhashutl.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/back/qef/qen/qenhashutl.c
+END
+qenkjoin.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/14/main/src/back/qef/qen/qenkjoin.c
+END
+qentsort.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/qef/qen/qentsort.c
+END
+qendmrcx.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/qef/qen/qendmrcx.c
+END
+qenqp.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/qef/qen/qenqp.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/qef/qen/Jamfile
+END
+qencpjoin.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/qef/qen/qencpjoin.c
+END
+qentjoin.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/qef/qen/qentjoin.c
+END
+qenexch.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/qef/qen/qenexch.c
+END
+qensejoin.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/qef/qen/qensejoin.c
+END
+qensort.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/qef/qen/qensort.c
+END

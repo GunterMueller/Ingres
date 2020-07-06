@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/3/main/src/front/vdba/libguids_win
+END
+stdafx.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/libguids_win/stdafx.h
+END
+libguids.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/3/main/src/front/vdba/libguids_win/libguids.vcproj
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/libguids_win/Jamfile
+END
+libguids.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/libguids_win/libguids.dsp
+END
+stdafx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/libguids_win/stdafx.cpp
+END
+libguids.sln
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/libguids_win/libguids.sln
+END

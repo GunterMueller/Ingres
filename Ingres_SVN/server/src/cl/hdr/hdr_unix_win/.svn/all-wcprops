@@ -1,0 +1,251 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win
+END
+olcl.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/olcl.h
+END
+ernames.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/ernames.h
+END
+sicl.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/sicl.h
+END
+elfnote.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/elfnote.h
+END
+slcl.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/slcl.h
+END
+mucl.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/mucl.h
+END
+mf.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/mf.h
+END
+clstatus.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/clstatus.h
+END
+srcl.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/srcl.h
+END
+qucl.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/qucl.h
+END
+sd.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/sd.h
+END
+iiwin32s.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/iiwin32s.h
+END
+utcl.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/utcl.h
+END
+dicl.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/dicl.h
+END
+jfcl.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/jfcl.h
+END
+array.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/array.h
+END
+dlcl.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/dlcl.h
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/MANIFEST
+END
+pccl.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/pccl.h
+END
+pecl.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/pecl.h
+END
+clfloat.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/clfloat.h
+END
+fpcl.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/fpcl.h
+END
+tccl.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/tccl.h
+END
+dscl.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/dscl.h
+END
+evset.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/evset.h
+END
+nmcl.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/nmcl.h
+END
+dycl.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/dycl.h
+END
+w4glext.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/w4glext.h
+END
+tmcl.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/tmcl.h
+END
+shmlock.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/shmlock.h
+END
+trcl.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/trcl.h
+END
+cvgcccl.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/cvgcccl.h
+END
+gcatrace.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/gcatrace.h
+END
+cicl.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/cicl.h
+END
+ckcl.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/ckcl.h
+END
+cmcl.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/cmcl.h
+END
+mecl.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/mecl.h
+END
+sacl.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/sacl.h
+END
+mhcl.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/mhcl.h
+END
+ercl.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/ercl.h
+END
+cvcl.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr_unix_win/cvcl.h
+END

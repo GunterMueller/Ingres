@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# Copyright (c) 2004 Ingres Corporation
+#
+#
+$II_SYSTEM/ingres/bin/createdb -u\$ingres imadb
+sql -u\$ingres imadb < $II_SYSTEM/ingres/files/mkimau.sql
+
+

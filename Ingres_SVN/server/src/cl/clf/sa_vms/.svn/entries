@@ -1,0 +1,52 @@
+8
+
+dir
+33
+http://code.ingres.com/ingres/main/src/cl/clf/sa_vms
+http://code.ingres.com/ingres
+
+
+
+2008-03-20T07:36:25.925856Z
+1
+root
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+45b5d43f-8932-4c86-835a-3654e5842839
+
+sadummy.c
+file
+
+
+
+
+2008-05-18T01:26:39.000000Z
+15abdff5a36070109efb3ef768e1aebb
+2008-03-20T07:36:25.925856Z
+1
+root
+
+Jamfile
+file
+
+
+
+
+2008-05-18T01:26:39.000000Z
+365ded946f879f3baf95633b33226743
+2008-03-20T07:36:25.925856Z
+1
+root
+

@@ -1,0 +1,65 @@
+;
+; File: oigcnnt.def
+;
+; History:
+;	09-mar-1999 (mcgem01)
+;	    Add the II_GCNapi_ModifyNode function required by the
+;	    Unicenter guys.
+;	04-may-1999 (mcgem01)
+;	    Add the II_GCNapi_TestNode function required by the
+;	    Unicenter guys.
+;       22-may-2000 (rodjo04) Sir 101507
+;           Created new API II_GCNapi_Node_Exists() for TNG group.
+;	11-Jun-2004 (drivi01)
+;	    Added ordinals.
+;
+EXPORTS
+gcn_make_tickets		@1				
+gcn_save_rtickets		@2				
+gcn_use_lticket		@3				
+gcn_use_rticket		@4				
+gcn_can_auth		@5				
+gcn_get_auth		@6				
+gcn_got_auth		@7				
+gcn_make_auth		@8				
+gcn_pwd_auth		@9				
+gcn_use_auth		@10				
+gcn_rslv_done		@11				
+gcn_rslv_err		@12				
+gcn_rslv_init		@13				
+gcn_rslv_login		@14				
+gcn_rslv_node		@15				
+gcn_rslv_server		@16				
+gcn_oper_ns		@17				
+gcn_add_mbuf		@18				
+gcn_add_server		@19				
+gcn_del_server		@20				
+gcn_get_server		@21				
+gcn_register		@22				
+gcn_server		@23				
+gcn_srv_term		@24				
+gcn_srv_load		@25				
+gcn_srv_init		@26				
+gcn_fopen		@27				
+gcn_nq_add		@28				
+gcn_nq_assocs_upd		@29				
+gcn_nq_create		@30				
+gcn_nq_del		@31				
+gcn_nq_find		@32				
+gcn_nq_file		@33				
+gcn_nq_init		@34				
+gcn_nq_lock		@35				
+gcn_nq_ret		@36				
+gcn_nq_unlock		@37				
+gcn_error		@38				
+gcn_connect_info		@39				
+gcn_rslv_cleanup		@40				
+gcn_ir_comsvr		@41				
+gcn_ir_bedcheck		@42				
+gcn_ir_error		@43				
+gcn_ir_init		@44				
+gcn_ir_update		@45				
+gcn_ir_register		@46				
+II_GCNapi_ModifyNode		@47				
+II_GCNapi_TestNode		@48				
+II_GCNapi_Node_Exists		@49				

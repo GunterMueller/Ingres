@@ -1,0 +1,1001 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/front/vifred/vifred
+END
+vfcfdup.frm
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfcfdup.frm
+END
+vfinsert.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfinsert.c
+END
+vfecreat.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfecreat.hlp
+END
+vfgtsize.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfgtsize.c
+END
+pos.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/pos.c
+END
+pos.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/pos.h
+END
+vfslcom.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfslcom.hlp
+END
+vfedtrim.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfedtrim.hlp
+END
+vflsflds.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vflsflds.hlp
+END
+vffrmcnt.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vffrmcnt.c
+END
+debug.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/debug.c
+END
+encoding.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/encoding.c
+END
+rbdetail.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/rbdetail.hlp
+END
+vfcftbl.frm
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfcftbl.frm
+END
+vfsvquit.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfsvquit.hlp
+END
+vftblprm.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vftblprm.hlp
+END
+vfboxatr.frm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfboxatr.frm
+END
+valerr.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/valerr.qsc
+END
+allocarr.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/allocarr.c
+END
+tfcreate.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/tfcreate.qsc
+END
+rbfdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/rbfdata.c
+END
+vfgetdat.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfgetdat.c
+END
+vfexit.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfexit.c
+END
+rbfsldet.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/rbfsldet.hlp
+END
+sequence.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/sequence.c
+END
+vftfmvsm.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vftfmvsm.hlp
+END
+vfcursor.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfcursor.hlp
+END
+globs.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/globs.h
+END
+list.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/list.c
+END
+vffeat.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vffeat.c
+END
+vfhlp.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfhlp.h
+END
+vflsdup.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vflsdup.hlp
+END
+vfedtrim.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfedtrim.qsc
+END
+vfformat.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfformat.hlp
+END
+seq.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/seq.h
+END
+valerr.frm
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/valerr.frm
+END
+widefrm.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/widefrm.c
+END
+decls.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/decls.h
+END
+tfcreate.frm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/tfcreate.frm
+END
+vflsfrms.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vflsfrms.hlp
+END
+vffiles.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vffiles.h
+END
+vftblfld.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vftblfld.hlp
+END
+vfdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfdata.c
+END
+vfexpshr.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfexpshr.hlp
+END
+vfcrdup.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfcrdup.hlp
+END
+enter.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/enter.c
+END
+rbf.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/rbf.qsc
+END
+select.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/select.c
+END
+vfdstqbf.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfdstqbf.hlp
+END
+dupfld.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/dupfld.qsc
+END
+movedef.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/movedef.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/Jamfile
+END
+vfgrpmv.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfgrpmv.hlp
+END
+vfdlock.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfdlock.c
+END
+feature.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/feature.c
+END
+vfsave.frm
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfsave.frm
+END
+vftblprm.frm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vftblprm.frm
+END
+iivifred.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/iivifred.c
+END
+vfposarr.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfposarr.c
+END
+vfderex.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfderex.hlp
+END
+vfcat.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfcat.hlp
+END
+rbfcmove.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/rbfcmove.hlp
+END
+undo.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/undo.c
+END
+dswrtfrm.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/dswrtfrm.c
+END
+featur2.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/featur2.c
+END
+vfqbf.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfqbf.h
+END
+vfvalex.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfvalex.hlp
+END
+vfsavend.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfsavend.hlp
+END
+attr.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/attr.qsc
+END
+vfqjdfls.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfqjdfls.hlp
+END
+dupfld.frm
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/dupfld.frm
+END
+vffield.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vffield.hlp
+END
+vifattr.frm
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vifattr.frm
+END
+vifred.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vifred.qsc
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/main.c
+END
+rbftmove.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/rbftmove.hlp
+END
+edit.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/edit.c
+END
+fmt.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/fmt.c
+END
+getfrm.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/getfrm.qsc
+END
+vfabcfrm.frm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfabcfrm.frm
+END
+vfqtblnm.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfqtblnm.hlp
+END
+vfcrjdef.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfcrjdef.hlp
+END
+misc.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/misc.c
+END
+rfecreat.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/rfecreat.hlp
+END
+vfqbfcat.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfqbfcat.hlp
+END
+trace.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/trace.h
+END
+vftrmatr.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vftrmatr.hlp
+END
+vfcat.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfcat.qsc
+END
+vfructrl.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfructrl.hlp
+END
+qbfmap.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/qbfmap.qsc
+END
+vfqdef.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfqdef.c
+END
+vfderive.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfderive.hlp
+END
+vfcrtbsb.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfcrtbsb.hlp
+END
+vfqbfsav.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfqbfsav.hlp
+END
+vfdererr.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfdererr.hlp
+END
+menudef.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/menudef.c
+END
+rfsvquit.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/rfsvquit.hlp
+END
+vfhelp.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfhelp.c
+END
+movecomp.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/movecomp.c
+END
+vfcfrm.frm
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfcfrm.frm
+END
+vfvalerr.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfvalerr.hlp
+END
+db.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/db.qsc
+END
+vfqbfsmu.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfqbfsmu.hlp
+END
+getargs.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/getargs.c
+END
+vfdstfrm.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfdstfrm.hlp
+END
+vfcrtfrm.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfcrtfrm.qsc
+END
+vfunique.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfunique.c
+END
+writefrm.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/writefrm.qsc
+END
+vffrmmov.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vffrmmov.hlp
+END
+writefrm.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/writefrm.h
+END
+vflsjdef.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vflsjdef.hlp
+END
+vfrulfrm.frm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfrulfrm.frm
+END
+vfcat.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfcat.frm
+END
+rflayout.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/rflayout.hlp
+END
+ervf.msg
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/ervf.msg
+END
+vfunique.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfunique.h
+END
+rbfslcol.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/rbfslcol.hlp
+END
+data.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/data.c
+END
+lines.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/lines.c
+END
+vfreseq.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfreseq.hlp
+END
+vfqjdfnm.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfqjdfnm.hlp
+END
+vfcfjdef.frm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfcfjdef.frm
+END
+cursor.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/cursor.qsc
+END
+dspos.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/dspos.c
+END
+vffrmatr.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vffrmatr.hlp
+END
+vifred.lot
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vifred.lot
+END
+vfcresb.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfcresb.hlp
+END
+vfdisp.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfdisp.c
+END
+vfqbfcat.frm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfqbfcat.frm
+END
+vfedbox.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfedbox.hlp
+END
+rbfmove.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/rbfmove.hlp
+END
+vfqbfdet.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfqbfdet.hlp
+END
+delete.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/delete.c
+END
+fdtosmfd.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/fdtosmfd.c
+END
+vfsymtbl.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfsymtbl.c
+END
+vfboxmov.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfboxmov.hlp
+END
+vftrmatr.frm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vftrmatr.frm
+END
+types.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/types.h
+END
+fasttodb.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/fasttodb.qsc
+END
+vfedfld.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfedfld.hlp
+END
+vfdupfld.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfdupfld.hlp
+END
+vfselect.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfselect.hlp
+END
+getfrmnm.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/getfrmnm.qsc
+END
+vifred.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vifred.exe.manifest
+END
+vfframe.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfframe.c
+END
+getrel.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/getrel.qsc
+END
+vffrmatr.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vffrmatr.qsc
+END
+vfboxatr.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfboxatr.hlp
+END
+vfvalid.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfvalid.hlp
+END
+vfdetail.frm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfdetail.frm
+END
+vfedbox.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfedbox.qsc
+END
+vfslfld.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfslfld.hlp
+END
+vfrbf.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfrbf.c
+END
+vfattr.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfattr.hlp
+END
+dsvfnode.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/dsvfnode.c
+END
+rfsavend.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/rfsavend.hlp
+END
+vfutsmu.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfutsmu.hlp
+END
+vfvalder.frm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfvalder.frm
+END
+vfvisadj.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfvisadj.hlp
+END
+vftofrm.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vftofrm.c
+END
+node.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/node.c
+END
+vfsemov.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfsemov.hlp
+END
+vfinittb.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vfinittb.qsc
+END
+vffrmatr.frm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/vffrmatr.frm
+END
+node.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/node.h
+END
+menus.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/vifred/vifred/menus.h
+END

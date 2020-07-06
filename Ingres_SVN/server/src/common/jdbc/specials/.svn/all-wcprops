@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/common/jdbc/specials
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/common/jdbc/specials/MANIFEST
+END
+edbc.jar
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/common/jdbc/specials/edbc.jar
+END
+DrvInfo.class
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/common/jdbc/specials/DrvInfo.class
+END
+EdbcInfo.class
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/jdbc/specials/EdbcInfo.class
+END

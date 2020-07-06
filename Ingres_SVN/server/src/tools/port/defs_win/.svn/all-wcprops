@@ -1,0 +1,701 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/tools/port/defs_win
+END
+iiicems.def
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiicems.def
+END
+iiembddata.def
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiembddata.def
+END
+iilibscf.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibscf.def
+END
+iilibgcskrb.def
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibgcskrb.def
+END
+iilibutil.def
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibutil.def
+END
+iirdfdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iirdfdata.def
+END
+iilibopfdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibopfdata.def
+END
+iilibulfdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibulfdata.def
+END
+iiicesgadi.def
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiicesgadi.def
+END
+gssapi32.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/gssapi32.def
+END
+iilibgwf.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibgwf.def
+END
+caiiod35.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/caiiod35.def
+END
+iilibrqf.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibrqf.def
+END
+iilibqsf.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibqsf.def
+END
+iilibadf.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibadf.def
+END
+iilibframe.def
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibframe.def
+END
+iilibsxfdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibsxfdata.def
+END
+iilibinterpdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibinterpdata.def
+END
+iitpfdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iitpfdata.def
+END
+iiiceisapi.def
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiiceisapi.def
+END
+iigcfdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iigcfdata.def
+END
+iiicensapi.def
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiicensapi.def
+END
+iilibqefdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibqefdata.def
+END
+iilibapi.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibapi.def
+END
+iidmfdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iidmfdata.def
+END
+iigcndata.def
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iigcndata.def
+END
+iipfctrs.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iipfctrs.def
+END
+iiursdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiursdata.def
+END
+iiscfdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiscfdata.def
+END
+iiascfdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiascfdata.def
+END
+oiddi.def
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/oiddi.def
+END
+iidmfnt.def
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iidmfnt.def
+END
+iilibpsfdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibpsfdata.def
+END
+iilibopf.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibopf.def
+END
+iiurtnt.def
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiurtnt.def
+END
+iiqefnt.def
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiqefnt.def
+END
+iilibulf.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibulf.def
+END
+iigwfdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iigwfdata.def
+END
+iiascfnt.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiascfnt.def
+END
+iicufnt.def
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iicufnt.def
+END
+iiclfnt64.def
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiclfnt64.def
+END
+iilibqdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibqdata.def
+END
+iirqfdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iirqfdata.def
+END
+iiqsfdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiqsfdata.def
+END
+iilibudt.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibudt.def
+END
+iiadfdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiadfdata.def
+END
+iilibsxf.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibsxf.def
+END
+iilibinterp.def
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibinterp.def
+END
+iirqfnt.def
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iirqfnt.def
+END
+iilibrdfdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibrdfdata.def
+END
+iiadfnt.def
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiadfnt.def
+END
+iilibembeddata.def
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibembeddata.def
+END
+iiclfdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiclfdata.def
+END
+iiddfnt.def
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiddfnt.def
+END
+iiice.def
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiice.def
+END
+iilibqef.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibqef.def
+END
+iiglfdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiglfdata.def
+END
+iiawsfnt.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiawsfnt.def
+END
+iilibcompatdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibcompatdata.def
+END
+iilibcuf.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibcuf.def
+END
+iiclfnt.def
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiclfnt.def
+END
+dltstmod.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/dltstmod.def
+END
+iiembdnt.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiembdnt.def
+END
+iiglfnt.def
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiglfnt.def
+END
+iilibtpfdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibtpfdata.def
+END
+caiioc35.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/caiioc35.def
+END
+iirdfnt.def
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iirdfnt.def
+END
+iinodesmgr.def
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iinodesmgr.def
+END
+iiopfdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiopfdata.def
+END
+iilibpsf.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibpsf.def
+END
+iilibgcfdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibgcfdata.def
+END
+iiulfdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiulfdata.def
+END
+iilibicedata.def
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibicedata.def
+END
+iilibddf.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibddf.def
+END
+iifrsdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iifrsdata.def
+END
+iiopfnt.def
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiopfnt.def
+END
+iilibdmfdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibdmfdata.def
+END
+iilibq.def
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibq.def
+END
+iiulfnt.def
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiulfnt.def
+END
+iiiceapi.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiiceapi.def
+END
+iisxfdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iisxfdata.def
+END
+iitpfnt.def
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iitpfnt.def
+END
+iifrsnt.def
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iifrsnt.def
+END
+iilibscfdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibscfdata.def
+END
+iiddfcomnt.def
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiddfcomnt.def
+END
+iiudtnt.def
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiudtnt.def
+END
+iilibxa.def
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibxa.def
+END
+iigcfnt.def
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iigcfnt.def
+END
+iilibrdf.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibrdf.def
+END
+iisxfnt.def
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iisxfnt.def
+END
+iilibembed.def
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibembed.def
+END
+iilibgwfdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibgwfdata.def
+END
+iijnilibrary.def
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iijnilibrary.def
+END
+iiqefdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiqefdata.def
+END
+iijniquery.def
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iijniquery.def
+END
+iiapi.def
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiapi.def
+END
+iigcnnt.def
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iigcnnt.def
+END
+iilibrqfdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibrqfdata.def
+END
+iilibcompat.def
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibcompat.def
+END
+iilibqsfdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibqsfdata.def
+END
+iixant.def
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iixant.def
+END
+iilibframedata.def
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibframedata.def
+END
+iilibadfdata.def
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibadfdata.def
+END
+iiiceapapi.def
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiiceapapi.def
+END
+iiursnt.def
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiursnt.def
+END
+iiscfnt.def
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiscfnt.def
+END
+iiutil.def
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiutil.def
+END
+iilibtpf.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibtpf.def
+END
+ingodbc.def
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/ingodbc.def
+END
+iigwfnt.def
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iigwfnt.def
+END
+iilibgcf.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibgcf.def
+END
+iilibice.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibice.def
+END
+iiqsfnt.def
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiqsfnt.def
+END
+iiddcnt.def
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iiddcnt.def
+END
+caiiro35.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/caiiro35.def
+END
+iilibdmf.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/tools/port/defs_win/iilibdmf.def
+END

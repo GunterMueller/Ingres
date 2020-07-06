@@ -1,0 +1,72 @@
+#
+# Jamfile file for common!adf!adu
+#
+
+SubDir ING_SRC common adf adu ;
+
+IISUBSYS common adf adu ;
+
+
+IINOOPTIM adupriv.c : su4_u42 su4_cmw ;
+IINOOPTIM aduprint.c : su4_u42 su4_cmw ;
+IINOOPTIM aduperm.c : su4_u42 su4_cmw ;
+IINOOPTIM adupatcmp.c : su4_u42 su4_cmw ;
+IINOOPTIM adunchar.c : su4_u42 su4_cmw ;
+IINOOPTIM adumoney.c : su4_u42 su4_cmw ;
+IINOOPTIM adumaplkup.c : su4_u42 su4_cmw ;
+IINOOPTIM adulvch.c : su4_u42 su4_cmw ;
+IINOOPTIM adullmoney.c : su4_u42 su4_cmw ;
+IINOOPTIM adulllgk.c : su4_u42 su4_cmw ;
+IINOOPTIM adulldates.c : su4_u42 su4_cmw ;
+IINOOPTIM adulcs.c : su4_u42 su4_cmw ;
+IINOOPTIM adukey.c : su4_u42 su4_cmw ;
+IINOOPTIM aduintpow.c : su4_u42 su4_cmw ;
+IINOOPTIM aduiftru.c : su4_u42 su4_cmw ;
+IINOOPTIM aduifnull.c : su4_u42 su4_cmw ;
+IINOOPTIM aduhex.c : su4_u42 su4_cmw ;
+IINOOPTIM aduhash.c : su4_u42 su4_cmw ;
+IINOOPTIM adufexi.c : su4_u42 su4_cmw ;
+IINOOPTIM aduextdt.c : su4_u42 su4_cmw ;
+IINOOPTIM aduerror.c : su4_u42 su4_cmw ;
+IINOOPTIM adudec.c : su4_u42 su4_cmw ;
+IINOOPTIM adudbmsinfo.c : su4_u42 su4_cmw ;
+IINOOPTIM adudates.c : su4_u42 su4_cmw ;
+IINOOPTIM aducvtime.c : su4_u42 su4_cmw ;
+IINOOPTIM aducpnify.c : su4_u42 su4_cmw ;
+IINOOPTIM aduconverter.c : su4_u42 su4_cmw ;
+IINOOPTIM aducompile.c : su4_u42 su4_cmw ;
+IINOOPTIM aducompatstr.c : su4_u42 su4_cmw ;
+IINOOPTIM aducoerce.c : sgi_us5 ;
+IINOOPTIM aducmp.c : sgi_us5 ;
+IINOOPTIM aduchkmonth.c : sgi_us5 ;
+IINOOPTIM adubitwise.c : sgi_us5 ;
+IINOOPTIM adubits.c : sgi_us5 ;
+IINOOPTIM aduascii.c : sgi_us5 ;
+IINOOPTIM aduagstr.c : sgi_us5 ;
+IINOOPTIM aduagstat.c : sgi_us5 ;
+IINOOPTIM aduagmny.c : sgi_us5 ;
+IINOOPTIM aduaglgk.c : sgi_us5 ;
+IINOOPTIM aduagint.c : sgi_us5 ;
+IINOOPTIM aduagflt.c : sgi_us5 ;
+IINOOPTIM aduagdec.c : sgi_us5 ;
+IINOOPTIM aduagdate.c : sgi_us5 ;
+IINOOPTIM aduagcommon.c : sgi_us5 ;
+
+IIUTILEXE aducompile : aducompile.c ;
+IINEEDLIBS aducompile : ADFLIB COMPATLIB ;
+
+IILIBRARY ADFLIB : aduuuid.c aduuserlen.c aduulike.c aduucs.c
+	aduucmp.c adutypename.c adutabid.c adustrutil.c
+	adustring.c adustrcmp.c aduredeem.c adurandom.c adupriv.c 
+	aduprint.c aduperm.c adupatcmp.c adunchar.c 
+	adumoney.c adumaplkup.c adulvch.c adullmoney.c adulllgk.c
+	adulldates.c adulcs.c adukey.c aduintpow.c aduiftru.c
+	aduifnull.c aduhex.c aduhash.c adufexi.c aduextdt.c
+	aduerror.c adudec.c adudbmsinfo.c adudates.c aducvtime.c
+	aducpnify.c aduconverter.c aducompatstr.c aducoerce.c
+	aducmp.c aduchkmonth.c adubitwise.c adubits.c aduascii.c
+	aduagstr.c aduagstat.c aduagmny.c aduaglgk.c aducheck.c
+	aduagint.c aduagflt.c aduagdec.c aduagdate.c aduagcommon.c aduuquel.c ;
+
+IILIBRARY IMPADFLIBDATA : adumontab.roc adutabdate.roc aduoutarg.roc ;
+

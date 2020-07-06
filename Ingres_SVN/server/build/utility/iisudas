@@ -1,0 +1,275 @@
+#!/bin/bash
+#
+#  Copyright (c) 2004 Ingres Corporation
+#
+#  Name: iisudas -- setup script for Ingres DAS Server
+#
+#  Usage:
+#	iisudas
+#
+#  Description:
+#	This script should only be called by the Ingres installation
+#	utility.  It sets up the Ingres DAS Server.
+#
+#  Exit Status:
+#	0	setup procedure completed.
+#	1	setup procedure did not complete.
+#
+#  PROGRAM = iisudas
+#
+#  DEST = utility
+#----------------------------------------------------------------------------
+
+if [ "$1" = "-rmpkg" ] ; then
+   II_CONF_DIR=$II_SYSTEM/ingres/files
+
+   cp -p $II_CONF_DIR/config.dat $II_CONF_DIR/config.tmp
+
+   trap "cp -p $II_CONF_DIR/config.tmp $II_CONF_DIR/config.dat; \
+         rm -f $II_CONF_DIR/config.tmp; exit 1" 1 2 3 15
+
+   cat $II_CONF_DIR/config.dat | grep -v '\.gcd' >$II_CONF_DIR/config.new
+
+   rm -f $II_CONF_DIR/config.dat
+
+   mv $II_CONF_DIR/config.new $II_CONF_DIR/config.dat
+
+   rm -f $II_CONF_DIR/config.tmp
+
+   cat << !
+  The Ingres Data Access Server has been removed
+
+!
+exit 0
+fi
+
+# check for response file modes
+WRITE_RESPONSE=false
+READ_RESPONSE=false
+RESOUTFILE=ingrsp.rsp
+RESINFILE=ingrsp.rsp
+RPM=false
+BATCH=false
+NOTBATCH=true
+INSTLOG="2>&1 | tee -a $II_SYSTEM/ingres/files/install.log"
+
+# check for batch flag
+while [ $# != 0 ]
+do
+    if [ "$1" = "-batch" ] ; then
+       BATCH=true
+       NOTBATCH=false
+       INSTLOG="2>&1 | cat >> $II_SYSTEM/ingres/files/install.log"
+       shift
+    elif [ "$1" = "-vbatch" ] ; then
+       BATCH=true
+       NOTBATCH=false
+       shift
+    elif [ "$1" = "-mkresponse" ] ; then
+       WRITE_RESPONSE=true
+       BATCH=false
+       NOTBATCH=true
+       shift
+       if [ "$1" ] ; then
+            RESOUTFILE="$1"
+       shift
+       fi
+    elif [ "$1" = "-exresponse" ] ; then
+       READ_RESPONSE=true
+       BATCH=true
+       NOTBATCH=false
+       shift
+       if [ "$1" ] ; then
+            RESINFILE="$1"
+       shift
+       fi
+    elif [ "$1" = "-rpm" ] ; then
+       BATCH=true
+       NOTBATCH=false
+       INSTLOG="2>&1 | cat >> $II_SYSTEM/ingres/files/install.log"
+       RPM=rpm
+       shift
+    else
+       BATCH=false
+       NOTBATCH=true
+       shift
+    fi
+done # [ $# != 0 ]
+export BATCH
+export INSTLOG
+export WRITE_RESPONSE
+export READ_RESPONSE
+export RESOUTFILE
+export RESINFILE
+
+if [ "$WRITE_RESPONSE" = "false" ] ; then
+trap "rm -f $II_SYSTEM/ingres/files/config.lck /tmp/*.$$ 1>/dev/null \
+   2>/dev/null; exit 1" 0 1 2 3 15
+fi
+
+do_iisudas()
+{
+echo "Setting up the Ingres Data Access Server..."
+if [ "$WRITE_RESPONSE" = "false" ] ; then
+trap "rm -f $II_SYSTEM/ingres/files/config.lck /tmp/*.$$ 1>/dev/null \
+   2>/dev/null; exit 1" 0 1 2 3 15
+fi
+
+. iisysdep
+
+. iishlib
+
+check_response_file #check for response files.
+
+if [ "$WRITE_RESPONSE" = "true" ] ; then
+        mkresponse_msg
+else ## Skip everything if we are in WRITE_RESPONSE mode 
+
+iisulock "Ingres Data Access Server setup" || exit 1
+
+if [ -f $II_SYSTEM/ingres/install/release.dat ]; then
+   VERSION=`$II_SYSTEM/ingres/install/ingbuild -version=das` ||
+   {
+       cat << !
+
+$VERSION
+
+!
+      exit 1
+   }
+else
+   VERSION=`head -1 $II_SYSTEM/ingres/version.rel` ||
+   {
+       cat << !
+
+Missing file $II_SYSTEM/ingres/version.rel
+
+!
+      exit 1
+   }
+fi
+
+
+DASCOUNT=`iigetres ii.$CONFIG_HOST.ingstart.$.gcd` || exit 1
+JDBCCOUNT=`iigetres ii.$CONFIG_HOST.ingstart.$.jdbc` || exit 1
+RELEASE_ID=`echo $VERSION | sed "s/[ ().\/]//g"`
+
+SETUP=`iigetres ii.$CONFIG_HOST.config.gcd.$RELEASE_ID` || exit 1
+
+[ "$SETUP" = "complete" ] &&
+{
+   cat << !
+
+Ingres Data Access Server has already been set up on "$HOSTNAME".
+
+!
+
+   $BATCH || pause
+   trap : 0
+   clean_exit
+}
+
+cat << !
+
+This procedure will set up the following version of 
+Ingres Data Access Server:
+
+        $VERSION
+
+to run on local host:
+
+        $HOSTNAME
+
+!
+
+$BATCH || prompt "Do you want to continue this setup procedure?" y  || exit 1
+
+
+      # generate default configuration resources
+      echo ""
+      echo "Generating default configuration..."
+      if iigenres $CONFIG_HOST $II_SYSTEM/ingres/files/das.rfm ; then
+	 iisetres ii.$CONFIG_HOST.config.gcd.$RELEASE_ID complete
+      else
+         cat << !
+An error occurred while generating the default configuration.
+
+!
+         exit 1
+      fi
+II_INSTALLATION=`ingprenv II_INSTALLATION` || exit 1
+if [ "$II_INSTALLATION" = "" ]
+then
+    II_INSTALLATION="II"
+fi
+
+echo "Configuring Data Access Server listen addresses..."
+
+# set default DAS server listen addresses
+iisetres ii.$CONFIG_HOST.gcd."*".async.port ""
+iisetres ii.$CONFIG_HOST.gcd."*".decnet.port II_GCD${II_INSTALLATION}7
+iisetres ii.$CONFIG_HOST.gcd."*".iso_oslan.port OSLAN_${II_INSTALLATION}7
+iisetres ii.$CONFIG_HOST.gcd."*".iso_x25.port X25_${II_INSTALLATION}7
+iisetres ii.$CONFIG_HOST.gcd."*".sna_lu62.port "<none>"
+iisetres ii.$CONFIG_HOST.gcd."*".sockets.port ${II_INSTALLATION}7
+iisetres ii.$CONFIG_HOST.gcd."*".spx.port ${II_INSTALLATION}7
+iisetres ii.$CONFIG_HOST.gcd."*".tcp_ip.port ${II_INSTALLATION}7
+iisetres ii.$CONFIG_HOST.gcd."*".tcp_wol.port ${II_INSTALLATION}7
+
+NEW_DASCOUNT=`iigetres ii.$CONFIG_HOST.ingstart.$.gcd` || exit 1
+
+
+echo ""
+echo ""
+echo "Default configuration generated and startup count of the DAS server is $NEW_DASCOUNT."
+echo ""
+echo ""
+
+# Create Ingres JDBC driver properties file.
+if ( $II_SYSTEM/ingres/bin/iijdbcprop </dev/null >/dev/null 2>&1 ) >/dev/null 2>&1
+then
+{
+    echo "Executing Ingres JDBC driver properties generator utility..."
+    $II_SYSTEM/ingres/bin/iijdbcprop -c
+}
+else
+    echo "Ingres JDBC driver properties generator utility not found."
+fi
+
+if [ "$JDBCCOUNT" != "" -a "$JDBCCOUNT" != "0"  -a "$DASCOUNT" = "" ]; then 
+{
+echo "Configuring Data Access Server from existing JDBC server and
+disabling JDBC server startup..."
+      if iicpydas ii.$CONFIG_HOST  ; then
+ 	iisetres ii.$CONFIG_HOST.ingstart.$.jdbc 0
+ 	iisetres ii.$CONFIG_HOST.ingstart.$.gcd $JDBCCOUNT
+	cat << !
+
+Configuration copied and startup count of the JDBC server(s) set to zero. 
+
+!
+      else
+         cat << !
+An error occurred while generating configuration from existing JDBC.
+
+!
+         exit 1
+      fi
+}
+fi
+
+cat << !
+
+Ingres Data Access Server has been successfully set up in this installation. Please adjust the startup count and check the listen address with the cbf utility.
+
+!
+fi #end of WRITE_RESPONSE mode
+$BATCH || pause
+trap : 0
+clean_exit
+
+}
+
+eval do_iisudas $INSTLOG
+trap : 0
+exit 0

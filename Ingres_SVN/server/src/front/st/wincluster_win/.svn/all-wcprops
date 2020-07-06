@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win
+END
+stdafx.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/stdafx.h
+END
+configdat.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/configdat.cpp
+END
+wincluster.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/wincluster.h
+END
+installcode.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/installcode.h
+END
+presetup.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/presetup.cpp
+END
+setenv.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/setenv.h
+END
+propsheet.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/propsheet.h
+END
+wincluster.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/wincluster.vcproj
+END
+256bmp.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/256bmp.h
+END
+clusterpage.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/clusterpage.h
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/Jamfile
+END
+stdafx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/stdafx.cpp
+END
+dependencies.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/dependencies.h
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/resource.h
+END
+final.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/final.h
+END
+splash.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/splash.h
+END
+wincluster.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/wincluster.cpp
+END
+welcome.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/welcome.h
+END
+installcode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/installcode.cpp
+END
+configdat.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/configdat.h
+END
+setenv.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/setenv.cpp
+END
+propsheet.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/propsheet.cpp
+END
+wincluster.sln
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/wincluster.sln
+END
+256bmp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/256bmp.cpp
+END
+presetup.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/presetup.h
+END
+clusterpage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/clusterpage.cpp
+END
+wincluster.rc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/wincluster.rc
+END
+dependencies.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/dependencies.cpp
+END
+final.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/final.cpp
+END
+splash.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/splash.cpp
+END
+welcome.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/wincluster_win/welcome.cpp
+END

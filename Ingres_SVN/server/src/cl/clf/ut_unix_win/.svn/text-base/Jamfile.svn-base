@@ -1,0 +1,33 @@
+#
+# Jamfile file for cl!clf!ut_unix_win
+#
+
+SubDir ING_SRC cl clf ut_unix_win ;
+
+IISUBSYS cl clf ut_unix_win ;
+
+IINOOPTIM utexe.c : ris_u64 rs4_us5 i64_aix a64_sol ;
+IINOOPTIM utetable.c : ris_u64 rs4_us5 i64_aix ;
+IINOOPTIM uterror.c : ris_u64 rs4_us5 i64_aix ;
+IINOOPTIM utedit.c : ris_u64 rs4_us5 i64_aix ;
+IINOOPTIM utdeffil.c : ris_u64 rs4_us5 i64_aix ;
+IINOOPTIM utdata.c : ris_u64 rs4_us5 i64_aix ;
+IINOOPTIM utcompile.c : ris_u64 rs4_us5 i64_aix ;
+IINOOPTIM utcommand.c : ris_u64 rs4_us5 i64_aix ;
+IINOOPTIM ut.c : ris_u64 rs4_us5 i64_aix ;
+
+
+
+IICCPPFILE $(INGFILES)/utld.def : utld.ccpp ;
+IICCPPFILE $(INGFILES)/utldcob.def : utldcob.ccpp ;
+
+
+
+IILIBRARY COMPATLIB : utprint.c utlnk.c utexe.c utetable.c uterror.c
+	utedit.c utdeffil.c utcompile.c utcommand.c ut.c ;
+
+
+IILIBRARY IMPCOMPATLIBDATA : utdata.c ;
+
+
+

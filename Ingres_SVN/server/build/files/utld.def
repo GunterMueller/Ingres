@@ -1,0 +1,1 @@
+cd '%D' ; if [ "`uname -m`" = "x86_64" ];then /usr/bin/cc -m32 -o %O %i %L -lpthread -lrt -lm -lc -lcrypt -ldl /lib/libgcc_s.so.1 2>&1 | sed '/[Ww]arning/'d;else /usr/bin/cc -o %O %i %L -lpthread -lrt -lm -lc -lcrypt -ldl /lib/libgcc_s.so.1 2>&1 | sed '/[Ww]arning/'d;fi

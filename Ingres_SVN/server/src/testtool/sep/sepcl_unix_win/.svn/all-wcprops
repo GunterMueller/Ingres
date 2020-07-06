@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/testtool/sep/sepcl_unix_win
+END
+sepst.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/testtool/sep/sepcl_unix_win/sepst.c
+END
+nmsetenv.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/testtool/sep/sepcl_unix_win/nmsetenv.c
+END
+termstuff.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/testtool/sep/sepcl_unix_win/termstuff.c
+END
+sepspawn.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/testtool/sep/sepcl_unix_win/sepspawn.c
+END
+sighandler.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/testtool/sep/sepcl_unix_win/sighandler.c
+END
+sepalloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/testtool/sep/sepcl_unix_win/sepalloc.c
+END
+seplo.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/testtool/sep/sepcl_unix_win/seplo.c
+END
+sepnm.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/testtool/sep/sepcl_unix_win/sepnm.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/testtool/sep/sepcl_unix_win/Jamfile
+END
+septrace.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/testtool/sep/sepcl_unix_win/septrace.c
+END
+sepcm.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/testtool/sep/sepcl_unix_win/sepcm.c
+END
+getloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/testtool/sep/sepcl_unix_win/getloc.c
+END

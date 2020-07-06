@@ -1,0 +1,91 @@
+#!/bin/bash
+#
+# Copyright (c) 2004 Ingres Corporation
+#
+# sepesqlc -- Preprocesses an Esql/C or Equel/C script.
+#
+#
+
+if [ $# -eq 0 ]
+then
+    echo ""
+    echo "Usage: sepesqlc <file1> [<file2> ... <filen>]"
+    echo ""
+    echo "        -c[onditional]   Conditional Processing. Preprocess only if"
+    echo "                         source file does not exist."
+    echo ""
+    exit 0
+fi
+
+cflag=false
+
+for i
+do
+    case $i in
+	-conditional | -conditiona | -condition | -conditio |	\
+	-conditi | -condit | -condi | -cond | -con | -co | -c )	\
+		cflag=true;;
+
+	-* )	echo "* bad flag $i";;
+
+	*.* | * ) ;;
+    esac
+done
+
+for i
+do
+    do_it=false
+    pcccmd='esqlc'
+    case $i in
+	-* )    ;;
+
+	*.sc )  esfilnam="$i"
+		filnam=`basename $i .sc`
+		cfilnam="$filnam.c"
+		do_it=true
+		pcccmd='esqlc'
+		;;
+
+	*.qc )  esfilnam=$i
+		filnam=`basename $i .qc`
+		cfilnam="$filnam.c"
+		do_it=true
+		pcccmd='eqc'
+		;;
+
+	* )     filnam="$i"
+		esfilnam=`basename $i.sc`
+		if [ -f `basename $i.sc` ]
+		then
+		    esfilnam=`basename $i.sc`
+		    do_it=true
+		    cfilnam="$i.c"
+		    pcccmd='esqlc'
+		elif [ -f `basename $i.qc` ]
+		then
+		    esfilnam=`basename $i.qc`
+		    do_it=true
+		    cfilnam="$i.c"
+		    pcccmd='eqc'
+		else
+		    esfilnam=`basename $i`
+		    do_it=true
+		    pcccmd='esqlc'
+		fi
+		;;
+    esac
+
+    if [ $do_it -a ! -f $esfilnam ]
+    then
+	echo " file $esfilnam not found..."
+	do_it=false
+    fi
+
+    $do_it && $cflag && [ -f $cfilnam ] && do_it=false
+
+    if $do_it
+    then
+	$pcccmd -f$filnam.c $esfilnam
+    fi
+done
+

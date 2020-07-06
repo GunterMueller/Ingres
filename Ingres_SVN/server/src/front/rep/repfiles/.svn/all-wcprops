@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/front/rep/repfiles
+END
+ixshadow.tlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/rep/repfiles/ixshadow.tlp
+END
+mdarchiv.tlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/rep/repfiles/mdarchiv.tlp
+END
+updproc1.tlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/rep/repfiles/updproc1.tlp
+END
+insproc1.tlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/rep/repfiles/insproc1.tlp
+END
+updproc2.tlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/rep/repfiles/updproc2.tlp
+END
+insproc2.tlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/rep/repfiles/insproc2.tlp
+END
+svrflags.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/rep/repfiles/svrflags.dat
+END
+crarchiv.tlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/rep/repfiles/crarchiv.tlp
+END
+mdshadow.tlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/rep/repfiles/mdshadow.tlp
+END
+flagvals.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/rep/repfiles/flagvals.dat
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/rep/repfiles/Jamfile
+END
+delproc1.tlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/rep/repfiles/delproc1.tlp
+END
+crshadow.tlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/rep/repfiles/crshadow.tlp
+END
+delproc2.tlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/rep/repfiles/delproc2.tlp
+END
+events.dat
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repfiles/events.dat
+END
+optnvals.dat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/rep/repfiles/optnvals.dat
+END

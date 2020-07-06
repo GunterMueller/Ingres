@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/front/rep/repcomn
+END
+bldmsgst.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repcomn/bldmsgst.c
+END
+tblobjs.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/rep/repcomn/tblobjs.c
+END
+crkeycls.sc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repcomn/crkeycls.sc
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/rep/repcomn/Jamfile
+END
+delimnam.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/rep/repcomn/delimnam.c
+END
+dberrchk.sc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repcomn/dberrchk.sc
+END
+validnm.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/rep/repcomn/validnm.c
+END
+ckunqkey.sc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/rep/repcomn/ckunqkey.sc
+END

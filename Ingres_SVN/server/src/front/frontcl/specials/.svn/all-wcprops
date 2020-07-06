@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/frontcl/specials
+END
+eqdef.pp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/specials/eqdef.pp
+END
+eqdefc.pp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/frontcl/specials/eqdefc.pp
+END
+eqmsqlda_cbl.pp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/frontcl/specials/eqmsqlda_cbl.pp
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/specials/MANIFEST
+END
+eqdef_f.pp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/frontcl/specials/eqdef_f.pp
+END
+eqdefcc.pp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/frontcl/specials/eqdefcc.pp
+END
+eqsqlda_f.pp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/frontcl/specials/eqsqlda_f.pp
+END

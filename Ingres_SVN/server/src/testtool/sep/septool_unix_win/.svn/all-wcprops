@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win
+END
+sepperuse.sh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/sepperuse.sh
+END
+updperuse.sh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/updperuse.sh
+END
+altcompare.1
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/altcompare.1
+END
+seplib.sh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/seplib.sh
+END
+sepesqlc.sh
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/sepesqlc.sh
+END
+ferun.sh
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/ferun.sh
+END
+clntstabf.sh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/clntstabf.sh
+END
+qasetuserfe.sh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/qasetuserfe.sh
+END
+altcompare.sh
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/altcompare.sh
+END
+clningtst.1
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/clningtst.1
+END
+resettimezone.sh
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/resettimezone.sh
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/MANIFEST
+END
+qawtl.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/qawtl.c
+END
+clntstdbs.sh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/clntstdbs.sh
+END
+updperuse.1
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/updperuse.1
+END
+clningtst.sh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/clningtst.sh
+END
+clntstabf.1
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/clntstabf.1
+END
+netutilcmd.sh
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/netutilcmd.sh
+END
+sepcob.sh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/sepcob.sh
+END
+qasetusertm.sh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/qasetusertm.sh
+END
+cksepenv.sh
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/cksepenv.sh
+END
+tac.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/tac.c
+END
+qasetplab.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/qasetplab.c
+END
+qasetuser.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/qasetuser.c
+END
+clntstdbs.1
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/clntstdbs.1
+END
+qasetlab.sh
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/qasetlab.sh
+END
+seplnk.sh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/seplnk.sh
+END
+authnetu.sh
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/authnetu.sh
+END
+sepada.sh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/sepada.sh
+END
+sepcc.sh
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/sepcc.sh
+END
+tac.1
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/tac.1
+END
+makelocs.sh
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/makelocs.sh
+END
+sepperuse.1
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/sepperuse.1
+END
+sepfortr.sh
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/sepfortr.sh
+END
+run.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_unix_win/run.sh
+END

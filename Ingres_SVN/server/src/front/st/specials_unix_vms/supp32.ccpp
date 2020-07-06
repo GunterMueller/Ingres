@@ -1,0 +1,45 @@
+/*
+** Copyright (c) 2005 Ingres Corporation
+*/
+/*
+**  Generic part file for supp32 - 32bit support package for 64bit Ingres
+*/
+
+/*
+** History
+**	07-Mar-2005 (hanje04)
+**	    Created.
+*/ 
+
+PART	supp32
+
+/*
+** ingres!utility
+*/
+   DIRECTORY (PROD2NAME)!utility
+   BUILD_DIR (ING_BUILD)!utility
+      SCRIPT SETUP iisusupp32
+
+/*
+** ingres!lib!lp32
+*/
+   DIRECTORY (PROD2NAME)!lib!lp32
+   BUILD_DIR (ING_BUILD)!lib!lp32
+      FILE lib(PROG1PRFX)api.a
+      FILE lib(PROG0PRFX)ingres.a
+
+# ifdef R_SHLIBS
+   BUILD_DIR (ING_BUILD)!lib!lp32
+   DIRECTORY (PROD2NAME)!lib!lp32
+   {
+      EXECUTABLE lib(PROG0PRFX)compat.1.$SLSFX
+      EXECUTABLE lib(PROG0PRFX)frame.1.$SLSFX
+      EXECUTABLE lib(PROG0PRFX)interp.1.$SLSFX
+      EXECUTABLE lib(PROG0PRFX)q.1.$SLSFX
+      EXECUTABLE lib(PROG1PRFX)api.1.$SLSFX
+      EXECUTABLE lib(PROG1PRFX)odbc.1.$SLSFX
+      EXECUTABLE lib(PROG1PRFX)odbcdriver.1.$SLSFX
+      PERMISSION s:re,o:rwed,g:re,w:re
+   }
+# endif /* R_SHLIBS */
+

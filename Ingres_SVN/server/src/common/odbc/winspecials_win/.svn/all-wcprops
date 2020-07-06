@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/odbc/winspecials_win
+END
+caiiodbc.rc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/common/odbc/winspecials_win/caiiodbc.rc
+END
+xadtc.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/odbc/winspecials_win/xadtc.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/odbc/winspecials_win/Jamfile
+END
+dllmai32.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/common/odbc/winspecials_win/dllmai32.c
+END
+xa.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/common/odbc/winspecials_win/xa.cpp
+END
+idmsodrc.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/common/odbc/winspecials_win/idmsodrc.h
+END

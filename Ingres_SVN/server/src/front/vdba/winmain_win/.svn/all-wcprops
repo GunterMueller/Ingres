@@ -1,0 +1,689 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win
+END
+print.e
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/print.e
+END
+domdmisc.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/domdmisc.c
+END
+cf_cal.ico
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/cf_cal.ico
+END
+esltools.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/esltools.c
+END
+sqltls.sc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/sqltls.sc
+END
+staridx.ico
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/staridx.ico
+END
+dbs_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/dbs_st.ico
+END
+main.rc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/main.rc
+END
+icsev_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/icsev_st.ico
+END
+inginit.ch
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/inginit.ch
+END
+cddsload.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/cddsload.c
+END
+recdd_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/recdd_st.ico
+END
+dbadlg1.rc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/dbadlg1.rc
+END
+icdbr_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/icdbr_st.ico
+END
+cddsload.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/cddsload.h
+END
+icsea_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/icsea_st.ico
+END
+mainlib.sln
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/mainlib.sln
+END
+table_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/table_st.ico
+END
+reco_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/reco_st.ico
+END
+sqltls.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/sqltls.h
+END
+cf_aut.ico
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/cf_aut.ico
+END
+compress.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/compress.c
+END
+icbul_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/icbul_st.ico
+END
+dbaginfo.sc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/dbaginfo.sc
+END
+role_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/role_st.ico
+END
+tree.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/tree.c
+END
+main.def
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/main.def
+END
+icbup_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/icbup_st.ico
+END
+settings.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/settings.c
+END
+tools.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/tools.c
+END
+dom2.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/dom2.c
+END
+dbamisc.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/dbamisc.c
+END
+index_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/index_st.ico
+END
+startbna.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/startbna.ico
+END
+view_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/view_st.ico
+END
+dbatls.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/dbatls.c
+END
+datab_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/datab_st.ico
+END
+starddb.ico
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/starddb.ico
+END
+main.ico
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/main.ico
+END
+starvina.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/starvina.ico
+END
+mainlib.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/mainlib.dsp
+END
+icbu__st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/icbu__st.ico
+END
+seque_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/seque_st.ico
+END
+domdupdt.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/domdupdt.c
+END
+stddlg.e
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/stddlg.e
+END
+icdbu_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/icdbu_st.ico
+END
+ic____st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/ic____st.ico
+END
+syn_rst.ico
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/syn_rst.ico
+END
+icedata.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/icedata.c
+END
+domsplit.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/domsplit.c
+END
+dbamvcfg.sc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/dbamvcfg.sc
+END
+icsel_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/icsel_st.ico
+END
+mainlib.suo
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/mainlib.suo
+END
+domdisp.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/domdisp.c
+END
+proc_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/proc_st.ico
+END
+alus_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/alus_st.ico
+END
+icbus_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/icbus_st.ico
+END
+synon_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/synon_st.ico
+END
+integ_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/integ_st.ico
+END
+dbatime.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/dbatime.c
+END
+inginit.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/inginit.h
+END
+vdba.w16
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/vdba.w16
+END
+ics___st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/ics___st.ico
+END
+dbgr_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/dbgr_st.ico
+END
+user_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/user_st.ico
+END
+dbev_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/dbev_st.ico
+END
+icse__st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/icse__st.ico
+END
+tree2.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/tree2.c
+END
+rema_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/rema_st.ico
+END
+cf_cor.ico
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/cf_cor.ico
+END
+starproc.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/starproc.ico
+END
+icbuf_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/icbuf_st.ico
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/Jamfile
+END
+domdgetd.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/domdgetd.c
+END
+group_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/group_st.ico
+END
+dbagdet.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/dbagdet.c
+END
+read.me
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/read.me
+END
+cf_print.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/cf_print.ico
+END
+dbaupd.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/dbaupd.c
+END
+locat_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/locat_st.ico
+END
+mdi_dom.ico
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/mdi_dom.ico
+END
+statbar.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/statbar.c
+END
+icdbc_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/icdbc_st.ico
+END
+icwu__st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/icwu__st.ico
+END
+prof_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/prof_st.ico
+END
+re_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/re_st.ico
+END
+rule_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/rule_st.ico
+END
+statbar.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/statbar.h
+END
+domdtls.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/domdtls.c
+END
+dbasqlpr.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/dbasqlpr.c
+END
+nodes.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/nodes.c
+END
+sec_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/sec_st.ico
+END
+starcdb.ico
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/starcdb.ico
+END
+recd_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/recd_st.ico
+END
+rmcmdcli.sc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/rmcmdcli.sc
+END
+ugr_rst.ico
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/ugr_rst.ico
+END
+dbasqlv2.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/dbasqlv2.c
+END
+winutils.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/winutils.c
+END
+iimscw.bat
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/iimscw.bat
+END
+dom.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/dom.c
+END
+dbaparse.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/dbaparse.c
+END
+startbln.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/startbln.ico
+END
+domdfile.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/domdfile.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/main.c
+END
+dbaparse.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/dbaparse.h
+END
+domdbkrf.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/domdbkrf.c
+END
+typedefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/typedefs.h
+END
+icpr__st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/icpr__st.ico
+END
+starviln.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/starviln.ico
+END
+ug_rst.ico
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/ug_rst.ico
+END
+mainlib.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/mainlib.vcproj
+END
+print.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/print.c
+END
+viewt_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/viewt_st.ico
+END
+schem_st.ico
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/winmain_win/schem_st.ico
+END

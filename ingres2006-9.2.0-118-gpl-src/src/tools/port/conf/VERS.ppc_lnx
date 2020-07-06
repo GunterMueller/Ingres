@@ -1,0 +1,7 @@
+config=ppc_lnx
+option=INGRESII
+option=libc6
+option=SVR_SHL
+option=DBL
+option=BUILD_SPATIAL
+build=123

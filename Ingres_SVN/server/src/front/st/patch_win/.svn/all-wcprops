@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/front/st/patch_win
+END
+StdAfx.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/st/patch_win/StdAfx.h
+END
+Splash.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/st/patch_win/Splash.h
+END
+Welcome.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/st/patch_win/Welcome.h
+END
+enterprise.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/st/patch_win/enterprise.vcproj
+END
+InstallCode.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/patch_win/InstallCode.h
+END
+IngresPatch.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/patch_win/IngresPatch.c
+END
+PreInstallation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/st/patch_win/PreInstallation.cpp
+END
+patchcl.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/st/patch_win/patchcl.c
+END
+PropSheet.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/patch_win/PropSheet.h
+END
+256bmp.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/st/patch_win/256bmp.h
+END
+patchcl.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/st/patch_win/patchcl.h
+END
+enterprise.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/patch_win/enterprise.dsp
+END
+enterprise.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/patch_win/enterprise.h
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/patch_win/Jamfile
+END
+AUTORUN.INF
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/patch_win/AUTORUN.INF
+END
+StdAfx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/st/patch_win/StdAfx.cpp
+END
+Splash.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/st/patch_win/Splash.cpp
+END
+Welcome.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/patch_win/Welcome.cpp
+END
+enterprise.dsw
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/patch_win/enterprise.dsw
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/st/patch_win/resource.h
+END
+WaitDlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/st/patch_win/WaitDlg.h
+END
+InstallCode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/patch_win/InstallCode.cpp
+END
+enterprise.rc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/patch_win/enterprise.rc
+END
+iicksum.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/st/patch_win/iicksum.c
+END
+PropSheet.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/patch_win/PropSheet.cpp
+END
+256bmp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/st/patch_win/256bmp.cpp
+END
+PreInstallation.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/st/patch_win/PreInstallation.h
+END
+enterprise.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/patch_win/enterprise.cpp
+END
+IngresPatch.def
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/patch_win/IngresPatch.def
+END
+enterprise.clw
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/patch_win/enterprise.clw
+END
+enterprise.sln
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/patch_win/enterprise.sln
+END
+WaitDlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/patch_win/WaitDlg.cpp
+END
+PatchProject.ism
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/patch_win/PatchProject.ism
+END

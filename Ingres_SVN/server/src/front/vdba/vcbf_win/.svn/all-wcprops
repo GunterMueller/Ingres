@@ -1,0 +1,1025 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win
+END
+histdlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/histdlg.cpp
+END
+cachedoc.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cachedoc.h
+END
+derivdlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/derivdlg.cpp
+END
+vcbf.rc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/vcbf.rc
+END
+seaurdlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/seaurdlg.cpp
+END
+editlsdp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/editlsdp.cpp
+END
+cachefrm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cachefrm.cpp
+END
+netrgdlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/netrgdlg.h
+END
+editlsco.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/editlsco.h
+END
+confdoc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/confdoc.cpp
+END
+msqpadlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/msqpadlg.h
+END
+cachedrv.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cachedrv.cpp
+END
+sedrvdlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/sedrvdlg.h
+END
+odbpadlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/odbpadlg.h
+END
+secdlgsy.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/secdlgsy.h
+END
+addvnode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/addvnode.cpp
+END
+waitdlgprogress.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/waitdlgprogress.h
+END
+layeddlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/layeddlg.cpp
+END
+dlgvdoc.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/dlgvdoc.h
+END
+cachevi1.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cachevi1.h
+END
+lvleft.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/lvleft.h
+END
+lgsdrdlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/lgsdrdlg.cpp
+END
+histdlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/histdlg.h
+END
+genericstartup.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/genericstartup.h
+END
+dbasedlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/dbasedlg.cpp
+END
+lksdrdlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/lksdrdlg.cpp
+END
+seaurdlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/seaurdlg.h
+END
+cbfitem.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cbfitem.h
+END
+lgsprdlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/lgsprdlg.cpp
+END
+lksprdlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/lksprdlg.cpp
+END
+cachevi1.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cachevi1.cpp
+END
+infpadlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/infpadlg.cpp
+END
+brdpadlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/brdpadlg.h
+END
+mainfrm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/mainfrm.cpp
+END
+cbfprdta.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cbfprdta.h
+END
+orapadlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/orapadlg.h
+END
+genericstartup.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/genericstartup.cpp
+END
+brdprdlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/brdprdlg.cpp
+END
+confvr.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/confvr.h
+END
+dasprdlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/dasprdlg.h
+END
+sybpadlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/sybpadlg.cpp
+END
+vcbfdoc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/vcbfdoc.cpp
+END
+lgsdrdlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/lgsdrdlg.h
+END
+makehelp.bat
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/makehelp.bat
+END
+lksdrdlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/lksdrdlg.h
+END
+finddlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/finddlg.h
+END
+editlsgn.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/editlsgn.h
+END
+brdpadlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/brdpadlg.cpp
+END
+lgsprdlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/lgsprdlg.h
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/Jamfile
+END
+recpadlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/recpadlg.h
+END
+lksprdlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/lksprdlg.h
+END
+cachevi2.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cachevi2.h
+END
+stdafx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/stdafx.cpp
+END
+cachetab.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cachetab.cpp
+END
+vcbf.sln
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/vcbf.sln
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/resource.h
+END
+seauddlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/seauddlg.h
+END
+crightdg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/crightdg.h
+END
+dlgvfrm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/dlgvfrm.cpp
+END
+selogdlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/selogdlg.h
+END
+finddlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/finddlg.cpp
+END
+msqpadlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/msqpadlg.cpp
+END
+stadrdlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/stadrdlg.h
+END
+cbfdisp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cbfdisp.cpp
+END
+vcbfdoc.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/vcbfdoc.h
+END
+jdbpadlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/jdbpadlg.h
+END
+odbpadlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/odbpadlg.cpp
+END
+peditctl.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/peditctl.h
+END
+waitdlgprogress.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/waitdlgprogress.cpp
+END
+vcbf.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/vcbf.dsp
+END
+netprdlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/netprdlg.h
+END
+vcbf.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/vcbf.h
+END
+staprdlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/staprdlg.h
+END
+doc.zip
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/doc.zip
+END
+dlglogsz.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/dlglogsz.cpp
+END
+conffrm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/conffrm.cpp
+END
+layeddlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/layeddlg.h
+END
+crightdg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/crightdg.cpp
+END
+lvleft.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/lvleft.cpp
+END
+paramdlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/paramdlg.h
+END
+configleftproperties.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/configleftproperties.cpp
+END
+cachetab.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cachetab.h
+END
+logfsdlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/logfsdlg.cpp
+END
+vcbf.suo
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/vcbf.suo
+END
+jdbpadlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/jdbpadlg.cpp
+END
+cudlglogfileadd.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cudlglogfileadd.cpp
+END
+dbasedlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/dbasedlg.h
+END
+secmech.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/secmech.h
+END
+editlnet.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/editlnet.h
+END
+cbfdisp.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cbfdisp.h
+END
+netprdlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/netprdlg.cpp
+END
+vcbfview.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/vcbfview.h
+END
+seoptdlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/seoptdlg.cpp
+END
+cacheprm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cacheprm.cpp
+END
+daspadlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/daspadlg.h
+END
+cconfdlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cconfdlg.h
+END
+paramdlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/paramdlg.cpp
+END
+nampadlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/nampadlg.h
+END
+cleftdlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cleftdlg.h
+END
+cachedoc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cachedoc.cpp
+END
+logfidlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/logfidlg.h
+END
+mainfrm.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/mainfrm.h
+END
+netpadlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/netpadlg.cpp
+END
+conffrm.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/conffrm.h
+END
+waitdlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/waitdlg.h
+END
+dasprdlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/dasprdlg.cpp
+END
+vcbf.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/vcbf.vcproj
+END
+derivdlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/derivdlg.h
+END
+vcbf.bin
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/vcbf.bin
+END
+secmech.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/secmech.cpp
+END
+sybpadlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/sybpadlg.h
+END
+vcbfview.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/vcbfview.cpp
+END
+ll.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/ll.h
+END
+secdlgsy.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/secdlgsy.cpp
+END
+cachefrm.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cachefrm.h
+END
+editlsdp.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/editlsdp.h
+END
+daspadlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/daspadlg.cpp
+END
+cconfdlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cconfdlg.cpp
+END
+nampadlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/nampadlg.cpp
+END
+cachevi2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cachevi2.cpp
+END
+cachelst.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cachelst.cpp
+END
+cacheprm.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cacheprm.h
+END
+logfidlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/logfidlg.cpp
+END
+seauddlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/seauddlg.cpp
+END
+prefdlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/prefdlg.h
+END
+addvnode.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/addvnode.h
+END
+cachedlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cachedlg.cpp
+END
+waitdlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/waitdlg.cpp
+END
+stdafx.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/stdafx.h
+END
+selogdlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/selogdlg.cpp
+END
+brdvndlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/brdvndlg.cpp
+END
+netpadlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/netpadlg.h
+END
+stadrdlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/stadrdlg.cpp
+END
+dlgvfrm.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/dlgvfrm.h
+END
+ll.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/ll.cpp
+END
+peditctl.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/peditctl.cpp
+END
+cbfitem.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cbfitem.cpp
+END
+mtabdlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/mtabdlg.cpp
+END
+staprdlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/staprdlg.cpp
+END
+vcbf.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/vcbf.cpp
+END
+prefdlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/prefdlg.cpp
+END
+cbfprdta.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cbfprdta.cpp
+END
+recdrdlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/recdrdlg.cpp
+END
+intprdlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/intprdlg.h
+END
+orapadlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/orapadlg.cpp
+END
+infpadlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/infpadlg.h
+END
+dlglogsz.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/dlglogsz.h
+END
+cachelst.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cachelst.h
+END
+confvr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/confvr.cpp
+END
+cachedlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cachedlg.h
+END
+configleftproperties.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/configleftproperties.h
+END
+brdprdlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/brdprdlg.h
+END
+netrgdlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/netrgdlg.cpp
+END
+logfsdlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/logfsdlg.h
+END
+editlsco.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/editlsco.cpp
+END
+brdvndlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/brdvndlg.h
+END
+editlnet.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/editlnet.cpp
+END
+editlsgn.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/editlsgn.cpp
+END
+sedrvdlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/sedrvdlg.cpp
+END
+cudlglogfileadd.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cudlglogfileadd.h
+END
+mtabdlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/mtabdlg.h
+END
+confdoc.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/confdoc.h
+END
+recpadlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/recpadlg.cpp
+END
+dlgvdoc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/dlgvdoc.cpp
+END
+intprdlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/intprdlg.cpp
+END
+cachedrv.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cachedrv.h
+END
+cleftdlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/cleftdlg.cpp
+END
+seoptdlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/seoptdlg.h
+END
+recdrdlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/3/main/src/front/vdba/vcbf_win/recdrdlg.h
+END

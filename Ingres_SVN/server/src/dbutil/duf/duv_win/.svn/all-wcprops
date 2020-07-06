@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/dbutil/duf/duv_win
+END
+upgradedb.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/dbutil/duf/duv_win/upgradedb.exe.manifest
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/dbutil/duf/duv_win/Jamfile
+END
+upgrdwrp.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/dbutil/duf/duv_win/upgrdwrp.c
+END

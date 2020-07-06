@@ -1,0 +1,44 @@
+#
+# Jamfile file for dbutil!duf!duve
+#
+# History:
+#	21-dec-2004 (abbjo03)
+#	    Remove duvedata.c from DBUTILLIB on VMS.
+#	19-jan-2005 (abbjo03)
+#	    Reinstate duvedata.c on all platforms.
+
+SubDir ING_SRC dbutil duf duve ;
+
+IISUBSYS dbutil duf duve ;
+
+
+IIBINEXE testvdb : duvetest.sc ;
+if ! $(NT)
+{
+IINEEDLIBS testvdb : DBUTILLIB SQLCALIB LIBQLIB LIBQGCALIB
+	GCFLIB UGLIB FMTLIB AFELIB ADFLIB ULFLIB CUFLIB COMPATLIB
+	MALLOCLIB ;
+}
+else
+{
+IINEEDLIBS testvdb : DBUTILLIB ULFLIB CUFLIB
+	COMPATLIB SHEMBEDLIB SHLIBQLIB ;
+}
+
+if ! $(NT)
+{
+IIBINEXE verifydb : duverify.c ;
+IINEEDLIBS verifydb : DBUTILLIB SQLCALIB LIBQLIB LIBQGCALIB
+	GCFLIB UGLIB FMTLIB AFELIB ADFLIB ULFLIB CUFLIB COMPATLIB
+	MALLOCLIB ;
+}
+else
+{
+IIBINEXE ntvrfydb : duverify.c ;
+IINEEDLIBS ntvrfydb : DBUTILLIB ULFLIB CUFLIB COMPATLIB
+	SHEMBEDLIB SHLIBQLIB ;
+
+}
+
+IILIBRARY DBUTILLIB : duvestar.sc duvepurg.sc duvedbdb.sc
+	duvechk2.sc duvechk.sc duveutil.c duvetalk.c duvedata.c ;

@@ -1,0 +1,60 @@
+/*
+** Copyright (c) 2004 Ingres Corporation
+*/
+/*
+** Generic contents file for remote API release
+*/
+ 
+/*
+** History
+**	14-Apr-2004 (hweho01)
+**	   Created from release.ccpp for remote API package.
+*/
+
+RELEASE Ingres
+
+PACKAGE basic 
+
+   INVISIBLE
+
+   DIRECTORY ingres!files!english
+   PART messages
+      DEFINITION messages.prt
+
+   PART errhelp
+      DEFINITION errhelp.prt
+
+   PART name-server
+      DEFINITION namesrv.prt
+
+   PART zoneinfo
+      DEFINITION zoneinfo.prt
+
+   PART remotesharelib
+      DEFINITION remotesharelib.prt
+
+   PART tm
+      DEFINITION tm.prt
+
+   PART release-notes
+     DEFINITION relnotes.prt
+
+/*
+** Ingres Networking and miscellaneous files
+*/
+
+   PART remoteapicon
+      DEFINITION remoteapicon.prt
+
+# ifdef R_SHADOW
+   PART shadow-pwd
+      DEFINITION shadow-pwd.prt
+# endif /* R_SHADOW */
+
+# ifdef R_CALICENSE
+   BUILD_DIR (ING_BUILD)!files!license
+      FILE (LIC98_NAME).tar.Z
+   BUILD_DIR (ING_BUILD)!utility
+      SCRIPT (PROG0PRFX)mklicense
+# endif /* R_CALICENSE */
+

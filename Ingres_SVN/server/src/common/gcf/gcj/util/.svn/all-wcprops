@@ -1,0 +1,353 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util
+END
+CompatCI.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/CompatCI.java
+END
+SqlLongByte.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlLongByte.java
+END
+SqlReal.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlReal.java
+END
+SqlSmallInt.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlSmallInt.java
+END
+ConfigProp.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/ConfigProp.java
+END
+SqlVarChar.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlVarChar.java
+END
+CharBuffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/CharBuffer.java
+END
+GcfErr.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/GcfErr.java
+END
+SqlBool.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlBool.java
+END
+SqlStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlStream.java
+END
+CharArray.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/CharArray.java
+END
+SqlDecimal.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlDecimal.java
+END
+ConfigKey.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/ConfigKey.java
+END
+SqlTinyInt.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlTinyInt.java
+END
+BufferedBlob.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/BufferedBlob.java
+END
+BufferedClob.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/BufferedClob.java
+END
+IngXid.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/IngXid.java
+END
+SqlNVarChar.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlNVarChar.java
+END
+IngresDate.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/IngresDate.java
+END
+SqlString.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlString.java
+END
+VarArray.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/VarArray.java
+END
+SqlWarn.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlWarn.java
+END
+CharSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/CharSet.java
+END
+SqlData.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlData.java
+END
+SqlNull.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlNull.java
+END
+IdMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/IdMap.java
+END
+SqlVarByte.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlVarByte.java
+END
+DbmsConst.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/DbmsConst.java
+END
+SqlBigInt.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlBigInt.java
+END
+SqlEx.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlEx.java
+END
+SqlDate.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlDate.java
+END
+SqlLoc.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlLoc.java
+END
+SqlChar.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlChar.java
+END
+ByteBuffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/ByteBuffer.java
+END
+TraceLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/TraceLog.java
+END
+SqlLongCharCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlLongCharCache.java
+END
+ByteArray.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/ByteArray.java
+END
+ConfigSys.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/ConfigSys.java
+END
+Config.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/Config.java
+END
+ConfigFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/ConfigFile.java
+END
+XaEx.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/XaEx.java
+END
+SqlInt.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlInt.java
+END
+SqlNChar.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlNChar.java
+END
+SqlLongChar.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlLongChar.java
+END
+XaXid.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/XaXid.java
+END
+SqlTime.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlTime.java
+END
+SqlLongNCharCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlLongNCharCache.java
+END
+SqlDates.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlDates.java
+END
+Timer.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/Timer.java
+END
+ErrRsrc.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/ErrRsrc.java
+END
+SqlByte.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlByte.java
+END
+SqlTimestamp.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlTimestamp.java
+END
+ConfigEmpty.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/ConfigEmpty.java
+END
+SqlLongByteCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlLongByteCache.java
+END
+Tracing.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/Tracing.java
+END
+SqlDouble.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlDouble.java
+END
+SqlLongNChar.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/SqlLongNChar.java
+END
+Trace.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/common/gcf/gcj/util/Trace.java
+END

@@ -1,0 +1,12 @@
+#
+# Jamfile file for front!st!perfwiz_win
+#
+
+SubDir ING_SRC front st perfwiz_win ;
+
+IISUBSYS front st perfwiz_win ;
+
+IIHLP $(INGBIN)/PERFWIZ.HLP : PERFWIZ.HPJ ;
+#FILE $(INGMSG)/PERFWIZ.HLP : PERFWIZ.HLP ;
+
+IISLN perfwiz.exe : perfwiz.sln ;

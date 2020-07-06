@@ -1,0 +1,198 @@
+#!/bin/bash
+#
+# Copyright (c) 2004 Ingres Corporation
+#
+# sepcc -- driver to allow sep to compile .c files.
+#
+
+CMD=sepcc
+export CMD
+
+if [ $# -eq 0 ]
+then
+     cat << !
+
+Usage: sepcc <file1> [<file2> ... <filen>]
+
+        -c[onditional]   Conditional Compilation. Compile only if
+                         object file doesn't exist.
+
+        -d[ebug]         Debug code included.
+
+        -I<directory>    Directory to search for include files.
+
+        -SRC             Include ING_SRC directories
+
+!
+    exit 0
+fi
+
+#
+# Check local Ingres environment
+#
+
+if [ ! -n "${II_SYSTEM}" ]
+then
+     cat << !
+
+|------------------------------------------------------------|
+|                      E  R  R  O  R                         |
+|------------------------------------------------------------|
+|     The local Ingres environment must be setup and the     |
+|     the installation running before continuing             |
+|------------------------------------------------------------|
+
+!
+   exit 1
+fi
+
+. $II_SYSTEM/ingres/utility/iisysdep
+
+need_appended=true
+tmp=`echo $PATH | sed -e 's/:/ /g'`
+for i in $tmp
+do
+        if [ $i = "${II_SYSTEM}/ingres/utility" ]
+           then
+                need_appended=false
+        fi
+done
+
+if $need_appended
+   then
+        PATH=$II_SYSTEM/ingres/utility:$PATH
+        export PATH
+fi
+
+
+cflag=false
+nodbg_flag=true
+include_dirs=""
+src_dirs="-I$PWD -I$II_CONFIG -I$ING_SRC/gl/hdr/hdr -I$ING_SRC/cl/hdr/hdr_unix -I$ING_SRC/cl/hdr/hdr_unix_win -I$ING_SRC/cl/clf/hdr_unix_win -I$ING_SRC/front/hdr/hdr -I$ING_SRC/front/frontcl/hdr -I$ING_SRC/common/hdr/hdr"
+
+if [ ! -n "${CCFLAGS}" ]
+then
+	cc_sw="$CCMACH"
+else
+	cc_sw="$CCFLAGS"
+fi
+
+if [ ! -n "${CC}" ]
+then
+	CC=cc
+fi
+
+for i
+do
+    case $i in
+	-conditional | -conditiona | -condition | -conditio |	\
+	-conditi | -condit | -condi | -cond | -con | -co | -c )	\
+		cflag=true
+		shift
+		;;
+
+	-debug | -debu | -deb | -de | -d )			\
+		cc_sw="$cc_sw -g"
+		nodbg_flag=false
+		shift
+		;;
+
+	-SRC)   include_dirs="$include_dirs $src_dirs"
+		shift
+		;;
+
+	-I* )	include_dirs="$include_dirs $i"
+		shift
+		;;
+
+	-* )	echo "bad flag $i"
+		exit 1
+		;;
+
+	*.* | * ) ;;
+    esac
+done
+
+new_cc_sw=""
+cc_sw_del=""
+
+for i in $cc_sw
+do
+	add_to_sw=true
+
+	for j in $new_cc_sw
+	do
+		if [ $i = $j ]
+		then
+			add_to_sw=false
+		fi
+	done
+
+	if $add_to_sw
+	then
+		new_cc_sw="$new_cc_sw$cc_sw_del$i"
+	fi
+	cc_sw_del=" "
+done
+cc_sw="$new_cc_sw"
+
+copy_it=false
+cp_str=""
+for i
+do
+    do_it=false
+    case $i in
+	-* )	;;
+
+	*.c )	cfilnam="$i"
+		filnam=`basename $i .c`
+		do_it=true
+		;;
+
+	* )	if [ ! -f "$i.c" -a -f "$i" ]
+		then
+		    copy_it=true
+		    cp $i $i.c
+		    cp_str="$cp_str $i.c"
+		fi
+		cfilnam="$i.c"
+		filnam="$i"
+		do_it=true
+		;;
+    esac
+if $nodbg_flag
+then
+    if egrep "NO_OPTIM.*=.*all$|NO_OPTIM.*=.*${VERS}|NO_OPTIM.*=.*${CC}" $cfilnam > /dev/null
+    then
+	:
+    else
+	cc_sw="$cc_sw $OPTIM"
+    fi
+fi
+
+    $do_it && $cflag && [ -f $filnam.o ] && do_it=false
+    if $do_it
+    then
+        case $VERS in
+	   nc4_us5 ) $CC $cfilnam -c -w $cc_sw $include_dirs 2>&1 | grep -v Meta
+		     ;;
+	   dr6_us5 | sos_us5 | sqs_ptx)
+		     $CC $cfilnam -c $cc_sw $include_dirs 2>&1 | grep -v warning:
+                     ;;  
+           rs4_us5 | ris_u64 )
+	             $CC $cfilnam -c -w $cc_sw $include_dirs 2>&1 | grep -v '(E)'
+		     ;;
+	   usl_us5)
+		     $CC $cfilnam -c $cc_sw $include_dirs 2>&1 | grep -iv warning:
+                     ;;  
+	   i64_hpu)
+	   	     $CC $cfilnam -c +DD64 -w $cc_sw $include_dirs 2>&1
+		     ;;
+	   * )       $CC $cfilnam -c -w $cc_sw $include_dirs 2>&1
+		     ;;
+       esac
+    fi
+done
+
+$copy_it && rm $cp_str
+

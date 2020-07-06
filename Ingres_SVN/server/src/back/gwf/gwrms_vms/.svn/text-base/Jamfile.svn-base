@@ -1,0 +1,12 @@
+#
+# Jamfile file for back!gwf!gwrms_vms
+#
+
+SubDir ING_SRC back gwf gwrms_vms ;
+
+IISUBSYS back gwf gwrms_vms ;
+
+
+IILIBRARY GWRMSLIB : gwrmsnum.roc rmsmap.c gwtabi_rms.c gwrmsutl.c
+	gwrmsini.c gwrmsdt.c gwrmscvr.c gwrmscvi.c gwrms.c gw02rms.c
+	gwrmscvu.mar ;

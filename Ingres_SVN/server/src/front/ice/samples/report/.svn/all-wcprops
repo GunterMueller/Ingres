@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/ice/samples/report
+END
+report1.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/ice/samples/report/report1.html
+END
+report2.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/ice/samples/report/report2.html
+END
+existing.rw
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/ice/samples/report/existing.rw
+END
+report3.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/ice/samples/report/report3.html
+END
+reportfrm.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/ice/samples/report/reportfrm.html
+END
+htmlrbf.rw
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/ice/samples/report/htmlrbf.rw
+END
+htmlwrite.rw
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/ice/samples/report/htmlwrite.rw
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/ice/samples/report/Jamfile
+END
+reportfr1.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/ice/samples/report/reportfr1.html
+END
+blank.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/ice/samples/report/blank.html
+END
+htmlwvar.rw
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/ice/samples/report/htmlwvar.rw
+END
+reporthdr.html
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/ice/samples/report/reporthdr.html
+END
+report.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/ice/samples/report/report.html
+END

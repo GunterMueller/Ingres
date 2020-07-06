@@ -1,0 +1,60 @@
+#
+# MANIFEST file for back!scf!scd
+#
+# History:
+#	07-dec-2004 (abbjo03)
+#	   Split out scdmain and scfdiag from library on VMS.
+#	22-feb-2005 (abbjo03)
+#	   Build the RMS Gateway on VMS.
+
+SubDir ING_SRC back scf scd ;
+
+IISUBSYS back scf scd ;
+
+IINOOPTIM scdopt.c : dr6_us5 ;
+IINOOPTIM scdnote.c : dr6_us5 ;
+IINOOPTIM scdmo.c : dr6_us5 ;
+IINOOPTIM scdmain.c : dr6_us5 ;
+IINOOPTIM scdinit.c : dr6_us5 ;
+IINOOPTIM scddbfcn.c : dr6_us5 ;
+IINOOPTIM scddata.c : dr6_us5 ;
+
+if $(NT)
+{
+
+IIBINEXE iidbms : scdmain.c ;
+IINEEDLIBS iidbms : COMPATLIB DMFLIB CUFLIB GCFLIB  
+	SCFLIB ULFLIB ;
+
+IIBINEXE iistar : scdmain.c ;
+IINEEDLIBS iistar : COMPATLIB DMFLIB CUFLIB GCFLIB 
+	SCFLIB ULFLIB ;
+
+IIBINEXE dmfrcp : scdmain.c ;
+IINEEDLIBS dmfrcp : COMPATLIB DMFLIB CUFLIB GCFLIB
+	SCFLIB ULFLIB ;
+
+IILIBRARY SCFLIB : scfdiag.c scdopt.c scdnote.c scdmo.c
+	scdinit.c scddbfcn.c ;
+
+IILIBRARY IMPSCFLIBDATA : scddata.c ;
+}
+else
+{
+    IILIBRARY SCFLIB : scdopt.c scdnote.c scdmo.c
+	scdinit.c scddbfcn.c scddata.c ; 
+
+    if ! $(VMS)
+    {
+        IILIBRARY SCFLIB : scfdiag.c scdmain.c ;
+    }
+    else
+    {
+        IIBINEXE iidbms : scdmain.c ;
+        IINEEDLIBS iidbms : DMFLIB CUFLIB GCFLIB SCFLIB ULFLIB COMPATLIB ;
+
+        IIBINEXE iirms : scdmain.c ;
+        IINEEDLIBS iirms : DMFLIB CUFLIB GCFLIB GWFLIB SCFLIB ULFLIB COMPATLIB ;
+    }
+}
+

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/ingres/!svn/ver/1/main/src/back/awsf/wmo
+END
+wmo_loc.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/awsf/wmo/wmo_loc.c
+END
+wmo_util.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/awsf/wmo/wmo_util.c
+END
+wmo_user.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/awsf/wmo/wmo_user.c
+END
+wmo_unit.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/awsf/wmo/wmo_unit.c
+END
+wmo_app.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/awsf/wmo/wmo_app.c
+END
+wmo_profile.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/back/awsf/wmo/wmo_profile.c
+END
+wmo_role.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/awsf/wmo/wmo_role.c
+END
+wmo_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/awsf/wmo/wmo_init.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/awsf/wmo/Jamfile
+END
+wmo_dbuser.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/back/awsf/wmo/wmo_dbuser.c
+END
+wmo_db.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/awsf/wmo/wmo_db.c
+END
+wmo_doc.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/awsf/wmo/wmo_doc.c
+END
+wmo_monitor.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/back/awsf/wmo/wmo_monitor.c
+END

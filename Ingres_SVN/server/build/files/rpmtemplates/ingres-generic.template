@@ -1,0 +1,60 @@
+%pre
+# RPM install option for PIF
+# PIF_RPM_UPDATE_OPTION= --nodeps --replacefiles --replacepkgs
+#set environment from RPM info
+[ -z "$RPM_INSTALL_PREFIX" ] && RPM_INSTALL_PREFIX=%prefix
+export II_SYSTEM=$RPM_INSTALL_PREFIX
+
+if [ $1 -gt 0 ] ; then # upgrade
+    $II_SYSTEM/ingres/utility/iigenpreinst -r %rpm_basename% \
+	-v %rpm_version% -u
+else
+    $II_SYSTEM/ingres/utility/iigenpreinst -r %rpm_basename% \
+	-v %rpm_version%
+fi
+
+rc=$?
+
+exit $rc
+
+%post
+#set environment from RPM info
+[ -z "$RPM_INSTALL_PREFIX" ] && RPM_INSTALL_PREFIX=%prefix
+export II_SYSTEM=$RPM_INSTALL_PREFIX
+
+rc=0 # initialize return code
+
+if [ $1 -gt 1 ] ; then # upgrade
+    $II_SYSTEM/ingres/utility/iigenpostinst -r %rpm_basename% \
+	-v %rpm_version% -p %pkg_name% %pkg_sulist% -u
+else
+    $II_SYSTEM/ingres/utility/iigenpostinst -r %rpm_basename% \
+	-v %rpm_version% -p %pkg_name% %pkg_sulist%
+fi
+
+rc=$?
+
+exit $rc
+
+%preun
+[ -z "$RPM_INSTALL_PREFIX" ] && RPM_INSTALL_PREFIX=%prefix
+export II_SYSTEM=$RPM_INSTALL_PREFIX
+
+rc=0 # initialize return code
+
+# Check pre-un script is present, if it's not just exit
+[ -x $II_SYSTEM/ingres/utility/iigenpreun ] || exit 0
+if [ $1 -gt 0 ] ; then # upgrade
+    $II_SYSTEM/ingres/utility/iigenpreun -r %rpm_basename% \
+	-v %rpm_version% -p %pkg_name% %pkg_sulist% -u
+else
+    $II_SYSTEM/ingres/utility/iigenpreun -r %rpm_basename% \
+	-v %rpm_version% -p %pkg_name% %pkg_sulist%
+fi
+
+rc=$?
+
+exit $rc
+
+%files
+

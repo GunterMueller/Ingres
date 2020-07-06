@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/3/main/src/front/st/pkghdr_unix
+END
+ingres-spatial.pkghdr
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/3/main/src/front/st/pkghdr_unix/ingres-spatial.pkghdr
+END
+ingres-i18n.pkghdr
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/3/main/src/front/st/pkghdr_unix/ingres-i18n.pkghdr
+END
+ingres-ice.pkghdr
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/3/main/src/front/st/pkghdr_unix/ingres-ice.pkghdr
+END
+ingres-LICENSE.pkghdr
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/3/main/src/front/st/pkghdr_unix/ingres-LICENSE.pkghdr
+END
+ingres.pkghdr
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/st/pkghdr_unix/ingres.pkghdr
+END
+ingres-32bit.pkghdr
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/3/main/src/front/st/pkghdr_unix/ingres-32bit.pkghdr
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/3/main/src/front/st/pkghdr_unix/Jamfile
+END
+ingres-dbms.pkghdr
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/3/main/src/front/st/pkghdr_unix/ingres-dbms.pkghdr
+END
+ingres-net.pkghdr
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/3/main/src/front/st/pkghdr_unix/ingres-net.pkghdr
+END
+ingres-rep.pkghdr
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/3/main/src/front/st/pkghdr_unix/ingres-rep.pkghdr
+END
+ingres-odbc.pkghdr
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/3/main/src/front/st/pkghdr_unix/ingres-odbc.pkghdr
+END
+ingres-abf.pkghdr
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/3/main/src/front/st/pkghdr_unix/ingres-abf.pkghdr
+END
+ingres-documentation.pkghdr
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/ingres/!svn/ver/3/main/src/front/st/pkghdr_unix/ingres-documentation.pkghdr
+END
+ingres-star.pkghdr
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/3/main/src/front/st/pkghdr_unix/ingres-star.pkghdr
+END

@@ -1,0 +1,4 @@
+PART  montools64
+   BUILD_DIR (ING_BUILD)!bin!lp64
+   DIRECTORY ingres!bin!lp64
+      EXECUTABLE ipm

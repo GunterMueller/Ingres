@@ -1,0 +1,13 @@
+<!-- #ICE REPEAT INCLUDE=`begin.html?form=&title=Business Unit&submit=actUnit.html` -->
+		<TABLE BORDER=0>
+			<!-- #ICE FUNCTION=`unit?action=retrieve&unit_id=:unit`
+					 HTML=`
+			<TR>
+				<INPUT TYPE="HIDDEN" NAME="id" VALUE=":unit_id">
+				<TD>Name </TD>
+				<TD><INPUT SIZE="32" NAME="name" VALUE=":unit_name"></TD>
+			</TR>`
+			-->
+			<!-- #ICE REPEAT INCLUDE=`action.html` -->
+		</TABLE>
+<!-- #ICE REPEAT INCLUDE=`end.html` -->

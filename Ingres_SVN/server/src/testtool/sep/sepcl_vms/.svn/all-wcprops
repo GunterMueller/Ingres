@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/testtool/sep/sepcl_vms
+END
+sepst.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/testtool/sep/sepcl_vms/sepst.c
+END
+termstuff.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/testtool/sep/sepcl_vms/termstuff.c
+END
+sepspawn.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/testtool/sep/sepcl_vms/sepspawn.c
+END
+setu.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/testtool/sep/sepcl_vms/setu.c
+END
+sepexit.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/testtool/sep/sepcl_vms/sepexit.c
+END
+sepalloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/testtool/sep/sepcl_vms/sepalloc.c
+END
+seplo.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/testtool/sep/sepcl_vms/seplo.c
+END
+sepnm.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/testtool/sep/sepcl_vms/sepnm.c
+END
+getu.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/testtool/sep/sepcl_vms/getu.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/testtool/sep/sepcl_vms/Jamfile
+END
+septrace.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/testtool/sep/sepcl_vms/septrace.c
+END
+sepcm.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/testtool/sep/sepcl_vms/sepcm.c
+END
+logical.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/testtool/sep/sepcl_vms/logical.c
+END
+getloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/testtool/sep/sepcl_vms/getloc.c
+END

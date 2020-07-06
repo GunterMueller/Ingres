@@ -1,0 +1,13 @@
+#
+# Jamfile file for cl!clf!pc_vms
+#
+# History:
+#	05-mar-2007 (abbjo03)
+#	    Add pctidx.c.
+
+SubDir ING_SRC cl clf pc_vms ;
+
+IISUBSYS cl clf pc_vms ;
+
+IILIBRARY COMPATLIB : pcwait.c pcspawn.c pcforcex.c pcexit.c pcendpipe.c
+        pccmdline.c pcalive.c pc.c pcpid.c pcsleep.mar pctidx.c ;

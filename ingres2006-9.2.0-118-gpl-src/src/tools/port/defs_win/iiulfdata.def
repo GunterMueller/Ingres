@@ -1,0 +1,13 @@
+;
+;  History:
+;	17-oct-2000 (somsa01)
+;	    Created.
+;	13-feb-2004 (somsa01)
+;	    Added Uld_ahd_xlatetab.
+;	11-Jun-2004 (drivi01)
+;	    Added ordinals.
+;
+EXPORTS
+Ule_mhdr		@1	DATA			
+Ule_started		@2	DATA			
+Uld_ahd_xlatetab		@3	DATA			

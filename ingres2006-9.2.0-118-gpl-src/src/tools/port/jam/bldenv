@@ -1,0 +1,495 @@
+#! /bin/sh
+## bldenv
+##
+## Name: bldenv
+##
+## Purpose: Setup shell environment for building Ingres.
+## 
+## Requirements: 
+##	The following variable must be set before running this script:
+##
+##	ING_ROOT -	Root directory of source code. Must point 
+##			to the directory created when the source
+##			archive is unpacked or download.
+##
+##	The Ingres r3 build procedure is dependent on a number or third party
+##	libraries and headers. The following variables are used to point to 
+##	their locations.
+##
+##	XERCESCROOT - 	Location XERCES source code root directory
+##	XERCESLOC - Location of Apache Xerces C++ XML parser libraries.
+##	KRB5HDR - Location of Kerberos headers.
+##	GTKHDR - Headers needed to build GTK appllications. (uses pkg-config)
+##	PAXLOC - Location pax binary
+##
+########################################################3
+##
+##	History:
+##	    08-Jun-2004 (hanje04)
+##		created.
+##	    01-Aug-2004 (hanje04)
+##		Updated KRB5HDR to point Kerberos5
+##	    24-Aug-2004 (hanje04)
+##		Make sure user PATH is preserved.
+##	    4-sep-2004 (stephenb)
+##	  	Port to Solaris. Add su9_us5, add LD_LIBRARY_PATH_64
+##	    17-Nov-2004 (hanje04)
+##		Make sure $ING_BUILD/lib is foremost in LD_LIBRARY_PATH
+##	    14-Dec-2004 (bonro01)
+##		Added support for HP
+##	    04-Mar-2005 (hanje04)
+##	 	SIR 114034
+##	  	Add $ING_BUILD/lib/lp32 to LD_LIBRARY_PATH for reverse
+##		hybrid builds.
+##	    22-Mar-2005 (hanje04)
+##		For Itanium Linux we need a cross-compiler so prompt
+##	  	if we can't find it.
+##	    03-Feb-2005 (bonro01)
+##		Add support for Solaris AMD64 a64_sol
+##	    18-Apr-2005 (lazro01)
+##		Added support for UnixWare. 
+##	    18-Apr-2005 (hanje04)
+##		Add support for Max OS X (mg5_osx).
+##		Based on initial changes by utlia01 and monda07.
+##		Set DYLD_LIBRARY_PATH
+##	    11-Apr-2005 (hanje04)
+##	        Define TST_SEP so that sep can run from build area.
+##	    04-Aug-2005 (zicdo01)
+##		Remove check to build as ingres
+##	    30-Jun-2005 (hweho01)
+##		Added support for HP Tru64 (axp_osf). 
+##	    29-Sep-2005 (bonro01)
+##		Move uname -p to Solaris section.
+##		uname -p is not supported on all platforms.
+##	    15-Jan-2006 (hanje04)
+##	 	SIR 115662
+##		Update default install location to /opt/Ingres/IngresII
+##		for Ingres 2006 release
+##          15-May-2006 (hweho01)
+##              Updated build environment settings for AIX.
+##	    03-Jul-2006 (hweho01)
+##		For AIX and Tru64 platfroms:
+##		1) Check for GTARLOC. 
+##		2) Added library path for Tru64 platform. 
+##	    17-Oct-2006 (hanje04)
+##		SIR 116977
+##		Define GTKHDR, GTKCCLD for Linux platforms so GTK installer
+##		can be built.
+##       6-Nov-2006 (hanal04) SIR 117044
+##          Add int.rpl for Intel Rpath Linux build.
+##	6-Feb-2007 (bonro01)
+##		Update Kerberos headers to v5 r1.6
+##		Update KRB5HDR default to be similar to Windows default.
+##	21-Mar-2007 (hanje04)
+##	    SIR 117044
+##	    Don't build GTK or RPM stuff on RPL Linux. Also add warning
+##	    if rpm headers are needed and missing.
+##	23-Mar-2007 (hanje04)
+##	    SIR 117985
+##	    Add PowerPC Linux as valid platfom (ppc_lnx)
+##	 5-Apr-2007 (bonro01)
+##		Only require PAXLOC for Linux builds.
+##	26-Apr-2007 (hweho01)
+##	    GTARLOC is not required by AIX and Tru64 platforms for Ingres 
+##          2006 R2 release.
+##	01-Jun-2007
+##	    BUG 119214
+##	    Fix up to build under Debian/Ubuntu Linux.
+##	04-Sep-2007 (hweho01)
+##	    For the build environment in AMD/Solaris 10.x, need to use   
+##          the build utilities such as ld in /usr/ccs/bin, it must    
+##          be put before /usr/ucb in the search path.  
+##
+
+umask 002
+
+xvers=25 # Xerces version
+config_string=unknown
+gtk_need=false
+rpm_need=false
+unames=`uname -s`
+unamer=`uname -r`
+unamem=`uname -m`
+host=`uname -n`
+user=`whoami`
+case ${unames} in
+    Linux)
+	gtk_need=true
+	rpm_need=true
+	include_flag=-I
+	case ${unamem} in
+          i*86)
+		unamem=i386
+		config_string=int_lnx
+                if [ -f /etc/distro-release ] ; then
+		    export OSVER=RPATH
+                    grep -i rpath /etc/distro-release
+                    if [ $? = 0 ] ; then
+                        config_string=int_rpl
+			gtk_need=false
+			rpm_need=false
+                    fi    
+		elif [ -f /etc/debian_version ] ; then
+		    export OSVER=DEBIAN
+		    # no rpm or GUI installer (yet) on
+		    # debian or ubuntu
+		    rpm_need=false
+		    export XERCESCROOT=/usr/include/xercesc
+		    export XERCESLOC=/usr/lib
+                fi
+		;;
+          ia64)
+		config_string=i64_lnx
+		xcc_need=i686-unknown-linux-gnu
+		xcc_name=${xcc_need}-gcc
+		;;
+        x86_64)
+		config_string=a64_lnx
+		;;
+        ppc64)
+		config_string=ppc_lnx
+		;;
+	     *)
+		;;
+	esac
+	export unamem #needed for debian builds
+	;;
+    SunOS)
+	unamep=`uname -p`
+	case ${unamep} in
+	 sparc)
+		config_string=su9_us5
+		;;
+	  i386)
+		config_string=a64_sol
+		;;
+	     *)
+		;;
+	esac
+	;;
+    HP-UX)
+	case ${unamem} in
+	  ia64)
+		config_string=i64_hpu
+		;;
+	  9000*)
+                cpubits=`getconf HW_CPU_SUPP_BITS`
+                if [ "$cpubits" = "64" ] ; then
+                    config_string=hp2_us5
+                else
+                    config_string=hpb_us5
+                fi
+		;;
+	  *)
+		;;
+	esac
+	;;
+    AIX)        config_string=r64_us5
+	;;
+    UnixWare)
+		config_string=usl_us5
+	;;
+    OSF1)
+		config_string=axp_osf
+	;;
+    Darwin)
+	config_string=mg5_osx
+	export MACOSX_DEPLOYMENT_TARGET=10.3
+	;;
+      *)
+	;;
+esac
+
+[ "$config_string" = "unknown" ] && { 
+cat << EOF
+${unames} ${unamer} is an unrecognised platform. 
+Please edit bldenv to add the apropriate platform information.
+
+EOF
+return
+}
+
+# Root of build/src tree. Must be set by hand
+while [ -z "$ING_ROOT" ] ; do
+        read -p "Please enter a value for ING_ROOT: " src
+	[ -z "$src" ] && continue
+
+        [ -d $src ] || 
+	{
+                echo "Directory $src does not exist"
+                continue
+        }
+
+        export ING_ROOT=$src
+
+        break
+done
+
+# Kerberos headers
+if [ "${unames}" != "AIX"  ]; then
+[ -d $ING_ROOT/Kerberos5 ] && export KRB5HDR=$ING_ROOT/Kerberos5
+while [ -z "$KRB5HDR" ] ; do
+        read -p "Please enter a value for KRB5HDR: " loc
+	[ -z "$loc" ] && continue
+
+        [ -d $loc ] || 
+	{
+                echo "Directory $loc does not exist"
+                continue
+        }
+
+        export KRB5HDR=$loc
+
+        break
+done
+fi
+
+# Xerces code and library (hopefully)
+[ "$XERCESCROOT" ] && [ -d ${XERCESCROOT}/src/xercesc ] ||
+{
+    if [ -d ${ING_ROOT}/xerces-c-src_2_5_0/src/xercesc ] ; then
+	export XERCESCROOT=${ING_ROOT}/xerces-c-src_2_5_0
+    else
+	while [ -z "$XERCESCROOT" ] ; do
+            read -p "Please enter a value for XERCESCROOT: " loc
+	    [ -z "$loc" ] && continue
+
+            [ -d $loc/src/xercesc ] || 
+	    {
+                echo "Directory $loc/src/xercesc does not exist"
+                continue
+            }
+
+            export XERCESCROOT=$loc
+
+            break
+	done
+    fi
+}
+
+[ -d ${XERCESCROOT}/lib ] && \
+	export XERCESLOC=${XERCESCROOT}/lib
+while [ -z "$XERCESLOC" ] ; do
+    read -p "Please enter a value for XERCESLOC: " loc
+    [ -z "$loc" ] && continue
+
+    [ -f $loc/libxerces-c.so.${xvers}.0 ] || 
+    {
+        echo "libxerces-c.so.${xvers}.0 does not exist under $loc"
+        continue
+    }
+
+    export XERCESLOC=$loc
+
+    break
+done
+
+
+# pax for Linux
+if [ "${unames}" = "Linux" ]; then
+[ -x $ING_ROOT/pax/bin/pax ] && export PAXLOC=${ING_ROOT}/pax/bin
+while [ -z "$PAXLOC" ] ; do
+        read -p "Please enter a value for PAXLOC: " loc
+	[ -z "$loc" ] && continue
+
+        [ -d $loc ] || 
+	{
+                echo "pax executable if not present under $loc"
+                continue
+        }
+
+        export PAXLOC=$loc
+
+        break
+done
+fi 
+
+# Prompt for cross compiler location if we need to
+[ "${xcc_need}" ] && [ -z "${XCCLOC}" ] &&
+{
+    cat << EOF 
+Building Ingres on ${unamem} ${unames} requires the following 
+cross compiler to be installed:
+
+	${xcc_need}
+
+Please enter a value for XCCLOC where such that:
+
+	\${XCCLOC}/bin
+
+EOF
+    while [ -z ${XCCLOC} ]
+    do
+	read -p "is the location of the cross compiler executable:" loc
+
+        [ -x "${loc}/bin/${xcc_name}" ] || 
+	{
+                echo "Cross compiler executable if not present under $loc"
+                continue
+        }
+
+        export XCCLOC=$loc
+
+        break
+    done
+}
+
+${gtk_need} && [ -z "${HDRGTK}" ] &&
+{
+    # pkg-config gives your the actual compile flags, we just want the
+    # include directories so strip out the -I
+    HDRGTK=`pkg-config --cflags gtk+-2.0 gthread-2.0 | \
+		sed -e s,${include_flag},,g`
+    if [ $? != 0 ] ; then
+	cat << EOF
+WARNING!
+Building Ingres on ${unamem} ${unames} requires the following
+packages to be installed:
+
+	pkg-config
+	gtk2 >= 2.4
+	gtk2-devel >= 2.4
+	pango-devel
+	cairo-devel
+	atk-devel
+	xorg-x11-devel
+
+One or more of these packages is missing which will cause parts of the
+build to fail.
+EOF
+    else
+	export HDRGTK
+    fi
+}
+
+${gtk_need} && [ -z "${GTKCCLD}" ] &&
+{
+    GTKCCLD=`pkg-config --libs gtk+-2.0 gthread-2.0`
+    if [ $? != 0 ] ; then
+	cat << EOF
+WARNING!
+Building Ingres on ${unamem} ${unames} requires the following
+packages to be installed:
+
+	pkg-config
+	gtk2 >= 2.4
+	gtk2-devel >= 2.4
+	pango-devel
+	cairo-devel
+	atk-devel
+	xorg-x11-devel
+
+One or more of these packages is missing which will cause parts of the
+build to fail.
+EOF
+    else
+	export GTKCCLD
+    fi
+}
+
+${rpm_need} &&
+{
+    # check we have the rpm headers we need
+    [ -r /usr/include/rpm/rpmcli.h ] &&
+	[ -r /usr/include/rpm/rpmdb.h ] &&
+	[ -r /usr/include/rpm/rpmio.h ] ||
+	{
+        cat << EOF
+WARNING!
+Building Ingres on ${unamem} ${unames} requires the following
+package to be installed:
+
+	rpm-devel
+
+This will cause parts of the build to fail.
+EOF
+	}
+}
+
+# Ingres build area
+export ING_SRC=${ING_ROOT}/src
+export ING_BUILD=${ING_ROOT}/build
+export II_MANIFEST_DIR=${ING_BUILD}/manifest
+export II_SYSTEM=${ING_ROOT}/install/build
+
+# RPM variables for Linux only
+[ "${unames}" = "Linux" ] &&
+{
+    export II_RPM_BUILDROOT=${ING_ROOT}/rpm
+    export II_DEB_BUILDROOT=${ING_ROOT}/deb
+    export II_RPM_PREFIX=/opt/Ingres/IngresII
+}
+
+# ingtest area
+export ING_TST=${ING_ROOT}/tst
+export ING_TOOLS=${ING_ROOT}/tools
+export TST_SEP=${ING_ROOT}/tools/files
+
+# Jam variables 
+export config_string
+export ING_SRCRULES=${ING_SRC}/tools/port/jam/Jamrules
+
+# Execution path:
+
+pporigpath=$PATH
+if [ "$config_string" = "a64_sol" ] ;  then 
+pporigpath=/usr/ccs/bin:$pporigpath
+fi
+xpath1=.:${ING_BUILD}/bin:${ING_BUILD}/utility:\
+${II_SYSTEM}/ingres/bin:${II_SYSTEM}/ingres/utility:${ING_SRC}/bin:\
+${ING_TOOLS}/bin:${ING_TOOLS}/utility
+xpath2=/bin:/usr/bin:/usr/X11R6/bin:/usr/local/bin
+# Path to X-compiler (needed for some ports)
+[ "${XCCLOC}" ] && xccpath=${XCCLOC}/bin:${XCCLOC}/${xcc_need}/bin
+
+PATH=${xpath1}:${pporigpath}:${xpath2}:${xccpath}
+export PATH
+
+# Directory path:
+CDPATH=.:..
+for d in back cl common dbutil gl front testtool tools admin
+do
+	[ -d $ING_SRC/$d ] && {
+	for dir in `ls -1 $ING_SRC/$d`
+	do
+	    CDPATH=$CDPATH:$ING_SRC/$d/$dir
+	done
+	}
+	CDPATH=$CDPATH:$ING_SRC/$d
+done
+
+CDPATH=$CDPATH:$ING_SRC/
+export CDPATH
+
+# Library path for X-complier
+[ "$XCCLOC" ] && xcc_ld_path=${XCCLOC}/lib
+
+if [ "${unames}" = Darwin ] ; then
+    if [ "$DYLD_LIBRARY_PATH" ] ; then
+	export DYLD_LIBRARY_PATH=${ING_BUILD}/lib:${ING_BUILD}/lib/lp32:${LD_LIBRARY_PATH}
+    else
+	export DYLD_LIBRARY_PATH=/lib:/usr/lib:/usr/local/lib:${ING_BUILD}/lib:${ING_BUILD}/lib/lp32
+    fi
+elif [ "${unames}" = "AIX" ] ; then
+        export LIBPATH=${ING_BUILD}/lib:/lib:/usr/lib:/usr/ccs/lib
+elif [ "${unames}" = "OSF1" ] ; then
+        export LD_LIBRARY_PATH=${ING_BUILD}/lib:/lib:/usr/lib
+else
+    if [ "$LD_LIBRARY_PATH" ] ; then
+	export LD_LIBRARY_PATH=${ING_BUILD}/lib:${ING_BUILD}/lib/lp32:${LD_LIBRARY_PATH}
+    else
+	export LD_LIBRARY_PATH=/lib:/usr/lib:/usr/local/lib:${ING_BUILD}/lib:${ING_BUILD}/lib/lp32
+    fi
+
+    if [ "$LD_LIBRARY_PATH_64" ] ; then
+	export LD_LIBRARY_PATH_64=${ING_BUILD}/lib/lp64:${LD_LIBRARY_PATH}
+    else
+	export LD_LIBRARY_PATH_64=${ING_BUILD}/lib/lp64
+    fi
+fi # Darwin
+
+if [ -z "$II_QUIET_BUILDENV" ] ; then
+   echo "Ingres build environment is now set"
+   echo "Your ING_ROOT variable is set to $ING_ROOT"
+fi
+

@@ -1,0 +1,20 @@
+PART	supp32
+   DIRECTORY ingres!utility
+   BUILD_DIR (ING_BUILD)!utility
+      SCRIPT SETUP iisusupp32
+   DIRECTORY ingres!lib!lp32
+   BUILD_DIR (ING_BUILD)!lib!lp32
+      FILE libiiapi.a
+      FILE libingres.a
+   BUILD_DIR (ING_BUILD)!lib!lp32
+   DIRECTORY ingres!lib!lp32
+   {
+      EXECUTABLE libcompat.1.so
+      EXECUTABLE libframe.1.so
+      EXECUTABLE libinterp.1.so
+      EXECUTABLE libq.1.so
+      EXECUTABLE libiiapi.1.so
+      EXECUTABLE libiiodbc.1.so
+      EXECUTABLE libiiodbcdriver.1.so
+      PERMISSION s:re,o:rwed,g:re,w:re
+   }

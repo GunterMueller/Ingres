@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/ingres/!svn/ver/1/main/src/common/aif/hdr
+END
+apivalid.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/aif/hdr/apivalid.h
+END
+apisql.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/common/aif/hdr/apisql.h
+END
+apidatav.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/aif/hdr/apidatav.h
+END
+apierhnd.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/aif/hdr/apierhnd.h
+END
+apitname.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/aif/hdr/apitname.h
+END
+apishndl.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/aif/hdr/apishndl.h
+END
+apithndl.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/aif/hdr/apithndl.h
+END
+apigcap.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/aif/hdr/apigcap.h
+END
+iiapidep.wnt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/aif/hdr/iiapidep.wnt
+END
+wgl_32s.hrd
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/aif/hdr/wgl_32s.hrd
+END
+apisphnd.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/aif/hdr/apisphnd.h
+END
+iiapidep.w31
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/aif/hdr/iiapidep.w31
+END
+api.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/common/aif/hdr/api.h
+END
+apins.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/common/aif/hdr/apins.h
+END
+apidspth.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/aif/hdr/apidspth.h
+END
+apige2ss.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/aif/hdr/apige2ss.h
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/common/aif/hdr/MANIFEST
+END
+apilower.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/aif/hdr/apilower.h
+END
+apichndl.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/aif/hdr/apichndl.h
+END
+iiapidep.ccpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/common/aif/hdr/iiapidep.ccpp
+END
+apiehndl.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/aif/hdr/apiehndl.h
+END
+apiadf.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/common/aif/hdr/apiadf.h
+END
+apimisc.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/common/aif/hdr/apimisc.h
+END
+apienhnd.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/aif/hdr/apienhnd.h
+END
+apiihndl.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/aif/hdr/apiihndl.h
+END
+apitrace.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/common/aif/hdr/apitrace.h
+END

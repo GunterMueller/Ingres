@@ -1,0 +1,269 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/1/main/src/front/st/dp_win
+END
+StdAfx.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/dp_win/StdAfx.h
+END
+AddFileName.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/st/dp_win/AddFileName.h
+END
+AuthPage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/st/dp_win/AuthPage.cpp
+END
+Splash.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/dp_win/Splash.h
+END
+mwmakefile
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/dp_win/mwmakefile
+END
+dp.hpj
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/st/dp_win/dp.hpj
+END
+AddStructName.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/dp_win/AddStructName.h
+END
+dp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/st/dp_win/dp.cpp
+END
+SuccessDlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/st/dp_win/SuccessDlg.h
+END
+dp.cnt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/st/dp_win/dp.cnt
+END
+FailDlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/dp_win/FailDlg.h
+END
+Options2Page.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/dp_win/Options2Page.cpp
+END
+LocPage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/st/dp_win/LocPage.cpp
+END
+Options3Page.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/dp_win/Options3Page.cpp
+END
+Options4Page.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/dp_win/Options4Page.cpp
+END
+dp.rtf
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/st/dp_win/dp.rtf
+END
+PropSheet.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/st/dp_win/PropSheet.h
+END
+NewListCtrl.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/st/dp_win/NewListCtrl.h
+END
+dp.rc
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/front/st/dp_win/dp.rc
+END
+InPlaceEdit.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/st/dp_win/InPlaceEdit.h
+END
+OptionsPage.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/dp_win/OptionsPage.cpp
+END
+AddFileName.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/dp_win/AddFileName.cpp
+END
+StdAfx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/dp_win/StdAfx.cpp
+END
+Splash.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/dp_win/Splash.cpp
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/dp_win/resource.h
+END
+AddStructName.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/dp_win/AddStructName.cpp
+END
+SuccessDlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/dp_win/SuccessDlg.cpp
+END
+WaitDlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/dp_win/WaitDlg.h
+END
+FailDlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/st/dp_win/FailDlg.cpp
+END
+AuthPage.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/dp_win/AuthPage.h
+END
+dp.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/st/dp_win/dp.dsp
+END
+dp.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/st/dp_win/dp.h
+END
+PropSheet.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/st/dp_win/PropSheet.cpp
+END
+NewListCtrl.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/dp_win/NewListCtrl.cpp
+END
+256bmp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/dp_win/256bmp.cpp
+END
+dp.dsw
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/st/dp_win/dp.dsw
+END
+Options2Page.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/dp_win/Options2Page.h
+END
+LocPage.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/dp_win/LocPage.h
+END
+Options3Page.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/dp_win/Options3Page.h
+END
+256Bmp.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/dp_win/256Bmp.h
+END
+Options4Page.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/dp_win/Options4Page.h
+END
+InPlaceEdit.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/dp_win/InPlaceEdit.cpp
+END
+WaitDlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/st/dp_win/WaitDlg.cpp
+END
+OptionsPage.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/st/dp_win/OptionsPage.h
+END

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/ingres/!svn/ver/1/main/src/cl/clf/ck_vms
+END
+cksubst.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/cl/clf/ck_vms/cksubst.c
+END
+rollfwd_tape_setup.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/cl/clf/ck_vms/rollfwd_tape_setup.dcl
+END
+rollfwd_delete_tables.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/cl/clf/ck_vms/rollfwd_delete_tables.dcl
+END
+rollfwd_from_tape.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/cl/clf/ck_vms/rollfwd_from_tape.dcl
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/cl/clf/ck_vms/Jamfile
+END
+ckp_tape_setup.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/cl/clf/ck_vms/ckp_tape_setup.dcl
+END
+ckspawn.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/cl/clf/ck_vms/ckspawn.c
+END
+cktmpl.def
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/cl/clf/ck_vms/cktmpl.def
+END
+rollfwd_from_disk.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/cl/clf/ck_vms/rollfwd_from_disk.dcl
+END
+ckerror.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/cl/clf/ck_vms/ckerror.c
+END
+ckp_to_tape.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/clf/ck_vms/ckp_to_tape.dcl
+END
+ckp_to_disk.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/cl/clf/ck_vms/ckp_to_disk.dcl
+END
+ck.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/cl/clf/ck_vms/ck.c
+END
+rollfwd_delete_files.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/cl/clf/ck_vms/rollfwd_delete_files.dcl
+END

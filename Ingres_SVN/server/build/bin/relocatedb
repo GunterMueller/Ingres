@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+# Copyright (c) 2004 Ingres Corporation
+#
+#
+# Name: relocatedb	- Move journal,dump,checkpoint or default work location 
+#                         Make a duplicate copy of a database
+#
+# Description:
+#      This shell program provides the INGRES `relocatedb' command by
+#      executing the journaling support program, passing along the
+#      command line arguments.
+#
+#
+# PROGRAM = relocatedb
+#
+
+exec ${II_SYSTEM?}/ingres/bin/dmfjsp relocdb "$@"

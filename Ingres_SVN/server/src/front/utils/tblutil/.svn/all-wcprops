@@ -1,0 +1,263 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/front/utils/tblutil
+END
+tutblpik.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tutblpik.hlp
+END
+tutblinf.qsh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tutblinf.qsh
+END
+tudefault.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tudefault.qsc
+END
+tutblrep.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tutblrep.hlp
+END
+tuconst.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tuconst.h
+END
+tuexam.frm
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tuexam.frm
+END
+tutopfr.frm
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tutopfr.frm
+END
+tunulls.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tunulls.hlp
+END
+fespawn.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/fespawn.qsc
+END
+tunames.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tunames.hlp
+END
+tucreate.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tucreate.hlp
+END
+tucreate.frm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tucreate.frm
+END
+tutbllst.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tutbllst.hlp
+END
+tuccdest.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tuccdest.hlp
+END
+tudefaults.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tudefaults.hlp
+END
+util.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/util.qsc
+END
+tutblqbf.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tutblqbf.hlp
+END
+tukeys.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tukeys.hlp
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/Jamfile
+END
+tudefprm.frm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tudefprm.frm
+END
+tutblinf.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tutblinf.hlp
+END
+mqbf.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/mqbf.qsc
+END
+examine.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/examine.qsc
+END
+helptbl.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/helptbl.qsc
+END
+tudflprm.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tudflprm.hlp
+END
+tumain.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tumain.qsc
+END
+tutblpik.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tutblpik.qsc
+END
+creattbl.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/creattbl.qsc
+END
+tucccrt.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tucccrt.hlp
+END
+tutblprm.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tutblprm.hlp
+END
+tutblprm.frm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tutblprm.frm
+END
+tbldata.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tbldata.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/README
+END
+report.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/report.qsc
+END
+tuunique.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tuunique.c
+END
+tutabinf.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tutabinf.qsc
+END
+tumovesm.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tumovesm.hlp
+END
+tudtypes.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tudtypes.hlp
+END
+ertu.msg
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/ertu.msg
+END
+fespnvar.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/fespnvar.c
+END
+prscreat.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/prscreat.qsc
+END
+wgl_32s.hnt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/wgl_32s.hnt
+END
+tu.roc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/utils/tblutil/tu.roc
+END

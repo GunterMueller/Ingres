@@ -1,0 +1,14 @@
+PART  sigapi
+   BUILD_DIR (ING_BUILD)!sig!syncapiw
+   DIRECTORY ingres!sig!syncapiw
+      FILE syncapiw.mak
+      FILE apiconn.c
+      FILE apievent.c
+      FILE apiproc.c
+      FILE apiquery.c
+      FILE apisupp.c
+      FILE apitran.c
+      FILE readme.txt
+      FILE sapiw.h
+      FILE sapiwi.h
+      FILE testsapi.c

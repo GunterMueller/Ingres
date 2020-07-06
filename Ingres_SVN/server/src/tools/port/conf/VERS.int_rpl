@@ -1,0 +1,9 @@
+config=int_rpl
+option=INGRESII
+option=libc6
+option=SVR_AR
+option=DBL
+option=B64
+option=CAS_ENABLED
+option=BUILD_SPATIAL
+build=102

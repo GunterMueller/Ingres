@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/sig/secure/auditmgr
+END
+remove1.osq
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/sig/secure/auditmgr/remove1.osq
+END
+viewlogs0.osq
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/sig/secure/auditmgr/viewlogs0.osq
+END
+manageaudit.osq
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/sig/secure/auditmgr/manageaudit.osq
+END
+removelogs.osq
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/sig/secure/auditmgr/removelogs.osq
+END
+resumeauditing.osq
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/sig/secure/auditmgr/resumeauditing.osq
+END
+audrecdetail.osq
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/sig/secure/auditmgr/audrecdetail.osq
+END
+changelog.osq
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/sig/secure/auditmgr/changelog.osq
+END
+rbfreports.osq
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/sig/secure/auditmgr/rbfreports.osq
+END
+iicopyapp.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/sig/secure/auditmgr/iicopyapp.tmp
+END
+viewrecords.osq
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/sig/secure/auditmgr/viewrecords.osq
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/sig/secure/auditmgr/README
+END
+view_via_qbf.osq
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/sig/secure/auditmgr/view_via_qbf.osq
+END
+setfilter.osq
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/sig/secure/auditmgr/setfilter.osq
+END
+detail.osq
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/sig/secure/auditmgr/detail.osq
+END
+auditmasks.osq
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/sig/secure/auditmgr/auditmasks.osq
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/sig/secure/auditmgr/Jamfile
+END
+suspendaudit.osq
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/sig/secure/auditmgr/suspendaudit.osq
+END
+restartauditing.osq
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/sig/secure/auditmgr/restartauditing.osq
+END
+registerlogs.osq
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/sig/secure/auditmgr/registerlogs.osq
+END
+extract.osq
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/sig/secure/auditmgr/extract.osq
+END
+stopauditing.osq
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/sig/secure/auditmgr/stopauditing.osq
+END
+auditmgr.osq
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/sig/secure/auditmgr/auditmgr.osq
+END
+queries.osq
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/sig/secure/auditmgr/queries.osq
+END

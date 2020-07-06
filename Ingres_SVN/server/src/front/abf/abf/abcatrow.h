@@ -1,0 +1,126 @@
+# include "/home/ingres/SANDBOX/Ingres_SVN/server/install/build/ingres/files/eqdef.h"
+# include "/home/ingres/SANDBOX/Ingres_SVN/server/install/build/ingres/files/eqdef.h"
+/*
+**	Copyright (c) 2004 Ingres Corporation
+**	All rights reserved.
+*/
+/**
+** Name:	abcatrow.qsh -	ABF Component Catalog Row Definition.
+**
+** Description:
+**	Contains the definition of the component class information structure
+**	for the user frame component object.  Defines:
+**
+**	AB_CATREC	ABF catalog tablefield row structure.
+**	AB_CATALOG	ABF catalog 'self' -- overloads OO_CATALOG struct. 
+**      AB_CONSTANT     ABF overload of AB_CATREC for Application Constants.
+**
+** History:
+**	Revision 6.2  89/02  wong
+**	Initial revision.
+**	21-jan-1999 (hanch04)
+**	    replace nat and longnat with i4
+**	31-aug-2000 (hanch04)
+**	    cross change to main
+**	    replace nat and longnat with i4
+**/
+/*}
+** Name:	AB_CATREC -	ABF Catalog TableField Row Structure.
+**
+** Description:
+**	A subclass of OO_CATREC, this, too, declares the structure for a
+**	row of an application frame/procedure object catalog table field.
+**	This adds the type description string as a member.
+**
+** History:
+**	12/13/88 (jhw) - Defined from OO_CATREC in <oocat.qsh>.
+*/
+  typedef struct {
+    i4 id;
+    i4 class;
+    char name[FE_MAXNAME+1];
+    char owner[DB_MAXNAME+1];
+    i4 env;
+    i4 is_current;
+    char short_remark[OOSHORTREMSIZE+1];
+    char create_date[OODATESIZE+1];
+    char alter_date[OODATESIZE+1];
+    char long_remark[OOLONGREMSIZE+1];
+    i4 alter_cnt;
+    char altered_by[DB_MAXNAME+1];
+#define			TYPE_LEN 42	/* Must include space for "array of " */
+    char type[TYPE_LEN+1];
+#define			Y_N_LEN 24
+    char nullable[Y_N_LEN+1];
+  } AB_CATREC;
+/* AB_CONSTANT is a variant of AB_CATREC for Application Constant support.
+ * The only addition to AB_CATREC is the "value" field.
+ */
+  typedef struct {
+    i4 id;
+    i4 class;
+    char name[FE_MAXNAME+1];
+    char owner[DB_MAXNAME+1];
+    i4 env;
+    i4 is_current;
+    char short_remark[OOSHORTREMSIZE+1];
+    char create_date[OODATESIZE+1];
+    char alter_date[OODATESIZE+1];
+    char long_remark[OOLONGREMSIZE+1];
+    i4 alter_cnt;
+    char altered_by[DB_MAXNAME+1];
+    char type[TYPE_LEN+1];
+    char nullable[Y_N_LEN+1];
+#define			VALUE_LEN 180
+    char value[VALUE_LEN+1];
+#define			LANGUAGE_LEN 32
+    char language[LANGUAGE_LEN+1];
+  } AB_CONSTANT;
+/*}
+** Name:	AB_CMENU -	For use in AB_CATALOG.
+**
+** Description:
+**	This is a way of grouping menu items, descriptions, and actions.
+**	XXX NOTE: this should be merged with the MENUS used in abclinfo.qsh.
+**
+** History:
+**	08/89 (billc) -- Written.
+*/
+  typedef struct {
+	STATUS		(*m_func)();	/* function implementing action */
+	ER_MSGID	m_m_menu;	/* menuitem message ID */
+    char *m_menu;
+	ER_MSGID	m_m_expl;	/* menuitem explanation ID */
+    char *m_expl;
+  } AB_CMENU;
+/*}
+** Name:	AB_CATALOG -	ABF Object Catalog Class.
+**
+** Description:
+**	This is a sub-class of the Visual Object Catalog class, OO_CATALOG,
+**	that adds lots more catalog-specific information.
+**
+** History:
+**	01/89 (jhw) -- Written.
+**	08/89 (billc) -- Extended for handling multiple catalogs.
+*/
+  typedef struct _ab_catalog {
+	C_OO_CATALOG	*class;
+    char *c_form;
+    char *c_tfield;
+	OO_CLASS	*c_class;	/* associated class */
+    i4 c_maxrow;
+	bool		c_noload;	/* no automatic load of table field */
+/* This is the end of the OO_CATALOG pun. Here's the overload: */
+	OOID		c_appid;	/* application ID for catalog */
+	OOID		c_ooid;		/* ID for current object */
+    bool c_finited;
+    AB_CMENU c_init;
+    AB_CMENU c_create;
+    AB_CMENU c_destroy;
+    AB_CMENU c_edit;
+    AB_CMENU c_end;
+    AB_CMENU c_quit;
+	APPL_COMP	*(*c_getcomp)();/* function that gets component. */
+    char *c_helpfile;
+  } AB_CATALOG;

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/common/jdbc/java/io
+END
+IoErr.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/common/jdbc/java/io/IoErr.java
+END
+DbConn.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/common/jdbc/java/io/DbConn.java
+END
+InBuff.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/common/jdbc/java/io/InBuff.java
+END
+DbConnIn.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/jdbc/java/io/DbConnIn.java
+END
+IoBuff.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/common/jdbc/java/io/IoBuff.java
+END
+OutBuff.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/jdbc/java/io/OutBuff.java
+END
+DbConnIo.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/jdbc/java/io/DbConnIo.java
+END
+DbConnOut.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/common/jdbc/java/io/DbConnOut.java
+END
+IoConst.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/jdbc/java/io/IoConst.java
+END

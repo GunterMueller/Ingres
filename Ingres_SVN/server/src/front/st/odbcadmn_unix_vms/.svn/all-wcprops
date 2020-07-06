@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/odbcadmn_unix_vms
+END
+odmainmenu.frm
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/front/st/odbcadmn_unix_vms/odmainmenu.frm
+END
+ocinstdrvr.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/front/st/odbcadmn_unix_vms/ocinstdrvr.hlp
+END
+ocadvname.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/front/st/odbcadmn_unix_vms/ocadvname.hlp
+END
+ocaltdrvp.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/front/st/odbcadmn_unix_vms/ocaltdrvp.hlp
+END
+altdsnpath.frm
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/front/st/odbcadmn_unix_vms/altdsnpath.frm
+END
+advanced.frm
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/st/odbcadmn_unix_vms/advanced.frm
+END
+ocdsnname.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/front/st/odbcadmn_unix_vms/ocdsnname.hlp
+END
+octimeout.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/front/st/odbcadmn_unix_vms/octimeout.hlp
+END
+ocfgmm.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/st/odbcadmn_unix_vms/ocfgmm.hlp
+END
+altdrvpath.frm
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/front/st/odbcadmn_unix_vms/altdrvpath.frm
+END
+dsnconfig.frm
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/front/st/odbcadmn_unix_vms/dsnconfig.frm
+END
+ocdsndetails.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/front/st/odbcadmn_unix_vms/ocdsndetails.hlp
+END
+iiodbcadmin.lot
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/front/st/odbcadmn_unix_vms/iiodbcadmin.lot
+END
+instdrivers.frm
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/front/st/odbcadmn_unix_vms/instdrivers.frm
+END
+octrace.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/st/odbcadmn_unix_vms/octrace.hlp
+END
+pooltimeout.frm
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/front/st/odbcadmn_unix_vms/pooltimeout.frm
+END
+ocdrvdetails.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/front/st/odbcadmn_unix_vms/ocdrvdetails.hlp
+END
+seldrivers.frm
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/front/st/odbcadmn_unix_vms/seldrivers.frm
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/odbcadmn_unix_vms/Jamfile
+END
+ocdsncfg.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/st/odbcadmn_unix_vms/ocdsncfg.hlp
+END
+dsnname.frm
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/st/odbcadmn_unix_vms/dsnname.frm
+END
+details.frm
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/st/odbcadmn_unix_vms/details.frm
+END
+ocaltdsnp.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/front/st/odbcadmn_unix_vms/ocaltdsnp.hlp
+END
+tracing.frm
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/st/odbcadmn_unix_vms/tracing.frm
+END
+odbcadmn.sc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/front/st/odbcadmn_unix_vms/odbcadmn.sc
+END

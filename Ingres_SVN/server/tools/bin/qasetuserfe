@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# Copyright (c) 2004 Ingres Corporation
+#
+# qasetuserfe.sh
+#
+# This is a wrapper script for qasetuser. It is invoked by SEP scripts
+# to run qasetuser on an FRS executable.
+#
+
+exec qasetuser $*

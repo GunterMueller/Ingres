@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/front/misc/xferdb
+END
+xferdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/misc/xferdb/xferdata.c
+END
+xfcnvuni.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/misc/xferdb/xfcnvuni.c
+END
+xfphys.sc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/misc/xferdb/xfphys.sc
+END
+xffileio.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/misc/xferdb/xffileio.c
+END
+xfwrap.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/misc/xferdb/xfwrap.c
+END
+erxf.msg
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/misc/xferdb/erxf.msg
+END
+xfcopy.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/misc/xferdb/xfcopy.c
+END
+xfgetatt.sc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/misc/xferdb/xfgetatt.sc
+END
+xfchkcap.sc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/misc/xferdb/xfchkcap.sc
+END
+xfrules.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/misc/xferdb/xfrules.sc
+END
+xfgenxml.sc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/misc/xferdb/xfgenxml.sc
+END
+xfcomm.sc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/misc/xferdb/xfcomm.sc
+END
+xfwrscrp.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/misc/xferdb/xfwrscrp.c
+END
+xfpermit.sc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/misc/xferdb/xfpermit.sc
+END
+xfproc.sc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/misc/xferdb/xfproc.sc
+END
+xfsecalm.sc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/misc/xferdb/xfsecalm.sc
+END
+xffilobj.sc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/misc/xferdb/xffilobj.sc
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/misc/xferdb/Jamfile
+END
+xfregstr.sc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/misc/xferdb/xfregstr.sc
+END
+xfinteg.sc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/misc/xferdb/xfinteg.sc
+END
+xfview.sc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/misc/xferdb/xfview.sc
+END
+xfwith.sc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/misc/xferdb/xfwith.sc
+END

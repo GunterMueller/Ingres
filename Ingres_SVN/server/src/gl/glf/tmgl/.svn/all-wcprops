@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/ingres/!svn/ver/1/main/src/gl/glf/tmgl
+END
+tmtz.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/gl/glf/tmgl/tmtz.c
+END
+readme.html
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/gl/glf/tmgl/readme.html
+END
+iizic.lot
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/gl/glf/tmgl/iizic.lot
+END
+tmtzbreak.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/gl/glf/tmgl/tmtzbreak.c
+END
+iiworld.tz
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/gl/glf/tmgl/iiworld.tz
+END
+iizck.lot
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/gl/glf/tmgl/iizck.lot
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/gl/glf/tmgl/Jamfile
+END
+iizic.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/gl/glf/tmgl/iizic.c
+END
+tmtzstr.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/gl/glf/tmgl/tmtzstr.c
+END
+wgl_32s.hnt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/gl/glf/tmgl/wgl_32s.hnt
+END
+iizck.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/gl/glf/tmgl/iizck.c
+END
+iizic.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/gl/glf/tmgl/iizic.exe.manifest
+END
+iizck.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/gl/glf/tmgl/iizck.exe.manifest
+END
+svr_wnt.hrd
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/gl/glf/tmgl/svr_wnt.hrd
+END

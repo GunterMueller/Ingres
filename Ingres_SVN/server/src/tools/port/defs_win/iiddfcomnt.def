@@ -1,0 +1,25 @@
+;  History:
+;	11-Jun-2004 (drivi01)
+;	    Added ordinals.
+
+EXPORTS
+GOutOfMemory		@1				
+GTraceLevel		@2				
+GAlloc		@3				
+DDFStatusAlloc		@4				
+DDFStatusInfo		@5				
+DDFStatusFree		@6				
+DDFTraceInit		@7				
+DDFTrace		@8				
+DDFmkhash		@9				
+DDFrmhash		@10				
+DDFrehash		@11				
+DDFgethash		@12				
+DDFputhash		@13				
+DDFdelhash		@14				
+DDFscanhash		@15				
+DDFSemCreate		@16				
+DDFSemOpen		@17				
+DDFSemClose		@18				
+DDFSemDestroy		@19				
+GuessFileType		@20				

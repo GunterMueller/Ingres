@@ -1,0 +1,18 @@
+PART  rms
+    capability CI_NEW_RMS_GATEWAY
+   BUILD_DIR (ING_BUILD)!bin
+   DIRECTORY ingres!bin
+   {
+     PERMISSION s:rwed,o:rwed,g:re,w:re
+     EXECUTABLE iirms
+   }
+   DIRECTORY ingres!debug
+   BUILD_DIR (ING_BUILD)!debug
+      FILE iirms.stb
+   DIRECTORY ingres!files
+   BUILD_DIR (ING_BUILD)!files
+   FILE rms.crs
+   FILE rms.rfm
+   DIRECTORY ingres!utility
+   BUILD_DIR (ING_BUILD)!utility
+      SCRIPT SETUP iisurms

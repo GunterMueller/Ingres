@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/gtkinstall_unix
+END
+giprpm.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/gtkinstall_unix/giprpm.c
+END
+giprpm.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/gtkinstall_unix/giprpm.h
+END
+gipmain.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/gtkinstall_unix/gipmain.c
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/gtkinstall_unix/MANIFEST
+END
+ingres_install.sh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/front/st/gtkinstall_unix/ingres_install.sh
+END
+gipmain.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/gtkinstall_unix/gipmain.h
+END

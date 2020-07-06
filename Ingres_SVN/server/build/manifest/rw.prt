@@ -1,0 +1,10 @@
+PART  report-writer
+   capability CI_REPORT
+   BUILD_DIR (ING_BUILD)!bin
+   DIRECTORY ingres!bin
+      EXECUTABLE copyrep
+      EXECUTABLE report
+      EXECUTABLE sreport
+   BUILD_DIR (ING_BUILD)!files!english
+   DIRECTORY ingres!files!english
+      FILE rwoutput.hlp

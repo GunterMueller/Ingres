@@ -1,0 +1,8 @@
+PART   ice64
+   DIRECTORY ingres!lib!lp64
+   BUILD_DIR (ING_BUILD)!lib!lp64
+      FILE liboiicecapi.a
+      EXECUTABLE liboiddi.so.2.0
+   DIRECTORY ingres!bin!lp64
+   BUILD_DIR (ING_BUILD)!bin!lp64
+      EXECUTABLE icesvr

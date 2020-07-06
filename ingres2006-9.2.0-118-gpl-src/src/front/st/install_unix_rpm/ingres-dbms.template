@@ -1,0 +1,660 @@
+Summary: %rpm_product%
+Name: %rpm_basename%%rpm_specname%
+Version: %rpm_version%
+Release: %rpm_release%
+License: %rpm_license%
+Group: %rpm_group%
+Source: none
+Patch: none
+Vendor: %rpm_vendor%
+URL: %rpm_url%
+BuildRoot: %rpm_buildroot%
+Prefix: %rpm_prefix%
+PreReq: %rpm_basename% = %rpm_version%-%rpm_release%
+Provides: %rpm_basename%%rpm_specname%
+Provides: %rpm_basename%-ome
+Provides: %rpm_basename%-tuxedo
+Provides: %rpm_basename%-c2audit
+Obsoletes: ca-ingres%rpm_specname%
+Obsoletes: ca-ingres-ome
+Obsoletes: ca-ingres-tuxedo
+Obsoletes: ca-ingres-c2audit
+
+AutoReq: 0
+%define _unpackaged_files_terminate_build 0 
+%define _missing_doc_files_terminate_build 0
+
+%description 
+%product_name% Intelligent DBMS
+
+The %product_name% Intelligent DBMS, the foundation of the %product_name% product line, provides the power to manage today's critical information resources: data, knowledge, and objects.  Because of this unique ability, the %product_name% Intelligent DBMS empowers organizations to model all aspects of their operations within the database engine itself, rather than within client application code.
+
+The %product_name% Intelligent DBMS can support a wide range of applications, from ad hoc queries to large-scale, mission-critical production applications which require 24-hour-a-day, 7-day-a-week service.  The %product_name% Intelligent DBMS features a threaded, multi-server architecture which can fully harness the power of today's scalable multiprocessors.  Other advanced features include the industry's most advanced statistically based query optimizer, compiled database procedures, on-line backup, and transparent two-phase commit.
+
+%prep
+
+%pre
+# RPM install option for PIF
+# PIF_RPM_UPDATE_OPTION= --nodeps --replacefiles --replacepkgs
+#Set environment from RPM info
+[ -z "$RPM_INSTALL_PREFIX" ] && RPM_INSTALL_PREFIX=%prefix
+II_SYSTEM=$RPM_INSTALL_PREFIX
+PATH=$II_SYSTEM/ingres/bin:$II_SYSTEM/ingres/utility:$PATH
+LD_LIBRARY_PATH=/lib:/usr/lib:$II_SYSTEM/ingres/lib
+export II_SYSTEM PATH LD_LIBRARY_PATH
+export rpm_vers=%rpm_version%
+
+# CA_DEPS is used by CA-CS Utils to determine ingres dependancies and 
+# should not be changed without consulting Unicenter development.
+CA_DEPS="%rpm_basename%-abf-EI %rpm_basename%-bridge-EI %rpm_basename%-c2audit-EI %rpm_basename%-das-EI %rpm_basename%-esql-EI %rpm_basename%-jdbc-EI %rpm_basename%-net-EI %rpm_basename%-odbc-EI %rpm_basename%-ome-EI %rpm_basename%-qr_run-EI %rpm_basename%-rep-EI %rpm_basename%-star-EI %rpm_basename%-tuxedo-EI %rpm_basename%-vision-EI"
+unset BASH_ENV
+
+rc=0 # initialize return code
+
+# Mesg cmds.
+ECHO=echo
+CAT=cat
+
+#Silent install?
+[ -x $II_SYSTEM/ingres/utility/iiread_response ] && \
+	[ -r "$II_RESPONSE_FILE" ] &&
+{
+    silent=`iiread_response SILENT_INSTALL $II_RESPONSE_FILE`
+    [ "$silent" ] &&
+    {
+	ECHO=true
+	CAT=true
+    }
+    export ECHO CAT
+}
+
+parse_response()
+{
+
+# Read response file and set environment variables accordingly
+    [ "$II_RESPONSE_FILE" ] && [ ! -f "$II_RESPONSE_FILE" ] && {
+    rc=1
+    cat << !
+Cannot locate response file.
+
+	II_RESPONSE_FILE=$II_RESPONSE_FILE
+!
+    exit $rc
+    }
+
+[ "$II_RESPONSE_FILE" ] && {
+
+# Check response file is readable by specified installation owner.
+# If not abort the install before it starts.
+    if su -c "[ ! -r \"$II_RESPONSE_FILE\" ]" $II_USERID ; then
+	rc=2
+        cat << !
+Response file is not readable by user $II_USERID
+
+        II_RESPONSE_FILE=$II_RESPONSE_FILE
+
+If user $II_USERID does not exists, the response file should be
+globally readable.
+!
+        exit $rc
+    fi
+}
+
+    for var in `cut -s -d= -f1 $II_RESPONSE_FILE | grep -v ^#`
+    do
+	export ${var}=`iiread_response ${var} $II_RESPONSE_FILE`
+    done
+}
+
+check_location()
+{
+# $1 is location path i.e /path/to location
+# $2 is location type i.e II_DATABASE, II_CHECKPOINT, etc
+
+# Check we were actuall passed a location, check it exitst and 
+# if we can write to it
+    [ -z "$1" ] && exit 3
+    if [ ! -d "$1"  ] ; then
+	rc=4
+	cat << EOF
+The $2 location:
+
+	$1
+	
+does not exist please create and try again.
+EOF
+    	exit $rc
+    else
+# If location is not the same as $II_SYSTEM, check it's writable, 
+# by Ingres install userid. If not, return an error
+	[ ! "`dirname $1/.`" = "`dirname $II_SYSTEM/.`" ] && \
+	    su -c "[ ! -w \"$1/.\" ]" $II_USERID && \
+		return 1
+    fi
+
+    return 0
+}
+    
+check_diskspace()
+{
+rc=0
+[ "$II_LOG_FILE_SIZE_MB" ] && \
+	LOG_KBYTES=`eval expr "$II_LOG_FILE_SIZE_MB \* 1024"`
+[ "$LOG_KBYTES" ] || LOG_KBYTES=262144
+log_need=$LOG_KBYTES
+iisys_dev=`df -k $II_SYSTEM | tail -1 | awk '{print $NF}'`
+[ "$II_DATABASE" ] && data_dev=`df -k $II_DATABASE  |\
+			tail -1 | awk '{print $NF}'`
+[ "$II_CHECKPOINT" ] && ckp_dev=`df -k $II_CHECKPOINT |\
+			tail -1 | awk '{print $NF}'`
+[ "$II_LOG_FILE" ] && log_dev=`df -k $II_LOG_FILE |\
+			tail -1 | awk '{print $NF}'`
+[ "$II_DUAL_LOG" ] && dual_dev=`df -k $II_DUAL_LOG |\
+			tail -1 | awk '{print $NF}'`
+
+
+
+
+# Disk space need in each location in KB
+    iisys_need=0
+    data_need=30000
+    ckp_need=30000
+    [ "$II_DUAL_LOG" ] && dual_need=$log_need
+
+# Check each location, and set disk space needs for each device
+# accordingly
+
+# II_DATABASE
+    if [ ! "$data_dev" ] || [ "$data_dev" = "$iisys_dev" ] ; then
+	iisys_need=`eval expr $iisys_need + $data_need`
+	data_loc=iisys
+	data_dev=''
+    else
+	data_loc=data
+    fi
+
+# II_CHECKPOINT
+    if [ ! "$ckp_dev" ] || [ "$ckp_dev" = "$iisys_dev" ] ; then
+	iisys_need=`eval expr $iisys_need + $ckp_need`
+	ckp_loc=iisys
+	ckp_dev=''
+    else
+	case "$ckp_dev" in
+	    "$data_dev") ckp_loc=data 
+			 ckp_dev=''
+			 data_need=`eval expr $data_need + $ckp_need`
+			 ;;
+	   	      *) ckp_loc=ckp
+		   	 ;;
+	esac
+	
+    fi
+
+# II_LOG_FILE
+    if [ ! "$log_dev" ] || [ "$log_dev" = "$iisys_dev" ] ; then
+	iisys_need=`eval expr $iisys_need + $log_need`
+	log_loc=iisys
+	log_dev=''
+    else
+	case "$log_dev" in
+	       "$data_dev") log_loc=data
+			    log_dev=''
+			    data_need=`eval expr $data_need + $log_need`
+			    ;;
+	  	"$ckp_dev") log_loc=ckp
+			    log_dev=''
+			    ckp_need=`eval expr $ckp_need + $log_need`
+			    ;;
+			 *) log_loc=log
+			    ;;
+	esac
+    fi
+
+# II_DUAL_LOG
+    if [ "$dual_dev" = "$iisys_dev" ] ; then
+	iisys_need=`eval expr $iisys_need + $dual_need`
+	dual_loc=iisys
+	dual_dev=''
+    elif [ "$dual_dev" ] ; then
+	case "$dual_dev" in
+	       "$data_dev") dual_loc=data
+			    dual_dev=''
+			    data_need=`eval expr $data_need + $dual_need`
+			    ;;
+		"$ckp_dev") dual_loc=ckp
+			    dual_dev=''
+			    ckp_need=`eval expr $ckp_need + $dual_need`
+			    ;;
+		"$log_dev") dual_log=log
+			    log_need=`eval expr $log_need + $dual_need`
+			    dual_dev=''
+			    ;;
+			 *) dual_log=dual
+		    ;;
+	esac
+
+    fi
+
+# Check the disk space on each of the devices
+    [ "$iisys_dev" ] && 
+    {
+        free=`iidsfree $II_SYSTEM`
+        [ $free -lt $iisys_need ] &&
+        {
+	    cat << EOF
+ERROR:
+II_SYSTEM location:
+
+	$II_SYSTEM
+
+has only ${free}KB of free space
+${iisys_need}KB is required to install this package
+EOF
+
+            rc=5
+	}
+    }
+
+    [ "$data_dev" ] && 
+    {
+        free=`iidsfree $II_DATABASE`
+        [ $free -lt $data_need ] &&
+        {
+	    cat << EOF
+ERROR:
+II_DATABASE location:
+
+	$II_DATABASE
+
+has only ${free}KB of free space
+${data_need}KB is required to install this package
+EOF
+
+            rc=6
+	}
+    }
+
+    [ "$ckp_dev" ] && 
+    {
+        free=`iidsfree $II_CHECKPOINT`
+        [ $free -lt $ckp_need ] &&
+        {
+	    cat << EOF
+ERROR:
+II_CHECKPOINT location:
+
+	$II_CHECKPOINT
+
+has only ${free}KB of free space
+${ckp_need}KB is required to install this package
+EOF
+
+            rc=7
+	}
+    }
+
+    [ "$log_dev" ] && 
+    {
+        free=`iidsfree $II_LOG_FILE`
+        [ $free -lt $log_need ] &&
+        {
+	    cat << EOF
+ERROR:
+II_LOG_FILE location:
+
+	$II_LOG_FILE
+
+has only ${free}KB of free space
+${log_need}KB is required to install this package
+EOF
+
+            rc=8
+	}
+    }
+
+    [ "$dual_dev" ] && 
+    {
+        free=`iidsfree $II_DUAL_LOG`
+        [ $free -lt $dual_need ] &&
+        {
+	    cat << EOF
+ERROR:
+II_DUAL_LOG location:
+
+	$II_DUAL_LOG
+
+has only ${free}KB of free space
+${dual_need}KB is required to install this package
+EOF
+
+            rc=9
+	}
+    }
+
+    [ $rc != 0 ] && exit $rc
+}
+
+[ ! -r $II_SYSTEM/ingres/version.rel ] || \
+[ "$rpm_vers" != `head -1 $II_SYSTEM/ingres/version.rel | cut -d' ' -f2` ] &&
+{
+    echo "%rpm_basename% is not installed under $II_SYSTEM"
+    echo "Aborting installation..."
+    exit 1
+}
+
+# Start of main %pre script
+. iisysdep
+inst_id=`ingprenv II_INSTALLATION`
+rcfile=$ETCRCFILES/ingres${inst_id}
+inst_log="2>&1 | cat >> $II_SYSTEM/ingres/files/install.log"
+
+if [ ! -x $II_SYSTEM/ingres/utility/iipmhost -o \
+     ! -x $II_SYSTEM/ingres/utility/iigetres ] ; then
+    echo "%rpm_basename% base package files are missing"
+    echo "Aborting installation..."
+    exit 1
+fi
+
+#Check for install userid, groupid
+CONFIG_HOST=`iipmhost`
+[ "$CONFIG_HOST" ] && \
+{
+    II_USERID=`iigetres ii.${CONFIG_HOST}.setup.owner.user`
+    II_GROUPID=`iigetres ii.${CONFIG_HOST}.setup.owner.group`
+    export II_USERID II_GROUPID
+}
+if [ ! "$II_USERID" -o ! "$II_GROUPID" ] ; then
+    echo "%rpm_basename% base package install was invalid"
+    echo "Aborting installation..."
+    exit 1
+fi
+
+#Check for install userid, groupid
+CONFIG_HOST=`iipmhost`
+II_USERID=`iigetres ii.${CONFIG_HOST}.setup.owner.user`
+II_GROUPID=`iigetres ii.${CONFIG_HOST}.setup.owner.group`
+export II_USERID II_GROUPID
+
+#Check to see if instance is running and try to shut it down
+#Abort the install is we can't
+[ -x $rcfile ] && [ -f $II_SYSTEM/ingres/files/config.dat ] &&
+{
+    eval $rcfile status >& /dev/null
+    if [ $? = 0 ]
+    then
+        eval $rcfile stop $inst_log
+        if [ $? != 0 ] ; then
+            rc=2
+            cat << EOF
+%product_brandname% installation $inst_id is running and could not be cleanly shutdown.
+Aborting installation...
+EOF
+            exit $rc
+        fi
+    fi
+}
+
+# Parse response file and check Data (etc.) locations exist 
+# and have correct permissions
+parse_response
+[ "$II_DATABASE" ] && {
+    check_location "$II_DATABASE" II_DATABASE
+     if [ $? != 0 ] ; then
+            rc=3
+            cat << EOF
+The following location:
+
+	II_DATABASE=$II_DATABASE
+
+is not writable by user '$II_USERID'
+Aborting installation...
+EOF
+            exit $rc
+        fi
+}
+[ "$II_CHECKPOINT" ] && {
+    check_location "$II_CHECKPOINT" II_CHECKPOINT
+    if [ $? != 0 ] ; then
+            rc=3
+            cat << EOF
+The following location:
+
+	II_CHECKPOINT=$II_CHECKPOINT
+
+is not writable by user '$II_USERID'
+Aborting installation...
+EOF
+            exit $rc
+        fi
+}
+
+[ "$II_JOURNAL" ] && {
+    check_location "$II_JOURNAL" II_JOURNAL
+    if [ $? != 0 ] ; then
+            rc=3
+            cat << EOF
+The following location:
+
+	II_JOURNAL=$II_JOURNAL
+
+is not writable by user '$II_USERID'
+Aborting installation...
+EOF
+            exit $rc
+        fi
+}
+
+[ "$II_WORK" ] && {
+    check_location "$II_WORK" II_WORK
+    if [ $? != 0 ] ; then
+            rc=3
+            cat << EOF
+The following location:
+
+	II_WORK=$II_WORK
+
+is not writable by user '$II_USERID'
+Aborting installation...
+EOF
+            exit $rc
+        fi
+}
+
+[ "$II_DUMP" ] && {
+    check_location "$II_DUMP" II_DUMP
+    if [ $? != 0 ] ; then
+            rc=3
+            cat << EOF
+The following location:
+
+	II_DUMP=$II_DUMP
+
+is not writable by user '$II_USERID'
+Aborting installation...
+EOF
+            exit $rc
+        fi
+}
+
+[ "$II_LOG_FILE" ] && {
+    check_location "$II_LOG_FILE" II_LOG_FILE
+    if [ $? != 0 ] ; then
+            rc=3
+            cat << EOF
+The following location:
+
+	II_LOG_FILE=$II_LOG_FILE
+
+is not writable by user '$II_USERID'
+Aborting installation...
+EOF
+            exit $rc
+        fi
+}
+
+[ "$II_DUAL_LOG" ] && {
+    check_location "$II_DUAL_LOG" II_DUAL_LOG
+    if [ $? != 0 ] ; then
+            rc=3
+            cat << EOF
+The following location:
+
+	II_DUAL_LOG=$II_DUAL_LOG
+
+is not writable by user '$II_USERID'
+Aborting installation...
+EOF
+            exit $rc
+        fi
+}
+
+
+# Check we have enough space for install
+check_diskspace
+
+
+exit $rc
+
+%install
+
+%post
+#Set environment from RPM info
+[ -z "$RPM_INSTALL_PREFIX" ] && RPM_INSTALL_PREFIX=%prefix
+II_SYSTEM=$RPM_INSTALL_PREFIX
+PATH=$II_SYSTEM/ingres/bin:$II_SYSTEM/ingres/utility:$PATH
+LD_LIBRARY_PATH=/lib:/usr/lib:$II_SYSTEM/ingres/lib
+export II_SYSTEM PATH LD_LIBRARY_PATH
+unset BASH_ENV
+. iishlib
+
+rc=0 # initialize return code
+
+# Mesg cmds.
+ECHO=echo
+CAT=cat
+
+#Silent install?
+[ -x $II_SYSTEM/ingres/utility/iiread_response ] && \
+	[ -r "$II_RESPONSE_FILE" ] &&
+{
+    silent=`iiread_response SILENT_INSTALL $II_RESPONSE_FILE`
+    [ "$silent" ] &&
+    {
+	ECHO=true
+	CAT=true
+    }
+    export ECHO CAT
+}
+
+#Check for install userid, groupid
+CONFIG_HOST=`iipmhost`
+II_USERID=`iigetres ii.${CONFIG_HOST}.setup.owner.user`
+II_GROUPID=`iigetres ii.${CONFIG_HOST}.setup.owner.group`
+export II_USERID II_GROUPID
+
+# Use response file if one if provided
+IISUFLAG="-rpm"
+[ -f "$II_RESPONSE_FILE" ] && IISUFLAG="$IISUFLAG -exresponse $II_RESPONSE_FILE"
+export IISUFLAG
+
+# correct dir ownership
+chown $II_USERID:$II_GROUPID ${II_SYSTEM}/ingres/.
+for dir in bin demo files ice install lib sig utility vdba
+do
+    [ -d "${II_SYSTEM}/ingres/${dir}/." ] && \
+    chown -R $II_USERID:$II_GROUPID ${II_SYSTEM}/ingres/${dir}/.
+done
+
+# and version.rel
+chown $II_USERID:$II_GROUPID ${II_SYSTEM}/ingres/version.rel
+
+
+    # If ingvalidpw exists then it needs to be owned by root
+    # and have SUID set.
+    [ -x $II_SYSTEM/ingres/bin/ingvalidpw ] && {
+        chown root $II_SYSTEM/ingres/bin/ingvalidpw
+        chmod 4755 $II_SYSTEM/ingres/bin/ingvalidpw
+    }
+
+
+# Run setup for DBMS
+$ECHO 'Setting up %product_name% Intelligent DBMS, this may take some time...'
+$ECHO "See $II_SYSTEM/ingres/files/install.log for more info."
+su -m -c "iisudbms $IISUFLAG || ( echo 'Setup of %product_name% Intelligent DBMS failed.' && echo 'See $II_SYSTEM/ingres/files/install.log for more info.' )" $II_USERID || rc=12
+
+# Run setup security auditing
+su -m -c "iisuc2 $IISUFLAG  || ( echo 'Setup of %product_name% C2 Security Auditing failed.' && echo 'See $II_SYSTEM/ingres/files/install.log for more info.' )" $II_USERID || rc=13
+
+# fix setuid
+set_setuid
+
+exit $rc
+
+%preun
+if [ $1 = 0 ] ; then
+
+[ -z "$RPM_INSTALL_PREFIX" ] && RPM_INSTALL_PREFIX=%prefix
+II_SYSTEM=$RPM_INSTALL_PREFIX
+PATH=$II_SYSTEM/ingres/bin:$II_SYSTEM/ingres/utility:$PATH
+LD_LIBRARY_PATH=/lib:/usr/lib:$II_SYSTEM/ingres/lib
+export II_SYSTEM PATH LD_LIBRARY_PATH
+unset BASH_ENV
+
+rc=0 # initialize return code
+
+# Mesg cmds.
+ECHO=echo
+CAT=cat
+
+#Silent install?
+[ -x $II_SYSTEM/ingres/utility/iiread_response ] && \
+	[ -r "$II_RESPONSE_FILE" ] &&
+{
+    silent=`iiread_response SILENT_INSTALL $II_RESPONSE_FILE`
+    [ "$silent" ] &&
+    {
+	ECHO=true
+	CAT=true
+    }
+    export ECHO CAT
+}
+
+$ECHO "Removing %product_name% Intelligent DBMS..."
+sleep 5
+
+if [ -x $II_SYSTEM/ingres/utility/iisysdep ] ; then
+    . iisysdep
+    inst_id=`ingprenv II_INSTALLATION`
+    rcfile=$ETCRCFILES/ingres${inst_id}
+    inst_log="2>&1 | cat >> $II_SYSTEM/ingres/files/install.log"
+
+    #Check to see if instance is running and try to shut it down
+    #Abort the install is we can't
+    [ -x $rcfile ] && [ -f $II_SYSTEM/ingres/files/config.dat ] &&
+    {
+        eval $rcfile status >& /dev/null
+        if [ $? = 0 ]
+        then
+            eval $rcfile stop $inst_log
+            if [ $? != 0 ] ; then
+                rc=2
+                cat << EOF
+%product_brandname% installation $inst_id is running and could not be cleanly shutdown.
+Aborting installation...
+EOF
+                exit $rc
+            fi
+        fi
+    }
+
+
+fi
+
+exit $rc
+
+else
+    exit 0
+fi
+
+%files
+

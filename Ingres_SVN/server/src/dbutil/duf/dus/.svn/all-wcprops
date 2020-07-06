@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/ingres/!svn/ver/1/main/src/dbutil/duf/dus
+END
+sysmod.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/dbutil/duf/dus/sysmod.exe.manifest
+END
+dusdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/dbutil/duf/dus/dusdata.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/dbutil/duf/dus/Jamfile
+END
+dusutil.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/dbutil/duf/dus/dusutil.c
+END
+sysmod.lot
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/dbutil/duf/dus/sysmod.lot
+END
+dusysmod.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/dbutil/duf/dus/dusysmod.qsc
+END

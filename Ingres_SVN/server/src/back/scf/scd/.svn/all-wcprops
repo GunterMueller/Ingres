@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/ingres/!svn/ver/1/main/src/back/scf/scd
+END
+scdnote.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/scf/scd/scdnote.c
+END
+iistar.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/back/scf/scd/iistar.exe.manifest
+END
+iirms.lot
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/scf/scd/iirms.lot
+END
+scfdiag.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/scf/scd/scfdiag.c
+END
+scddata.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/scf/scd/scddata.c
+END
+scdmo.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/scf/scd/scdmo.c
+END
+scddbfcn.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/scf/scd/scddbfcn.c
+END
+iidbms.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/back/scf/scd/iidbms.exe.manifest
+END
+scdmain.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/scf/scd/scdmain.c
+END
+dmfrcp.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/back/scf/scd/dmfrcp.exe.manifest
+END
+iidbms.lot
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/scf/scd/iidbms.lot
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/scf/scd/MANIFEST
+END
+scdopt.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/scf/scd/scdopt.c
+END
+svr_wnt.hrd
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/back/scf/scd/svr_wnt.hrd
+END
+scdinit.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/scf/scd/scdinit.c
+END

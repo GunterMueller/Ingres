@@ -1,0 +1,56 @@
+-- 
+--  Copyright (c) 2004 Ingres Corporation
+-- 
+--  This file contains the configuration rules for INGRES Internet 
+--  Communication Server (NT version)
+-- 
+-- start-up resources
+ii.$.ingstart.$.icesvr:                0, MAX = 1;
+ii.$.icesvr.$.server_class:            "ICESVR";
+-- connection parameters
+ii.$.icesvr.$.connect_limit:                32;
+-- dictionary
+ii.$.icesvr.$.dictionary_node:         "`ingprsym 'II_GCN${II_INSTALLATION}_LCL_VNODE'`";
+ii.$.icesvr.$.dictionary_name:         "icesvr";
+ii.$.icesvr.$.dictionary_class:        "ingres";
+ii.$.icesvr.$.dictionary_driver:       "oiddi";
+-- client library
+ii.$.icesvr.$.client_lib:              "oiice";
+-- rss
+ii.$.icesvr.$.rights_table:            100;
+ii.$.icesvr.$.users_table:             50;
+-- wss
+ii.$.icesvr.$.privilege_user:          "ingres";
+ii.$.icesvr.$.ignore_user_case:        ON;
+-- wcs
+ii.$.icesvr.$.units_table:             10;
+ii.$.icesvr.$.documents_table:         50;
+ii.$.icesvr.$.locations_table:         20;
+ii.$.icesvr.$.extensions_table:        20;
+ii.$.icesvr.$.files_table:             50;
+ii.$.icesvr.$.req_timeout:             600;
+ii.$.icesvr.$.html_home:               IF( "`ingprsym II_HTML_ROOT`" IS "" )
+                                           "html_document_root"
+                                       ELSE
+                                           "`ingprsym II_HTML_ROOT`"
+                                       ENDIF;
+ii.$.icesvr.$.dir_default_location:    "default";
+-- wsm
+ii.$.icesvr.$.user_session_table:      50;
+ii.$.icesvr.$.system_timeout:          300, MIN = -1, SIGNED_INT;
+ii.$.icesvr.$.db_conn_timeout:         300;
+ii.$.icesvr.$.default_dbuser:          "icedbuser";
+-- wps
+ii.$.icesvr.$.docsession_table:        50;
+ii.$.icesvr.$.sess_timeout:            600;
+ii.$.icesvr.$.block_size:              2048;
+ii.$.icesvr.$.block_count:             100;
+ii.$.icesvr.$.app_dir:                 "${II_SYSTEM}/ingres/ice/bin";
+ii.$.icesvr.$.allow_dsql:              ON;
+ii.$.icesvr.$.allow_exeapp:            ON;
+ii.$.icesvr.$.allow_dbovr:             ON;
+ii.$.icesvr.$.default_database:        "icedb";
+-- wsf
+ii.$.icesvr.$.vars_table:              50;
+ii.$.icesvr.$.apps_table:              10;
+ii.$.icesvr.$.hex_session_ids:         OFF;

@@ -1,0 +1,23 @@
+Summary: License Agreement for %rpm_product%
+Name: %rpm_basename%-license-%rpm_license%
+Version: %rpm_version%
+Release: %rpm_release%
+License: %rpm_license%
+Group: %rpm_group%
+Source: none
+Patch: none
+Vendor: %rpm_vendor%
+URL: %rpm_url%
+BuildRoot: %rpm_buildroot%
+Prefix: %rpm_prefix%
+
+AutoReq: 0
+%define _unpackaged_files_terminate_build 0
+%define _missing_doc_files_terminate_build 0
+
+%description
+License Agreement for Ingres 2006
+Having this package installed indicates the %rpm_license% license has been
+viewed and accepted.
+
+%files

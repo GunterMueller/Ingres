@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/sig/openapi/syncapiw
+END
+apitran.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/sig/openapi/syncapiw/apitran.c
+END
+apiquery.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/sig/openapi/syncapiw/apiquery.c
+END
+sample_build.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/sig/openapi/syncapiw/sample_build.dcl
+END
+apisupp.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/sig/openapi/syncapiw/apisupp.c
+END
+sapiwi.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/sig/openapi/syncapiw/sapiwi.h
+END
+syncapiw.mak
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/sig/openapi/syncapiw/syncapiw.mak
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/sig/openapi/syncapiw/Jamfile
+END
+apiconn.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/sig/openapi/syncapiw/apiconn.c
+END
+sapiw.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/sig/openapi/syncapiw/sapiw.h
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/sig/openapi/syncapiw/readme.txt
+END
+apievent.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/sig/openapi/syncapiw/apievent.c
+END
+testsapi.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/sig/openapi/syncapiw/testsapi.c
+END
+apiproc.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/sig/openapi/syncapiw/apiproc.c
+END
+syncapiw.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/sig/openapi/syncapiw/syncapiw.dcl
+END

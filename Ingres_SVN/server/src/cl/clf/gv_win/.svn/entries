@@ -1,0 +1,52 @@
+8
+
+dir
+33
+http://code.ingres.com/ingres/main/src/cl/clf/gv_win
+http://code.ingres.com/ingres
+
+
+
+2008-03-20T07:36:25.925856Z
+1
+root
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+45b5d43f-8932-4c86-835a-3654e5842839
+
+gv.rc.template
+file
+
+
+
+
+2008-05-18T01:27:39.000000Z
+763c51b5e632ee86de9c974483aa9830
+2008-03-20T07:36:25.925856Z
+1
+root
+
+resource.h
+file
+
+
+
+
+2008-05-18T01:27:39.000000Z
+acbabb4b59635c2d0152a6ae2b563a7c
+2008-03-20T07:36:25.925856Z
+1
+root
+

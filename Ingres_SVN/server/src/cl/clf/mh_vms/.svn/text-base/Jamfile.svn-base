@@ -1,0 +1,9 @@
+#
+# Jamfile file for cl!clf!mh_vms
+#
+
+SubDir ING_SRC cl clf mh_vms ;
+
+IISUBSYS cl clf mh_vms ;
+
+IILIBRARY COMPATLIB : mhpk.c mhint.c mh.c mhmul.mar mhdiv.mar mhdec.mar ;

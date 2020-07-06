@@ -1,0 +1,361 @@
+#!/bin/bash
+#  Copyright (c) 2004 Ingres Corporation
+#
+#  Name:
+#	iisubr -- set-up script for Ingres Protocol Bridge.
+#
+#  Usage:
+#	iisubr -batch [inst_code]
+#
+#  Description:
+#	This script should only be called by the Ingres installation
+#	utility or by the ingmknfs wrapper.  It sets up Ingres
+#	Protocol Bridge on a server.
+#
+#  Exit Status:
+#	0	setup procedure completed.
+#	1	setup procedure did not complete.
+#
+#  PROGRAM = iisubr
+#
+#  DEST = utility
+#----------------------------------------------------------------------------
+
+if [ "$1" = "-rmpkg" ] ; then
+   II_CONF_DIR=$II_SYSTEM/ingres/files
+ 
+   cp -p $II_CONF_DIR/config.dat $II_CONF_DIR/config.tmp
+ 
+   trap "cp -p $II_CONF_DIR/config.tmp $II_CONF_DIR/config.dat; \
+         rm -f $II_CONF_DIR/config.tmp; exit 1" 1 2 3 15
+ 
+   cat $II_CONF_DIR/config.dat | grep -v 'gcb' | \
+       grep -v '\.bridge'  >$II_CONF_DIR/config.new
+ 
+   rm -f $II_CONF_DIR/config.dat
+ 
+   mv $II_CONF_DIR/config.new $II_CONF_DIR/config.dat
+ 
+   rm -f $II_CONF_DIR/config.tmp
+ 
+   cat << !
+  Ingres Protocol Bridge has been removed.
+ 
+!
+
+else
+
+# set up the shared library dummies for SNAplus2, if necessary
+[ "$VERS" = "hpb_us5" -o "$VERS" = "hp8_us5" ] && [ ! -d "/opt/sna/lib" ] &&
+{
+    [ -f $II_SYSTEM/ingres/lib/libappc.1 ] && rm $II_SYSTEM/ingres/lib/libappc.1
+    [ -f $II_SYSTEM/ingres/lib/libcsv.1 ] && rm $II_SYSTEM/ingres/lib/libcsv.1
+    [ -f $II_SYSTEM/ingres/lib/libmgr.sl ] && rm $II_SYSTEM/ingres/lib/libmgr.sl
+    ln -s $II_SYSTEM/ingres/lib/libcompat.1.sl $II_SYSTEM/ingres/lib/libappc.1
+    ln -s $II_SYSTEM/ingres/lib/libcompat.1.sl $II_SYSTEM/ingres/lib/libcsv.1
+    ln -s $II_SYSTEM/ingres/lib/libcompat.1.sl $II_SYSTEM/ingres/lib/libmgr.sl
+}
+
+WRITE_RESPONSE=false
+READ_RESPONSE=false
+RESOUTFILE=ingrsp.rsp
+RESINFILE=ingrsp.rsp 
+RPM=false
+BATCH=false
+NOTBATCH=true
+INSTLOG="2>&1 | tee -a $II_SYSTEM/ingres/files/install.log"
+
+# check for batch flag
+while [ $# != 0 ]
+do
+    if [ "$1" = "-batch" ] ; then
+       BATCH=true
+       NOTBATCH=false
+       INSTLOG="2>&1 | cat >> $II_SYSTEM/ingres/files/install.log"
+       shift
+    elif [ "$1" = "-vbatch" ] ; then
+       BATCH=true
+       NOTBATCH=false
+       INSTLOG="2>&1 | tee -a $II_SYSTEM/ingres/files/install.log"
+       shift
+    elif [ "$1" = "-mkresponse" ] ; then
+       WRITE_RESPONSE=true
+       BATCH=false
+       NOTBATCH=true
+       INSTLOG="2>&1 | tee -a $II_SYSTEM/ingres/files/install.log"
+       shift
+       if [ "$1" ] ; then
+            RESOUTFILE="$1"
+       	    shift
+       fi
+    elif [ "$1" = "-exresponse" ] ; then
+       READ_RESPONSE=true
+       BATCH=true
+       NOTBATCH=false
+       shift
+       if [ "$1" ] ; then
+           RESINFILE="$1"
+           shift
+       fi
+    elif [ "$1" = "-rpm" ] ; then
+       BATCH=true
+       NOTBATCH=false
+       INSTLOG="2>&1 | cat >> $II_SYSTEM/ingres/files/install.log"
+       RPM=true
+       shift
+    else
+       BATCH=false
+       NOTBATCH=true
+       INSTLOG="2>&1 | tee -a $II_SYSTEM/ingres/files/install.log"
+       shift
+    fi
+done # [ $# != 0 ]
+
+
+export BATCH
+export INSTLOG
+export WRITE_RESPONSE
+export READ_RESPONSE
+export RESOUTFILE 
+export RESINFILE 
+
+
+if [ "$WRITE_RESPONSE" = "false" ] ; then
+trap "rm -f $II_SYSTEM/ingres/files/config.lck /tmp/*.$$ 1>/dev/null \
+   2>/dev/null; exit 1" 0 1 2 3 15
+fi
+
+do_iisubridge()
+{
+echo "Setting up the Ingres Protocol Bridge..."
+if [ "$WRITE_RESPONSE" = "false" ] ; then
+trap "rm -f $II_SYSTEM/ingres/files/config.lck /tmp/*.$$ 1>/dev/null \
+   2>/dev/null; exit 1" 0 1 2 3 15
+fi
+
+. iisysdep
+
+. iishlib
+
+check_response_file #if mkresponse mode make sure that the response files exist.
+
+if [ "$WRITE_RESPONSE" = "true" ] ; then 
+  mkresponse_msg
+  eval check_response_write II_CONFIG $II_CONFIG replace
+else
+    iisulock "Ingres Protocol Bridge setup" || exit 1
+
+touch_files # make sure symbol.tbl and config.dat exist
+
+# override local II_CONFIG symbol.tbl setting
+  ingsetenv II_CONFIG $II_CONFIG
+
+SERVER_HOST=`iigetres ii."*".config.server_host` || exit 1
+
+# grant owner and root all privileges 
+iisetres ii.$CONFIG_HOST.privileges.user.root \
+   SERVER_CONTROL,NET_ADMIN,MONITOR,TRUSTED
+iisetres ii.$CONFIG_HOST.privileges.user.$ING_USER \
+   SERVER_CONTROL,NET_ADMIN,MONITOR,TRUSTED
+
+# set gcn local_vnode resource
+    iisetres ii.$CONFIG_HOST.gcn.local_vnode $HOSTNAME
+
+
+[ -z "$SERVER_HOST" ]  &&
+{
+   # check for II_GCNxx_LCL_VNODE
+   SERVER_ID=`eval II_ADMIN=$II_SYSTEM/ingres/files ingprenv II_INSTALLATION`
+   [ "$SERVER_ID" ] && 
+   {
+      # convert FQDNs as per PMhost()
+      SERVER_HOST=`eval II_ADMIN=$II_SYSTEM/ingres/files \
+         ingprenv II_GCN${SERVER_ID}_LCL_VNODE | tr . _`
+   }
+}
+
+if [ -n "$SERVER_HOST" -a "$SERVER_HOST" != "$CONFIG_HOST" ] ; then
+    CLUSTER_ID=""
+    if $CLUSTERSUPPORT ; then
+	CLUSTER_ID="`iigetres \
+	    ii.$CONFIG_HOST.config.cluster.id`"
+	case "$CLUSTER_ID" in
+	[1-9]*)     # Setup for cluster
+	    ;;
+	*)          # normal non-server setup.
+	    CLUSTER_ID=""
+	    ;;
+	esac
+    fi
+    [ -z "$CLUSTER_ID" ] &&
+    { 
+	cat << !
+
+The Ingres Protocol Bridge  installation located at:
+
+	$II_SYSTEM
+
+is already set up to run from:
+
+	$SERVER_HOST
+!
+	$BATCH || pause
+	trap : 0
+	clean_exit
+    }
+fi
+
+if [ -f $II_SYSTEM/ingres/install/release.dat ]; then
+   VERSION=`$II_SYSTEM/ingres/install/ingbuild -version=bridge` ||
+   {
+       cat << !
+
+$VERSION
+
+!
+      exit 1
+   }
+else
+   VERSION=`head -1 $II_SYSTEM/ingres/version.rel` ||
+   {
+       cat << !
+
+Missing file $II_SYSTEM/ingres/version.rel
+
+!
+      exit 1
+   }
+fi
+
+RELEASE_ID=`echo $VERSION | sed "s/[ ().\/]//g"`
+
+SETUP=`iigetres ii.$CONFIG_HOST.config.bridge.$RELEASE_ID`
+if [ "$SETUP" = "complete" ] ; then
+   cat << !
+
+The $VERSION version of the Ingres Protocol Bridge has
+already been set up on local host "$HOSTNAME".
+
+!
+   $BATCH || pause
+   trap : 0
+   clean_exit
+fi
+cat << ! 
+
+This procedure will set up the following release of the Ingres
+Protocol Bridge:
+
+	$VERSION
+
+to run on local host:
+ 
+	$HOSTNAME
+
+This installation will be owned by:
+
+	$ING_USER
+!
+
+fi #end WRITE_RESPONSE
+
+#
+# get II_INSTALLATION 
+#
+[ -z "$II_INSTALLATION" ] && II_INSTALLATION=`ingprenv II_INSTALLATION`
+if [ "$II_INSTALLATION" ] ; then 
+   cat << !
+
+II_INSTALLATION configured as $II_INSTALLATION. 
+!
+if [ "$WRITE_RESPONSE" = "true" ] ; then
+   eval check_response_write II_INSTALLATION $II_INSTALLATION replace
+else
+   ingsetenv II_INSTALLATION $II_INSTALLATION
+fi
+else
+   if $BATCH ; then
+      if [ "$READ_RESPONSE" = "true" ] ; then
+         II_INSTALLATION=`iiread_response II_INSTALLATION $RESINFILE`
+         [ -z "$II_INSTALLATION" ] && II_INSTALLATION="II"
+      elif [ "$2" ] ; then
+         case "$2" in 
+            [a-zA-Z][a-zA-Z0-9])
+               II_INSTALLATION="$2"
+               ;;
+            *)
+               cat << !
+
+The installation code you have specified is invalid. The first character
+code must be a letter; the second may be a letter or a number.
+
+!
+               exit 1
+               ;;
+         esac
+      else
+         II_INSTALLATION="II"
+      fi
+      cat << !
+
+II_INSTALLATION configured as $II_INSTALLATION. 
+!
+   else
+      get_installation_code
+   fi
+   if [ "$WRITE_RESPONSE" = "true" ] ; then
+	 eval check_response_write II_INSTALLATION $II_INSTALLATION replace
+   else 
+         ingsetenv II_INSTALLATION $II_INSTALLATION
+   fi
+fi
+
+   if [ "$WRITE_RESPONSE" = "false" ] ; then
+       ingsetenv II_GCN${II_INSTALLATION}_LCL_VNODE $HOSTNAME
+   fi
+
+$BATCH || prompt "Do you want to continue this setup procedure?" y \
+|| exit 1
+
+if [ "$WRITE_RESPONSE" = "false" ] ; then
+   if [ "$SETUP" != "defaults" ] ; then
+      # generate default configuration resources
+      echo ""
+      echo "Generating default configuration..."
+      if iigenres $CONFIG_HOST $II_SYSTEM/ingres/files/bridge.rfm ; then
+        iisetres ii.$CONFIG_HOST.config.bridge.$RELEASE_ID defaults
+      else
+         cat << !
+An error occurred while generating the default configuration.
+
+!
+         exit 1
+      fi
+   else
+      cat << !
+
+Default configuration generated.
+!
+   fi
+
+
+iisetres ii.$CONFIG_HOST.config.bridge.$RELEASE_ID complete
+remove_temp_resources
+cat << !
+Ingres Protocol Bridge has been successfully set up in this installation.
+
+You can now use the "ingstart" command to start your Ingres client.
+Refer to the Ingres Installation Guide for more information about
+starting and using Ingres.
+
+!
+fi #end of WRITE_RESPONSE
+   $BATCH || pause
+trap : 0
+clean_exit
+}
+
+eval do_iisubridge $INSTLOG
+trap : 0
+exit 0
+fi

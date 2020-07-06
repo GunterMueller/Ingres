@@ -1,0 +1,11 @@
+#
+# Jamfile file for common!ddf!ddg
+#
+
+SubDir ING_SRC common ddf ddg ;
+
+IISUBSYS common ddf ddg ;
+
+
+IILIBRARY DDFLIB : ddginit.c ddgexec.c ;
+

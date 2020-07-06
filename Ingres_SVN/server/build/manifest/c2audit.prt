@@ -1,0 +1,10 @@
+PART   c2audit
+   capability CI_RESRC_CNTRL
+   DIRECTORY ingres!files
+   BUILD_DIR (ING_BUILD)!files
+      FILE secure.crs
+      FILE secure.rfm
+   DIRECTORY ingres!utility
+   BUILD_DIR (ING_BUILD)!utility
+      SCRIPT SETUP iisuc2
+      EXECUTABLE iiaudloc 

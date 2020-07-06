@@ -1,0 +1,20 @@
+#
+# Jamfile file for front!st!install_vms
+#
+# History:
+#	24-jan-2005 (abbjo03)
+#	    Created.
+#	30-apr-2007 (upake01)
+#	    Added line to execute rule IIKitInstalData for kitinstal.data.
+
+SubDir ING_SRC front st install_vms ;
+
+IISUBSYS front st install_vms ;
+
+
+IIUTILEXE buildrel : buildrel.c ;
+IINEEDLIBS buildrel : INSTALLLIB SHFRAMELIB SHQLIB SHCOMPATLIB ;
+
+IILIBRARY INSTALLLIB : ipcl.c ;
+
+IIKitInstalData kitinstal.data ;

@@ -1,0 +1,445 @@
+#!/bin/bash
+#
+# Copyright (c) 2004 Ingres Corporation
+#
+# merge INGRES libraries into libingres.a
+#
+# DEST = utility
+
+[ $SHELL_DEBUG ] && set -x
+
+if [ -n "$ING_VERS" ] ; then
+
+    # In a baroque environment, we either are building the base area,
+    # or a private area; the former can be identified by comparing ING_BUILD
+    # with II_SYSTEM (they should be the same); the latter should have a 
+    # "BASE" file indicating which base area they ppathed against.
+    #
+    # "BASE" file should have been created on each ppath invocation
+    #	Format:  basepath=s00
+    #
+
+    # First get physical dirnames using csh (sh may not translate symlinks)
+    #
+    bdir=`csh -fc "cd $ING_BUILD ; pwd"`
+    idir=`csh -fc "cd $II_SYSTEM/ingres ; pwd"`
+
+    if [ "$bdir" = "$idir" ] ; then
+	bnoise="$ING_VERS"
+
+    else
+	basefile="$ING_SRC/clients/$ING_VERS/BASE"
+	if [ ! -r "$basefile" ] ; then
+	    echo "Unable to determine base path used; missing file."
+	    echo "File:  $basefile"
+	    exit 1
+	fi
+
+	# Extract base string; add "src" below
+	#
+	bnoise=`grep "^basepath=" $basefile | head -1 | cut -f2 -d=`
+	if [ -z "$bnoise" ] ; then
+	    echo "Unable to determine base path used; odd format."
+	    echo "File:  $basefile"
+	    exit 1
+	fi
+    fi
+
+    tnoise="__noise__"
+    bnoise="/$bnoise/src"
+    pnoise="/$ING_VERS/src"
+
+else
+    # Non-baroque; initialize these to null
+    #
+    tnoise=""
+    bnoise=""
+    pnoise=""
+fi
+
+#
+# Translates dirname $1 to physical location if it exists.
+#
+# Supply:
+#	$1	: directory (full path), with "tnoise" in string.
+#
+# Return:
+#	""	: if non-baroque, and $1 doesn't exist
+#	$1	: if non-baroque, and $1 does exist
+#	base    : if baroque, and ppath dir for $1 doesn't exist, but base does
+#	private	: if baroque, and ppath dir for $1 does exist
+#	""	: if baroque, and neither base nor ppath dir for $1 exists
+#
+translate_dir()
+{
+
+    tdir=""
+    if [ -n "$ING_VERS" ] ; then
+	# baroque; use base, but override with private if there
+	#
+	xdir=`echo "$1" | sed "s@$tnoise@$bnoise@"`
+	[ -d "$xdir" ] && tdir="$xdir"
+	xdir=`echo "$1" | sed "s@$tnoise@$pnoise@"`
+	[ -d "$xdir" ] && tdir="$xdir"
+
+    else
+	[ -d "$1" ] && tdir="$1" 
+    fi
+
+    echo "$tdir"
+    return 0
+}
+
+. readvers
+vers=$config
+# Set hybrid variables. If conf_ADD_ON32 is set then it's reverse hybrid
+#
+HB=64 ## hybrid build
+RB=32 ## regular build
+[ "$conf_ADD_ON32" ] &&
+{
+    HB=32
+    RB=64
+}
+
+
+do_reg=true do_hyb=false
+
+while [ $# -gt 0 ]
+do
+    case $1 in
+        -lp${HB})          do_hyb=true; do_reg=false; shift ;;
+        -lp${HB})          do_reg=true; shift ;;
+    esac
+done
+
+if ($do_hyb && $do_reg)
+then
+        echo    "$0: 32 and 64 bit libraries can not be build at the same time."
+        exit
+fi
+
+if $do_hyb
+then
+LPHB_DIR=lp${HB}/
+INGLIB=$ING_BUILD/lib/$LPHB_DIR
+else
+INGLIB=$ING_BUILD/lib
+fi
+
+# If it is making 64-bit build on AIX platform
+# specify the 64 bit mode for ar command.
+if [ "$vers" = "ris_u64" ] || \
+   ( [ $vers = "rs4_us5" ] && [ $do_hyb = "true" ] ) ; then
+    OBJECT_MODE="64" ; export OBJECT_MODE
+fi
+
+cd $INGLIB
+
+case $vers in
+        ncr_us5|sx1_us5|mx3_us5|386_us5)
+                splitlibs $*
+                exit $?
+                ;;
+        *) ;;
+esac
+
+. iisysdep
+
+# see if they want stripped
+strip=false
+for a in $*
+do
+	case $a in
+	-s) strip=true;;
+	*) echo "unknown option, $a" exit 1;;
+	esac
+done
+
+case $vers in
+    	ds3_ulx)	SYMDEFNAME='__________ELEL_' ;;
+    	axp_osf)	SYMDEFNAME='________64ELEL_' ;;
+    	*)		SYMDEFNAME='__.SYMDEF' ;;
+esac
+
+
+if [ -f libingres.a ]
+then
+	echo "replacing $INGLIB/libingres.a ..."
+	rm -f $INGLIB/libingres.a
+else
+	echo "creating $INGLIB/libingres.a ..."
+fi
+
+# setup trap(s)
+trap 'rm -rf $objs $allobjs $objdir; exit 1' 1 2 3 15
+
+# setup temp directories
+TMP=$INGLIB/tmp
+(mkdir $TMP) 2>/dev/null
+objdir=$TMP/mgd$$
+allobjs=$TMP/mga$$
+objs=$TMP/mgb$$
+
+# libraries wanted
+lnames="abfrt adf afe compat cuf fd feds fmt ft gcf generate iaom iiapi ilrf"
+lnames="$lnames raat mt ioi interp q qgca qsys qxa runsys runtime sqlca uf ug"
+lnames="$lnames ui oo ddf iceclient"
+
+# any special libraries?
+case $vers in
+	pyr_us5)	lnames="$lnames /usr/local/lib/ingres/libucb";;
+    	*)		;;
+esac
+
+# OS Threads?
+CS_DIR=
+CSMT_DIR=
+[ -d $ING_SRC/cl/clf$bnoise/cs_unix   ] && CS_DIR=cl/clf$tnoise/cs_unix
+[ -d $ING_SRC/cl/clf$bnoise/csmt_unix ] && CSMT_DIR=cl/clf$tnoise/csmt_unix
+
+# directory list for object removals (unwanted)
+dlist="cl/clf$tnoise/di_unix cl/clf$tnoise/ck_unix_win cl/clf$tnoise/jf_unix_win cl/clf$tnoise/sr_unix_win \
+	$CS_DIR $CSMT_DIR"
+dlist="$dlist back/dmf$tnoise/lg back/dmf$tnoise/lgk \
+	back/dmf$tnoise/lk gl/glf$tnoise/cx"
+
+# unwanted object list within wanted directories (libcompat.a)
+unwanted="mucs.o gcccl.o gcapsub.o gcctcp.o gccdecnet.o gccptbl.o \
+	bsdnet.o bsnetw.o cspipe.o cvnet.o iamiltab.o clnt_tcp.o \
+	clnt_udp.o pmap_rmt.o svc.o svc_run.o svc_tcp.o meuse.o \
+	meconsist.o medump.o mebdump.o meberror.o mexdump.o fegeterr.o \
+	pcsspawn.o pcfspawn.o "
+
+[ "$vers" = "rmx_us5" -o "$vers" = "rux_us5" ] &&
+unwanted="$unwanted iiufutil.o "
+
+# wanted object list within unwanted directories (libcompat.a)
+wanted="cxapi.o cxdata.o cxnuma.o"
+
+# build "unwanted" list from directories
+echo "building unwanted object list ..."
+here=`pwd`
+echo "" >$allobjs
+echo "" >$objs
+for i in $dlist
+do
+	tdir=`translate_dir "$ING_SRC/$i"`
+
+	# legal directory?
+	if [ -z "$tdir" ]
+	then
+		tdir=`echo "$ING_SRC/$i" | sed "s@$tnoise@@"`
+		echo "Can't find:  \"$tdir\""
+		echo "...aborting..."
+		exit 1
+	fi
+
+	#  get directory source file list
+	#
+	( cd $tdir ; ls -1 *.c *.s *.roc 2>/dev/null ) | \
+		sed -e 's/\.c$/\.o/g' -e 's/\.s$/\.o/g' -e 's/\.roc$/\.o/g' \
+		>> $allobjs 2>/dev/null 
+
+	# get source directory (main.c) file list
+	( cd $tdir ; ls -1 *.o ) >> $objs 2>/dev/null
+done
+
+unwanted="$unwanted `cat $allobjs | tr '\012' ' '`"
+wanted="$wanted `cat $objs | tr '\012' ' '`"
+
+# now remove any "wanted" objects from unwanted list
+echo "building wanted object list ..."
+ufiles=""
+echo "$wanted" >$allobjs
+for i in $unwanted
+do
+	if grep -s $i $allobjs >/dev/null 2>/dev/null
+	then
+		continue
+	else
+		ufiles="$ufiles $i"
+	fi
+done
+unwanted="$ufiles"
+
+echo "checking for missing libraries ..."
+missing=false
+for i in $lnames
+do
+	if [ -f lib$i.a ]
+	then
+		libs="$libs lib$i.a"
+	else
+		if [ -f $i.a ]
+		then
+			libs="$libs $i.a"
+		else
+			echo "$i.a not found" >&2
+			missing=true
+		fi
+	fi
+done
+
+if $missing
+then
+	echo "aborting" >&2
+	exit 2
+fi
+
+echo "fetching library object list ..."
+echo "" >$objs
+for lib in $libs
+do
+	ar t $lib >>$objs
+done
+sed -e "/$SYMDEFNAME/d" $objs >$allobjs
+
+echo "checking for duplicates ..."
+sort $allobjs | uniq -d > $objs
+if [ -s $objs ]
+then
+	echo "repeated objects - aborting" >&2
+	objlist=`cat $objs`
+	for obj in $objlist
+	do
+		for lib in $libs
+		do
+			if ar t $lib $obj 1>/dev/null 2>&1
+			then
+				echo "$lib: $obj" >&2
+			fi
+		done
+	done
+	exit 3
+fi
+
+echo "OK for merge ..."
+
+do_lorder=true
+if [ "$HASRANLIB" != "" -o "$vers" = "sgi_us5" ] 
+then
+	do_lorder=false
+fi
+
+# now do slow or fast object list generation...
+if $do_lorder
+then
+	echo "lorder ..."
+	# Sun OS 4.0 lorder is buggy; it lists archive names along with objects
+	case $vers in
+    	ds3_ulx)
+	   lorder $libs > $allobjs 2>/dev/null
+	   ;;
+    	*)
+	   lorder $libs | grep -v '\.a' > $allobjs 2>/dev/null
+	   ;;
+	esac
+
+	echo "tsort ..."
+	# clean up output to screen of tsort errors for mx3_us5
+	case $vers in
+    	*)
+	   tsort $allobjs 2> /dev/null | grep -v tsort > $objs
+	   ;;
+	esac
+else
+	sort $allobjs >$objs 2>/dev/null
+fi
+
+echo "extracting objects from libraries ..."
+rm -rf $objdir
+mkdir $objdir
+cd $objdir
+for lib in $libs
+do
+	echo "	$lib"
+	if [ -f $INGLIB/$lib ]
+	then
+		ar x$AR_L_OPT $INGLIB/$lib
+	else
+		ar x$AR_L_OPT $lib
+	fi
+	rm -f $SYMDEFNAME
+done
+
+ar x$AR_L_OPT $INGLIB/libulf.a ultrace.o
+
+# do stripping
+if $strip
+then
+	echo "stripping symbols ..."
+	olist=`cat $objs`
+	for i in $olist
+	do
+		strip $i
+	done
+fi
+
+echo "building libingres.a ..."
+xargs ar cq$AR_L_OPT $INGLIB/libingres.a < $objs
+ar r $INGLIB/libingres.a ultrace.o
+
+echo "removing crypt from gcapwd.c"
+
+tdir=`translate_dir "$ING_SRC/cl/clf$tnoise/gc_unix"`
+cd $tdir
+
+if [ -x $ING_SRC/bin/ming ] ; then
+    if [ `grep NO_CRYPT gcapwd.c | wc -l` -ge 1 ]
+    then
+	if $do_reg
+	then
+	    ming OPTIM="-DNO_CRYPT" gcapwd.o
+	else
+  	    ming64 OPTIM="-DNO_CRYPT" gcapwd.o
+	fi
+
+	if [ ! -f ${LPHB_DIR}gcapwd.o ]
+	then
+		echo "gcapwd.o didn't compile!"
+	else
+		ar r $INGLIB/libingres.a ${LPHB_DIR}gcapwd.o
+		rm -f ${LPHB_DIR}gcapwd.o
+	fi
+    else
+	echo "gcapwd.c didn't have NO_CRYPT symbol!"
+    fi
+elif [ -x `which jam` ] ; then
+	IIOPTIM=-DNO_CRYPT
+	if $do_reg
+        then
+	    jam '<cl!clf!gc_unix>'gcapwd.o
+	    mv gcapwd.o $INGLIB
+	else
+	    jam '<cl!clf!gc_unix>'${LPHB_DIR}gcapwd.o
+	    mv ${LPHB_DIR}gcapwd.o $INGLIB
+	fi
+else
+     echo "couldn't compile gcapwd.o"
+fi
+
+echo "concurrent cleanup ..."
+cd $INGLIB
+rm -rf $objs $allobjs $objdir &
+
+echo "removing unwanted objects from libingres.a ..."
+ar d$AR_L_OPT libingres.a $unwanted 2>/dev/null
+
+if [ "$HASRANLIB" != "" -o "$vers" = "sgi_us5" ]
+then
+	echo "polishing libingres.a ..."
+	case $vers in
+		sgi_us5)	ar ts$AR_L_OPT libingres.a;;
+		*)		ranlib libingres.a;;
+	esac
+          if [ "$vers" != "sgi_us5" ]
+          then 
+	       ranlib libingres.a
+          fi
+fi
+chmod 644 libingres.a
+
+wait
+echo "done"
+exit 0

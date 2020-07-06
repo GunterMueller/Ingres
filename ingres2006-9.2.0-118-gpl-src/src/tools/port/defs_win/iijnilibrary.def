@@ -1,0 +1,12 @@
+; History:
+; 	17-Jun-2004 (drivi01)
+;	    Created.
+;	22-Jun-2004 (drivi01)
+;	    Added two more functions executeImmediate and
+;	    executeProcedure.
+
+EXPORTS
+	Java_ca_ingres_utm_sql_SqlQuery_execute	@1				
+	Java_ca_ingres_utm_sql_SqlQuery_fetch	@2				
+	Java_ca_ingres_utm_sql_SqlQuery_executeImmediate	@3
+	Java_ca_ingres_utm_sql_SqlQuery_executeProcedure	@4

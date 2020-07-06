@@ -1,0 +1,6 @@
+config=hpb_us5
+option=DELIM_TEST
+option=DBL
+option=B64
+option=INGRESII
+build=00

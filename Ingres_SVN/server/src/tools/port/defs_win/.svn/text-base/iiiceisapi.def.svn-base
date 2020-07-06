@@ -1,0 +1,10 @@
+;  History:
+;	11-Jun-2004 (drivi01)
+;	    Added ordinals.
+
+LIBRARY IIICEISAPI
+EXPORTS
+HttpExtensionProc		@1				
+GetExtensionVersion		@2				
+TerminateExtension		@3				
+    

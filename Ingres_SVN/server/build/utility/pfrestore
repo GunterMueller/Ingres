@@ -1,0 +1,18 @@
+#!/bin/bash
+#  Copyright (c) 2004 Ingres Corporation
+#  Name: pfrestore
+#
+#  Usage:
+#   wrapper for pffiles	
+#
+#  DEST = utility
+#----------------------------------------------------------------------------
+
+if [ "$1" = "" ]
+then
+	exit 255
+fi
+
+$II_SYSTEM/ingres/install/pffiles $1 out || exit 255
+
+exit 0

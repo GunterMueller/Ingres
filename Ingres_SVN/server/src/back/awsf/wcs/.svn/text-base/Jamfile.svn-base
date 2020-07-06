@@ -1,0 +1,12 @@
+#
+# Jamfile file for back!awsf!wcs
+#
+
+SubDir ING_SRC back awsf wcs ;
+
+IISUBSYS back awsf wcs ;
+
+IILIBRARY AWSFLIB : wcsunit.c wcsmo.c wcslocation.c wcsfile.c
+	wcsdoc.c wcsdb.c wcs.c ;
+
+IILIBRARY IMPICELIBDATA : wcsdata.c ;

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_vms
+END
+echo.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_vms/echo.c
+END
+seplib.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_vms/seplib.dcl
+END
+sepesqlc.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_vms/sepesqlc.dcl
+END
+qawtl.lot
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_vms/qawtl.lot
+END
+run.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_vms/run.dcl
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_vms/Jamfile
+END
+setuser.lot
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_vms/setuser.lot
+END
+qawtl.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_vms/qawtl.c
+END
+setuser.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_vms/setuser.c
+END
+seplnk.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_vms/seplnk.dcl
+END
+sepcc.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_vms/sepcc.dcl
+END

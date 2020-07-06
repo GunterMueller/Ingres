@@ -1,0 +1,34 @@
+8
+
+dir
+33
+http://code.ingres.com/ingres/main/src/tools
+http://code.ingres.com/ingres
+
+
+
+2008-05-05T11:35:59.660505Z
+33
+grant
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+45b5d43f-8932-4c86-835a-3654e5842839
+
+port
+dir
+
+techpub
+dir
+

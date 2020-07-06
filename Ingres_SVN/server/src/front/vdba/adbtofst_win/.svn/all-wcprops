@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/3/main/src/front/vdba/adbtofst_win
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/adbtofst_win/Jamfile
+END
+adbtofst.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/adbtofst_win/adbtofst.c
+END
+adbtofst.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/ingres/!svn/ver/3/main/src/front/vdba/adbtofst_win/adbtofst.exe.manifest
+END

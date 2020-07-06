@@ -1,0 +1,52 @@
+8
+
+dir
+33
+http://code.ingres.com/ingres/main/src/back/ulf/uls
+http://code.ingres.com/ingres
+
+
+
+2008-03-20T07:36:25.925856Z
+1
+root
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+45b5d43f-8932-4c86-835a-3654e5842839
+
+Jamfile
+file
+
+
+
+
+2008-05-18T00:43:08.000000Z
+4dd6cdc5473b68ef065818a51a9db58b
+2008-03-20T07:36:25.925856Z
+1
+root
+
+ulsownme.c
+file
+
+
+
+
+2008-05-18T00:43:08.000000Z
+e0658f373a7b66ee188908eb4c6d7550
+2008-03-20T07:36:25.925856Z
+1
+root
+

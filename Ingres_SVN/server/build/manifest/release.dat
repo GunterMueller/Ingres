@@ -1,0 +1,329 @@
+RELEASE Ingres
+PACKAGE standalone
+   VISIBLEPKG 
+   INCLUDE dbms
+   INCLUDE tm
+PACKAGE dbmsnet
+   VISIBLEPKG 
+   INCLUDE dbms
+   INCLUDE net
+   INCLUDE tm
+   INCLUDE das
+   INCLUDE odbc
+PACKAGE dbmsstar
+   VISIBLEPKG 
+   INCLUDE dbms
+   INCLUDE net
+   INCLUDE star
+   INCLUDE tm
+   INCLUDE das
+   INCLUDE odbc
+PACKAGE netclient
+   VISIBLEPKG 
+   INCLUDE net
+   INCLUDE tm
+   INCLUDE das
+   INCLUDE odbc
+PACKAGE custominst
+   VISIBLEPKG 
+   AGGREGATE
+   INCLUDE esql
+   INCLUDE dbms
+   INCLUDE c2audit
+   INCLUDE net
+   INCLUDE ome
+   INCLUDE spatial
+   INCLUDE star
+   INCLUDE rep
+   INCLUDE tm
+   INCLUDE oldmsg
+   INCLUDE tuxedo
+   INCLUDE qr_run
+   INCLUDE qr_tools
+   INCLUDE vispro
+   INCLUDE ice
+   INCLUDE bridge
+   INCLUDE das
+   INCLUDE odbc
+PACKAGE basic 
+   INVISIBLE
+   PART charsets
+      DEFINITION charsets.prt
+   PART collation
+      DEFINITION collation.prt
+   DIRECTORY ingres!files
+   PART frs
+      DEFINITION frs.prt
+   DIRECTORY ingres!files!english
+   PART messages
+      DEFINITION messages.prt
+   PART errhelp
+      DEFINITION errhelp.prt
+   PART ingenv
+      DEFINITION ingenv.prt
+   PART name-server
+      DEFINITION namesrv.prt
+   PART shadow-pwd
+      DEFINITION shadow-pwd.prt
+   PART utdef
+      DEFINITION utdef.prt
+   PART zoneinfo
+      DEFINITION zoneinfo.prt
+   PART fegeneric
+      DEFINITION fegeneric.prt
+   PART sharelib
+      DEFINITION sharelib.prt
+   PART release-notes
+      DEFINITION relnotes.prt
+   PART api
+      DEFINITION api.prt
+   PART sigapi
+      DEFINITION sigapi.prt
+   PART sigima
+      DEFINITION sigima.prt
+   PART sigimp
+      DEFINITION sigimp.prt
+   PART raat
+      DEFINITION raat.prt
+   PART packman
+      DEFINITION packman.prt
+PACKAGE setupsup 
+   INVISIBLE 
+   PART setupsup
+      DEFINITION setupsup.prt
+PACKAGE tm 
+   INCLUDE setupsup
+   PART tm
+      DEFINITION tm.prt
+PACKAGE oldmsg
+   DIRECTORY ingres!files!english
+   PART oldmsg
+      DEFINITION oldmsg.prt
+PACKAGE demodb 
+   INVISIBLE 
+   PART demodb
+      DEFINITION demodb.prt
+PACKAGE dbatools 
+   INVISIBLE
+   PART accessdb
+      DEFINITION accessdb.prt
+   PART delobj
+      DEFINITION delobj.prt
+   PART dbsupport
+      DEFINITION dbsupport.prt
+   PART upgradefe   
+      DEFINITION upgradefe.prt
+   PART upgradedb
+      DEFINITION upgradedb.prt
+PACKAGE montools 
+   INVISIBLE
+   PART montools
+      DEFINITION montools.prt
+PACKAGE rdbms 
+   INVISIBLE
+   INCLUDE dbms 
+   INCLUDE tm 
+   INCLUDE uadtsup
+PACKAGE dbms 
+   INCLUDE basic
+   INCLUDE setupsup
+   INCLUDE config
+   INCLUDE dbatools
+   INCLUDE montools
+   INCLUDE uadtsup
+   INCLUDE demodb
+   INCLUDE rmcmd
+   PART copydb-unloaddb
+      DEFINITION copy-unld.prt
+   PART createdb
+      DEFINITION createdb.prt
+   PART dbms
+      DEFINITION dbms.prt
+PACKAGE c2audit 
+   NEED	dbms
+   PART c2audit
+      DEFINITION c2audit.prt
+PACKAGE ingbase 
+   INVISIBLE
+   INCLUDE dbms
+   INCLUDE qr_tools
+PACKAGE formtool 
+   INVISIBLE
+   PART formtools
+      DEFINITION formtools.prt
+   PART vifred
+      DEFINITION vifred.prt
+PACKAGE qr_tools 
+   INCLUDE formtool
+   INCLUDE qr_run
+PACKAGE qr_run 
+   INCLUDE basic
+   INCLUDE tm
+   PART ingmenu
+      DEFINITION ingmenu.prt
+   PART rbf
+      DEFINITION rbf.prt
+   PART report-writer
+      DEFINITION rw.prt
+   PART qbf
+      DEFINITION qbf.prt
+   PART tables
+      DEFINITION tables.prt
+PACKAGE userint 
+   INVISIBLE
+   INCLUDE qr_tools
+PACKAGE generr 
+   INVISIBLE
+   PART generr
+   DIRECTORY ingres!files
+   BUILD_DIR (ING_BUILD)!files
+      FILE generr.h
+PACKAGE abf 
+   INVISIBLE
+   INCLUDE basic
+   INCLUDE setupsup
+   INCLUDE generr
+   PART abf
+      DEFINITION abf.prt
+   PART abfdemo
+      DEFINITION abfdemo.prt
+PACKAGE vision 
+   INVISIBLE
+   NEED abf
+   PART vision
+      DEFINITION vision.prt
+PACKAGE vispro
+   INCLUDE abf
+   INCLUDE vision
+PACKAGE esqlsup 
+   INVISIBLE
+   INCLUDE setupsup
+   INCLUDE generr
+   PART library
+      DEFINITION lib.prt
+   PART dclgen
+      DEFINITION dclgen.prt
+PACKAGE esqlc 
+   INVISIBLE
+   INCLUDE esqlsup
+   PART emb-c
+      DEFINITION emb-c.prt
+PACKAGE esqlcc 
+   INVISIBLE
+   INCLUDE esqlsup
+   NEED esqlc
+   PART emb-cc
+      DEFINITION emb-cc.prt
+PACKAGE esqlada 
+   INVISIBLE
+   INCLUDE esqlsup
+   PART embedded-ada
+      DEFINITION emb-ada.prt
+PACKAGE esqlcob 
+   INVISIBLE
+   INCLUDE esqlsup
+   PART embedded-cobol
+      DEFINITION emb-cbl.prt
+PACKAGE esqlfor 
+   INVISIBLE
+   INCLUDE esqlsup
+   PART embedded-fortran
+      DEFINITION  emb-ftn.prt
+PACKAGE esql 
+   INCLUDE esqlc
+   INCLUDE esqlcc
+   INCLUDE esqlada
+   INCLUDE esqlcob
+   INCLUDE esqlfor
+PACKAGE net 
+   INCLUDE basic
+   INCLUDE setupsup
+   INCLUDE config
+   PREFER dbms
+   PART net
+      DEFINITION net.prt
+   PART kerberos
+      DEFINITION kerberos.prt
+PACKAGE bridge
+   NEED net
+   PART bridge
+      DEFINITION bridge.prt
+PACKAGE star 
+   NEED dbms
+   NEED net
+   PART star
+      DEFINITION star.prt
+   PART sigstar
+      DEFINITION sigstar.prt
+   PART starview
+      DEFINITION starview.prt
+PACKAGE rep
+    NEED dbms
+    NEED net
+    PART rep
+       DEFINITION rep.prt
+PACKAGE uadtsup 
+   INVISIBLE
+   PART uadtsup 
+      DEFINITION uadtbld.prt
+PACKAGE ome 
+   NEED dbms
+   PART uadt
+      DEFINITION uadt.prt
+PACKAGE spatial 
+   NEED dbms
+   PART spatial
+      DEFINITION spatial.prt
+PACKAGE config 
+   INVISIBLE
+   PART config
+      DEFINITION config.prt
+PACKAGE ice
+   INCLUDE basic
+   INCLUDE setupsup
+   INCLUDE config
+   NEED qr_run
+   PREFER dbms
+   PART ice
+      DEFINITION ice.prt
+PACKAGE rmcmd
+   INVISIBLE
+   PART rmcmd
+      DEFINITION rmcmd.prt
+PACKAGE das
+   INCLUDE basic
+   INCLUDE setupsup
+   INCLUDE config
+   PREFER dbms
+   PREFER net
+   PART das
+      DEFINITION das.prt
+PACKAGE odbc
+   INCLUDE basic
+   INCLUDE setupsup
+   INCLUDE config
+   PREFER dbms
+   PREFER net
+   PART odbc
+     DEFINITION odbc.prt
+PACKAGE tuxedo 
+   INCLUDE basic
+   PART tuxedo
+      DEFINITION tuxedo.prt
+PACKAGE i18n
+   PART i18n
+      DEFINITION i18n.prt
+PACKAGE documentation
+    PART documentation
+	DEFINITION documentation.prt
+PACKAGE install 
+   INVISIBLE
+   INCLUDE messages
+   INCLUDE frs 
+   DIRECTORY ingres!install
+   PART messages
+      DEFINITION messages.prt
+   PART install
+      DEFINITION install.prt
+   PART frs
+      DEFINITION frs.prt

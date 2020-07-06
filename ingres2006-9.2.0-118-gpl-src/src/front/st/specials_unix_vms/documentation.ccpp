@@ -1,0 +1,83 @@
+/*
+** Copyright (c) 2004, 2005 Ingres Corporation
+*/
+/*
+** Generic part file for documentation
+*/
+
+/*
+** History
+**	06-Feb-2004 (bonro01)
+**		Created.
+**	29-Jul-2004 (hanje04)
+**		Updated for new document names.
+**	03-Sep-2004 (hanch04)
+**		Updated for new document names for open source.
+**	01-Feb-2005 (sheco02)
+**		Updated for new document names and directory for open source.
+**	01-Feb-2005 (sheco02)
+**		More updates for new pdf document.
+**	14-Mar-2005 (sheco02)
+**		Add Embedded version of bookshelf pdf file and other minor
+**		updates.
+**	24-May-2005 (sheco02)
+**		Bug 14567, Add/remove some pdf files under ingres!files!english
+**		and add new directories under ingres!files!english!INDEX.
+**	27-may-2005 (abbjo03)
+**	    Excluded Embedded documentation from VMS for the time being.
+**	09-aug-2005 (abbjo03)
+**	    Add RMS guide.
+**	03-Feb-2006 (bonro01)
+**	    Update documenation for Ingres 2006
+**	    Remove embedded documentation which was incorrectly added
+**	    to the standard documenation package.
+**	25-Oct-2006 (bonro01)
+**	    Update documenation for Ingres 2006 Release 2
+**	29-Nov-2006 (bonro01)
+**	    Update documenation for Ingres 2006 Release 2
+**	11-Dec-2006 (bonro01)
+**	    Update documenation for Ingres 2006 Release 2
+*/
+
+PART   documentation
+
+/*
+** ingres!files!english
+*/
+   DIRECTORY ingres!files!english
+   BUILD_DIR (ING_BUILD)!files!english
+      FILE Bookshelf.pdf
+      FILE cmdref.pdf
+      FILE connect.pdf
+      FILE dba.pdf
+      FILE dtp.pdf
+      FILE equel.pdf
+      FILE esql.pdf
+      FILE fadt.pdf
+      FILE ice.pdf
+      FILE ingres.pdx
+      FILE ipm.pdf
+      FILE mg.pdf
+      FILE oapi.pdf
+      FILE ome.pdf
+      FILE osql.pdf
+      FILE qry.pdf
+      FILE quel.pdf
+      FILE rep.pdf
+      FILE rms.pdf
+      FILE rs.pdf
+      FILE sql.pdf
+      FILE star.pdf
+      FILE sysadm.pdf
+      FILE install.pdf
+      FILE qs_linux.pdf
+      FILE qs_windows.pdf
+
+/*
+** ingres!files!english!ingres
+*/
+   DIRECTORY ingres!files!english!ingres
+   BUILD_DIR (ING_BUILD)!files!english!ingres
+      FILE index.idx
+      FILE index1.idx
+

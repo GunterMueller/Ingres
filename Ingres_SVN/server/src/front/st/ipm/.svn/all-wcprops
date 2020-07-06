@@ -1,0 +1,593 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/ingres/!svn/ver/1/main/src/front/st/ipm
+END
+fmorlgtx.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/fmorlgtx.lfm
+END
+dispsrv.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/ipm/dispsrv.qsc
+END
+lockwork.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/lockwork.qsc
+END
+gtlklgst.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/gtlklgst.qsc
+END
+servinfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/st/ipm/servinfo.h
+END
+fshoopts.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/fshoopts.lfm
+END
+dsplklst.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/dsplklst.qsc
+END
+lklginfo.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/st/ipm/lklginfo.c
+END
+ipm.doc
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/st/ipm/ipm.doc
+END
+fsholklk.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/fsholklk.lfm
+END
+msgs.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/front/st/ipm/msgs.h
+END
+fdsplgdb.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/fdsplgdb.lfm
+END
+showsess.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/showsess.qsc
+END
+db_list.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/ipm/db_list.qsc
+END
+ipmdslgt.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/ipmdslgt.hlp
+END
+ipmshwbk.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/ipmshwbk.hlp
+END
+listmgr.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/ipm/listmgr.qsc
+END
+fshosess.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/fshosess.lfm
+END
+fmrlklst.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/fmrlklst.lfm
+END
+lklstdet.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/lklstdet.qsc
+END
+db_work.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/ipm/db_work.qsc
+END
+ipmmain.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/ipm/ipmmain.hlp
+END
+ipm.lot
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/st/ipm/ipm.lot
+END
+ipmdspdb.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/ipmdspdb.hlp
+END
+fsesdetl.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/fsesdetl.lfm
+END
+ipmdspsv.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/ipmdspsv.hlp
+END
+lists.qsh
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/st/ipm/lists.qsh
+END
+gcn.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/front/st/ipm/gcn.h
+END
+dbaglobs.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/st/ipm/dbaglobs.c
+END
+fdsplgpr.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/fdsplgpr.lfm
+END
+showblk.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/ipm/showblk.qsc
+END
+fdsplkls.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/fdsplkls.lfm
+END
+flockmenu.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/st/ipm/flockmenu.lfm
+END
+fshoproc.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/fshoproc.lfm
+END
+ipmlkltd.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/ipmlkltd.hlp
+END
+procinfo.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/procinfo.qsc
+END
+ingpriv.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/st/ipm/ingpriv.h
+END
+fingdba.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/ipm/fingdba.lfm
+END
+ipmlkrdt.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/ipmlkrdt.hlp
+END
+fmorhdtx.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/fmorhdtx.lfm
+END
+fdsplgtx.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/fdsplgtx.lfm
+END
+ipmsesdt.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/ipmsesdt.hlp
+END
+ipmshut.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/ipm/ipmshut.hlp
+END
+fmorlkrs.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/fmorlkrs.lfm
+END
+dsplkres.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/dsplkres.qsc
+END
+fdsplkty.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/fdsplkty.lfm
+END
+fdispsrv.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/fdispsrv.lfm
+END
+ipmdsplt.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/ipmdsplt.hlp
+END
+ipmmain.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/ipm/ipmmain.qsc
+END
+block.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/st/ipm/block.h
+END
+fmyhelp.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/ipm/fmyhelp.lfm
+END
+dsplogdb.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/dsplogdb.qsc
+END
+fshosess64.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/st/ipm/fshosess64.lfm
+END
+sholgsum.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/sholgsum.qsc
+END
+ingprivs.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/ingprivs.qsc
+END
+ipmshwop.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/ipmshwop.hlp
+END
+flogmenu.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/flogmenu.lfm
+END
+sholksum.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/sholksum.qsc
+END
+sesdtail.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/sesdtail.qsc
+END
+sholghdr.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/sholghdr.qsc
+END
+fsesdetl64.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/st/ipm/fsesdetl64.lfm
+END
+fshlksmn.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/fshlksmn.lfm
+END
+servwork.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/st/ipm/servwork.c
+END
+fsrvdetl.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/fsrvdetl.lfm
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/front/st/ipm/Jamfile
+END
+fsholkrs.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/fsholkrs.lfm
+END
+fmorlgdb.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/fmorlgdb.lfm
+END
+ipmdbaop.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/ipmdbaop.hlp
+END
+dsplogpr.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/dsplogpr.qsc
+END
+fmorlghd.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/fmorlghd.lfm
+END
+tblfldfn.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/tblfldfn.qsc
+END
+ipmdplgd.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/ipmdplgd.hlp
+END
+ipmshopr.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/ipmshopr.hlp
+END
+fshoblok.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/fshoblok.lfm
+END
+fdispdb.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/ipm/fdispdb.lfm
+END
+utility.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/st/ipm/utility.qsc
+END
+dsplogtx.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/dsplogtx.qsc
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/front/st/ipm/README
+END
+ipmshlgh.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/ipmshlgh.hlp
+END
+ipmdplkl.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/ipmdplkl.hlp
+END
+ipmdplgp.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/ipmdplgp.hlp
+END
+fmorlklk.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/fmorlklk.lfm
+END
+fsholgsm.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/fsholgsm.lfm
+END
+lkresdet.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/lkresdet.qsc
+END
+fsholksm.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/fsholksm.lfm
+END
+fqrytext.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/fqrytext.lfm
+END
+ipmdplkr.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/ipmdplkr.hlp
+END
+namework.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/st/ipm/namework.c
+END
+fdsplkrs.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/fdsplkrs.lfm
+END
+ipmshlgs.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/ipmshlgs.hlp
+END
+ipm.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/st/ipm/ipm.exe.manifest
+END
+fsholghd.lfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/fsholghd.lfm
+END
+showopts.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/showopts.qsc
+END
+dba.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/front/st/ipm/dba.h
+END
+ipmshlks.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/ipmshlks.hlp
+END
+ipmshses.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/ipmshses.hlp
+END
+ipmsvdet.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/ipmsvdet.hlp
+END
+srvdtail.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/st/ipm/srvdtail.qsc
+END

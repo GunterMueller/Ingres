@@ -1,0 +1,4 @@
+PART   dclgen
+   BUILD_DIR (ING_BUILD)!bin
+   DIRECTORY ingres!bin
+      EXECUTABLE dclgen

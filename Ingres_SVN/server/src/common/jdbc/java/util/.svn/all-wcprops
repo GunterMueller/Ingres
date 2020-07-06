@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/common/jdbc/java/util
+END
+Timer.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/jdbc/java/util/Timer.java
+END
+EdbcRsrc.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/jdbc/java/util/EdbcRsrc.java
+END
+Tracing.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/common/jdbc/java/util/Tracing.java
+END
+CharSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/common/jdbc/java/util/CharSet.java
+END
+EdbcCI.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/jdbc/java/util/EdbcCI.java
+END
+EdbcEx.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/jdbc/java/util/EdbcEx.java
+END
+IdMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/jdbc/java/util/IdMap.java
+END
+DbmsConst.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/common/jdbc/java/util/DbmsConst.java
+END
+MsgConst.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/jdbc/java/util/MsgConst.java
+END
+Trace.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/jdbc/java/util/Trace.java
+END

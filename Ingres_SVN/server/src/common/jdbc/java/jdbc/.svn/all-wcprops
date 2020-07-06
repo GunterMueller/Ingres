@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbc
+END
+EdbcRslt.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbc/EdbcRslt.java
+END
+EdbcXID.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbc/EdbcXID.java
+END
+EdbcConst.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbc/EdbcConst.java
+END
+EdbcStmt.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbc/EdbcStmt.java
+END
+EdbcErr.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbc/EdbcErr.java
+END
+EdbcConnect.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbc/EdbcConnect.java
+END
+RsltProc.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbc/RsltProc.java
+END
+EdbcDriver.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbc/EdbcDriver.java
+END
+RsltSlct.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbc/RsltSlct.java
+END
+EdbcTrace.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbc/EdbcTrace.java
+END
+ParamSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbc/ParamSet.java
+END
+RsltXlat.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbc/RsltXlat.java
+END
+EdbcSQL.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbc/EdbcSQL.java
+END
+RsltData.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbc/RsltData.java
+END
+TraceDM.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbc/TraceDM.java
+END
+ProcInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbc/ProcInfo.java
+END
+RsltCurs.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbc/RsltCurs.java
+END
+EdbcRSMD.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbc/EdbcRSMD.java
+END
+RsltBlob.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbc/RsltBlob.java
+END
+EdbcPrep.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbc/EdbcPrep.java
+END
+EdbcObj.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbc/EdbcObj.java
+END
+TraceDV.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbc/TraceDV.java
+END
+EdbcCall.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbc/EdbcCall.java
+END
+RsltFtch.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbc/RsltFtch.java
+END
+EdbcMetaData.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/common/jdbc/java/jdbc/EdbcMetaData.java
+END

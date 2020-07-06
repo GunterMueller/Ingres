@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+#	Copyright (c) 2004 Ingres Corporation
+#	All rights reserved.
+#
+
+#
+# Name:    accessdb -	Ingres DBMS Access Control Program.
+#
+# Description:
+#	A UNIX only shell to call IngCntrl in its AccessDB mode.
+#
+
+umask 1
+
+if [ $# -gt 0 ]
+then
+   ingcntrl "$@" -m
+else
+   ingcntrl -m
+fi

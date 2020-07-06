@@ -1,0 +1,76 @@
+8
+
+dir
+33
+http://code.ingres.com/ingres/main/src/back
+http://code.ingres.com/ingres
+
+
+
+2008-03-30T14:37:33.059915Z
+14
+rosan01
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+45b5d43f-8932-4c86-835a-3654e5842839
+
+gwf
+dir
+
+opf
+dir
+
+ulf
+dir
+
+psf
+dir
+
+rqf
+dir
+
+qsf
+dir
+
+tpf
+dir
+
+awsf
+dir
+
+sxf
+dir
+
+dmf
+dir
+
+urs
+dir
+
+qef
+dir
+
+rdf
+dir
+
+scf
+dir
+
+ascf
+dir
+
+hdr
+dir
+

@@ -1,0 +1,419 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win
+END
+edlssele.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/edlssele.cpp
+END
+sqlepsht.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlepsht.cpp
+END
+sqlefpar.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlefpar.cpp
+END
+sqlecpar.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlecpar.h
+END
+sqlwsel2.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlwsel2.h
+END
+sqlwupd1.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlwupd1.h
+END
+edlsupdv.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/edlsupdv.cpp
+END
+sqlwupd3.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlwupd3.h
+END
+sqlassis.bin
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlassis.bin
+END
+svrsqlas.def
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/svrsqlas.def
+END
+sqleopar.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqleopar.h
+END
+edlssele.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/edlssele.h
+END
+sqleapar.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqleapar.cpp
+END
+sqlkeywd.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlkeywd.h
+END
+sqleepar.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqleepar.cpp
+END
+sqleipar.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqleipar.cpp
+END
+sqlwins1.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlwins1.h
+END
+edlsupdv.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/edlsupdv.h
+END
+sqlwdel1.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlwdel1.cpp
+END
+stdafx.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/stdafx.h
+END
+svrsqlas.rc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/svrsqlas.rc
+END
+sqlkeywd.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlkeywd.cpp
+END
+frysqlas.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/frysqlas.cpp
+END
+server.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/server.cpp
+END
+wizadata.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/wizadata.h
+END
+taskanim.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/taskanim.h
+END
+sqleapar.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqleapar.h
+END
+svrsqlas.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/svrsqlas.cpp
+END
+bthread.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/bthread.h
+END
+sqlemain.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlemain.h
+END
+sqlwsel1.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlwsel1.h
+END
+sqleepar.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqleepar.h
+END
+sqlwins1.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlwins1.cpp
+END
+sqlwins2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlwins2.cpp
+END
+sqlwsel3.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlwsel3.h
+END
+sqleipar.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqleipar.h
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/Jamfile
+END
+sqlwupd2.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlwupd2.h
+END
+svrsqlas.sln
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/svrsqlas.sln
+END
+rcdepend.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/rcdepend.h
+END
+stdafx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/stdafx.cpp
+END
+sqlassob.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlassob.h
+END
+edlsinsv.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/edlsinsv.h
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/resource.h
+END
+svrsqlas.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/svrsqlas.vcproj
+END
+sqlwmain.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlwmain.h
+END
+sqlwdel1.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlwdel1.h
+END
+sqlwpsh.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlwpsh.cpp
+END
+taskanim.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/taskanim.cpp
+END
+sqlepsht.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlepsht.h
+END
+sqlemain.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlemain.cpp
+END
+frysqlas.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/frysqlas.h
+END
+sqlecpar.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlecpar.cpp
+END
+server.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/server.h
+END
+sqlwsel1.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlwsel1.cpp
+END
+sqlwsel2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlwsel2.cpp
+END
+sqlwsel3.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlwsel3.cpp
+END
+sqlwupd1.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlwupd1.cpp
+END
+sqlwupd2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlwupd2.cpp
+END
+sqlefpar.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlefpar.h
+END
+sqlwupd3.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlwupd3.cpp
+END
+svrsqlas.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/svrsqlas.dsp
+END
+svrsqlas.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/svrsqlas.h
+END
+sqleopar.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqleopar.cpp
+END
+sqlwins2.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlwins2.h
+END
+edlsinsv.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/edlsinsv.cpp
+END
+sqlassob.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlassob.cpp
+END
+sqlwpsht.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlwpsht.h
+END
+sqlwmain.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/svrsqlas_win/sqlwmain.cpp
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/front/embed/esqlcobdemo
+END
+demo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/embed/esqlcobdemo/demo.sql
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/embed/esqlcobdemo/Jamfile
+END
+cbldemo.scb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/embed/esqlcobdemo/cbldemo.scb
+END
+demo.data
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/embed/esqlcobdemo/demo.data
+END
+makefile.nt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/embed/esqlcobdemo/makefile.nt
+END
+readme.nt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/embed/esqlcobdemo/readme.nt
+END

@@ -1,0 +1,515 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win
+END
+webbrows.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/webbrows.h
+END
+qstmtdlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qstmtdlg.cpp
+END
+qepframe.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qepframe.cpp
+END
+qupview.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qupview.cpp
+END
+sqlquery.def
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/sqlquery.def
+END
+qpageqep.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qpageqep.cpp
+END
+prevboxn.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/prevboxn.cpp
+END
+qpageqin.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qpageqin.cpp
+END
+qepbtree.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qepbtree.cpp
+END
+prevboxs.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/prevboxs.cpp
+END
+qepboxdg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qepboxdg.cpp
+END
+qframe.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qframe.h
+END
+qreview.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qreview.cpp
+END
+qepview.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qepview.h
+END
+qsplittr.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qsplittr.h
+END
+sqlquery.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/sqlquery.h
+END
+sqlpgdis.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/sqlpgdis.h
+END
+qresurow.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qresurow.h
+END
+qupview.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qupview.h
+END
+qepframe.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qepframe.h
+END
+qframe.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qframe.cpp
+END
+qpageres.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qpageres.h
+END
+qpageraw.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qpageraw.h
+END
+prevboxs.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/prevboxs.h
+END
+taskxprm.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/taskxprm.h
+END
+sqlquery.odl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/sqlquery.odl
+END
+qredoc.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qredoc.h
+END
+qlowview.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qlowview.h
+END
+sqlqryct.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/sqlqryct.cpp
+END
+sqlquery.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/sqlquery.cpp
+END
+qresudlg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qresudlg.cpp
+END
+qresurow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qresurow.cpp
+END
+qreview.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qreview.h
+END
+stdafx.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/stdafx.h
+END
+sqlquery.sln
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/sqlquery.sln
+END
+sqlprop.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/sqlprop.cpp
+END
+qboxstlf.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qboxstlf.cpp
+END
+qboxleaf.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qboxleaf.h
+END
+sqlquery.rc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/sqlquery.rc
+END
+qpageraw.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qpageraw.cpp
+END
+qpageres.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qpageres.cpp
+END
+qboxstar.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qboxstar.h
+END
+taskxprm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/taskxprm.cpp
+END
+parse.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/parse.cpp
+END
+qlowview.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qlowview.cpp
+END
+qredoc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qredoc.cpp
+END
+qpagexml.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qpagexml.cpp
+END
+qepdoc.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qepdoc.h
+END
+sqlqrypg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/sqlqrypg.cpp
+END
+qrecnitm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qrecnitm.cpp
+END
+sqlpgtab.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/sqlpgtab.h
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/Jamfile
+END
+sqlqryct.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/sqlqryct.h
+END
+stdafx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/stdafx.cpp
+END
+sqlquery.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/sqlquery.dsp
+END
+rcdepend.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/rcdepend.h
+END
+webbrows.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/webbrows.cpp
+END
+qresudlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qresudlg.h
+END
+qpagegen.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qpagegen.h
+END
+qstatind.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qstatind.h
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/resource.h
+END
+qboxleaf.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qboxleaf.cpp
+END
+qboxstar.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qboxstar.cpp
+END
+qstmtdlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qstmtdlg.h
+END
+sqlprop.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/sqlprop.h
+END
+sqlquery.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/sqlquery.vcproj
+END
+qboxstlf.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qboxstlf.h
+END
+prevboxn.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/prevboxn.h
+END
+qpageqep.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qpageqep.h
+END
+sqlquery.suo
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/sqlquery.suo
+END
+qpageqin.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qpageqin.h
+END
+qepdoc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qepdoc.cpp
+END
+qepbtree.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qepbtree.h
+END
+sqlpgtab.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/sqlpgtab.cpp
+END
+qepboxdg.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qepboxdg.h
+END
+parse.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/parse.h
+END
+qepview.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qepview.cpp
+END
+qsplittr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qsplittr.cpp
+END
+vdbasql.bin
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/vdbasql.bin
+END
+qpagexml.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qpagexml.h
+END
+sqlpgdis.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/sqlpgdis.cpp
+END
+qstatind.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qstatind.cpp
+END
+qrecnitm.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qrecnitm.h
+END
+qpagegen.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/qpagegen.cpp
+END
+sqlqrypg.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/sqlquery_win/sqlqrypg.h
+END

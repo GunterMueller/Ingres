@@ -1,0 +1,42 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lbtreelp", "lbtreelp.vcproj", "{F8DFBD6F-D552-4817-A270-1C31EE9C151D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		AIX_Release = AIX_Release
+		DBCS Debug = DBCS Debug
+		DBCS Release = DBCS Release
+		Debug = Debug
+		HPUX_Debug = HPUX_Debug
+		HPUX_Release = HPUX_Release
+		Linux_Release = Linux_Release
+		Release = Release
+		Solaris_Release = Solaris_Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F8DFBD6F-D552-4817-A270-1C31EE9C151D}.AIX_Release.ActiveCfg = AIX_Release|Win32
+		{F8DFBD6F-D552-4817-A270-1C31EE9C151D}.AIX_Release.Build.0 = AIX_Release|Win32
+		{F8DFBD6F-D552-4817-A270-1C31EE9C151D}.DBCS Debug.ActiveCfg = DBCS Debug|Win32
+		{F8DFBD6F-D552-4817-A270-1C31EE9C151D}.DBCS Debug.Build.0 = DBCS Debug|Win32
+		{F8DFBD6F-D552-4817-A270-1C31EE9C151D}.DBCS Release.ActiveCfg = DBCS Release|Win32
+		{F8DFBD6F-D552-4817-A270-1C31EE9C151D}.DBCS Release.Build.0 = DBCS Release|Win32
+		{F8DFBD6F-D552-4817-A270-1C31EE9C151D}.Debug.ActiveCfg = Debug|Win32
+		{F8DFBD6F-D552-4817-A270-1C31EE9C151D}.Debug.Build.0 = Debug|Win32
+		{F8DFBD6F-D552-4817-A270-1C31EE9C151D}.HPUX_Debug.ActiveCfg = HPUX_Debug|Win32
+		{F8DFBD6F-D552-4817-A270-1C31EE9C151D}.HPUX_Debug.Build.0 = HPUX_Debug|Win32
+		{F8DFBD6F-D552-4817-A270-1C31EE9C151D}.HPUX_Release.ActiveCfg = HPUX_Release|Win32
+		{F8DFBD6F-D552-4817-A270-1C31EE9C151D}.HPUX_Release.Build.0 = HPUX_Release|Win32
+		{F8DFBD6F-D552-4817-A270-1C31EE9C151D}.Linux_Release.ActiveCfg = Linux_Release|Win32
+		{F8DFBD6F-D552-4817-A270-1C31EE9C151D}.Linux_Release.Build.0 = Linux_Release|Win32
+		{F8DFBD6F-D552-4817-A270-1C31EE9C151D}.Release.ActiveCfg = Release|Win32
+		{F8DFBD6F-D552-4817-A270-1C31EE9C151D}.Release.Build.0 = Release|Win32
+		{F8DFBD6F-D552-4817-A270-1C31EE9C151D}.Solaris_Release.ActiveCfg = Solaris_Release|Win32
+		{F8DFBD6F-D552-4817-A270-1C31EE9C151D}.Solaris_Release.Build.0 = Solaris_Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

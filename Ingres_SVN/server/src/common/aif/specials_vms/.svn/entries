@@ -1,0 +1,52 @@
+8
+
+dir
+33
+http://code.ingres.com/ingres/main/src/common/aif/specials_vms
+http://code.ingres.com/ingres
+
+
+
+2008-03-20T07:36:25.925856Z
+1
+root
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+45b5d43f-8932-4c86-835a-3654e5842839
+
+Jamfile
+file
+
+
+
+
+2008-05-18T00:52:58.000000Z
+ad72f172282d68b126e3d3b212218578
+2008-03-20T07:36:25.925856Z
+1
+root
+
+apifelib.lot
+file
+
+
+
+
+2008-05-18T00:52:58.000000Z
+5693ab4a44721bd91524c69d5514acd4
+2008-03-20T07:36:25.925856Z
+1
+root
+

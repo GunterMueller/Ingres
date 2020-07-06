@@ -1,0 +1,10 @@
+PART   ingmenu
+   capability CI_MENU
+   BUILD_DIR (ING_BUILD)!bin
+   DIRECTORY ingres!bin
+      EXECUTABLE ingmenu
+   BUILD_DIR (ING_BUILD)!files!english
+   DIRECTORY ingres!files!english
+      FILE imform.hlp
+      FILE imlang.hlp
+      FILE immain.hlp

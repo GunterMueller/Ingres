@@ -1,0 +1,8 @@
+/#-- Copyright (c) 2004 Ingres Corporation
+  This form allows you to perform various operations on the transaction
+  log.
+
+  NOTE: In order to make modifications to any transaction log file, the
+  logging system MUST be offline.
+
+ 

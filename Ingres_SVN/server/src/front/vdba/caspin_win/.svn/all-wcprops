@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/3/main/src/front/vdba/caspin_win
+END
+caspin.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/3/main/src/front/vdba/caspin_win/caspin.vcproj
+END
+spindlg.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/caspin_win/spindlg.c
+END
+catospin.rc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/3/main/src/front/vdba/caspin_win/catospin.rc
+END
+spinapi.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/caspin_win/spinapi.c
+END
+catospin.dlg
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/caspin_win/catospin.dlg
+END
+spindlg.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/caspin_win/spindlg.h
+END
+caspin.rff
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/caspin_win/caspin.rff
+END
+custctrl.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/caspin_win/custctrl.h
+END
+spindll.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/caspin_win/spindll.h
+END
+catospin.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/caspin_win/catospin.bmp
+END
+cato3spn.rlz
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/caspin_win/cato3spn.rlz
+END
+catospin.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/caspin_win/catospin.c
+END
+caspin.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/caspin_win/caspin.dsp
+END
+catospin.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/caspin_win/catospin.h
+END
+catospin.prf
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/caspin_win/catospin.prf
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/3/main/src/front/vdba/caspin_win/Jamfile
+END
+caspin.sln
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/caspin_win/caspin.sln
+END
+spinde32.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/caspin_win/spinde32.c
+END
+catospin.fcc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/3/main/src/front/vdba/caspin_win/catospin.fcc
+END
+spinbrw.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/caspin_win/spinbrw.h
+END
+spin32.def
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/caspin_win/spin32.def
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/caspin_win/readme.txt
+END
+spinpnt.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/vdba/caspin_win/spinpnt.c
+END
+spininit.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/3/main/src/front/vdba/caspin_win/spininit.c
+END

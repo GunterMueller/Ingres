@@ -1,0 +1,25 @@
+/*
+** Copyright (c) 2004 Ingres Corporation
+*/
+/*
+** Generic part file for lib64
+*/
+
+/*
+** History
+**	06-sep-2002 (somsa01)
+**	    Created from 32-bit version.
+*/
+
+PART library64
+    
+/*
+** ingres!lib!lp64
+*/
+   DIRECTORY (PROD2NAME)!lib!lp64
+   BUILD_DIR (ING_BUILD)!lib!lp64
+# ifdef R_LIBMERGE
+      FILE libmerge.a
+# endif /* R_LIBMERGE */
+      FILE lib(PROD2NAME).a
+         DYNAMIC

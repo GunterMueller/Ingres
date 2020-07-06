@@ -1,0 +1,106 @@
+8
+
+dir
+33
+http://code.ingres.com/ingres/main/src/front/abf
+http://code.ingres.com/ingres
+
+
+
+2008-03-20T07:36:25.925856Z
+1
+root
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+45b5d43f-8932-4c86-835a-3654e5842839
+
+specials_win
+dir
+
+ioi
+dir
+
+abfrts
+dir
+
+cautil
+dir
+
+iaom
+dir
+
+vq
+dir
+
+specials_vms
+dir
+
+abf
+dir
+
+abfimage
+dir
+
+shell_vms
+dir
+
+fg
+dir
+
+ilrf
+dir
+
+osl
+dir
+
+abfdemo
+dir
+
+abfrt
+dir
+
+sql
+dir
+
+interp
+dir
+
+impexp
+dir
+
+mgram
+dir
+
+gn
+dir
+
+codegen
+dir
+
+quel
+dir
+
+shell_unix
+dir
+
+ilg
+dir
+
+copyapp
+dir
+
+hdr
+dir
+

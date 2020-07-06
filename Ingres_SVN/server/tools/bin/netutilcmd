@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# Copyright (c) 2004 Ingres Corporation
+#
+# netutilcmd.sh
+#
+# This is a wrapper script for netutil. It is invoked by SEP scripts
+# to run netutil with command line arguments.
+#
+exec netutil $*

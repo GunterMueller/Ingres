@@ -1,0 +1,439 @@
+	.title	mhdec
+;
+;	Copyright (c) 1989	Ingres Corporation
+;
+;
+;   Description:
+;	Contains MH routines for decimal support.  These are written in MACRO to
+;	provide better performance than their C counterparts.
+;
+;	Globally visible entry points:
+;	    MHpkadd	    - add two decimal numbers
+;	    MHpksub	    - subtract two decimal numbers
+;	    MHpkmul	    - multiply two decimal numbers
+;	    MHpkdiv	    - divide two decimal numbers
+;	    MHpkcmp	    - compare two decimal numbers
+;
+;   History:
+;	22-aug-89 (jrb)
+;	    Created.
+;	09-nov-92 (walt)
+;		Decimal overflow traps not settable on Alpha.  Uses of PSL$M_DV 
+;		commented out.  .call_entry added where cross compiler indicated
+;		that arguments must be homed.  Also, CHF$L_MCH_FRAME has changed to 
+;		CHF$PH_MCH_FRAME.
+;	04-may-95 (albany)
+;		Actually, overflow trap are settable on AXP/VMS, using pd_dec_ovf.  
+;		This is equivalent to using dv in the entry mask on a VAX, and 
+;		restores the overflow functionality.  (There's similar code in 
+;		fp!fpdec.mar).  Also updated $code -> $code$ for AXP/VMS.
+;	16-may-95 (albany)
+;	    	Updated psect attributes to be in line with other
+;	    	CL psects.
+;	26-jun-95 (wagner)
+;		Moved MHpkcmp to be the first routine in this module due to a
+;		quirky bug in the AXP/VMS macro compiler that will be fixed in
+;		the next release of OpenVMS.  Also moved MHpkmul & MHpkdiv out
+;		of this module and into their own modules for the same reaon.
+;		These changes may be un-done when the new compiler is released.
+;       15-nov-2004 (huazh01)
+;               change the prototypes of MHpkadd_sim()/MHpksub_sim()/
+;               MHpkmul_sim()/MHpkdiv_sim(). 
+;               b113059, INGSRV2964.
+;
+;
+	.psect	$code$	pic,con,rel,lcl,shr,exe,nord,nowrt,novec,4
+
+
+;
+; Name: MHpkcmp - Compare two packed decimals.
+;
+; Description:
+;      Compares two packed decimals and returns 1 if the first is greater than
+;      the second, -1 if the first is less than the second, and 0 if they
+;      are equal.
+;
+; Inputs:
+;      pk1                             Pointer to the 1st input decimal value.
+;      p1                              Its precision:  1 <= p1 <= 31.
+;      s1                              Its scale:  0 <= s1 <= p1.
+;      pk2                             Pointer to the 2nd input decimal value.
+;      p2                              Its precision:  1 <= p2 <= 31.
+;      s2                              Its scale:  0 <= s2 <= p2.
+;
+; Outputs:
+;      none
+;
+;      Returns:
+;           1                          First is greater than second.
+;           0                          First is equal to second.
+;          -1                          First is less than second.
+;
+;      Exceptions:
+;          none
+;
+; Side Effects:
+;          none
+;
+; History:
+;      30-aug-89 (jrb)
+;          Initial creation and coding.
+;
+pk1	= 4
+p1	= 8
+s1	= 12
+pk2	= 16
+p2	= 20
+s2	= 24
+pktemp  = -16		;this will be our temporary decimal number
+
+	.entry	MHpkcmp,^m<r2,r3,r4>
+	subl2	#16,sp		    ; get enough stack for temp decimal
+	subl3	s1(ap),s2(ap),r4
+	beql	cmp01		    ; use fast path if scales the same
+	bgtr	cmp02		    ; if s2 > s1 then jump
+	mnegl	r4,r4		    ; so s1 > s2; negate r4
+	ashp	r4,p2(ap),@pk2(ap),#0,#31,pktemp(fp)
+	bvs	cmp03
+	cmpp4	p1(ap),@pk1(ap),#31,(r3)
+	beql	cmpeq
+	bgtr	cmpgt
+	brw	cmplt
+cmp03:	ashl	#-1,p2(ap),r2	    ; get sign from packed decimal
+	movl	pk2(ap),r3
+	bicb3	#^xf0,(r3)[r2],r1
+	cmpb	#11,r1
+	beql	cmpgt
+	cmpb	#13,r1
+	beql	cmpgt
+	brw	cmplt
+cmp02:	ashp	r4,p1(ap),@pk1(ap),#0,#31,pktemp(fp)
+	bvs	cmp04
+	cmpp4	p2(ap),@pk2(ap),#31,(r3)
+	beql	cmpeq
+	bgtr	cmplt
+	brw	cmpgt
+cmp04:	ashl	#-1,p1(ap),r2	    ; get sign from packed decimal
+	movl	pk1(ap),r3
+	bicb3	#^xf0,(r3)[r2],r1
+	cmpb	#11,r1
+	beql	cmplt
+	cmpb	#13,r1
+	beql	cmplt
+	brw	cmpgt
+cmp01:	cmpp4	p1(ap),@pk1(ap),p2(ap),@pk2(ap)
+	beql	cmpeq
+	bgtr	cmpgt
+cmplt:	cvtbl	#-1,r0
+	ret
+cmpgt:	cvtbl	#1,r0
+	ret
+cmpeq:	clrl	r0
+	ret
+
+
+;   Name: MHpkadd	- Add two packed decimals.
+;
+;   Description:
+;      Adds two packed decimals and returns the result in another
+;      packed decimal.  The precision and scale of the result are
+;      also returned, and are calculated thus:
+;
+;          pout = min(31, (max(p1-s1, p2-s2) + max(s1, s2) + 1))
+;          sout = max(s1, s2)
+;
+;
+; Inputs:
+;      pk1                             Pointer to the 1st addend.
+;      p1                              Its precision:  1 <= p1 <= 31.
+;      s1                              Its scale:  0 <= s1 <= p1.
+;      pk2                             Pointer to the 2nd addend.
+;      p2                              Its precision:  1 <= p2 <= 31.
+;      s2                              Its scale:  0 <= s2 <= p2.
+;
+; Outputs:
+;      pkout                           The resulting packed decimal value is
+;                                      placed here.
+;      pout                            Its precision will be calculated based
+;                                      on the above formula, and placed here.
+;      sout                            Its scale will be calculated based
+;                                      on the above formula, and placed here.
+;
+;      Returns:
+;          VOID
+;
+;      Exceptions:
+;          EXDECOVF                    Sum has too many non-fractional
+;                                      digits; i.e. more than (pout - sout)
+;                                      of them.
+;
+;   History:
+;	23-aug-89 (jrb)
+;	    Written.
+;       15-nov-2004 (huazh01)
+;           Change the prototypes of MHpkadd_sim() / MHpksub_sim() / 
+;           MHpkdiv_sim() / MHpkmul_sim() from (..., nat pout, nat sout) to 
+;           (..., nat *pout, nat *sout). This fixes b113059, INGSRV2964.
+;
+;
+pk1	= 4
+p1	= 8
+s1	= 12
+pk2	= 16
+p2	= 20
+s2	= 24
+pkout	= 28
+pout	= 32
+sout	= 36
+pktemp  = -16		;this will be our temporary decimal number
+
+	$psldef
+	$chfdef
+	
+;	.entry	MHpkadd,^m<r2,r3,r4,r5,r6,r7,r8,dv>
+MHpkadd::
+	.call_entry preserve=<r2,r3,r4,r5,r6,r7,r8>
+	PD_DEC_OVF = 1		    ; equivalent to dv in the entry mask
+	subl2	#16,sp		    ; get enough stack for temp decimal
+	movl	s1(ap),r2
+	movl	s2(ap),r3
+	subl3	r3,r2,r4	    ; s1-s2 into r4
+	bneq	add00		    ; let's go fast when scales are equal
+;
+; The following assumes that the scales of the addends are equal.  This saves us
+; from having to move an addend into a temporary buffer before actually doing
+; the addition.  At this point we still have to finish calculating pout and
+; sout, and then we do the addition.
+;
+add10:	movl	r2,@sout(ap)	    ; move s1 into sout as max scale value
+	subl3	r2,p1(ap),r5	    ; now get max(p1-s1,p2-s2) into r5
+	subl3	r3,p2(ap),r6
+	cmpl	r5,r6
+	bgeq	add11
+	movl	r6,r5
+add11:	addl2	r2,r5		    ; sum max(p1-s1,p2-s2) and max(s1,s2) in r5
+	incl	r5		    ; and add 1
+	cmpl	r5,#31		    ; can't be more than 31
+	bleq	add12
+	movl	#31,r5
+add12:	movl	r5,@pout(ap)
+	addp6	p1(ap),@pk1(ap),p2(ap),@pk2(ap),r5,@pkout(ap)
+	ret
+;
+add00:	bgtr	add01		    ; s1 > s2 ?
+	mnegl	r4,r4		    ; nope, make r4 s2-s1 instead
+	movl	r3,@sout(ap)	    ; store max scale in sout
+	movl	pk1(ap),r0	    ; save pointer to decimal val with min scale
+	movl	p1(ap),r1	    ;   and its precision into r0/r1
+	movl	pk2(ap),r7	    ; save pointer to decimal val with max scale
+	movl	p2(ap),r8	    ;   and its precision into r7/r8
+	brb	add02
+add01:	movl	r2,@sout(ap)	    ; store max scale in sout
+	movl	pk2(ap),r0	    ; save pointer to decimal val with min scale
+	movl	p2(ap),r1	    ;   and its precision into r0/r1
+	movl	pk1(ap),r7	    ; save pointer to decimal val with max scale
+	movl	p1(ap),r8	    ;   and its precision into r7/r8
+add02:	subl3	r2,p1(ap),r5	    ; now get max(p1-s1,p2-s2) into r5
+	subl3	r3,p2(ap),r6
+	cmpl	r5,r6
+	bgeq	add03
+	movl	r6,r5
+add03:	addl2	@sout(ap),r5	    ; sum max(p1-s1,p2-s2) and max(s1,s2) in r5
+	incl	r5		    ; and add 1
+	cmpl	r5,#31		    ; can't be more than 31
+	bleq	add04
+	movl	#31,r5
+add04:	movl	r5,@pout(ap)	    ; store in pout
+	addl3	r4,r1,r6	    ; get new length of temp value
+	cmpl	r6,#31		    ; can't be larger than 31
+	bleq	add05
+	movl	#31,r6
+;
+; At this point r0 points the decimal value with the smallest scale, r1 is its
+; precision, and r4 is the amount we must shift this value to the left in order
+; to align the decimal points.  r6 holds the new length for the temporary value
+; after the shift.  Now we perform the shift and do the addition. 
+;
+add05:  PD_DEC_OVF = 0				; turn off pdovf exception
+	ashp	r4,r1,(r0),#0,r6,pktemp(fp)
+	bvs	add20
+	PD_DEC_OVF = 1				; turn on pdovf exception
+	addp6	r8,(r7),r6,(r3),r5,@pkout(ap)
+	ret
+;
+; Although it seems that if the ashp instruction got an overflow then the
+; addition overflowed.  Unfortunately there is one case where the ashp can
+; overflow yet the result should not overflow: consider 1 [1,0] + -0.5 [31,31].
+; Here we would try to shift the 1 by 31 positions to the left and overflow,
+; yet the result is 0.5 which fits into the result.  Therefore we must always
+; try the software method (which will correctly handle this) if the ashp
+; overflows.
+;
+add20:	pushl	sout(ap)
+	pushl	pout(ap)
+	pushl	pkout(ap)
+	pushl	s2(ap)
+	pushl	p2(ap)
+	pushl	pk2(ap)
+	pushl	s1(ap)
+	pushl	p1(ap)
+	pushl	pk1(ap)
+	calls	#9,MHPKADD_SIM
+	ret
+
+
+;   Name: MHpksub	- Subtract two packed decimals.
+;
+;   Description:
+;      Subtracts two packed decimals and returns the result in another
+;      packed decimal.  The precision and scale of the result are
+;      also returned, and are calculated thus:
+;
+;          pout = min(31, (max(p1-s1, p2-s2) + max(s1, s2) + 1))
+;          sout = max(s1, s2)
+;
+;	This routine attempts the subtraction using SUBP first, and if
+;	it overflows, we call MHpksub_sim which tries the subtraction in
+;	software.
+;
+; Inputs:
+;      pk1                             Pointer to the minuend.
+;      p1                              Its precision:  1 <= p1 <= 31.
+;      s1                              Its scale:  0 <= s1 <= p1.
+;      pk2                             Pointer to the subtrahend.
+;      p2                              Its precision:  1 <= p2 <= 31.
+;      s2                              Its scale:  0 <= s2 <= p2.
+;
+; Outputs:
+;      pkout                           The resulting packed decimal value is
+;                                      placed here.
+;      pout                            Its precision will be calculated based
+;                                      on the above formula, and placed here.
+;      sout                            Its scale will be calculated based
+;                                      on the above formula, and placed here.
+;
+;      Returns:
+;          VOID
+;
+;      Exceptions:
+;          EXDECOVF                    Sum has too many non-fractional
+;                                      digits; i.e. more than (pout - sout)
+;                                      of them.
+;
+;   History:
+;	29-aug-89 (jrb)
+;	    Written.
+;       15-nov-2004 (huazh01)
+;           Change the prototypes for MHpkadd_sim() / MHpksub_sim() / 
+;           MHpkdiv_sim() / MHpkmul_sim() from (..., nat pout, nat sout) to 
+;           (..., nat *pout, nat *sout). This fixes b113059, INGSRV2964.
+;
+;
+pk1	= 4
+p1	= 8
+s1	= 12
+pk2	= 16
+p2	= 20
+s2	= 24
+pkout	= 28
+pout	= 32
+sout	= 36
+pktemp  = -16		;this will be our temporary decimal number
+
+	$psldef
+
+;	.entry	MHpksub,^m<r2,r3,r4,r5,r6,r7,r8,dv>
+MHpksub::
+	.call_entry preserve=<r2,r3,r4,r5,r6,r7,r8>
+	PD_DEC_OVF = 1		    ; equivalent to dv in the entry mask
+	subl2	#16,sp		    ; get enough stack for temp decimal
+	movl	s1(ap),r2
+	movl	s2(ap),r3
+	subl3	r3,r2,r4	    ; s1-s2 into r4
+	bneq	sub00		    ; let's go fast when scales are equal
+;
+; The following assumes that the scales of the operands are equal.  This saves
+; us from having to move an operand into a temporary buffer before actually
+; doing the subtraction.  At this point we still have to finish calculating
+; pout and sout, and then we do the subtraction.
+;
+	movl	r2,@sout(ap)	    ; move s1 into sout as max scale value
+	subl3	r2,p1(ap),r5	    ; now get max(p1-s1,p2-s2) into r5
+	subl3	r3,p2(ap),r6
+	cmpl	r5,r6
+	bgeq	sub11
+	movl	r6,r5
+sub11:	addl2	r2,r5		    ; sum max(p1-s1,p2-s2) and max(s1,s2) in r5
+	incl	r5		    ; and add 1
+	cmpl	r5,#31		    ; can't be more than 31
+	bleq	sub12
+	movl	#31,r5
+sub12:	movl	r5,@pout(ap)
+	subp6	p2(ap),@pk2(ap),p1(ap),@pk1(ap),r5,@pkout(ap)
+	ret
+;
+sub00:	bgtr	sub01		    ; is s1 > s2 ?
+	mnegl	r4,r4		    ; nope, make that s2-s1 instead
+	movl	r3,@sout(ap)	    ; store max scale in sout
+	movl	pk1(ap),r0	    ; save pointer to decimal val with min scale
+	movl	p1(ap),r1	    ;   and its precision into r0/r1
+	movl	pk2(ap),r7	    ; save pointer to decimal val with max scale
+	movl	p2(ap),r8	    ;   and its precision into r7/r8
+	brb	sub02
+sub01:	movl	r2,@sout(ap)	    ; store max scale in sout
+	movl	pk2(ap),r0	    ; save pointer to decimal val with min scale
+	movl	p2(ap),r1	    ;   and its precision into r0/r1
+	movl	pk1(ap),r7	    ; save pointer to decimal val with max scale
+	movl	p1(ap),r8	    ;   and its precision into r7/r8
+sub02:	subl3	r2,p1(ap),r5	    ; now get max(p1-s1,p2-s2) into r5
+	subl3	r3,p2(ap),r6
+	cmpl	r5,r6
+	bgeq	sub03
+	movl	r6,r5
+sub03:	addl2	@sout(ap),r5	    ; sum max(p1-s1,p2-s2) and max(s1,s2) in r5
+	incl	r5		    ; and add 1
+	cmpl	r5,#31		    ; can't be more than 31
+	bleq	sub04
+	movl	#31,r5
+sub04:	movl	r5,@pout(ap)	    ; store in pout
+	addl3	r4,r1,r6	    ; get new length of temp value
+	cmpl	r6,#31		    ; can't be larger than 31
+	bleq	sub05
+	movl	#31,r6
+;
+; At this point r0 points the decimal value with the smallest scale, r1 is its
+; precision, and r4 is the amount we must shift this value to the left in order
+; to align the decimal points.  r6 holds the new length for the temporary value
+; after the shift.  Now we perform the shift and do the subtraction.
+;
+sub05:	PD_DEC_OVF = 0			    ; turn off pdovf exception
+	ashp	r4,r1,(r0),#0,r6,pktemp(fp)
+	bvs	sub20
+	PD_DEC_OVF = 1			    ; turn on pdovf exception
+	cmpl	r7,pk1(ap)		    ; find out which is the minuend
+	beql	sub06
+	subp6	r8,(r7),r6,(r3),r5,@pkout(ap)
+	ret
+sub06:	subp6	r6,(r3),r8,(r7),r5,@pkout(ap)
+	ret
+;
+; Although it seems that if the ashp instruction got an overflow then the
+; addition overflowed.  Unfortunately there is one case where the ashp can
+; overflow yet the result should not overflow: consider 1 [1,0] - 0.5 [31,31].
+; Here we would try to shift the 1 by 31 positions to the left and overflow,
+; yet the result is 0.5 which fits into the result.  Therefore we must always
+; try the software method (which will correctly handle this) if the ashp
+; overflows.
+;
+sub20:	pushl	sout(ap)
+	pushl	pout(ap)
+	pushl	pkout(ap)
+	pushl	s2(ap)
+	pushl	p2(ap)
+	pushl	pk2(ap)
+	pushl	s1(ap)
+	pushl	p1(ap)
+	pushl	pk1(ap)
+	calls	#9,MHPKSUB_SIM
+	ret
+	.end

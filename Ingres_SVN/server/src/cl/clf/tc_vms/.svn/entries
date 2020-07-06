@@ -1,0 +1,52 @@
+8
+
+dir
+33
+http://code.ingres.com/ingres/main/src/cl/clf/tc_vms
+http://code.ingres.com/ingres
+
+
+
+2008-03-20T07:36:25.925856Z
+1
+root
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+45b5d43f-8932-4c86-835a-3654e5842839
+
+Jamfile
+file
+
+
+
+
+2008-05-18T01:27:07.000000Z
+5aaa1521dcbc8c0cdc313b4921451924
+2008-03-20T07:36:25.925856Z
+1
+root
+
+tc.c
+file
+
+
+
+
+2008-05-18T01:27:07.000000Z
+7cbc3e64f9b981542040b64387eafc56
+2008-03-20T07:36:25.925856Z
+1
+root
+

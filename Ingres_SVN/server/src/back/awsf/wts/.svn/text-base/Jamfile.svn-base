@@ -1,0 +1,11 @@
+#
+# Jamfile file for back!awsf!wts
+#
+
+SubDir ING_SRC back awsf wts ;
+
+IISUBSYS back awsf wts ;
+
+
+IILIBRARY AWSFLIB : wtsupld.c wts.c ;
+

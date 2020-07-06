@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/common/odbc/config_unix_vms
+END
+iiodbcinst.lot
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/odbc/config_unix_vms/iiodbcinst.lot
+END
+config.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/common/odbc/config_unix_vms/config.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/odbc/config_unix_vms/Jamfile
+END
+iiodbcinst.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/common/odbc/config_unix_vms/iiodbcinst.c
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/common/odbc/config_unix_vms/config.h
+END
+util.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/common/odbc/config_unix_vms/util.c
+END

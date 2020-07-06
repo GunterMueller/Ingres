@@ -1,0 +1,82 @@
+# include "/home/ingres/SANDBOX/Ingres_SVN/server/install/build/ingres/files/eqdef.h"
+# include "/home/ingres/SANDBOX/Ingres_SVN/server/install/build/ingres/files/eqdef.h"
+/*
+**	Copyright (c) 2004 Ingres Corporation
+*/
+# include	<compat.h>
+# include	<gl.h>
+# include	<sl.h>
+# include	<iicommon.h>
+# include	<fe.h>
+# include       "rbftype.h"
+# include       "rbfglob.h"
+# include	<uf.h>
+# include	<ug.h>
+# include	<oocat.h>
+/**
+** Name:	rfgetforms - load rbf forms.
+**
+** Description:
+**	This file defines:
+**
+**	rFgetforms	load forms.
+**
+** History:
+**	04-aug-1987 (rdesmond) written.
+**	20-dec-88 (sylviap)
+**		Performance changes - reads in struct.frm.
+**      9/22/89 (elein) UG changes ingresug change #90045
+**	changed <rbftype.h> & <rbfglob.h> to "rbftype.h" & "rbfglob.h"
+**/
+/* # define's */
+/* GLOBALDEF's */
+/* extern's */
+GLOBALREF	char	_iicatalog[];
+GLOBALREF	char	*Nstructure;
+GLOBALREF	char	*Nlayout;
+/* static's */
+/*{
+** Name:	rfgetforms - load forms and initialize global formname vars.
+**
+** Description:
+**	<comments>
+**
+** Inputs:
+**	none.
+**
+** Outputs:
+**	none.
+**
+**	Returns:
+**		OK	successful.
+**		FAIL	unsuccessful.
+**
+**	Exceptions:
+**		none.
+**
+** Side Effects:
+**
+** History:
+**	04-aug-1987 (rdesmond) written.
+*/
+STATUS
+rFgetforms()
+  {
+    char *form;
+	Nstructure = F_BREAK;
+	if (IIUFgtfGetForm(IIUFlcfLocateForm(), (form = _iicatalog)) != OK
+	  || IIUFgtfGetForm(IIUFlcfLocateForm(), (form = Nstructure)) != OK)
+	{
+	    IIUGerr(E_RF002D_Cannot_locate_form, 0, 1, form);
+	    return (FAIL);
+	}
+	form = Nstructure;
+/* # line 83 "rfgtfrms.qsc" */	/* inittable */
+    {
+      if (IItbinit(form,(char *)"brktbl",(char *)"u") != 0) {
+        IItfill();
+      } /* IItbinit */
+    }
+/* # line 85 "rfgtfrms.qsc" */	/* host code */
+	return (OK);
+  }

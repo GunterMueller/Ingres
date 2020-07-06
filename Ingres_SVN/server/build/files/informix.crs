@@ -1,0 +1,15 @@
+--
+--  Copyright (c) 2006 Ingres Corporation.  All Rights Reserved.
+--
+--  This file contains the configuration rules for the Informix Gateway.
+--
+ii.$.ingstart.$.informix:		1, MAX = 1;
+-- maximum connections of all Informix Gateways configured for start-up
+ii.$.gateway.informix.connect_max:           1,
+					REQUIRES ii.$.ingstart.%.informix;
+-- gateway specific parameter initialization
+ii.$.gateway.informix.sqlda_size:       128, MIN = 50, MAX = 256;
+ii.$.gateway.informix.pst_max:          128, MIN = 50, MAX = 256;
+ii.$.gateway.informix.empty_date:       "01-jan-1900 00:00:00";
+ii.$.gateway.informix.load_table_qualifier: "USER";
+ii.$.gateway.informix.varchar_comp:     OFF;

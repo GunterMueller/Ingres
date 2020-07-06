@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/dotnet_win/xaswitch
+END
+xaswitch.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/common/dotnet_win/xaswitch/xaswitch.cpp
+END
+assemblyinfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/ingres/!svn/ver/1/main/src/common/dotnet_win/xaswitch/assemblyinfo.cpp
+END
+xaswitch.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/dotnet_win/xaswitch/xaswitch.vcproj
+END

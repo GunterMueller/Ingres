@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/testtool/achilles/achilles
+END
+prntstat.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/testtool/achilles/achilles/prntstat.c
+END
+achilles.lot
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/testtool/achilles/achilles/achilles.lot
+END
+achilles.1
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/testtool/achilles/achilles/achilles.1
+END
+abortit.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/testtool/achilles/achilles/abortit.c
+END
+achilles.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/testtool/achilles/achilles/achilles.c
+END
+actools.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/testtool/achilles/achilles/actools.c
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/testtool/achilles/achilles/MANIFEST
+END
+strtchld.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/testtool/achilles/achilles/strtchld.c
+END
+readlog.lot
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/testtool/achilles/achilles/readlog.lot
+END
+logactns.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/testtool/achilles/achilles/logactns.c
+END
+readlog.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/testtool/achilles/achilles/readlog.c
+END

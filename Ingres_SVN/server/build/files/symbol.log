@@ -1,0 +1,20 @@
+*********************
+*** BEGIN SESSION ***
+*********************
+
+host:          pollux2
+user:          ingres
+time:          Sun May 18 02:53:16 2008
+
+ADD ING_ABFDIR ... (/home/ingres/SANDBOX/Ingres_SVN/server/install/build/ingres/abf)
+
+*********************
+*** BEGIN SESSION ***
+*********************
+
+host:          pollux2
+user:          ingres
+time:          Sun May 18 03:08:49 2008
+
+ADD II_SHADOW_PWD ... (/home/ingres/SANDBOX/Ingres_SVN/server/install/build/ingres/bin/ingvalidpw)
+

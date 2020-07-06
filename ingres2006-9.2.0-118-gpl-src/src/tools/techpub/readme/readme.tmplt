@@ -1,0 +1,910 @@
+<HTML>
+<HEAD>
+<!-- Created with DOC2HTML, v610 (12/21/2006) -->
+<title>Ingres® 2006 Release 3 Beta </title>
+<META HTTP-EQUIV="Content-Type" Content="text-html; charset=utf-8">
+<style>
+<!--
+A:link                       { text-decoration: underline; font-weight: bold; color: #336699  }
+A:visited                    { text-decoration: underline; font-weight: bold; color: #336699  }
+BODY                         { font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-size: 80%; font-weight: normal; color: 00000  }
+TABLE                        { font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-size: 100%; color: 000000; }
+P                            { font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-weight: normal; color: #000000  }
+H1                           { font-size: 180%; font-weight: bold; color: #336699  }
+H2                           { font-size: 155%; font-weight: normal; font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; color: #336699  }
+H3                           { font-size: 130%; font-weight: bold; font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; color: #336699  }
+H4                           { font-size: 130%; font-weight: bold; font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; color: #336699  }
+ol, ul ol, ul ul ol          { list-style-type: decimal; list-style-image : none; }
+ol ol, ul ol ol, ol ul ol    { list-style-type: lower-alpha; list-style-image: none; }
+ul, ol ul, ol ol ul          { list-style-type: disc; list-style-image: none; }
+ul ul, ol ul ul, ul ol ul    { list-style-type: circle; list-style-image: none;}
+ul ul ul                     { list-style-type: square; list-style-image: none; }
+ol ol ol                     { list-style-type: upper-roman; list-style-image: none; }
+B                            { font-weight: bold  }
+STRONG                       { font-weight: bold  }
+I                            { font-style: italic  }
+EM                           { font-style: italic  }
+INPUT                        { color: #336699; font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-size: 90%; } /* Special */
+TEXTAREA                     { color: #336699; font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-size: 90%; } /* Special */
+BLOCKQUOTE                   { font-size: 80%; }
+PRE                          { font-family: "courier new", courier, monospace; font-size: 100%  }
+table, td                    { font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-weight: normal; color: #000000; vertical-align: top; border: 1px solid #EBEBEB; border-collapse: collapse; font-size: 12px; padding: 2px;}
+table.invis, td.invis        { font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-weight: normal; color: #000000; vertical-align: middle; border: 0px; border-collapse: collapse; font-size: 12px; padding: 2px;}
+th                           { font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; font-weight: bold; color: #000000; vertical-align: top; border: 1px solid #FFFFFF; background-color: #006699; color:#FFFFFF; text-align: left; padding: 2px;}
+tr.alt                       { background-color : #F1F5FA;}
+.computerassoc               { font-family: Verdana, "Bitstream Vera Sans", Arial, Helvetica, Sans Serif; color: #FFFFFF; text-decoration: none; background-color: #336699; font-size: 130%; font-weight: bold; }
+hr                           { color: #CCCCCC; height:1px; }
+-->
+</style>
+</HEAD>
+<BODY>
+<table width="100%"  border="0" cellspacing="0" cellpadding="0"><tr><td class="computerassoc">Ingres Corporation</td></tr></table>
+<h1><a name="ingres_2006_release_3_beta">Ingres<sup>®</sup> 2006 Release 3 Beta</a></h1>
+<p>
+<hr>
+<nobr>
+<p><b><a href="#welcome">1.0  Welcome</a></b>
+<p><b><a href="#operating_system_support">2.0  Operating System Support</a></b>
+<p><b><a href="#installation_considerations">3.0  Installation Considerations</a></b>
+<br><a href="#upgrading_abf_applications">3.1  Upgrading ABF Applications</a>
+<p><b><a href="#general_considerations">4.0  General Considerations</a></b>
+<br><a href="#features_not_included_in_ingres_2006_release_3">4.1  Features Not Included in Ingres 2006 Release 3</a>
+<br><a href="#behavioral_changes_from_earlier_versions_to_ingres_2006_release_3">4.2  Behavioral Changes from Earlier Versions to Ingres 2006 Release 3</a>
+<br><a href="#utf8_character_set">4.3  UTF8 Character Set</a>
+<br><a href="#openroad_support">4.4  OpenROAD<sup>®</sup> Support</a>
+<br><a href="#enterprise_access_support">4.5  Enterprise Access Support</a>
+<br><a href="#odbc_support">4.6  ODBC Support</a>
+<br><a href="#jdbc_driver">4.7  JDBC Driver</a>
+<br><a href="#unicode_support_in_terminal_monitor">4.8  Unicode Support in Terminal Monitor</a>
+<br><a href="#selecting_or_updating_new_data_types_from_an_older_client">4.9  Selecting or Updating New Data Types from an Older Client</a>
+<br><a href="#web_deployment_option">4.10  Web Deployment Option</a>
+<p><b><a href="#fixed_issues">5.0  Fixed Issues</a></b>
+<p><b><a href="#known_issues">6.0  Known Issues</a></b>
+<br><a href="#dbms_server_and_dba_tools_issues">6.1  DBMS Server and DBA Tools Issues</a>
+<br><a href="#web_deployment_option_2">6.2  Web Deployment Option</a>
+<br><a href="#windows_installation_issues">6.3  Windows Installation Issues</a>
+<br><a href="#linux_installation_issues">6.4  Linux Installation Issues</a>
+<p><b><a href="#documentation">7.0  Documentation</a></b>
+<p><b><a href="#contacting_technical_support">8.0  Contacting Technical Support</a></b>
+</nobr>
+<p>
+<hr>
+<h2><a name="welcome">1.0  Welcome</a></h2>
+<p>Before you start using the software, you should review this
+readme file for important information on the installation
+and use of the product.  
+<p>The information provided here is for use with the following
+Ingres guides:
+<ul>
+<p><li><i>Release Summary</i>
+<p><li><i>Quick Start Guide</i>
+<p><li><i>Installation Guide</i>
+<p><li><i>Migration Guide</i>
+</ul>
+<p>Make sure that copies of this readme are distributed to the
+system administrator, database administrator, and
+application developers using Ingres at your site. This
+document contains information of interest to each of these
+users.  
+<p>
+<hr>
+<h2><a name="operating_system_support">2.0  Operating System Support</a></h2>
+<p>This version of Ingres is supported by the following
+operating system.  
+<p>Click the link below to see important information specific
+to your platform: 
+<dl>
+<dd><a href="#extension_string">PLATFORM_STRING</a>
+</dl>
+<p>Please make sure that your operating system is supported by
+this version.  
+<p>For complete information about all Ingres products and the
+platforms and operating system releases that they run on,
+see the Product Availability Matrix at
+<a href="http://www.ingres.com/products/prod-availability-matrix.php" target="_blank">http://www.ingres.com/products/prod-availability-matrix.php</a>.
+<p>
+<hr>
+<h2><a name="installation_considerations">3.0  Installation Considerations</a></h2>
+<p>Pay particular attention to the information in the
+<i>Migration Guide</i> section on preserving existing
+customizations including config.dat parameters. Use the
+information in this readme in conjunction with the
+<i>Installation Guide</i>.  
+<p><b>Note:</b> Information in this readme supersedes information in
+the <i>Installation Guide</i>. 
+<p>
+<hr>
+<h3><a name="upgrading_abf_applications">3.1  Upgrading ABF Applications</a></h3>
+<p>As part of column collation support added in Ingres r3
+3.0.2, and included in this release, the data descriptor
+used throughout the Ingres system has changed.  
+<p>Because this data descriptor is compiled into imaged ABF
+applications, all ABF applications created using Ingres r3
+or earlier need to be re-imaged after upgrading. To do
+this, delete the contents of the ABF object directory,
+$ING_ABFDIR/&lt;database-name&gt;/&lt;app-name&gt;, and re-image.
+<p>
+<hr>
+<h2><a name="general_considerations">4.0  General Considerations</a></h2>
+<p>
+<hr>
+<h3><a name="features_not_included_in_ingres_2006_release_3">4.1  Features Not Included in Ingres 2006 Release 3</a></h3>
+<p>The following features are not currently supported in
+Ingres 2006 Release 3, but will be supported in a future
+release:
+<ul>
+<p><li>International Language Message File Support
+<p><li>Ingres Cluster Solution (Active-Active Only) (The Failover
+Cluster Solution is supported.)
+</ul>
+<p>
+<hr>
+<h3><a name="behavioral_changes_from_earlier_versions_to_ingres_2006_release_3">4.2  Behavioral Changes from Earlier Versions to Ingres 2006 Release 3</a></h3>
+<p>Note the following behavioral changes when moving to Ingres
+2006 Release 3 from Release 2.6, 2006, or 2006 Release 2.
+<p><b>Changes to Out-of-the-Box Defaults</b>
+<p>Ingres 2006 Release 3 has new defaults for the following
+configuration parameters, set during installation. 
+<p>The default page size (default_page_size) for tables is
+changed from 2K to 8K. 
+<p>The default buffer cache size (cache_guideline) is
+configured as medium for all page sizes, resulting in
+increased size for the following page sizes: 
+<ul>
+<p><li>For 8K page size, increased from 16 MB to 48 MB.
+<p><li>For 32K page size, increased from 12 MB to 48 MB.
+<p><li>For 64K page size, increased from 11 MB to 48 MB.
+</ul>
+<p>DMF Cache 2K and 8K are enabled by default.
+<p>The default transaction log file size (II_LOG_FILE_SIZE_MB)
+is changed from 32 MB to 256 MB. The required minimum log
+file size is increased from 16 MB to 32 MB. 
+<p><b>Installer Changes</b>
+<p>This release includes a graphical installation wizard on
+Linux and Windows. Please reference the correct platform
+readme for wizard startup instructions.
+<p><b>DAS Server Replaces JDBC Server</b>
+<p>The functionality provided in prior releases by the JDBC
+Server has been moved to the Data Access Server (DAS). The
+DAS provides greater functionality as it also provides
+connectivity from .NET Applications to Ingres. The JDBC
+Server was deprecated in Ingres 2006 Release 2 and is no
+longer distributed with the product. When Ingres 2006
+Release 3 is installed, the JDBC Server configuration will
+be automatically migrated to the DAS Server. If the DAS
+Server startup count is currently set to 0, it will set to
+1 and the JDBC Server configuration information will be
+removed from the configuration file (config.dat). For more
+information on the DAS Server, see the <i>Connectivity Guide</i>. 
+<p><b>Ingres Internal Threads on Linux</b>
+<p>Internal threads are no longer supported on Linux. The
+II_THREAD_TYPE setting will be ignored, and Ingres will
+default to Operating System threads.
+<p><b>Cache Memory Usage Increased</b>
+<p>The DBMS server cache size defaults have been increased in
+Ingres 2006. This means that more virtual storage will be
+required to run Ingres.
+<p><b>Ingres JDBC Driver Cursor Mode</b>
+<p>The default cursor mode is now READONLY rather than
+allowing the DBMS to determine the mode. The original
+behavior can be selected using the URL attribute
+CURSOR=DBMS or setting the property
+ingres.jdbc.property.cursor_mode=dbms in the driver
+property file. 
+<p><b>Ingres JDBC Driver Package</b>
+<p>The original Ingres JDBC Driver and DataSources classes
+contained in the Java archive iijdbc.jar under the Java
+package path of "ca.ingres.jdbc" are moved to the package
+path of "com.ingres.jdbc". The iijdbc.jar archive included
+with Ingres 2006 also contains the original classes for
+backward compatibility. The original "ca.ingres.jdbc"
+package path and classes will be removed from iijdbc.jar in
+the next major release. Existing references to
+"ca.ingres.jdbc" classes will continue to work, but should
+be changed when convenient. New references should use the
+package path of "com.ingres.jdbc". 
+<p>
+<hr>
+<h3><a name="utf8_character_set">4.3  UTF8 Character Set</a></h3>
+<p>The UTF8 character set is a new feature in this release,
+and can be selected during installation.  
+<p><b>Note:</b> In this Beta release, the character-based application
+development tools, Ingres Star, and Ingres Replicator are
+not supported in a UTF8 installation. 
+<p>
+<hr>
+<h3><a name="openroad_support">4.4  OpenROAD<sup>®</sup> Support</a></h3>
+<p>This version of Ingres supports OpenROAD 2006 running in
+the local instance.
+<p>This version of Ingres does not support OpenROAD 4.1
+running in the local instance. We recommend that OpenROAD
+4.1 applications&nbsp;be run through Ingres Net. 
+<p>
+<hr>
+<h3><a name="enterprise_access_support">4.5  Enterprise Access Support</a></h3>
+<p>This version of Ingres does not support Enterprise Access
+2.1 or 2.6 running in the local instance.  
+<p>
+<hr>
+<h3><a name="odbc_support">4.6  ODBC Support</a></h3>
+<p>The Ingres ODBC driver can be used with the Ingres ODBC
+Call-level interface (CLI) or with a supported third-party
+ODBC driver manager. For more information, see the
+<i>Connectivity Guide</i>.
+<p>
+<hr>
+<h3><a name="jdbc_driver">4.7  JDBC Driver</a></h3>
+<p>The Ingres JDBC Driver supports Java 1.5 and above.  
+<p>
+<hr>
+<h3><a name="unicode_support_in_terminal_monitor">4.8  Unicode Support in Terminal Monitor</a></h3>
+<p>The terminal monitor now supports displaying query results
+from Unicode columns by coercing them to local character
+set. It will return an error if the Unicode character
+cannot be coerced to the local character set.
+<p>
+<hr>
+<h3><a name="selecting_or_updating_new_data_types_from_an_older_client">4.9  Selecting or Updating New Data Types from an Older Client</a></h3>
+<p>When connecting from an older version of the client to
+Ingres 2006 Release 3, if a query attempts to select or
+update a new data type not supported by the client (for
+example, ANSI date/time types), you will receive error
+E_US10F0.
+<p>
+<hr>
+<h3><a name="web_deployment_option">4.10  Web Deployment Option</a></h3>
+<p>The Web Deployment Option is a deprecated feature and will
+be removed in a future release of Ingres.
+<p>
+<hr>
+<h2><a name="fixed_issues">5.0  Fixed Issues</a></h2>
+<p>For a list of bugs fixed since Ingres 2006 Release 2, see
+Knowledge Base document 415346. Note the version identifier
+in this notice; it is required to access the document.  
+<dl>
+<dd><a href="http://servicedesk.ingres.com/CAisd/pdmweb.ingres?OP=SHOW_DETAIL+PERSID=KD:%20415346+HTMPL=kt_document_view.htmpl%20" target="_blank">Knowledge Base Document 415346</a>
+</dl>
+<p>
+<hr>
+<h2><a name="known_issues">6.0  Known Issues</a></h2>
+<p>For an informational solution or to see if a patch is
+available for the following known issues, visit
+<a href="http://ingres.com/support" target="_blank">http://ingres.com/support</a>  or contact technical support.
+<p>
+<hr>
+<h3><a name="dbms_server_and_dba_tools_issues">6.1  DBMS Server and DBA Tools Issues</a></h3>
+<p><table border>
+<tr>
+<th align=left valign=top>
+Reference  
+</th>
+<th align=left valign=top>
+Description 
+</th>
+</tr>
+<tr>
+<td>086877
+</td>
+<td>Ingres Replicator does not work with partitioned tables.
+</td>
+</tr>
+<tr class="alt">
+<td>110051<br>
+(Linux only)
+</td>
+<td>Database events may be lost if sent in quick succession between two sessions both connecting from the same ESQL program.
+</td>
+</tr>
+<tr>
+<td>111375
+</td>
+<td>Server consumes 100% CPU optimizing a query with nested views.
+</td>
+</tr>
+<tr class="alt">
+<td>111628
+</td>
+<td>On a highly active system, a ROLLBACK of a transaction could fail with E_DM9238, E_DM9509, E_DM9300. The session is left holding a BM Buffer mutex, which may cause the installation to hang.
+</td>
+</tr>
+<tr>
+<td>112560
+</td>
+<td>MODIFY or CREATE TABLE AS SELECT commands are taking shared locks on IIDBDEPENDS system catalog. This can cause performance problems if other commands are attempting to update the IIDBDEPENDS (such as adding a constraint to a table).
+</td>
+</tr>
+<tr class="alt">
+<td>112946
+</td>
+<td>Stack overflow in the DMFRCP caused by recursive calls to the deadlock() routine. May be reported in the errlog.log as a SIGBUS in deadlock(). The installation dies and has to be restarted.
+</td>
+</tr>
+<tr>
+<td>113251
+</td>
+<td>Added capability to embedded sql programs to carry out Unicode coercion in front end. Change to print the Unicode columns correctly.
+</td>
+</tr>
+<tr class="alt">
+<td>113574
+</td>
+<td>Wrong number of rows in query using sum and case with a subquery. The problem only occurs when the query plan has been flattened.
+</td>
+</tr>
+<tr>
+<td>115062
+</td>
+<td>Sessions queue up behind a thread that is stuck on a pthread_cond_wait or lwp_cond_wait but the thread is marked with EDONE state indicating that it should have been resumed.
+</td>
+</tr>
+<tr class="alt">
+<td>115420
+</td>
+<td>When some queries are run against a database with collation sequence, a performance problem may be experienced. This is due to indices not being used where expected.
+</td>
+</tr>
+<tr>
+<td>115716
+</td>
+<td>SET IO_TRACE does not work when used along with SET PARALLEL
+</td>
+</tr>
+<tr class="alt">
+<td>115717
+</td>
+<td>Command “sql &lt;database&gt; -R&lt;role&gt;” prompts for a password even if the role is not assigned a password.
+</td>
+</tr>
+<tr>
+<td>115718
+</td>
+<td>MODIFY TABLE returns error E_QE0083 when modifying a table in a raw database location.
+</td>
+</tr>
+<tr class="alt">
+<td>115719
+</td>
+<td>The Ingres Performance Monitor Wizard GUI hangs after message “Obtaining Ingres counter information”
+</td>
+</tr>
+<tr>
+<td>115721
+</td>
+<td>XMLIMPORT utility failed to import UUID data that was generated with the GENXML utility. The error message generated during the XMLIMPORT phase, reads: [Fatal Error at file xmlout.xml, Message: Invalid character (Unicode: 0x19)]
+</td>
+</tr>
+<tr class="alt">
+<td>115722
+</td>
+<td>The XMLIMPORT utility fails to apply table or row level constraints to database objects generated with the GENXML utility.
+</td>
+</tr>
+<tr>
+<td>116233
+</td>
+<td>II_CHARSETxx=THAI. Following modify table...with compression=(data) and table contains varchar column(s), trim() of varhar column data returns incorrect data. Last byte of data has been 'trimmed' off.
+</td>
+</tr>
+<tr class="alt">
+<td>116239
+</td>
+<td>Value of a varchar column is trimmed of trailing space if it is joined via a hash join.
+</td>
+</tr>
+<tr>
+<td>116284
+</td>
+<td>Functions such as TRIM and SQUEEZE that looked for whitespace characters sometimes match incorrectly. Runs of character 0xA1 are treated as space regardless of language setting.
+</td>
+</tr>
+<tr class="alt">
+<td>116299
+</td>
+<td>Outer-join hash join where one side has heavily duplicated join key values, and the other side has no matches, can SEGV.
+</td>
+</tr>
+<tr>
+<td>116463
+</td>
+<td>SELECT SQUEEZE(nvarchar_column) FROM test_table; fails to return any data.
+</td>
+</tr>
+<tr class="alt">
+<td>116476
+</td>
+<td>When sysmod or usermod is executed, the LOCATION information is incorrect for modified transactions in the transaction log.
+</td>
+</tr>
+<tr>
+<td>116520
+</td>
+<td>Parallel queries run with SET SESSION WITH ON_LOGFULL=COMMIT  semantics produce a variety of unexpected errors.
+</td>
+</tr>
+<tr class="alt">
+<td>116667
+</td>
+<td>Ingres 2006 QBF client fail to update data on Ingres 2.6 server.  The server will report "E_GC2410_PERF_CONV   PL internal error. PERFORM_CONVERSION Failed."
+</td>
+</tr>
+<tr>
+<td>116669
+</td>
+<td>Queries using SUBSTRING fail over STAR connections, yet the equivalent usage of other string functions such as LEFT, RIGHT and LENGTH succeed.  Typically the query fails with these errors:<br>
+E_UL0303 Unexpected query tree node<br>
+E_OP068A_BAD_TREE consistency check - error converting query tree to text
+</td>
+</tr>
+<tr class="alt">
+<td>116827
+</td>
+<td>DATE/TIMESTAMP/TIME conversion from ODBC to Ingres, EDBC, and gateways does not work in some cases.
+</td>
+</tr>
+<tr>
+<td>116858
+</td>
+<td>Queries on NVARCHAR columns using LIKE and a range of characters separated by a dash in escaped square brackets return an incorrect result. For example, "WHERE Invar LIKE '\[A-Z\]%' escape '\'" returns only rows starting with A or Z.
+</td>
+</tr>
+<tr class="alt">
+<td>116992
+</td>
+<td>UNION SELECT on partitioned table returns wrong results. Same select on unpartitioned table returns correct results.
+</td>
+</tr>
+<tr>
+<td>117034
+</td>
+<td>Executing a database procedure containing a “for/do” select loop feeding an INSERT statement using hash aggregation, fails with incorrect results. E_QE0018 Illegal parameter in control block reported to the front end and E_QE0018 + E_DM9713 Error occurred writing to sort/hash join work file -- path = %0c, block %1d reported in the errlog.log.
+</td>
+</tr>
+<tr class="alt">
+<td>117040
+</td>
+<td>The presence of a long varchar column in the result row of a row producing procedure causes garbled result data.
+</td>
+</tr>
+<tr>
+<td>117277
+</td>
+<td>The RANDOM and RANDOMF functions used from ABF applications return the same sequence of random numbers and are not affected by calling RANDOM_SEED.
+</td>
+</tr>
+<tr class="alt">
+<td>117345
+</td>
+<td>Tuxedo test fails with locking problem. E_QS001E_ORPHANED_OBJ An orphaned Query Text object was found and destroyed during QSF session exit.
+</td>
+</tr>
+<tr>
+<td>117461
+</td>
+<td>VERIFYDB produces E_DM93A7, E_DM920C, E_DM9C83.
+</td>
+</tr>
+<tr class="alt">
+<td>117462
+</td>
+<td>If an frskey is explicitly assigned to a menu item on a form including a table field, and the menu item is removed using "set_forms menu '' (active(menuitem)=off)", the frskey may still be pressed and the menu item will still be selected.
+</td>
+</tr>
+<tr>
+<td>117479<br>
+(Windows only)
+</td>
+<td>Ingres Export Assistant will not export data with Unicode data types.
+</td>
+</tr>
+<tr class="alt">
+<td>117544
+</td>
+<td>Using the LIKE operator with a repeated any match character on a unicode field can make DBMS CPU bound.
+</td>
+</tr>
+<tr>
+<td>117603
+</td>
+<td>CBF allows an invalid port number in tcp_ip port values, causing errors in startup and shutdown.
+</td>
+</tr>
+<tr class="alt">
+<td>117623
+</td>
+<td>SQL functions second() and microsecond() may return incorrect values when executed with non-ANSI date/time operands.
+</td>
+</tr>
+<tr>
+<td>117670
+</td>
+<td>Queries with predicates involving Unicode (nchar, nvarchar) columns with explicitly defined collation sequences may not honour the collation sequence during execution. The specific case that gave rise to this bug involved a LIKE predicate, but it is anticipated that the problem could also occur with simple comparisons.
+</td>
+</tr>
+<tr class="alt">
+<td>117691
+</td>
+<td>The LIKE operator ignores Unicode characteristics of NCHAR columns such as diacriticals, compound letters and collation.
+</td>
+</tr>
+<tr>
+<td>117737<br>
+(Solaris only)
+</td>
+<td>Kerberos is supported in a 32-bit installation only.
+</td>
+</tr>
+<tr class="alt">
+<td>117768
+</td>
+<td>|| is being used as a synonym for + instead of concatenation so that 3 || 5 returns 8 rather than '35'
+</td>
+</tr>
+<tr>
+<td>117804<br>
+(Windows only)
+</td>
+<td>Reload fail with E_US0963 due to comments and extra whitespaces in the query text when creating a procedure via VDBASQL.
+</td>
+</tr>
+<tr class="alt">
+<td>117859
+</td>
+<td>The remote command process RMCMD shuts down immediately after startup, when II_EMBED_SET is set to dbmserror. Errors in the errlog.log: "E_RE0006_STARTUP_RMCMD_OBJ Cannot access the RMCMD objects" followed by "E_RE0002_RMCMD_DOWN".
+</td>
+</tr>
+<tr>
+<td>117865
+</td>
+<td>Replicator Server transmits one character less of maximum Unicode length of 16000 for nchar (15999 for nvarchar).
+</td>
+</tr>
+<tr class="alt">
+<td>117866
+</td>
+<td>The fraction portion of INTERVAL day to second literals is truncated to 6 places. Maximum allowable is 9.
+</td>
+</tr>
+<tr>
+<td>117872<br>
+(Windows only)
+</td>
+<td>Error E_OP0791_ADE_INSTRGEN consistency check is returned from the following syntax.<br>
+update junk set a1=a1-date('1 months') where a1='1-10'
+</td>
+</tr>
+<tr class="alt">
+<td>117873
+</td>
+<td>The maximum size of a sequence is 2147483647, even though it is possible to specify BigInt.
+</td>
+</tr>
+<tr>
+<td>117874
+</td>
+<td>Shutting down Ingres using a userid other than the Ingres Administrator displays a FATAL ERROR message, where a permission denied warning would be more appropriate.
+</td>
+</tr>
+<tr class="alt">
+<td>117875
+</td>
+<td>Configuration Manager fails to restore the original DATE_TYPE_ALIAS value when the RESTORE button is used.
+</td>
+</tr>
+<tr>
+<td>117992
+</td>
+<td>A select on a non-histogrammed timestamp column on a 64-bit platform may return a E_OP0082 error (SIGBUS exception in error log).
+</td>
+</tr>
+<tr class="alt">
+<td>118015
+</td>
+<td>When using collation sequences on an optimized database, E_OP048C error can be produced.
+</td>
+</tr>
+<tr>
+<td>118040
+</td>
+<td>Interval day to second values are not coerced to string correctly.
+</td>
+</tr>
+<tr class="alt">
+<td>118099
+</td>
+<td>Index creation and concurrent inserts to the base table may deadlock on the base table's table control and physical table locks. This failure is particularly significant if index creation is aborted by the deadlock thread during an online usermod as index table(s) are lost.
+</td>
+</tr>
+<tr>
+<td>118233
+</td>
+<td>The following message occurs in errlog.log during ingstop process: E_GC0155_GCN_SRV_FAILURE Registered server failure: class IUSVR, address nnnnn.
+</td>
+</tr>
+<tr class="alt">
+<td>118250
+</td>
+<td>The MKRAWLOG script fails when HPUX /etc/default/security option SU_DEFAULT_PATH is set.  MKRAWLOG will return errors "No such file or directory: ipcclean" and "csinsatll: command not found"
+</td>
+</tr>
+<tr>
+<td>118493
+</td>
+<td>In a concurrent processing environment, error "E_DMA42F_LG_UNMUTEX An error was encountered releasing mutually exclusive access to a logging system data structure"  may occur. The configuration settings in CBF are; 100MB dual log, 2 DBMS servers, 2k page size and per_tx_limit=1000 for locking. The error was seen in Tru64 and HP-Itanium platforms. To avoid the error, increase the number for locking.
+</td>
+</tr>
+<tr class="alt">
+<td>119055
+</td>
+<td>DBMS server locks completely deleting 300+ records with  dual logging enabled.
+</td>
+</tr>
+<tr>
+<td>119210
+</td>
+<td>In a UTF8 installations help table for max size nchar/nvarchar columns fails with E_QE0308 error.
+</td>
+</tr>
+<tr class="alt">
+<td>119311
+</td>
+<td>On a UTF8 instance ingbuild fails in forms mode with error:  Exiting... due to Front-End internal bug check. Routine 'FEadfcb(alloc)'.
+</td>
+</tr>
+<tr>
+<td>119360
+</td>
+<td>Added support for quel range pattern matching for UTF8 characters.
+</td>
+</tr>
+<tr class="alt">
+<td>119361
+</td>
+<td>Front end vision tool fails for UTF8 installs.
+</td>
+</tr>
+<tr>
+<td>119430
+</td>
+<td>On UTF8 installations Qbf Master/Detail role values fail validation check with error E_FI2199
+</td>
+</tr>
+<tr class="alt">
+<td>119443
+</td>
+<td>Datatypes longer than 15 characters are rejected in vifred with E_VF0007 error, eg interval day to second is reported as not a valid datatype.
+</td>
+</tr>
+<tr>
+<td>119457
+</td>
+<td>Cursor operations using embedded COBOL may fail with interface library protocol errors. This will result in the messages "E_LQ0055 Cursor '&lt;cursor-name&gt;' cannot be opened." and "E_LC0022 Protocol data read failure." This is an internal error for which there is no circumvention available.
+</td>
+</tr>
+<tr class="alt">
+<td>119464
+</td>
+<td>Column level collation 'unicode', is being allowed for non uniocode columns as well. Expect error if 'unicode' collation is specified in a create table  statement on a non unicode type column for all non-UTF8 installation.
+</td>
+</tr>
+<tr>
+<td>119469
+</td>
+<td>Insert into column defined as text(16001) in a UTF8 database receives error E_OP0791_ADE_INSTRGEN consistency check.
+</td>
+</tr>
+<tr class="alt">
+<td>119473
+</td>
+<td>ABF Application with FORTRAN procedures fails with link error 'undefined reference to oda27_3p2'
+</td>
+</tr>
+<tr>
+<td>119474
+</td>
+<td>After upgrading from Ingres 2.6 to Ingres 2006 Release 3, ingstop fails to shutdown ingres because the Remote command server rmcmd fails to shutdown.
+</td>
+</tr>
+<tr class="alt">
+<td>119475
+</td>
+<td>In UTF8 installations, help procedure after creating a procedure returns error that no procedure was found that matched requested procedure name.
+</td>
+</tr>
+<tr>
+<td>119476
+</td>
+<td>In UTF8 installations, replicator fails to replicate long varchar columns with error that the UTF8 string supplied is of incorrect format.
+</td>
+</tr>
+<tr class="alt">
+<td>119477
+</td>
+<td>On UTF8 installations on Windows setting up replication fails while creating a shadow table with E_RM0103 error.
+</td>
+</tr>
+<tr>
+<td>119478
+</td>
+<td>Createdb with an accented character fails under a UTF8 installation with E_DU3010_BAD_DBNAME error.
+</td>
+</tr>
+<tr class="alt">
+<td>119479
+</td>
+<td>In a UTF8 installation of Ingres, createdb for a Star database fails with errors E_OP0785, E_DD0019, and E_AD1014.
+</td>
+</tr>
+</table>
+<p>
+<hr>
+<h3><a name="web_deployment_option_2">6.2  Web Deployment Option</a></h3>
+<p><table border>
+<tr>
+<th align=left valign=top>
+Reference  
+</th>
+<th align=left valign=top>
+Description 
+</th>
+</tr>
+<tr>
+<td>115720
+</td>
+<td>The Ingres Web Deployment Option does not currently support the Apache 2.x Web Server.
+</td>
+</tr>
+<tr class="alt">
+<td>115723<br>
+(Linux Only)
+</td>
+<td>When the Web Deployment Option has been installed, shutting down the Data Access Server results in error “*** glibc detected *** free(): invalid pointer: ***”
+</td>
+</tr>
+</table>
+<p>
+<hr>
+<h3><a name="windows_installation_issues">6.3  Windows Installation Issues</a></h3>
+<p><table border>
+<tr>
+<th align=left valign=top>
+Reference  
+</th>
+<th align=left valign=top>
+Description 
+</th>
+</tr>
+<tr>
+<td>117476
+</td>
+<td>A dual transaction log fails to be created when a customized install requests one.
+</td>
+</tr>
+<tr class="alt">
+<td>117478
+</td>
+<td>Help missing from the install "Installation type" dialog.
+</td>
+</tr>
+<tr>
+<td>117933
+</td>
+<td>Setting DMF cache parameter to exceed 2Gig on Windows results in a SEGV, and after that Ingres Service Manager hangs and it must be restarted and Ingres has to be stopped.
+</td>
+</tr>
+</table>
+<p>
+<hr>
+<h3><a name="linux_installation_issues">6.4  Linux Installation Issues</a></h3>
+<p><table border>
+<tr>
+<th align=left valign=top>
+Reference 
+</th>
+<th align=left valign=top>
+Description  
+</th>
+</tr>
+<tr>
+<td>114443
+</td>
+<td>iirpmrename fails with a cryptic "rpm archive packing failed" message when neither rpmbuild or "rpm --buildroot" are available.
+</td>
+</tr>
+<tr class="alt">
+<td>115724
+</td>
+<td>As of the time this readme was published, the installation of Ingres requires RPM with a version in the range 3.0.6 through 4.4.2, except for RPM version 4.1. If RPM 4.1 is installed, it must be upgraded to version 4.1.1 or higher before you can install Ingres.
+<p>RPM 4.1 fails to set environment variable RPM_INSTALL_PREFIX.&nbsp;Attempting to install Ingres with RPM 4.1 will lead to numerous “cannot find file” errors, and a failed install.&nbsp;For further details on this RPM bug, see <a href="http://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=75057" target="_blank">http://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=75057</a>.&nbsp;
+</td>
+</tr>
+<tr>
+<td>117671
+</td>
+<td>SYSCHECK may fail to detect the correct semaphore info on Linux kernel 2.6.19 or greater.
+</td>
+</tr>
+<tr class="alt">
+<td>117861
+</td>
+<td>The GUI installer allows II_SYSTEM to be left blank and does not validate its value.
+</td>
+</tr>
+<tr>
+<td>117871
+</td>
+<td>The GUI installer for Linux does not install on x86 64-bit Linux systems.
+</td>
+</tr>
+<tr class="alt">
+<td>117876
+</td>
+<td>The Linux GUI installer incorrectly allows an install with only the "core" package selected, which results in an unusable installation.
+</td>
+</tr>
+<tr>
+<td>117931
+</td>
+<td>The prompt during install in iisudbms does not honor the users response and creates the demodb if the user enters no.
+</td>
+</tr>
+<tr class="alt">
+<td>117934
+</td>
+<td>Selecting ANSI/ISO SQL92 compliance in the GUI installer does not result in the instance being configured this way.
+</td>
+</tr>
+<tr>
+<td>118008
+</td>
+<td>Upgrading the only instance on a machine using the GUI  installer, doesn't give the user the option to NOT upgrade user database.
+</td>
+</tr>
+<tr class="alt">
+<td>119306
+</td>
+<td>iirpmrename fails because of missing GPG keys on systems that enforce them to be present if package signing is requested. e.g Fedora Core 7
+</td>
+</tr>
+<tr>
+<td>119407
+</td>
+<td>The -standard parameter causes iilink to fail with unresolved references.
+</td>
+</tr>
+<tr class="alt">
+<td>119471
+</td>
+<td>chkconfig on RedHat 5 is not able to add the Ingres init script.
+</td>
+</tr>
+<tr>
+<td>119472
+</td>
+<td>upgradedb hangs after the upgrade from 2.6/0604 to Ingres 2006 Release 3
+</td>
+</tr>
+</table>
+<p>
+<hr>
+<h2><a name="documentation">7.0  Documentation</a></h2>
+<p>The Ingres documentation is provided in Portable Document
+Format (PDF). This documentation is available as a gzip
+archive for all environments or as an installable RPM
+package for Linux.   
+<p>For Linux platforms the Ingres documentation RPM will be
+installed to the /usr/share/doc directory. 
+<p>The documentation can be downloaded from
+<a href="http://ingres.com/downloads/prod-download-documents.php" target="_blank">http://ingres.com/downloads/prod-download-documents.php</a>.
+<p>
+<hr>
+<h2><a name="contacting_technical_support">8.0  Contacting Technical Support</a></h2>
+<p>For online technical assistance and a complete list of
+locations and telephone numbers, contact technical support
+at <a href="http://ingres.com/support/contact.php" target="_blank">http://ingres.com/support/contact.php</a>.
+<p>
+<hr>
+<font size=-2>
+Copyright © 2007 Ingres Corporation. All rights reserved.
+</font>
+</BODY>
+</HTML>

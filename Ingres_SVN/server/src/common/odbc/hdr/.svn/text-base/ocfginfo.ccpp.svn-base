@@ -1,0 +1,38 @@
+/*
+** Copyright (c) 1993, 2004 Ingres Corporation
+*/
+
+/*
+** Name: ocfginfo.ccpp
+**
+** Description:
+**      ODBC configuration data file for the iiodbcinst utility and
+**      Ingres ODBC Administrator.
+**
+** History:
+**      02-Jun-03 (loera01) SIR 109643
+**          Created.
+**      12-Jan-04 (loera01)
+**          Added keywords.
+**      26-jan-04 (loera01)
+**          Added port to VMS.
+**	11-Jun-2004 (somsa01)
+**	    Cleaned up code for Open Source.
+**	01-Oct-2004 (lunbr01)  bug 113167
+**          SLSFX was not properly getting updated to "so" as suffix
+**          in Driver name.
+**      29-apr-2005 (loera01)
+**          Renamed read-only driver for VMS
+**      29-jan-2007 (Ralph Loen) Bug 117569
+**          Rename "Ingres 3.0" driver name as "Ingres 2006".
+*/
+
+# ifdef VMS
+DriverFileName=ODBCFELIB.EXE
+ReadOnlyDriverFileName=ODBCROFELIB.EXE
+# else
+DriverFileName=lib(PROG1PRFX)odbcdriver.1.$SLSFX
+ReadOnlyDriverFileName=lib(PROG1PRFX)odbcdriverro.1.$SLSFX
+# endif
+DriverName=(PROD1NAME)
+AltDriverName=(PROD1NAME) 2006 

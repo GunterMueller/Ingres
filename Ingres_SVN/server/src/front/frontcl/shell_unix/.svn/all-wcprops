@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/frontcl/shell_unix
+END
+quel.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/frontcl/shell_unix/quel.sh
+END
+ingres.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/frontcl/shell_unix/ingres.sh
+END
+vision.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/frontcl/shell_unix/vision.sh
+END
+abf.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/shell_unix/abf.sh
+END
+isql.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/frontcl/shell_unix/isql.sh
+END
+esqlcc.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/frontcl/shell_unix/esqlcc.sh
+END
+abfimage.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/frontcl/shell_unix/abfimage.sh
+END
+ingsql.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/frontcl/shell_unix/ingsql.sh
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/frontcl/shell_unix/Jamfile
+END
+iquel.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/frontcl/shell_unix/iquel.sh
+END
+sql.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/frontcl/shell_unix/sql.sh
+END
+imageapp.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/frontcl/shell_unix/imageapp.sh
+END
+query.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/frontcl/shell_unix/query.sh
+END

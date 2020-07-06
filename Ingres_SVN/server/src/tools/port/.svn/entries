@@ -1,0 +1,70 @@
+8
+
+dir
+33
+http://code.ingres.com/ingres/main/src/tools/port
+http://code.ingres.com/ingres
+
+
+
+2008-05-05T11:35:59.660505Z
+33
+grant
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+45b5d43f-8932-4c86-835a-3654e5842839
+
+eval_unix_vms
+dir
+
+release_unix
+dir
+
+specials
+dir
+
+others
+dir
+
+resource_win
+dir
+
+shell_win
+dir
+
+conf
+dir
+
+hdr_unix_vms
+dir
+
+jam
+dir
+
+qac_unix
+dir
+
+shell_unix
+dir
+
+userenv_unix
+dir
+
+shell_vms
+dir
+
+defs_win
+dir
+

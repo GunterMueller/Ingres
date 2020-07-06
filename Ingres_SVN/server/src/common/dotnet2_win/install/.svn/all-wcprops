@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/install
+END
+assemblyinfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/install/assemblyinfo.cs
+END
+install.csproj.user
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/install/install.csproj.user
+END
+install.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/install/install.csproj
+END
+vsinstaller.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/dotnet2_win/install/vsinstaller.cs
+END

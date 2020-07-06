@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dtloader", "dtloader.vcproj", "{C9F7FAF5-6EB2-4BFD-A839-25A8A6389893}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 1
+		SccProjectUniqueName0 = dtloader.vcproj
+		SccProjectName0 = \u0022$/DtLoader\u0022,\u0020VJMAAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{C9F7FAF5-6EB2-4BFD-A839-25A8A6389893}.Debug.ActiveCfg = Debug|Win32
+		{C9F7FAF5-6EB2-4BFD-A839-25A8A6389893}.Debug.Build.0 = Debug|Win32
+		{C9F7FAF5-6EB2-4BFD-A839-25A8A6389893}.Release.ActiveCfg = Release|Win32
+		{C9F7FAF5-6EB2-4BFD-A839-25A8A6389893}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

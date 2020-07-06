@@ -1,0 +1,16 @@
+#
+# OpenROAD makefile generation hints for common\gcf\util
+#
+# History:
+#	30-Jan-2007 (wridu01)
+#		Adapted for flat-linking instead of IngresII DLL structure.
+#	1430-Jun-2007 (wridu01)
+#		Added iigcstop.obj, gcmtool.obj and iibrowse.obj to list of 
+#		files that should not be included into util.lib to eliminate
+#		warning messages.
+#
+objonly = iinamu.obj 
+objonly = netu.obj 
+objonly = iigcstop.obj
+objonly = gcmtool.obj
+objonly = iibrowse.obj

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 24
+/ingres/!svn/ver/33/main
+END
+test_env.sh
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/ingres/!svn/ver/32/main/test_env.sh
+END
+clear_env.sh
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/ingres/!svn/ver/12/main/clear_env.sh
+END
+createdbms
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/ingres/!svn/ver/32/main/createdbms
+END
+test.grant
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/ingres/!svn/ver/20/main/test.grant
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/ingres/!svn/ver/32/main/README.txt
+END
+set_env.sh
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/ingres/!svn/ver/12/main/set_env.sh
+END
+runbuild.sh
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/ingres/!svn/ver/13/main/runbuild.sh
+END

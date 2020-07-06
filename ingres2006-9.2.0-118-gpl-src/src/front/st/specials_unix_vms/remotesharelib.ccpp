@@ -1,0 +1,30 @@
+/*
+** Copyright (c) 2004 Ingres Corporation
+*/
+/*
+** Generic part file for remote api sharelib
+*/
+
+/*
+** History
+**	29-Mar-2004 (hweho01)
+**              Created for remote API release. 
+*/
+
+
+PART  remotesharelib
+
+# ifdef R_SHLIBS
+   BUILD_DIR (ING_BUILD)!lib
+   DIRECTORY (PROD2NAME)!lib
+      {
+      EXECUTABLE lib(PROG0PRFX)compat.1.$SLSFX
+      EXECUTABLE lib(PROG0PRFX)frame.1.$SLSFX
+      EXECUTABLE lib(PROG0PRFX)q.1.$SLSFX
+      EXECUTABLE lib(PROG0PRFX)oiutil.1.$SLSFX
+      EXECUTABLE lib(PROG1PRFX)api.1.$SLSFX
+      PERMISSION s:re,o:rwed,g:re,w:re
+      }
+# endif /* R_SHLIBS */
+
+

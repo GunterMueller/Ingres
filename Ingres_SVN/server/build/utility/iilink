@@ -1,0 +1,998 @@
+#!/bin/bash
+# Copyright (c) 2004 Ingres Corporation
+# $Header $
+#
+# Name:
+#	iilink - complete link of partially linked executables 
+#		 iidbms.o, iircp.o, iijsp.o
+#
+# Usage:
+#	iilink [-dbms] [-standard] [-merge] [-noudt] [-nosol]
+#
+# Description:
+#	This script loads iidbms, dmfrcp and dmfjsp. If the -dbms
+#	flag is passed the only executable built is iidbms.
+#
+#	If the -standard flag is passed there will be no extension
+#	attached to the name of the binaries. 
+#
+#	If the -merge flag is passed, iilink will attempt to create
+#	iimerge regardless of what object files are available.
+#
+#	If the -noudt flag is passed, iilink will not ask any questions
+#	about which udt or class object files to use, it will just use
+#   	the default.
+#
+#	If the -nosol flag is passed, iilink will not include the
+#	Spatial Object files.
+#
+#	If no flags are passed, iilink loads all the executables with
+#	their standard names, iidbms, dmfrcp and dmfjsp.
+#
+# Exit status:
+#	0 	OK
+#	1	unknown option
+#	2	cannot load iidbms
+#	3	cannot load dmfrcp
+#	4	cannot load dmfjsp
+#	5	cannot load iimerge
+#	6	cannot find appropriate object files
+#	7	error creating symbolic link
+#
+#  DEST = utility
+
+. iisysdep
+
+[ $CMD ] || 
+{
+	CMD=iilink
+	export CMD
+}
+
+# check for command arguments passed to this program
+
+dbms=false
+standard=false
+merge=false
+default=true
+rcpjsp=false
+askudt=true
+# Will only askcls id spatials are also configured
+askcls=true
+lphb=false
+asklphb=true
+
+# If we are building a server with shared libraries set shared=true
+
+if $USE_SHARED_SVR_LIBS
+then
+shared=true
+else
+shared=false
+fi
+
+if $USE_ARCHIVE_SVR_LIB
+then
+archive=true
+else
+archive=false
+fi
+
+#
+# Set hybrid variables. If conf_ADD_ON32 is set then it's reverse hybrid
+#
+HB=64 ## hybrid build
+RB=32 ## regular build
+ADD_ONHB=`ingprenv II_LP64_ENABLED`
+[ "$conf_ADD_ON32" ] &&
+{
+    HB=32
+    RB=64
+    ADD_ONHB=FALSE
+}
+
+case "$ADD_ONHB" in
+   TRUE|\
+   true|\
+     ON|\
+     on) ADD_ONHB=TRUE
+	 ;;
+      *) ADD_ONHB=FALSE
+	 ;;
+esac
+
+# usage info
+usage()
+{
+    cat << EOF
+usage:
+	iilink [-dbms] [-standard] [-noudt] [-nosol] [-shared]
+		[-merge] [-lp${RB}]|[-lp${HB}]
+	
+	    -dbms	Builds only iidbms
+	    -standard	Use standard binary names (default)
+	    -noudt	Don't link in UDTs (or prompt)
+	    -nosol	Don't link in Spatial Object Library (or prompt)
+	    -shared	Build server from shared libraries (Linux default)
+	    -merge	Unconditionally build iimerge binary
+	    -lp${RB}	Build ${RB}bit server (default)
+	    -lp${HB}	Build ${HB}bit server 
+
+EOF
+}
+		
+for a in $*
+do
+	case $a in
+	  -lp${RB})	# -build the regular version if available
+		lprb=true
+		asklphb=false
+		shift
+		;;
+	  -lp${HB})	# -build the hybrid version if available
+		lphb=true
+		asklphb=false
+		shift
+		;;
+	    -d*)	# -dbms, build dbms only
+		dbms=true
+		default=false
+		shift
+		;;
+
+	-shared)	# -shared, builds dbms from shared libs.
+		shared=true
+		default=false
+		standard=true
+		shift
+		;;
+
+	    -st*)	# -standard, use standard binary names
+		standard=true
+		shift
+		;;
+
+	    -m*)   	# -merge, build iimerge unconditionally
+		merge=true
+		default=false
+		shift
+		;;
+
+	    -nosol)   	# -nosol, don't ask for Spatial Objects Library.
+		askcls=false
+		shift
+		;;
+
+	    -noudt)   	# -noudt, don't ask for udt and class objects
+		askudt=false
+		shift
+		;;
+
+	    *)		# unknown option error
+		usage
+		exit 1
+		;;
+	esac
+done
+
+if $asklphb && [ "$ADD_ONHB" = "TRUE" ] ;
+then
+        cat << !
+
+ -----------------------------------------------------------------------
+|                                                                       |
+| A ${RB} bit or ${HB} bit INGRES server program can be merged.               |
+| If you want to merge the ${HB} bit INGRES server answer yes; otherwise,  |
+| press RETURN to continue and accept a ${RB} bit server.                  |
+|                                                                       |
+ -----------------------------------------------------------------------
+
+Enter "yes" to load the ${HB} bit INGRES server program,
+!
+        iiechonn "or press RETURN to continue: "
+        read lphb_yn
+
+        if [ -z "$lphb_yn" ]
+        then :
+	else
+	    lphb=true
+        fi
+fi
+
+if $lphb 
+then
+    add_onhb_dir=/lp${HB}
+    if [ ${HB} = 64 ] ; then
+	CCLDMACH=$CCLDMACH64
+	LDLIBMACH=$LDLIBMACH64
+    else
+	CCLDMACH=$CCLDMACH32
+	LDLIBMACH=$LDLIBMACH32
+    fi
+    if [ "$VERS" = "rs4_us5" ] ; then
+       CCLDSERVER=
+    fi 
+else
+    add_onhb_dir=
+fi
+
+default_udt=$II_SYSTEM/ingres/lib${add_onhb_dir}/iiuseradt.o
+cls_str=$II_SYSTEM/ingres/lib${add_onhb_dir}/iiclsadt.o
+
+# If we haven't been told explicitly what we should build, we'll figure
+# it out based on what object files exist.
+
+if $default
+then
+  if [ -f $II_SYSTEM/ingres/lib${add_onhb_dir}/iimerge.o ]
+  then
+    merge=true
+  elif [ -f $II_SYSTEM/ingres/lib${add_onhb_dir}/iidbms.o ]
+  then
+    dbms=true
+    [ -f $II_SYSTEM/ingres/lib${add_onhb_dir}/dmfrcp.o ] && \
+    [ -f $II_SYSTEM/ingres/lib${add_onhb_dir}/dmfjsp.o ] && rcpjsp=true
+  else
+    cat << ! 
+
+ -----------------------------------------------------------------------
+|			    ***ERROR***					|
+|									|
+| None of the object files needed to load the server can be found in    |
+| the INGRES library directory.  Please retry the $CMD operation	|
+| when one of the following files is present:                           |
+|									|
+|        \$II_SYSTEM/ingres/lib${add_onhb_dir}/iimerge.o				|
+|        \$II_SYSTEM/ingres/lib${add_onhb_dir}/iidbms.o					|
+|									|
+ -----------------------------------------------------------------------
+!
+    exit 6
+  fi
+fi
+
+# -----------------------------------------------------------------------
+
+if $merge 
+then
+	echo ""
+	echo "Loading INGRES merged server program ..."
+elif $dbms
+then
+    if $rcpjsp
+    then
+	echo ""
+	echo "Loading INGRES binaries ..."
+    else
+	echo ""
+	echo "Loading DBMS server ..."
+    fi
+fi
+
+if [ "$shared" = "true" ] ;
+then
+	echo "Using Shared Libraries ..."
+    if [ "$archive" = "true" ] ; then
+        echo "Using archive library ..."
+    fi
+fi
+
+
+if $UDT_LIB_IS_STATIC_ARCHIVE ; then
+DemoUdt_library="\$II_SYSTEM/ingres/demo/udadts/libdemoudt.a"
+else
+DemoUdt_library="\$II_SYSTEM/ingres/demo/udadts/libdemoudt.1.$SLSFX"
+fi
+
+if $SPAT_LIB_IS_STATIC_ARCHIVE ; then
+Spatial_Object_Library=$II_SYSTEM/ingres/lib${add_onhb_dir}/libspat.a
+Spat_library=\$II_SYSTEM/ingres/lib${add_onhb_dir}/libspat.a
+else
+Spatial_Object_Library=$II_SYSTEM/ingres/lib${add_onhb_dir}/libspat.1.$SLSFX
+Spat_library=\$II_SYSTEM/ingres/lib${add_onhb_dir}/libspat.1.$SLSFX
+fi
+
+# Prompt for inclusion of Spatial Objects if it's configured
+config_host=`iipmhost`
+if $lphb 
+then
+    spat=`iigetres ii.$config_host.config.spatial${HB}`
+else
+    spat=`iigetres ii.$config_host.config.spatial`
+fi
+[ "$spat" != "ON" ] && askcls=false
+
+# spatial objects
+if $UADT_CAP && $askcls
+then
+	cat << !
+
+ -----------------------------------------------------------------------
+|                                                                     |
+| INGRES Spatial Objects consist of six spatial datatypes: POINT, BOX   |
+| LINE, LINE SEGMENT, CIRCLE and POLYGON, as well as a number of        |
+| spatial operators that operate on these spatial datatypes.  INGRES    |
+| Spatial Objects is licensed as an optional feature and has been       |
+| previously configured. Automatically including INGRES Spatial         |
+| Objects. To prevent the inclusion of the INGRES Spatial Object        |
+| library re-run iilink with the -nosol option.                         |
+|                                                                     |
+ -----------------------------------------------------------------------
+
+!
+
+      cls_yn="y"
+
+      [ "$cls_yn" ] &&
+      {
+	if [ -f "$Spatial_Object_Library" ]
+	then
+          if $SPAT_LIB_NAME_WITH_FULLPATH ; then
+            cls_str=$II_SYSTEM/ingres/lib${add_onhb_dir}/libspat.1.$SLSFX
+          elif $SPAT_LIB_IS_STATIC_ARCHIVE ; then
+            cls_str=$II_SYSTEM/ingres/lib${add_onhb_dir}/libspat.a
+          else
+            cls_str=-lspat.1
+          fi
+	else 
+            cat << !
+
+ -----------------------------------------------------------------------
+|                         ***WARNING***                                 |
+|                                                                       |
+| The object file for Spatial Objects:                                  |
+|                                                                       |
+|       $Spat_library
+|                                                                       |
+| does not exist on your system.  Loading will continue, but there      |
+| will probably be errors.                                              |
+|                                                                       |
+ -----------------------------------------------------------------------
+
+!
+	fi
+      }
+
+fi
+
+# UDT's
+if $UADT_CAP && $askudt
+then
+	cat << ! 
+
+ -----------------------------------------------------------------------
+|									|
+| These INGRES binaries are loaded to allow you to add User Defined 	|
+| Data Types (UDTs) to this INGRES installation.			|
+|									|
+| You should now enter the modules where your User Defined Data Types	|
+| are defined. You can either enter the name of an object file(s)       |
+| or the name of a library.						|
+| Examples are:								|
+|	/project1/obj/*.o						|
+|	/project1/obj/filename.o					|
+|	/project1/lib/myuadt.a						|
+|	$DemoUdt_library			|
+!
+if $lphb && [ "$ADD_ONHB" = "TRUE" ] ;
+then
+	cat << ! 
+|	\$II_SYSTEM/ingres/demo/udadts/lp${HB}/libdemoudt.1.$SLSFX		|
+|	(for ${HB}-bit servers)						|
+!
+fi
+	cat << ! 
+|									|
+| If you don't have any User Defined Data Types created, press RETURN,	|
+| and the default object file will be used to load the INGRES binaries.	|
+|									|
+ -----------------------------------------------------------------------
+
+Enter the full pathname of the object file or library to be loaded,	
+!
+	iiechonn "or press RETURN for the default object file: "
+	read adt_str
+
+	if [ -z "$adt_str" -a ! -f "$default_udt" ]
+	then
+		cat << !
+
+ -----------------------------------------------------------------------
+|			    ***WARNING***				|
+|                                                                       |
+| The default UDT object file:         		                        |
+|                                                                       |
+|       $default_udt
+|                                                                       |
+| does not exist on your system.  Loading will continue, but there      |
+| will probably be errors.                                              |
+|                                                                       |
+ -----------------------------------------------------------------------
+
+!
+	fi
+
+	if $standard
+	then :
+	else
+		name=iidbms
+		$merge && name=iimerge
+		cat << !
+
+ -----------------------------------------------------------------------
+|									|
+| An extension may be supplied at this time to differentiate your test	|
+| binaries from the existing ones. 					|
+|									|
+| For example, if you enter the extension "test", the DBMS binary is 	|
+| created at:								|
+|									|
+|	\$II_SYSTEM/ingres/bin${add_onhb_dir}/$name.test				|
+|									|
+| Otherwise, the DBMS binary is created at:				|
+|									|
+|	\$II_SYSTEM/ingres/bin${add_onhb_dir}/$name 					|
+|									|
+| where it overrides the existing DBMS binary.				|
+|									|
+ -----------------------------------------------------------------------
+
+!
+		iiechonn "Enter the file extension for the test binaries: "
+		read ext_ans
+	fi
+fi
+
+#  If, for one reason or another, we don't have a udt object string
+#  yet, we'll use the default.
+[ -z "$adt_str" ] && adt_str=$default_udt
+
+#  Expand any variable references...
+adt_str=`eval "echo $adt_str"`
+
+if [ -z "$ext_ans" ]
+then
+	dbms_name=iidbms
+	rcp_name=dmfrcp
+	jsp_name=dmfjsp
+	merge_name=iimerge
+	star_name=iistar
+else
+	dbms_name=iidbms.$ext_ans
+	rcp_name=dmfrcp.$ext_ans
+	jsp_name=dmfjsp.$ext_ans
+	merge_name=iimerge.$ext_ans
+	star_name=iistar.$ext_ans
+fi
+
+#----------------------------------------------------------------------
+#  Load iimerge if that's what we're supposed to do...
+
+if $merge
+then
+
+cat << !
+
+Loading iimerge$add_on64_suffix ...
+!
+
+# If using shared libraries then use appropriate link command.
+
+if [ "$shared" = "true" ] ;
+then
+
+$CC $CCLDMACH -o $II_SYSTEM/ingres/bin${add_onhb_dir}/$merge_name \
+        $II_SYSTEM/ingres/lib${add_onhb_dir}/iimerge.o \
+        -L$II_SYSTEM/ingres/lib${add_onhb_dir} -lbecompat.1 \
+	-lscf.1 -lpsf.1 \
+	-lopf.1 -lrdf.1 \
+        -lqef.1 -lqsf.1 \
+	-ldbutil.1 -ltpf.1 \
+	-lrqf.1 -lgcf.1 \
+	-lsxf.1 -lcuf.1 \
+        -lgwf.1 -ldmf.1 \
+	-lulf.1 -ladf.1 \
+        $cls_str $adt_str \
+	$LDLIBMACH
+
+else
+    if [ "$archive" = "true" ] ; then
+
+        $CC $CCLDMACH -o $II_SYSTEM/ingres/bin${add_onhb_dir}/$merge_name \
+                $II_SYSTEM/ingres/lib${add_onhb_dir}/iimerge.o \
+                $II_SYSTEM/ingres/lib${add_onhb_dir}/iimerge.a \
+                -L$II_SYSTEM/ingres/lib${add_onhb_dir} \
+                $cls_str $adt_str \
+                $LDLIBMACH
+
+    else
+
+        $CC $CCLDMACH $CCLDSERVER -o \
+	        $II_SYSTEM/ingres/bin${add_onhb_dir}/$merge_name \
+	        $II_SYSTEM/ingres/lib${add_onhb_dir}/iimerge.o \
+                -L$II_SYSTEM/ingres/lib${add_onhb_dir} \
+	        $cls_str $adt_str \
+	        $LDLIBMACH
+
+    fi
+fi
+
+if [ $? != 0 ]
+then
+	cat << !
+
+ -----------------------------------------------------------------------
+|			    ***ERROR***					|
+|									|
+| Cannot load the merged INGRES server program, iimerge.  Please	|
+| correct the problem before running $CMD again.			|
+|									|
+ -----------------------------------------------------------------------
+
+The command used to load this binary was:
+
+!
+    if [ "$shared" = "true" ] ;
+    then
+
+   cat << !
+
+$CC $CCLDMACH -o $II_SYSTEM/ingres/bin${add_onhb_dir}/$merge_name \
+        $II_SYSTEM/ingres/lib${add_onhb_dir}/iimerge.o \
+        -L$II_SYSTEM/ingres/lib${add_onhb_dir} -lbecompat.1 \
+	-lscf.1 -lpsf.1 \
+	-lopf.1 -lrdf.1 \
+        -lqef.1 -lqsf.1 \
+	-ldbutil.1 -ltpf.1 \
+	-lrqf.1 -lgcf.1 \
+	-lsxf.1 -lcuf.1 \
+        -lgwf.1 -ldmf.1 \
+	-lulf.1 -ladf.1 \
+        $cls_str $adt_str \
+	$LDLIBMACH 
+!
+    else
+
+        if [ "$archive" = "true" ] ; then
+
+            cat << !
+
+            $CC $CCLDMACH -o $II_SYSTEM/ingres/bin${add_onhb_dir}/$merge_name \
+                    $II_SYSTEM/ingres/lib${add_onhb_dir}/iimerge.o \
+                    $II_SYSTEM/ingres/lib${add_onhb_dir}/iimerge.a \
+                    $cls_str $adt_str \
+                    $LDLIBMACH
+!
+        else
+
+            cat << !
+
+            $CC $CCLDMACH $CCLDSERVER -o \
+	            $II_SYSTEM/ingres/bin${add_onhb_dir}/$merge_name \
+	            $II_SYSTEM/ingres/lib${add_onhb_dir}/iimerge.o \
+	            $cls_str $adt_str \
+	            $LDLIBMACH
+!
+        fi
+    fi
+	exit 5
+fi
+
+
+chmod 4755 $II_SYSTEM/ingres/bin${add_onhb_dir}/$merge_name
+
+echo ""
+echo "Done loading $merge_name:"
+echo `ls -l $II_SYSTEM/ingres/bin${add_onhb_dir}/$merge_name`
+echo "Creating links to $merge_name..."
+
+prgs="cacheutil dmfacp dmfjsp dmfrcp iidbms iishowres iistar lartool lockstat logdump logstat rcpconfig rcpstat repstat"
+
+cd $II_SYSTEM/ingres/bin
+for p in $prgs
+do
+    pr=$II_SYSTEM/ingres/bin${add_onhb_dir}/$p
+    rm -f $pr
+    $LINKCMD ./$merge_name $pr
+    if [ $? -eq 0 ] 
+    then
+      echo "$pr linked to $merge_name" 
+    else
+      cat << !
+
+ -----------------------------------------------------------------------
+|			    ***ERROR***					|
+|									|
+| Unable to create a link.  Please correct the problem before running   |
+| $CMD again.
+|									|
+ -----------------------------------------------------------------------
+
+The command being executed was:
+
+    $LINKCMD $II_SYSTEM/ingres/bin${add_onhb_dir}/$merge_name $pr
+
+!
+      exit 7
+    fi
+done
+
+echo "Links to $merge_name have been created."
+
+
+#-----------------------------------------------------------------------
+#  If we're not doing iimerge, load iidbms if we're supposed to...
+
+elif $dbms
+then
+
+cat << !
+
+Loading iidbms ...
+!
+
+if [ "$shared" = "true" ] ;
+then
+
+$CC $CCLDMACH -o $II_SYSTEM/ingres/bin${add_onhb_dir}/$dbms_name \
+        $II_SYSTEM/ingres/lib${add_onhb_dir}/iimerge.o \
+        -L$II_SYSTEM/ingres/lib${add_onhb_dir} -lbecompat.1 \
+	-lscf.1 -lpsf.1 \
+	-lopf.1 -lrdf.1 \
+        -lqef.1 -lqsf.1 \
+	-ldbutil.1 -ltpf.1 \
+	-lrqf.1 -lgcf.1 \
+	-lsxf.1 -lcuf.1 \
+        -lgwf.1 -ldmf.1 \
+	-lulf.1 -ladf.1 \
+        $cls_str $adt_str \
+	-L/usr/lib/fswitch $LDLIBMACH
+
+else
+
+    if [ "$archive" = "true" ] ; then
+
+        $CC $CCLDMACH -o $II_SYSTEM/ingres/bin${add_onhb_dir}/$dbms_name \
+                $II_SYSTEM/ingres/lib${add_onhb_dir}/iimerge.o \
+                $II_SYSTEM/ingres/lib${add_onhb_dir}/iimerge.a \
+                $cls_str $adt_str \
+                -L/usr/lib/fswitch $LDLIBMACH
+
+    else
+
+        $CC $CCLDMACH $CCLDSERVER -o \
+	        $II_SYSTEM/ingres/bin${add_onhb_dir}/$dbms_name \
+	        $II_SYSTEM/ingres/lib${add_onhb_dir}/iimerge.o \
+	        $cls_str $adt_str \
+	        -L/usr/lib/fswitch $LDLIBMACH
+
+    fi
+fi
+
+if [ $? != 0 ]
+then
+	cat << !
+
+ -----------------------------------------------------------------------
+|			    ***ERROR***					|
+|									|
+| Cannot load the DBMS binary, iidbms\. Please correct the problem	|
+| before running $CMD again.						 
+|									|
+ -----------------------------------------------------------------------
+
+The command used to load this binary was:
+!
+
+    if [ "$shared" = "true" ] ;
+    then
+	cat << !
+
+$CC $CCLDMACH -o $II_SYSTEM/ingres/bin${add_onhb_dir}/$dbms_name \
+        $II_SYSTEM/ingres/lib${add_onhb_dir}/iimerge.o \
+        -L$II_SYSTEM/ingres/lib${add_onhb_dir} -lbecompat.1 \
+	-lscf.1 -lpsf.1 \
+	-lopf.1 -lrdf.1 \
+        -lqef.1 -lqsf.1 \
+	-ldbutil.1 -ltpf.1 \
+	-lrqf.1 -lgcf.1 \
+	-lsxf.1 -lcuf.1 \
+        -lgwf.1 -ldmf.1 \
+	-lulf.1 -ladf.1 \
+	-L/usr/lib/fswitch $LDLIBMACH
+
+!
+
+    else
+        if [ "$archive" = "true" ] ; then
+
+            cat << !
+
+            $CC $CCLDMACH -o $II_SYSTEM/ingres/bin${add_onhb_dir}/$dbms_name \
+                $II_SYSTEM/ingres/lib${add_onhb_dir}/iimerge.o \
+                $II_SYSTEM/ingres/lib${add_onhb_dir}/iimerge.a \
+                -L/usr/lib/fswitch $LDLIBMACH
+
+!
+
+        else
+
+	    cat << !
+
+            $CC $CCLDMACH $CCLDSERVER -o \
+	            $II_SYSTEM/ingres/bin${add_onhb_dir}/$dbms_name \
+	            $II_SYSTEM/ingres/lib${add_onhb_dir}/iimerge.o \
+	            $cls_str $adt_str \
+	            -L/usr/lib/fswitch $LDLIBMACH
+
+!
+        fi
+    fi
+	exit 2
+fi
+
+chmod 4755 $II_SYSTEM/ingres/bin${add_onhb_dir}/$dbms_name
+
+echo ""
+echo "Done loading $dbms_name:"
+echo `ls -l $II_SYSTEM/ingres/bin${add_onhb_dir}/$dbms_name`
+
+
+#-----------------------------------------------------------------------
+#   Link iistar to iidbms
+
+    pr=$II_SYSTEM/ingres/bin${add_onhb_dir}/$star_name
+    rm -f $pr
+    $LINKCMD $II_SYSTEM/ingres/bin${add_onhb_dir}/$dbms_name $pr
+    if [ $? -eq 0 ] 
+    then
+      echo "$pr linked to $dbms_name" 
+    else
+      cat << !
+
+ -----------------------------------------------------------------------
+|			    ***ERROR***					|
+|									|
+| Unable to create a link.  Please correct the problem before running   |
+| $CMD again.
+|									|
+ -----------------------------------------------------------------------
+
+The command being executed was:
+
+    $LINKCMD $II_SYSTEM/ingres/bin${add_onhb_dir}/$dbms_name $pr
+
+!
+      exit 7
+    fi
+
+#-----------------------------------------------------------------------
+#  If we're loading dmfrcp and dmfjsp separately, do that now...
+
+if $rcpjsp
+then
+
+cat << !
+
+Loading dmfrcp ...
+!
+
+if [ "$shared" = "true" ] ;
+then
+
+$CC $CCLDMACH -o $II_SYSTEM/ingres/bin${add_onhb_dir}/$rcp_name \
+        $II_SYSTEM/ingres/lib${add_onhb_dir}/dmfrcp.o \
+        -L$II_SYSTEM/ingres/lib${add_onhb_dir} -lbecompat.1 \
+	-lscf.1 -lpsf.1 \
+	-lopf.1 -lrdf.1 \
+        -lqef.1 -lqsf.1 \
+	-ldbutil.1 -ltpf.1 \
+	-lrqf.1 -lgcf.1 \
+	-lsxf.1 -lcuf.1 \
+        -lgwf.1 -ldmf.1 \
+	-lulf.1 -ladf.1 \
+        $cls_str $adt_str \
+	-L/usr/lib/fswitch $LDLIBMACH
+
+else
+    if [ "$archive" = "true" ] ; then
+
+        $CC $CCLDMACH -o $II_SYSTEM/ingres/bin${add_onhb_dir}/$rcp_name \
+                $II_SYSTEM/ingres/lib${add_onhb_dir}/dmfrcp.o \
+                $II_SYSTEM/ingres/lib${add_onhb_dir}/dmfrcp.a \
+                $cls_str $adt_str \
+                -L/usr/lib/fswitch $LDLIBMACH
+
+    else
+
+        $CC $CCLDMACH -o $II_SYSTEM/ingres/bin${add_onhb_dir}/$rcp_name \
+	        $II_SYSTEM/ingres/lib${add_onhb_dir}/dmfrcp.o \
+	        $cls_str $adt_str \
+	        -L/usr/lib/fswitch $LDLIBMACH
+
+    fi
+fi
+
+if [ $? != 0 ]
+then
+	cat << !
+
+ -----------------------------------------------------------------------
+|			    ***ERROR***					|
+|									|
+| Cannot load the RCP binary, dmfrcp. Please correct the problem	|
+| before running $CMD again.						 
+|									|
+ -----------------------------------------------------------------------
+
+The command used to load this binary was:
+!
+    if [ "$shared" = "true" ] ;
+    then
+	cat << !
+
+$CC $CCLDMACH -o $II_SYSTEM/ingres/bin${add_onhb_dir}/$rcp_name \
+        $II_SYSTEM/ingres/lib${add_onhb_dir}/dmfrcp.o \
+        -L$II_SYSTEM/ingres/lib${add_onhb_dir} -lbecompat.1 \
+	-lscf.1 -lpsf.1 \
+	-lopf.1 -lrdf.1 \
+        -lqef.1 -lqsf.1 \
+	-ldbutil.1 -ltpf.1 \
+	-lrqf.1 -lgcf.1 \
+	-lsxf.1 -lcuf.1 \
+        -lgwf.1 -ldmf.1 \
+	-lulf.1 -ladf.1 \
+        $cls_str $adt_str \
+        -L/usr/lib/fswitch $LDLIBMACH
+
+!
+
+    else
+        if [ "$archive" = "true" ] ; then
+
+            cat << !
+
+            $CC $CCLDMACH -o $II_SYSTEM/ingres/bin${add_onhb_dir}/$rcp_name \
+                    $II_SYSTEM/ingres/lib${add_onhb_dir}/dmfrcp.o \
+                    $II_SYSTEM/ingres/lib${add_onhb_dir}/dmfrcp.a \
+                    $cls_str $adt_str \
+                    -L/usr/lib/fswitch $LDLIBMACH
+
+!
+        else
+
+	    cat << !
+
+            $CC $CCLDMACH -o $II_SYSTEM/ingres/bin${add_onhb_dir}/$rcp_name \
+	            $II_SYSTEM/ingres/lib${add_onhb_dir}/dmfrcp.o \
+	            $cls_str $adt_str \
+	            -L/usr/lib/fswitch $LDLIBMACH
+
+!
+        fi
+    fi
+	exit 3
+fi
+
+chmod 4755 $II_SYSTEM/ingres/bin/$rcp_name
+
+echo ""
+echo "Done loading $rcp_name:"
+echo `ls -l $II_SYSTEM/ingres/bin${add_onhb_dir}/$rcp_name`
+
+cat << !
+
+Loading dmfjsp ...
+!
+
+if [ "$shared" = "true" ] ;
+then
+
+$CC $CCLDMACH -o $II_SYSTEM/ingres/bin${add_onhb_dir}/$jsp_name \
+        $II_SYSTEM/ingres/lib${add_onhb_dir}/dmfjsp.o \
+        -L$II_SYSTEM/ingres/lib${add_onhb_dir} -lbecompat.1 \
+	-lscf.1 -lpsf.1 \
+	-lopf.1 -lrdf.1 \
+        -lqef.1 -lqsf.1 \
+	-ldbutil.1 -ltpf.1 \
+	-lrqf.1 -lgcf.1 \
+	-lsxf.1 -lcuf.1 \
+        -lgwf.1 -ldmf.1 \
+	-lulf.1 -ladf.1 \
+        $cls_str $adt_str \
+        -L/usr/lib/fswitch $LDLIBMACH
+
+else
+
+    if [ "$archive" = "true" ] ; then
+
+        $CC $CCLDMACH -o $II_SYSTEM/ingres/bin${add_onhb_dir}/$jsp_name \
+                $II_SYSTEM/ingres/lib${add_onhb_dir}/dmfjsp.o \
+                $II_SYSTEM/ingres/lib${add_onhb_dir}/dmfjsp.a \
+                $cls_str $adt_str \
+                -L/usr/lib/fswitch $LDLIBMACH
+
+    else
+
+        $CC $CCLDMACH -o $II_SYSTEM/ingres/bin${add_onhb_dir}/$jsp_name \
+	        $II_SYSTEM/ingres/lib${add_onhb_dir}/dmfjsp.o \
+	        $cls_str $adt_str \
+	        -L/usr/lib/fswitch $LDLIBMACH
+
+    fi
+fi
+
+if [ $? != 0 ]
+then
+	cat << !
+
+ -----------------------------------------------------------------------
+|			    ***ERROR***					|
+|									|
+| Cannot load the JSP binary, dmfjsp. Please correct the problem	|
+| before running $CMD again.						 
+|									|
+ -----------------------------------------------------------------------
+
+The command used to load this binary was:
+
+!
+    if [ "$shared" = "true" ] ;
+    then
+
+	cat << !
+
+$CC $CCLDMACH -o $II_SYSTEM/ingres/bin${add_onhb_dir}/$jsp_name \
+        $II_SYSTEM/ingres/lib${add_onhb_dir}/dmfjsp.o \
+        -L$II_SYSTEM/ingres/lib${add_onhb_dir} -lbecompat.1 \
+	-lscf.1 -lpsf.1 \
+	-lopf.1 -lrdf.1 \
+        -lqef.1 -lqsf.1 \
+	-ldbutil.1 -ltpf.1 \
+	-lrqf.1 -lgcf.1 \
+	-lsxf.1 -lcuf.1 \
+        -lgwf.1 -ldmf.1 \
+	-lulf.1 -ladf.1 \
+        $cls_str $adt_str \
+        -L/usr/lib/fswitch $LDLIBMACH
+
+!
+
+    else
+        if [ "$archive" = "true" ] ; then
+
+            cat << !
+
+            $CC $CCLDMACH -o $II_SYSTEM/ingres/bin${add_onhb_dir}/$jsp_name \
+                $II_SYSTEM/ingres/lib${add_onhb_dir}/dmfjsp.o \
+                $II_SYSTEM/ingres/lib${add_onhb_dir}/dmfjsp.a \
+                $cls_str $adt_str \
+                -L/usr/lib/fswitch $LDLIBMACH
+
+!
+        else
+
+	    cat << !
+
+            $CC $CCLDMACH -o $II_SYSTEM/ingres/bin${add_onhb_dir}/$jsp_name \
+	        $II_SYSTEM/ingres/lib${add_onhb_dir}/dmfjsp.o \
+	        $cls_str $adt_str \
+	        -L/usr/lib/fswitch $LDLIBMACH
+
+!
+        fi
+    fi
+	exit 4
+fi
+
+chmod 4755 $II_SYSTEM/ingres/bin${add_onhb_dir}/$jsp_name
+
+echo ""
+echo "Done loading $jsp_name:"
+echo `ls -l $II_SYSTEM/ingres/bin${add_onhb_dir}/$jsp_name`
+
+
+fi
+fi
+
+exit 0

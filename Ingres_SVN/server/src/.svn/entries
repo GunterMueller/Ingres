@@ -1,0 +1,106 @@
+8
+
+dir
+33
+http://code.ingres.com/ingres/main/src
+http://code.ingres.com/ingres
+
+
+
+2008-05-05T11:35:59.660505Z
+33
+grant
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+45b5d43f-8932-4c86-835a-3654e5842839
+
+back
+dir
+
+tools
+dir
+
+gl
+dir
+
+sig
+dir
+
+INSTALL.WIN
+file
+
+
+
+
+2008-05-18T01:28:02.000000Z
+829470ec72ce4cdfd83a9dbc864cda24
+2008-03-20T07:36:25.925856Z
+1
+root
+
+dbutil
+dir
+
+LICENSE.gpl
+file
+
+
+
+
+2008-05-18T01:28:02.000000Z
+c7ec0107492729f4a1bdce8ec7b06380
+2008-03-20T07:36:25.925856Z
+1
+root
+
+INSTALL
+file
+
+
+
+
+2008-05-18T01:28:02.000000Z
+b4d8bed2e4d086ba7a1f4631fcc2c6f5
+2008-03-20T07:36:25.925856Z
+1
+root
+
+admin
+dir
+
+common
+dir
+
+front
+dir
+
+testtool
+dir
+
+README
+file
+
+
+
+
+2008-05-18T01:28:02.000000Z
+34c5347296b5095c36f3f3c761d87dea
+2008-03-20T07:36:25.925856Z
+1
+root
+
+cl
+dir
+

@@ -1,0 +1,23 @@
+#
+# MANIFEST file for front!misc!chinst
+#
+
+SubDir ING_SRC front misc chinst ;
+
+IISUBSYS front misc chinst ;
+
+
+IIBINEXE chset_install : main.c ;
+if ! $(NT)
+{
+IINEEDLIBS chset_install : UGLIB COMPATLIB ;
+}
+else
+{
+IINEEDLIBS chset_install : COMPATLIB SHEMBEDLIB ;
+
+IIBINEXE chinst : main.c ;
+IINEEDLIBS chinst : COMPATLIB SHEMBEDLIB ;
+
+}
+

@@ -1,0 +1,169 @@
+	.title  mhdiv
+;
+;	Copyright (c) 1989	Ingres Corporation
+;
+;
+;   Description:
+;	Contains MH routine for decimal division.
+;
+;	Globally visible entry points:
+;	    MHpkdiv	    - divide two decimal numbers
+;
+;   History:
+;	26-jun-95 (wagner)
+;	    	Created.  Actually, extracted from MHDEC.MAR because of a weird
+;		bug in the AXP/VMS macro compiler that can be worked around by
+;		placing this routine in its own module.
+;       15-nov-2004 (huazh01)
+;               change the prototypes of MHpkadd_sim()/MHpksub_sim()/
+;               MHpkmul_sim()/MHpkdiv_sim(). 
+;               b113059, INGSRV2964.
+;       10-jun-2006 (HORDA03) Bug 114974
+;               Change Decimal division scale size formula so that the
+;               quotient scale is never smaller than the smallest operand scale.
+;               This completes fix for Bug 108520 on VMS. 
+;
+;
+	.psect	$code$	pic,con,rel,lcl,shr,exe,nord,nowrt,novec,4
+
+
+;
+; Name: MHpkdiv - Divide two packed decimals.
+;
+; Description:
+;      Divides two packed decimals and returns the result in another
+;      packed decimal.  The precision and scale of the result are
+;      also returned, and are calculated thus:
+;
+;          pout = 31
+;          sout = max(min(s1,s2), (31-p1+s1-s2))
+;
+;	This routine attempts the division using DIVP first, and if
+;	it overflows, we call MHpkdiv_sim which tries the division in
+;	software.
+;
+;	Note that the DIVP instruction's "division by zero" exception is
+;	the same as the floating point "division by zero" and INGRES wants
+;	to be able to tell them apart.  To do this we catch the exception
+;	locally and map it to the INGRES exception for "decimal divide by
+;	zero."  It also zeros out the result so that users who are ignoring
+;	exceptions don't get garbage in their result when dividing by zero.
+;
+; Inputs:
+;      pk1                             Pointer to the dividend.
+;      p1                              Its precision:  1 <= p1 <= 31.
+;      s1                              Its scale:  0 <= s1 <= p1.
+;      pk2                             Pointer to the divisor.
+;      p2                              Its precision:  1 <= p2 <= 31.
+;      s2                              Its scale:  0 <= s2 <= p2.
+;
+; Outputs:
+;      pkout                           The resulting packed decimal value is
+;                                      placed here.
+;      pout                            Its precision will be calculated based
+;                                      on the above formula, and placed here.
+;      sout                            Its scale will be calculated based
+;                                      on the above formula, and placed here.
+;
+;      Returns:
+;          VOID
+;
+;      Exceptions:
+;          EXDECOVF                    Result has too many non-fractional
+;                                      digits; i.e. more than (pout - sout)
+;                                      of them.
+;          EXDECDIV                    Attempt to divide by zero.  The
+;                                      denominator (2nd input decimal value)
+;                                      is equal to zero. 
+;
+; Side Effects:
+;          none
+;
+; History:
+;	01-sep-89 (jrb)
+;	    Written.
+;       15-nov-2004 (huazh01)
+;           Change the prototypes for MHpkadd_sim() / MHpksub_sim() / 
+;           MHpkdiv_sim()/MHpkmul_sim() from (..., nat pout, nat sout) to 
+;           (..., nat *pout, nat *sout). This fixes b113059, INGSRV2964.
+;
+pk1	= 4
+p1	= 8
+s1	= 12
+pk2	= 16
+p2	= 20
+s2	= 24
+pkout	= 28
+pout	= 32
+sout	= 36
+pksave  = -4
+tmp	= -20
+
+;
+; First let's define the exception handler
+;
+; The following value is taken from EX.H; these two values MUST be kept in sync
+;
+EXDECDIV    = ^x10A32
+
+	$ssdef
+	$chfdef
+	
+	.entry	divex,^m<r2,r3>
+	movl	CHF$l_SIGARGLST(ap),r0
+	cmpl	CHF$L_SIG_NAME(r0),#SS$_FLTDIV
+	bneq	divex1				    ; if not, just resignal
+	movl	#EXDECDIV,CHF$L_SIG_NAME(r0)	    ; change exception name
+	movl	CHF$L_MCHARGLST(ap),r0
+	movl	CHF$PH_MCH_FRAME(r0),r0		    ; get fp of handler owner
+	cvtlp	#0,#31,@pksave(r0)		    ; zero out division result
+divex1:	movl	#SS$_RESIGNAL,r0
+	ret
+;
+;------------------------------
+; Now the main routine...
+;
+	.entry	MHpkdiv,^m<r2,r3,r4,r5>
+	subl2	#20,sp
+	movl	pkout(ap),pksave(fp)	; save pointer to pkout so that handler
+					; can zero out result if div by zero
+	moval	b^divex,(fp)		; declare exception handler
+	movl	#31,@pout(ap)
+	subl3	p1(ap),#31,r4		; 31-p1 in r4
+	addl2	s1(ap),r4		; 31-p1+s1 in r4
+	subl2	s2(ap),r4		; 31-p1+s1-s2 in r4
+	movl	s1(ap),r5		; Calculate min(s1,s2)
+	cmpl	s1(ap),s2(ap)
+	bleq	min_s2
+	movl	s2(ap),r5
+min_s2: cmpl	r5,r4			; r5 =min(s1,s2), r4 = 31-p1+s1-s2
+	bleq	div01
+	movl	r5,r4			; r5 > r4. NB r5 >=0
+div01:	movl	r4,@sout(ap)		; store result scale
+	subl3	s1(ap),s2(ap),r5	; we shift the dividend by s2-s1+sout
+	addl2	r4,r5
+	ashp	r5,p1(ap),@pk1(ap),#0,#31,tmp(fp)
+	bvs	div03
+	divp	p2(ap),@pk2(ap),#31,tmp(fp),#31,@pkout(ap)
+	bvs	div03
+	ret
+;
+; If we overflowed, call MHpkdiv_sim to try the division in software.
+; This is necessary because it is legal to truncate fractional digits if
+; necessary when doing division.  Since the VAX instructions only
+; support integral packed decimals, they of course have no concept of
+; fractional digits.  The C code which we are going to call knows how to
+; do all the right things.
+;
+div03:	pushl	sout(ap)
+	pushl	pout(ap)
+	pushl	pkout(ap)
+	pushl	s2(ap)
+	pushl	p2(ap)
+	pushl	pk2(ap)
+	pushl	s1(ap)
+	pushl	p1(ap)
+	pushl	pk1(ap)
+	calls	#9,MHPKDIV_SIM
+	ret
+	.end

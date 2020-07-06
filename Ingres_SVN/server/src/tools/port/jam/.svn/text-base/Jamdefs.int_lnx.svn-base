@@ -1,0 +1,116 @@
+#
+#  Copyright (c) 2004 Ingres Corporation
+#
+#  Name: Jamdefs.int_lnx -- Variable definitions for Intel Linux
+#
+#  Description:
+#       Platform specific variable definitions for Intel Linux
+#
+# History:
+#       13-Jul-2004 (hanje04)
+#           Created.
+#	14-Jul-2004 (hanje04)
+#	    Correct "default" varible syntax
+#	14-Jul-2004 (hanje04)
+#	    Correct BSD42 DIRENT DIRFUNC NO_DIRFUNC and SYS5 compiler defines.
+#	2-aug-2004 (stephnb)
+#	    lex is different on SuSE and RedHat, make it flex
+#	04-aug-2004 (somsa01)
+#	    Added CD variable.
+#	24-Sep-2004 (hanje04)
+#	    BUG 113127
+#	    Replace UDT objects (.o's) with shared library.
+#	    Define CCSHLDMACH.
+#	06-Oct-2004 (hanje04)
+#	    Define ICE_EXT=so and ICE_GCI=cgi
+#	    Define NOOPTIM stuff correctly (drivi01)
+#	27-Oct-2004 (hanje04)
+#	    Need to be able to override IIOPTIM, IINOOPTIM & IIL1OPTIM.
+#	29-Oct-2004 (hanje04)
+#	    Add -lgcc_s to link flags to resolve undefined symbols
+#	14-Jan-2004 (hanje04)
+#	    Replace IINOOPTIM with NOOPTIM to match IINOOPTIM rule
+#	22-Sep-2005 (drivi01)
+#	    Added two new variables extension_config and platform_config.
+#	    extension_config is equal to config_string on most platforms.
+#	    platform_config is a GV_ENV value from gv.h in most cases.
+#	04-Feb-2006 (hanje04)
+#	   Define extention_string to include NPLT. This is temporary
+#	   Soln for the first release Ingres2006 which is an NPTL build.
+#	21-Sep-2006 (toumi01)
+#	   Define C++ like CXX to invoke g++ so that this file includes
+#	   all the settings needed to override the compiler version.
+#       16-Oct-2006 (hanal04) Bug 116866
+#           Add CCDEBUG to hold the compiler's debug flag. Used to ensure
+#           NOOPTIM does not strip this when explicitly set.
+#	21-Mar-2007 (hanje04)
+#	    SIR 117044
+#	    Define BUILD_GTK_GUI and BUILD_GTK_INST so they are correctly
+#	    built on this platform. They are now excluded by default.
+#	04-Apr-2007 (hanje04)
+#	    SIR 117044
+#	    Correct variable name, BUILD_PACKMAN should be BUILD_GTK_GUI.
+#	30-May-2007 (hanje04)
+#	    SIR 119214
+#	    Define SHELLHEADER to be /bin/bash to avoid problems with 
+#	    /bin/sh being linked to /bin/dash on Ubuntu
+#        8-Oct-2007 (hanal04) Bug 119262
+#           Added archive iimerge.a alternative to shared library server.
+#	07-Dec-2007 (kiria01) b119773
+#	    Hires timers need -lrt
+#
+#####
+
+NETSCAPE_API_FLAG 	= "-DXP_UNIX" ;
+APACHE_API_FLAG 	= "-DLINUX=2" ;
+VERS 	= "int_lnx" ;
+CD 	= "cd" ;
+CC 	default = "cc" ;
+CCDEBUG = "-g" ;
+CPP 	default = "/lib/cpp" ;
+CCMACH 	= "-fsigned-char -fno-strength-reduce -D_REENTRANT -DLINUX -D_GNU_SOURCE -DXLIB_ILLEGAL_ACCESS -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE" ;
+CCLDMACH 	= "-rdynamic" ;
+CCSHLDMACH	= "-shared" ;
+CCLDSERVER 	= "" ;
+CCPICFLAG 	= "-fPIC" ;
+CCVERSFLAG	= "-D$(VERS)" ;
+SLSFX 		= "so" ;
+OBJSFX		= "o" ;
+LIBSFX		= "a" ;
+MWSLSFX 	= "so" ;
+CGISFX 	= "cgi" ;
+LDLIBPATH 	= "/lib /usr/lib /usr/local/lib" ;
+LDLIBPATH64 	= "" ;
+LIBMACH 	= "" ;
+LDLIBMACH 	= "-lpthread -lrt -lm -lc -lcrypt -ldl -lgcc_s" ;
+LDLIBMACH64 	= "-lpthread -lrt -lm -lc -lcrypt -ldl -lgcc_s" ;
+LD_ICE_FLAGS 	= "" ;
+ICE_EXT		= so ;
+CGI_EXT		= cgi ;
+LONGLONG	= long long ;
+OPTIM 	        = "" ;
+IIOPTIM		?= "-O" ;
+NOOPTIM 	?= "-O0" ;
+IIL1OPTIM 	?= "-O1" ;
+SHELLHEADER 	= ""#!/bin/bash"" ;
+BSD42 default = -DBSD42 ;
+LEX = flex ;
+DIRENT default = -DDIRENT ;
+DIRFUNC default = -DDIRFUNC ;
+NO_DIRFUNC default = -DNO_DIRFUNC ;
+SYS5 default = -DSYS5 ;
+SVR_ARLIB = "TRUE" ;
+CXX	= "g++" ;
+C++	= "g++" ;
+CXX_DEFS	= "" ;
+UNDEFFLAG  = "-u " ;
+XERC_DEFS	= "-O -DXML_USE_NATIVE_TRANSCODER -DXML_USE_INMEM_MESSAGELOADER -DXML_USE_NETACCESSOR_SOCKET" ;
+XERC_LIBS	= "" ;
+DBMS_STACKSIZE = 131072 ;
+platform_string = "NPTL Linux Intel" ;
+extension_string = $(config_string)_nptl ;
+if $(OSVER) != DEBIAN
+{
+    BUILD_GTK_INST = TRUE ;
+}
+BUILD_GTK_GUI = TRUE ;

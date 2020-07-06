@@ -1,0 +1,11 @@
+#define _XM_CLASS 238
+#define F_XM0001_GENXML                0x10ee0001
+#define E_XM0002_Incorrect_language_sp 0x00ee0002
+#define E_XM0003_Not_Ingres            0x00ee0003
+#define E_XM0004_Too_many_objects      0x00ee0004
+#define E_XM0005_Connect_Failed        0x00ee0005
+#define F_XM0006_IMPXML                0x10ee0006
+#define E_XM0007_Locname_Failed        0x00ee0007
+#define E_XM0008_Create_Temp_Dir       0x00ee0008
+#define E_XM0009_Cannot_Open_File      0x00ee0009
+#define E_XM000A_Cannot_Read_File      0x00ee000a

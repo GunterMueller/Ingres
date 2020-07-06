@@ -1,0 +1,325 @@
+8
+
+dir
+33
+http://code.ingres.com/ingres/main/src/cl/clf
+http://code.ingres.com/ingres
+
+
+
+2008-03-20T07:36:25.925856Z
+1
+root
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+45b5d43f-8932-4c86-835a-3654e5842839
+
+pc_win
+dir
+
+cm_unix_win
+dir
+
+pe_win
+dir
+
+tc_win
+dir
+
+sa_unix_win
+dir
+
+jf_vms
+dir
+
+te_win
+dir
+
+ds_unix_win
+dir
+
+lo_win
+dir
+
+fp_vms
+dir
+
+erold_vms
+dir
+
+gc_unix
+dir
+
+tm_win
+dir
+
+di_unix
+dir
+
+nm_vms
+dir
+
+qu_unix_win
+dir
+
+pe_unix
+dir
+
+cs_unix
+dir
+
+id_win
+dir
+
+te_unix
+dir
+
+nm_unix
+dir
+
+me_win
+dir
+
+gc_vms
+dir
+
+misc_vms
+dir
+
+handy_win
+dir
+
+ci_vms
+dir
+
+ck_vms
+dir
+
+tm_unix
+dir
+
+cm_vms
+dir
+
+mucl_vms
+dir
+
+fp_unix_win
+dir
+
+er_unix_win
+dir
+
+specials_vms
+dir
+
+sa_vms
+dir
+
+cv_unix_win
+dir
+
+ex_win
+dir
+
+stub_win
+dir
+
+cs_vms
+dir
+
+cv_vms
+dir
+
+id_unix
+dir
+
+ol_vms
+dir
+
+si_vms
+dir
+
+hdr_vms
+dir
+
+sr_unix_win
+dir
+
+ut_win
+dir
+
+sr_vms
+dir
+
+csmt_unix
+dir
+
+st_vms
+dir
+
+gv
+dir
+
+ck_unix_win
+dir
+
+hdr
+dir
+
+ex_unix
+dir
+
+di_vms
+dir
+
+handy_unix_win
+dir
+
+dl_vms
+dir
+
+st
+dir
+
+nm_win
+dir
+
+pc_vms
+dir
+
+pe_vms
+dir
+
+ut_unix
+dir
+
+tc_vms
+dir
+
+ds_vms
+dir
+
+hdr_unix_win
+dir
+
+te_vms
+dir
+
+lo_vms
+dir
+
+me_unix
+dir
+
+pc_unix
+dir
+
+tm_vms
+dir
+
+gc_win
+dir
+
+specials_unix
+dir
+
+tc_unix
+dir
+
+tr_vms
+dir
+
+mucl_win
+dir
+
+lo_unix
+dir
+
+si_unix
+dir
+
+jf_unix_win
+dir
+
+specials_win
+dir
+
+id_vms
+dir
+
+cs_win
+dir
+
+mh_unix_win
+dir
+
+me_vms
+dir
+
+si_win
+dir
+
+mh_vms
+dir
+
+gv_win
+dir
+
+ol_unix_win
+dir
+
+hdr_win
+dir
+
+er_vms
+dir
+
+ex_vms
+dir
+
+dl_unix
+dir
+
+mucl_unix
+dir
+
+tr_unix_win
+dir
+
+st_unix_win
+dir
+
+erold_unix
+dir
+
+ut_unix_win
+dir
+
+di_win
+dir
+
+qu_vms
+dir
+
+ci_unix_win
+dir
+
+dl_win
+dir
+
+ut_vms
+dir
+

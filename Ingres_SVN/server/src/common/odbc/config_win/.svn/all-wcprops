@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/common/odbc/config_win
+END
+caiioc32.rc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/common/odbc/config_win/caiioc32.rc
+END
+caiioc32.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/odbc/config_win/caiioc32.h
+END
+confgdsn.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/odbc/config_win/confgdsn.c
+END
+caiiocfg.hpj
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/odbc/config_win/caiiocfg.hpj
+END
+ingres.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/odbc/config_win/ingres.bmp
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/common/odbc/config_win/Jamfile
+END
+edbcoc35.cnt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/odbc/config_win/edbcoc35.cnt
+END
+caiioc32.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/odbc/config_win/caiioc32.c
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/common/odbc/config_win/resource.h
+END
+caiiocfg.rtf
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/common/odbc/config_win/caiiocfg.rtf
+END

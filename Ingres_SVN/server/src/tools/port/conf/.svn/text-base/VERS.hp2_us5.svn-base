@@ -1,0 +1,9 @@
+config=hpb_us5
+config64=hp2_us5
+option=DELIM_TEST
+option=DBL
+option=B64
+option=ADD_ON64
+option=INGRESII
+option=SVR_AR
+build=00

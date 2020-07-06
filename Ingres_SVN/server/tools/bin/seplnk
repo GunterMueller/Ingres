@@ -1,0 +1,179 @@
+#!/bin/bash
+#
+# Copyright (c) 2004 Ingres Corporation
+#
+# seplnk : Link EQUEL/ESQL object file with various INGRES libraries
+#
+#
+
+CMD=seplnk
+export CMD
+
+if [ $# -eq 0 ]
+then
+     cat << !
+
+Usage: seplnk <file1> [<file2> ... <filen>]
+
+        -c[onditional]   Conditional Linking. Only link if
+                         image file does not exist.
+
+!
+exit 0
+fi
+ 
+#
+# Check local Ingres environment
+#
+
+if [ ! -n "${II_SYSTEM}" ]
+then
+     cat << !
+
+|------------------------------------------------------------|
+|                      E  R  R  O  R                         |
+|------------------------------------------------------------|
+|     The local Ingres environment must be setup and the     |
+|     the installation running before continuing             |
+|------------------------------------------------------------|
+
+!
+   exit 1
+fi
+
+. $II_SYSTEM/ingres/utility/iisysdep
+
+need_appended=true
+tmp=`echo $PATH | sed -e 's/:/ /g'`
+for i in $tmp
+do
+        if [ $i = "${II_SYSTEM}/ingres/utility" ]
+           then
+                need_appended=false
+        fi
+done
+
+if $need_appended
+   then
+        PATH=$II_SYSTEM/ingres/utility:$PATH
+        export PATH
+fi
+
+
+if [ ! -n "${CC}" ]
+then
+      CC=cc
+fi
+
+imageflg=true
+
+cflag=false    # conditional
+
+for i
+do	case $i in
+		-conditional | -conditiona | -condition |	\
+		-conditio | -conditi | -condit | -condi |	\
+		-cond | -con | -co | -c ) cflag=true;;
+
+		-* )	echo "bad flag $i"
+			;;
+
+		*.* | * ) ;;
+	esac
+done
+
+do_it=false
+
+for i
+do
+	case $i in
+		-* )	;;
+
+		*.o )   cfilnam="$cfilnam $i"
+			tfilnam=`basename $i .o`
+			;;
+
+		*.a )	cfilnam="$cfilnam $i"
+			tfilnam=`basename $i .a`
+			;;
+
+                * )	if [ -f `basename $i.a` ]
+			then
+			    ofilnam=`basename $i.a`
+			    cfilnam="$cfilnam $ofilnam"
+			    tfilnam=`basename $ofilnam .a`
+			elif [ -f `basename $i.o` ]
+			then
+			    ofilnam=`basename $i.o`
+			    cfilnam="$cfilnam $ofilnam"
+			    tfilnam=`basename $ofilnam .o`
+			else
+			    cfilnam="$cfilnam $i"
+			    tfilnam=`basename $i`
+			fi
+			;;
+	esac
+
+	if $imageflg
+	then
+	    filnam=$tfilnam
+	    imageflg=false
+	    do_it=true
+	fi
+done
+
+if $do_it && $cflag && [ -f $filnam.exe ]
+then
+	do_it=false
+fi
+
+if $do_it
+then
+  if $USE_SHARED_LIBS
+  then
+    libingfiles="-L$II_SYSTEM/ingres/lib -lframe.1"
+    libingfiles="$libingfiles -lq.1"
+    libingfiles="$libingfiles -lcompat.1"
+    libingfiles="$libingfiles -lingres"
+  else
+    libingfiles=`ls $II_SYSTEM/ingres/lib/libingres*.a`
+  fi
+  case $VERS in
+	dr6_us5)
+		$CC $OPTIM -o $filnam.exe $cfilnam $libingfiles $LDLIBMACH 2>&1 | grep -v warning
+		;;
+	usl_us5|rux_us5)
+		$CC $OPTIM -K thread -o $filnam.exe $cfilnam $libingfiles $LDLIBMACH
+		;;
+	sgi_us5)
+		ldir="-L $II_SYSTEM/ingres/lib"
+		llibs="-lingres -lframe.1 -lq.1 -lcompat.1 "
+		$CC $OPTIM -Wl,-woff,84,-woff,85,-woff,34 -o $filnam.exe $cfilnam $ldir $llibs $LDLIBMACH
+		;;
+        axp_osf)
+                $CC $OPTIM -o $filnam.exe $cfilnam $libingfiles $LDLIBMACH
+                chmod 777 $filnam.exe
+                ;;
+        ris_u64)
+                $CC $OPTIM -q64 -o $filnam.exe $cfilnam $libingfiles $LDLIBMACH
+                ;;
+	i64_hpu)
+                $CC $OPTIM +DD64 -o $filnam.exe $cfilnam $libingfiles $LDLIBMACH
+                ;;
+	  *_osx)
+		ldout=/tmp/ldout.$$
+		$CC $OPTIM -o $filnam.exe $cfilnam $libingfiles $LDLIBMACH  > \
+							${ldout} 2>&1
+		[ $? != 0 ] && cat ${ldout}
+		rm -f ${ldout}
+		;;
+		
+	ppc_lnx)
+		$CC $OPTIM $CCLDMACH -o $filnam.exe $cfilnam $libingfiles\
+			 $LDLIBMACH
+                ;;
+	* )	$CC $OPTIM -o $filnam.exe $cfilnam $libingfiles $LDLIBMACH
+		;;
+  esac
+
+fi

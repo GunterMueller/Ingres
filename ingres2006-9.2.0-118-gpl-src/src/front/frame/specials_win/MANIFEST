@@ -1,0 +1,19 @@
+#
+# MANIFEST file for front!frame!specials_win
+#
+# History :
+#	13-Sep-2004 (drivi01)
+#		Cleaned up build process for iilibframe.dll
+#
+
+SubDir ING_SRC front frame specials_win ;
+
+IISUBSYS front frame specials_win ;
+
+
+IISHLIBRARY $(SHFRAMELIBDATA) : $(SHFRAMELIB) $(FRAMELIBDATA) ;
+
+IISHLIBRARY $(SHFRAMELIB) : $(IMPFRAMELIBDATA) $(FRAME_LIBS) $(IMPCOMPATLIB)
+	$(IMPCOMPATLIBDATA) $(SHLIBQLIBDATA) $(IMPLIBQLIB) $(IMPADFLIB) $(IMPADFLIBDATA)
+	$(IMPEMBEDLIB) $(IMPEMBEDLIBDATA) $(TBLUTILLIB) $(IAOMLIB) $(COPYFORMLIB) ;
+IINEEDOBJ $(SHFRAMELIB) : oosymbol.c ;

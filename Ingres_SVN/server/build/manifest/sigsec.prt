@@ -1,0 +1,25 @@
+PART  sigsec
+   BUILD_DIR (ING_BUILD)!sig!auditmgr
+   DIRECTORY ingres!sig!auditmgr
+	FILE README
+	FILE auditmasks.osq
+	FILE auditmgr.osq
+	FILE audrecdetail.osq
+	FILE changelog.osq
+	FILE detail.osq
+	FILE extract.osq
+	FILE iicopyapp.tmp
+	FILE manageaudit.osq
+	FILE queries.osq
+	FILE rbfreports.osq
+	FILE registerlogs.osq
+	FILE remove1.osq
+	FILE removelogs.osq
+	FILE restartauditing.osq
+	FILE resumeauditing.osq
+	FILE setfilter.osq
+	FILE stopauditing.osq
+	FILE suspendaudit.osq
+	FILE view_via_qbf.osq
+	FILE viewlogs0.osq
+	FILE viewrecords.osq

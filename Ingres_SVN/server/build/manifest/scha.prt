@@ -1,0 +1,17 @@
+PART	scha
+   DIRECTORY opt!CA!IngresSCAgent!bin
+   BUILD_DIR (ING_BUILD)!opt!CA!IngresSCAgent!bin
+	SCRIPT envfile
+	EXECUTABLE gettime
+	SCRIPT ingres_monitor_check
+	SCRIPT ingres_monitor_start
+	SCRIPT ingres_monitor_stop
+	SCRIPT ingres_probe
+	SCRIPT ingres_server_manager
+	SCRIPT ingres_server_start
+	SCRIPT ingres_server_stop
+	SCRIPT ingres_update
+	SCRIPT ingres_validate
+   DIRECTORY opt!CA!IngresSCAgent!etc
+   BUILD_DIR (ING_BUILD)!opt!CA!IngresSCAgent!etc
+	FILE CA.ingres_server

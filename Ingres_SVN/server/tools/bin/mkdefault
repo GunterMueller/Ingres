@@ -1,0 +1,1141 @@
+#!/bin/bash
+#
+# Copyright (c) 2004 Ingres Corporation
+#
+#	creates "default.h" in the current directory, defining
+#	symbols that may be used to determine the machine environment.
+#
+
+
+TMP=/tmp/libc.nm
+trap 'rm -f $TMP' 0 1 2 13 15
+
+exec 1> default.h
+
+. readvers
+for o in $opts
+{
+  echo "#define conf_$o TRUE"
+}
+
+vers=$config
+[ "$config64" ] && vers64=$config64
+[ "$conf_ADD_ON32" ] && vers=$config64
+
+case $vers in
+  [a-z][a-z0-9][a-z0-9]_us5) ;;
+  [0-9][a-z0-9][a-z0-9]_us5) vers=x$vers;;
+  [a-z][a-z0-9][a-z0-9]_u42) ;;
+  [0-9][a-z0-9][a-z0-9]_u42) vers=x$vers;;
+  [a-z][a-z0-9][a-z0-9]_u43) ;;
+  [0-9][a-z0-9][a-z0-9]_u43) vers=x$vers;;
+  [a-z][a-z0-9][a-z0-9]_osf) ;;
+  [0-9][a-z0-9][a-z0-9]_osf) vers=x$vers;;
+  [a-z][a-z0-9][a-z0-9]_ulx) ;;
+  [0-9][a-z0-9][a-z0-9]_ulx) vers=x$vers;;
+  [a-z][a-z0-9][a-z0-9]_ul5) ;;
+  [0-9][a-z0-9][a-z0-9]_ul5) vers=x$vers;;
+  [a-z][a-z0-9][a-z0-9]_lnx) ;;
+  [0-9][a-z0-9][a-z0-9]_lnx) vers=x$vers;;
+  [a-z][a-z0-9][a-z0-9]_rpl) ;;
+  [0-9][a-z0-9][a-z0-9]_rpl) vers=x$vers;;
+  [a-z][a-z0-9][a-z0-9]_u64) ;;
+  [0-9][a-z0-9][a-z0-9]_u64) vers=x$vers;;
+  [a-z][a-z0-9][a-z0-9]_aos) ;;
+  [a-z][a-z0-9][a-z0-9]_prm) ;;
+  [a-z][a-z0-9][a-z0-9]_aix) ;;
+  [0-9][a-z0-9][a-z0-9]_aix) vers=x$vers;;
+  [a-z][a-z0-9][a-z0-9]_hpu) ;;
+  [a-z][a-z0-9][a-z0-9]_sol) ;;
+
+  [a-z][a-z0-9][a-z0-9]_cmw) ;;
+  [a-z][a-z0-9][a-z0-9]_bls) ;;
+  [a-z][a-z0-9][a-z0-9]_ues) ;;
+  [a-z][a-z0-9][a-z0-9]_osx) ;;
+                      *_kit) ;;
+                    sqs_ptx) ;;
+                          *) echo "$0: bad config, should be xxx_uyy >&2"
+                             exit 1 ;;
+esac
+
+# Only do these nm's once; just grep the output.
+case $vers in
+  dr6_us5|\
+  nc4_us5|\
+  rmx_us5|\
+  pym_us5|\
+   rux_us5) LIBC=/usr/ccs/lib/libc.a ;;
+   usl_us5) LIBC=/usr/ccs/lib/libc.so ;;
+   sgi_us5) LIBC=/usr/lib32/mips3/libc.so ;;
+  int_lnx|\
+  int_rpl|\
+  ibm_lnx|\
+  i64_lnx|\
+  axp_lnx) LIBC=/usr/lib/libc.a ;;
+  a64_lnx) LIBC=/usr/lib64/libc.a ;;
+  ppc_lnx) LIBC=/usr/lib64/libc.a ;;
+  i64_aix) LIBC=/usr/lib/ia64l64/libc.so ;;
+  i64_hpu) LIBC=/usr/lib/hpux64/libc.so ;;
+  su9_us5|\
+  su4_us5|\
+  a64_sol) LIBC=/usr/lib/libc.so ;;
+  *_osx) LIBC=/usr/lib/libc.dylib ;;
+         *) LIBC=/lib/libc.a ;;
+esac
+
+case $vers in
+        *) nm $LIBC > $TMP ;;
+esac
+
+[ "$ING_VERS" ] && { echo "BAROQUE = 1" ; echo "#define BAROQUE" ; }
+
+[ -n "$PRIVATE_TOOLS" ] &&
+{ echo "PRIVATETOOLS = 1" ; echo "#define PRIVATETOOLS" ; }
+
+# Set XTERMLIB, WINSYSLIB, XNETLIB, and INGNETLIB.
+# All these are related to the use of X11 and X11's network interface.
+#
+# XTERMLIB and XNETLIB must be set for WindowView.  Use the full pathname
+# if you are using your own X11 libraries.  The order of the libraries must
+# be Xaw, Xmu, Xt and X11.
+#
+# WINSYSLIB must be set for Windows 4GL.  Use the full pathname if you
+# are using your own X11 libraries.  The order of the libraries must be
+# Xm, Xt and X11.
+#
+# INGNETLIB lists libraries needed for platform specific protocol drivers
+# used when linking the INGRES/NET Comm Server (iigcc).
+#
+# CCPICFLAG must be set to the compiler options needed for generating code
+# for shared libraries ("-PIC" on sun4).
+#
+# NETSCAPE_API_FLAG must be set for platforms that the netscape enterprise
+# server supports
+# (eg "-DNET_SSL -DSOLARIS -D_REENTRANT -DMCC_HTTPD -DXP_UNIX -DSPAPI20" on
+# solaris) Check the netscape makefile in the netscape nsapi examples directory
+# on your netscape installation
+#
+# APACHE_API_FLAG must be set for platforms that the Apache web server
+# supports ("-DHPUX10 +z" on HP-UX 10.x). Check the Apache Configuration file
+# in the Apache web server source for your particular platform's appropriate
+# settings.
+#
+
+case $vers in
+  dg8_us5 | dgi_us5)
+        echo "# define WINSYSLIB_SET"
+        echo "XTERMLIB = /usr/opt/X11/lib/libXaw.a /usr/opt/X11/lib/libXmu.a /usr/opt/X11/lib/libXt.a /usr/opt/X11/lib/libX11.a -ltermcap"
+        echo "WINSYSLIB = /usr/opt/X11/lib/libXaw.a /usr/opt/X11/lib/libXext.a /usr/opt/X11/lib/libXm.a /usr/opt/X11/lib/libXt.a /usr/opt/X11/lib/libX11.a /usr/lib/libPW.a"
+        echo "XTERMHDR = /usr/include/X11 /usr/include/X11/Xaw /usr/include/X11/Xmu"
+        echo 'XNETLIB = /usr/opt/X11/lib/libXext.a'
+        echo 'XMLIB =  /usr/opt/X11/lib/libXm.a'
+        echo 'XAWLIB = /usr/opt/X11/lib/libXaw.a'
+        echo 'XMULIB = /usr/opt/X11/lib/libXmu.a'
+        echo 'XTLIB  = /usr/opt/X11/lib/libXt.a'
+        echo 'XLIB   = /usr/opt/X11/lib/libX11.a'
+        echo 'XPW    =/usr/lib/libPW.a'
+        echo 'LIBDL  =/usr/lib/libdl.a'
+        echo 'TERMCAPLIB = -ltermcap'
+        echo "CCPICFLAG = -K PIC"
+        echo "NETSCAPE_API_FLAG = -DXP_UNIX"
+        ;;
+ hp8_us5|\
+ hpb_us5|\
+ i64_hpu|\
+ hp2_us5)
+           echo "XTERMLIB ="
+           echo "XNETLIB ="
+	   [ -d /usr/include/sna ] && ingnetlib="-L/opt/sna/lib -lappc.sl -lcsv.sl -lmgr.sl"
+           echo "INGNETLIB = $ingnetlib"
+           echo "NETSCAPE_API_FLAG = -DNET_SSL -DHPUX -DXP_UNIX +z"
+	   if [ "$vers" = "hp8_us5" ]
+	   then
+	       echo "APACHE_API_FLAG = -DHPUX10 +z"
+	       echo "MAINWIN_EX_LOC = run/ux10"
+	   else
+	       echo "APACHE_API_FLAG = -DHPUX11 +z"
+	       echo "MAINWIN_EX_LOC = run/ux11"
+	   fi
+	
+           ;;
+ hp8_bls)
+	   echo "XTERMLIB = /usr/lib/X11R4/libXaw.sl /usr/lib/X11R4/libXmu.sl /usr/lib/X11R4/libXt.a /usr/lib/X11R4/libX11.a -lcurses"
+           echo "XNETLIB ="
+           echo '#define R_INGRES_XLIB'
+           ;;
+  nc4_us5) echo "XTERMLIB = /usr/lib/libXaw.so /usr/lib/libXmu.so /usr/lib/libXt.so /usr/lib/libX11.so /usr/lib/libXext.so -lcurses"
+           echo "XNETLIB ="
+           echo "NETSCAPE_API_FLAG = -DNET_SSL -DXP_UNIX"
+           ;;
+  sos_us5)
+           echo "XTERMLIB = -lXaw -lXmu -lXt -lX11 -ltermcap -lPW"
+           echo "XNETLIB ="
+	   echo "XTERMHDR = /usr/include/X11"
+           echo "WINSYSLIB = /usr/lib/libXm.so /usr/lib/libXt.so /usr/lib/libX11.so"
+            echo "NETSCAPE_API_FLAG =  -DXP_UNIX"
+           ;;
+  ris_us5)
+        echo "XTERMLIB = /usr/lpp/X11/Xamples/lib/Xaw/libXaw.a /usr/lpp/X11/lib/libXmu.a /usr/lpp/X11/lib/R5/libXt.a /usr/lpp/X11/lib/R5/libX11.a -lcur"
+	;;
+  rs4_us5) echo "XTERMLIB = /usr/lpp/X11/Xamples/lib/Xaw/libXaw.a /usr/lpp/X11/Xamples/lib/Xmu/libXmu.a /usr/lpp/X11/lib/R6/libXt.a /usr/lpp/X11/lib/R6/libXext.a /usr/lpp/X11/lib/R6/libX11.a /usr/lib/libcurses.a /usr/lib/libcur.a"
+           echo "INGNETLIB = -ltli_r"
+           echo "XNETLIB ="
+           echo "MAINWIN_EX_LOC = run/aix4"
+           [ "$conf_X11R5" -o "$conf_X11R4" ] && echo '#define R_INGRES_XLIB'
+           echo "NETSCAPE_API_FLAG = -DNET_SSL -DAIX -D_REENTRANT -DMCC_HTTPD -DXP_UNIX -DSPAPI20"
+           echo "APACHE_API_FLAG = -DAIX=43 -U__STR__"
+           ;;
+  ris_u64) echo "XTERMLIB = /usr/lpp/X11/Xamples/lib/Xaw/libXaw.a /usr/lpp/X11/Xamples/lib/Xmu/libXmu.a /usr/lpp/X11/lib/R6/libXt.a /usr/lpp/X11/lib/R6/libXext.a /usr/lpp/X11/lib/R6/libX11.a /usr/lib/libcurses.a /usr/lib/libcur.a"
+           echo "INGNETLIB = -ltli_r"
+           echo "XNETLIB ="
+           [ "$conf_X11R5" -o "$conf_X11R4" ] && echo '#define R_INGRES_XLIB'
+           echo "NETSCAPE_API_FLAG = -DNET_SSL -DAIX -D_REENTRANT -DMCC_HTTPD -DXP_UNIX -DSPAPI20"
+           echo "APACHE_API_FLAG = -DAIX=43 -U__STR__"
+           ;;
+  i64_aix) echo "XTERMLIB = /usr/lpp/X11/Xamples/lib/Xaw/libXaw.a /usr/lpp/X11/Xamples/lib/Xmu/libXmu.a /usr/lpp/X11/lib/R6/libXt.a /usr/lpp/X11/lib/R6/libXext.a /usr/lpp/X11/lib/R6/libX11.a /usr/lib/ia64l64/libcurses.so /usr/lib/libcur.a"
+           echo "INGNETLIB ="
+           echo "XNETLIB ="
+           [ "$conf_X11R5" -o "$conf_X11R4" ] && echo '#define R_INGRES_XLIB'
+           echo "NETSCAPE_API_FLAG = -DNET_SSL -DAIX -D_REENTRANT -DMCC_HTTPD -DXP_UNIX -DSPAPI20"
+           echo "APACHE_API_FLAG = -DAIX=43 -U__STR__"
+           ;;
+  sgi_us5) echo "XTERMLIB = /usr/lib32/libXaw.so /usr/lib32/libXmu.so /usr/lib32/libXt.so /usr/lib32/libX11.so /usr/lib32/libcurses.so "
+           echo "XNETLIB ="
+  	   echo "WINSYSLIB = /usr/lib32/libXm.so /usr/lib32/libXt.so /usr/lib32/libX11.so "
+           echo "NETSCAPE_API_FLAG = -DXP_UNIX"
+           ;;
+
+  su4_u42) echo "XTERMLIB = /usr/openwin/lib/libXaw.a /usr/openwin/lib/libXmu.a /usr/openwin/lib/libXt.a /usr/openwin/lib/libX11.a -ltermcap"
+           echo "XNETLIB ="
+           [ ! "$conf_OL" ] && echo '#define R_INGRES_XLIB'
+           echo "INGNETLIB = /usr/sunlink/sunlink.a -lnsl"
+           ;;
+su4_cmw)	echo "XTERMLIB = /usr/openwin/lib/libXaw.a /usr/openwin/lib/libXmu.a /usr/openwin/lib/libXt.a /usr/openwin/lib/libX11.a /lib/libtermcap.a"
+		echo "XNETLIB ="
+		echo '# define R_INGRES_XLIB'
+		echo "INGNETLIB = /usr/sunlink/sunlink.a"
+		;;
+  su4_us5) echo "XTERMLIB = /usr/openwin/lib/libXaw.so /usr/openwin/lib/libXmu.so /usr/openwin/lib/libXt.so /usr/openwin/lib/libX11.so /usr/ucblib/libucb.a"
+           echo "XTERMHDR = /usr/openwin/include"
+           echo "NETSCAPE_API_FLAG = -DNET_SSL -DSOLARIS -D_REENTRANT -DMCC_HTTPD -DXP_UNIX -DSPAPI20"
+           echo "APACHE_API_FLAG = -DSOLARIS2 -D_REENTRANT"
+	   echo "MAINWIN_EX_LOC = run/sunos5"
+           echo "XNETLIB ="
+	   echo "INGNETLIB = /opt/SUNWconn/lib/libappc_api.a"
+           ;;
+  su9_us5) echo "XTERMLIB = /usr/openwin/lib/libXaw.so /usr/openwin/lib/libXmu.so /usr/openwin/lib/libXt.so /usr/openwin/lib/libX11.so /usr/ucblib/libucb.a"
+           echo "XTERMHDR = /usr/openwin/include"
+           echo "XNETLIB ="
+	    echo "NETSCAPE_API_FLAG = -DNET_SSL -DSOLARIS -D_REENTRANT -DMCC_HTTPD -DXP_UNIX -DSPAPI20"
+           ;;
+  a64_sol) echo "XTERMLIB = /usr/openwin/lib/libXaw.so /usr/openwin/lib/libXmu.so /usr/openwin/lib/libXt.so /usr/openwin/lib/libX11.so /usr/ucblib/libucb.a"
+           echo "XTERMHDR = /usr/openwin/include"
+           echo "XNETLIB ="
+	    echo "NETSCAPE_API_FLAG = -DNET_SSL -DSOLARIS -D_REENTRANT -DMCC_HTTPD -DXP_UNIX -DSPAPI20"
+           ;;
+  sui_us5) echo "XTERMLIB = /usr/openwin/lib/libXaw.so /usr/openwin/lib/libXmu.so /usr/openwin/lib/libXt.so /usr/openwin/lib/libX11.so /usr/ucblib/libucb.a"
+           echo "XTERMHDR = /usr/openwin/include"
+           echo "XNETLIB ="
+	   echo "INGNETLIB ="
+           echo "APACHE_API_FLAG = -DSOLARIS2=260 -DUSE_EXPAT"
+           echo "NETSCAPE_API_FLAG = -DXP_UNIX"     
+           ;;
+  sqs_ptx) echo "XTERMLIB = -lXaw -lXmu -lXt -lX11 -ltermcap"
+           echo "XNETLIB ="
+           echo "CCPICFLAG = -K PIC"
+           echo "NETSCAPE_API_FLAG = -DXP_UNIX"
+           ;;
+ dr6_us5) echo "XNETLIB = "
+  	  echo "XTERMLIB = /usr/X/lib/libXaw.so /usr/X/lib/libXmu.so /usr/X/lib/libXt.so /usr/X/lib/libX11.so /usr/X/lib/libXext.so /usr/ucblib/libtermcap.a"
+          # echo "XTERMLIB = -L/usr/X/lib -lXaw -lXmu -lXt -lX11 -lXext -ltermcap"
+          echo "#define WINSYSLIB_SET"
+          echo "WINSYSLIB = /usr/X/lib/libXm.a /usr/X/lib/libXt.a /usr/X/lib/libX11.a"
+           ;;
+ usl_us5) echo "XNETLIB ="
+	  echo "XTERMLIB = -lcurses -lXaw -lXext -lXmu -lXt -lX11 -lSM -lICE"
+	  echo "# define WINSYSLIB_SET"
+	  echo "WINSYSLIB = -lXm -lXt -lX11"
+	  echo "CCPICFLAG = -K PIC"
+          echo "APACHE_API_FLAG = -DUW=700 -DUSE_HSREGEX -DUSE_EXPAT"
+	  echo "NETSCAPE_API_FLAG = -DNET_SSL -DUNIXWARE -K PIC -DUnixWare -b elf -D_REENTRANT -DMCC_HTTPD -DXP_UNIX -DSPAPI20"
+	  ;;
+ axp_osf) echo "XTERMLIB = -lXaw -lXmu -lXt -lX11 -ltermcap -lSM -lXext -lICE"
+	  echo "XNETLIB = -ldnet_stub"
+	  echo "WINSYSLIB = /usr/lib/libXm.a \
+/usr/lib/libXt.a /usr/lib/libX11.a"
+          echo "NETSCAPE_API_FLAG = -DIS_64 -ieee_with_inexact -DXP_UNIX -DOSF1"
+          echo "APACHE_API_FLAG = -DOSF1"
+	  ;;
+ rux_us5|\
+ rmx_us5) echo "XTERMLIB = /opt/X/lib/libXaw.a /opt/X/lib/libXmu.a /opt/X/lib/libXt.a /opt/X/lib/libX11.a /opt/X/lib/libXext.a -ltermcap -lcmd"
+          echo "XNETLIB ="
+          echo "WINSYSLIB = -lXm -lXaw -lXt -lX11"
+	  echo "NETSCAPE_API_FLAG = -DXP_UNIX"
+          echo "APACHE_API_FLAG = -DSVR4 -D_XPG_IV -DHAS_DLFCN -DUSE_MMAP_FILES -DUSE_SYSVSEM_SERIALIZED_ACCEPT -DNEED_UNION_SEMUN -DUSE_HSREGEX -DUSE_EXPAT"
+          ;;
+ pym_us5) echo "XTERMLIB = -lXaw -lXmu -lXt -lX11 -ltermcap -lcmd"
+          echo "XNETLIB ="
+          echo "WINSYSLIB = -lXm -lXaw -lXt -lX11"
+          ;;
+ ts2_us5) echo "XTERMLIB = -lXaw -lXmu -lXt -lX11 -ltermcap"
+          echo "XNETLIB ="
+          echo "WINSYSLIB = -lXm -lXaw -lXt -lX11"
+          ;;
+ int_lnx|\
+ int_rpl|\
+ ibm_lnx|\
+ i64_lnx|\
+ axp_lnx) echo "XTERMLIB = /usr/X11R6/lib/libXaw.so /usr/X11R6/lib/libXmu.so /usr/X11R6/lib/libXt.so /usr/X11R6/lib/libX11.so /usr/lib/libtermcap.so"
+          echo "WINSYSLIB = /usr/X11R6/lib/libXmu.so /usr/X11R6/lib/libXt.so /usr/X11R6/lib/libX11.so"
+          echo "XNETLIB ="
+	  echo "NETSCAPE_API_FLAG = -DXP_UNIX"
+	  echo "APACHE_API_FLAG = -DLINUX=2"
+          ;;
+ a64_lnx|\
+ ppc_lnx) echo "XTERMLIB = /usr/X11R6/lib64/libXaw.so /usr/X11R6/lib64/libXmu.so /usr/X11R6/lib64/libXt.so /usr/X11R6/lib64/libX11.so /usr/lib64/libtermcap.so"
+          echo "XNETLIB ="
+	  echo "NETSCAPE_API_FLAG = -DXP_UNIX"
+	  echo "APACHE_API_FLAG = -DLINUX=2"
+	  ;;
+esac
+
+echo "VERS = $vers"
+[ "$vers64" ] && echo "VERS64 = $vers64"
+echo "#define $vers"
+
+# hpb_us5 is the new config string for HP-UX 11.0 (32-bit).  The following
+# also defines hp8_us5 to enable most HP specific settings.  Care must be
+# taken when the need arises to differentiate them
+
+[ $vers = "hp2_us5" ] && echo "#define hpb_us5"
+[ $vers = "hpb_us5" ] && echo "#define hp8_us5"
+
+# HDRMACH specials
+
+case $vers in
+  dg8_us5 | dgi_us5) echo "HDRMACH = /usr/include/X11 /usr/include/X11/Xmu /usr/include/X11/Xaw /usr/include/netinet";;
+  i64_hpu) echo "HDRMACH = /usr/include/X11R6";;
+  hpb_us5|\
+  hp2_us5) echo "HDRMACH = /usr/include/sna";;
+  hp8_us5) if [ "$conf_DBL" ]
+	   then
+		HDRMACH="/usr/include/X11R5 /usr/include/Motif1.2"
+	   else
+		HDRMACH="/usr/contrib/X11R4/include /usr/contrib/X11R5/include /usr/include/X11R6"
+	   fi
+	   [ -d /usr/include/sna ] && HDRMACH="$HDRMACH /usr/include/sna"
+	   echo "HDRMACH = $HDRMACH";;
+  hp8_bls) echo "HDRMACH = /usr/include/X11R4";;
+  pyr_us5) echo "HDRMACH = /usr/.attinclude /usr/.ucbinclude";;
+  rux_us5|\
+  rmx_us5) echo "HDRMACH = /opt/X/include";;
+  sgi_us5) echo "HDRMACH = /usr/include/X11";;
+  axp_osf) echo "HDRMACH = /usr/sys/include /usr/sys/BINARY";;
+  int_lnx|\
+  int_rpl) if [ "$HA_ROOT" ]; then
+	   echo "HDRMACH = $HA_ROOT/opendlm/src/include"
+	   else
+	   echo "HDRMACH = $ING_SRC/ha/opendlm/src/include"
+	   fi
+	   ;;
+    su4_*) if [ "$conf_OL" ] ; then
+             incs='$(OPENWINHOME)/include/Xol $(OPENWINHOME)/include'
+             echo "HDRMACH = $incs /usr/include/netinet"
+           else
+             echo "HDRMACH = /usr/include/netinet"
+           fi
+           ;;
+esac
+
+# N.B.: avoid adding generic entries to HDRMACH.
+# Sun compiler currently imposes a limit on -I options.
+[ -d /usr/netinclude ] && echo "HDRMACH += /usr/netinclude"
+
+# CPP specials
+# CPP should be set to the name of the C pre-processor on the system.
+case $vers in 
+  rmx_us5|\
+  rux_us5|\
+  pym_us5) echo "CPP = /usr/ccs/lib/cpp";;
+  su4_us5|\
+  su9_us5|\
+  sui_us5) echo "CPP = /usr/ccs/lib/cpp";;
+  sgi_us5) echo "CPP = /usr/lib32/cmplrs/cpp";;
+  dr6_us5) echo "CPP = /usr/ccs/lib/cpp";;
+  i64_aix) echo "CPP = /usr/ccs/lib/cpp";;
+  *_osx) echo "CPP = /usr/bin/cpp";;
+        *) echo "CPP = /lib/cpp";;
+esac
+
+# CCMACH specials
+case $vers in
+   axp_osf) echo "CCMACH = -signed -D_BSD -pthread -ieee";;
+   dg8_us5) echo "CCMACH = -Xa";;
+   dgi_us5) echo "CCMACH = -Xa -DSYSV -DSVR4 -DSVR4_0 -D_POSIX4_DRAFT_SOURCE";;
+   usl_us5) echo "CCMACH = -Xt -DSYSV -DSVR4 -DSVR4_0 -D_REENTRANT -K thread,pentium";;
+   sos_us5) echo "CCMACH = -Xt -b elf -a ods30";;
+   sgi_us5) echo "CCMACH = -n32 -mips3 -signed -common -D_SGI_SOURCE -D_SGI_MP_SOURCE -D_SGI_REENTRANT_FUNCTIONS -D_OLD_TERMIOS -woff 1116 -woff 1009 -woff 1174 -woff 1552"
+   	    echo "CCMACH_DBG = -g -n32 -mips3 -signed -common -D_SGI_SOURCE -D_SGI_REENTRANT_FUNCTIONS -D_OLD_TERMIOS -woff 1116 -woff 1009 -woff 1174 -woff 1552"
+            echo "CCMACH64 = -DADD_ON64 -64 -mips4 -G0 -signed -common -D_SGI_SOURCE -D_SGI_MP_SOURCE -D_SGI_REENTRANT_FUNCTIONS -D_OLD_TERMIOS -woff 1116 -woff 1009 -woff 1174 -woff 1552"
+	    ;;
+   dr6_us5) echo "CCMACH = -DSYSV -DSVR4 -DSVR4_0"
+	    echo "CCMACH_DBG = -g -DSYSV -DSVR4 -DSVR4_0"
+	    ;;
+   hp8_bls) compflags="-D_INCLUDE_HPUX_SOURCE -D_INCLUDE_XOPEN_SOURCE -D_INCLUDE_POSIX_SOURCE -D_INCLUDE_AES_SOURCE -DSEC_MSIX_IPC"
+	    echo "CCMACH = $compflags +DA1.0 +DS1.0 "
+	    ;;
+   hp2_us5) [ ! "$conf_ANSIC" ] && compflags=" -W  p,-H375000"
+	    [ "$conf_B64" ] && compflags="$compflags -D_LARGEFILE64_SOURCE"
+            compflags="+e +Olibcalls -D_HPUX_SOURCE -D_POSIX_C_SOURCE=199506L +DChpux +DD64 +M2 +DS2.0a $compflags"
+            echo "CCMACH = $compflags"
+            echo "CCMACH_DBG = $compflags -g"
+            ;;
+   hpb_us5) [ ! "$conf_ANSIC" ] && compflags=" -W  p,-H375000"
+	    [ "$conf_B64" ] && compflags="$compflags -D_LARGEFILE64_SOURCE"
+            compflags32="+e +Olibcalls -D_HPUX_SOURCE -D_POSIX_C_SOURCE=199506L +DAportable +DS2.0a $compflags"
+            echo "CCMACH = $compflags32"
+	    echo "CCMACH64 = -Dhp2_us5 -DADD_ON64 +e +Olibcalls -D_HPUX_SOURCE -D_POSIX_C_SOURCE=199506L +DChpux +DD64 +M2 +DS2.0a $compflags"
+            echo "CCMACH_DBG = $compflags32 -g"
+	    echo "CCMACH_DBG64 = -Dhp2_us5 -DADD_ON64 +e +Olibcalls -D_HPUX_SOURCE -D_POSIX_C_SOURCE=199506L +DChpux +DD64 +M2 +DS2.0a $compflags -g"
+            ;;
+   hp8_us5) [ ! "$conf_ANSIC" ] && compflags=" -W  p,-H375000"
+	    [ "$conf_B64" ] && compflags="$compflags -D_LARGEFILE64_SOURCE"
+            if [ "$conf_W4GL" ] ; then 
+              compflags="-D_INCLUDE_HPUX_SOURCE -D_INCLUDE_XOPEN_SOURCE -D_INCLUDE_POSIX_SOURCE -D_INCLUDE_AES_SOURCE +DA1.0 +DS1.0 -J $compflags"
+            else
+	      compflags="+e -D_HPUX_SOURCE +DA1.1 +DS1.1b $compflags"
+            fi
+            echo "CCMACH = $compflags"
+            echo "CCMACH_DBG = $compflags -g"
+            ;;
+   i64_hpu) [ ! "$conf_ANSIC" ] && compflags=" -W  p,-H375000"
+            compflags="-D_HPUX_SOURCE -D_POSIX_C_SOURCE=199506L -ext $compflags"
+            echo "CCMACH = +DD64 $compflags"
+            echo "CCMACH_DBG = +DD64 $compflags -g"
+	    echo "CCMACH32 = $compflags"
+	    echo "CCMACH_DBG32 = $compflags -g"
+            ;;
+   ris_us5) echo "CCMACH = -D_ALL_SOURCE -qnoro -qhssngl -qpgmsize=l -qmaxmem=-1 -Q -bI:/usr/lib/FCM/lowsys.exp" 
+	    echo "CCMACH_DBG = -g -D_ALL_SOURCE -qnoro -qhssngl -qpgmsize=l -qmaxmem=-1 -qchars=signed -Q -bI:/usr/lib/FCM/lowsys.exp" 
+	    ;;
+   sqs_ptx)
+	echo "CCMACH = -DNO_XPG3_HDR -D_SOCKET_VERSION=11"
+	echo "CCMACH_DBG = -g -DNO_XPG3_HDR -D_SOCKET_VERSION=11"
+	;;
+   rs4_us5) echo "CCMACH = -qnoro -qhssngl -qchars=signed -qmaxmem=-1 -Q -D_BSD=43"
+            echo "CCMACH64 = -DADD_ON64 -q64 -qnoro -qhssngl -qchars=signed -qmaxmem=-1 -Q -D_BSD=43" ;;
+   ris_u64) echo "CCMACH = -q64 -qnoro -qhssngl -qchars=signed -qmaxmem=-1 -Q -D_BSD=43" ;;
+   i64_aix) echo "CCMACH = -q64 -qlanglvl=ansi -qnoro -qhssngl -qmaxmem=-1 -Q "
+            echo "CCMACH_DBG = -g -q64 -qlanglvl=ansi -qnoro -qhssngl -qmaxmem=-1 -Q " ;;
+   su4_us5| \
+   sui_us5) if [ "$conf_W4GL" ] ; then
+                 echo "CCMACH = -xCC -DSVR4 -D_SVID_GETTOD -mt"
+            else
+                 echo "CCMACH = -DSVR4 -D_SVID_GETTOD -mt"
+                 echo "CCMACH64 = -Dsu9_us5 -DADD_ON64 -xarch=v9 -DSVR4 -D_SVID_GETTOD -mt"
+            fi
+            ;;
+   su9_us5) echo "CCMACH = -xarch=v9 -DSVR4 -D_SVID_GETTOD -mt" ;;
+   a64_sol)
+	echo "CCMACH = -DSVR4 -D_SVID_GETTOD -mt -D_LARGEFILE64_SOURCE"
+	echo "CCMACH64 = -DSVR4 -D_SVID_GETTOD -DADD_ON64 -xarch=generic64 -mt"
+	;;
+   su4_u42) [ "$conf_OL" ] && defs=-DXTK_OLIT
+            [ "$conf_65TOOLS_64SOURCE" ] && compflags="-DGCF64"
+            echo "CCMACH = -Dsparc -pipe $compflags $defs"
+            ;;
+   nc4_us5) echo "CCMACH = -w -DSVR4 -Hnocopyr" ;;
+   su4_cmw) echo "CCMACH = -DSunOS_CMW" ;;
+   rmx_us5) echo "CCMACH = -W0 -Xt -Ksigned -Kpic -KOlimit:4000 -Kr4000";;
+   rux_us5) echo "CCMACH = -Kthread -Ksigned -Kmips3 -FOlimit,4000"
+            echo "CCMACH_DBG = -g -Kthread -Ksigned -Kmips3 -FOlimit,4000";;
+   ts2_us5) echo "CCMACH = -KPIC -Wx,-G0 -Olimit 4000 -signed -D_REENTRANT";;
+   pym_us5) echo "CCMACH = -Xa -Ksigned";;
+     *_lnx|\
+    int_rpl) compflags=""
+	    [ "$vers" = "ppc_lnx" ] && compflags="-m64"
+	    [ "$conf_B64" ] && compflags="-D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE"
+	    echo "CCMACH = -fsigned-char -fno-strength-reduce -D_REENTRANT -DLINUX -D_GNU_SOURCE -DXLIB_ILLEGAL_ACCESS $compflags"
+	    [ "$conf_ADD_ON32" ] && echo "CCMACH32 = -m32 $CCMACH" ;;
+      *_osx)    ARCHOUT=""
+		# ARCHOUT="-arch i386 -arch ppc"
+		# Disabled until we can build universal binaries
+		echo "CCMACH = -DDARWIN ${OUTARCH} -fsigned-char -fno-strength-reduce" ;;
+esac
+
+# ASMACH specials (passed to assembler)
+#  The ICL DRS 500 based machines must invoke m4 preprocessor
+#  so that comments may be added to CS assembler sources !
+case $vers in
+  ts2_us5) echo "ASMACH = -O -G0 -KPIC" ;;
+  sgi_us5) 
+      echo "ASMACH = -n32 -mips3 -show -KPIC -Wb,-nosymregs -w"
+      echo "ASMACH64 = -64 -mips4 -show -KPIC -Wb,-nosymregs -w -DADD_ON64"
+      ;;
+  su4_us5) [ "$conf_ADD_ON64" ] && echo "ASMACH64 = -xarch=v9"
+      echo "ASMACH = -xarch=v8plus"
+      ;;
+  su9_us5) echo "ASMACH = -xarch=v9" ;;
+  rs4_us5) [ "$conf_ADD_ON64" ] && echo "ASMACH64 = -a64" ;;
+  ris_u64) echo "ASMACH = -a64" ;;
+esac
+
+# CCLDMACH specials--desired flags which aren't passed to ld by cc
+case $vers in
+   axp_osf) echo "CCLDMACH = " ;;
+   dg8_us5 |\
+   dgi_us5) echo "CCLDMACH = " ;;
+   dr6_us5) echo "CCLDMACH = " 
+	    echo "CCLDMACH_DBG = " 
+	    ;;
+   hp2_us5|\
+   hpb_us5|\
+   hp8_us5) if [ "$conf_W4GL" ] ; then
+              echo "CCLDMACH = -z -Wl,-E -Wl,-O"
+              echo "CXXLDMACH = -z -Wl,-E -Wl,-O"
+            else
+              echo "CCLDMACH = -Wl,-E -Wl,-O -Wl,+s -Wl,+n"
+              echo "CXXLDMACH = -Wl,-E -Wl,-O -Wl,+s"
+            fi
+	    echo "CCLDMACH64 = +DD64 -Wl,-E -Wl,+s -Wl,+n"
+	    echo "CXXLDMACH64 = +DD64 -Wl,-E -Wl,+s"
+            ;;
+   hp8_bls) echo "CCLDMACH = -Wl,-O" ;;
+   i64_hpu)
+	    echo "CCLDMACH = +DD64 -Wl,-E -Wl,+s"
+	    echo "CXXLDMACH = +DD64 -Wl,-E -Wl,+s"
+	    echo "CCLDMACH32 = -Wl,-E -Wl,+s"
+	    echo "CXXLDMACH32 = -Wl,-E -Wl,+s"
+	    ;;
+   sos_us5) echo "CCLDMACH = " ;;
+   ris_us5) echo "CCLDMACH = -x" 
+            echo "CCLDMACH_DBG = -x" 
+	    ;;
+   rs4_us5) echo "CCLDMACH = "
+            echo "CCLDMACH64 = -q64"
+            ;;
+   ris_u64) echo "CCLDMACH = " ;;
+   i64_aix) echo "CCLDMACH = -f elf64"
+            echo "CCLDMACH_DBG = -f elf64"
+            ;;
+   sqs_ptx) echo "CCLDMACH = " ;;
+   nc4_us5) echo "CCLDMACH = " ;;
+   su4_us5) echo "CCLDMACH = "
+            echo "CCLDMACH64 = -xarch=v9"
+            ;;
+   su9_us5) echo "CCLDMACH = -xarch=v9" ;;
+   a64_sol) echo "CCLDMACH = -mt"
+            echo "CCLDMACH64 = -DADD_ON64 -xarch=generic64 -mt"
+	    ;;
+   sui_us5) echo "CCLDMACH = " ;;
+   pym_us5) echo "CCLDMACH = " ;;
+   su4_u42) CCLDMACH="-Qoption ld -dc -Qoption ld -dp"
+            CCLDMACH="$CCLDMACH -Qoption ld -x -Qoption ld -X"
+            echo "CCLDMACH = $CCLDMACH"
+            ;;
+   su4_cmw) CCLDMACH="-Qoption ld -dc -Qoption ld -dp"
+            CCLDMACH="$CCLDMACH -Qoption ld -x -Qoption ld -X"
+            echo "CCLDMACH = $CCLDMACH"
+            ;;
+   su4_cmwXX) CCLDMACH="-Xlinker -dc -Xlinker -dp"
+            CCLDMACH="$CCLDMACH -Xlinker -x -Xlinker -X"
+            echo "CCLDMACH = $CCLDMACH"
+            ;;
+   sgi_us5) echo "CCLDMACH = -mips3 -Wl,-woff,84 -Wl,-woff,85 -Wl,-woff,34"
+            echo "CCLDMACH64 = -64 -mips4 -Wl,-woff,84 -Wl,-woff,85 -Wl,-woff,34"
+            ;;
+   ts2_us5) echo "CCLDMACH = " ;;
+   usl_us5) echo "CCLDMACH = -Qy -K thread" ;;
+     *_lnx|\
+   int_rpl) if [ "$vers" = "ppc_lnx" ] ; then
+		echo "CCLDMACH = -m64 -rdynamic " 
+		echo "#define CCLDMACH -m64 -rdynamic " 
+	    else
+		echo "CCLDMACH = -rdynamic " 
+	    fi
+	    [ "$conf_ADD_ON32" ] && echo "CCLDMACH32 = -m32 $CCLDMACH"
+	    ;;
+   rux_us5) echo "CCLDMACH = -Kthread" ;;
+     *_osx) ARCHOUT=""
+	    # ARCHOUT="-arch i386 -arch ppc"
+	    # Disabled until we can build universal binaries
+	   echo "CCLDMACH = $ARCHOUT" ;;
+         *) echo "CCLDMACH = -x" ;;
+esac
+
+# CCLDSERVER specials--desired flags passed to ld by cc when linking dbms
+#                    server. (this will be referenced in iilink)
+case $vers in
+    rs4_us5|\
+    ris_u64) echo "CCLDSERVER = -bmaxdata:0x30000000" ;;
+          *) echo "CCLDSERVER = " ;;
+esac
+
+
+# CCPICFLAG specials: must be set to the compiler options needed for generating
+# position independent code for shared libraries ("-PIC" on sun4).
+case $vers in
+   dr6_us5) echo "CCPICFLAG = -K PIC" ;;
+   su4_us5|\
+   su9_us5|\
+   sui_us5) echo "CCPICFLAG = -K PIC" ;;
+   a64_sol) echo "CCPICFLAG = -K PIC" ;;
+   pym_us5) echo "CCPICFLAG = -K PIC" ;;
+   rux_us5|\
+   rmx_us5) echo "CCPICFLAG = -K PIC" ;;
+   su4_u42|su4_cmw) if [ "$conf_W4GL" ] ; then
+              echo "CCPICFLAG = -PIC"
+            else	
+              echo "CCPICFLAG = "
+            fi
+            ;;
+   rs4_us5|\
+   i64_aix|\
+   ris_u64|\
+   ris_us5) echo "CCPICFLAG = " ;;
+   hp2_us5|\
+   hpb_us5|\
+   hp8_us5) echo "CCPICFLAG = +Z" ;;
+   sos_us5) echo "CCPICFLAG = -K pic" ;;
+   sgi_us5) echo "CCPICFLAG = -KPIC" ;;
+   axp_osf) echo "CCPICFLAG = " ;;
+     *_lnx|\
+   int_rpl|\
+     *_osx) echo "CCPICFLAG = -fPIC" ;;
+         *) ;;
+esac
+
+# Shared library suffix. You need this if you want to deliver ingres shared
+# libs with the same suffix as other shared libs on the box. Default is "so".
+case $vers in
+  ris_u64|\
+  rs4_us5|\
+  ris_us5) echo "SLSFX = a" 
+	   SFX=a
+	   export SFX 
+	   ;;
+  i64_hpu|\
+  hp2_us5|\
+  hpb_us5|\
+  hp8_us5|\
+  hp8_bls) echo "SLSFX = sl" 
+	SFX=sl
+	export SFX
+	;;
+  *_osx) echo "SLSFX = dylib"
+	   SFX=dylib
+	   export SFX
+	;;
+        *) echo "SLSFX = so" 
+	SFX=so
+	export SFX
+	;;
+esac
+
+# MainWin shared library suffix. You need this if you want to deliver MainWin
+# shared libs with the same suffix as other shared libs on the box.
+# Default is "so".
+case $vers in
+  rs4_us5) echo "MWSLSFX = so" ;;
+        *) echo "MWSLSFX = $SFX" ;;
+esac
+
+# Common Gateway Interface suffix. This is needed for the ICE server.
+# On non NT platforms this will be 'cgi' for NT it must be 'exe'
+case $vers in
+        *) echo "CGISFX = cgi" ;;
+esac
+
+# LDLIBPATH and LIBMACH specials.  The LDLIBPATH symbol is set to a list of
+# directories where _system_ (not Ingres) libraries are expected to reside.
+# The syslibs variable is set a list of system libraries which might
+# potentially go into the LIBMACH list; the list should be in the correct
+# scanning order.  LIBMACH is all the libraries in the list that actually
+# exist in one of the directories in the LDLIBPATH list.
+case $vers in
+   su4_u42) ldlibpath="/usr/lang/SC1.0 /lib /usr/lib"
+            syslibs="net inet bsdipc socket ld dnet tsi stcp nsl_s nsl"
+            ;;
+   su4_cmw) ldlibpath="/usr/lang/SC1.0 /usr/lang/SC0.0 /lib /usr/lib \
+		/usr/local/lib"
+	    syslibs="net inet bsdipc socket ld dnet tsi stcp nsl_s nsl cmw bsm"
+	    ;;
+   sui_us5) ldlibpath="/opt/SUNWspro/lib /usr/ccs/lib /usr/lib /usr/ucb/lib"
+            syslibs="curses gen m"
+            ;;
+   su4_us5) ldlibpath="/opt/SUNWspro/lib /usr/ccs/lib /usr/lib"
+            ldlibpath64="/opt/SUNWspro/lib/v9 /usr/ccs/lib/sparcv9 /usr/lib/sparcv9"
+            syslibs="curses gen m"
+            ;;
+   su9_us5) ldlibpath="/opt/SUNWspro/lib/v9 /usr/ccs/lib/sparcv9 /usr/lib/sparcv9"
+            syslibs="curses gen m"
+            ;;
+   a64_sol) ldlibpath="/opt/SUNWspro/lib /usr/ccs/lib /lib /usr/lib"
+            ldlibpath64="/opt/SUNWspro/lib/amd64 /usr/ccs/lib/amd64 /lib/amd64 /usr/lib/amd64"
+            syslibs="curses gen m"
+            ;;
+   i64_hpu) ldlibpath="/usr/lib/hpux64"
+            syslibs=""
+	    ;;
+   hp2_us5|\
+   hpb_us5|\
+   hp8_us5) ldlibpath="/lib /usr/lib /usr/local/lib"
+	    ldlibpath64=$ldlibpath
+            syslibs=""
+            ;;
+   hp8_bls) ldlibpath="/lib /usr/lib /usr/local/lib"
+            syslibs="m6 /lib/libsec.sl net bsdipc ld"
+            ;;
+   dgi_us5) ldlibpath="/usr/sde/ix86dgux/usr/lib /usr/lib"
+	    syslibs="resolv socket nsl elf gen m l rte"
+	    ;;
+   dr6_us5) ldlibpath="/usr/ccs/lib /usr/lib /usr/ucblib"
+            syslibs="nsl socket elf gen m c ucb"
+            ;;
+   usl_us5) ldlibpath="/usr/ccs/lib /usr/lib"
+            syslibs="nsl socket elf gen m"
+            ;;
+   nc4_us5) ldlibpath="/usr/ucblib /usr/ccs/lib /usr/lib"
+            syslibs="nsl socket elf gen dl"
+            ;;
+   sos_us5) ldlibpath="/lib /usr/ccs/lib /usr/lib /usr/local/lib"
+            syslibs="net inet bsdipc ld dnet tsi stcp nsl_s nsl"
+	    ;;
+   axp_osf) ldlibpath="/lib /usr/lib /usr/ccs/lib /usr/shlib"
+            syslibs="net inet bsdipc socket ld dnet_stub \
+            tsi stcp nsl_s nsl"
+	    ;;
+   rmx_us5) ldlibpath="/usr/ccs/lib /usr/lib"
+            syslibs=""
+            ;;
+   rux_us5) ldlibpath="/opt/thread/lib /usr/lib"
+            syslibs="mproc dl elf socket_r nsl_r m_r"
+            ;;
+   pym_us5) ldlibpath="/usr/ccs/lib /usr/lib /usr/ucblib"
+            syslibs=""
+            ;;
+   i64_aix) ldlibpath="/usr/ccs/lib/ia64l64 /usr/lib/ia64l64"
+     	    syslibs=""
+	    ;;
+   ts2_us5) ldlibpath="/lib /usr/lib"
+            syslibs="c m net inet bsdipc socket ld dnet tsi stcp"
+            ;;
+   sgi_us5) ldlibpath="/usr/lib32/mips3 /usr/lib32 /lib32"
+            ldlibpath64="/usr/lib64/mips4 /usr/lib64 /lib64"
+            syslibs="pthread fpe socket nsl elf "
+#           syslibs="pthread fpe net inet bsdipc socket ld dnet tsi stcp nsl_s nsl elf "
+            ;;
+   int_lnx|\
+   int_rpl|\
+   ibm_lnx|\
+   i64_lnx|\
+   axp_lnx) ldlibpath="/lib /usr/lib /usr/local/lib"
+            ;;
+   a64_lnx|\
+   ppc_lnx) ldlibpath="/lib64 /usr/lib64 /usr/local/lib64"
+            ;;
+   rs4_us5|\
+   ris_u64) ldlibpath="/lib /usr/lib /usr/local/lib"
+	    ldlibpath64=$ldlibpath
+            syslibs="net inet bsdipc socket ld dnet tsi stcp nsl_s nsl curses"
+            ;;
+   *_osx) ldlibpath="/usr/lib /usr/local/lib"
+	    ;;
+         *) ldlibpath="/lib /usr/lib /usr/local/lib"
+            syslibs="net inet bsdipc socket ld dnet tsi stcp nsl_s nsl curses"
+            ;;
+esac
+
+libs=
+for lib in $syslibs
+{
+  if [ "`expr $lib : '^\(.\).*$'`" = "/" ] ; then
+    [ -f $lib ] && libs="$libs $lib"
+  else
+    lflag=false
+    for lp in $ldlibpath
+    {
+      [ -f $lp/lib${lib}.a ] && lflag=true
+    }
+    $lflag && libs="$libs -l$lib"
+  fi
+}
+
+echo "LDLIBPATH = $ldlibpath"
+echo "LDLIBPATH64 = $ldlibpath64"
+echo "LIBMACH = $libs"
+
+# LDLIB and LDLIBMACH specials
+prefix=
+suffix="-lm -lc"
+
+case $vers in
+   axp_osf) suffix="-lrt -lm -lbsd -laio -lpthread -lmach -lexc -lmld";;
+   i64_hpu|\
+   hp2_us5|\
+   hpb_us5) suffix="-lpthread -lm -lrt -lcl";;
+   hp8_us5) if [ "$conf_W4GL" ] ; then
+              libdld="-ldld" ; suffix="$libdld -lm -lc -lPW"
+            else
+              suffix="-lm -lcl"
+            fi
+            ;;
+   hp8_bls) if [ "$conf_W4GL" ] ; then
+              libdld="-ldld" ; suffix="$libdld -lm -lc -lPW"
+            else
+              suffix="-lm"
+            fi
+            ;;
+   dr6_us5) libs= ; prefix="-L/usr/ccs/lib -L/usr/lib -L/usr/ucblib"
+            suffix="-lnsl -lsocket -lgen -lm -lelf -ldl -lc -lucb"
+            ;;
+   usl_us5) libs= ; prefix="-YP,/usr/ccs/lib:/usr/lib"
+            suffix="-lnsl -lsocket -lgen -lm -lelf -ldl -K thread"
+            ;;
+   dgi_us5) suffix="-lsocket -lnsl -lgen -lm -lelf -ldl -ll -lcurses -lthread -lrte"
+            ;;
+   dg8_us5) suffix="-lm -lc -lthread"
+            ;;
+   sos_us5) libs=
+            if [ -r /lib/libcrypt_d.a ]
+            then
+                suffix="-lnsl_s -lsocket -lprot -lintl -lm -lld -lc -lc_s \
+                -lcrypt_d /lib/crtn.o"
+            else
+                suffix="-lsuds -lnsl_s -lsocket -lprot -lx -lm -lld -lc -lc_s \
+                -lintl \
+                -lcurses -lcrypt_i /lib/crtn.o"
+            fi
+            ;;
+   pyr_us5) suffix="-lm -lc /.ucblib/libc.a"
+            ;;
+   rmx_us5) prefix="-YP,/usr/ccs/lib:/usr/lib:/usr/ucblib"
+            suffix="-lsocket -lnsl -lc -lmproc -lext -lcurses -lelf -ldl -lgen -lm -lc -lucb"
+            ;;
+   rux_us5) prefix="-L/opt/thread/lib"
+            suffix="-lmproc -ldl -lelf -lsocket_r -lnsl_r -lm_r"; libs=
+            ;;
+   pym_us5) prefix="-YP,/usr/ccs/lib:/usr/lib:/usr/ucblib"
+            suffix="-lsocket -lnsl -lc -lmproc -lext -lcurses -lelf -ldl -lgen -lm -lc -lucb"
+	    ;;
+   ris_us5) suffix="-lm -lbsd -lc"
+            libs="-lsna -ltli -liconv"
+	    ;;
+   rs4_us5) suffix="-lm -lbsd -lc_r"
+            libs="-ltli_r -liconv -lpthreads -ldl"
+            ;;
+   ris_u64) suffix="-ltli_r -lisode -liconv -lpthreads -ldl -lm_r -lbsd_r -lc_r"
+            libs=
+            ;;
+   i64_aix) suffix="-lm -lc"
+	    prefix="-L/usr/lib/ia64l64"
+            libs="-ltli -liconv -lpthreads -ldl -lcurses"
+            ;;
+   sqs_ptx) prefix="-L/lib"
+            suffix="-lseq -lsocket -lnsl -lelf -lm -ldl -lc";;
+   sui_us5|\
+   su4_us5) prefix="-L/usr/lib/sparc"
+            prefix64="-L/usr/lib/sparcv9"
+	    suffix="-ldl -lsocket -lelf -mt -lposix4 -ldl -lnsl -lm"
+	    ;;
+   su9_us5) prefix="-L/usr/lib/sparcv9"
+	    suffix="-ldl -lsocket -lelf -mt -lposix4 -ldl -lnsl -lm"
+	    ;;
+   a64_sol) prefix="-L/usr/lib"
+   	    prefix64="-L/usr/lib/amd64"
+	    suffix="-ldl -lsocket -lelf -mt -lposix4 -ldl -lnsl -lm"
+	    ;;
+   su4_u42) suffix="-lm -lc -ldl" ; libs=
+            ;;
+   su4_cmw) suffix="-lm -lc -ldl" 
+            ;;
+   nc4_us5) suffix="-lm -lc -lc89"
+            ;;
+   ts2_us5) suffix="-lnsl -lthread /usr/ucblib/libucb.a"
+	    ;;
+   sgi_us5) prefix="-L/usr/lib32/mips3 -L/usr/lib32 -L/lib "
+            prefix64="-L/usr/lib64/mips4 -L/usr/lib64 -L/lib64 "
+	    suffix="-lpthread -lfpe -lmutex -lm -lc -lcurses "
+	    ;;
+    int_lnx) suffix="-lpthread -lrt -lm -lc -lcrypt -ldl /lib/libgcc_s.so.1"
+	    ;; 
+     *_lnx|\
+    int_rpl) suffix="-lpthread -lrt -lm -lc -lcrypt -ldl -lgcc_s"
+	    ;; 
+   *_osx) suffix="-bind_at_load -framework CoreServices -framework DirectoryService -framework Security -lgcc_s.1"
+	    [ -f /usr/lib/libcc_dynamic.a ] && suffix="-lcc_dynamic $suffix"
+	    ;;
+esac
+
+echo "#define LDLIB $suffix"
+echo "LDLIBMACH = $prefix $libs $suffix"
+echo "LDLIBMACH64 = $prefix64 $libs $suffix"
+
+# LD_ICE_FLAGS special link options for icesvr
+case $vers in
+   ris_u64 | rs4_us5) 
+	echo "LD_ICE_FLAGS = -brtl -bexpall"
+	;;
+   usl_us5) 
+	echo "LD_ICE_FLAGS = -Wl,-Bexport"
+	;;
+   *)
+	echo "LD_ICE_FLAGS = "
+	;;
+esac
+
+[ "$conf_MWMWORRKAROUND" ] && echo 'MWM1_2LIB = $(INGLIB)/libmwm1_2.a'
+
+# Which C compiler should we use?
+# Make gcc an option for suncmw
+case $vers in
+  i64_hpu|\
+  hp2_us5|\
+  hpb_us5|\
+  hp8_us5|\
+  hp8_bls) compiler="c89" ;;
+  rs4_us5) compiler="xlc_r" ;;
+  ris_u64) compiler="xlc_r" ;;
+  i64_aix) compiler="xlc_r" ;;
+  ris_us5) compiler="c89" ;;
+  su4_u42) compiler="acc"
+	   [ "$conf_GCC" ]  && compiler="gcc";;
+  su4_cmw) compiler="acc" 
+	   [ "$conf_GCC" ]  && compiler="gcc";;
+  *_osx) compiler="gcc" ;;
+        *) compiler="cc" ;;
+esac
+echo "CC = $compiler"
+
+# Set optimizer flag
+case $vers in
+  axp_osf) optimflag="-O -Olimit 5000" ;;
+  dr6_us5) optimflag=-O 
+	   echo 'OPTIM_DBG = '
+	   ;;
+  i64_hpu|\
+  hp2_us5|\
+  hpb_us5|\
+  hp8_us5) optimflag=-O ;;
+  hp8_bls) optimflag=+O3 ;;
+  su4_us5|\
+  su9_us5|\
+  sui_us5) optimflag=-O ;;
+  a64_sol) optimflag=-xO2 ;;
+  sos_us5) optimflag=-O ;;
+  pym_us5) optimflag="-O -KOlimit:6000 ";;
+  ris_us5) optimflag=-O 
+	   echo 'OPTIM_DBG = '
+	   ;;
+  rux_us5|\
+  rmx_us5) optimflag=-O ;;
+  sgi_us5) optimflag="-O3 ";;
+  sqs_ptx)
+	optimflag=-O
+	echo 'OPTIM_DBG =-Wc,-O0'
+	;;
+  su4_u42|su4_cmw|dg8_us5|dgi_us5) optimflag=-O2 ;;
+  su4_u42|su4_cmw|dg8_us5) optimflag=-O2 ;;
+        *) optimflag=-O ;;
+esac
+echo "OPTIM = $optimflag"
+
+# set optim level 1 flag (for low optimization)
+case $vers in
+  su4_us5|\
+  su9_us5) optim1flag=-xO1 ;;
+  a64_sol) optim1flag=-x01 ;;
+  i64_hpu|\
+  hp2_us5|\
+  hpb_us5) optim1flag=+O1 ;;
+  hp8_us5) optim1flag=+O1 ;;
+  axp_osf) optim1flag=-O1 ;;
+    *_lnx|\
+  int_rpl) optim1flag=-O1 ;;
+	*) optim1flag=-O ;;
+esac
+echo "LEVEL1_OPTIM = $optim1flag"
+
+# First line of executable shell scripts
+case $vers in
+      *) echo 'SHELLHEADER = "#!/bin/sh"' ;;
+esac
+
+case $vers in
+  dr6_us5|\
+   usl_us5) echo '#define NOROC 1' ;;
+   hp8_us5|\
+   hpb_us5|\
+   hp2_us5|\
+   hp8_bls) echo '#define RROC +ESlit' ;;
+   i64_hpu) echo '#define RROC +Olit=all' ;;
+   sos_us5) echo '#define NOROC 1' ;;
+   ris_u64|\
+   i64_aix|\
+   rs4_us5|\
+   ris_us5) echo '#define NOROC 1' ;;
+   sqs_ptx)\
+            echo '#define NOROC 1'
+            echo 'LOW_OPTIM=-Wc,-Og'
+            ;;
+   su4_u42|su4_cmw) echo '#define RROC -R' ;;
+   nc4_us5) echo 'LOW_OPTIM=-O0' ;;
+   pym_us5|rmx_us5|ts2_us5|sgi_us5|rux_us5) echo '#define NOROC 1'
+            echo '#define RROC -Wf,-Cr,-Cs'
+            ;;
+   sgi_us5) echo '#define NOROC 1'
+	    echo '#define RROC -Wf,-Cr,-Cs'
+	    echo 'LOW_OPTIM=-O1' ;;
+   axp_osf) echo '#define NOROC 1' ;;
+
+esac
+
+case $vers in
+  sos_us5|\
+  hp8_us5|\
+   hp8_bls) ;;
+   pyr_us5) echo '#define HASRANLIB 1' ;;
+         *) [ -f /bin/ranlib -o -f /usr/bin/ranlib -o -f /usr/ucb/ranlib ] &&
+            { echo '#define HASRANLIB 1' ; }
+            ;;
+esac
+
+[ -f /usr/bin/xargs -o -f /bin/xargs ] && echo '#define XARGS 1'
+
+[ -f /usr/lib/lint ] && echo '#define BSDLINT 1'
+
+# Remainder sometimes dependencies of CCDEFS, to be passed to cc for
+# compiling tools.
+case $vers in
+   dr6_us5|\
+   rmx_us5|\
+   rux_us5|\
+   pym_us5|\
+   usl_us5) echo "SYS5=1" ; echo 'DIRFUNC=1' ; echo 'DIRENT=1' ;;
+  dg8_us5 | dgi_us5) echo "SYS5=1" ; echo 'DIRFUNC=1' ; echo 'INGRES6=1' ;;
+   sgi_us5) echo 'DIRENT=1' ; echo 'DIRFUNC=1' ; echo 'INGRES6=1' ; echo 'SYS5=1' ;;
+         *) if grep -s SIGTSTP /usr/include/signal.h > /dev/null ; then
+              echo "BSD42=1"
+            else
+              echo "SYS5=1"
+            fi
+            if grep -s opendir $TMP > /dev/null ;then
+              echo 'DIRFUNC=1'
+              [ -f /usr/include/dirent.h ] && echo "DIRENT=1"
+            else
+              echo 'NO_DIRFUNC=1'
+            fi
+            echo 'INGRES6=1'
+            ;;
+esac
+
+# Special libraries needed only by rungraph and vigraph...
+case $vers in
+  su4_u42) echo 'SYSGRAPHLIB = -lsuntool -lsunwindow -lpixrect' ;;
+        *) echo 'SYSGRAPHLIB = '
+esac
+
+# Test flag to use to test for symbolic links, default to "-h" for
+# platforms that have symbolic links (lstat exists) and "!" for
+# platforms that do not
+case $vers in
+  axp_osf) echo 'SYMLINK=test -L' ;;
+        *) if grep -s lstat $TMP > /dev/null ; then
+             echo 'SYMLINK=test -h'
+           else
+             echo 'SYMLINK=false'
+           fi
+           ;;
+esac
+
+# C++ and Xerces defines for buliding ICE and other XML tools
+
+case $vers in 
+	su4_us5) echo 'CXX=CC'
+	         echo 'CXX_DEFS=-DSOLARIS -DSVR4 -D_SVID_GETTOD -mt -w '
+	         echo 'CXX64_DEFS=-Dsu9_us5 -DADD_ON64 -xarch=v9 -DSOLARIS -DSVR4 -D_SVID_GETTOD -mt -w '
+		 echo 'XERC_DEFS=-DXML_USE_NATIVE_TRANSCODER -DXML_USE_INMEM_MESSAGELOADER -DXML_USE_NETACCESSOR_SOCKET'
+		 echo 'XERC_LIBS=/usr/lib/libc.so.1'
+		 echo 'XERCVERS=27'
+		;;
+	a64_sol) echo 'CXX=CC'
+	         echo 'CXX_DEFS=-DSOLARIS -DSVR4 -D_SVID_GETTOD -mt -w '
+	         echo 'CXX64_DEFS=-DADD_ON64 -xarch=generic64 -DSOLARIS -DSVR4 -D_SVID_GETTOD -mt -w '
+		 echo 'XERC_DEFS=-DXML_USE_NATIVE_TRANSCODER -DXML_USE_INMEM_MESSAGELOADER -DXML_USE_NETACCESSOR_SOCKET'
+		 echo 'XERC_LIBS=/usr/lib/libc.so.1'
+		 echo 'XERCVERS=27'
+		;;
+
+	*_osx) echo 'CXX=g++'
+		 echo 'CXX_DEFS= '
+		 echo 'XERC_DEFS=-O -DXML_USE_NATIVE_TRANSCODER -DXML_USE_INMEM_MESSAGELOADER -DXML_USE_NETACCESSOR_SOCKET '
+		 echo 'XERC_LIBS='
+		 echo 'XERCVERS=27'
+		;;
+	  *_lnx|\
+        int_rpl) echo 'CXX=g++'
+		 echo 'CXX_DEFS= '
+		 echo 'XERC_DEFS=-O -DXML_USE_NATIVE_TRANSCODER -DXML_USE_INMEM_MESSAGELOADER -DXML_USE_NETACCESSOR_SOCKET '
+		 echo 'XERC_LIBS='
+		 echo 'XERCVERS=27'
+		;;
+
+	i64_aix) echo 'CXX=xlc_r'
+		 echo 'CXX_DEFS= '
+		 echo 'XERC_DEFS=-O -DXML_USE_NATIVE_TRANSCODER -DXML_USE_INMEM_MESSAGELOADER -DXML_USE_NETACCESSOR_SOCKET '
+		 echo 'XERC_LIBS='
+		 echo 'XERCVERS=27'
+		;;
+		
+	hp2_us5) echo 'CXX=aCC'
+	         echo 'CXX_DEFS=-D_HP_UX -DHPaCC -DHPUX11 +DA2.0W +Z'
+		 echo 'XERC_DEFS=-DXML_USE_NATIVE_TRANSCODER -DXML_USE_INMEM_MESSAGELOADER -DXML_USE_NETACCESSOR_SOCKET'
+		 echo 'XERC_LIBS=/usr/lib/libc.sl'
+		 echo 'XERCVERS=27'
+		;;
+	hp8_us5|\
+	hpb_us5) echo 'CXX=aCC'
+	         echo 'CXX_DEFS=-D_HP_UX -DHPaCC -DHPUX11 +DAportable +Z'
+	         echo 'CXX64_DEFS=-Dhp2_us5 -DADD_ON64 -D_HP_UX -DHPaCC -DHPUX11 +DA2.0W +Z'
+		 echo 'XERC_DEFS=-DXML_USE_NATIVE_TRANSCODER -DXML_USE_INMEM_MESSAGELOADER -DXML_USE_NETACCESSOR_SOCKET'
+		 echo 'XERC_LIBS=/usr/lib/libc.sl'
+		 echo 'XERCVERS=27'
+		;;
+
+	i64_hpu) echo 'CXX=aCC'
+	         echo 'CXX_DEFS=-D_HP_UX -DHPaCC -DHPUX11 +Z -D_HPUX_SOURCE -D_POSIX_C_SOURCE=199506L +DD64'
+		 echo 'XERC_DEFS=-DXML_USE_NATIVE_TRANSCODER -DXML_USE_INMEM_MESSAGELOADER -DXML_USE_NETACCESSOR_SOCKET'
+		 echo 'XERC_LIBS=/usr/lib/hpux64/libc.so'
+		 echo 'XERCVERS=27'
+		;;
+
+	axp_osf) echo 'CXX=cxx'
+		 echo 'CXX_DEFS='
+		 echo 'XERC_DEFS=-DXML_USE_NATIVE_TRANSCODER -DXML_USE_INMEM_MESSAGELOADER -DXML_USE_NETACCESSOR_SOCKET'
+		 echo 'XERC_LIBS='
+		 echo 'XERCVERS=27'
+		 ;;
+
+        rs4_us5) echo 'CXX=xlc_r'
+                 echo 'CXX_DEFS='
+		 echo 'XERC_DEFS=-DXML_USE_NATIVE_TRANSCODER -DXML_USE_INMEM_MESSAGELOADER -DXML_USE_NETACCESSOR_SOCKET'
+                 echo 'XERC_LIBS=-lc_r -lC_r'
+		 echo 'XERCVERS=27'
+                ;;
+
+        usl_us5) echo 'CXX=g++'
+                 echo 'CXX_DEFS=-DUNIXWARE'
+                 echo 'XERC_DEFS=-DXML_USE_NATIVE_TRANSCODER -DXML_USE_INMEM_MESSAGELOADER -DXML_USE_NETACCESSOR_SOCKET'
+                 echo 'XERC_LIBS='
+		 echo 'XERCVERS=27'
+                ;;
+        sgi_us5) echo 'CXX=CC'
+                 echo 'CXX_DEFS='
+                 echo 'XERC_DEFS=-DXML_USE_NATIVE_TRANSCODER -DXML_USE_INMEM_MESSAGELOADER -DXML_USE_NETACCESSOR_SOCKET'
+                 echo 'XERC_LIBS='
+		 echo 'XERCVERS=27'
+                ;;
+	*)	echo 'CXX=Add C++ defs in mkdefault.sh for you platform'
+		;;
+esac
+exit 0

@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/ingres/!svn/ver/33/main/src/tools/port/jam
+END
+bldenv.bat
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/tools/port/jam/bldenv.bat
+END
+Jamdefs.a64_sol
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/jam/Jamdefs.a64_sol
+END
+Jamdefs.a64_win
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/jam/Jamdefs.a64_win
+END
+Jamdefs.axm_vms
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/jam/Jamdefs.axm_vms
+END
+mkjams.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/tools/port/jam/mkjams.dcl
+END
+Jamdefs.su9_us5
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/jam/Jamdefs.su9_us5
+END
+mkjams.bat
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/tools/port/jam/mkjams.bat
+END
+bldenv.com
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/tools/port/jam/bldenv.com
+END
+Jamdefs.i64_win
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/jam/Jamdefs.i64_win
+END
+Jamdefs.int_osx
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/17/main/src/tools/port/jam/Jamdefs.int_osx
+END
+mkjams.sh
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/tools/port/jam/mkjams.sh
+END
+Jamdefs.hp2_us5
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/jam/Jamdefs.hp2_us5
+END
+Jamdefs.int_w32
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/jam/Jamdefs.int_w32
+END
+iijam.bat
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/tools/port/jam/iijam.bat
+END
+mkjam.dcl
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/tools/port/jam/mkjam.dcl
+END
+mkjam.bat
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/tools/port/jam/mkjam.bat
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/tools/port/jam/Jamfile
+END
+Jamdefs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/tools/port/jam/Jamdefs
+END
+Jamdefs.ppc_lnx
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/jam/Jamdefs.ppc_lnx
+END
+Jamdefs.int_rpl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/jam/Jamdefs.int_rpl
+END
+Jamdefs.r64_us5
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/jam/Jamdefs.r64_us5
+END
+Jamrules
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/22/main/src/tools/port/jam/Jamrules
+END
+Jamdefs.int_lnx
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/jam/Jamdefs.int_lnx
+END
+Jamdefs.a64_lnx
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/33/main/src/tools/port/jam/Jamdefs.a64_lnx
+END
+Jamdefs.i64_hpu
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/jam/Jamdefs.i64_hpu
+END
+Jamdefs.mg5_osx
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/jam/Jamdefs.mg5_osx
+END
+Jamdefs.i64_lnx
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/jam/Jamdefs.i64_lnx
+END
+iijam.sh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/tools/port/jam/iijam.sh
+END
+Jamdefs.axp_osf
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/jam/Jamdefs.axp_osf
+END
+Jamdefs.usl_us5
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/jam/Jamdefs.usl_us5
+END
+mkjam.sh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/tools/port/jam/mkjam.sh
+END
+bldenv
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/22/main/src/tools/port/jam/bldenv
+END
+Jamdefs.hpb_us5
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/tools/port/jam/Jamdefs.hpb_us5
+END

@@ -1,0 +1,4 @@
+PART dual
+   BUILD_DIR (ING_BUILD)!utility
+   DIRECTORY ingres!utility
+      EXECUTABLE dual

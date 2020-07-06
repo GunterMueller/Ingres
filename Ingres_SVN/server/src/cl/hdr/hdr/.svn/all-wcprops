@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/ingres/!svn/ver/22/main/src/cl/hdr/hdr
+END
+cxcl.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr/cxcl.h
+END
+gvcl.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr/gvcl.h
+END
+csnormal.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/22/main/src/cl/hdr/hdr/csnormal.h
+END
+gvos.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr/gvos.h
+END
+cpcl.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr/cpcl.h
+END
+epcl.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr/epcl.h
+END
+systypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr/systypes.h
+END
+stcl.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/ingres/!svn/ver/1/main/src/cl/hdr/hdr/stcl.h
+END

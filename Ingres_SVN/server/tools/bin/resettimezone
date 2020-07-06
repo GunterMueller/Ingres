@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# Copyright (c) 2004 Ingres Corporation
+#
+#	SCRIPT TO RESET THE TIME ZONE 
+#
+
+if [ "$1" = "SAVE" ]; then
+
+	qasetuser ingres ingsetenv SAVETZ `ingprenv II_TIMEZONE_NAME`
+
+else
+
+	qasetuser ingres ingsetenv II_TIMEZONE_NAME `ingprenv SAVETZ`
+
+fi

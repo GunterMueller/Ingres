@@ -1,0 +1,35 @@
+#
+# Jamfile file for common!gcf!util
+#
+
+SubDir ING_SRC common gcf util ;
+
+IISUBSYS common gcf util ;
+
+
+IIBINEXE iibrowse : iibrowse.sc ;
+IINEEDLIBS iibrowse : SHQLIB SHCOMPATLIB SHFRAMELIB ;
+IINEEDLIBSW iibrowse : SHEMBEDLIB SHGCFLIB ;
+
+IIBINEXE nqfile : nqfile.c ;
+IINEEDLIBS nqfile : GCFLIB COMPATLIB ;
+
+IISIGEXE netu netu : netu.c ;
+IINEEDLIBS netu : GCFLIB COMPATLIB ;
+
+IIBINEXE iinamu : iinamu.c ;
+IINEEDLIBS iinamu : GCFLIB COMPATLIB ;
+
+IIBINEXE iigcstop : iigcstop.c ;
+IINEEDLIBS iigcstop : GCFLIB COMPATLIB ;
+
+IIBINEXE gcmtool : gcmtool.c ;
+IINEEDLIBS gcmtool : GCFLIB COMPATLIB ;
+
+if $(VMS)
+{
+    IIUTILEXE iicvtgcn : iicvtgcn.c ;
+    IINEEDLIBS iicvtgcn : COMPATLIB ;
+}
+IIBINEXE iijdbcprop : iijdbcprop.c ;
+IINEEDLIBS iijdbcprop : GCFLIB COMPATLIB ;

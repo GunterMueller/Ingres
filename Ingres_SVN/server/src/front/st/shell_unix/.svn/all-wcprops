@@ -1,0 +1,347 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/3/main/src/front/st/shell_unix
+END
+iisukerberos.sh
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iisukerberos.sh
+END
+install.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/install.sh
+END
+setingreslanguage.sh
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/setingreslanguage.sh
+END
+iisuscha.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iisuscha.sh
+END
+iisutux.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iisutux.sh
+END
+mkimage.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/mkimage.sh
+END
+iicnffiles.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iicnffiles.sh
+END
+iisuspat64.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iisuspat64.sh
+END
+iidbmspreinst.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iidbmspreinst.sh
+END
+ingmknfs.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/ingmknfs.sh
+END
+iisunode.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iisunode.sh
+END
+iiask4it.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iiask4it.sh
+END
+iishlib.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iishlib.sh
+END
+iisudbms64.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iisudbms64.sh
+END
+iisuice.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iisuice.sh
+END
+iidsfree.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iidsfree.sh
+END
+mkrc.sh
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/mkrc.sh
+END
+iiechonn.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iiechonn.sh
+END
+iisujdbc.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iisujdbc.sh
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/Jamfile
+END
+iisuoracle.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iisuoracle.sh
+END
+iigenpostinst.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iigenpostinst.sh
+END
+iigenpreinst.sh
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iigenpreinst.sh
+END
+iisulib.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iisulib.sh
+END
+iisuspat.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iisuspat.sh
+END
+iisuodbc.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iisuodbc.sh
+END
+iisustar.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iisustar.sh
+END
+iisuapi.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iisuapi.sh
+END
+mkimadb.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/mkimadb.sh
+END
+iisuvdba.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iisuvdba.sh
+END
+iisutm.sh
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iisutm.sh
+END
+iiunloadfix.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iiunloadfix.sh
+END
+iirsh.sh
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iirsh.sh
+END
+iicorepostinst.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iicorepostinst.sh
+END
+ipcclean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/ipcclean.sh
+END
+iisudbms.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/3/main/src/front/st/shell_unix/iisudbms.sh
+END
+iisunet.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iisunet.sh
+END
+iisurep.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iisurep.sh
+END
+ingstatus.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/ingstatus.sh
+END
+iisuabf.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iisuabf.sh
+END
+iifilsiz.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iifilsiz.sh
+END
+iiecholg.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iiecholg.sh
+END
+ingstop.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/ingstop.sh
+END
+iistartup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iistartup.sh
+END
+iicorepreun.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iicorepreun.sh
+END
+iisusupp32.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iisusupp32.sh
+END
+iihostnm.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iihostnm.sh
+END
+iisudb2udb.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iisudb2udb.sh
+END
+iisumdb.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iisumdb.sh
+END
+iisubr.sh
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iisubr.sh
+END
+iisuc2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iisuc2.sh
+END
+iigcfid.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iigcfid.sh
+END
+iisudas.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iisudas.sh
+END
+iichkraw.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iichkraw.sh
+END
+iisyslim.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iisyslim.sh
+END
+iircpseg.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iircpseg.sh
+END
+iigenpreun.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/st/shell_unix/iigenpreun.sh
+END

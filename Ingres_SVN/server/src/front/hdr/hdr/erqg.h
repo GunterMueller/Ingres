@@ -1,0 +1,10 @@
+#define _QG_CLASS 134
+#define E_QG0001_No_Internal           0x00860001
+#define E_QG0002_NoStart               0x00860002
+#define E_QG0003_NoMemory              0x00860003
+#define E_QG0004_NoSpec                0x00860004
+#define E_QG0005_BadVersion            0x00860005
+#define E_QG0006_BadSpec               0x00860006
+#define E_QG0010_TempFile              0x00860010
+#define E_QG0011_WriteFile             0x00860011
+#define E_QG0012_Unsupported           0x00860012

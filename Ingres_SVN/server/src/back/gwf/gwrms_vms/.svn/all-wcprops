@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/ingres/!svn/ver/1/main/src/back/gwf/gwrms_vms
+END
+gwtabi_rms.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/back/gwf/gwrms_vms/gwtabi_rms.c
+END
+gwrms.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/back/gwf/gwrms_vms/gwrms.c
+END
+gwrmsini.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/back/gwf/gwrms_vms/gwrmsini.c
+END
+rmsmap.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/back/gwf/gwrms_vms/rmsmap.c
+END
+gw02rms.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/back/gwf/gwrms_vms/gw02rms.c
+END
+gwrmscvi.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/back/gwf/gwrms_vms/gwrmscvi.c
+END
+gwrms.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/back/gwf/gwrms_vms/gwrms.h
+END
+gwrmscvr.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/back/gwf/gwrms_vms/gwrmscvr.c
+END
+gwrmscvu.mar
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/back/gwf/gwrms_vms/gwrmscvu.mar
+END
+gwrmserr.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/back/gwf/gwrms_vms/gwrmserr.h
+END
+gwrmsnum.roc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/back/gwf/gwrms_vms/gwrmsnum.roc
+END
+gwrmsutl.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/back/gwf/gwrms_vms/gwrmsutl.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/back/gwf/gwrms_vms/Jamfile
+END
+gwrmsdt.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/back/gwf/gwrms_vms/gwrmsdt.c
+END
+gwrmsdtmap.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/back/gwf/gwrms_vms/gwrmsdtmap.h
+END
+gwrmsdt.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/back/gwf/gwrms_vms/gwrmsdt.h
+END

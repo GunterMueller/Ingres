@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_win
+END
+sepperuse.bat
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_win/sepperuse.bat
+END
+sepcob.bat
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_win/sepcob.bat
+END
+updperuse.bat
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_win/updperuse.bat
+END
+qasetusertm.bat
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_win/qasetusertm.bat
+END
+seplib.bat
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_win/seplib.bat
+END
+cksepenv.bat
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_win/cksepenv.bat
+END
+ferun.bat
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_win/ferun.bat
+END
+sepesqlc.bat
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_win/sepesqlc.bat
+END
+altcompare.bat
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_win/altcompare.bat
+END
+qasetuserfe.bat
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_win/qasetuserfe.bat
+END
+seplnk.bat
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_win/seplnk.bat
+END
+authnetu.bat
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_win/authnetu.bat
+END
+sepcc.bat
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_win/sepcc.bat
+END
+makelocs.bat
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_win/makelocs.bat
+END
+clntstdbs.bat
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_win/clntstdbs.bat
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_win/MANIFEST
+END
+run.bat
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_win/run.bat
+END
+qawtl.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_win/qawtl.c
+END
+sepfortr.bat
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_win/sepfortr.bat
+END
+clningtst.bat
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_win/clningtst.bat
+END
+netutilcmd.bat
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/testtool/sep/septool_win/netutilcmd.bat
+END

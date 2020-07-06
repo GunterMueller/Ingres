@@ -1,0 +1,19 @@
+;  History:
+;	11-Jun-2004 (drivi01)
+;	    Added ordinals.
+;	29-Jun-2004 (drivi01)
+;	    Removed duplicate opq_global.
+
+EXPORTS
+_sqlda		@1	DATA			
+er_args		@2	DATA			
+opq_date		@3	DATA			
+opq_exit		@4	DATA			
+opq_excstat		@5	DATA			
+opq_global		@6	DATA			
+opq_retry		@7	DATA			
+opf_sjtyps_tab		@8	DATA			
+opq_sbuf		@10	DATA			
+usage		@11	DATA			
+rellist		@12	DATA			
+sample		@13	DATA			

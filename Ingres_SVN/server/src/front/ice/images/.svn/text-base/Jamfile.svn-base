@@ -1,0 +1,18 @@
+#
+# Jamfile file for front!ice!images
+#
+# History:
+#	08-dec-2004 (abbjo03)
+#	    Use DFS instead of slash for portability.
+
+SubDir ING_SRC front ice images ;
+
+IISUBSYS front ice images ;
+
+IIICEFILE images$(DFS)bullet1.gif : bullet1.gif ;
+IIICEFILE images$(DFS)ice.gif : ice.gif ;
+IIICEFILE images$(DFS)ingreslogo.gif : ingreslogo.gif ;
+IIICEFILE images$(DFS)logout.gif : logout.gif ;
+IIICEFILE images$(DFS)rbf.gif : rbf.gif ;
+IIICEFILE images$(DFS)welcome.gif : welcome.gif ;
+

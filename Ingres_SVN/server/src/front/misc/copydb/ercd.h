@@ -1,0 +1,9 @@
+#define _CD_CLASS 78
+#define F_CD0001_COPYDB                0x104e0001
+#define E_CD0001_Incorrect_language_sp 0x004e0001
+#define E_CD0002_Not_Ingres            0x004e0002
+#define E_CD0003_Too_many_objects      0x004e0003
+#define E_CD0004_Connect_Failed        0x004e0004
+#define E_CD0015_Flag_Ignored          0x004e0015
+#define E_CD0025_Bad_paramfile         0x004e0025
+#define E_CD0026_Out_of_memory         0x004e0026

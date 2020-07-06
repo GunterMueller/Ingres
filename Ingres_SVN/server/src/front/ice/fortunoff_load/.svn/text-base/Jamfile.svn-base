@@ -1,0 +1,13 @@
+#
+# Jamfile file for front!ice!fortunoff_load
+#
+
+SubDir ING_SRC front ice fortunoff_load ;
+
+IISUBSYS front ice fortunoff_load ;
+
+
+IIBINEXE fortunoff : fortunoff.sc ;
+IINEEDLIBS fortunoff :  LIBINGRES SHCOMPATLIB ;
+IIUNDEFS fortunoff :  malloc ;
+

@@ -1,0 +1,317 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/ingres/!svn/ver/1/main/src/front/dict/dictfile
+END
+ingres2.cli
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/ingres2.cli
+END
+pdm01min.mfy
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/pdm01min.mfy
+END
+dbd1.cli
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/dbd1.cli
+END
+ingres3.cli
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/ingres3.cli
+END
+dbd2.cli
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/dbd2.cli
+END
+ingres4.cli
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/ingres4.cli
+END
+cor01min.mfy
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/cor01min.mfy
+END
+msc01cin.cre
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/msc01cin.cre
+END
+pdm01mgw.mfy
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/pdm01mgw.mfy
+END
+cor02cin.cre
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/cor02cin.cre
+END
+prods.lst
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/prods.lst
+END
+cor01mgw.mfy
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/cor01mgw.mfy
+END
+c6101cin.cre
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/c6101cin.cre
+END
+dmd01min.mfy
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/dmd01min.mfy
+END
+ad101min.mfy
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/ad101min.mfy
+END
+w4gl1.cli
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/w4gl1.cli
+END
+w4gl2.cli
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/w4gl2.cli
+END
+ad103min.mfy
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/ad103min.mfy
+END
+ad301min.mfy
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/ad301min.mfy
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/Jamfile
+END
+ad105min.mfy
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/ad105min.mfy
+END
+ad102cin.cre
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/ad102cin.cre
+END
+ad201cin.cre
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/ad201cin.cre
+END
+dmd01mgw.mfy
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/dmd01mgw.mfy
+END
+ad104cin.cre
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/ad104cin.cre
+END
+ad101mgw.mfy
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/ad101mgw.mfy
+END
+ad103mgw.mfy
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/ad103mgw.mfy
+END
+ad301mgw.mfy
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/ad301mgw.mfy
+END
+ad105mgw.mfy
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/ad105mgw.mfy
+END
+msc01min.mfy
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/msc01min.mfy
+END
+pdm01cin.cre
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/pdm01cin.cre
+END
+cor02min.mfy
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/cor02min.mfy
+END
+cor01cin.cre
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/cor01cin.cre
+END
+c6101min.mfy
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/c6101min.mfy
+END
+msc01mgw.mfy
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/msc01mgw.mfy
+END
+cor02mgw.mfy
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/cor02mgw.mfy
+END
+vision1.cli
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/vision1.cli
+END
+c6101mgw.mfy
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/c6101mgw.mfy
+END
+vision2.cli
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/vision2.cli
+END
+vision3.cli
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/vision3.cli
+END
+ad201min.mfy
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/ad201min.mfy
+END
+ad102min.mfy
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/ad102min.mfy
+END
+ad104min.mfy
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/ad104min.mfy
+END
+dmd01cin.cre
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/dmd01cin.cre
+END
+ad101cin.cre
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/ad101cin.cre
+END
+ad301cin.cre
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/ad301cin.cre
+END
+ad103cin.cre
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/ad103cin.cre
+END
+ad201mgw.mfy
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/ad201mgw.mfy
+END
+ad102mgw.mfy
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/ad102mgw.mfy
+END
+ad105cin.cre
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/ad105cin.cre
+END
+ad104mgw.mfy
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/ad104mgw.mfy
+END
+ingres1.cli
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/ingres/!svn/ver/1/main/src/front/dict/dictfile/ingres1.cli
+END

@@ -1,0 +1,19 @@
+#!/bin/bash
+#  Copyright (c) 2004 Ingres Corporation
+#
+#  Name: iihostnm -- return the local host name
+#
+#  Usage:
+#	iihostnm [ temp_file ]
+#
+#  Description:
+#	Returns the name of the local host to the configuration rules
+#	system during setup procedures via the named temporary file.
+#
+#  PROGRAM = iihostnm
+#
+#  DEST = utility
+#----------------------------------------------------------------------------
+
+echo `hostname` > "$1"
+

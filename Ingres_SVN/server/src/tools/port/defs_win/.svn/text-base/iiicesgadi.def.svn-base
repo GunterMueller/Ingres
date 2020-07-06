@@ -1,0 +1,10 @@
+;  History:
+;	11-Jun-2004 (drivi01)
+;	    Added ordinals.
+
+EXPORTS
+; Spyglass server callback functions
+	
+ICE_Init		@1				
+ICE_ProcessRequest		@2				
+ICE_Terminate		@3				

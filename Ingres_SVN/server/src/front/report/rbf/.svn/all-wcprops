@@ -1,0 +1,785 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/ingres/!svn/ver/1/main/src/front/report/rbf
+END
+rfadcols.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfadcols.frm
+END
+rfcopt.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfcopt.qsc
+END
+rfindop.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfindop.hlp
+END
+rbfcat.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rbfcat.hlp
+END
+rfchcols.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfchcols.hlp
+END
+rfccmove.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfccmove.hlp
+END
+sec_list.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/sec_list.c
+END
+rfmhead.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfmhead.c
+END
+rfget.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfget.c
+END
+rfprompt.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfprompt.frm
+END
+rfund.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfund.hlp
+END
+rfbreak.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfbreak.qsc
+END
+rfedit.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfedit.qsc
+END
+rfwrite.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfwrite.qsc
+END
+break.frm
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/report/rbf/break.frm
+END
+rfccadd.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfccadd.hlp
+END
+rfagg.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfagg.hlp
+END
+rfdest.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfdest.hlp
+END
+rfgdf.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfgdf.c
+END
+rfcols.frm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfcols.frm
+END
+rfgtndup.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfgtndup.hlp
+END
+rfdetail.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfdetail.hlp
+END
+rfinit.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfinit.c
+END
+coptions.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/report/rbf/coptions.frm
+END
+errf.msg
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/report/rbf/errf.msg
+END
+rffile.frm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rffile.frm
+END
+rfbrkscn.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfbrkscn.c
+END
+rfmfoot.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfmfoot.c
+END
+rfedtlay.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfedtlay.qsc
+END
+rfincl.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfincl.hlp
+END
+rfropt.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfropt.qsc
+END
+rflabdet.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rflabdet.c
+END
+rfgtntbl.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfgtntbl.hlp
+END
+rfsect.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfsect.hlp
+END
+rfagg.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfagg.qsc
+END
+rfbrkopt.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfbrkopt.frm
+END
+rfdisp.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfdisp.qsc
+END
+rfgtfrms.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfgtfrms.qsc
+END
+rfindop.frm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfindop.frm
+END
+rbfrfmt.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/report/rbf/rbfrfmt.hlp
+END
+rfmstrct.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfmstrct.c
+END
+rfgetnm.frm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfgetnm.frm
+END
+rfchcols.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfchcols.frm
+END
+rfqurset.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfqurset.c
+END
+rfcrack.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfcrack.c
+END
+rfscan.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfscan.c
+END
+rfmdecl.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfmdecl.c
+END
+rfmsec.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfmsec.c
+END
+rbfvar.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rbfvar.hlp
+END
+rbfabf.frm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rbfabf.frm
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/report/rbf/Jamfile
+END
+rfagulst.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfagulst.c
+END
+rfagg.frm
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfagg.frm
+END
+rbfiglob.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rbfiglob.h
+END
+rfarchv.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfarchv.hlp
+END
+rfatrim.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfatrim.c
+END
+rfrbf.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfrbf.qsc
+END
+rfcrsect.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfcrsect.hlp
+END
+rfgtcopt.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfgtcopt.c
+END
+rfsource.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfsource.hlp
+END
+rfnamfld.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfnamfld.c
+END
+rfmsort.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfmsort.c
+END
+rfcat.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfcat.qsc
+END
+rfreset.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfreset.c
+END
+rbfprmt.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/report/rbf/rbfprmt.hlp
+END
+rfrep.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfrep.c
+END
+rfselvl.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfselvl.hlp
+END
+rbf.lot
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/ingres/!svn/ver/1/main/src/front/report/rbf/rbf.lot
+END
+rffrmfd.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/report/rbf/rffrmfd.hlp
+END
+rfsave.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfsave.hlp
+END
+rfiidet.frm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfiidet.frm
+END
+rfutils.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfutils.c
+END
+rfaginfo.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfaginfo.c
+END
+rfarchv.frm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfarchv.frm
+END
+rfgtnjd.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfgtnjd.hlp
+END
+rflocsec.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rflocsec.c
+END
+rfindbrk.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfindbrk.hlp
+END
+rffldrng.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rffldrng.c
+END
+rfnwpag.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfnwpag.hlp
+END
+rfscncol.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfscncol.c
+END
+rfstruct.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfstruct.hlp
+END
+rflpjd.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rflpjd.hlp
+END
+rfchkdat.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfchkdat.c
+END
+rfsrtdr.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfsrtdr.hlp
+END
+rfcols.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfcols.c
+END
+rfsave.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfsave.qsc
+END
+rfmline.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfmline.c
+END
+rfcmpcs.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfcmpcs.c
+END
+rfgetcs.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfgetcs.c
+END
+rfmrfoot.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfmrfoot.c
+END
+rbfcopt.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/report/rbf/rbfcopt.hlp
+END
+rlayout.frm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/report/rbf/rlayout.frm
+END
+rfaggset.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfaggset.c
+END
+rfatdflt.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfatdflt.c
+END
+rflayout.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/report/rbf/rflayout.qsc
+END
+rbffile.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/report/rbf/rbffile.hlp
+END
+rfiisave.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfiisave.frm
+END
+rfafield.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfafield.c
+END
+rfstyles.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfstyles.hlp
+END
+rbfstyles.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/report/rbf/rbfstyles.c
+END
+rfrstff.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfrstff.hlp
+END
+roptions.frm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/report/rbf/roptions.frm
+END
+rbftype.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/report/rbf/rbftype.h
+END
+rfframe.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfframe.c
+END
+rfwidrep.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfwidrep.hlp
+END
+rfcsrst.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfcsrst.c
+END
+rbfprint.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/report/rbf/rbfprint.hlp
+END
+rfcols.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfcols.hlp
+END
+rfindopt.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfindopt.qsc
+END
+rfaggc.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfaggc.hlp
+END
+rbfutils.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/report/rbf/rbfutils.hlp
+END
+rfmrhead.qsc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfmrhead.qsc
+END
+rfskip.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfskip.c
+END
+rjoindef.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rjoindef.c
+END
+rbfcons.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/report/rbf/rbfcons.h
+END
+rfnwpag.frm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfnwpag.frm
+END
+rfmpbot.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfmpbot.c
+END
+rfclcopt.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfclcopt.c
+END
+rfaggu.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfaggu.hlp
+END
+rbf.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/ingres/!svn/ver/1/main/src/front/report/rbf/rbf.exe.manifest
+END
+rbfmain.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/report/rbf/rbfmain.c
+END
+rfmdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfmdata.c
+END
+rbfropt.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/report/rbf/rbfropt.hlp
+END
+rbfglob.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/report/rbf/rbfglob.h
+END
+rfvar.frm
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfvar.frm
+END
+rfprint.frm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfprint.frm
+END
+rfmptop.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfmptop.c
+END
+rflprpt.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/report/rbf/rflprpt.hlp
+END
+rfbrkopt.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfbrkopt.hlp
+END
+rfpghdr.hlp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/ingres/!svn/ver/1/main/src/front/report/rbf/rfpghdr.hlp
+END

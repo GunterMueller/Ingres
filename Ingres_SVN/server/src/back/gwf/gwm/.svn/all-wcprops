@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/ingres/!svn/ver/1/main/src/back/gwf/gwm
+END
+gwmplace.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/gwf/gwm/gwmplace.c
+END
+gwmpmib.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/gwf/gwm/gwmpmib.c
+END
+gwmerr.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/gwf/gwm/gwmerr.c
+END
+gwmkey.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/gwf/gwm/gwmkey.c
+END
+gwmplace.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/gwf/gwm/gwmplace.h
+END
+gwmxtab.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/gwf/gwm/gwmxtab.c
+END
+gwmint.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/gwf/gwm/gwmint.h
+END
+gwmxtab.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/gwf/gwm/gwmxtab.h
+END
+gwmxutil.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/back/gwf/gwm/gwmxutil.c
+END
+gwmgcm.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/gwf/gwm/gwmgcm.c
+END
+gwmima.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/gwf/gwm/gwmima.c
+END
+gwmgcn.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/gwf/gwm/gwmgcn.c
+END
+gwmrow.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/gwf/gwm/gwmrow.c
+END
+gwmscb.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/gwf/gwm/gwmscb.c
+END
+gwmdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/gwf/gwm/gwmdata.c
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/gwf/gwm/Jamfile
+END
+gwmutil.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/back/gwf/gwm/gwmutil.c
+END
+gwmmob.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/ingres/!svn/ver/1/main/src/back/gwf/gwm/gwmmob.c
+END
+gwmop.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/ingres/!svn/ver/1/main/src/back/gwf/gwm/gwmop.c
+END

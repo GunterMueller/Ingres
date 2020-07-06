@@ -1,0 +1,67 @@
+8
+
+dir
+33
+http://code.ingres.com/ingres/main/src/dbutil/duf
+http://code.ingres.com/ingres
+
+
+
+2008-03-20T07:36:25.925856Z
+1
+root
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+45b5d43f-8932-4c86-835a-3654e5842839
+
+duve_win
+dir
+
+dui
+dir
+
+duve
+dir
+
+specials_unix
+dir
+
+dub
+dir
+
+cvsync60
+dir
+
+duc
+dir
+
+dus
+dir
+
+duv_win
+dir
+
+dud
+dir
+
+duu
+dir
+
+hdr
+dir
+
+duv
+dir
+

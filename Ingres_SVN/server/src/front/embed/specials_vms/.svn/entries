@@ -1,0 +1,52 @@
+8
+
+dir
+33
+http://code.ingres.com/ingres/main/src/front/embed/specials_vms
+http://code.ingres.com/ingres
+
+
+
+2008-03-20T07:36:25.925856Z
+1
+root
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+45b5d43f-8932-4c86-835a-3654e5842839
+
+libqfelib.lot
+file
+
+
+
+
+2008-05-18T01:19:31.000000Z
+d00b443d61b0f687d446d561b1cd7887
+2008-03-20T07:36:25.925856Z
+1
+root
+
+Jamfile
+file
+
+
+
+
+2008-05-18T01:19:31.000000Z
+a16b945d28bea0d32aae6b7139d1f9a7
+2008-03-20T07:36:25.925856Z
+1
+root
+

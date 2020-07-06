@@ -1,0 +1,60 @@
+/*
+** Copyright (c) 2004 Ingres Corporation
+*/
+/*
+** Generic part file for DAS server
+*/
+
+/*
+** History
+**	20-Feb-2003 (wansh01)
+**	   Created.
+**	11-nov-2003 (kinte01)
+**	   Update location of DAS Server & JDBC files for VMS
+**	23-feb-2005 (abbjo03)
+**	    Changes to build VMS using same directory structure as Unix.
+**	16-Feb-2007 (hanje04)
+**	    SIR 117341
+**	    Add edbc.jar as the JDBC package (its former location) is no
+**	    longer shipped.
+*/
+
+PART  das
+
+/*
+** ingres!bin
+*/
+
+   DIRECTORY (PROD2NAME)!bin
+   BUILD_DIR (ING_BUILD)!bin
+      EXECUTABLE (PROG1PRFX)gcd
+
+/*
+** ingres!utility
+*/
+
+   DIRECTORY (PROD2NAME)!utility
+   BUILD_DIR (ING_BUILD)!utility
+      SCRIPT SETUP (PROG1PRFX)sudas
+
+/*
+** ingres!lib
+*/
+# ifdef VMS
+   DIRECTORY (PROD2NAME)!library
+# else
+   DIRECTORY (PROD2NAME)!lib
+# endif
+   BUILD_DIR (ING_BUILD)!lib
+      FILE iijdbc.jar
+      FILE edbc.jar
+      FILE JdbcInfo.class
+
+/*
+** ingres!files
+*/
+
+   DIRECTORY (PROD2NAME)!files
+   BUILD_DIR (ING_BUILD)!files
+      FILE das.crs
+      FILE das.rfm

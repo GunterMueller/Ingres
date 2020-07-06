@@ -1,0 +1,18 @@
+#
+# Jamfile file for back!ascf!ascs
+#
+
+SubDir ING_SRC back ascf ascs ;
+
+IISUBSYS back ascf ascs ;
+
+IINOOPTIM ascsdbfcn.c : dr6_us5 dgi_us5 i64_aix ;
+IINOOPTIM ascsdata.c : dr6_us5 dgi_us5 i64_aix ;
+IINOOPTIM ascsbuild.c : dr6_us5 dgi_us5 i64_aix ;
+
+IILIBRARY ASCFLIB : ascstok.c ascssvc.c ascsstub.c ascsscan.c
+	ascsquery.c ascsqncr.c ascsproc.c ascsmo.c ascsmntr.c
+	ascsinit.c ascsgcaint.c ascsformat.c ascseauth.c
+	ascsdbfcn.c ascsbuild.c ;
+
+IILIBRARY IMPICELIBDATA	: ascsdata.c ;

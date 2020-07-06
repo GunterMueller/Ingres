@@ -1,0 +1,23 @@
+; This file is maintained by HCW. Do not modify this file directly.
+
+[OPTIONS]
+COMPRESS=12 Hall Zeck
+LCID=0x409 0x0 0x0 ; English (United States)
+REPORT=Yes
+TITLE=Help for Ingres Performance Monitor Wizard
+CNT=perfwiz.cnt
+COPYRIGHT=Copyright © 2005-2006 Ingres Corporation. All Rights Reserved.  All product names referenced herein are trademarks of their respective companies.
+HLP=perfwiz.hlp
+
+[FILES]
+perfwiz.rtf
+
+[MAP]
+perfmon_wizard_chart_creation=131207            ; IDD_FINAL_PAGE
+perfmon_wizard_counter_creation=131214              ; IDD_COUNTER_CREATION_PAGE
+perfmon_wizard_intro=131205           ; IDD_INTRO_PAGE
+perfmon_wizard_personal_counters=131210               ; IDD_PERSONAL_COUNTER_PAGE
+perfmon_wizard_personal_groups=131208             ; IDD_PERSONAL_GROUP_PAGE
+perfmon_wizard_personal_help=131211           ; IDD_PERSONAL_HELP_PAGE
+perfmon_wizard_server_select=131206           ; IDD_SERVER_PAGE
+perfmon_wizard_welcome=0

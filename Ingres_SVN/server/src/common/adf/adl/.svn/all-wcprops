@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/ingres/!svn/ver/2/main/src/common/adf/adl
+END
+UNIMapCompile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/adf/adl/UNIMapCompile.cpp
+END
+UNIMapCompileHandlers.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/2/main/src/common/adf/adl/UNIMapCompileHandlers.cpp
+END
+UNIAlsCompile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/adf/adl/UNIAlsCompile.cpp
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/ingres/!svn/ver/1/main/src/common/adf/adl/MANIFEST
+END
+UNIAlsCompileHandlers.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/common/adf/adl/UNIAlsCompileHandlers.cpp
+END
+unimapcompile.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/adf/adl/unimapcompile.exe.manifest
+END
+UNIMapCompile.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/adf/adl/UNIMapCompile.hpp
+END
+UNIMapCompileHandlers.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/common/adf/adl/UNIMapCompileHandlers.hpp
+END
+unialscompile.exe.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/ingres/!svn/ver/1/main/src/common/adf/adl/unialscompile.exe.manifest
+END
+UNIAlsCompile.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/ingres/!svn/ver/1/main/src/common/adf/adl/UNIAlsCompile.hpp
+END
+UNIAlsCompileHandlers.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/ingres/!svn/ver/1/main/src/common/adf/adl/UNIAlsCompileHandlers.hpp
+END

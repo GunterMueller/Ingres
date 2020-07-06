@@ -1,0 +1,41 @@
+#!/bin/bash
+#*******************************************************************************
+# 
+# Copyright (c) 2004 Ingres Corporation
+#
+# Name: bvalidpw.sh
+#
+# Usage:
+#       bvalidpw  /* called from clf/specials/MINGH */
+#
+# Description:
+# 	This shell script is used to put into the build area the source files
+#	required to compile ingvalidpw, the passwd verification program
+#	on machines using shadow passwds. This script should be run as ingres.
+#	This used to be a part of mkvalidpw.sh.
+#
+# Exit Status:
+#       0       OK
+#       1     didn't set ING_BUILD, ...
+#
+#******************************************************************************
+
+: ${ING_BUILD?} ${ING_SRC?}
+
+[ -n "$ING_VERS" ] && noise="/$ING_VERS/src"
+
+. readvers
+
+DEST=$ING_BUILD/files/iipwd
+
+# check if destination path is there
+[ ! -d $DEST ] && mkdir $DEST
+chmod 755 $DEST
+
+# Copy the files over to the build area
+
+echo "#define $config" > $DEST/pwconfig.h
+cp $ING_SRC/cl/clf$noise/handy_unix_win/ingvalidpw.x $DEST/ingvalidpw.c
+chmod 644 $DEST/ingvalidpw.c $DEST/pwconfig.h
+
+exit 0

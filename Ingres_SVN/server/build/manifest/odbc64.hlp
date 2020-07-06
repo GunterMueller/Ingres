@@ -1,0 +1,8 @@
+Ingres ODBC Driver (64-bit support)
+
+The Ingres ODBC driver requires a third-party ODBC driver manager.  The 
+Ingres ODBC driver connects to local or remote databases to
+fetch or modify information.
+
+The iiodbcadmn utility allows Linux, Unix or VMS users to
+configure ODBC data source information.

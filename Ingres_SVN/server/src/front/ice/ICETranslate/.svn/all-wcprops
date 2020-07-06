@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/ingres/!svn/ver/1/main/src/front/ice/ICETranslate
+END
+ICETranslate.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/ice/ICETranslate/ICETranslate.cpp
+END
+ICETranslate.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/ingres/!svn/ver/1/main/src/front/ice/ICETranslate/ICETranslate.vcproj
+END
+ICETranslateHandlers.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ingres/!svn/ver/1/main/src/front/ice/ICETranslate/ICETranslateHandlers.cpp
+END
+ICETranslate.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/ice/ICETranslate/ICETranslate.dsp
+END
+ICETranslate.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/ice/ICETranslate/ICETranslate.hpp
+END
+ICETranslateHandlers.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/ingres/!svn/ver/1/main/src/front/ice/ICETranslate/ICETranslateHandlers.hpp
+END
+icetranslate.mak
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/ice/ICETranslate/icetranslate.mak
+END
+Jamfile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/ingres/!svn/ver/1/main/src/front/ice/ICETranslate/Jamfile
+END
+ICETranslate.sln
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/ice/ICETranslate/ICETranslate.sln
+END
+ICETranslate.dsw
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/ingres/!svn/ver/1/main/src/front/ice/ICETranslate/ICETranslate.dsw
+END
