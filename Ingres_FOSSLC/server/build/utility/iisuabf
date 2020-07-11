@@ -1,0 +1,289 @@
+#!/bin/bash
+#
+#  Copyright (c) 2004 Ingres Corporation
+#
+#  Name:
+#	iisuabf
+#
+#  Usage:
+#	iisuabf  (called from ingbuild, generally)
+#
+#  Description:
+#	Configure the ING_ABFDIR location and set link files for ABF
+#
+#  Exit status:
+#	0	OK
+#       99	ABF is not installed
+#
+#  DEST = utility
+#----------------------------------------------------------------------------
+
+if [ "$1" = "-rmpkg" ] ; then
+   cat << !
+  Application-By-Forms has been removed
+
+!
+exit 0
+fi
+
+WRITE_RESPONSE=false
+READ_RESPONSE=false
+RESOUTFILE=ingrsp.rsp
+RESINFILE=ingrsp.rsp
+RPM=FALSE
+
+# check for batch flags and sharedlibs
+BATCH=false
+INSTLOG="2>&1 | tee -a $II_SYSTEM/ingres/files/install.log"
+
+while [ $# != 0 ]
+do
+    case "$1" in
+        -batch)
+            BATCH=true ; export BATCH ; 
+	    INSTLOG="2>&1 | cat >> $II_SYSTEM/ingres/files/install.log"
+	    export INSTLOG;
+	    shift ;;
+        -rpm)
+	    RPM=true
+            BATCH=true ; export BATCH ; 
+	    INSTLOG="2>&1 | cat >> $II_SYSTEM/ingres/files/install.log"
+	    export INSTLOG;
+	    shift ;;
+	-vbatch)
+	    BATCH=true ; export BATCH ;
+            export INSTLOG;
+            shift ;;
+	-mkresponse)
+	    WRITE_RESPONSE=true; export WRITE_RESPONSE;
+   	    BATCH=false
+   	    if [ "$2" ] ; then
+        	RESOUTFILE=$2
+		shift;
+   	    fi
+	    export RESOUTFILE;
+	    export INSTLOG;
+	    shift ;;
+	-exresponse)
+	    READ_RESPONSE=true; export READ_RESPONSE;
+   	    BATCH=true
+   	    if [ "$2" ] ; then
+        	RESINFILE=$2
+		shift;
+   	    fi
+	    export RESINFILE;
+	    export INSTLOG;
+            shift ;;
+        -no_shared_libs)
+            USE_SHARED_LIBS=false ; shift ;;
+	*)
+	    echo "ERROR: Unknown option to iisuabf: $1" ;
+	    echo "usage: iisuabf [ -batch ] [-vbatch] [ -rpm ] [ -no_shared_libs ] \
+ [-mkresponse] [-exresponse] [response file]"
+	    exit 1 ;;
+    esac
+done
+
+trap "exit 1" 0 1 2 3 15
+
+do_iisuabf()
+{
+echo "Setting up Application-By-Forms..."
+trap "exit 1" 0 1 2 3 15
+
+. iisysdep
+
+. iishlib
+
+check_response_file #check if the response files exist.
+
+if [ "$WRITE_RESPONSE" = "true" ] ; then
+    mkresponse_msg
+else  #SKIP the REST
+
+# override value of II_CONFIG set by ingbuild 
+II_CONFIG=$II_SYSTEM/ingres/files
+export II_CONFIG
+
+
+  [ -f $II_SYSTEM/ingres/bin/abf ] ||
+  {
+     echo "ERROR: Attempted to set up ABF when ABF is not installed!"
+   cat << !
+
+Attempted to set up ABF, but abf executable is missing.
+
+!
+     exit 1 
+  }
+
+touch_files # make sure symbol.tbl and config.dat exist
+
+ING_ABFDIR=`ingprenv ING_ABFDIR`
+if [ -z "$ING_ABFDIR" ] 
+then
+	ingsetenv ING_ABFDIR $II_SYSTEM/ingres/abf
+	ING_ABFDIR=$II_SYSTEM/ingres/abf
+fi
+
+if [ ! -d $ING_ABFDIR ]
+then
+	echo Creating ABF Directory...
+	mkdir $ING_ABFDIR
+	chmod 777 $ING_ABFDIR
+fi
+cat << !
+
+The following directory will be used to store Application-By-Forms, Vision
+and VisionPro applications:
+
+	$ING_ABFDIR
+
+This default location can be changed later by redefining the Ingres
+variable ING_ABFDIR, using the command: 
+
+	ingsetenv ING_ABFDIR <location>
+
+This variable can also be defined in the Unix environment.
+
+!
+
+$BATCH || pause
+
+config_location "ING_ABFDIR" "ABF application object files" || 
+{
+   cat << !
+
+ -----------------------------------------------------------------------
+|                             ***ERROR***                               |
+|									|
+| Unable to configure the default storage location for Application-By-	|
+| Forms, Vision, and VisionPro application files.  Please attempt to	|
+| resolve this problem and re-execute this setup program.		|
+|                                                                        |
+ ------------------------------------------------------------------------
+
+!
+   exit 1
+}
+
+cd $II_SYSTEM/ingres/files
+
+[ -r abf.opt ] &&
+{ 
+   cat << !
+
+ -----------------------------------------------------------------------
+|                            *** NOTICE ***				|
+|									|
+| This release uses two separate files, abflnk.opt and abfdyn.opt, to	|
+| list linker libraries and options for ABF Image and Go operations	|
+| respectively.  These two files replace the abf.opt file.		|
+|									|
+| Any customozations made to abf.opt will need to be manurally added	|
+| to abflnk.opt and abfdyn.opt if desired.				|
+|									|
+ -----------------------------------------------------------------------
+
+!
+}
+
+[ -r abflnk.opt ] &&
+{ 
+   cat << !
+
+ -----------------------------------------------------------------------
+|                            *** NOTICE ***				|
+|									|
+| A version of abflnk.opt already exists, but needs to be upgraded.  A	|
+| copy of the existing file will be saved in abflnk.opt.old and a new	|
+| version will be created.  Any customizations to the original version	|
+| will need to be manually added to the new file.			|
+|									|
+ -----------------------------------------------------------------------
+
+!
+   $BATCH || pause
+   mv abflnk.opt abflnk.opt.old
+}
+
+
+ldlibpath=`echo " $LDLIBPATH"|sed 's%[ 	]\([^ 	]\)% -L\1%g'`
+	
+
+if $USE_SHARED_LIBS ; then
+   echo $ldlibpath -L\$II_SYSTEM/ingres/lib > abflnk.opt
+   echo -linterp.1 >> abflnk.opt
+   echo -lframe.1 >> abflnk.opt
+   echo -lq.1 >> abflnk.opt
+   echo -lcompat.1 >> abflnk.opt
+else
+   if [ -f $II_SYSTEM/ingres/lib/libingres1.a ] ; then
+      echo \$II_SYSTEM/ingres/lib/libingres1.a > abflnk.opt
+      echo \$II_SYSTEM/ingres/lib/libingres2.a >> abflnk.opt
+   else
+      echo \$II_SYSTEM/ingres/lib/libingres.a > abflnk.opt
+   fi
+fi	# USE _SHARED_LIBS
+
+[ -z "$LIBMACH" ] || echo $LIBMACH >> abflnk.opt
+
+if [ -f $II_SYSTEM/ingres/bin/eqf -o -f $II_SYSTEM/ingres/bin/esqlf ] ; then	
+   liblist="F77 sunmath I77 U77 cl Optf77 Opti77 Optu77 xlf ots"
+   for libdir in $LDLIBPATH
+   do
+      libflags=
+      for lib in $liblist
+      do
+         if [ -f $libdir/lib${lib}.a -o -f $libdir/lib${lib}.${SLSFX} ] ; then
+            [ -z "$libflags" ] && libflags="-L$libdir"
+            libflags="$libflags -l$lib"
+            liblist=`echo $liblist | sed "s/ $lib / /"`
+         fi
+      done
+      [ -z "$libflags" ] || echo $libflags >> abflnk.opt
+   done
+fi
+
+[ -r abfdyn.opt ] &&
+{ 
+   cat  << !
+
+ -----------------------------------------------------------------------
+|                            *** NOTICE ***				|
+|                                                                       |
+| A version of abfdyn.opt already exists, but needs to be upgraded.  A	|
+| copy of the existing file will be saved in abfdyn.opt.old and a new	|
+| version will be created.  Any customizations to the original version	|
+| will need to be manually added to the new file.			|
+|                                                                       |
+ -----------------------------------------------------------------------
+
+!
+   $BATCH || pause
+   mv abfdyn.opt abfdyn.opt.old
+}
+
+cp abflnk.opt abfdyn.opt
+
+chmod 644 abflnk.opt abfdyn.opt 
+
+cd $II_SYSTEM/ingres/lib
+rm -f abfmain.o abfimain.o
+ln abfmain.obj abfmain.o
+ln abfimain.obj abfimain.o
+
+fi	# SKIPPED THE REST
+
+cat << !
+
+Application-By-Forms setup complete.
+
+!
+$BATCH || pause
+trap : 0
+exit 0
+}
+eval do_iisuabf $INSTLOG
+trap : 0
+exit 0

@@ -1,0 +1,12 @@
+<!-- #ICE REPEAT INCLUDE=`begin.html?form=&title=WEB User/Role release&submit=actUserRole.html` -->
+		<INPUT TYPE="HIDDEN" NAME="action" VALUE="delete">
+		<INPUT TYPE="HIDDEN" NAME="user_id" VALUE="<!-- #ICE VAR=`:user` -->">
+		<INPUT TYPE="HIDDEN" NAME="role_id" VALUE="<!-- #ICE VAR=`:role` -->">
+		Do you want to release the following user/role association :
+		<BLOCKQUOTE>
+		The user is <!-- #ICE FUNCTION=`user?action=retrieve&user_id=:user`
+					 HTML=`:user_name <INPUT TYPE="HIDDEN" NAME="name" VALUE=":user_name">` --><p>
+		The role is <!-- #ICE FUNCTION=`role?action=retrieve&role_id=:role`
+					 HTML=`:role_name`	-->
+		</BLOCKQUOTE>
+<!-- #ICE REPEAT INCLUDE=`end.html` -->

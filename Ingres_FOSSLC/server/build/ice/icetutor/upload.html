@@ -1,0 +1,19 @@
+<!-- #ICE REPEAT INCLUDE=`begin.html?title=Upload&previous=error.html&next=download.html` -->
+
+&lt;FORM <BR>
+<B>ENCTYPE="multipart/form-data"</B><BR>
+ACTION="<!-- #ICE VAR=`:dll/...html` -->" METHOD="POST"&gt; <BR>
+		&lt;TABLE BORDER=0&gt;<BR>
+			&lt;TR&gt;<BR>
+				&lt;TD&gt;Name: &lt;/TD&gt;<BR>
+				&lt;TD&gt;&lt;INPUT ALIGN="RIGHT" MAXLENGTH="32" SIZE="20" NAME="name"&gt;.html&lt;/TD&gt;<BR>
+			&lt;/TR&gt;<BR>
+			&lt;TR&gt;<BR>
+				&lt;TD&gt;path: &lt;/TD&gt;<BR>
+				&lt;TD&gt;&lt;INPUT NAME="file" TYPE="<B>file</B>"&gt;&lt;/TD&gt;<BR>
+			&lt;/TR&gt;<BR>
+		&lt;/TABLE&gt;<BR>
+		&lt;INPUT TYPE="SUBMIT" NAME="send" VALUE="Send"&gt;<BR>
+&lt;/FORM&gt;<BR>
+
+<!-- #ICE REPEAT INCLUDE=`end.html` -->

@@ -1,0 +1,20 @@
+<!-- #ICE REPEAT INCLUDE=`begin.html?title=Introduction&previous=&next=server.html` -->
+
+This tutorial aims to help you to create your WEB Site with Ingres Web Deployment Option.
+It will provide for you a step-by-step check list of issues of concern during the entire development cycle and
+help you to learn how to use the powerful macro language to greatly enhance the functionality of HTML.
+<P>
+Ingres Web Deployment Option can utilize two kinds of communication between the HTTP server and the ICE server.
+<P>
+<H4 CLASS="question">
+Please choose which type of communication you would like to use?
+</H4>
+<H4 CLASS="choice">
+<INPUT TYPE="RADIO" NAME="api" VALUE="api" <!-- #ICE IF (`:api` == `api`) THEN=`checked` -->>API - This type of Web Deployment Option communication uses the Application Programming Interface of the underlying Web Server
+to provide advanced connection management and enhanced performance. This works with Microsoft, 
+Netscape and Spyglass Web Servers.<P>
+<INPUT TYPE="RADIO" NAME="api" VALUE="cgi" <!-- #ICE IF (`:api` == `cgi`) THEN=`checked` -->>CGI - This type of Web Deployment Option communication uses the standard Common Gateway Interface and can therefore be used with any
+Web Server.
+</H4>
+
+<!-- #ICE REPEAT INCLUDE=`end.html` -->

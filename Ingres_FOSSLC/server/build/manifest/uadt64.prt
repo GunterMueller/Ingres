@@ -1,0 +1,17 @@
+PART   uadt64
+   capability CI_USER_ADT
+   DIRECTORY ingres!demo!udadts
+   BUILD_DIR (ING_BUILD)!demo!udadts
+      FILE Makefile64
+   DIRECTORY ingres!demo!udadts!lp64
+   BUILD_DIR (ING_BUILD)!demo!udadts!lp64
+      FILE common.o
+      FILE cpx.o
+      FILE iicvpk.o
+      FILE iimhpk.o
+      FILE intlist.o
+      FILE numeric.o
+      FILE op.o
+      FILE zchar.o
+      FILE nvarchar.o
+      EXECUTABLE libdemoudt.1.so

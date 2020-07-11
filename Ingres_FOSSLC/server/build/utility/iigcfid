@@ -1,0 +1,69 @@
+#!/bin/bash
+#  Copyright (c) 1992, 2004 Ingres Corporation
+#
+#  Name: iigcfid -- displays all GCF identifiers for a process type
+#
+#  Usage:
+#	iigcfid process_type	
+#
+#  Description:
+#	A crude cover for iinamu which used to identify and shut down
+#	INGRES processes.
+#
+#  PROGRAM = iigcfid
+#
+#  DEST = utility
+#----------------------------------------------------------------------------
+
+# temp files
+tmp=/tmp/ii$$
+res=/tmp/ir$$
+
+# Make sure iinamu is found
+if ( iinamu </dev/null >/dev/null 2>&1 ) >/dev/null 2>&1
+then
+	:
+else
+	exit 1
+fi
+
+# now test if any argument passed in
+if [ "$1" = "" ]
+then
+	exit 2
+fi
+
+# OK now switch on incoming type
+
+case "$1" in
+"iigcn"|"IIGCN") nm="NMSVR" ;;
+"iigcc"|"IIGCC") nm="COMSVR" ;;
+"iigcb"|"IIGCB") nm="BRIDGE" ;;
+"iigcd"|"IIgcd") nm="DASVR" ;;
+"iidbms"|"IIDBMS") nm="INGRES" ;;
+"iistar"|"IISTAR"|"star"|"STAR") nm="STAR" ;;
+"informix"|"INFORMIX") nm="INFORMIX" ;;
+"oracle"|"ORACLE") nm="ORACLE" ;;
+"sybase"|"SYBASE") nm="SYBASE" ;;
+"albase"|"ALBASE") nm="ALB" ;;
+"odbc"|"ODBC") nm="ODBC" ;;
+"informix"|"INFORMIX") nm="INFORMIX" ;;
+"mssql"|"MSSQL") nm="MSSQL" ;;
+"rms"|"RMS") nm="RMS" ;;
+"rdb"|"RDB") nm="RDB" ;;
+"db2"|"DB2") nm="DB2" ;;
+"db2udb"|"DB2UDB") nm="DB2UDB" ;;
+"dcom"|"DCOM") nm="DCOM" ;;
+"idms"|"IDMS") nm="IDMS" ;;
+"ims"|"IMS") nm="IMS" ;;
+"vsam"|"VSAM") nm="VSAM" ;;
+"icesvr"|"ICESVR") nm="ICESVR" ;;
+*) exit 1 ;;
+esac
+
+echo show $nm | iinamu | sed -n '
+	1d
+	s/^IINAMU> //
+	s/^'$nm'[ 	]*[^ 	]*[ 	]*\([^ 	]*\).*/\1/p
+'
+

@@ -1,0 +1,4 @@
+PART  release-notes
+   BUILD_DIR (ING_BUILD)
+   DIRECTORY ingres
+      FILE version.rel

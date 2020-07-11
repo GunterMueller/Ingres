@@ -1,0 +1,5 @@
+PART  sqltm
+   BUILD_DIR (ING_BUILD)!sig!sqltm
+   DIRECTORY ingres!sig!sqltm
+      FILE read.me
+      EXECUTABLE sqltm

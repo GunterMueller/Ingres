@@ -1,0 +1,42 @@
+PART gateway
+   DIRECTORY ingres!bin
+   BUILD_DIR (ING_BUILD)!bin
+   {
+     PERMISSION s:rwed,o:rwed,g:re,w:re
+     EXECUTABLE iigwstart
+   }
+   {
+     PERMISSION s:rwed,o:rwed,g:re,w:re
+     EXECUTABLE iigwshut
+   }
+   {
+     PERMISSION s:rwed,o:rwed,g:re,w:re
+     EXECUTABLE gwalias
+   }
+   {
+     PERMISSION s:rwed,o:rwed,g:re,w:re
+     EXECUTABLE gwsetlogin
+   }
+   {
+     PERMISSION s:rwed,o:rwed,g:re,w:re
+     EXECUTABLE gwsetschema
+   }
+   DIRECTORY ingres!utility
+   BUILD_DIR (ING_BUILD)!utility
+   SCRIPT iigwstop
+   SCRIPT gwecho
+   DIRECTORY ingres!files!english
+   BUILD_DIR (ING_BUILD)!files!english
+   FILE s13.mnx
+   FILE s202.mnx
+   FILE s203.mnx
+   DIRECTORY ingres!files!english!messages
+   BUILD_DIR (ING_BUILD)!files!english!messages
+      FILE messages.readme
+      FILE messages.txt
+   DIRECTORY ingres
+   BUILD_DIR (ING_BUILD)
+   FILE EAversion.rel
+   BUILD_DIR (ING_SRC)!gateway!gwf!release
+   FILE readme_Enterprise_Access.txt
+   FILE readme_Enterprise_Access.html

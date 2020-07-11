@@ -1,0 +1,166 @@
+#!/bin/bash
+#*******************************************************************************
+# 
+# Copyright (c) 1989, 2006 Ingres Corporation
+#
+# Name: mkvalidpw
+#
+# Usage:
+#       mkvalidpw
+#
+# Description:
+# 	This shell script will be shipped with INGRES/NET to those systems
+# 	using shadow password files and must be run by root.
+#	This shell script will compile ingvalidpw.c and move
+#	the executable to $II_SYSTEM/ingres/bin. The backend will use this
+#	program to verify the user/password pairs.
+#
+# Exit Status:
+#       0       OK
+#       255     didn't set II_SYSTEM or didn't run by root
+#
+#  PROGRAM = mkvalidpw
+#******************************************************************************
+
+: ${II_SYSTEM?}
+
+. $II_SYSTEM/ingres/utility/iisysdep
+
+LD_RUN_PATH=""
+
+notrootok=
+[ "$1" = "-b" ] && notrootok=TRUE
+
+# Must be root to run this script
+if [ "$WHOAMI" != "root" ] && [ ! "$notrootok" ]
+then
+	echo "This script must be run by root."
+	echo "Please login as root and retry."
+	exit 255
+fi
+
+BIN=$II_SYSTEM/ingres/bin
+SRC=$II_SYSTEM/ingres/files/iipwd
+INCLUDE=$SRC
+
+MODEOPT=""
+
+if [ ! -r $SRC/ingvalidpw.c ]
+then
+	echo "Cannot find $SRC/ingvalidpw.c, exiting .."
+	exit 255
+fi
+
+# If the operating system is HP-UX 10.00-10.20, verify whether or not
+# the system is trusted.  Exit without modification if it's not.
+if [ "$VERS" = "hp8_us5" ]
+then
+	if [ `uname -r | cut -d"." -f 2` -eq 10 -a `uname -r | cut -d"." -f 3` -lt 30 ]
+	then
+            if [ ! -d /tcb/files/auth -a -z "$ING_SRC" -a ! -f /etc/shadow ]
+	    then
+		echo "\"II_SHADOW_PWD\" is not needed. Exiting..."
+		ingunset II_SHADOW_PWD
+		exit
+	    fi
+	fi
+fi
+if [ "$VERS" = "hpb_us5" ]
+then
+    if [ ! -d /tcb/files/auth -a -z "$ING_SRC" -a ! -f /etc/shadow ]
+    then
+        echo "\"II_SHADOW_PWD\" is not needed. Exiting..."
+        ingunset II_SHADOW_PWD
+        exit
+    fi
+fi
+
+# decide on what libraries to use
+case "$VERS" in
+        axp_osf)        pn=`basename $0`
+                        shlib="/usr/shlib/libsecurity.so"
+                        if [ -f $shlib ]
+                        then
+                                LIBS="-lsecurity"
+                        else
+                                echo "$pn: Security library ($shlib) is missing"
+                        fi
+                        INCLUDE="$INCLUDE -I/usr/sys/include/sys" 
+                        HAS_DEVSYS=true
+                        ;;
+	hp2_us5|hp8_us5|hpb_us5|i64_hpu)	LIBS="-lsec"
+                        if [ -d /tcb/files/auth ]
+                        then
+                            DFLAG="-DHP_TRUSTED -D_HPUX_SOURCE"
+                        elif [ -f /etc/shadow ]
+                        then
+                            DFLAG="-DSHADOW_EXISTS -D_HPUX_SOURCE"
+                        else
+                            DFLAG=-D_HPUX_SOURCE
+                        fi
+			;;
+	sco_us5|sos_us5)
+                        # check if U.S. libcrypt is supplied (with decrypt)
+                        # otherwise, the supplement libcrypt must be there
+                        if [ -f /lib/libcrypt_d.a ]
+                        then
+                                LIBS="-lprot -lcrypt_d -lx"
+                        else
+                                LIBS="-lprot -lcrypt_i -lx"
+                        fi
+                        HAS_DEVSYS=false;;
+
+	ds3_ulx) 
+			# check if KERBEROS/BIND is installed
+			if [ -f /usr/lib/libckrb.a ]
+			then
+				DFLAG=-DKERBEROS_EXIST
+				LIBS="-lckrb -lkrb -lknet -ldes -lauth"
+			else
+				LIBS="-lknet -lauth"
+			fi;;
+	dr6_us5|usl_us5|sqs_ptx) LIBS=$LDLIBMACH ;;
+        ris_us5)        DFLAG=-D_ALL_SOURCE ;;
+	*_lnx|int_rpl)	LIBS="-lcrypt"
+			if [ -f /etc/shadow ]
+			then
+				DFLAG=-DSHADOW_EXISTS
+			fi;;
+	su9_us5)        DFLAG=-xarch=v9 ;;
+	*)		LIBS="";;
+        ris_u64|\
+	i64_aix)        MODEOPT="-q64"
+                        LIBS="";;
+        *)              LIBS="";;
+esac
+
+# If the development system is available on the system build the executable
+echo "Building the password validation program 'ingvalidpw'."
+$CC $MODEOPT -I$INCLUDE $DFLAG $SRC/ingvalidpw.c $LIBS -o $SRC/ingvalidpw > /dev/null 2>&1
+if [ "$?" = "0" ]
+then
+	rm -f $BIN/ingvalidpw
+	cp $SRC/ingvalidpw $BIN/ingvalidpw
+else
+	echo "Could not compile ingvalidpw: Using executable from the distribution instead."
+	rm -f $BIN/ingvalidpw
+	cp $SRC/ingvalidpw.dis $BIN/ingvalidpw
+fi
+
+[ -f $BIN/ingvalidpw ] || {
+    echo "Executable is not available: $BIN/ingvalidpw"
+    exit 255
+}
+
+[ ! "$notrootok" ] && chown root $BIN/ingvalidpw
+chmod 4755 $BIN/ingvalidpw
+
+# Remove ingvalidpw to avoid upgrade problems depositing shipped executable
+rm -f $SRC/ingvalidpw
+
+# Add entry to symbol table and insure that symbol table owned by ingres
+$BIN/ingsetenv II_SHADOW_PWD $II_SYSTEM/ingres/bin/ingvalidpw
+chown ingres $II_SYSTEM/ingres/files/symbol.tbl
+
+echo "Executable successfully installed."
+exit 0

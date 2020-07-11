@@ -1,0 +1,6 @@
+PART  smart-disk
+  {
+   BUILD_DIR (ING_BUILD)!lib
+   DIRECTORY ingres!lib
+      FILE libsd.a
+  }

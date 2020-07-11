@@ -1,0 +1,34 @@
+#!/bin/bash
+#  Copyright (c) 2004 Ingres Corporation
+#
+#  Name: delshlib -- delete shared libraries on install
+#
+#  Usage:
+#	delshlib
+#
+#  Description:
+#	Executed in-line by ingbuild on sharelib installation
+#
+#  DEST = utility
+#----------------------------------------------------------------------------
+
+
+if [ "$II_SYSTEM" = "" ]
+then
+	exit 255
+fi
+
+os_name=`uname -s`
+if [ "$os_name" = "AIX" ] ; then
+  rm -f $II_SYSTEM/ingres/lib/libcompat64*1.*
+  rm -f $II_SYSTEM/ingres/lib/libframe64*1.*
+  rm -f $II_SYSTEM/ingres/lib/libinterp64*1.*
+  rm -f $II_SYSTEM/ingres/lib/libq64*1.*
+else
+  rm -f $II_SYSTEM/ingres/lib/lp64/libcompat*1.*
+  rm -f $II_SYSTEM/ingres/lib/lp64/libframe*1.*
+  rm -f $II_SYSTEM/ingres/lib/lp64/libinterp*1.*
+  rm -f $II_SYSTEM/ingres/lib/lp64/libq*1.*
+fi 
+
+exit 0

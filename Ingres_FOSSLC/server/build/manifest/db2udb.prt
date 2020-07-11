@@ -1,0 +1,21 @@
+PART db2udb
+    capability CI_DB2_GATEWAY
+   DIRECTORY ingres!bin
+   BUILD_DIR (ING_BUILD)!bin
+   {
+      PERMISSION s:rwed,o:rwed,g:re,w:re
+      EXECUTABLE iigwudbd
+   }
+   {
+      EXECUTABLE iigwudb
+      PERMISSION s:rwed,o:rwed,g:re,w:re
+   }
+   DIRECTORY ingres!utility
+   BUILD_DIR (ING_BUILD)!utility
+      SCRIPT SETUP iisudb2udb
+   SCRIPT iichkudb
+   EXECUTABLE iigwcatudb
+   DIRECTORY ingres!files
+   BUILD_DIR (ING_BUILD)!files
+      FILE db2udb.crs
+      FILE db2udb.rfm

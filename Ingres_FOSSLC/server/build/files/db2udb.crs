@@ -1,0 +1,24 @@
+--
+--  Copyright (c) 2006 Ingres Corporation.  All Rights Reserved.
+--
+--  This file contains the configuration rules for the DB2 UDB Gateway.
+--
+ii.$.ingstart.$.db2udb:		1, MAX = 1;
+-- protocol port status initialization
+ii.$.gateway.db2udb.sqlda_size:       128, MIN = 50, MAX = 256;
+ii.$.gateway.db2udb.pst_max:          128, MIN = 50, MAX = 256;
+ii.$.gateway.db2udb.empty_date:       "01-jan-1900 00:00:00";
+ii.$.gateway.db2udb.empty_date_return: "OFF", VALID = {
+                                        "OFF","EMPTY"
+                                        };
+ii.$.gateway.db2udb.load_table_qualifier: "USER";
+ii.$.gateway.db2udb.varchar_comp:     OFF;
+ii.$.gateway.db2udb.blob_data:		"file", VALID = 
+					{ "memory","file" };
+ii.$.gateway.db2udb.blob_len:		"1G";
+ii.$.gateway.db2udb.clob_len:		"1G";
+ii.$.gateway.db2udb.squeeze_len:	30, MIN = 0;
+-- trace settings
+ii.$.gateway.db2udb.trace_init:       "OFF";
+ii.$.gateway.db2udb.trace_full:       "false", VALID = { "true", "false" };
+ii.$.gateway.db2udb.trace_file:       "`gwecho $II_SYSTEM/ingres/files/gwdb2udb.log`";

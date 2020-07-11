@@ -1,0 +1,16 @@
+PART   collation64
+   DIRECTORY ingres!files!collation!lp64
+   BUILD_DIR (ING_BUILD)!files!collation!lp64
+      FILE multi
+      FILE spanish
+      FILE multi.dsc
+      FILE spanish.dsc
+      FILE udefault.uce
+      FILE udefault
+      FILE unicode_french.uce
+      FILE unicode_french
+      FILE udata.ucd
+      FILE specialcasing.txt
+   DIRECTORY ingres!utility!lp64
+   BUILD_DIR (ING_BUILD)!utility!lp64
+      EXECUTABLE aducompile

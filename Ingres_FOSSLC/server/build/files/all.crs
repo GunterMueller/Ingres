@@ -1,0 +1,328 @@
+--
+--  Copyright (c) 1992, 2004  Ingres Corporation.  All rights reserved.
+--
+--  This file contains the configuration rules shared by INGRES/DBMS,
+--  INGRES/Net and INGRES/Star, INGRES/Bridge.
+--  Also it contains configuration rules for INGRES/JDBC Server.
+--
+-- configuration system preferences
+ii.$.prefs.ingstart_syscheck:	ON;
+ii.$.prefs.ingstop:	"none", VALID = { "-force", "-f", "-kill", "-k", "none" };
+ii.$.fixed_prefs.iso_entry_sql-92:	OFF;
+ii.*.ingstart.syscheck_command:	"syscheck";
+ii.$.prefs.cbf_syscheck:	ON;
+ii.$.cbf.syscheck_mode:		ii.$.prefs.cbf_syscheck;
+ii.*.cbf.syscheck_command:	"syscheck >/dev/null";
+-- createdb resources
+ii.$.createdb.reg_id_case:	IF ( ii.$.fixed_prefs.iso_entry_sql-92 == ON )
+					"upper"	
+				ELSE
+					"lower"	
+				ENDIF, VALID = { "upper", "lower" };	
+ii.$.createdb.delim_id_case:	IF ( ii.$.fixed_prefs.iso_entry_sql-92 == ON )
+					"mixed"	
+				ELSE
+					"lower"	
+				ENDIF, VALID = { "upper", "lower", "mixed" };	
+ii.$.createdb.real_user_case:	ii.$.createdb.reg_id_case,
+				VALID = { "upper", "lower", "mixed" };	
+-- ingstart resources
+ii.$.ingstart.syscheck_mode:	ii.$.prefs.ingstart_syscheck;
+-- ingstop resources
+-- name server (gcn) resources 
+ii.$.gcn.session_limit:		16, MIN = 1;
+ii.$.gcn.default_server_class:	"INGRES";
+ii.$.gcn.local_vnode:           `iipmhost`;
+ii.$.gcn.remote_vnode:		"";
+ii.$.gcn.timeout:		60;
+ii.$.gcn.check_timeout:	20, MIN = 1, MAX = 60;
+ii.$.gcn.check_type:		"connect,install,class";
+ii.$.gcn.check_interval:	300, MIN = 10;	
+ii.$.gcn.expire_interval:	300, MIN = 10;
+ii.$.gcn.ticket_expire:		1800, MIN = 60;
+ii.$.gcn.ticket_cache_size:	10, MIN = 1, MAX = 10;
+ii.$.gcn.compress_point:	50, MIN = 0, MAX = 100;
+ii.$.gcn.mechanisms:		"";
+ii.$.gcn.registry_type:	"none", VALID = { "none", "slave",
+							 "peer", "master" };
+ii.$.gcn.remote_mechanism:	"none";
+-- GCF/GCS resources
+ii.$.gcf.security_mechanism:	"ingres";
+ii.$.gcf.user_mechanism:	"default";
+ii.$.gcf.restrict_usr_auth:	"false", VALID = { "true", "false" };
+ii.$.gcf.password_mechanism:	"default";
+ii.$.gcf.restrict_pwd_auth:	"false", VALID = { "true", "false" };
+ii.$.gcf.server_mechanism:	"default";
+ii.$.gcf.restrict_srv_auth:	"true", VALID = { "true", "false" };
+ii.$.gcf.remote_mechanism:	"none";
+ii.$.gcf.restrict_rem_auth:	"false", VALID = { "true", "false" };
+ii.$.gcf.mechanisms:		"";
+ii.$.gcf.mechanism_location:	"`iiingloc lib`";
+ii.$.gcf.remote_auth_error:	"ignore", VALID = {"ignore", "fail"};
+ii.$.gcf.mech.ingres.enabled:	"true", VALID = { "true", "false" };
+ii.$.gcf.mech.ingres.expirations_required:	"no", VALID = { "yes", "no" };
+ii.$.gcf.mech.ingres.expiration_time:	120, MIN = 1;
+ii.$.gcf.mech.system.enabled:	"true", VALID = { "true", "false" };
+ii.$.gcf.mech.null.enabled:	"false", VALID = { "true", "false" };
+ii.$.gcf.mech.kerberos.delegation:  "", VALID = { "on", "off", "" };
+ii.$.gcf.mech.kerberos.domain:      `iinethost`; 
+ii.$.gcf.mech.kerberos.enabled:     "true", VALID = { "true", "false" };
+ii.$.gcf.mech.kerberos.entry:       "gcs_kerberos", VALID = { "gcs_kerberos" };
+ii.$.gcf.mech.kerberos.module:      "gcskrb", VALID = { "gcskrb" };
+-- Cluster logical settings
+ii.$.config.cluster_mode:       OFF;
+-- syscheck resources
+ii.*.config.syscheck:		"syscheck >/dev/null"; -- supress output
+ii.$.dbms.file_limit:		IF( SUM( ii.$.ingstart.%.dbms ) > 0 )
+					ii.$.dbms.connect_max + 14
+				ELSE
+					0
+				ENDIF;
+ii.$.gcc.file_limit:		IF( SUM( ii.$.ingstart.%.gcc ) > 0 )
+					ii.$.gcc.connect_max + 14
+				ELSE
+					0
+				ENDIF;
+ii.$.gcb.file_limit:		IF( SUM( ii.$.ingstart.%.gcb ) > 0 )
+					ii.$.gcb.connect_max + 14
+				ELSE
+					0
+				ENDIF;
+ii.$.star.file_limit:		IF( SUM( ii.$.ingstart.%.star ) > 0 )
+					ii.$.star.connect_max * 9 + 2
+				ELSE
+					0
+				ENDIF;
+ii.$.syscheck.dbms_segment:	IF ( SUM( ii.$.ingstart.%.dbms ) > 0 )
+					8K * ii.$.dbms.connect_max + 16K
+				ELSE
+					0
+				ENDIF;
+ii.$.syscheck.dmf_segment:	`iiresutl -dmf_max_seg`,
+					REQUIRES ii.$.dbms.%.cache_sharing,
+					REQUIRES ii.$.dbms.%.cache_name,
+					REQUIRES ii.$.ingstart.%.dbms,
+					REQUIRES ii.$.dbms.%.%.cache.p4k_status,
+					REQUIRES ii.$.dbms.%.%.cache.p8k_status,
+					REQUIRES ii.$.dbms.%.%.cache.p16k_status,
+					REQUIRES ii.$.dbms.%.%.cache.p32k_status,
+					REQUIRES ii.$.dbms.%.%.cache.p64k_status,
+					REQUIRES ii.$.dbms.%.%.%.dmf_memory;
+ii.$.syscheck.dmf_seg_num:      `iiresutl -dmf_seg_num`,
+					REQUIRES ii.$.dbms.%.cache_sharing,
+					REQUIRES ii.$.dbms.%.cache_name,
+					REQUIRES ii.$.ingstart.%.dbms;
+ii.$.syscheck.file_limit:	IF( ii.$.star.file_limit >
+					ii.$.dbms.file_limit
+				)
+					IF( ii.$.star.file_limit >
+						ii.$.gcc.file_limit
+					)
+						ii.$.star.file_limit
+					ELSE
+					IF( ii.$.star.file_limit >
+						ii.$.gcb.file_limit
+					)
+						ii.$.star.file_limit
+					ELSE
+					IF( ii.$.gcb.file_limit >
+						ii.$.gcc.file_limit
+					)
+						ii.$.gcb.file_limit
+					ELSE
+						ii.$.gcc.file_limit
+					ENDIF
+					ENDIF
+					ENDIF
+				ELSE
+					IF( ii.$.dbms.file_limit >
+						ii.$.gcc.file_limit
+					)
+						ii.$.dbms.file_limit
+					ELSE
+					IF( ii.$.dbms.file_limit >
+						ii.$.gcb.file_limit
+					)
+						ii.$.dbms.file_limit
+					ELSE
+					IF( ii.$.gcb.file_limit >
+						ii.$.gcc.file_limit
+					)
+						ii.$.gcb.file_limit
+					ELSE
+						ii.$.gcc.file_limit
+					ENDIF
+					ENDIF
+					ENDIF
+				ENDIF;
+ii.$.syscheck.segments:		SUM( ii.$.ingstart.%.dbms ) +
+					ii.$.syscheck.dmf_seg_num + 2;
+ii.$.syscheck.semaphores:	30 * SUM( ii.$.ingstart.%.dbms ) + 5;
+ii.$.syscheck.semaphore_sets:	SUM( ii.$.ingstart.%.dbms ) + 1;
+ii.*.image_size.iimerge:	IF( SUM( ii.$.ingstart.%.dbms ) >= 0 )
+					`iifilsiz $II_SYSTEM/ingres/bin/iimerge`
+					ELSE "" ENDIF;
+ii.*.image_size.iigcc:	IF( SUM( ii.$.ingstart.%.gcc ) >= 0 )
+					`iifilsiz $II_SYSTEM/ingres/bin/iigcc`
+					ELSE "" ENDIF;
+ii.*.image_size.iigcb:	IF( SUM( ii.$.ingstart.%.gcb ) >= 0 )
+					`iifilsiz $II_SYSTEM/ingres/bin/iigcb`
+					ELSE "" ENDIF;
+ii.*.image_size.iigcn:	IF( SUM( ii.$.ingstart.%.gcc ) >= 0 )
+					`iifilsiz $II_SYSTEM/ingres/bin/iigcn`
+					ELSE "" ENDIF;
+ii.*.image_size.iigcd:	IF( SUM( ii.$.ingstart.%.gcd ) >= 0 )
+					`iifilsiz $II_SYSTEM/ingres/bin/iigcd`
+					ELSE "" ENDIF;
+ii.$.syscheck.dbms_swap_mem:	`iiresutl -dbms_swap_mem`,
+                                        REQUIRES ii.$.dbms.%.cache_sharing,
+                                        REQUIRES ii.$.dbms.%.cache_name,
+                                        REQUIRES ii.$.ingstart.%.dbms,
+                                        REQUIRES ii.$.dbms.%.%.dmf_memory,
+                                        REQUIRES ii.$.dbms.%.%.cache.p4k_status,
+                                        REQUIRES ii.$.dbms.%.%.cache.p8k_status,
+                                        REQUIRES ii.$.dbms.%.%.cache.p16k_status,
+                                        REQUIRES ii.$.dbms.%.%.cache.p32k_status,
+                                        REQUIRES ii.$.dbms.%.%.cache.p64k_status,
+                                        REQUIRES ii.$.dbms.%.%.%.dmf_memory,
+					REQUIRES ii.$.dbms.%.stack_size,
+					REQUIRES ii.$.dbms.%.connect_limit;
+ii.$.syscheck.iigcn_swap:	ii.*.image_size.iigcn + 200K;
+ii.$.syscheck.iidbms_swap: 	IF ( SUM( ii.$.ingstart.%.dbms ) > 0 )
+					-- recovery server
+					ii.*.image_size.iimerge + 400K +
+					-- archiver process
+					1800K +
+					-- dbms servers
+					SUM( ii.$.ingstart.%.dbms ) *
+					(ii.*.image_size.iimerge + 600K) +
+					ii.$.syscheck.dbms_swap_mem
+				ELSE
+					0
+				ENDIF;
+ii.$.syscheck.iigcc_swap: 	IF ( SUM( ii.$.ingstart.%.gcc ) > 0 )
+					SUM( ii.$.ingstart.%.gcc ) *
+					(ii.*.image_size.iigcc + 100K)
+				ELSE
+					0
+				ENDIF;
+ii.$.syscheck.iigcb_swap: 	IF ( SUM( ii.$.ingstart.%.gcb ) > 0 )
+					SUM( ii.$.ingstart.%.gcb ) *
+					(ii.*.image_size.iigcb + 100K)
+				ELSE
+					0
+				ENDIF;
+ii.$.syscheck.iigcd_swap: 	IF ( SUM( ii.$.ingstart.%.gcd ) > 0 )
+					SUM( ii.$.ingstart.%.gcd ) *
+					(ii.*.image_size.iigcd + 100K)
+				ELSE
+					0
+				ENDIF;
+ii.$.syscheck.iistar_swap: 	IF ( SUM( ii.$.ingstart.%.star ) > 0 )
+					SUM( ii.$.ingstart.%.star ) * 2M
+				ELSE
+					0
+				ENDIF;
+ii.$.syscheck.swap_space_kb: 	(ii.$.syscheck.iigcn_swap +
+					ii.$.syscheck.iidbms_swap +
+					ii.$.syscheck.iigcc_swap +
+					ii.$.syscheck.iigcb_swap +
+					ii.$.syscheck.iistar_swap +
+					-- add swap for an application
+					2M) / 1024;
+-- default environment settings 
+ii.*.setup.ii_installation:	"II";
+ii.*.setup.ii_temporary:	"/tmp";
+ii.*.setup.ing_edit:		"/usr/bin/vi" ;
+ii.*.setup.ii_charset:		"ISO88591", VALID =
+				{
+					"WTHAI",
+					"WIN1253",
+					"WIN1252",
+					"WIN1250",
+					"WHEBREW",
+					"WARABIC",
+					"THAI",
+					"SLAV852",
+					"PCHEBREW",
+					IF ( ii.*.config.double_byte == ON )
+						"SHIFTJIS" ELSE "" ENDIF,
+					IF ( ii.*.config.double_byte == ON )
+						"KOREAN" ELSE "" ENDIF,
+					IF ( ii.*.config.double_byte == ON )
+						"KANJIEUC" ELSE "" ENDIF,
+					IF ( ii.*.config.double_byte == ON )
+					        "CHTEUC" ELSE "" ENDIF,
+					IF ( ii.*.config.double_byte == ON )
+					        "CHTBIG5" ELSE "" ENDIF,
+					IF ( ii.*.config.double_byte == ON )
+					        "CHTHP" ELSE "" ENDIF,
+					IF ( ii.*.config.double_byte == ON )
+					        "CHINESES" ELSE "" ENDIF,
+					IF ( ii.*.config.double_byte == ON )
+					        "CHINESET" ELSE "" ENDIF,
+					IF ( ii.*.config.double_byte == ON )
+					        "CSGBK" ELSE "" ENDIF,
+					IF ( ii.*.config.double_byte == ON )
+					        "CSGB2312" ELSE "" ENDIF,
+					"ISO88599",
+					"ISO88597",
+					"ISO88595",
+					"ISO88592",
+					"ISO88591",
+					"IS885915",
+					"IBMPC866",
+					"IBMPC850",
+					"IBMPC437",
+					"HPROMAN8",
+					"HEBREW",
+					"GREEK",
+					"ELOT437",
+					"DOSASMO",
+					"CW",
+					"ARABIC",
+					"PC857",
+					"KOI8",
+					"ALT",
+					"UTF8"
+				};
+ii.*.config.double_byte:	ON;
+ii.*.setup.charset.shiftjis:	"Shiftjis";
+ii.*.setup.charset.korean:	"Korean Characters";
+ii.*.setup.charset.kanjieuc:	"Kanjieuc";
+ii.*.setup.charset.chteuc:		"Chinese (EUC)";
+ii.*.setup.charset.chtbig5:		"Chinese (Big 5)";
+ii.*.setup.charset.chthp:		"Chinese (HP ROC15)";
+ii.*.setup.charset.chineses:	"Chinese (PRC)";
+ii.*.setup.charset.chineset:	"Traditional Chinese";
+ii.*.setup.charset.csgbk:	"Chinese (GB)";
+ii.*.setup.charset.csgb2312:	"Chinese (GB 2312)";
+ii.*.setup.charset.win1250:	"Windows codepage 1250";
+ii.*.setup.charset.win1252:	"Windows codepage 1252 (Latin 1)";
+ii.*.setup.charset.win1253:	"Windows codepage 1253 (Greek Euro)";
+ii.*.setup.charset.thai:	"Thai";
+ii.*.setup.charset.slav852:	"Slavic 852";
+ii.*.setup.charset.iso88591:	"ISO-8859-1";
+ii.*.setup.charset.iso88592:	"ISO-8859-2";
+ii.*.setup.charset.iso88595:	"ISO-8859-5";
+ii.*.setup.charset.iso88597:	"ISO-8859-7";
+ii.*.setup.charset.iso88599:	"ISO-8859-9";
+ii.*.setup.charset.is885915:	"ISO-8859-15 (Latin 9)";
+ii.*.setup.charset.ibmpc866:	"IBM PC 866 (Cyrillic)";
+ii.*.setup.charset.ibmpc850:	"IBM PC 850";
+ii.*.setup.charset.ibmpc437:	"IBM PC 437";
+ii.*.setup.charset.pc857:	"IBM PC 857";
+ii.*.setup.charset.hproman8:	"HP Roman 8";
+ii.*.setup.charset.hebrew:	"Hebrew";
+ii.*.setup.charset.greek:	"Greek";
+ii.*.setup.charset.elot437:	"Elot 437";
+ii.*.setup.charset.cw:		"Windows Cyrillic (CP 1251)";
+ii.*.setup.charset.alt:	    "ALT (Cyrillic for DOS)";
+ii.*.setup.charset.arabic:	"Arabic";
+ii.*.setup.charset.warabic:	"Windows Arabic";
+ii.*.setup.charset.pchebrew:	"IBM PC Hebrew";
+ii.*.setup.charset.dosasmo:	"IBM PC Arabic";
+ii.*.setup.charset.whebrew:	"Windows Hebrew";
+ii.*.setup.charset.wthai  :	"Windows Thai";
+ii.*.setup.charset.koi8:	"Windows Russian (Cyrillic)";
+ii.*.setup.charset.utf8:	"UTF-8";

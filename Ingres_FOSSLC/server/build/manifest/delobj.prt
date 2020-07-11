@@ -1,0 +1,4 @@
+PART   delobj
+   BUILD_DIR (ING_BUILD)!bin
+   DIRECTORY ingres!bin
+      EXECUTABLE delobj

@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# Copyright (c) 1994, 2004 Ingres Corporation
+#
+# Name:
+#	esqlcc - wrapper to esqlc for preprocessing C++ files.
+#
+#  PROGRAM = esqlcc
+# -----------------------------------------------------------------
+
+exec esqlc -cplusplus "$@"

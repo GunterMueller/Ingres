@@ -1,0 +1,14 @@
+PART   embedded-ada
+   capability CIeqADA
+   capability CIesqADA
+   BUILD_DIR (ING_BUILD)!bin
+   DIRECTORY ingres!bin
+      EXECUTABLE eqa
+      EXECUTABLE esqla
+   BUILD_DIR (ING_BUILD)!files
+   DIRECTORY ingres!files
+      FILE eqdef.a
+      FILE eqsqlca.a
+      FILE eqsqlcam.a
+      FILE eqsqlda.a
+      FILE sql_standard.a

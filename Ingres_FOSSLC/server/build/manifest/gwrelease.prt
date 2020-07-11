@@ -1,0 +1,126 @@
+RELEASE Ingres
+PACKAGE basic 
+   INVISIBLE
+   PART charsets
+      DEFINITION charsets.prt
+   DIRECTORY ingres!files
+   PART frs
+      DEFINITION frs.prt
+   DIRECTORY ingres!files!english
+   PART messages
+      DEFINITION messages.prt
+   PART errhelp
+      DEFINITION errhelp.prt
+   PART ingenv
+      DEFINITION ingenv.prt
+   PART name-server
+      DEFINITION namesrv.prt
+   PART utdef
+      DEFINITION utdef.prt
+   PART zoneinfo
+      DEFINITION zoneinfo.prt
+   PART sharelib
+      DEFINITION sharelib.prt
+   PART api
+      DEFINITION api.prt
+   PART odbc
+      DEFINITION odbc.prt
+PACKAGE generr
+   INVISIBLE
+   PART generr
+   DIRECTORY ingres!files
+   BUILD_DIR (ING_BUILD)!files
+      FILE generr.h
+PACKAGE setupsup 
+   INVISIBLE 
+   PART setupsup
+      DEFINITION setupsup.prt
+PACKAGE tm 
+   VISIBLE CI_PER_USER_LICENSING
+   INCLUDE setupsup
+   PART tm
+      DEFINITION tm.prt
+PACKAGE generr
+   INVISIBLE
+   PART generr
+   DIRECTORY ingres!files
+   BUILD_DIR (ING_BUILD)!files
+      FILE generr.h
+PACKAGE esqlsup 
+   INVISIBLE
+   INCLUDE setupsup
+   INCLUDE generr
+   PART library
+      DEFINITION lib.prt
+   PART dclgen
+      DEFINITION dclgen.prt
+PACKAGE esqlc 
+   VISIBLE !CI_PER_USER_LICENSING
+   INCLUDE esqlsup
+   PART emb-c
+      DEFINITION emb-c.prt
+PACKAGE esqlcc 
+   VISIBLE !CI_PER_USER_LICENSING
+   INCLUDE esqlsup
+   NEED esqlc
+   PART emb-cc
+      DEFINITION emb-cc.prt
+PACKAGE esqlada 
+   VISIBLE !CI_PER_USER_LICENSING
+   INCLUDE esqlsup
+   PART embedded-ada
+      DEFINITION emb-ada.prt
+PACKAGE esqlcob 
+   VISIBLE !CI_PER_USER_LICENSING
+   INCLUDE esqlsup
+   PART embedded-cobol
+      DEFINITION emb-cbl.prt
+PACKAGE esqlfor 
+   VISIBLE !CI_PER_USER_LICENSING
+   INCLUDE esqlsup
+   PART embedded-fortran
+      DEFINITION  emb-ftn.prt
+PACKAGE esql 
+   VISIBLE CI_PER_USER_LICENSING
+   INCLUDE esqlc
+   INCLUDE esqlcc
+   INCLUDE esqlada
+   INCLUDE esqlcob
+   INCLUDE esqlfor
+PACKAGE jdbc
+   VISIBLE CI_PER_USER_LICENSING
+   INCLUDE basic
+   INCLUDE setupsup
+   INCLUDE config
+   PREFER net
+   PART jdbc
+      DEFINITION jdbcsrv.prt
+PACKAGE net 
+   INCLUDE basic
+   INCLUDE setupsup
+   INCLUDE config
+   PART net
+      DEFINITION net.prt
+   PART shadow-pwd
+      DEFINITION shadow-pwd.prt
+PACKAGE gateway
+   INVISIBLE
+   NEED net
+   NEED tm
+   PART gateway
+      DEFINITION gateway.prt
+PACKAGE config 
+   INVISIBLE
+   PART config
+      DEFINITION config.prt
+PACKAGE install 
+   INVISIBLE
+   INCLUDE messages
+   INCLUDE frs 
+   DIRECTORY ingres!install
+   PART messages
+      DEFINITION messages.prt
+   PART install
+      DEFINITION install.prt
+   PART frs
+      DEFINITION frs.prt

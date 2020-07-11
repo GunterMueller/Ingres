@@ -1,0 +1,4 @@
+PART tuxedo32
+   DIRECTORY ingres!lib!lp32
+   BUILD_DIR (ING_BUILD)!lib!lp32
+      FILE libiitux.a

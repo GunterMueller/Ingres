@@ -1,0 +1,10 @@
+
+ck.o
+ckerror.o
+ckspawn.o
+cksubst.o
+jf.o
+jftest.o
+sr.o
+ccmsrc.o
+gcccl.o gcapsub.o gcctcp.o gccdecnet.o gccptbl.o bsdnet.o bsnetw.o cspipe.o iamiltab.o clnt_tcp.o clnt_udp.o pmap_rmt.o svc.o svc_run.o svc_tcp.o rngutil.o meuse.o meconsist.o medump.o mebdump.o meberror.o mexdump.o fegeterr.o gcsunlu62.o gchplu62.o

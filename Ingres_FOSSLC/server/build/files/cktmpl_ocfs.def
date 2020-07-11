@@ -1,0 +1,57 @@
+BSTD:	/bin/echo beginning checkpoint to tape %C of %N locations
+BSDD:	/bin/echo beginning checkpoint to disk %C of %N locations
+ESTD:   /bin/echo ending checkpoint to tape %C of %N locations
+ESDD:   /bin/echo ending checkpoint to disk %C of %N locations
+PSTD:   /bin/echo mount tape %M and press return; read foo;
+WSTD:   cd %D && /usr/bin/test -O $II_SYSTEM/ingres/bin/pax && $II_SYSTEM/ingres/bin/pax -w -M -b 32k -f %C *
+PSDD:   /bin/echo executing checkpoint to disk
+WSDD:   cd %D && /usr/bin/test -O $II_SYSTEM/ingres/bin/pax && $II_SYSTEM/ingres/bin/pax -w -M -b 32k -f %A *
+PSDR:   /bin/echo executing checkpoint to disk
+WSDR:	mkdir -p %A; dd --o_direct if=%E of=%A/*F count=%P bs=%Q
+PSTR:   /bin/echo mount tape %M and press return; read foo;
+WSTR:	exit 1
+BSTT:   /bin/echo PARTIAL: beginning checkpoint to tape %C of %N locations
+BSDT:   /bin/echo PARTIAL: beginning checkpoint to disk %C of %N locations
+ESTT:   /bin/echo PARTIAL: ending checkpoint to tape %C of %N locations
+ESDT:   /bin/echo PARTIAL: ending checkpoint to disk %C of %N locations
+PSTT:   /bin/echo PARTIAL: mount tape %K and press return; read foo;
+WSTT:   cd %D && /usr/bin/test -O $II_SYSTEM/ingres/bin/pax && $II_SYSTEM/ingres/bin/pax -w -M -b 32k -f %C %B
+PSDT:   /bin/echo executing checkpoint to disk %C of %N locations
+WSDT:   cd %D && /usr/bin/test -O $II_SYSTEM/ingres/bin/pax && $II_SYSTEM/ingres/bin/pax -w -M -b 32k -f %A %B
+BRDD:	/bin/echo beginning restore of disk %C of %N locations
+BRTD:	/bin/echo beginning restore of tape %C of %N locations
+BRDT:   /bin/echo PARTIAL: beginning restore of disk %C of %N locations
+BRTT:   /bin/echo PARTIAL: beginning restore of tape %C of %N locations
+BJDA:   /bin/echo beginning restore of journals
+BJTA:   /bin/echo beginning restore of journals
+BUDA:   /bin/echo beginning restore of dumps
+BUTA:   /bin/echo beginning restore of dumps
+PRDD:   /bin/echo executing restore to disk %C of %N locations
+WRDD:   cd %D && /usr/bin/test -O $II_SYSTEM/ingres/bin/pax && $II_SYSTEM/ingres/bin/pax -r -f %A
+PRTD:   /bin/echo mount tape %M and press return; read foo;
+WRTD:   cd %D && /usr/bin/test -O $II_SYSTEM/ingres/bin/pax && $II_SYSTEM/ingres/bin/pax -r -f %C
+PRDT:	/bin/echo restoring table %X in database location %D;
+WRDT:   cd %D && /usr/bin/test -O $II_SYSTEM/ingres/bin/pax && $II_SYSTEM/ingres/bin/pax -r -f %A %B
+PRTT:   /bin/echo mount tape %K and press return; read foo;
+WRTT:   cd %D && /usr/bin/test -O $II_SYSTEM/ingres/bin/pax && $II_SYSTEM/ingres/bin/pax -r -f %C %B
+PRDR:   /bin/echo executing restore to disk %C of %N locations
+WRDR:	dd --o_direct if=%A of=%E count=%P bs=%Q
+PRTR:	/bin/echo mount tape %M and press return; read foo;
+WRTR:	exit 1
+WJDA:	/bin/true
+WJTA:	/bin/true
+WUDA:   /bin/true
+WUTA:   /bin/true
+WCDA:   /bin/echo Checking database snapshot for table level recovery
+WCTA:   /bin/echo Checking database snapshot for table level recovery
+WDDD:   /bin/echo deleting files in location %D; cd %D; rm -f *
+WDTD:   /bin/echo deleting files in location %D; cd %D; rm -f *
+WDTR:   /bin/true
+WDDT:   /bin/echo deleting table %X in database location %D
+WDTT:   /bin/echo deleting table %X in database location %D
+IRDT:   /bin/echo beginning table level recovery
+IRTT:   /bin/echo beginning table level recovery
+FRDT:	/bin/echo ending table level recovery
+FRTT:	/bin/echo ending table level recovery
+EETE:	/bin/echo done with tape operations
+EEDE:	/bin/echo done with disk operations

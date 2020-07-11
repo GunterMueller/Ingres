@@ -1,0 +1,8 @@
+PART   spatial64
+   capability CI_CLASSOBJ_ADT
+   DIRECTORY ingres!lib!lp64
+   BUILD_DIR (ING_BUILD)!lib!lp64
+      EXECUTABLE libspat.1.so
+   DIRECTORY ingres!utility
+   BUILD_DIR (ING_BUILD)!utility
+      SCRIPT SETUP iisuspat64

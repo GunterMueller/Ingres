@@ -1,0 +1,19 @@
+<!-- #ICE REPEAT INCLUDE=`begin.html?form=&title=Role&submit=actRole.html` -->
+		<TABLE BORDER=0>
+			<!-- #ICE FUNCTION=`role?action=retrieve&role_id=:role`
+					 HTML=`
+			<TR>
+				<INPUT TYPE="HIDDEN" NAME="id" VALUE=":role_id">
+				<TD>Name </TD>
+				<TD><INPUT SIZE="32" NAME="name" VALUE=":role_name"></TD>
+			</TR>
+			<TR>
+				<TD>comment </TD>
+				<TD><TEXTAREA NAME="com" COLS=32 ROWS=5>:role_comment</TEXTAREA></TD>
+			</TR>`
+		-->
+
+		<!-- #ICE REPEAT INCLUDE=`action.html` -->
+		</TABLE>
+
+<!-- #ICE REPEAT INCLUDE=`end.html` -->

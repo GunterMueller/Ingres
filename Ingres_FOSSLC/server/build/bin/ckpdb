@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+# Copyright (c) 2004 Ingres Corporation
+#
+#
+# Name: ckpdb	- take checkpoint of a database
+#
+# Description:
+#      This shell program provides the INGRES `ckpdb' command by
+#      executing the journaling support program, passing along the
+#      command line arguments.
+#
+#
+
+exec ${II_SYSTEM?}/ingres/bin/dmfjsp ckpdb "$@"

@@ -1,0 +1,4 @@
+PART   netu
+   BUILD_DIR (ING_BUILD)!sig!netu
+   DIRECTORY ingres!sig!netu
+      EXECUTABLE netu

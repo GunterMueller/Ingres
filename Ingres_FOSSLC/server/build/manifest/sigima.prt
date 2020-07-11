@@ -1,0 +1,8 @@
+PART  sigima
+   BUILD_DIR (ING_BUILD)!sig!ima
+   DIRECTORY ingres!sig!ima
+      FILE README.DOC
+      FILE Makefile
+      FILE iomon.sc
+      FILE iomon.form
+      FILE iomon.sql

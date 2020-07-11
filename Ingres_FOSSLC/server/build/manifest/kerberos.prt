@@ -1,0 +1,10 @@
+PART  kerberos
+   BUILD_DIR (ING_BUILD)!lib
+   DIRECTORY ingres!lib
+      {
+      EXECUTABLE libgcskrb.so.2.0
+      PERMISSION s:re,o:rwed,g:re,w:re
+      }
+   DIRECTORY ingres!utility
+   BUILD_DIR (ING_BUILD)!utility
+    SCRIPT iisukerberos

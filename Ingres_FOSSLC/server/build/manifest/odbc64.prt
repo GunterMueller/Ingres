@@ -1,0 +1,8 @@
+PART  odbc64
+   BUILD_DIR (ING_BUILD)!lib!lp64
+   DIRECTORY ingres!lib!lp64
+      {
+      EXECUTABLE libiiodbc.1.so
+      EXECUTABLE libiiodbcdriver.1.so
+      PERMISSION s:re,o:rewd,g:re,w:re
+      }

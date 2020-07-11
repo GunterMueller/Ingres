@@ -1,0 +1,28 @@
+PART  starview
+   BUILD_DIR (ING_BUILD)!files!english
+   DIRECTORY ingres!files!english
+      FILE svhf11.hlp
+      FILE svhf21.hlp
+      FILE svhf22.hlp
+      FILE svhf25.hlp
+      FILE svhf31.hlp
+      FILE svhp121.hlp
+      FILE svhp131.hlp
+      FILE svhp141.hlp
+      FILE svhp151.hlp
+      FILE svhp161.hlp
+      FILE svhp162.hlp
+      FILE svhp21.hlp
+      FILE svhp31.hlp
+      FILE svhp41.hlp
+      FILE svhp51.hlp
+      FILE svhp61.hlp
+      FILE svhp71.hlp
+      FILE svhp72.hlp
+      FILE svhu11.hlp
+   BUILD_DIR (ING_BUILD)!bin
+   DIRECTORY ingres!bin
+   {
+      PERMISSION s:rwed,o:rwed,g:re,w:re
+      EXECUTABLE starview
+   }

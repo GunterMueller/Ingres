@@ -1,0 +1,59 @@
+#!/bin/bash
+# Copyright (c) 2004 Ingres Corporation
+# $Header $
+#
+# Name:
+#	ingprall
+#
+# Usage:
+#	ingprall
+#
+# Description:
+#	This routine prints the INGRES variables for all the clients
+#	in an installation.
+#
+# Exit status:
+#	0	ok
+#
+#  PROGRAM = ingprall
+# -----------------------------------------------------------------
+
+. iisysdep
+
+CMD=ingprall
+
+if [ -d $II_SYSTEM/ingres/admin ]
+then :
+else
+	cat << !
+
+$CMD: FATAL ERROR 1 ------------------------------------------------
+
+The directory
+
+	$II_SYSTEM/ingres/admin
+
+does not exist or it is not accessible. This indicates that there are
+no client nodes in this installation. Please refer to the Installation
+and Operations Guide for information on how to set up a client installation.
+
+!
+	exit 1
+fi
+
+for i in $II_SYSTEM/ingres/admin/*
+do
+	if [ -d $i ] 
+	then
+		node=`echo $i | \
+		      awk ' BEGIN { FS = "/" } 
+				  { n = NF } 
+				  { print $n }'`
+		echo ""
+		echo "INGRES variables for node "$node"..."
+		echo ""
+		eval II_ADMIN=$i ingprenv 
+	fi
+done
+
+exit 0

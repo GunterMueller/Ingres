@@ -1,0 +1,41 @@
+PART rdb
+    capability CI_RDB_GATEWAY
+   DIRECTORY ingres!bin
+   BUILD_DIR (jpt_rdb_bin)
+   {
+     PERMISSION s:rwed,o:rwed,g:re,w:re
+     EXECUTABLE iigwrdbd
+   }
+   {
+     PERMISSION s:rwed,o:rwed,g:re,w:re
+     EXECUTABLE iigwrdb
+   }
+   DIRECTORY ingres!utility
+   BUILD_DIR (front_path)!install!'front_vers'!utility
+   SCRIPT iigwrdb_sysinput
+   SCRIPT SETUP iisurdb
+   BUILD_DIR (jpt_rdb_bin)
+   {
+     PERMISSION s:rwed,o:rwed,g:re,w:re
+     EXECUTABLE iigwcatrdb
+   }
+   DIRECTORY ingres!files
+   BUILD_DIR (front_path)!install!'front_vers'!files
+   FILE rdb.crs
+   FILE rdb.rfm
+   FILE rpctable.sql
+   FILE gwrdb_rpc_template.sc
+   FILE iiuserproc.c
+   FILE gwlproto.h
+   FILE iigwrdb.lnk
+   DIRECTORY ingres!library
+   BUILD_DIR (jpt_rdb_lib)
+      BUILD_FILE iigwsql.obj_ndb
+      FILE iigwsql.obj
+      BUILD_FILE gwg.olb_ndb
+      FILE gwg.olb
+      BUILD_FILE gwrdbsql.olb_ndb
+      FILE gwrdbsql.olb
+   BUILD_DIR (jpt_gwr_lib)
+      BUILD_FILE gwu.olb_ndb
+      FILE gwu.olb

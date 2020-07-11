@@ -1,0 +1,132 @@
+#!/bin/bash
+# Copyright (c) 2005 Ingres Corporation
+#
+# Name: iirundbms - invoke the iidbms
+#
+# Launches the iidbms into the background, waiting for it to issue the
+# sign on its stdout that indicates it is alive and well: the value
+# of II_DBMS_SERVER.
+#
+
+# Pick an executable
+# If ii.host.dbms.flavour.image_name is set uset it ( relative to
+# $II_SYSTEM/ingres/bin if unrooted); otherwise use the default iidbms.
+
+host=`iipmhost`
+radarg=""
+[ "$1" ] && [ -z "`echo $1 | sed 's/-rad=[1-9][0-9]*//'`" ] && 
+{
+    radarg="$1"
+    shift
+}
+
+arg1=${1-'dbms'}
+arg2=${2-'*'}
+
+x=`iigetres "ii.$host.$arg1.$arg2.image_name"`
+
+case "$x" in
+"")	if [ "$1" = "recovery" ] ; then
+	    iidbms=$II_SYSTEM/ingres/bin/iidbms
+	elif [ "$1" = "rmcmd" ] ; then
+	    iidbms=$II_SYSTEM/ingres/bin/rmcmd
+	else
+	    iidbms=$II_SYSTEM/ingres/bin/ii$1
+	fi
+	;;
+/*)	iidbms=$x;;
+*)	iidbms=$II_SYSTEM/ingres/bin/$x;;
+esac
+
+x=`echo "$iidbms" | sed 's/.*\\/\\([^\\/]*\)$/\\1/'`
+
+unames=`uname -s`
+if [ "$unames" = "AIX" ] ; then
+   enable_64=`ingprenv II_LP64_ENABLED`
+   case "$enable_64" in
+    TRUE|true|ON|on) if [ "$x" = "iidbms" ] ; then
+                       iidbms=$II_SYSTEM/ingres/bin/lp64/iidbms
+                     elif [ "$x" = "iistar" ] ; then
+                       iidbms=$II_SYSTEM/ingres/bin/lp64/iistar
+                     fi
+   esac
+fi
+
+# check the binary actually exists and fail out if it doesn't
+[ ! -f "$iidbms" ] &&
+{
+    cat << EOF
+iirundbms: could not locate server
+The following executable could not be located:
+
+    $iidbms
+	
+To stop this error, set the startup count for this server
+to 0 using the cbf utility.
+EOF
+
+    exit 1
+}
+
+case "$x" in
+iidbms|iigcb|iigcc|iigcd|iijdbc|iistar)
+    # launch the program into the background, waiting for a single line 
+    # containing either a PASS or FAIL on stdout
+
+    iipthreadtst
+    if [ "$?" = "1" ] ; then
+	exit 1
+    fi
+
+    tmpfile=`ingprenv II_TEMPORARY`/iirundbms.$$
+    iirun $radarg $iidbms $* > $tmpfile 2>&1 &
+
+    FAILED=no
+    while [ 1 -eq 1 ]
+    do
+	if [ -s "$tmpfile" ] ; then
+	    if grep "PASS" $tmpfile > /dev/null 2>&1 ; then
+		break
+	    elif grep "FAIL" $tmpfile > /dev/null 2>&1 ; then
+		FAILED=yes
+		break
+	    fi
+	fi
+	sleep 1
+    done
+
+    # If passed, output the II_DBMS_SERVER line that ought to be in
+    # the stdout file.  Otherwise, output whatever and bail out.
+    # Meaningful reasons should for failure should be found in
+    # the errlog.log.
+
+    grep -v "PASS" $tmpfile
+
+    if [ "$FAILED" = 'no' ] ; then
+	rm -f $tmpfile
+	exit 0
+    fi
+
+    if [ "$1" = "recovery" -o "$1" = "dbms" ] ; then
+	echo "iirundbms: server would not start."
+	echo "        II_SYSTEM must be set in your environment."
+	echo "        Has the csinstall program been run?"
+	echo "        II_DATABASE, II_CHECKPOINT, II_JOURNAL and II_DUMP"
+	echo "            must also be set.  See II_CONFIG/symbol.tbl."
+	echo "        Check the file '$II_SYSTEM/ingres/files/errlog.log'"
+	echo "            for more details concerning internal errors."
+	echo "        See the Installation Guide for more"
+	echo "            information concerning server startup."
+    fi
+    rm -f $tmpfile
+    exit 1
+    ;;
+
+*)
+    # All other executables (at present: iigcn, rmcmd) do not output
+    # a PASS / FAIL.  Confirmation of actual success is the responsibility
+    # of the caller.
+    iirun $radarg $iidbms $* > /dev/null 2>&1 
+    exit 0
+    ;;
+esac

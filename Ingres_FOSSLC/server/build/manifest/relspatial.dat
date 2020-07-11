@@ -1,0 +1,19 @@
+RELEASE Ingres
+PACKAGE spatialpack
+    VISIBLEPKG
+    INCLUDE spatial 
+PACKAGE spatial
+   DIRECTORY ingres!files
+   PART spatial
+     DEFINITION spatial.prt
+PACKAGE install 
+   INVISIBLE
+   INCLUDE messages
+   INCLUDE frs 
+   DIRECTORY ingres!install
+   PART messages
+      DEFINITION messages.prt
+   PART install
+      DEFINITION install.prt
+   PART frs
+      DEFINITION frs.prt

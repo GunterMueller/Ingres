@@ -1,0 +1,17 @@
+PART   rmcmd
+   DIRECTORY ingres!bin
+   BUILD_DIR (ING_BUILD)!bin
+      EXECUTABLE rmcmd
+      EXECUTABLE rmcmdin
+      EXECUTABLE rmcmdout
+      EXECUTABLE rmcmdstp
+   DIRECTORY ingres!utility
+   BUILD_DIR (ING_BUILD)!utility
+      EXECUTABLE rmcmdrmv
+      EXECUTABLE rmcmdgen
+   DIRECTORY ingres!vdba
+   BUILD_DIR (ING_BUILD)!vdba
+      FILE makimau.sql
+      FILE makiman.sql
+      FILE makimag.sql
+      FILE makimav.sql

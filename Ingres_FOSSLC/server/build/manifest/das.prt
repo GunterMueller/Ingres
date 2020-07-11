@@ -1,0 +1,17 @@
+PART  das
+   DIRECTORY ingres!bin
+   BUILD_DIR (ING_BUILD)!bin
+      EXECUTABLE iigcd
+      EXECUTABLE iijdbcprop
+   DIRECTORY ingres!utility
+   BUILD_DIR (ING_BUILD)!utility
+      SCRIPT SETUP iisudas
+   DIRECTORY ingres!lib
+   BUILD_DIR (ING_BUILD)!lib
+      FILE iijdbc.jar
+      FILE edbc.jar
+      FILE JdbcInfo.class
+   DIRECTORY ingres!files
+   BUILD_DIR (ING_BUILD)!files
+      FILE das.crs
+      FILE das.rfm

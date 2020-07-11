@@ -1,0 +1,21 @@
+Setting up Application-By-Forms...
+/home/ingres/SANDBOX/Ingres_SVN/server/build/utility/iishlib: line 343: iisetres: command not found
+/home/ingres/SANDBOX/Ingres_SVN/server/build/utility/iishlib: line 344: iisetres: command not found
+
+The following directory will be used to store Application-By-Forms, Vision
+and VisionPro applications:
+
+	/home/ingres/SANDBOX/Ingres_SVN/server/install/build/ingres/abf
+
+This default location can be changed later by redefining the Ingres
+variable ING_ABFDIR, using the command: 
+
+	ingsetenv ING_ABFDIR <location>
+
+This variable can also be defined in the Unix environment.
+
+
+ING_ABFDIR configured as /home/ingres/SANDBOX/Ingres_SVN/server/install/build/ingres/abf
+
+Application-By-Forms setup complete.
+

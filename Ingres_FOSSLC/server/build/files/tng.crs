@@ -1,0 +1,13 @@
+--
+--  Copyright (c) 2004 Ingres Corporation
+--
+--  This file contains the configuration rules required by Unicenter.
+--
+-- Fool ID to always return the user 'ingres'
+ii.$.setup.embed_user: 		ON;
+ii.$.privileges.user.system:	"SERVER_CONTROL,NET_ADMIN,MONITOR,TRUSTED";
+ii.$.setup.embed_installation:  ON;
+ii.$.gcf.mech.ingres.enabled:   "true", VALID = { "true", "false" };
+ii.$.gcf.mech.null.enabled:     "true", VALID = { "true", "false" };
+ii.$.gcf.security_mechanism:    "null";
+ii.$.ingstart.$.gcb:            0;

@@ -1,0 +1,22 @@
+ingbuild - Currently Installed Components
+
+This screen provides the following information about each component that
+is currently installed.
+
+	Component	The name of the Ingres component, or 
+			a component option that has been installed.
+
+	Version		The release and modification level of the installed
+			component.
+
+	Size		The amount of disk space occupied on II_SYSTEM
+			by this component's system files.
+
+	Ready?		If 'Yes' is displayed, the component is ready for use.
+			If 'No', then you must run the Setup program before
+			this component is ready for use.
+
+
+For more information concerning the installation of components using ingbuild,
+please refer to the Ingres Installation Guide.
+

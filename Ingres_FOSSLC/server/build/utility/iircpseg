@@ -1,0 +1,26 @@
+#!/bin/bash
+#  Copyright (c) 2004 Ingres Corporation
+#
+#  Name: iircpseg -- return the size of the rcp shared memory segment
+#
+#  Usage:
+#	iircpseg [ temp_file ]
+#
+#  Description:
+#	Returns the output from "iishowres" to the configuration rules
+#	system.
+#
+#  PROGRAM = iircpseg
+#
+#  DEST = utility
+#----------------------------------------------------------------------------
+
+if iishowres > /tmp/iircpseg.$$
+then 
+	cat /tmp/iircpseg.$$ > "$1"
+else
+	echo 0 > "$1"
+fi
+
+rm -f /tmp/iircpseg.$$
+

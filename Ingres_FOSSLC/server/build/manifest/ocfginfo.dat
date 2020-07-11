@@ -1,0 +1,4 @@
+DriverFileName=libiiodbcdriver.1.so
+ReadOnlyDriverFileName=libiiodbcdriverro.1.so
+DriverName=Ingres
+AltDriverName=Ingres 2006 

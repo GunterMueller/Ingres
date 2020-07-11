@@ -1,0 +1,34 @@
+#!/bin/bash
+# Copyright (c) 2004 Ingres Corporation
+#
+# Name:
+#	iiecholg - echo to stdout and to log file
+#
+# Usage:
+#	iiecholg  [argument ...]
+#
+# Description
+#	echo arguments on standard out and on log file given by file
+#	descriptor in environment variable LOG_FD.
+#	If no arguments then read standard input.
+#
+#
+#  PROGRAM = iiecholg
+#
+#  DEST = utility
+#----------------------------------------------------------------------
+
+if [ $# != 0 ]
+then
+    echo $*; [ $LOG_FD ] && echo $* >& $LOG_FD
+else
+    if [ $LOG_FD ]
+    then
+	cat >/tmp/echolog.$$
+	cat /tmp/echolog.$$
+	cat /tmp/echolog.$$ >& $LOG_FD
+	rm /tmp/echolog.$$
+    else
+	cat
+    fi
+fi

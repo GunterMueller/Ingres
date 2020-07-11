@@ -1,0 +1,340 @@
+--
+--  Copyright (c) 2004 Ingres Corporation
+--
+--  This file contains the setupuration rules used to setup table-driven
+--  time zone support.
+--
+ii.*.setup.region:		"", VALID = {
+					"GMT-OFFSET", "SOUTHEAST-ASIA",
+					"SOUTH-PACIFIC", "SOUTH-AMERICA",
+					"NORTH-ATLANTIC", "NORTH-AMERICA",
+					"MIDDLE-EAST", "AUSTRALIA", "ASIA",
+					"AFRICA"
+				};
+ii.*.setup.africa:		"African time zones";
+ii.*.setup.asia:		"Asian time zones";
+ii.*.setup.australia:		"Australian time zones";
+ii.*.setup.middle-east:		"Middle Eastern time zones";
+ii.*.setup.north-america:	"North American time zones";
+ii.*.setup.north-atlantic:	"North Atlantic time zones (Europe,UK,Ireland,Moscow,Turkey)";
+ii.*.setup.south-america:	"South American time zones";
+ii.*.setup.south-pacific: 	"South Pacific time zones";
+ii.*.setup.southeast-asia:	"Southeast Asian time zones";
+ii.*.setup.gmt-offset:		"GMT Offset time zones";
+-- africa timezones
+ii.*.setup.africa.tz:		"", VALID = {
+					"GMT4", "GMT3", "GMT2", "GMT1", "GMT"
+				};
+-- asia timezones
+ii.*.setup.asia.tz:		"", VALID = {
+					"GMT11", "GMT10", "GMT9", "GMT8",
+					"GMT7", "GMT6", "GMT5", "PRC",
+					"PAKISTAN", "HONG-KONG", "INDIA",
+					"KOREA", "JAPAN", "ROC", "MOSCOW2",
+ 					"MOSCOW3", "MOSCOW4", "MOSCOW5", 
+					"MOSCOW6","MOSCOW7", "MOSCOW8", 
+					"MOSCOW9"
+				};
+ii.*.tz.japan:			"asia/japan";
+ii.*.setup.asia.japan:		"Japanese Time Zone";
+ii.*.tz.korea:			"asia/korea";
+ii.*.setup.asia.korea:		"Korean Time Zone";
+ii.*.tz.india:			"asia/india";
+ii.*.setup.asia.india:		"Indian Time Zone";
+ii.*.tz.hong-kong:		"asia/hongkong";
+ii.*.setup.asia.hong-kong:	"Hong Kong Time Zone";
+ii.*.tz.pakistan:		"asia/pakistan";
+ii.*.setup.asia.pakistan:	"Pakistan Time Zone";
+ii.*.tz.prc:			"asia/prc";
+ii.*.setup.asia.prc:		"People's Republic of China Time Zone";
+ii.*.tz.roc:			"asia/roc";
+ii.*.setup.asia.roc:		"Republic of China Time Zone";
+ii.*.tz.moscow2:		"asia/moscow2";
+ii.*.setup.asia.moscow2:	"Yekaterinburg Time Zone";
+ii.*.tz.moscow3:		"asia/moscow3";
+ii.*.setup.asia.moscow3:	"Omoscow/Novosibirsk Time Zone";
+ii.*.tz.moscow4:		"asia/moscow4";
+ii.*.setup.asia.moscow4:	"Krasnoyarsk Time Zone";
+ii.*.tz.moscow5:		"asia/moscow5";
+ii.*.setup.asia.moscow5:	"Irkutsk Time Zone";
+ii.*.tz.moscow6:		"asia/moscow6";
+ii.*.setup.asia.moscow6:	"Yakutsk Time Zone";
+ii.*.tz.moscow7:		"asia/moscow7";
+ii.*.setup.asia.moscow7:	"Vladivostok/Yuzhno-Sakhalinsk Time Zone";
+ii.*.tz.moscow8:		"asia/moscow8";
+ii.*.setup.asia.moscow8:	"Magadan Time Zone";
+ii.*.tz.moscow9:		"asia/msk9";
+ii.*.setup.asia.moscow9:	"Petropavlovsk-Kamchatski/Anadyr Time Zone";
+-- australia timezones
+ii.*.setup.australia.tz:	"", VALID = {
+					"AUSTRALIA-NSW",
+					"AUSTRALIA-VICTORIA",
+					"AUSTRALIA-QUEENSLAND",
+					"AUSTRALIA-TASMANIA",
+					"AUSTRALIA-SOUTH",
+					"AUSTRALIA-WEST",
+					"AUSTRALIA-NORTH",
+					"AUSTRALIA-YANCO",
+					"AUSTRALIA-LHI"
+				};
+ii.*.tz.australia-north: 	"astrl/ausnorth";
+ii.*.setup.australia.australia-north: "Australian Northern Time Zone";
+ii.*.tz.australia-west: 	"astrl/auswest";
+ii.*.setup.australia.australia-west: "Australian Western Time Zone";
+ii.*.tz.australia-south: 	"astrl/aussouth";
+ii.*.setup.australia.australia-south: "Australian Southern Time Zone";
+ii.*.tz.australia-tasmania: 	"astrl/tsmni";
+ii.*.setup.australia.australia-tasmania: "Australian Tasmania Time Zone";
+ii.*.tz.australia-queensland: 	"astrl/qnslnd";
+ii.*.setup.australia.australia-queensland: "Australian Queensland Time Zone";
+ii.*.tz.australia-victoria: 	"astrl/vctr";
+ii.*.setup.australia.australia-victoria: "Australian Victoria Time Zone";
+ii.*.tz.australia-nsw: 		"astrl/nsw";
+ii.*.setup.australia.australia-nsw: "Australian NSW Time Zone";
+ii.*.tz.australia-yanco: 	"astrl/yanco";
+ii.*.setup.australia.australia-yanco: "Australian Yancowinna Time Zone";
+ii.*.tz.australia-lhi: 		"astrl/lhi";
+ii.*.setup.australia.australia-lhi: "Australian Lord Howe Island Time Zone";
+-- middle-east timezones
+ii.*.setup.middle-east.tz:	"", VALID = {
+					"GMT4", "GMT3", "GMT2",
+					"SAUDI-ARABIA", "KUWAIT", "ISRAEL",
+					"IRAN", "EGYPT"
+				};
+ii.*.tz.egypt:			"mideast/egypt";
+ii.*.setup.middle-east.egypt:	"Egyptian Time Zone";
+ii.*.tz.iran:			"mideast/iran";
+ii.*.setup.middle-east.iran:	"Iran Time Zone";
+ii.*.tz.israel:			"mideast/israel";
+ii.*.setup.middle-east.israel:	"Israel Time Zone";
+ii.*.tz.kuwait:			"mideast/kuwait";
+ii.*.setup.middle-east.kuwait:	"Kuwait Time Zone";
+ii.*.tz.saudi-arabia:		"mideast/saudi";
+ii.*.setup.middle-east.saudi-arabia: "Saudi Arabian Time Zone";
+-- north-america timezones
+ii.*.setup.north-america.tz:	"", VALID = {
+					"US-ALASKA", "MEXICO-BAJASUR",
+					"MEXICO-BAJANORTE",
+					"MEXICO-GENERAL", "CANADA-YUKON",
+					"CANADA-NEWFOUNDLAND",
+					"CANADA-ATLANTIC", "NA-EASTERN",
+					"NA-CENTRAL", "NA-MOUNTAIN",
+					"NA-PACIFIC"
+				};
+ii.*.tz.na-pacific:		"na/pacific";
+ii.*.setup.north-america.na-pacific: "North American Pacific Time Zone";
+ii.*.tz.na-mountain:		"na/mountain";
+ii.*.setup.north-america.na-mountain: "North American Mountain Time Zone";
+ii.*.tz.na-central:		"na/central";
+ii.*.setup.north-america.na-central: "North American Central Time Zone";
+ii.*.tz.na-eastern:		"na/eastern";
+ii.*.setup.north-america.na-eastern: "North American Eastern Time Zone";
+ii.*.tz.canada-atlantic:	"na/atlantic";
+ii.*.setup.north-america.canada-atlantic: "Canadian Atlantic Time Zone";
+ii.*.tz.canada-newfoundland: 	"na/nwfdlnd";
+ii.*.setup.north-america.canada-newfoundland: "Canadian Newfoundland Time Zone";
+ii.*.tz.canada-yukon:		"na/yukon";
+ii.*.setup.north-america.canada-yukon: "Canadian Yukon Time Zone";
+ii.*.tz.mexico-general:		"na/mxgen";
+ii.*.setup.north-america.mexico-general: "Mexican General Time Zone";
+ii.*.tz.mexico-bajanorte:	"na/mxbajan";
+ii.*.setup.north-america.mexico-bajanorte: "Mexican Baja Norte Time Zone";
+ii.*.tz.mexico-bajasur:		"na/mxbajas";
+ii.*.setup.north-america.mexico-bajasur: "Mexican Baja Sud Time Zone";
+ii.*.tz.us-alaska:		"na/alaska";
+ii.*.setup.north-america.us-alaska: "United States Alaskan Time Zone";
+-- north-atlantic timezones
+ii.*.setup.north-atlantic.tz:	"", VALID = {
+					"GMT3", "GMT2", "GMT1", "GMT",
+					"UNITED-KINGDOM", "TURKEY", "POLAND",
+					"MOSCOW-1", "MOSCOW", "MOSCOW1", 
+					"IRELAND", "EUROPE-EASTERN",
+					"EUROPE-CENTRAL", "EUROPE-WESTERN"
+				};
+ii.*.tz.europe-western:		"europe/euwest";
+ii.*.setup.north-atlantic.europe-western: "Western European Time Zone";
+ii.*.tz.europe-central:		"europe/eucntrl";
+ii.*.setup.north-atlantic.europe-central:"Central European Time Zone";
+ii.*.tz.europe-eastern:		"europe/eueast";
+ii.*.setup.north-atlantic.europe-eastern:"Eastern European Time Zone";
+ii.*.tz.ireland:		"europe/gb";
+ii.*.setup.north-atlantic.ireland: "Irish Time Zone";
+ii.*.tz.moscow-1:		"europe/moscow-1";
+ii.*.setup.north-atlantic.moscow-1: "Kaliningrad Time Zone";
+ii.*.tz.moscow:		"europe/moscow";
+ii.*.setup.north-atlantic.moscow: "Moscow Time Zone";
+ii.*.tz.moscow1:		"europe/moscow1";
+ii.*.setup.north-atlantic.moscow1: "Samara Time Zone";
+ii.*.tz.poland:			"europe/poland";
+ii.*.setup.north-atlantic.poland: "Polish Time Zone";
+ii.*.tz.turkey:			"europe/turkey";
+ii.*.setup.north-atlantic.turkey: "Turkish Time Zone";
+ii.*.tz.united-kingdom:		"europe/gb";
+ii.*.setup.north-atlantic.united-kingdom: "United Kingdom Time Zone";
+-- south-america timezones
+ii.*.setup.south-america.tz:	"", VALID = {
+					"GMT-3", "GMT-4", "GMT-5", "GMT-6",
+					"CHILE-EASTER-ISLAND",
+					"CHILE-CONTINENTAL",
+					"BRAZIL-DENORONHA", "BRAZIL-ACRE",
+					"BRAZIL-WEST", "BRAZIL-EAST"
+				};
+ii.*.tz.brazil-east:		"sa/bzeast";
+ii.*.setup.south-america.brazil-east: "Brazilian Eastern Time Zone";
+ii.*.tz.brazil-west:		"sa/bzwest";
+ii.*.setup.south-america.brazil-west: "Brazilian Western Time Zone";
+ii.*.tz.brazil-acre:		"sa/bzacre";
+ii.*.setup.south-america.brazil-acre: "Brazilian Acre Time Zone";
+ii.*.tz.brazil-denoronha:	"sa/bzden";
+ii.*.setup.south-america.brazil-denoronha: "Brazilian DeNoronha Time Zone";
+ii.*.tz.chile-continental:	"sa/chlcont";
+ii.*.setup.south-america.chile-continental: "Chilean Continental Time Zone";
+ii.*.tz.chile-easter-island:	"sa/easteris";
+ii.*.setup.south-america.chile-easter-island: "Chile/Easter Island Time Zone";
+-- south-pacific timezones
+ii.*.setup.south-pacific.tz:	"", VALID = {
+					"GMT-10", "GMT-11", "GMT-12",
+					"GMT12", "GMT11", "GMT10",
+					"US-HAWAII", "NEW-ZEALAND",
+					"NEW-ZEALAND-CHATHAM"
+				};
+ii.*.tz.new-zealand:		"sp/nz";
+ii.*.setup.south-pacific.new-zealand: "New Zealand Time Zone";
+ii.*.tz.new-zealand-chatham:	"sp/nz-chat";
+ii.*.setup.south-pacific.new-zealand-chatham: "New Zealand/Chatham Island Time Zone";
+ii.*.tz.us-hawaii:		"sp/hawaii";
+ii.*.setup.south-pacific.us-hawaii: "United States Hawaii Time Zone";
+-- southeast-asia timezones
+ii.*.setup.southeast-asia.tz:	"", VALID = {
+					"GMT9", "GMT8", "GMT7",
+					"VIETNAM", "THAILAND", "SINGAPORE",
+					"PHILIPPINES", "MALAYSIA",
+					"INDONESIA-EAST",
+					"INDONESIA-CENTRAL",
+					"INDONESIA-WEST"
+				};
+ii.*.tz.indonesia-west:		"seasia/indowest";
+ii.*.setup.southeast-asia.indonesia-west: "Western Indonesia Time Zone";
+ii.*.tz.indonesia-central:	"seasia/indocntr";
+ii.*.setup.southeast-asia.indonesia-central: "Central Indonesia Time Zone";
+ii.*.tz.indonesia-east:		"seasia/indoeast";
+ii.*.setup.southeast-asia.indonesia-east: "Eastern Indonesia Time Zone";
+ii.*.tz.malaysia:		"seasia/malaysia";
+ii.*.setup.southeast-asia.malaysia: "Malaysian Time Zone";
+ii.*.tz.philippines:		"seasia/phlppns";
+ii.*.setup.southeast-asia.philippines: "Phillipines Time Zone";
+ii.*.tz.singapore:		"seasia/sngpr";
+ii.*.setup.southeast-asia.singapore: "Singapore Time Zone";
+ii.*.tz.thailand:		"seasia/thailand";
+ii.*.setup.southeast-asia.thailand: "Thailand Time Zone";
+ii.*.tz.vietnam:		"seasia/vietnam";
+ii.*.setup.southeast-asia.vietnam: "Vietnam Time Zone";
+-- gmt-offset timezones
+ii.*.setup.gmt-offset.tz:	"", VALID = {
+					"GMT13", "GMT12", "GMT11", 
+					"GMT10-and-half", "GMT10",
+					"GMT9-and-half", "GMT9", "GMT8",
+					"GMT7", "GMT6", "GMT5-and-half",
+					"GMT5", "GMT4", "GMT3-and-half",
+					"GMT3", "GMT2", "GMT1", "GMT",
+					"GMT-1", "GMT-2-and-half", "GMT-2",
+					"GMT-3-and-half", "GMT-3","GMT-4",
+					"GMT-5", "GMT-6", "GMT-7", "GMT-8",
+					"GMT-9", "GMT-10", "GMT-11", "GMT-12"
+				};
+ii.*.tz.gmt-12:			"gmt/gmt-12";
+ii.*.setup.*.gmt-12:		"Greenwich Mean Time - 12 hours";
+ii.*.tz.gmt-11:			"gmt/gmt-11";
+ii.*.setup.*.gmt-11:		"Greenwich Mean Time - 11 hours";
+ii.*.tz.gmt-10:			"gmt/gmt-10";
+ii.*.setup.*.gmt-10:		"Greenwich Mean Time - 10 hours";
+ii.*.tz.gmt-9:			"gmt/gmt-9";
+ii.*.setup.*.gmt-9:		"Greenwich Mean Time - 9 hours";
+ii.*.tz.gmt-8:			"gmt/gmt-8";
+ii.*.setup.*.gmt-8:		"Greenwich Mean Time - 8 hours";
+ii.*.tz.gmt-7: 			"gmt/gmt-7";
+ii.*.setup.*.gmt-7:		"Greenwich Mean Time - 7 hours";
+ii.*.tz.gmt-6: 			"gmt/gmt-6";
+ii.*.setup.*.gmt-6:		"Greenwich Mean Time - 6 hours";
+ii.*.tz.gmt-5: 			"gmt/gmt-5";
+ii.*.setup.*.gmt-5:		"Greenwich Mean Time - 5 hours";
+ii.*.tz.gmt-4: 			"gmt/gmt-4";
+ii.*.setup.*.gmt-4:		"Greenwich Mean Time - 4 hours";
+ii.*.tz.gmt-3-and-half: 	"gmt/gmt-3half";
+ii.*.setup.*.gmt-3-and-half:	"Greenwich Mean Time - 3.5 hours";
+ii.*.tz.gmt-3: 			"gmt/gmt-3";
+ii.*.setup.*.gmt-3:		"Greenwich Mean Time - 3 hours";
+ii.*.tz.gmt-2-and-half: 	"gmt/gmt-2half";
+ii.*.setup.*.gmt-2-and-half:	"Greenwich Mean Time - 2.5 hours";
+ii.*.tz.gmt-2: 			"gmt/gmt-2";
+ii.*.setup.*.gmt-2:		"Greenwich Mean Time - 2 hours";
+ii.*.tz.gmt-1: 			"gmt/gmt-1";
+ii.*.setup.*.gmt-1:		"Greenwich Mean Time - 1 hours";
+ii.*.tz.gmt:			"gmt/gmt";
+ii.*.setup.*.gmt:		"Greenwich Mean Time";
+ii.*.tz.gmt1:			"gmt/gmt1";
+ii.*.setup.*.gmt1:		"Greenwich Mean Time + 1 hours";
+ii.*.tz.gmt2:			"gmt/gmt2";
+ii.*.setup.*.gmt2:		"Greenwich Mean Time + 2 hours";
+ii.*.tz.gmt3-and-half:		"gmt/gmt3half";
+ii.*.setup.*.gmt3-and-half:	"Greenwich Mean Time + 3.5 hours";
+ii.*.tz.gmt3:			"gmt/gmt3";
+ii.*.setup.*.gmt3:		"Greenwich Mean Time + 3 hours";
+ii.*.tz.gmt4:			"gmt/gmt4";
+ii.*.setup.*.gmt4:		"Greenwich Mean Time + 4 hours";
+ii.*.tz.gmt5:			"gmt/gmt5";
+ii.*.setup.*.gmt5:		"Greenwich Mean Time + 5 hours";
+ii.*.tz.gmt5-and-half:		"gmt/gmt5half";
+ii.*.setup.*.gmt5-and-half: 	"Greenwich Mean Time + 5.5 hours";
+ii.*.tz.gmt6:			"gmt/gmt6";
+ii.*.setup.*.gmt6:		"Greenwich Mean Time + 6 hours";
+ii.*.tz.gmt7: 			"gmt/gmt7";
+ii.*.setup.*.gmt7:		"Greenwich Mean Time + 7 hours";
+ii.*.tz.gmt8: 			"gmt/gmt8";
+ii.*.setup.*.gmt8:		"Greenwich Mean Time + 8 hours";
+ii.*.tz.gmt9: 			"gmt/gmt9";
+ii.*.setup.*.gmt9:		"Greenwich Mean Time + 9 hours";
+ii.*.tz.gmt9-and-half: 		"gmt/gmt9half";
+ii.*.setup.*.gmt9-and-half: 	"Greenwich Mean Time + 9.5 hours";
+ii.*.tz.gmt10:			"gmt/gmt10";
+ii.*.setup.*.gmt10:		"Greenwich Mean Time + 10 hours";
+ii.*.tz.gmt10-and-half:		"gmt/gmt10half";
+ii.*.setup.*.gmt10-and-half:	"Greenwich Mean Time + 10.5 hours";
+ii.*.tz.gmt11:			"gmt/gmt11";
+ii.*.setup.*.gmt11:		"Greenwich Mean Time + 11 hours";
+ii.*.tz.gmt12:			"gmt/gmt12";
+ii.*.setup.*.gmt12:		"Greenwich Mean Time + 12 hours";
+ii.*.tz.gmt13:			"gmt/gmt13";
+ii.*.setup.*.gmt13:		"Greenwich Mean Time + 13 hours";
+ii.*.tz.gmt-720m:		"gmt/gmt-12";
+ii.*.tz.gmt-660m:		"gmt/gmt-11";
+ii.*.tz.gmt-600m:		"gmt/gmt-10";
+ii.*.tz.gmt-540m:		"gmt/gmt-9";
+ii.*.tz.gmt-480m:		"gmt/gmt-8";
+ii.*.tz.gmt-420m:		"gmt/gmt-7";
+ii.*.tz.gmt-360m:		"gmt/gmt-6";
+ii.*.tz.gmt-300m:		"gmt/gmt-5";
+ii.*.tz.gmt-240m:		"gmt/gmt-4";
+ii.*.tz.gmt-210m:		"gmt/gmt-3half";
+ii.*.tz.gmt-180m:		"gmt/gmt-3";
+ii.*.tz.gmt-150m:		"gmt/gmt-2half";
+ii.*.tz.gmt-120m:		"gmt/gmt-2";
+ii.*.tz.gmt-60m:		"gmt/gmt-1";
+ii.*.tz.gmt60m:			"gmt/gmt1";
+ii.*.tz.gmt120m:		"gmt/gmt2";
+ii.*.tz.gmt180m:		"gmt/gmt3";
+ii.*.tz.gmt220m:		"gmt/gmt3half";
+ii.*.tz.gmt240m:		"gmt/gmt4";
+ii.*.tz.gmt300m:		"gmt/gmt5";
+ii.*.tz.gmt330m:		"gmt/gmt5half";
+ii.*.tz.gmt360m:		"gmt/gmt6";
+ii.*.tz.gmt420m:		"gmt/gmt7";
+ii.*.tz.gmt480m:		"gmt/gmt8";
+ii.*.tz.gmt540m:		"gmt/gmt9";
+ii.*.tz.gmt570m:		"gmt/gmt9half";
+ii.*.tz.gmt600m:		"gmt/gmt10";
+ii.*.tz.gmt630m:		"gmt/gmt10half";
+ii.*.tz.gmt660m:		"gmt/gmt11";
+ii.*.tz.gmt720m:		"gmt/gmt12";
+ii.*.tz.gmt780m:		"gmt/gmt13";
+ii.*.tz.iigmt:			"gmt/gmt";

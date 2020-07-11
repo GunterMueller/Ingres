@@ -1,0 +1,8 @@
+PART library
+   DIRECTORY ingres!utility
+   BUILD_DIR (ING_BUILD)!utility
+      SCRIPT SETUP iisulib
+   DIRECTORY ingres!lib
+   BUILD_DIR (ING_BUILD)!lib
+      FILE libingres.a
+         DYNAMIC

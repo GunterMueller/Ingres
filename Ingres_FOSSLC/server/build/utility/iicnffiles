@@ -1,0 +1,41 @@
+#!/bin/bash
+#
+#  Copyright (c) 2004 Ingres Corporation
+#
+#  Name: iicnffiles -- setup script for Ingres setup files
+#
+#  Usage:
+#	iicnffiles
+#
+#  Description:
+#	This script should be called only by the Ingres installation
+#	utility.  It creates the Ingres setup files, symbol.tbl and
+#	config.dat, if no other setup takes place during install. 
+#
+#  Exit Status:
+#	0	setup procedure completed.
+#	1	setup procedure did not complete.
+#
+#  PROGRAM = iicnffiles
+#
+#  DEST = utility
+#----------------------------------------------------------------------------
+
+echo "Creating the Ingres setup files..."
+
+. iisysdep
+
+. iishlib
+
+iisulock "Ingres create setup files" || exit 1
+
+stat=1	# set the default exit status
+
+trap 'rm -f $II_SYSTEM/ingres/files/config.lck 1>/dev/null \
+   2>/dev/null; exit $stat' 0 1 2 3 15
+
+touch_files # make sure symbol.tbl and config.dat exist
+
+stat=0
+exit 0
+

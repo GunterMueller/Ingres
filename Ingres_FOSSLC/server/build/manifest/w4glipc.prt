@@ -1,0 +1,7 @@
+PART   w4glipcdemo
+   BUILD_DIR (ING_BUILD)!sig!w4glipc
+   DIRECTORY ingres!sig!w4glipc
+      FILE ipcdemo.app
+      FILE ipcdemo.sql
+      FILE read.me
+      FILE xdbevent.sc

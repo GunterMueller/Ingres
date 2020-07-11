@@ -1,0 +1,16 @@
+PART	vcsha
+   DIRECTORY opt!VRTSvcs!bin!Ingres
+   BUILD_DIR (ING_BUILD)!opt!VRTSvcs!bin!Ingres
+	EXECUTABLE IngresAgent
+	SCRIPT ingres_server_manager
+	SCRIPT online
+	SCRIPT clean
+	SCRIPT monitor
+	SCRIPT envfile
+	SCRIPT offline
+   DIRECTORY etc!VRTSvcs!Templates
+   BUILD_DIR (ING_BUILD)!etc!VRTSvcs!Templates
+	FILE IngresGroup.tf
+   DIRECTORY etc!VRTSvcs!conf!config
+   BUILD_DIR (ING_BUILD)!etc!VRTSvcs!conf!config
+	FILE IngresTypes.cf

@@ -1,0 +1,7 @@
+PART   upgradedb
+   BUILD_DIR (ING_BUILD)!bin
+   DIRECTORY ingres!bin
+   {
+      PERMISSION s:rwed,o:rwed,g:re,w:re
+      EXECUTABLE upgradedb
+   }

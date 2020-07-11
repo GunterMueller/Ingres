@@ -1,0 +1,558 @@
+--
+--  Copyright (c) 1992, 2008 Ingres Corporation 
+--
+--
+--  This file contains the configuration rules for the INGRES/DBMS.
+--
+-- location setup resources
+ii.*.setup.ii_checkpoint:	"echo \"$II_SYSTEM\"";
+ii.*.setup.ii_journal:		"ingprenv II_CHECKPOINT";
+ii.*.setup.ii_dump:		"ingprenv II_CHECKPOINT";
+ii.*.setup.ii_work:		"echo \"$II_SYSTEM\"";
+ii.*.setup.ii_log_file:		"ingprenv II_CHECKPOINT";
+ii.*.setup.ii_dual_log:		"ingprenv II_DATABASE";
+ii.*.config.server_host:	`iipmhost`;
+ii.$.config.cluster_mode:	OFF;
+ii.$.config.cluster.numa:	OFF;
+ii.$.config.date_alias: 	"INGRESDATE";
+-- start-up resources 
+ii.$.ingstart.$.dbms:		1;
+ii.$.ingstart.$.rmcmd:		1, MAX = 1;
+-- recovery resources
+ii.$.recovery.$.active_limit:	ii.$.recovery.$.connect_limit;
+ii.$.recovery.$.database_limit:	ii.$.rcp.log.database_limit;
+ii.$.recovery.$.event_limit:	0, VALID = { 0 };
+ii.$.recovery.$.name_service:	ON;
+ii.$.recovery.$.stack_size:	128K, MIN = 128K;
+ii.$.recovery.$.connect_limit:	5, MIN = 5;
+ii.$.recovery.$.log_writer:	1, MIN = 1;
+ii.$.recovery.$.cp_timer:	0;
+ii.$.recovery.$.dmcm:           IF ( ii.$.dbms.$.dmcm == ON )
+                                        ON
+                                ELSE
+                                        OFF
+                                ENDIF;
+ii.$.recovery.$.async_io:	 OFF;
+ii.$.recovery.$.direct_io:	 OFF;
+ii.$.recovery.$.di_zero_bufsize: 1M, MIN = 32K, MAX=2048M;
+ii.$.recovery.$.fd_affinity: 	 UNDEFINED;
+ii.$.recovery.$.gather_write:	 OFF;
+-- dbms resources 
+ii.$.dbms.$.max_tuple_length:	2008, MIN = 0, MAX = 32767;
+ii.$.dbms.$.default_page_size:	8192, POWER2, MIN = 2048, MAX = 65536;
+ii.$.dbms.$.blob_etab_page_size: 2048, VALID={65536,32768,16384,8192,4096,2048,0};
+ii.$.dbms.$.blob_etab_structure: "BTREE", VALID={ "BTREE", "HASH", "ISAM" };
+ii.$.dbms.$.active_limit:	ii.$.dbms.$.connect_limit;
+ii.$.dbms.$.ambig_replace_64compat:
+				IF ( ii.$.fixed_prefs.iso_entry_sql-92 == ON )
+					OFF
+				ELSE
+					OFF	
+				ENDIF;
+ii.$.dbms.$.core_enabled:	ON;	
+ii.$.dbms.$.cache_dynamic:	OFF;
+ii.$.dbms.$.cache_lock:		OFF;	
+ii.$.dbms.$.cache_name:		"cach_def";
+ii.$.dbms.$.cache_sharing: 	IF ( ( SUM( ii.$.ingstart.%.dbms ) > 1 )) 
+					ON
+				ELSE 
+					OFF
+				ENDIF;
+ii.$.dbms.$.connect_limit: 	32, MIN = 5, MAX = 10000;
+ii.$.dbms.$.cpu_statistics: 	IF ( ii.$.dbms.$.session_accounting == ON )
+					ON
+				ELSE
+					OFF
+				ENDIF;
+ii.$.dbms.$.cursor_limit: 	16;
+ii.$.dbms.$.cursor_update_mode:	IF ( ii.$.fixed_prefs.iso_entry_sql-92 == ON )
+					"DIRECT"
+				ELSE
+					"DEFERRED"	
+				ENDIF, VALID = { "DEFERRED", "DIRECT" };
+ii.$.dbms.$.cursor_default_open:    "UPDATE" , VALID = { "UPDATE", "READONLY" };
+ii.$.dbms.$.database_limit: 	ii.$.dbms.$.connect_limit + 1, MIN = 10;
+ii.$.dbms.$.database_list:	"";	
+ii.$.dbms.$.default_journaling:	ON;	
+ii.$.dbms.$.define_address:	IF ( ii.$.dbms.$.name_service == OFF )
+					ON
+				ELSE
+					OFF
+				ENDIF;
+-- ii.$.dbms.$.detach_process:	ON;
+ii.$.dbms.$.dmf_int_sort_size:	512K, MIN=100K;
+ii.$.dbms.$.dmf_tbl_cache_size: 40;
+ii.$.dbms.$.dmf_db_cache_size:	40;
+ii.$.dbms.$.dmf_tcb_limit:	5000, MIN=250;
+ii.$.dbms.$.event_limit:        80; 
+ii.$.dbms.$.event_priority:	8,
+				MIN = 1, MAX = 14;
+ii.$.dbms.$.dmcm:               IF ( ii.$.config.cluster_mode == ON ||
+                                     ii.$.config.cluster.numa == ON )
+                                    ON
+                                ELSE
+                                    OFF
+                                ENDIF;
+ii.$.dbms.$.fast_commit:	IF ( ( SUM( ii.$.ingstart.%.dbms ) > 1 
+					|| ii.$.config.cluster_mode == ON )
+				     && ( ii.$.dbms.$.cache_sharing == OFF )
+				     && ( ii.$.dbms.$.dmcm == OFF )
+				 )
+					OFF
+				ELSE 
+					ON
+				ENDIF;
+ii.$.dbms.$.gc_interval:	20;
+ii.$.dbms.$.gc_num_ticks:	5;
+ii.$.dbms.$.gc_threshold:	1;
+ii.$.dbms.$.hex_session_ids:	OFF;
+ii.$.dbms.$.image_name:		"iidbms";
+ii.$.dbms.$.async_io:		OFF;
+ii.$.dbms.$.direct_io:	 	OFF;
+ii.$.dbms.$.di_zero_bufsize:	1M, MIN = 32K, MAX=2048M;
+ii.$.dbms.$.fd_affinity: 	"THREAD", VALID = {"THREAD","FILE"};
+ii.$.dbms.$.gather_write:	ON;
+ii.$.dbms.$.log_readnolock:     OFF;
+ii.$.dbms.$.log_writer:		1 + ((ii.$.rcp.log.buffer_count / 7) *
+				 ii.$.rcp.log.log_file_parts) /
+				SUM( ii.$.ingstart.%.dbms ),
+				MIN = 0;
+ii.$.dbms.$.log_esc_lpr_sc:   OFF;
+ii.$.dbms.$.log_esc_lpr_ut:   OFF;
+ii.$.dbms.$.log_esc_lpt_sc:   OFF;
+ii.$.dbms.$.log_esc_lpt_ut:   OFF;
+ii.$.dbms.$.opf_active_limit:	0.2 * ii.$.dbms.$.connect_limit,
+				MIN = 1, MAX = ii.$.dbms.$.connect_limit;
+ii.$.dbms.$.opf_memory:		10M + (256K * ii.$.dbms.$.opf_active_limit),
+				MIN = 1M, SIZETYPE;
+ii.$.dbms.$.opf_timeout_factor: 10, MIN = 1, MAX = 100;
+ii.$.dbms.$.opf_joinop_timeout: 0, MIN = 0;
+ii.$.dbms.$.opf_timeout_abort:  0, MIN = 0;
+ii.$.dbms.$.opf_old_jcard:	OFF;
+ii.$.dbms.$.opf_old_cnf:	OFF;
+ii.$.dbms.$.opf_old_idxorder:	OFF;
+ii.$.dbms.$.opf_one_rel_opt:	OFF;
+ii.$.dbms.$.opf_old_subsel:	OFF;
+ii.$.dbms.$.opf_pq_dop:		8, MIN = 0;
+ii.$.dbms.$.opf_pq_threshold:	1000;
+ii.$.dbms.$.opf_pq_partthreads:	8, MIN = 0;
+ii.$.dbms.$.opf_maxmemf:	50, MIN = 1, MAX = 100; 
+ii.$.dbms.$.opf_stats_nostats_max:	OFF;
+ii.$.dbms.$.opf_stats_nostats_factor:	1.0, DECIMAL;
+ii.$.dbms.$.opf_hash_join:	ON;
+ii.$.dbms.$.name_service: 	ON;
+ii.$.dbms.$.psf_vch_prec:	OFF;
+ii.$.dbms.$.psf_maxmemf:	50, MIN = 1, MAX = 100;
+ii.$.dbms.$.psf_memory:		(2M * (100/ii.$.dbms.$.psf_maxmemf)) + (50K * ii.$.dbms.$.connect_limit),
+				MIN = 512K, SIZETYPE;
+ii.$.dbms.$.pindex_bsize:	5000, MIN = 100;
+ii.$.dbms.$.pindex_nbuffers:	3, MIN = 2;
+ii.$.dbms.$.psort_bsize:	1000, MIN = 100;
+ii.$.dbms.$.psort_nthreads:	2;
+ii.$.dbms.$.psort_rows:		10000;
+ii.$.dbms.$.qef_dsh_memory:	16000 * ii.$.dbms.$.connect_limit * ii.$.dbms.$.cursor_limit,
+				MIN = 2M, SIZETYPE;
+ii.$.dbms.$.qef_hash_mem:	20M;
+ii.$.dbms.$.qef_max_mem_sleep:	30, MIN = 0, MAX = 3600;
+ii.$.dbms.$.qef_no_dependency_chk:   OFF;
+ii.$.dbms.$.qef_sort_mem:	1M, MIN = 64K;
+ii.$.dbms.$.qef_sorthash_memory: (ii.$.dbms.$.connect_limit * ii.$.dbms.$.qef_sort_mem) +
+				((ii.$.dbms.$.connect_limit+5)/10 * ii.$.dbms.$.qef_hash_mem),
+				MIN = ii.$.dbms.$.qef_hash_mem + ii.$.dbms.$.qef_sort_mem, SIZETYPE;
+ii.$.dbms.$.query_flattening:	ON;
+ii.$.dbms.$.qflatten_aggregate:	IF ( ii.$.dbms.$.query_flattening == ON )
+					ON
+				ELSE
+					OFF
+				ENDIF;
+ii.$.dbms.$.qflatten_singleton:	IF ( ii.$.dbms.$.query_flattening == OFF ||
+					ii.$.fixed_prefs.iso_entry_sql-92 == ON
+				)
+					OFF
+				ELSE
+					ON
+				ENDIF;
+ii.$.dbms.$.quantum_size: 	1000;
+ii.$.dbms.$.qsf_guideline:	"medium",
+				VALID = {"small","medium","large","huge"};
+ii.$.dbms.$.qsf_memory:		IF ( ii.$.dbms.$.qsf_guideline IS "small" )
+				    5M
+				ELSEIF (ii.$.dbms.$.qsf_guideline IS "medium")
+				    25M
+				ELSEIF (ii.$.dbms.$.qsf_guideline IS "large")
+				    100M
+				ELSE
+				    250M
+				ENDIF, MIN = 2M, SIZETYPE;
+ii.$.dbms.$.rdf_col_defaults: 	50;
+ii.$.dbms.$.rdf_max_tbls:	400;
+ii.$.dbms.$.rdf_memory:		5M + (15K * ii.$.dbms.$.rdf_max_tbls +
+					2K * ii.$.dbms.$.rdf_col_defaults),
+				MIN = 512K, SIZETYPE;
+ii.$.dbms.$.rdf_tbl_synonyms: 	50;
+ii.$.dbms.$.rep_dq_lockmode:	"page", VALID = {"row","page","table"};
+ii.$.dbms.$.rep_dt_maxlocks:	0;
+ii.$.dbms.$.rep_iq_lockmode:	"user", VALID = {"row","page","table","user"};
+ii.$.dbms.$.rep_qman_threads: 	1;
+ii.$.dbms.$.rep_sa_lockmode:	"user", VALID = {"row","page","table","user"};
+ii.$.dbms.$.rep_txq_size: 	50;
+ii.$.dbms.$.result_structure:	"heap", VALID = {"heap", "cheap", "isam",
+					"cisam", "hash", "chash", "btree",
+					"cbtree", "heapsort", "cheapsort"};
+ii.$.dbms.$.rule_del_prefetch:	ON;
+ii.$.dbms.$.rule_depth:		20;
+ii.$.dbms.$.rule_upd_prefetch:  ON;
+ii.$.dbms.$.session_check_interval:  30, MIN=0;
+ii.$.dbms.$.server_class:	"INGRES";
+-- size_io_buf = slave transfer buffer, only interesting with internal threads
+ii.$.dbms.$.size_io_buf:	32K;
+ii.$.dbms.$.stack_caching:	OFF;
+ii.$.dbms.$.stack_size:		150K, MIN = 128K;
+ii.$.dbms.$.scf_rows:		20;
+ii.$.dbms.$.session_accounting:	OFF;
+ii.$.dbms.$.sole_server:	IF ( ii.$.dbms.$.cache_sharing == ON 
+				 || ii.$.config.cluster_mode == ON 
+                                 || ii.$.config.cluster.numa == ON
+				 || ii.$.dbms.$.dmcm == ON) 
+					OFF
+				ELSE
+					ON
+				ENDIF;
+--ii.$.dbms.$.sxf_memory:		10000 * ii.$.dbms.$.connect_limit + 10000,
+--					MIN = 10000;
+--ii.$.dbms.$.sxf_memory:		10000 + 5K * ii.$.dbms.$.audit_session_limit +
+--					2K * ii.$.dbms.$.audit_session_limit *
+--					ii.$.dbms.$.audit_log_limit;
+ii.$.dbms.$.system_isolation:   "serializable", 
+					VALID = { "read_uncommitted", 
+					"read_committed", 
+					"repeatable_read", 
+					"serializable" };
+ii.$.dbms.$.system_lock_level:   "default", VALID ={"table","row","page","default" }; 
+ii.$.dbms.$.system_maxlocks:    50, MIN = 10;
+ii.$.dbms.$.system_readlock:    "shared", VALID ={"nolock","exclusive","shared"};
+ii.$.dbms.$.system_timeout:     0, MIN = -1, SIGNED_INT;
+ii.$.dbms.$.table_auto_structure: OFF;
+ii.$.dbms.$.vch_compression:	ON;
+ii.$.dbms.$.ulm_chunk_size:	512K, MIN=128K, MAX = 8M;
+ii.$.dbms.$.unix_maximum_working_set: UNDEFINED;
+ii.$.dbms.$.unix_priority:	0, MIN = -19, MAX = 20;
+-- sum of all connect_limit values of all DBMS servers configured for
+-- start-up
+ii.$.dbms.connect_sum:		`iiresutl -dbms_sum`,
+					REQUIRES ii.$.ingstart.%.dbms,
+					REQUIRES ii.$.dbms.%.connect_limit;
+-- maximum connect_limit of all DBMS servers configured for start-up
+ii.$.dbms.connect_max:		`iiresutl -dbms_max`,
+					REQUIRES ii.$.dbms.%.connect_limit,
+					REQUIRES ii.$.ingstart.%.dbms;
+-- required for syscheck rules before Star is installed 
+ii.$.star.connect_max:		0;
+-- shareable dbms (dmf) cache resources 
+ii.$.dbms.$.$.config.dmf_connect: 32;
+--
+-- ii.$.dbms.$.$.config.dmf_connect dependencies are handled as a
+-- special-case by the configuration rule inference engine.  When
+-- ii.$.dbms.%.connect is changed, the appropriate instance
+-- of ii.$.dbms.$.$.dmf_connect is modified as necessary and its
+-- derived resources are recomputed.
+--
+-- Cache guideline
+ii.$.dbms.$.$.cache.p2k_status:     ON;
+ii.$.dbms.$.$.cache_guideline:	"medium",
+				VALID = {"small","medium","large","huge"};
+ii.$.dbms.$.$.dmf_write_behind: ON;
+ii.$.dbms.$.$.dmf_cache_size:	IF (ii.$.dbms.$.$.cache_guideline IS "small")
+					2500
+				ELSEIF (ii.$.dbms.$.$.cache_guideline IS "medium")
+					10000
+				ELSEIF (ii.$.dbms.$.$.cache_guideline IS "large")
+					25000
+				ELSE
+					50000
+				ENDIF, MIN = 500;
+ii.$.dbms.$.$.dmf_free_limit:	ii.$.dbms.$.$.dmf_cache_size / 32;	
+ii.$.dbms.$.$.dmf_group_count:	IF (ii.$.dbms.$.$.cache_guideline IS "small")
+					300
+				ELSEIF (ii.$.dbms.$.$.cache_guideline IS "medium")
+					1500
+				ELSEIF (ii.$.dbms.$.$.cache_guideline IS "large")
+					3750
+				ELSE
+					7500
+				ENDIF, MIN = 0;
+ii.$.dbms.$.$.dmf_group_size:	8, MIN = 8;
+ii.$.dbms.$.$.dmf_modify_limit:	0.75 * ii.$.dbms.$.$.dmf_cache_size, MIN = 10;
+ii.$.dbms.$.$.dmf_wb_start:	0.5 * ii.$.dbms.$.$.dmf_cache_size,
+				MIN = 10,
+				MAX = ii.$.dbms.$.$.dmf_cache_size - ii.$.dbms.$.$.dmf_free_limit;
+ii.$.dbms.$.$.dmf_wb_end:	0.6 * ii.$.dbms.$.$.dmf_wb_start,
+				MAX = ii.$.dbms.$.$.dmf_wb_start - 1;
+ii.$.dbms.$.$.dmf_memory:	2K * (ii.$.dbms.$.$.dmf_group_count *
+					ii.$.dbms.$.$.dmf_group_size +
+					ii.$.dbms.$.$.dmf_cache_size);
+ii.$.dbms.$.$.cache.p4k_status:     OFF;
+ii.$.dbms.$.$.p4k.cache_guideline:	"medium",
+				VALID = {"small","medium","large","huge"};
+ii.$.dbms.$.$.p4k.dmf_write_behind: ON;
+ii.$.dbms.$.$.p4k.dmf_cache_size:  IF (ii.$.dbms.$.$.p4k.cache_guideline IS "small")
+					2500
+				ELSEIF (ii.$.dbms.$.$.p4k.cache_guideline IS "medium")
+					7500
+				ELSEIF (ii.$.dbms.$.$.p4k.cache_guideline IS "large")
+					18750
+				ELSE
+					37500
+				ENDIF, MIN = 200;
+ii.$.dbms.$.$.p4k.dmf_free_limit:   ii.$.dbms.$.$.p4k.dmf_cache_size/32;	
+ii.$.dbms.$.$.p4k.dmf_group_count:  IF (ii.$.dbms.$.$.p4k.cache_guideline IS "small")
+					250
+				ELSEIF (ii.$.dbms.$.$.p4k.cache_guideline IS "medium")
+					900
+				ELSEIF (ii.$.dbms.$.$.p4k.cache_guideline IS "large")
+					2350
+				ELSE
+					4700
+				ENDIF, MIN = 0;
+ii.$.dbms.$.$.p4k.dmf_group_size:   8, MIN = 8;
+ii.$.dbms.$.$.p4k.dmf_modify_limit: 0.75 * ii.$.dbms.$.$.p4k.dmf_cache_size, MIN = 10;
+ii.$.dbms.$.$.p4k.dmf_wb_start:	0.5 * ii.$.dbms.$.$.p4k.dmf_cache_size,
+				MIN = 10,
+				MAX = ii.$.dbms.$.$.p4k.dmf_cache_size - ii.$.dbms.$.$.p4k.dmf_free_limit;
+ii.$.dbms.$.$.p4k.dmf_wb_end:	0.6 * ii.$.dbms.$.$.p4k.dmf_wb_start,
+				MAX = ii.$.dbms.$.$.p4k.dmf_wb_start - 1;
+ii.$.dbms.$.$.p4k.dmf_memory: 	    4K * (ii.$.dbms.$.$.p4k.dmf_group_count *
+					ii.$.dbms.$.$.p4k.dmf_group_size +
+					ii.$.dbms.$.$.p4k.dmf_cache_size);
+ii.$.dbms.$.$.p4k.dmf_separate:	    OFF;
+ii.$.dbms.$.$.cache.p8k_status:	    ON;
+ii.$.dbms.$.$.p8k.cache_guideline:	"medium",
+				VALID = {"small","medium","large","huge"};
+ii.$.dbms.$.$.p8k.dmf_write_behind: ON;
+ii.$.dbms.$.$.p8k.dmf_cache_size:  IF (ii.$.dbms.$.$.p8k.cache_guideline IS "small")
+					2000
+				ELSEIF (ii.$.dbms.$.$.p8k.cache_guideline IS "medium")
+					6000
+				ELSEIF (ii.$.dbms.$.$.p8k.cache_guideline IS "large")
+					15000
+				ELSE
+					30000
+				ENDIF, MIN = 150;
+ii.$.dbms.$.$.p8k.dmf_free_limit:   ii.$.dbms.$.$.p8k.dmf_cache_size / 32;
+ii.$.dbms.$.$.p8k.dmf_group_count:  IF (ii.$.dbms.$.$.p8k.cache_guideline IS "small")
+					250
+				ELSEIF (ii.$.dbms.$.$.p8k.cache_guideline IS "medium")
+					750
+				ELSEIF (ii.$.dbms.$.$.p8k.cache_guideline IS "large")
+					1850
+				ELSE
+					3700
+				ENDIF, MIN = 0;
+ii.$.dbms.$.$.p8k.dmf_group_size:   8, MIN = 8;
+ii.$.dbms.$.$.p8k.dmf_modify_limit: 0.75 * ii.$.dbms.$.$.p8k.dmf_cache_size, MIN = 10;
+ii.$.dbms.$.$.p8k.dmf_wb_start:	0.5 * ii.$.dbms.$.$.p8k.dmf_cache_size,
+				MIN = 10,
+				MAX = ii.$.dbms.$.$.p8k.dmf_cache_size - ii.$.dbms.$.$.p8k.dmf_free_limit;
+ii.$.dbms.$.$.p8k.dmf_wb_end:	0.6 * ii.$.dbms.$.$.p8k.dmf_wb_start,
+				MAX = ii.$.dbms.$.$.p8k.dmf_wb_start - 1;
+ii.$.dbms.$.$.p8k.dmf_memory:	    8K * (ii.$.dbms.$.$.p8k.dmf_group_count *
+                                        ii.$.dbms.$.$.p8k.dmf_group_size +
+                                        ii.$.dbms.$.$.p8k.dmf_cache_size);
+ii.$.dbms.$.$.p8k.dmf_separate:	    OFF;
+ii.$.dbms.$.$.cache.p16k_status:    OFF;
+ii.$.dbms.$.$.p16k.cache_guideline:	"medium",
+				VALID = {"small","medium","large","huge"};
+ii.$.dbms.$.$.p16k.dmf_write_behind: ON;
+ii.$.dbms.$.$.p16k.dmf_cache_size:  IF (ii.$.dbms.$.$.p16k.cache_guideline IS "small")
+					800
+				ELSEIF (ii.$.dbms.$.$.p16k.cache_guideline IS "medium")
+					3000
+				ELSEIF (ii.$.dbms.$.$.p16k.cache_guideline IS "large")
+					6000
+				ELSE
+					12000
+				ENDIF, MIN = 100;
+ii.$.dbms.$.$.p16k.dmf_free_limit:  ii.$.dbms.$.$.p16k.dmf_cache_size / 32;
+ii.$.dbms.$.$.p16k.dmf_group_count:  IF (ii.$.dbms.$.$.p16k.cache_guideline IS "small")
+					100
+				ELSEIF (ii.$.dbms.$.$.p16k.cache_guideline IS "medium")
+					375
+				ELSEIF (ii.$.dbms.$.$.p16k.cache_guideline IS "large")
+					750
+				ELSE
+					1500
+				ENDIF, MIN = 0;
+ii.$.dbms.$.$.p16k.dmf_group_size:  8, MIN = 8;
+ii.$.dbms.$.$.p16k.dmf_modify_limit:0.75 * ii.$.dbms.$.$.p16k.dmf_cache_size, MIN = 10;
+ii.$.dbms.$.$.p16k.dmf_wb_start:  0.5 * ii.$.dbms.$.$.p16k.dmf_cache_size,
+				MIN = 10,
+				  MAX = ii.$.dbms.$.$.p16k.dmf_cache_size - ii.$.dbms.$.$.p16k.dmf_free_limit;
+ii.$.dbms.$.$.p16k.dmf_wb_end:	0.6 * ii.$.dbms.$.$.p16k.dmf_wb_start,
+				MAX = ii.$.dbms.$.$.p16k.dmf_wb_start - 1;
+ii.$.dbms.$.$.p16k.dmf_memory:      16K * (ii.$.dbms.$.$.p16k.dmf_group_count * 
+					ii.$.dbms.$.$.p16k.dmf_group_size + 
+					ii.$.dbms.$.$.p16k.dmf_cache_size);
+ii.$.dbms.$.$.p16k.dmf_separate:    OFF;
+ii.$.dbms.$.$.cache.p32k_status:    OFF;
+ii.$.dbms.$.$.p32k.cache_guideline:	"medium",
+				VALID = {"small","medium","large","huge"};
+ii.$.dbms.$.$.p32k.dmf_write_behind: ON;
+ii.$.dbms.$.$.p32k.dmf_cache_size:  IF (ii.$.dbms.$.$.p32k.cache_guideline IS "small")
+					375
+				ELSEIF (ii.$.dbms.$.$.p32k.cache_guideline IS "medium")
+					1500
+				ELSEIF (ii.$.dbms.$.$.p32k.cache_guideline IS "large")
+					2500
+				ELSE
+					5000
+				ENDIF, MIN = 75;
+ii.$.dbms.$.$.p32k.dmf_free_limit:  ii.$.dbms.$.$.p32k.dmf_cache_size / 32;
+ii.$.dbms.$.$.p32k.dmf_group_count:  IF (ii.$.dbms.$.$.p32k.cache_guideline IS "small")
+					45
+				ELSEIF (ii.$.dbms.$.$.p32k.cache_guideline IS "medium")
+					150
+				ELSEIF (ii.$.dbms.$.$.p32k.cache_guideline IS "large")
+					300
+				ELSE
+					600
+				ENDIF, MIN = 0;
+ii.$.dbms.$.$.p32k.dmf_group_size:  8, MIN = 8;
+ii.$.dbms.$.$.p32k.dmf_modify_limit:0.75 * ii.$.dbms.$.$.p32k.dmf_cache_size, MIN = 10;
+ii.$.dbms.$.$.p32k.dmf_wb_start:  0.5 * ii.$.dbms.$.$.p32k.dmf_cache_size,
+				MIN = 10,
+				  MAX = ii.$.dbms.$.$.p32k.dmf_cache_size - ii.$.dbms.$.$.p32k.dmf_free_limit;
+ii.$.dbms.$.$.p32k.dmf_wb_end:	0.6 * ii.$.dbms.$.$.p32k.dmf_wb_start,
+				MAX = ii.$.dbms.$.$.p32k.dmf_wb_start - 1;
+ii.$.dbms.$.$.p32k.dmf_memory:      32K * (ii.$.dbms.$.$.p32k.dmf_group_count * 
+					ii.$.dbms.$.$.p32k.dmf_group_size + 
+					ii.$.dbms.$.$.p32k.dmf_cache_size);
+ii.$.dbms.$.$.p32k.dmf_separate:    OFF;
+ii.$.dbms.$.$.cache.p64k_status:    OFF;
+ii.$.dbms.$.$.p64k.cache_guideline:	"medium",
+				VALID = {"small","medium","large","huge"};
+ii.$.dbms.$.$.p64k.dmf_write_behind: ON;
+ii.$.dbms.$.$.p64k.dmf_cache_size:  IF (ii.$.dbms.$.$.p64k.cache_guideline IS "small")
+					175
+				ELSEIF (ii.$.dbms.$.$.p64k.cache_guideline IS "medium")
+					750
+				ELSEIF (ii.$.dbms.$.$.p64k.cache_guideline IS "large")
+					1200
+				ELSE
+					2400
+				ENDIF, MIN = 40;
+ii.$.dbms.$.$.p64k.dmf_free_limit:  ii.$.dbms.$.$.p64k.dmf_cache_size / 32;
+ii.$.dbms.$.$.p64k.dmf_group_count:  IF (ii.$.dbms.$.$.p64k.cache_guideline IS "small")
+					20
+				ELSEIF (ii.$.dbms.$.$.p64k.cache_guideline IS "medium")
+					50
+				ELSEIF (ii.$.dbms.$.$.p64k.cache_guideline IS "large")
+					100
+				ELSE
+					200
+				ENDIF, MIN = 0;
+ii.$.dbms.$.$.p64k.dmf_group_size:  8, MIN = 8;
+ii.$.dbms.$.$.p64k.dmf_modify_limit:0.75 * ii.$.dbms.$.$.p64k.dmf_cache_size, MIN = 10;
+ii.$.dbms.$.$.p64k.dmf_wb_start:  0.5 * ii.$.dbms.$.$.p64k.dmf_cache_size,
+				MIN = 10,
+				  MAX = ii.$.dbms.$.$.p64k.dmf_cache_size - ii.$.dbms.$.$.p64k.dmf_free_limit;
+ii.$.dbms.$.$.p64k.dmf_wb_end:	0.6 * ii.$.dbms.$.$.p64k.dmf_wb_start,
+				MAX = ii.$.dbms.$.$.p64k.dmf_wb_start - 1;
+ii.$.dbms.$.$.p64k.dmf_memory:      64K * (ii.$.dbms.$.$.p64k.dmf_group_count * 
+					ii.$.dbms.$.$.p64k.dmf_group_size + 
+					ii.$.dbms.$.$.p64k.dmf_cache_size);
+ii.$.dbms.$.$.p64k.dmf_separate:    OFF;
+-- rcp buffer cache parameters
+ii.$.rcp.dmf_cache_size:	IF ( ii.$.dbms.$.$.cache.p2k_status == ON )
+				    1000
+				ELSE
+				    0
+				ENDIF;
+ii.$.rcp.dmf_cache_size4k:	IF ( ii.$.dbms.$.$.cache.p4k_status == ON )
+				    200
+				ELSE
+				    0
+				ENDIF;
+ii.$.rcp.dmf_cache_size8k:	IF ( ii.$.dbms.$.$.cache.p8k_status == ON )
+				    200
+				ELSE
+				    0
+				ENDIF;
+ii.$.rcp.dmf_cache_size16k:	IF ( ii.$.dbms.$.$.cache.p16k_status == ON )
+				    200
+				ELSE
+				    0
+				ENDIF;
+ii.$.rcp.dmf_cache_size32k:	IF ( ii.$.dbms.$.$.cache.p32k_status == ON )
+				    200
+				ELSE
+				    0
+				ENDIF;
+ii.$.rcp.dmf_cache_size64k:	IF ( ii.$.dbms.$.$.cache.p64k_status == ON )
+				    200
+				ELSE
+				    0
+				ENDIF;
+-- rcp transaction log size 
+ii.$.rcp.file.kbytes:		256K, MIN = 32768; 
+ii.*.setup.rcp.file.mbytes:	256, MIN = 32; 
+-- Total logwriter threads across the installation
+ii.$.rcp.config.logwriter_sum:	`iiresutl -logwriter_sum`,
+					REQUIRES ii.$.dbms.%.log_writer,
+					REQUIRES ii.$.ingstart.%.dbms,
+					REQUIRES ii.$.recovery.%.log_writer;
+-- rcp logging parameters
+ii.$.rcp.log.archiver_interval: 1,
+                                MIN = 1,
+				MAX = ii.$.rcp.file.kbytes / (ii.$.rcp.log.cp_interval_mb * 1024) - 1;
+ii.$.rcp.log.archiver_refresh:	10, MIN = 1, MAX = 100;
+ii.$.rcp.log.block_size:	4, VALID = { 32, 16, 8, 4 };
+ii.$.rcp.log.buffer_count:	35, MIN = 35;
+ii.$.rcp.log.cp_interval:	((ii.$.rcp.log.cp_interval_mb * 1024) / ii.$.rcp.file.kbytes) * 100,
+				MIN = 1, MAX = 100, DECIMAL;
+ii.$.rcp.log.cp_interval_mb:	IF (ii.$.rcp.file.kbytes < 327680 )
+					(ii.$.rcp.file.kbytes * 0.12) / 1024
+				ELSE
+					40
+				ENDIF, MIN = 1, MAX = ii.$.rcp.file.kbytes / 4000;
+-- Limit default database-limit to 200
+ii.$.rcp.log.database_limit:	IF (ii.$.dbms.connect_sum < 200)
+					ii.$.dbms.connect_sum
+				ELSE
+					200
+				ENDIF, MIN = 10;
+ii.$.rcp.log.force_abort_limit:	0.8 * ii.$.rcp.log.full_limit,
+					MAX = ii.$.rcp.log.full_limit - 15; 
+ii.$.rcp.log.full_limit:	90, MIN = 80, MAX = 96;	
+ii.$.rcp.log.lgk_memory_lock:	OFF;
+ii.$.rcp.log.tx_limit:		4 * ii.$.dbms.connect_sum +
+					ii.$.rcp.config.logwriter_sum +
+					20 * SUM(ii.$.ingstart.%.dbms) +
+					ii.$.rcp.log.database_limit + 100,
+				MIN = ii.$.dbms.connect_sum + ii.$.rcp.config.logwriter_sum + 20;
+ii.$.rcp.log.log_file_parts:	1;
+ii.$.rcp.log.optimize_writes:	IF ( ii.$.rcp.log.log_file_parts == 1 )
+				    ON
+				ELSE
+				    UNDEFINED
+				ENDIF;
+-- rcp locking parameters
+ii.$.rcp.lock.lock_limit:	(ii.$.rcp.lock.per_tx_limit *
+				 ii.$.dbms.connect_sum) / 3 + 5000,
+				MIN = 3000, MAX = 2147483647;
+ii.$.rcp.lock.hash_size:	0.20 * ii.$.rcp.lock.lock_limit, PRIME; 
+ii.$.rcp.lock.list_limit:	ii.$.rcp.log.tx_limit;
+ii.$.rcp.lock.resource_hash:	ii.$.rcp.lock.hash_size;
+ii.$.rcp.lock.resource_limit:	ii.$.rcp.lock.lock_limit,
+					MAX = ii.$.rcp.lock.lock_limit;
+ii.$.rcp.lock.per_tx_limit:	750, MIN = 50;
+ii.$.syscheck.rcp_segment:     	`iircpseg`,
+					REQUIRES ii.$.rcp.log.block_size,
+					REQUIRES ii.$.rcp.log.buffer_count,
+					REQUIRES ii.$.rcp.log.database_limit,
+					REQUIRES ii.$.rcp.log.tx_limit,
+					REQUIRES ii.$.rcp.lock.hash_size,
+					REQUIRES ii.$.rcp.lock.lock_limit,
+					REQUIRES ii.$.rcp.lock.list_limit,
+					REQUIRES ii.$.rcp.lock.resource_limit,
+					REQUIRES ii.$.rcp.lock.resource_hash;
+ii.$.gcc.connect_max:		0;

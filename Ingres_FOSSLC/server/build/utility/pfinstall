@@ -1,0 +1,43 @@
+#!/bin/bash
+#  Copyright (c) 2004 Ingres Corporation 
+#  Name: pfinstall
+#
+#  Usage:
+#		wrapper for 'ingbuild' for patch installation
+#
+#
+#  DEST = utility
+#----------------------------------------------------------------------------
+usage () {
+echo "Usage $0 : <patchid> <device>"
+}
+GTAR=$II_SYSTEM/ingres/install/gtar
+
+if [ $# -lt 2 ]
+then
+	usage
+	exit 255
+fi
+
+proot=$II_SYSTEM/ingres/install/$1
+pdev=$2
+
+if [ ! -d $proot ]
+then
+	mkdir $proot
+fi
+
+cd $proot
+$GTAR -xpf $pdev install || 
+{
+	cat << !
+	Error unloading patch manifest from patch device
+!
+}
+
+II_MANIFEST_DIR=$proot/install
+II_DISTRIBUTION=$pdev
+export II_MANIFEST_DIR II_DISTRIBUTION
+$II_SYSTEM/ingres/install/ingbuild -patch || exit 255
+
+exit 0

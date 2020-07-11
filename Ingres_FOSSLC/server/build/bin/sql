@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# Copyright (c) 2004 Ingres Corporation
+#
+# Name:
+#	sql- wrapper to Terminal Monitor.
+#
+#  PROGRAM = sql
+# -----------------------------------------------------------------
+
+exec tm -qSQL "$@"

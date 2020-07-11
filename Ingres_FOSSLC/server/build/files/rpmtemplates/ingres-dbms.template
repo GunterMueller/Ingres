@@ -1,0 +1,61 @@
+%prep
+
+%pre
+# RPM install option for PIF
+# PIF_RPM_UPDATE_OPTION= --nodeps --replacefiles --replacepkgs
+#Set environment from RPM info
+[ -z "$RPM_INSTALL_PREFIX" ] && RPM_INSTALL_PREFIX=%prefix
+export II_SYSTEM=$RPM_INSTALL_PREFIX
+export rpm_vers=%rpm_version%
+
+# CA_DEPS is used by CA-CS Utils to determine ingres dependancies and 
+# should not be changed without consulting Unicenter development.
+CA_DEPS="%rpm_basename%-abf-EI %rpm_basename%-bridge-EI %rpm_basename%-c2audit-EI %rpm_basename%-das-EI %rpm_basename%-esql-EI %rpm_basename%-jdbc-EI %rpm_basename%-net-EI %rpm_basename%-odbc-EI %rpm_basename%-ome-EI %rpm_basename%-qr_run-EI %rpm_basename%-rep-EI %rpm_basename%-star-EI %rpm_basename%-tuxedo-EI %rpm_basename%-vision-EI"
+unset BASH_ENV
+
+rc=0 # initialize return code
+
+if [ $1 -gt 1  ] ; then
+    $II_SYSTEM/ingres/utility/iidbmspreinst \
+        -r %rpm_basename% -v %rpm_version%-%rpm_release% -u
+    rc=$?
+else
+    $II_SYSTEM/ingres/utility/iidbmspreinst \
+        -r %rpm_basename% -v %rpm_version%-%rpm_release%
+    rc=$?
+fi
+
+exit $rc
+
+%install
+
+%post
+#Set environment from RPM info
+[ -z "$RPM_INSTALL_PREFIX" ] && RPM_INSTALL_PREFIX=%prefix
+export II_SYSTEM=$RPM_INSTALL_PREFIX
+
+rc=0 # initialize return code
+
+$II_SYSTEM/ingres/utility/iigenpostinst -r %rpm_basename% \
+    -v %rpm_version%-%rpm_release% -p %pkg_name% %pkg_sulist%
+rc=$?
+
+exit $rc
+
+%preun
+[ -z "$RPM_INSTALL_PREFIX" ] && RPM_INSTALL_PREFIX=%prefix
+export II_SYSTEM=$RPM_INSTALL_PREFIX
+rc=0 # initialize return code
+
+# Check pre-un script is present, if it's not just exit
+[ -x $II_SYSTEM/ingres/utility/iigenpreun ] || exit 0
+if [ $1 = 0 ] ; then
+    $II_SYSTEM/ingres/utility/iigenpreun -r %rpm_basename% \
+        -v %rpm_version%-%rpm_release% -p %pkg_name% %pkg_sulist%
+    rc=$?
+fi
+
+exit $rc
+
+%files
+

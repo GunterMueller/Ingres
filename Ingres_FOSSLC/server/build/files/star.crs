@@ -1,0 +1,63 @@
+--
+-- Copyright (c) 1992, 2004 Ingres Corporation
+--
+-- This file contains the configuration rules for INGRES/Star.
+--
+ii.$.ingstart.$.star:		1;
+-- maximum connect_limit of all Star servers configured for start-up
+ii.$.star.connect_max:		`iiresutl -star_max`,
+					REQUIRES ii.$.star.%.connect_limit,
+					REQUIRES ii.$.ingstart.%.star;
+ii.$.star.$.active_limit:	ii.$.star.$.connect_limit;
+ii.$.star.$.connect_limit:	10, MIN = 2;
+ii.$.star.$.cpu_statistics:	OFF;
+ii.$.star.$.cursor_limit:	16;
+ii.$.star.$.distributed_recovery: ON;
+ii.$.star.$.max_tuple_length:	2008, MIN = 0, MAX = 32767;
+ii.$.star.$.image_name:		"iistar";
+ii.$.star.$.outbound_limit:	9 * ii.$.star.$.connect_limit + 14;
+ii.$.star.$.name_service:	ON;
+ii.$.star.$.opf_active_limit:	0.2 * ii.$.star.$.connect_limit,
+				MIN = 1, MAX = ii.$.star.$.connect_limit;
+ii.$.star.$.opf_hash_join:	OFF;
+ii.$.star.$.opf_memory:		6M + (256K * ii.$.star.$.opf_active_limit),
+				MIN = 1M, SIZETYPE;
+ii.$.star.$.opf_timeout_factor: 10, MIN = 1, MAX = 10;
+ii.$.star.$.opf_joinop_timeout: 0, MIN = 0;
+ii.$.star.$.opf_timeout_abort:  0, MIN = 0;
+ii.$.star.$.psf_memory:		2M + (50K * ii.$.star.$.connect_limit),
+				MIN = 512K, SIZETYPE;
+ii.$.star.$.qef_dsh_memory:	3000 * ii.$.star.$.connect_limit * ii.$.star.$.cursor_limit,
+				MIN = 1M, SIZETYPE;
+ii.$.star.$.qef_hash_mem:	4M, MIN = 256;
+ii.$.star.$.qef_sort_mem:	256K, MIN = 16K;
+ii.$.star.$.qef_sorthash_memory: (ii.$.star.$.connect_limit * ii.$.star.$.qef_sort_mem) +
+				(ii.$.star.$.connect_limit/5 * ii.$.star.$.qef_hash_mem),
+				MIN = ii.$.star.$.qef_sort_mem + ii.$.star.$.qef_hash_mem, 
+				SIZETYPE;
+ii.$.star.$.quantum_size: 	1000;
+ii.$.star.$.qsf_guideline:	"medium",
+				VALID = {"small","medium","large","huge"};
+ii.$.star.$.qsf_memory:		IF ( ii.$.star.$.qsf_guideline IS "small" )
+				    5M
+				ELSEIF (ii.$.star.$.qsf_guideline IS "medium")
+				    15
+				ELSEIF (ii.$.star.$.qsf_guideline IS "large")
+				    50
+				ELSE
+				    100M
+				ENDIF, MIN = 2M, SIZETYPE;
+ii.$.star.$.rdf_avg_ldbs:	5;
+ii.$.star.$.rdf_cache_ddbs:	ii.$.star.$.connect_limit;
+ii.$.star.$.rdf_col_defaults:	50;
+ii.$.star.$.rdf_max_tbls:	300;
+ii.$.star.$.rdf_memory:		5M + (15K * ii.$.star.$.rdf_max_tbls +
+					2K * ii.$.star.$.rdf_col_defaults),
+				MIN = 512K, SIZETYPE;
+ii.$.star.$.rdf_tbl_synonyms:	ii.$.star.$.rdf_max_tbls;
+ii.$.star.$.scf_rows:		20;
+ii.$.star.$.server_class:	"STAR";
+ii.$.star.$.session_accounting:	OFF;
+ii.$.star.$.stack_size:         150K, MIN = 128K;
+ii.$.star.$.unix_maximum_working_set: UNDEFINED;
+ii.$.star.$.unix_priority:	UNDEFINED;

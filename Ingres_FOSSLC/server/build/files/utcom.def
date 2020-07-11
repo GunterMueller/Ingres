@@ -1,0 +1,38 @@
+qc
+	cd `expr %I : '\(.*\)/' \| .`; %Eeqc -A %N.qc
+	cd `expr %I : '\(.*\)/' \| .`;if [ "`uname -m`" = "x86_64" ];then cc -m32 -c -O %N.c;else cc -c -O %N.c; fi
+	if [ %I.o != %O ];then mv %I.o %O;fi
+	rm %I.c
+sc
+	cd `expr %I : '\(.*\)/' \| .`; %Eesqlc %N.sc
+	cd `expr %I : '\(.*\)/' \| .`;if [ "`uname -m`" = "x86_64" ];then cc -m32 -c -O %N.c;else cc -c -O %N.c;fi
+	if [ %I.o != %O ];then mv %I.o %O;fi
+	rm %I.c
+cc
+	cd `expr %I : '\(.*\)/' \| .`;if [ "`uname -m`" = "x86_64" ];then CC -m32 -c -O  %F %N.cc;else CC -c -O  %F %N.cc;fi
+	if [ %I.o != %O ];then mv %I.o %O;fi
+c
+	cd `expr %I : '\(.*\)/' \| .`; if [ "`uname -m`" = "x86_64" ];then cc -m32 -c -O  %F %N.c;else cc -c -O  %F %N.c;fi
+	if [ %I.o != %O ];then mv %I.o %O;fi
+qf
+	cd `expr %I : '\(.*\)/' \| .`; %Eeqf %N.qf
+	cd `expr %I : '\(.*\)/' \| .`; f77 -c %N.f
+	if [ %I.o != %O ];then mv %I.o %O;fi
+	rm %I.f
+sf
+	cd `expr %I : '\(.*\)/' \| .`; %Eesqlf %N.sf
+	cd `expr %I : '\(.*\)/' \| .`; f77 -c %N.f
+	if [ %I.o != %O ];then mv %I.o %O;fi
+	rm %I.f
+f
+	cd `expr %I : '\(.*\)/' \| .`; f77 -c %N.f
+	if [ %I.o != %O ];then mv %I.o %O;fi
+for
+	cd `expr %I : '\(.*\)/' \| .`; f77 -c %N.f
+	if [ %I.o != %O ];then mv %I.o %O;fi
+F
+	cd `expr %I : '\(.*\)/' \| .`; f77 -c %N.f
+	if [ %I.o != %O ];then mv %I.o %O;fi
+FOR
+	cd `expr %I : '\(.*\)/' \| .`; f77 -c %N.f
+	if [ %I.o != %O ];then mv %I.o %O;fi

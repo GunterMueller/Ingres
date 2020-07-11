@@ -1,0 +1,6 @@
+PART   abf_patch
+   DIRECTORY ingres!sig!abf_patch
+   BUILD_DIR (ING_BUILD)!sig!abf_patch
+      FILE abf_patch.quel
+      FILE abf_patch.sql
+      FILE read.me

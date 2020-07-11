@@ -1,0 +1,4 @@
+PART   w4v3cats
+   BUILD_DIR (ING_BUILD)!sig!w4v3cats
+   DIRECTORY ingres!sig!w4v3cats
+      FILE w4v3cats.scr

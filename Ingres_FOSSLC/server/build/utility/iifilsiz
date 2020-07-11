@@ -1,0 +1,35 @@
+#!/bin/bash
+#  Copyright (c) 2004 Ingres Corporation
+#
+#  Name: iifilsiz
+#
+#  Usage:
+#	iifilsiz [-b] bin_file out_file
+#         -b gives size in blocks
+#
+#  Description:
+#	Called by the configuration rules system and from setup scripts
+#	to return the size of various files. 
+#
+#  PROGRAM = iifilsiz
+#
+#  DEST = utility
+#----------------------------------------------------------------------------
+. iisysdep
+
+if [ "$1" = "-b" ]
+then
+    IILSFLAGS="$LSBLOCKFLAGS"
+    IISZFIELD=1
+    shift
+else
+    IILSFLAGS="$LSSIZEFLAGS"
+    IISZFIELD=4
+fi
+
+if [ $# != 1 ]
+then
+   ls $IILSFLAGS $1 2>/dev/null | awk '{ print $'${IISZFIELD}' }' >"$2"
+else
+   ls $IILSFLAGS $1 2>/dev/null | awk '{ print $'${IISZFIELD}' }'
+fi

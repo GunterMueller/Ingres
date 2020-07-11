@@ -1,0 +1,7 @@
+PART   formtools
+   capability CI_VIFRED
+   BUILD_DIR (ING_BUILD)!bin
+   DIRECTORY ingres!bin
+      EXECUTABLE compform
+      EXECUTABLE copyform
+      EXECUTABLE printform

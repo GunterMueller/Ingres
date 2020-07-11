@@ -1,0 +1,260 @@
+#!/bin/bash
+#
+#  Copyright (c) 2004 Ingres Corporation
+#
+#  Name: iisuodbc -- setup script for Ingres ODBC Driver
+#  Usage:
+#	iisuodbc
+#
+#  Description:
+#	This script should only be called by the Ingres installation
+#	utility.  It sets up the Ingres ODBC Driver.
+#
+#  Exit Status:
+#	0	setup procedure completed.
+#	1	setup procedure did not complete.
+#
+#  PROGRAM = iisuodbc
+#
+#  DEST = utility
+#----------------------------------------------------------------------------
+
+
+BATCH=false
+NOTBATCH=true
+INSTLOG="2>&1 | tee -a $II_SYSTEM/ingres/files/install.log"
+PARM1="$1"
+
+# check for batch flag
+if [ "$1" = "-batch" ] || [ "$1" = "-rpm" ] ; then
+   BATCH=true
+   NOTBATCH=false
+   INSTLOG="2>&1 | cat >> $II_SYSTEM/ingres/files/install.log"
+   shift ;
+elif [ "$1" = "-exresponse" ] ; then
+    READ_RESPONSE=true
+    BATCH=true      #run as if running -batch flag.
+    NOTBATCH=false
+    shift
+    [ "$1" ] && { RESINFILE="$1" ; shift ; }
+elif [ "$1" = "-vbatch" ] ; then
+   BATCH=true
+   NOTBATCH=false
+   shift;
+fi
+. iisysdep
+
+. iishlib
+
+if [ "$1" = "-rmpkg" ] ; then
+NOT_DONE=true
+newPATH="/usr/local/etc"
+while $NOT_DONE ; do
+    {
+        echo "Enter the default ODBC configuration path [ $newPATH ]: "
+        $BATCH || read ALTPATH junk
+        [ -z "$ALTPATH" ] && ALTPATH=$newPATH
+
+        echo ""
+        echo "The default ODBC configuration path is $ALTPATH"
+        echo ""
+    }
+    prompt "Is the path information correct? " y && NOT_DONE=false
+    echo ""
+done
+   
+   iiodbcinst -rmpkg -p $ALTPATH 
+   cat << !
+  The Ingres ODBC Driver has been removed
+
+!
+exit 0
+fi
+
+do_iisuodbc()
+{
+
+$BATCH || echo "Setting up the Ingres ODBC Driver..."
+
+if [ -f $II_SYSTEM/ingres/install/release.dat ]; then
+    VERSION=`$II_SYSTEM/ingres/install/ingbuild -version` ||
+    {
+	$BATCH || cat << !
+
+$VERSION
+
+!
+	exit 1
+    }
+else
+    VERSION=`head -1 $II_SYSTEM/ingres/version.rel` ||
+    {
+	$BATCH || cat << !
+
+Missing file $II_SYSTEM/ingres/version.rel
+
+!
+	exit 1
+    }
+fi
+
+RELEASE_ID=`echo $VERSION | sed "s/[ ().\/]//g"`
+
+$BATCH || cat << !
+
+This procedure will set up the following version of Ingres ODBC driver:
+
+        $VERSION
+
+to run on local host:
+
+        $HOSTNAME
+
+!
+
+$BATCH || prompt "Do you want to continue this setup procedure?" y  || exit 1
+
+NOT_DONE=true
+
+if [ -n "$ODBC_HOME" ]
+then
+    $BATCH || echo "ODBC_HOME is defined.  Value is $ODBC_HOME"
+	newPATH=$ODBC_HOME
+elif [ -n "$ODBCSYSINI" ]
+then
+    $BATCH || echo "ODBCSYSINI is defined.  Value is $ODBCSYSINI"
+	newPATH=$ODBCSYSINI
+else
+    newPATH="/usr/local/etc"
+fi
+
+while $NOT_DONE ; do
+    $BATCH || 
+    {
+        echo "Enter the default ODBC configuration path [ $newPATH ]: "
+        $BATCH || read ALTPATH junk
+        [ -z "$ALTPATH" ] && ALTPATH=$newPATH
+
+        echo ""
+        echo "The default ODBC configuration path is $ALTPATH"
+        echo ""
+    }
+    $BATCH || prompt "Is the path information correct? " y && NOT_DONE=false
+    echo ""
+done
+
+NOT_DONE=true
+while $NOT_DONE ; do
+    dmFlag=""
+    READ_ONLY=false
+    $BATCH || 
+    {
+        if prompt "Does your ODBC installation use a CAI/PT driver manager? " n 
+        then
+            echo "Your installation is using a CAI/PT driver manager"
+            dmFlag="-m CAI/PT"
+        else
+            echo "Your installation is using a unixODBC driver manager"
+            dmFlag=""
+        fi
+    }
+echo ""
+$BATCH || prompt "Is this information correct?" y && NOT_DONE=false
+echo ""
+done
+
+NOT_DONE=true
+while $NOT_DONE ; do
+    rFlag=""
+    READ_ONLY=false
+    $BATCH || 
+    {
+        if prompt "Is this always a read-only driver? " n 
+        then
+            echo Your driver will be read-only.
+            rFlag="-r"
+        else
+            echo Your driver will allow updates.
+        fi
+    }
+echo ""
+$BATCH || prompt "Is this information correct?" y && NOT_DONE=false
+echo ""
+done
+
+if [ "$rFlag" = "-r" ] ; then
+iisetres ii.$CONFIG_HOST.odbc.module_name libiiodbcdriverro.1.$SLSFX
+else
+iisetres ii.$CONFIG_HOST.odbc.module_name libiiodbcdriver.1.$SLSFX
+fi
+
+iisetres ii.$CONFIG_HOST.odbc.trace_module_name libiiodbctrace.1.$SLSFX
+iisetres ii.$CONFIG_HOST.odbc.cli_module_name libiiodbc.1.$SLSFX
+
+if $BATCH; then
+    iiodbcinst -batch > /dev/null 2>&1
+    if [ $? -ne 0 ];then
+        echo "Cannot write to default ODBC configuraton path /usr/local/etc."
+        echo "Writing instead to "$II_SYSTEM"/ingres/files/odbcinst.ini."
+        iiodbcinst -p $II_SYSTEM/ingres/files -batch 
+        if [ $? -ne 0 ];then
+           cat << !
+iisuodbc failed.  Please resolve the problem and re-execute 
+iisuodbc or execute iiodbcinst.
+
+!
+           exit 0
+        else
+            echo "Successfully wrote ODBC configuration files"     
+        fi
+    else
+        echo "Successfully wrote ODBC configuration files"     
+    fi
+    else
+    if [ "$ALTPATH" = "/usr/local/etc" ]
+    then
+        iiodbcinst $rFlag $dmFlag
+    elif [ "$ALTPATH" = "$ODBCSYSINI" ]
+    then
+        iiodbcinst $rFlag $dmFlag
+    else
+        iiodbcinst $rFlag $dmFlag -p $ALTPATH
+    fi
+    if [ $? -ne 0 ];then
+        echo "Cannot write to default ODBC configuraton path /usr/local/etc."
+        echo "Writing instead to "$II_SYSTEM"/ingres/files/odbcinst.ini."
+        ALTPATH="$II_SYSTEM/ingres/files"
+        iiodbcinst $rFlag $dmFlag -p $II_SYSTEM/ingres/files 
+        if [ $? -ne 0 ];then
+           cat << !
+iisuodbc failed.  Please resolve the problem and re-execute 
+iisuodbc or execute iiodbcinst.
+
+!
+           exit 0
+        else
+            echo "Successfully wrote ODBC configuration files"     
+        fi
+    else
+        echo "Successfully wrote ODBC configuration files"     
+    fi
+    
+$BATCH || cat << !
+
+An odbcinst.ini file has been created in the directory "$ALTPATH".  
+You may use the utility iiodbcadmn to create and manage
+ODBC data sources.
+
+See the Ingres Installation Guide for more information.
+  
+!
+fi # if $BATCH
+
+$BATCH || pause
+trap : 0
+exit 0
+}
+
+eval do_iisuodbc $INSTLOG
+trap : 0
+exit 0

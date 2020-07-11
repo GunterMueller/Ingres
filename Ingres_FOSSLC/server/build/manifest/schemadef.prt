@@ -1,0 +1,54 @@
+PART  schemadef
+   BUILD_DIR (ING_BUILD)!sig!schemadef!help
+   DIRECTORY ingres!sig!schemadef!help
+      FILE altertab.hlp
+      FILE chk_save.hlp
+      FILE create.hlp
+      FILE createin.hlp
+      FILE createvi.hlp
+      FILE examine.hlp
+      FILE examine2.hlp
+      FILE loadtbl.hlp
+      FILE mod_tab.hlp
+      FILE new_tab.hlp
+      FILE objectli.hlp
+      FILE qbf.hlp
+      FILE rep.hlp
+      FILE schema2.hlp
+      FILE tab_look.hlp
+      FILE tudtypes.hlp
+      FILE tunames.hlp
+      FILE tunulls.hlp
+      FILE utility.hlp
+  {
+   BUILD_DIR (ING_BUILD)!sig!schemadef
+   DIRECTORY ingres!sig!schemadef
+      SCRIPT cleanup
+      SCRIPT schema2
+      FILE porting.notes
+      FILE read.me
+      FILE schemadef.app
+  }
+  {
+   BUILD_DIR (ING_BUILD)!sig!schemadef!source
+   DIRECTORY ingres!sig!schemadef!source
+      FILE altertab.osq
+      FILE buildalt.sc
+      FILE buildstr.osq
+      FILE buildvie.sc
+      FILE chk_save.osq
+      FILE createin.osq
+      FILE createvi.osq
+      FILE dynamica.sc
+      FILE examine.osq
+      FILE examine2.osq
+      FILE loadtbl.osq
+      FILE mod_tab.osq
+      FILE new_tabl.osq
+      FILE objectli.osq
+      FILE rst_info.osq
+      FILE rule_chk.osq
+      FILE sav_info.osq
+      FILE schema2.osq
+      FILE tab_look.osq
+  }

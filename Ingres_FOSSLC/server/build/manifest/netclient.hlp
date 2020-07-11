@@ -1,0 +1,6 @@
+Ingres Networked client
+ 
+The Ingres Networking extension enables communication between
+Ingres installations in a heterogeneous, networked environment.
+Ingres Networking supports several major protocols, including
+TCP/IP and DECnet.

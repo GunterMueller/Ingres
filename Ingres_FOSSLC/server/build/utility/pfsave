@@ -1,0 +1,21 @@
+#!/bin/bash
+#  Copyright (c) 2004 Ingres Corporation
+#  Name: pfsave
+#
+#  Usage:
+#   wrapper for pffiles	
+#
+#  Description:
+#	Executed in-line by ingbuild on patch installation
+#
+#  DEST = utility
+#----------------------------------------------------------------------------
+
+if [ "$1" = "" ]
+then
+	exit 255
+fi
+
+$II_SYSTEM/ingres/install/pffiles $1 in || exit 255
+
+exit 0

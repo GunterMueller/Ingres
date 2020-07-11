@@ -1,0 +1,14 @@
+PART   embedded-fortran
+   capability CIeqFORTRAN
+   capability CIesqFORTRAN
+   BUILD_DIR (ING_BUILD)!bin
+   DIRECTORY ingres!bin
+      EXECUTABLE eqf
+      EXECUTABLE esqlf
+   BUILD_DIR (ING_BUILD)!files
+   DIRECTORY ingres!files
+      FILE eqdef.f
+      FILE eqfdef.f
+      FILE eqsqlca.f
+      FILE eqsqlcd.f
+      FILE eqsqlda.f
